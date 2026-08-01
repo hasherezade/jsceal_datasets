@@ -1,0 +1,97 @@
+function func_transformResponse_0x10000be06()
+{
+	r0 = new {"response": null}
+	r1 = new {"full": null}
+	r2 = global_sL["jsonTransformer"]
+	r1["full"] = r2(func_handleToken_0x10000be05)
+	r0["response"] = r1
+	return r0
+}
+function func_handleToken_0x10000be05(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["json"]
+	}
+	catch
+	{
+		r7 = ACCU
+		ACCU = null
+		ACCU = Scope[1145]
+		r8 = r1
+		return Scope[1145][2]
+	}
+	ACCU = func_W_0x10000be04
+	try
+	{
+		r2 = r0["id_token"]
+		r3 = r0["refresh_token"]
+		r10 = !Boolean(r3)
+		r11 = !Boolean(r2)
+		if (func_select_0x10000bde9(r10, r11))
+		{
+			r8 = r1
+			return undefined
+		}
+		r9 = global_aL["default"]
+		r8 = r9["decode"]
+		ACCU = r8(r2)
+		r8 = r8(r2)
+		if (!ACCU == undefined)
+		{
+			ACCU = r8["sub"]
+		}
+		else
+		{
+			ACCU = undefined
+		}
+		r5 = ACCU
+		r10 = TypeOf(r5)
+		if (r10 == "string")
+		{
+			r12 = new {"userId": null, "scope": null, "value": null}
+			r12["userId"] = r5
+			r12["scope"] = "CHROME"
+			r12["value"] = r3
+			r9 = func_Token_0x1000005e8(r12)
+			ACCU = r9["catch"](func_noop_0x1000004cf)
+		}
+		r9 = undefined
+		r8 = r1
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[1147]
+	r9 = r1
+	return Scope[1147][2]
+}
+function func_select_0x10000bde9(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_Token_0x1000005e8(a0)
+{
+	r7 = "google-token"
+	r9 = global_iB["google"]["saveToken"]
+	r9 = r9["mutate"]
+	r11 = new [0, 0]
+	r11[0] = "userId"
+	r11[1] = "scope"
+	r5 = r1
+	return global_hl(r7, a0, r9, r11)
+}
+function func_noop_0x1000004cf()
+{
+	return undefined
+}

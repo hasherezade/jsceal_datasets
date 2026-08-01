@@ -1,0 +1,29 @@
+function func_exportHooks_0x10000ba72(a0)
+{
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["setHooks"] = func_assign_0x10000ba71
+	Scope[1360][3] = {}
+	a0["default"] = Scope[1360][3]
+	return undefined
+}
+function func_assign_0x10000ba71(a0)
+{
+	if (!a0 == undefined)
+	{
+		r3 = Generator(ToObject(a0))
+		r7 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r7)) break
+			if (r3.next().value == undefined) continue
+			r0 = r3.next().value
+			r2 = r3.next().value
+			Scope[1360][3][r0] = a0[r0]
+			r7 = GeneratorStep(r7)
+		}
+	}
+	return undefined
+}

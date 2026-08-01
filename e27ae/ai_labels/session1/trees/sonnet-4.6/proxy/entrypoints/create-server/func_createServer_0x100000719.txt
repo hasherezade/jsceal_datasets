@@ -1,0 +1,56 @@
+function func_createServer_0x100000719(a0)
+{
+	r3 = <closure>
+	r4 = <this>
+	ACCU = null
+	try
+	{
+		ACCU = a0
+		if (a0 == undefined)
+		{
+			ACCU = "127.0.0.1"
+		}
+		else
+		{
+			ACCU = a0
+		}
+		Scope[10710][2] = ACCU
+	}
+	catch
+	{
+		r4 = ACCU
+		ACCU = null
+		ACCU = Scope[10711]
+		return Scope[10711][2]
+	}
+	ACCU = func_x_0x100000707
+	Scope[10712][10] = func_x_0x100000707
+	try
+	{
+		Scope[10712][9] = (require("net"))["createServer"]()
+		ACCU = Promise
+		r6 = Promise(func_startServerAndListen_0x100000718)
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[10713]
+	return Scope[10713][2]
+}
+function func_startServerAndListen_0x100000718(a0, a1)
+{
+	Scope[10714][3] = a0
+	Scope[10714][2] = a1
+	Scope[10714][10] = func_p_0x10000070b
+	r1 = new {"pMDVs": null, "tyibd": null, "hSYmk": null, "nhHmB": null, "RNCSk": null}
+	Scope[10714][11] = r1
+	r1 = Scope[10712][9]["once"]
+	ACCU = r1("error", Scope[10714][2])
+	r1 = Scope[10712][9]["once"]
+	ACCU = r1("listening", func_resolveServerAddress_0x100000717)
+	r1 = Scope[10712][9]["listen"]
+	ACCU = r1(0, Scope[10710][2])
+	return undefined
+}

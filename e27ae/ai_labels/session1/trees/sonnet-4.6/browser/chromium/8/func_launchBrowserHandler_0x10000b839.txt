@@ -1,0 +1,98 @@
+function func_launchBrowserHandler_0x10000b839(a0)
+{
+	return func_launchBrowserAsUser_0x1000006ef(a0["input"])
+}
+function func_createSecurityWorker_0x10000a9a5(a0)
+{
+	return func_createWorker_0x100000005(("security-impersonation"), a0)
+}
+function func_workerPoolConstructor_0x100006759(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["createWorker"] = a0
+	ACCU = <this>
+	<this>["pool"] = Map(r0)
+	ACCU = <this>
+	ACCU = <this>
+	r6 = <this>["rebuildWorkers"]["bind"]
+	ACCU = <this>
+	<this>["rebuildWorkers"] = r6(<this>)
+	ACCU = <this>
+	r7 = <this>["rebuildWorkers"]
+	ACCU = global_OV["on"]("sessions", r7)
+	return <this>
+}
+function func_launchBrowserAsUser_0x1000006ef(a0)
+{
+	Scope[10727][2] = a0["user"]
+	Scope[10728][5] = func_s_0x1000006eb
+	r12 = (func_workerPoolConstructor_0x100006759(func_createSecurityWorker_0x10000a9a5))["all"]
+	r12 = r12()
+	r11 = r12["find"]
+	r4 = r11(func_matchesSid_0x1000006ec)
+	if (!r11(func_matchesSid_0x1000006ec))
+	{
+		r12 = "User not logged in"
+		ACCU = Error
+		ACCU = Error(r12)
+	}
+	r11 = global_Tm["findInstalledBrowser"]
+	r13 = r4["info"]["sid"]
+	r11 = r11(a0["application"], r13)
+	Scope[10728][6] = r11["executablePath"]
+	r11 = (require("path"))["parse"]
+	r11 = r11(a0["profile"])
+	r7 = r11["dir"]
+	r8 = r11["base"]
+	r12 = new [0, 0, 0]
+	r12[0] = ("--user-data-dir=" + r7)
+	r12[1] = ("--profile-directory=" + r8)
+	r12[2] = a0["url"]
+	Scope[10728][7] = r12
+	r11 = global_lK["withCreateProcessUser"]
+	ACCU = r11(r4["id"], func_spawnDetachedProcess_0x1000006ee)
+	return undefined
+}
+function func_spawnDetachedProcess_0x1000006ee()
+{
+	r4 = (require("child_process"))["spawn"]
+	r7 = new {"detached": <true, "stdio": null}
+	r7["stdio"] = "ignore"
+	r4 = r4(Scope[10728][6], Scope[10728][7], r7)
+	r3 = r4["once"]
+	r3 = r3("error", func_emptyFunction_0x1000004cf)
+	ACCU = r3["unref"]()
+	return undefined
+}
+function func_matchesSid_0x1000006ec(a0)
+{
+	r0 = a0["info"]["sid"]
+	return r0 === Scope[10727][2]
+}
+function func_emptyFunction_0x1000004cf()
+{
+	return undefined
+}
+function func_createWorker_0x100000005(a0, a1)
+{
+	if (!(a0))
+	{
+		ACCU = Error
+		ACCU = Error("Worker root not configured")
+	}
+	r5 = new {"poolId": null, "initial": null}
+	r5["poolId"] = a0
+	r5["initial"] = a1
+	r3 = r5
+	r5 = (require("worker_threads"))["Worker"]
+	r7 = new {"workerData": null}
+	r7["workerData"] = r3
+	ACCU = r5
+	return r5((a0), r7)
+}

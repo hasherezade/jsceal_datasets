@@ -1,0 +1,47 @@
+function func_readSessionFiles_0x1000006f7(a0, a1)
+{
+	r7 = <closure>
+	r8 = <this>
+	ACCU = func_a_0x1000006f6
+	try
+	{
+		r8 = (require("fs/promises"))["readFile"]
+		r9 = (require("path"))["join"]
+		r11 = (a1 + "s")
+		r9 = r9(a0, r11)
+		r9 = r8(r9)
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10722])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r3 = r8
+		r8 = (require("fs/promises"))["readFile"]
+		r9 = (require("path"))["join"]
+		r9 = r9(a0, a1, "maps")
+		r9 = r8(r9)
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10722])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r4 = r8
+		r8 = new {"session": null, "map": null}
+		r8["session"] = r3
+		r8["map"] = r4
+		r9 = r8
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[10723]
+	return Scope[10723][2]
+}
+function func_readSessionFile_0x1000006f2(a0)
+{
+	return func_readSessionFiles_0x1000006f7(Scope[10725][4], a0)
+}

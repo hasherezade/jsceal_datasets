@@ -1,0 +1,89 @@
+function func_setLocalProxy_0x10000be31(a0)
+{
+	r2 = ("127.0.0.1:" + Scope[1139][4])
+	return func_setProxyLoop_0x100000a41(a0, r2)
+}
+function func_setProxyLoop_0x100000a41(a0, a1, a2)
+{
+	r7 = <closure>
+	r8 = <this>
+	r3 = ACCU
+	try
+	{
+		r0 = a0
+		r1 = a1
+		ACCU = a2
+		if (a2 == undefined)
+		{
+			ACCU = global_KK["default"]("5m")
+		}
+		else
+		{
+			ACCU = a2
+		}
+		r2 = ACCU
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[10598]
+		r9 = r3
+		return Scope[10598][2]
+	}
+	ACCU = func_o_0x100000a3f
+	try
+	{
+		r12 = r0["info"]["username"]
+		if (!func_isDefaultUser_0x100000564(r12))
+		{
+			while (true)
+			{
+				if (r0["terminated"]) break
+				r10 = r0["rpc"]
+				r10 = r10["setProxy"]
+				r9 = r10["mutate"]
+				r10 = r9(r1)
+				r9 = r3
+				r9 = await r10
+				r10 = _GeneratorGetResumeMode(r3)
+				if (!r10 === 0)
+				{
+					ACCU = r9
+				}
+				r10 = func_scheduleTimeoutPromise_0x1000004c9(r2)
+				r9 = r3
+				r9 = await r10
+				r10 = _GeneratorGetResumeMode(r3)
+				if (r10 === 0) continue
+				ACCU = r9
+				ACCU = r9
+			}
+		}
+		r10 = undefined
+		r9 = r3
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10600]
+	r10 = r3
+	return Scope[10600][2]
+}
+function func_isDefaultUser_0x100000564(a0)
+{
+	r0 = new {"V": 89230, "J": "%]hf", "S": 74094, "g": "Yx9u", "L": 47456, "X": "L@kv", "j": 29640, "E": "n@A0"}
+	return a0 === "defaultuser0"
+}
+function func_scheduleTimeoutPromise_0x1000004c9(a0)
+{
+	Scope[11011][2] = a0
+	ACCU = Promise
+	return Promise(func_scheduleTimeout_0x1000004c8)
+}
+function func_scheduleTimeout_0x1000004c8(a0)
+{
+	return setTimeout(a0, Scope[11011][2])
+}

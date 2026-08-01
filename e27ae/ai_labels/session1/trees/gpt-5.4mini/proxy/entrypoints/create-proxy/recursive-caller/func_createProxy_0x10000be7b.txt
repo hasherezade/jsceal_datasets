@@ -1,0 +1,46 @@
+function func_createProxy_0x10000be7b(a0)
+{
+	Scope[1124][2] = a0
+	Scope[1124][5] = func_te_0x10000be78
+	r1 = Scope[1121][18]["createRecursiveProxy"]
+	return r1(func_dispatchProcedure_0x10000be7a)
+}
+function func_dispatchProcedure_0x10000be7a(a0)
+{
+	if (a0["path"]["length"] === 1)
+	{
+		r7 = Scope[1121][21]["includes"]
+		if (r7(a0["path"][0]))
+		{
+			r10 = new {"procedures": null, "path": null, "rawInput": null, "ctx": null, "type": null}
+			r10["procedures"] = Scope[1123][6]["procedures"]
+			r10["path"] = a0["args"][0]
+			r10["rawInput"] = a0["args"][1]
+			r10["ctx"] = Scope[1124][2]
+			r10["type"] = a0["path"][0]
+			return func_dispatchProcedure_0x10000be72(r10)
+		}
+	}
+	r7 = a0["path"]["join"]
+	r2 = r7(".")
+	r3 = Scope[1123][6]["procedures"][r2]
+	r4 = "query"
+	r7 = r3["_def"]
+	if (r7["mutation"])
+	{
+		r4 = "mutation"
+	}
+	else
+	{
+		if (r3["_def"]["subscription"])
+		{
+			r4 = "subscription"
+		}
+	}
+	r10 = new {"path": null, "rawInput": null, "ctx": null, "type": null}
+	r10["path"] = r2
+	r10["rawInput"] = a0["args"][0]
+	r10["ctx"] = Scope[1124][2]
+	r10["type"] = r4
+	return r3(r10)
+}

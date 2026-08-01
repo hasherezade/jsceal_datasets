@@ -1,0 +1,119 @@
+function func_installCertificate_0x100000a3e(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_n_0x100000a3c
+	try
+	{
+		r1 = new {"V": 32940, "J": "nvO5", "S": 11571, "g": "A5nh", "L": 62024, "X": "O9*f", "j": 53954, "E": "BS4&", "c": 122897, "x": "VHeU", "K": 81147, "u": "JrBU", "A": 14982, "s": "h98j", "b": 56496, "i": "h^gm", "w": 30264, "f": "x&b0", "t": 78979, "P": "iSZ6", "I": 99578, "p": "toM2", "o": 71889}
+		r10 = r1["K"]
+		r8 = global_UK["tmpName"]()
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[10601])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r3 = r7
+		ACCU = r3
+		try
+		{
+			r10 = (require("fs/promises"))["writeFile"]
+			r11 = r10(r3, a0)
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(Scope[10601])
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			r13 = "certutil"
+			r15 = new [0, "-f", 0, 0]
+			r15[0] = "-addstore"
+			r15[2] = "root"
+			r15[3] = r3
+			r11 = r2
+			r11 = func_spawnProcess_0x100000706(r13, r15)
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(Scope[10601])
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			ACCU = -1
+			r8 = -1
+			r7 = -1
+		}
+		catch
+		{
+			r8 = ACCU
+			r7 = 0
+		}
+		r11 = (require("fs/promises"))["rm"](r3)
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[10601])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		ACCU = null
+		if (r7 === 0)
+		{
+			ACCU = r8
+		}
+		r8 = undefined
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10602]
+	return Scope[10602][2]
+}
+function func_spawnProcess_0x100000706(a0, a1)
+{
+	r3 = <closure>
+	r4 = <this>
+	Scope[10718][7] = func_s_0x1000006f8
+	ACCU = null
+	try
+	{
+		r4 = (require("child_process"))["spawn"]
+		Scope[10718][9] = r4(a0, a1)
+		ACCU = Promise
+		r5 = Promise(func_listen_0x100000705)
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[10719]
+	return Scope[10719][2]
+}
+function func_listen_0x100000705(a0, a1)
+{
+	Scope[10720][3] = a0
+	Scope[10720][2] = a1
+	Scope[10720][10] = func_p_0x1000006fc
+	r1 = Scope[10718][9]["once"]
+	ACCU = r1("error", Scope[10720][2])
+	r1 = Scope[10718][9]["once"]
+	ACCU = r1("close", func_handleExit_0x100000704)
+	return undefined
+}
+function func_handleExit_0x100000704(a0)
+{
+	if (a0 === 0)
+	{
+		ACCU = Scope[10720][3]()
+	}
+	else
+	{
+		r6 = ("Process exited with code " + a0)
+		ACCU = Error
+		r5 = Error(r6)
+		ACCU = Scope[10720][2](r5)
+	}
+	return undefined
+}

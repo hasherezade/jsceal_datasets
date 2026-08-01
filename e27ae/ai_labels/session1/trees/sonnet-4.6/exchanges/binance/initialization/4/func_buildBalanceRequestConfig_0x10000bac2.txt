@@ -1,0 +1,53 @@
+function func_buildBalanceRequestConfig_0x10000bac2()
+{
+	Scope[1336][4] = func_p_0x10000babc
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_extractQuoteAssetParam_0x10000babe
+	r1["request"] = r2
+	r2 = new {"full": null}
+	r3 = Scope[1335][12]["jsonTransformer"]
+	r2["full"] = r3(func_saveBinanceBalance_0x10000bac1)
+	r1["response"] = r2
+	return r1
+}
+function func_saveBinanceBalance_0x10000bac1(a0)
+{
+	Scope[1337][3] = func_I_0x10000babf
+	if (!Scope[1336][6])
+	{
+		return undefined
+	}
+	r3 = a0["json"]["data"]["map"]
+	r1 = r3(func_getBalance_0x10000bac0)
+	r4 = Scope[1335][11]["default"]
+	r3 = r4["saveBalance"]
+	if (!r4["saveBalance"] == undefined)
+	{
+		r5 = new {"source": null, "name": null, "value": null, "currency": null}
+		r5["source"] = "EXCHANGE"
+		r5["name"] = "BINANCE"
+		r5["value"] = r1
+		r5["currency"] = Scope[1336][6]
+		ACCU = r3(r5)
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	return undefined
+}
+function func_getBalance_0x10000bac0(a0)
+{
+	return a0["balance"]
+}
+function func_extractQuoteAssetParam_0x10000babe(a0)
+{
+	ACCU = Scope[1335][9]["default"]
+	r4 = Scope[1335][9]["default"](a0["target"])
+	r4 = r4["searchParams"]["get"]
+	r4 = r4("quoteAsset")
+	ACCU = Scope[1336][6]
+	Scope[1336][6] = r4
+	return undefined
+}

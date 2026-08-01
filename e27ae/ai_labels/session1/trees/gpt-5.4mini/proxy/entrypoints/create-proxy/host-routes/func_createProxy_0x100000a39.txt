@@ -1,0 +1,40 @@
+function func_remove_0x100000a3b()
+{
+	if (!(undefined) == undefined)
+	{
+		ACCU = (undefined)["remove"]()
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	return undefined
+}
+function func_createProxy_0x100000a39(a0)
+{
+	Scope[10604][3] = func_u_0x100000a35
+	ACCU = func_remove_0x100000a3b()
+	r5 = a0["map"]
+	r5 = r5(func_hostname_0x100000a37)
+	r7 = new [0, 0]
+	r7[0] = "GET"
+	r7[1] = "POST"
+	r6 = r7
+	r8 = new {"response": null}
+	r9 = new {"full": null}
+	r9["full"] = func_forbiddenResponse_0x100000a38
+	r8["response"] = r9
+	ACCU = (global_Up["createChild"]())["on"](r5, r6, null, r8)
+	return undefined
+}
+function func_forbiddenResponse_0x100000a38()
+{
+	r0 = new {"status": 403, "body": null}
+	r1 = Buffer["alloc"]
+	r0["body"] = r1(0)
+	return r0
+}
+function func_hostname_0x100000a37(a0)
+{
+	return a0["host"]
+}

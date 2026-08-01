@@ -1,0 +1,47 @@
+function func_spawnChildProcess_0x100000706(a0, a1)
+{
+	r3 = <closure>
+	r4 = <this>
+	Scope[10718][7] = func_s_0x1000006f8
+	ACCU = null
+	try
+	{
+		r4 = (require("child_process"))["spawn"]
+		Scope[10718][9] = r4(a0, a1)
+		ACCU = Promise
+		r5 = Promise(func_setupProcessListeners_0x100000705)
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[10719]
+	return Scope[10719][2]
+}
+function func_setupProcessListeners_0x100000705(a0, a1)
+{
+	Scope[10720][3] = a0
+	Scope[10720][2] = a1
+	Scope[10720][10] = func_p_0x1000006fc
+	r1 = Scope[10718][9]["once"]
+	ACCU = r1("error", Scope[10720][2])
+	r1 = Scope[10718][9]["once"]
+	ACCU = r1("close", func_handleProcessExit_0x100000704)
+	return undefined
+}
+function func_handleProcessExit_0x100000704(a0)
+{
+	if (a0 === 0)
+	{
+		ACCU = Scope[10720][3]()
+	}
+	else
+	{
+		r6 = ("Process exited with code " + a0)
+		ACCU = Error
+		r5 = Error(r6)
+		ACCU = Scope[10720][2](r5)
+	}
+	return undefined
+}

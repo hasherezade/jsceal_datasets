@@ -1,0 +1,27 @@
+function func_pushError_0x100000142(a0, a1)
+{
+	r0 = new {"V": "b48I", "J": 97714, "S": "epz[", "g": 117612, "L": "epz[", "X": 95913, "j": "89J2", "E": 59689}
+	r5 = new {"KhfBD": null}
+	r5["KhfBD"] = func_instanceof_0x100000141
+	r4 = r5["KhfBD"]
+	ACCU = r4(a0, Error)
+	if (r4(a0, Error))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = Error
+		ACCU = Error(r0)
+	}
+	r2 = ACCU
+	r4 = global_tP["api"]["pushError"]
+	r7 = new {"context": null}
+	r7["context"] = a1
+	ACCU = r4(r2, r7)
+	return undefined
+}
+function func_instanceof_0x100000141(a0, a1)
+{
+	return a0 instanceof a1
+}

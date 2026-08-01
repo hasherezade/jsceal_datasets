@@ -1,0 +1,3107 @@
+function func_initializeJwtModule_0x1000047e4(a0, a1)
+{
+	r5 = "exports"
+	r6 = new {"decode": null, "verify": null, "sign": null, "JsonWebTokenError": null, "NotBeforeError": null, "TokenExpiredError": null}
+	r6["decode"] = func_initializeDecodeModule_0x1000043ae["exports"]()
+	r6["verify"] = func_initializeVerifyModule_0x10000469c["exports"]()
+	r6["sign"] = func_initializeSignModule_0x1000047df["exports"]()
+	r6["JsonWebTokenError"] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r6["NotBeforeError"] = func_initNotBeforeErrorModule_0x1000043b7["exports"]()
+	r6["TokenExpiredError"] = func_initTokenExpiredErrorModule_0x1000043bc["exports"]()
+	a1[r5] = r6
+	return undefined
+}
+function func_initializeSignModule_0x1000047df(a0, a1)
+{
+	Scope[7323][22] = func_b_0x10000478a
+	Scope[7323][35] = func_validateOptions_0x100004794
+	Scope[7323][36] = func_getOptions_0x100004796
+	Scope[7323][37] = func_getPayload_0x100004798
+	r7 = new {"znHXA": null, "IEtXy": null, "LKOsI": null, "Dfeuj": null, "yRFds": null, "tAhFj": null, "nifoZ": null, "DBMuK": null, "XvmYK": null, "WrevZ": null, "lHAyL": null, "tjqad": null, "VvSSI": null, "jDlgq": null, "LiEPD": null, "hTbMO": null, "huBcs": null, "VKHen": null, "Veeps": null, "zVAsb": null, "mQCmW": null, "DpDaV": null, "btTkv": null, "TfrEI": null, "Hpilw": null, "vSKug": null, "znSWN": null, "SxzEG": null, "tnpYq": null, "VbRWV": null, "jgRkX": null, "HTOae": null, "ClhaP": null, "bTfYV": null, "SFxlB": null, "FXcZz": null, "mNJWO": null, "cCHTl": null, "EUWxx": null, "msMmQ": null, "xUoAQ": null, "VVOze": null, "ekmqA": null, "jsORZ": null, "otChC": null, "cZllJ": null, "ZUacW": null, "HEfKq": null, "ceagG": null, "OETGE": null, "ZfRul": null, "MvVvn": null, "SUari": null, "HNBCg": null, "SJYJn": null, "YBwgd": null, "PGhwv": null, "rqVob": null, "BphNk": null, "wjBbF": null, "SfNsf": null, "eyZHi": null, "CqOuE": null, "uOFsq": null, "FTeso": null, "nBezR": null, "VunlC": null, "WHhEz": null, "LIXXo": null, "MkycJ": null, "nUNJi": null, "Yivhu": null, "ABwec": null, "eXNSt": null, "lGbXb": null, "KrssC": null, "hiEMY": null, "psZEF": null, "eoLgD": null, "CCxwO": null, "nIofz": null, "XXqVK": null, "pOVGE": null, "twKlO": null, "ABAfa": null, "wYElg": null, "PFpXY": null, "vqHYv": null, "tNrUu": null, "lJpIC": null, "ukpkY": null, "CBWDs": null, "LHPGN": null, "mHscJ": null, "cgyns": null, "cUVAl": null, "kwJIG": null, "inCPc": null, "YWZSr": null, "Aejxs": null, "TGVwc": null, "vajrv": null, "HBhsR": null, "BSGrz": null, "gAehx": null, "ebDfk": null, "FBZJF": null, "JWWaA": null, "sThqj": null, "TbPhI": null, "VSLUY": null, "rlBoQ": null, "NaxsN": null, "EApnF": null, "fQhun": null, "vJnar": null}
+	r7["yRFds"] = "' is not allowed in \""
+	Scope[7323][21] = r7
+	Scope[7323][23] = func_initExpirationModule_0x1000043c8["exports"]()
+	r1 = func_checkNodeVersion6or8_0x10000464d["exports"]()
+	Scope[7323][24] = func_initializeKeyAlgorithmModule_0x10000464a["exports"]()
+	Scope[7323][25] = func_initJwtModule_0x1000043a5["exports"]()
+	r2 = func_initializeIncludesModule_0x10000470f["exports"]()
+	r3 = func_initializeIsBooleanModule_0x100004718["exports"]()
+	Scope[7323][26] = func_initializeIsIntegerModule_0x10000473a["exports"]()
+	r4 = func_exportNumberLikeChecker_0x100004742["exports"]()
+	Scope[7323][27] = func_exportPlainObjectChecker_0x100004758["exports"]()
+	Scope[7323][28] = func_initializeStringTypeModule_0x100004761["exports"]()
+	Scope[7323][29] = func_initializeDebouncerModule_0x100004789["exports"]()
+	r7 = require("crypto")
+	Scope[7323][30] = r7["KeyObject"]
+	Scope[7323][31] = r7["createSecretKey"]
+	Scope[7323][32] = r7["createPrivateKey"]
+	r8 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r8[0] = "RS256"
+	r8[1] = "RS384"
+	r8[2] = "RS512"
+	r8[3] = "ES256"
+	r8[4] = "ES384"
+	r8[5] = "ES512"
+	r8[6] = "HS256"
+	r8[7] = "HS384"
+	r8[8] = "HS512"
+	r8[9] = "none"
+	r5 = r8
+	if (r1)
+	{
+		r7 = r5["splice"]
+		r8 = r5
+		ACCU = r7(3, 0, "PS256", "PS384", "PS512")
+	}
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidA_0x1000047ca
+	r8["message"] = "'expiresIn' should be a number of seconds or string representing a timespan"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidB_0x1000047cc
+	r8["message"] = "'notBefore' should be a number of seconds or string representing a timespan"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidC_0x1000047ce
+	r8["message"] = "'audience' must be a string or array"
+	r8 = new {"isValid": null, "message": null}
+	r9 = r2["bind"]
+	r8["isValid"] = r9(null, r5)
+	r8["message"] = "'algorithm' must be a valid string enum value"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][27]
+	r8["message"] = "'header' must be an object"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'encoding' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'issuer' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'subject' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'jwtid' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'noTimestamp' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'keyid' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'mutatePayload' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'allowInsecureKeySizes' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'allowInvalidAsymmetricKeyTypes' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r4
+	r8["message"] = "'iat' should be a number of seconds"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r4
+	r8["message"] = "'exp' should be a number of seconds"
+	r8 = new {"isValid": null, "message": null}
+	r8 = new [0, 0, 0, 0, 0, 0, 0]
+	r8[0] = "expiresIn"
+	r8[1] = "notBefore"
+	r8[2] = "noTimestamp"
+	r8[3] = "audience"
+	r8[4] = "issuer"
+	r8[5] = "subject"
+	r8[6] = "jwtid"
+	Scope[7323][39] = r8
+	a1["exports"] = func_signJwt_0x1000047de
+	return undefined
+}
+function func_signJwt_0x1000047de(a0, a1, a2, a3)
+{
+	Scope[7324][4] = a0
+	Scope[7324][3] = a2
+	Scope[7324][2] = a3
+	Scope[7324][17] = func_wrapCallback_0x1000047d0
+	Scope[7324][18] = func_he_0x1000047d1
+	r8 = TypeOf(Scope[7324][3])
+	r9 = "function"
+	if (r8 == r9)
+	{
+		Scope[7324][2] = Scope[7324][3]
+		Scope[7324][3] = {}
+	}
+	else
+	{
+		r9 = {}
+		Scope[7324][3] = func_defaultIfFalsy_0x1000047a8(Scope[7324][3], r9)
+	}
+	r8 = TypeOf(Scope[7324][4])
+	r9 = "object"
+	ACCU = r8 == r9
+	if (r8 == r9)
+	{
+		r6 = Buffer["isBuffer"]
+		ACCU = !Boolean(r6(Scope[7324][4]))
+	}
+	r0 = ACCU
+	r6 = Object["assign"]
+	r8 = new {"alg": null, "typ": null, "kid": null}
+	ACCU = Scope[7324][3]["algorithm"]
+	if (!Scope[7324][3]["algorithm"])
+	{
+		ACCU = "HS256"
+	}
+	r8["alg"] = ACCU
+	ACCU = r0
+	if (r0)
+	{
+		ACCU = "JWT"
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r8["typ"] = ACCU
+	r8["kid"] = Scope[7324][3]["keyid"]
+	Scope[7324][16] = r6(r8, Scope[7324][3]["header"])
+	if (!a1)
+	{
+		r8 = Scope[7324][3]["algorithm"]
+		r9 = "none"
+		if (!(r8 === r9))
+		{
+			ACCU = Error
+			r9 = Error("secretOrPrivateKey must have a value")
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	if (!(a1 == null))
+	{
+		if (!a1 instanceof Scope[7323][30])
+		{
+			try
+			{
+				a1 = Scope[7323][32](a1)
+			}
+			catch
+			{
+				ACCU = null
+				ACCU = Scope[7324]
+				try
+				{
+					r13 = TypeOf(a1)
+					r14 = "string"
+					ACCU = r13 == r14
+					if (r13 == r14)
+					{
+						r11 = Buffer["from"]
+						ACCU = r11(a1)
+					}
+					else
+					{
+						ACCU = a1
+					}
+					r11 = ACCU
+					a1 = Scope[7323][31](r11)
+				}
+				catch
+				{
+					ACCU = null
+					r12 = "secretOrPrivateKey is not valid key material"
+					ACCU = Error
+					r11 = Error(r12)
+					return func_wrapCallback_0x1000047d0(r11)
+				}
+			}
+		}
+	}
+	r6 = Scope[7324][16]["alg"]["startsWith"]
+	if (r6("HS"))
+	{
+		r8 = a1["type"]
+		r9 = "secret"
+		if (!(r8 === r9))
+		{
+			r10 = ("secretOrPrivateKey must be a symmetric key when using " + Scope[7324][16]["alg"])
+			ACCU = Error
+			r9 = Error(r10)
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	r7 = \^(?:RS|PS|ES)\
+	r6 = r7["test"]
+	r8 = Scope[7324][16]["alg"]
+	if (r6(r8))
+	{
+		r8 = a1["type"]
+		r9 = "private"
+		if (!(r8 === r9))
+		{
+			r10 = ("secretOrPrivateKey must be an asymmetric key when using " + Scope[7324][16]["alg"])
+			ACCU = Error
+			r9 = Error(r10)
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+		if (!Scope[7324][3]["allowInsecureKeySizes"])
+		{
+			r6 = Scope[7324][16]["alg"]["startsWith"]
+			if (!r6("ES"))
+			{
+				r8 = a1["asymmetricKeyDetails"]
+				r9 = undefined
+				if (!(r8 === r9))
+				{
+					r8 = a1["asymmetricKeyDetails"]["modulusLength"]
+					if (r8 < 2048)
+					{
+						r10 = ("secretOrPrivateKey has a minimum key size of 2048 bits for " + Scope[7324][16]["alg"])
+						ACCU = Error
+						r9 = Error(r10)
+						return func_wrapCallback_0x1000047d0(r9)
+					}
+				}
+			}
+		}
+	}
+	r8 = TypeOf(Scope[7324][4])
+	if (r8 > "u")
+	{
+		r10 = "payload is required"
+		ACCU = Error
+		r9 = Error(r10)
+		return func_wrapCallback_0x1000047d0(r9)
+	}
+	ACCU = r0
+	if (r0)
+	{
+		try
+		{
+			ACCU = func_getPayload_0x100004798(Scope[7324][4])
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[7325]
+			r7 = Scope[7324]
+			return func_wrapCallback_0x1000047d0(Scope[7325][2])
+		}
+		if (!Scope[7324][3]["mutatePayload"])
+		{
+			r6 = Object["assign"]
+			r8 = {}
+			Scope[7324][4] = r6(r8, Scope[7324][4])
+		}
+	}
+	else
+	{
+		r6 = Scope[7323][39]["filter"]
+		r4 = r6(func_hasOption_0x1000047d9)
+		r8 = r4["length"]
+		if (r8 > 0)
+		{
+			r18 = "invalid "
+			r19 = r4["join"]
+			r19 = r19(",")
+			r16 = (r18 + r19)
+			r14 = (r16 + " option for ")
+			r15 = TypeOf(Scope[7324][4])
+			r12 = (r14 + r15)
+			r10 = (r12 + " payload")
+			ACCU = Error
+			r9 = Error(r10)
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	r8 = TypeOf(Scope[7324][4]["exp"])
+	if (r8 < "u")
+	{
+		r8 = TypeOf(Scope[7324][3]["expiresIn"])
+		if (r8 < "u")
+		{
+			ACCU = Error
+			r9 = Error("Bad 'options.expiresIn' option the payload already has an 'exp' property.")
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	r8 = TypeOf(Scope[7324][4]["nbf"])
+	ACCU = r8 < "u"
+	if (r8 < "u")
+	{
+		r8 = TypeOf(Scope[7324][3]["notBefore"])
+		ACCU = r8 < "u"
+		if (r8 < "u")
+		{
+			ACCU = Error
+			r9 = Error("Bad 'options.notBefore' option the payload already has an 'nbf' property.")
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	try
+	{
+		ACCU = func_getOptions_0x100004796(Scope[7324][3])
+	}
+	catch
+	{
+		r7 = ACCU
+		ACCU = null
+		ACCU = Scope[7326]
+		r7 = Scope[7324]
+		return func_wrapCallback_0x1000047d0(Scope[7326][2])
+	}
+	ACCU = Scope[7324][3]["allowInvalidAsymmetricKeyTypes"]
+	if (!Scope[7324][3]["allowInvalidAsymmetricKeyTypes"])
+	{
+		try
+		{
+			r10 = Scope[7324][16]["alg"]
+			ACCU = Scope[7323][24](r10, a1)
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[7327]
+			r7 = Scope[7324]
+			return func_wrapCallback_0x1000047d0(Scope[7327][2])
+		}
+	}
+	ACCU = Scope[7324][4]["iat"]
+	if (!Scope[7324][4]["iat"])
+	{
+		r6 = Math["floor"]
+		r10 = Date["now"]
+		r10 = r10()
+		r8 = (r10 / 1000)
+		ACCU = r6(r8)
+	}
+	r1 = ACCU
+	if (Scope[7324][3]["noTimestamp"])
+	{
+		delete "iat"[Scope[7324][4]]
+	}
+	else
+	{
+		if (r0)
+		{
+			Scope[7324][4]["iat"] = r1
+			ACCU = r1
+		}
+	}
+	r8 = TypeOf(Scope[7324][3]["notBefore"])
+	ACCU = r8 < "u"
+	if (r8 < "u")
+	{
+		r6 = Scope[7324]
+		try
+		{
+			r8 = "nbf"
+			r12 = Scope[7324][3]["notBefore"]
+			r13 = r1
+			ACCU = Scope[7323][23](r12, r13)
+			Scope[7324][4][r8] = Scope[7323][23](r12, r13)
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[7328]
+			return func_wrapCallback_0x1000047d0(Scope[7328][2])
+		}
+		r8 = TypeOf(Scope[7324][4]["nbf"])
+		if (r8 > "u")
+		{
+			r10 = "'notBefore' should be a number of seconds or string representing a timespan eg: '1d', '20h', 60"
+			ACCU = Error
+			r9 = Error(r10)
+			return func_wrapCallback_0x1000047d0(r9)
+		}
+	}
+	r8 = TypeOf(Scope[7324][3]["expiresIn"])
+	if (r8 < "u")
+	{
+		r8 = TypeOf(Scope[7324][4])
+		r9 = "object"
+		ACCU = r8 == r9
+		if (r8 == r9)
+		{
+			r6 = Scope[7324]
+			try
+			{
+				r8 = "exp"
+				r12 = Scope[7324][3]["expiresIn"]
+				r13 = r1
+				ACCU = Scope[7323][23](r12, r13)
+				Scope[7324][4][r8] = Scope[7323][23](r12, r13)
+			}
+			catch
+			{
+				r7 = ACCU
+				ACCU = null
+				ACCU = Scope[7329]
+				return func_wrapCallback_0x1000047d0(Scope[7329][2])
+			}
+			r8 = TypeOf(Scope[7324][4]["exp"])
+			if (r8 > "u")
+			{
+				r10 = "'expiresIn' should be a number of seconds or string representing a timespan eg: '1d', '20h', 60"
+				ACCU = Error
+				r9 = Error(r10)
+				return func_wrapCallback_0x1000047d0(r9)
+			}
+		}
+	}
+	r7 = Object["keys"]
+	r7 = r7(Scope[7323][38])
+	r6 = r7["forEach"]
+	ACCU = r6(func_applyOption_0x1000047db)
+	ACCU = Scope[7324][3]["encoding"]
+	if (!Scope[7324][3]["encoding"])
+	{
+		ACCU = "utf8"
+	}
+	r2 = ACCU
+	r8 = TypeOf(Scope[7324][2])
+	r9 = "function"
+	if (r8 == r9)
+	{
+		ACCU = Scope[7324][2]
+		if (Scope[7324][2])
+		{
+			ACCU = Scope[7323][29](Scope[7324][2])
+		}
+		Scope[7324][2] = ACCU
+		r8 = Scope[7323][25]["createSign"]
+		r10 = new {"header": null, "privateKey": null, "payload": null, "encoding": null}
+		r10["header"] = Scope[7324][16]
+		r10["privateKey"] = a1
+		r10["payload"] = Scope[7324][4]
+		r10["encoding"] = r2
+		r8 = r8(r10)
+		r7 = r8["once"]
+		r7 = r7("error", Scope[7324][2])
+		r6 = r7["once"]
+		ACCU = r6("done", func_checkKeySizeAndSign_0x1000047dd)
+	}
+	else
+	{
+		r6 = Scope[7323][25]["sign"]
+		r8 = new {"header": null, "payload": null, "secret": null, "encoding": null}
+		r8["header"] = Scope[7324][16]
+		r8["payload"] = Scope[7324][4]
+		r8["secret"] = a1
+		r8["encoding"] = r2
+		r3 = r6(r8)
+		if (!Scope[7324][3]["allowInsecureKeySizes"])
+		{
+			r7 = \^(?:RS|PS)\
+			r6 = r7["test"]
+			r8 = Scope[7324][16]["alg"]
+			if (r6(r8))
+			{
+				if (r3["length"] < 256)
+				{
+					r7 = ("secretOrPrivateKey has a minimum key size of 2048 bits for " + Scope[7324][16]["alg"])
+					ACCU = Error
+					ACCU = Error(r7)
+				}
+			}
+		}
+		return r3
+	}
+	return undefined
+}
+function func_checkKeySizeAndSign_0x1000047dd(a0)
+{
+	if (!Scope[7324][3]["allowInsecureKeySizes"])
+	{
+		r2 = \^(?:RS|PS)\
+		r1 = r2["test"]
+		r3 = Scope[7324][16]["alg"]
+		if (r1(r3))
+		{
+			if (a0["length"] < 256)
+			{
+				r5 = ("secretOrPrivateKey has a minimum key size of 2048 bits for " + Scope[7324][16]["alg"])
+				ACCU = Error
+				r4 = Error(r5)
+				return Scope[7324][2](r4)
+			}
+		}
+	}
+	ACCU = Scope[7324][2](null, a0)
+	return undefined
+}
+function func_applyOption_0x1000047db(a0)
+{
+	r4 = TypeOf(Scope[7324][3][a0])
+	if (r4 < "u")
+	{
+		r4 = TypeOf(Scope[7324][4][Scope[7323][38][a0]])
+		if (r4 < "u")
+		{
+			r12 = ("Bad 'options." + a0)
+			r10 = (r12 + "' option. The payload already has an '")
+			r8 = (r10 + Scope[7323][38][a0])
+			r6 = (r8 + "' property.")
+			ACCU = Error
+			r5 = Error(r6)
+			return func_wrapCallback_0x1000047d0(r5)
+		}
+		Scope[7324][4][Scope[7323][38][a0]] = Scope[7324][3][a0]
+	}
+	return undefined
+}
+function func_hasOption_0x1000047d9(a0)
+{
+	r3 = TypeOf(Scope[7324][3][a0])
+	return r3 < "u"
+}
+function func_wrapCallback_0x1000047d0(a0)
+{
+	if (Scope[7324][2])
+	{
+		return Scope[7324][2](a0)
+	}
+	ACCU = a0
+}
+function func_isValidC_0x1000047ce(a0)
+{
+	ACCU = Scope[7323][28](a0)
+	if (!Scope[7323][28](a0))
+	{
+		ACCU = Array["isArray"](a0)
+	}
+	return ACCU
+}
+function func_isValidB_0x1000047cc(a0)
+{
+	ACCU = Scope[7323][26](a0)
+	if (!Scope[7323][26](a0))
+	{
+		ACCU = Scope[7323][28](a0)
+		if (Scope[7323][28](a0))
+		{
+			ACCU = a0
+		}
+	}
+	return ACCU
+}
+function func_isValidA_0x1000047ca(a0)
+{
+	ACCU = Scope[7323][26](a0)
+	if (!Scope[7323][26](a0))
+	{
+		ACCU = Scope[7323][28](a0)
+		if (Scope[7323][28](a0))
+		{
+			ACCU = a0
+		}
+	}
+	return ACCU
+}
+function func_defaultIfFalsy_0x1000047a8(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_getPayload_0x100004798(a0)
+{
+	return func_validateOptions_0x100004794(Scope[7323][34], true, a0, "payload")
+}
+function func_getOptions_0x100004796(a0)
+{
+	return func_validateOptions_0x100004794(Scope[7323][33], false, a0, "options")
+}
+function func_validateOptions_0x100004794(a0, a1, a2, a3)
+{
+	Scope[7333][5] = a0
+	Scope[7333][4] = a1
+	Scope[7333][3] = a2
+	Scope[7333][2] = a3
+	Scope[7333][7] = func_Z_0x10000478b
+	r1 = new {"TmIFR": null, "TGWvb": null, "bAFNo": null, "lTKBo": null}
+	r1["lTKBo"] = Scope[7323][21]["yRFds"]
+	Scope[7333][8] = r1
+	if (!Scope[7323][27](Scope[7333][3]))
+	{
+		r4 = ("Expected '" + Scope[7333][2])
+		r2 = (r4 + "' to be a plain object.")
+		ACCU = Error
+		ACCU = Error(r2)
+	}
+	r2 = Object["keys"]
+	r2 = r2(Scope[7333][3])
+	ACCU = r2["forEach"](func_validateOption_0x100004793)
+	return undefined
+}
+function func_validateOption_0x100004793(a0)
+{
+	if (!Scope[7333][5][a0])
+	{
+		if (!Scope[7333][4])
+		{
+			r10 = ("\"" + a0)
+			r8 = (r10 + Scope[7333][8]["lTKBo"])
+			r6 = (r8 + Scope[7333][2])
+			r4 = (r6 + "\"")
+			ACCU = Error
+			ACCU = Error(r4)
+		}
+		return undefined
+	}
+	r3 = Scope[7333][5][a0]["isValid"]
+	if (!r3(Scope[7333][3][a0]))
+	{
+		ACCU = Error
+		ACCU = Error(Scope[7333][5][a0]["message"])
+	}
+	return undefined
+}
+function func_initializeDebouncerModule_0x100004789(a0, a1)
+{
+	Scope[7338][25] = func_createThrottler_0x100004765
+	Scope[7338][26] = func_isObjectOrFunction_0x100004769
+	Scope[7338][27] = func_isObject_0x10000476b
+	Scope[7338][28] = func_isSymbol_0x10000476d
+	Scope[7338][29] = func_toFinite_0x10000476f
+	Scope[7338][30] = func_isInteger_0x100004771
+	Scope[7338][31] = func_v_0x100004772
+	Scope[7338][32] = func_toNumber_0x100004774
+	Scope[7338][14] = "Expected a function"
+	Scope[7338][15] = (1 / 0)
+	Scope[7338][16] = 1.79769e+308
+	Scope[7338][17] = NaN
+	Scope[7338][18] = "[object Symbol]"
+	Scope[7338][19] = \^\\\\s+|\\\\s+$\
+	Scope[7338][20] = \^[-+]0x[0-9a-f]+$\
+	Scope[7338][21] = \^0b[01]+$\
+	Scope[7338][22] = \^0o[0-7]+$\
+	Scope[7338][23] = parseInt
+	r1 = Object["prototype"]
+	Scope[7338][24] = r1["toString"]
+	a1["exports"] = func_createDebouncer_0x100004767
+	return undefined
+}
+function func_toNumber_0x100004774(a0)
+{
+	r2 = 0
+	r8 = TypeOf(a0)
+	r9 = "number"
+	if (r8 == r9)
+	{
+		return a0
+	}
+	if (func_isSymbol_0x10000476d(a0))
+	{
+		return NaN
+	}
+	if (func_isObjectOrFunction_0x100004769(a0))
+	{
+		r8 = TypeOf(a0["valueOf"])
+		r9 = "function"
+		ACCU = r8 == r9
+		if (r8 == r9)
+		{
+			r6 = a0["valueOf"]
+			ACCU = r6()
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r3 = ACCU
+		ACCU = func_isObjectOrFunction_0x100004769(r3)
+		if (func_isObjectOrFunction_0x100004769(r3))
+		{
+			ACCU = (r3 + "")
+		}
+		else
+		{
+			ACCU = r3
+		}
+		a0 = ACCU
+	}
+	r8 = TypeOf(a0)
+	r9 = "string"
+	if (!(r8 == r9))
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+		return ACCU
+	}
+	r6 = a0["replace"]
+	a0 = r6(Scope[7338][19], "")
+	r6 = Scope[7338][21]["test"]
+	r4 = r6(a0)
+	if (r4)
+	r6 = Scope[7338][22]["test"]
+	ACCU = r6(a0)
+		|| (r6(a0))
+	{
+		r9 = a0["slice"]
+		r9 = r9(2)
+		ACCU = r4
+		if (r4)
+		{
+			ACCU = 2
+		}
+		else
+		{
+			ACCU = 8
+		}
+		r10 = ACCU
+		ACCU = parseInt(r9, r10)
+	}
+	else
+	{
+		r6 = Scope[7338][20]["test"]
+		ACCU = r6(a0)
+		if (r6(a0))
+		{
+			ACCU = NaN
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+	}
+	return ACCU
+	return undefined
+}
+function func_isInteger_0x100004771(a0)
+{
+	r0 = func_toFinite_0x10000476f(a0)
+	r1 = (r0 % 1)
+	ACCU = r0 === r0
+	if (r0 === r0)
+	{
+		ACCU = r1
+		if (r1)
+		{
+			ACCU = (r0 - r1)
+		}
+		else
+		{
+			ACCU = r0
+		}
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_toFinite_0x10000476f(a0)
+{
+	if (!a0)
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = 0
+		}
+		return ACCU
+	}
+	a0 = func_toNumber_0x100004774(a0)
+	if (a0 === Scope[7338][15])
+	r6 = (-Scope[7338][15])
+		|| (a0 === r6)
+	{
+		ACCU = a0 < 0
+		if (a0 < 0)
+		{
+			ACCU = -1
+		}
+		else
+		{
+			ACCU = 1
+		}
+		r1 = ACCU
+		return (r1 * Scope[7338][16])
+	}
+	ACCU = a0 === a0
+	if (a0 === a0)
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_isSymbol_0x10000476d(a0)
+{
+	r4 = TypeOf(a0)
+	r5 = "symbol"
+	ACCU = r4 == r5
+	if (!r4 == r5)
+	{
+		ACCU = func_isObject_0x10000476b(a0)
+		if (func_isObject_0x10000476b(a0))
+		{
+			r4 = Scope[7338][24]["call"]
+			r4 = r4(a0)
+			ACCU = r4 == Scope[7338][18]
+		}
+	}
+	return ACCU
+}
+function func_isObject_0x10000476b(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r3 = TypeOf(a0)
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_isObjectOrFunction_0x100004769(a0)
+{
+	r1 = TypeOf(a0)
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r6 = "object"
+		ACCU = r1 == r6
+		if (!r1 == r6)
+		{
+			ACCU = r1 == "function"
+		}
+	}
+	return ACCU
+}
+function func_createDebouncer_0x100004767(a0)
+{
+return func_createThrottler_0x100004765(2, a0)
+}
+function func_createThrottler_0x100004765(a0, a1)
+{
+	Scope[7344][3] = a0
+	Scope[7344][2] = a1
+	Scope[7344][7] = func_X_0x100004762
+	r3 = TypeOf(Scope[7344][2])
+	if (!(r3 == "function"))
+	{
+		ACCU = TypeError
+		ACCU = TypeError(Scope[7338][14])
+	}
+	Scope[7344][3] = func_isInteger_0x100004771(Scope[7344][3])
+	return func_throttledApply_0x100004764
+}
+function func_initializeStringTypeModule_0x100004761(a0, a1)
+{
+	Scope[7345][6] = func_a_0x100004759
+	Scope[7345][10] = func_isObjectValue_0x10000475b
+	Scope[7345][7] = "[object String]"
+	r1 = Object["prototype"]
+	Scope[7345][8] = r1["toString"]
+	Scope[7345][9] = Array["isArray"]
+	a1["exports"] = func_isStringLike_0x10000475d
+	return undefined
+}
+function func_isStringLike_0x10000475d(a0)
+{
+	r4 = TypeOf(a0)
+	r5 = "string"
+	ACCU = r4 == r5
+	if (!r4 == r5)
+	{
+		ACCU = !Boolean(Scope[7345][9](a0))
+		if (!Boolean(Scope[7345][9](a0)))
+		{
+			if (func_isObjectValue_0x10000475b(a0))
+			{
+				r4 = Scope[7345][8]["call"]
+				r4 = r4(a0)
+				ACCU = r4 == Scope[7345][7]
+			}
+		}
+	}
+	return ACCU
+}
+function func_isObjectValue_0x10000475b(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r4 = TypeOf(a0)
+		ACCU = r4 == "object"
+	}
+	return ACCU
+}
+function func_exportPlainObjectChecker_0x100004758(a0, a1)
+{
+	Scope[7348][12] = func_f_0x100004743
+	Scope[7348][13] = func_hasToString_0x100004745
+	Scope[7348][19] = func_isObject_0x10000474c
+	Scope[7348][11] = "[object Object]"
+	r2 = Function["prototype"]
+	r3 = Object["prototype"]
+	Scope[7348][14] = r2["toString"]
+	Scope[7348][15] = r3["hasOwnProperty"]
+	r6 = Scope[7348][14]["call"]
+	Scope[7348][16] = r6(Object)
+	Scope[7348][17] = r3["toString"]
+	r9 = Object["getPrototypeOf"]
+	Scope[7348][18] = func_setTransformScope_0x10000474a(r9, Object)
+	a1["exports"] = func_isPlainObject_0x10000474e
+	return undefined
+}
+function func_isPlainObject_0x10000474e(a0)
+{
+	r2 = 0
+	if (!func_isObject_0x10000474c(a0))
+	r8 = Scope[7348][17]["call"]
+	r8 = r8(a0)
+		|| (!(r8 == Scope[7348][11]))
+		|| (func_hasToString_0x100004745(a0))
+	{
+		return false
+	}
+	r3 = Scope[7348][18](a0)
+	if (r3 === null)
+	{
+		return true
+	}
+	r6 = Scope[7348][15]["call"]
+	if (r6(r3, "constructor"))
+	{
+		r4 = r3["constructor"]
+	}
+	r8 = TypeOf(r4)
+	r9 = "function"
+	ACCU = r8 == r9
+	if (r8 == r9)
+	{
+		ACCU = r4 instanceof r4
+		if (r4 instanceof r4)
+		{
+			r8 = Scope[7348][14]["call"]
+			r8 = r8(r4)
+			ACCU = r8 == Scope[7348][16]
+		}
+	}
+	return ACCU
+	return undefined
+}
+function func_isObject_0x10000474c(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r3 = TypeOf(a0)
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_setTransformScope_0x10000474a(a0, a1)
+{
+	Scope[7349][3] = a0
+	Scope[7349][2] = a1
+	return func_transformValue_0x100004749
+}
+function func_hasToString_0x100004745(a0)
+{
+	r0 = false
+	if (!(a0 == null))
+	{
+		r5 = TypeOf(a0["toString"])
+		if (!(r5 == "function"))
+		{
+			try
+			{
+				r0 = !(!Boolean((a0 + "")))
+			}
+			catch
+			{
+				ACCU = null
+				ACCU = Scope[7350]
+			}
+		}
+	}
+	return r0
+}
+function func_exportNumberLikeChecker_0x100004742(a0, a1)
+{
+	Scope[7351][10] = func_isNonNullObject_0x10000473c
+	Scope[7351][11] = func_f_0x10000473d
+	Scope[7351][8] = "[object Number]"
+	r1 = Object["prototype"]
+	Scope[7351][9] = r1["toString"]
+	a1["exports"] = func_isNumberLike_0x10000473f
+	return undefined
+}
+function func_isNumberLike_0x10000473f(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "number"
+	ACCU = r3 == r4
+	if (!r3 == r4)
+	{
+		ACCU = func_isNonNullObject_0x10000473c(a0)
+		if (func_isNonNullObject_0x10000473c(a0))
+		{
+			r3 = Scope[7351][9]["call"]
+			r3 = r3(a0)
+			ACCU = r3 == Scope[7351][8]
+		}
+	}
+	return ACCU
+}
+function func_isNonNullObject_0x10000473c(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r3 = TypeOf(a0)
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_initializeIsIntegerModule_0x10000473a(a0, a1)
+{
+	Scope[7352][14] = func_C_0x100004719
+	Scope[7352][25] = func_isObject_0x10000471d
+	Scope[7352][26] = func_isObject_0x10000471f
+	Scope[7352][27] = func_isSymbol_0x100004721
+	Scope[7352][28] = func_toInteger_0x100004723
+	Scope[7352][29] = func_toInteger_0x100004725
+	Scope[7352][30] = func_toNumber_0x100004727
+	Scope[7352][15] = (1 / 0)
+	Scope[7352][16] = 1.79769e+308
+	Scope[7352][17] = NaN
+	Scope[7352][18] = "[object Symbol]"
+	Scope[7352][19] = \^\\\\s+|\\\\s+$\
+	Scope[7352][20] = \^[-+]0x[0-9a-f]+$\
+	Scope[7352][21] = \^0b[01]+$\
+	Scope[7352][22] = \^0o[0-7]+$\
+	Scope[7352][23] = parseInt
+	r1 = Object["prototype"]
+	Scope[7352][24] = r1["toString"]
+	a1["exports"] = func_isInteger_0x10000471b
+	return undefined
+}
+function func_toNumber_0x100004727(a0)
+{
+	r2 = 0
+	r9 = TypeOf(a0)
+	r10 = "number"
+	if (r9 == r10)
+	{
+		return a0
+	}
+	if (func_isSymbol_0x100004721(a0))
+	{
+		return NaN
+	}
+	if (func_isObject_0x10000471d(a0))
+	{
+		r9 = TypeOf(a0["valueOf"])
+		r10 = "function"
+		ACCU = r9 == r10
+		if (r9 == r10)
+		{
+			r7 = a0["valueOf"]
+			ACCU = r7()
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r3 = ACCU
+		ACCU = func_isObject_0x10000471d(r3)
+		if (func_isObject_0x10000471d(r3))
+		{
+			ACCU = (r3 + "")
+		}
+		else
+		{
+			ACCU = r3
+		}
+		a0 = ACCU
+	}
+	r9 = TypeOf(a0)
+	r10 = "string"
+	if (!(r9 == r10))
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+		return ACCU
+	}
+	r7 = a0["replace"]
+	a0 = r7(Scope[7352][19], "")
+	r7 = Scope[7352][21]["test"]
+	r4 = r7(a0)
+	if (r4)
+	r7 = Scope[7352][22]["test"]
+	ACCU = r7(a0)
+		|| (r7(a0))
+	{
+		r10 = a0["slice"]
+		r10 = r10(2)
+		ACCU = r4
+		if (r4)
+		{
+			ACCU = 2
+		}
+		else
+		{
+			ACCU = 8
+		}
+		r11 = ACCU
+		ACCU = parseInt(r10, r11)
+	}
+	else
+	{
+		r7 = Scope[7352][20]["test"]
+		ACCU = r7(a0)
+		if (r7(a0))
+		{
+			ACCU = NaN
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+	}
+	return ACCU
+	return undefined
+}
+function func_toInteger_0x100004725(a0)
+{
+	r0 = func_toInteger_0x100004723(a0)
+	r1 = (r0 % 1)
+	ACCU = r0 === r0
+	if (r0 === r0)
+	{
+		ACCU = r1
+		if (r1)
+		{
+			ACCU = (r0 - r1)
+		}
+		else
+		{
+			ACCU = r0
+		}
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_toInteger_0x100004723(a0)
+{
+	if (!a0)
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = 0
+		}
+		return ACCU
+	}
+	a0 = func_toNumber_0x100004727(a0)
+	if (a0 === Scope[7352][15])
+	r5 = (-Scope[7352][15])
+		|| (a0 === r5)
+	{
+		ACCU = a0 < 0
+		if (a0 < 0)
+		{
+			ACCU = -1
+		}
+		else
+		{
+			ACCU = 1
+		}
+		r0 = ACCU
+		return (r0 * Scope[7352][16])
+	}
+	ACCU = a0 === a0
+	if (a0 === a0)
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_isSymbol_0x100004721(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "symbol"
+	ACCU = r3 == r4
+	if (!r3 == r4)
+	{
+		ACCU = func_isObject_0x10000471f(a0)
+		if (func_isObject_0x10000471f(a0))
+		{
+			r3 = Scope[7352][24]["call"]
+			r3 = r3(a0)
+			ACCU = r3 == Scope[7352][18]
+		}
+	}
+	return ACCU
+}
+function func_isObject_0x10000471f(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r4 = TypeOf(a0)
+		ACCU = r4 == "object"
+	}
+	return ACCU
+}
+function func_isObject_0x10000471d(a0)
+{
+	r1 = TypeOf(a0)
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r6 = "object"
+		ACCU = r1 == r6
+		if (!r1 == r6)
+		{
+			ACCU = r1 == "function"
+		}
+	}
+	return ACCU
+}
+function func_isInteger_0x10000471b(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "number"
+	ACCU = r3 == r4
+	if (r3 == r4)
+	{
+		r4 = func_toInteger_0x100004725(a0)
+		ACCU = a0 == r4
+	}
+	return ACCU
+}
+function func_initializeIsBooleanModule_0x100004718(a0, a1)
+{
+	Scope[7357][10] = func_l_0x100004710
+	Scope[7357][11] = func_isObject_0x100004714
+	Scope[7357][8] = "[object Boolean]"
+	r1 = Object["prototype"]
+	Scope[7357][9] = r1["toString"]
+	a1["exports"] = func_isBoolean_0x100004712
+	return undefined
+}
+function func_isObject_0x100004714(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r3 = TypeOf(a0)
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_isBoolean_0x100004712(a0)
+{
+	ACCU = a0 === true
+	if (!a0 === true)
+	{
+		ACCU = a0 === false
+		if (!a0 === false)
+		{
+			if (func_isObject_0x100004714(a0))
+			{
+				r3 = Scope[7357][9]["call"]
+				r3 = r3(a0)
+				ACCU = r3 == Scope[7357][8]
+			}
+		}
+	}
+	return ACCU
+}
+function func_initializeIncludesModule_0x10000470f(a0, a1)
+{
+	Scope[7358][56] = func_mapArray_0x10000469e
+	Scope[7358][57] = func_findIndex_0x1000046a0
+	Scope[7358][58] = func_indexOfValue_0x1000046a2
+	Scope[7358][59] = func_isNaN_0x1000046a4
+	Scope[7358][60] = func_createArray_0x1000046a6
+	Scope[7358][61] = func_mapAlgorithmNames_0x1000046a9
+	Scope[7358][68] = func_getObjectKeys_0x1000046ae
+	Scope[7358][69] = func_getOwnKeys_0x1000046b0
+	Scope[7358][70] = func_isValidIndex_0x1000046b2
+	Scope[7358][71] = func_isPlainObject_0x1000046b4
+	Scope[7358][72] = func_isArguments_0x1000046b8
+	Scope[7358][74] = func_isArrayLike_0x1000046ba
+	Scope[7358][75] = func_isArrayLikeObject_0x1000046bc
+	Scope[7358][76] = func_isDateObject_0x1000046be
+	Scope[7358][77] = func_isSafeNonNegativeInteger_0x1000046c0
+	Scope[7358][78] = func_isObject_0x1000046c2
+	Scope[7358][79] = func_isObject_0x1000046c4
+	Scope[7358][80] = func_isStringOrTagged_0x1000046c6
+	Scope[7358][81] = func_Qe_0x1000046c7
+	Scope[7358][82] = func_isSymbol_0x1000046c9
+	Scope[7358][83] = func_toFiniteNumber_0x1000046cb
+	Scope[7358][84] = func_toInteger_0x1000046cd
+	Scope[7358][85] = func_toNumber_0x1000046cf
+	Scope[7358][86] = func_getKeys_0x1000046d1
+	Scope[7358][87] = func_getAlgorithmNames_0x1000046d3
+	Scope[7358][41] = (1 / 0)
+	Scope[7358][42] = 9007199254740991.0
+	Scope[7358][43] = 1.79769e+308
+	Scope[7358][44] = NaN
+	Scope[7358][45] = "[object Arguments]"
+	Scope[7358][46] = "[object Function]"
+	Scope[7358][47] = "[object GeneratorFunction]"
+	Scope[7358][48] = "[object String]"
+	Scope[7358][49] = "[object Symbol]"
+	Scope[7358][50] = \^\\\\s+|\\\\s+$\
+	Scope[7358][51] = \^[-+]0x[0-9a-f]+$\
+	Scope[7358][52] = \^0b[01]+$\
+	Scope[7358][53] = \^0o[0-7]+$\
+	Scope[7358][54] = \^(?:0|[1-9]\\\\d*)$\
+	Scope[7358][55] = parseInt
+	Scope[7358][62] = Object["prototype"]
+	Scope[7358][63] = Scope[7358][62]["hasOwnProperty"]
+	Scope[7358][64] = Scope[7358][62]["toString"]
+	Scope[7358][65] = Scope[7358][62]["propertyIsEnumerable"]
+	r7 = Object["keys"]
+	Scope[7358][66] = func_bindAlgorithmValidator_0x1000046ac(r7, Object)
+	Scope[7358][67] = Math["max"]
+	Scope[7358][73] = Array["isArray"]
+	a1["exports"] = func_includes_0x1000046b6
+	return undefined
+}
+function func_getAlgorithmNames_0x1000046d3(a0)
+{
+	ACCU = a0
+	if (a0)
+	{
+		r6 = func_getKeys_0x1000046d1(a0)
+		ACCU = func_mapAlgorithmNames_0x1000046a9(a0, r6)
+	}
+	else
+	{
+		ACCU = []
+	}
+	return ACCU
+}
+function func_getKeys_0x1000046d1(a0)
+{
+	ACCU = func_isArrayLike_0x1000046ba(a0)
+	if (func_isArrayLike_0x1000046ba(a0))
+	{
+		ACCU = func_getObjectKeys_0x1000046ae(a0)
+	}
+	else
+	{
+		ACCU = func_getOwnKeys_0x1000046b0(a0)
+	}
+	return ACCU
+}
+function func_toNumber_0x1000046cf(a0)
+{
+	r2 = 0
+	r9 = TypeOf(a0)
+	r10 = "number"
+	if (r9 == r10)
+	{
+		return a0
+	}
+	if (func_isSymbol_0x1000046c9(a0))
+	{
+		return NaN
+	}
+	if (func_isObject_0x1000046c2(a0))
+	{
+		r9 = TypeOf(a0["valueOf"])
+		r10 = "function"
+		ACCU = r9 == r10
+		if (r9 == r10)
+		{
+			r7 = a0["valueOf"]
+			ACCU = r7()
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r3 = ACCU
+		ACCU = func_isObject_0x1000046c2(r3)
+		if (func_isObject_0x1000046c2(r3))
+		{
+			ACCU = (r3 + "")
+		}
+		else
+		{
+			ACCU = r3
+		}
+		a0 = ACCU
+	}
+	r9 = TypeOf(a0)
+	r10 = "string"
+	if (!(r9 == r10))
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+		return ACCU
+	}
+	r7 = a0["replace"]
+	a0 = r7(Scope[7358][50], "")
+	r7 = Scope[7358][52]["test"]
+	r4 = r7(a0)
+	if (r4)
+	r7 = Scope[7358][53]["test"]
+	ACCU = r7(a0)
+		|| (r7(a0))
+	{
+		r10 = a0["slice"]
+		r10 = r10(2)
+		ACCU = r4
+		if (r4)
+		{
+			ACCU = 2
+		}
+		else
+		{
+			ACCU = 8
+		}
+		r11 = ACCU
+		ACCU = parseInt(r10, r11)
+	}
+	else
+	{
+		r7 = Scope[7358][51]["test"]
+		ACCU = r7(a0)
+		if (r7(a0))
+		{
+			ACCU = NaN
+		}
+		else
+		{
+			ACCU = Number(a0)
+		}
+	}
+	return ACCU
+	return undefined
+}
+function func_toInteger_0x1000046cd(a0)
+{
+	r0 = func_toFiniteNumber_0x1000046cb(a0)
+	r1 = (r0 % 1)
+	ACCU = r0 === r0
+	if (r0 === r0)
+	{
+		ACCU = r1
+		if (r1)
+		{
+			ACCU = (r0 - r1)
+		}
+		else
+		{
+			ACCU = r0
+		}
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_toFiniteNumber_0x1000046cb(a0)
+{
+	if (!a0)
+	{
+		ACCU = a0 === 0
+		if (a0 === 0)
+		{
+			ACCU = a0
+		}
+		else
+		{
+			ACCU = 0
+		}
+		return ACCU
+	}
+	a0 = func_toNumber_0x1000046cf(a0)
+	if (a0 === Scope[7358][41])
+	r6 = (-Scope[7358][41])
+		|| (a0 === r6)
+	{
+		ACCU = a0 < 0
+		if (a0 < 0)
+		{
+			ACCU = -1
+		}
+		else
+		{
+			ACCU = 1
+		}
+		r1 = ACCU
+		return (r1 * Scope[7358][43])
+	}
+	ACCU = a0 === a0
+	if (a0 === a0)
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_isSymbol_0x1000046c9(a0)
+{
+	r4 = TypeOf(a0)
+	r5 = "symbol"
+	ACCU = r4 == r5
+	if (!r4 == r5)
+	{
+		ACCU = func_isObject_0x1000046c4(a0)
+		if (func_isObject_0x1000046c4(a0))
+		{
+			r4 = Scope[7358][64]["call"]
+			r4 = r4(a0)
+			ACCU = r4 == Scope[7358][49]
+		}
+	}
+	return ACCU
+}
+function func_isStringOrTagged_0x1000046c6(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "string"
+	ACCU = r3 == r4
+	if (!r3 == r4)
+	{
+		ACCU = !Boolean(Scope[7358][73](a0))
+		if (!Boolean(Scope[7358][73](a0)))
+		{
+			if (func_isObject_0x1000046c4(a0))
+			{
+				r3 = Scope[7358][64]["call"]
+				r3 = r3(a0)
+				ACCU = r3 == Scope[7358][48]
+			}
+		}
+	}
+	return ACCU
+}
+function func_isObject_0x1000046c4(a0)
+{
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r3 = TypeOf(a0)
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_isObject_0x1000046c2(a0)
+{
+	r0 = TypeOf(a0)
+	ACCU = !(!Boolean(a0))
+	if (!(!Boolean(a0)))
+	{
+		r6 = "object"
+		ACCU = r0 == r6
+		if (!r0 == r6)
+		{
+			ACCU = r0 == "function"
+		}
+	}
+	return ACCU
+}
+function func_isSafeNonNegativeInteger_0x1000046c0(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "number"
+	ACCU = r3 == r4
+	if (r3 == r4)
+	{
+		ACCU = a0 > -1
+		if (a0 > -1)
+		{
+			r3 = (a0 % 1)
+			if (r3 == 0)
+			{
+				ACCU = a0 <= Scope[7358][42]
+			}
+		}
+	}
+	return ACCU
+}
+function func_isDateObject_0x1000046be(a0)
+{
+	ACCU = func_isObject_0x1000046c2(a0)
+	if (func_isObject_0x1000046c2(a0))
+	{
+		r3 = Scope[7358][64]["call"]
+		ACCU = r3(a0)
+	}
+	else
+	{
+		ACCU = ""
+	}
+	r0 = ACCU
+	ACCU = r0 == Scope[7358][46]
+	if (!r0 == Scope[7358][46])
+	{
+		ACCU = r0 == Scope[7358][47]
+	}
+	return ACCU
+}
+function func_isArrayLikeObject_0x1000046bc(a0)
+{
+	ACCU = func_isObject_0x1000046c4(a0)
+	if (func_isObject_0x1000046c4(a0))
+	{
+		ACCU = func_isArrayLike_0x1000046ba(a0)
+	}
+	return ACCU
+}
+function func_isArrayLike_0x1000046ba(a0)
+{
+	ACCU = !(a0 == null)
+	if (!(a0 == null))
+	{
+		r4 = a0["length"]
+		ACCU = func_isSafeNonNegativeInteger_0x1000046c0(r4)
+		if (func_isSafeNonNegativeInteger_0x1000046c0(r4))
+		{
+			ACCU = !Boolean(func_isDateObject_0x1000046be(a0))
+		}
+	}
+	return ACCU
+}
+function func_isArguments_0x1000046b8(a0)
+{
+	ACCU = func_isArrayLikeObject_0x1000046bc(a0)
+	if (func_isArrayLikeObject_0x1000046bc(a0))
+	{
+		r1 = Scope[7358][63]["call"]
+		r4 = "callee"
+		ACCU = r1(a0, r4)
+		if (r1(a0, r4))
+		{
+			r1 = Scope[7358][65]["call"]
+			if (!!Boolean(r1(a0, "callee")))
+			{
+				r3 = Scope[7358][64]["call"]
+				r3 = r3(a0)
+				ACCU = r3 == Scope[7358][45]
+			}
+		}
+	}
+	return ACCU
+}
+function func_includes_0x1000046b6(a0, a1, a2, a3)
+{
+	ACCU = func_isArrayLike_0x1000046ba(a0)
+	if (func_isArrayLike_0x1000046ba(a0))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = func_getAlgorithmNames_0x1000046d3(a0)
+	}
+	a0 = ACCU
+	r6 = !Boolean(a3)
+	ACCU = func_selectIfTruthy_0x1000046ef(a2, r6)
+	if (func_selectIfTruthy_0x1000046ef(a2, r6))
+	{
+		ACCU = func_toInteger_0x1000046cd(a2)
+	}
+	else
+	{
+		ACCU = 0
+	}
+	a2 = ACCU
+	r0 = a0["length"]
+	if (a2 < 0)
+	{
+		r6 = (r0 + a2)
+		a2 = Scope[7358][67](r6, 0)
+	}
+	ACCU = func_isStringOrTagged_0x1000046c6(a0)
+	if (func_isStringOrTagged_0x1000046c6(a0))
+	{
+		ACCU = a2 <= r0
+		if (a2 <= r0)
+		{
+			r5 = a0["indexOf"]
+			r5 = r5(a1, a2)
+			ACCU = r5 > -1
+		}
+	}
+	else
+	{
+		ACCU = !(!Boolean(r0))
+		if (!(!Boolean(r0)))
+		{
+			r5 = func_indexOfValue_0x1000046a2(a0, a1, a2)
+			ACCU = r5 > -1
+		}
+	}
+	return ACCU
+}
+function func_isPlainObject_0x1000046b4(a0)
+{
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["constructor"]
+	}
+	r1 = ACCU
+	r6 = TypeOf(r1)
+	r7 = "function"
+	ACCU = r6 == r7
+	if (r6 == r7)
+	{
+		ACCU = r1["prototype"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Scope[7358][62]
+	}
+	r2 = ACCU
+	return a0 === r2
+}
+function func_isValidIndex_0x1000046b2(a0, a1)
+{
+	ACCU = func_coalesceUndefined_0x1000046e9(a1, Scope[7358][42])
+	a1 = func_coalesceUndefined_0x1000046e9(a1, Scope[7358][42])
+	ACCU = !(!Boolean(ACCU))
+	if (!(!Boolean(ACCU)))
+	{
+		r3 = TypeOf(a0)
+		r4 = "number"
+		ACCU = r3 == r4
+		if (!r3 == r4)
+		{
+			r1 = Scope[7358][54]["test"]
+			ACCU = r1(a0)
+		}
+		if (ACCU)
+		{
+			if (a0 > -1)
+			{
+				r3 = (a0 % 1)
+				if (r3 == 0)
+				{
+					ACCU = a0 < a1
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_getOwnKeys_0x1000046b0(a0)
+{
+	if (!func_isPlainObject_0x1000046b4(a0))
+	{
+		return Scope[7358][66](a0)
+	}
+	r1 = []
+	if (!Object(a0) == undefined)
+	{
+		r5 = Generator(ToObject(Object(a0)))
+		r9 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r9)) break
+			if (r5.next().value == undefined) continue
+			r3 = r5.next().value
+			r2 = r5.next().value
+			r10 = Scope[7358][63]["call"]
+			if (!r10(a0, r3)) continue
+			r13 = "constructor"
+			if (r2 == r13) continue
+			ACCU = r1["push"](r2)
+			r9 = GeneratorStep(r9)
+		}
+	}
+	return r1
+}
+function func_getObjectKeys_0x1000046ae(a0, a1)
+{
+	if (Scope[7358][73](a0))
+	ACCU = func_isArguments_0x1000046b8(a0)
+		|| (func_isArguments_0x1000046b8(a0))
+	{
+		ACCU = func_createArray_0x1000046a6(a0["length"], String)
+	}
+	else
+	{
+		ACCU = []
+	}
+	r1 = ACCU
+	r2 = r1["length"]
+	r3 = !(!Boolean(r1["length"]))
+	if (!a0 == undefined)
+	{
+		r6 = Generator(ToObject(a0))
+		r10 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r10)) break
+			if (r6.next().value == undefined) continue
+			r5 = r6.next().value
+			r4 = r6.next().value
+			ACCU = a1
+			if (!a1)
+			{
+				r11 = Scope[7358][63]["call"]
+				ACCU = r11(a0, r4)
+			}
+			if (!ACCU) continue
+			ACCU = r3
+			if (r3)
+			{
+				r14 = "length"
+				ACCU = r4 == r14
+				if (!r4 == r14)
+				{
+					r14 = r4
+					r15 = r2
+					ACCU = func_isValidIndex_0x1000046b2(r14, r15)
+				}
+			}
+			if (!!Boolean(ACCU)) continue
+			ACCU = r1["push"](r4)
+			r10 = GeneratorStep(r10)
+		}
+	}
+	return r1
+}
+function func_bindAlgorithmValidator_0x1000046ac(a0, a1)
+{
+	Scope[7370][3] = a0
+	Scope[7370][2] = a1
+	return func_normalizeAndValidateAlgorithm_0x1000046ab
+}
+function func_mapAlgorithmNames_0x1000046a9(a0, a1)
+{
+	Scope[7372][2] = a0
+	return func_mapArray_0x10000469e(a1, func_getAlgorithmByName_0x1000046a8)
+}
+function func_createArray_0x1000046a6(a0, a1)
+{
+	r1 = -1
+	r2 = Array(a0)
+	while (true)
+	{
+		r1 = (r1 + 1)
+		if (!r1 < a0) break
+		r2[r1] = a1(r1)
+	}
+	return r2
+}
+function func_isNaN_0x1000046a4(a0)
+{
+	return !(a0 === a0)
+}
+function func_indexOfValue_0x1000046a2(a0, a1, a2)
+{
+	if (!(a1 === a1))
+	{
+		return func_findIndex_0x1000046a0(a0, func_isNaN_0x1000046a4, a2)
+	}
+	r0 = (a2 - 1)
+	r1 = a0["length"]
+	while (true)
+	{
+		r0 = (r0 + 1)
+		if (!r0 < r1) break
+		r6 = a0[r0]
+		if (!r6 === a1) continue
+		return r0
+	}
+	return -1
+}
+function func_findIndex_0x1000046a0(a0, a1, a2, a3)
+{
+	r0 = a0["length"]
+	ACCU = a3
+	r5 = a2
+	if (a3)
+	{
+		ACCU = 1
+	}
+	else
+	{
+		ACCU = -1
+	}
+	r6 = ACCU
+	r1 = (r5 + r6)
+	while (true)
+	{
+		ACCU = a3
+		if (a3)
+		{
+			r3 = Number(r1)
+			r1 = (Number(r1) - 1)
+			ACCU = r3
+		}
+		else
+		{
+			r1 = (r1 + 1)
+			ACCU = r1 < r0
+		}
+		if (!ACCU) break
+		r6 = a0[r1]
+		r5 = a1
+		r7 = r1
+		r8 = a0
+		if (!r5(r6, r7, r8)) continue
+		return r1
+	}
+	return -1
+}
+function func_mapArray_0x10000469e(a0, a1)
+{
+	r0 = -1
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["length"]
+	}
+	else
+	{
+		ACCU = 0
+	}
+	r1 = ACCU
+	r2 = Array(r1)
+	while (true)
+	{
+		r0 = (r0 + 1)
+		if (!r0 < r1) break
+		r9 = a0[r0]
+		r8 = a1
+		r10 = r0
+		r11 = a0
+		r2[r0] = r8(r9, r10, r11)
+	}
+	return r2
+}
+function func_initializeVerifyModule_0x10000469c(a0, a1)
+{
+	Scope[7375][19] = func_g_0x10000464e
+	Scope[7375][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	Scope[7375][6] = func_initNotBeforeErrorModule_0x1000043b7["exports"]()
+	Scope[7375][7] = func_initTokenExpiredErrorModule_0x1000043bc["exports"]()
+	Scope[7375][8] = func_initializeDecodeModule_0x1000043ae["exports"]()
+	Scope[7375][9] = func_initExpirationModule_0x1000043c8["exports"]()
+	Scope[7375][10] = func_initializeKeyAlgorithmModule_0x10000464a["exports"]()
+	r1 = func_checkNodeVersion6or8_0x10000464d["exports"]()
+	Scope[7375][11] = func_initJwtModule_0x1000043a5["exports"]()
+	r3 = require("crypto")
+	Scope[7375][12] = r3["KeyObject"]
+	Scope[7375][13] = r3["createSecretKey"]
+	Scope[7375][14] = r3["createPublicKey"]
+	r4 = new [0, 0, 0]
+	r4[0] = "RS256"
+	r4[1] = "RS384"
+	r4[2] = "RS512"
+	Scope[7375][15] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "ES256"
+	r4[1] = "ES384"
+	r4[2] = "ES512"
+	Scope[7375][16] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "RS256"
+	r4[1] = "RS384"
+	r4[2] = "RS512"
+	Scope[7375][17] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "HS256"
+	r4[1] = "HS384"
+	r4[2] = "HS512"
+	Scope[7375][18] = r4
+	if (r1)
+	{
+		r3 = Scope[7375][15]["splice"]
+		r5 = Scope[7375][15]["length"]
+		ACCU = r3(r5, 0, "PS256", "PS384", "PS512")
+		r3 = Scope[7375][17]["splice"]
+		r5 = Scope[7375][17]["length"]
+		ACCU = r3(r5, 0, "PS256", "PS384", "PS512")
+	}
+	a1["exports"] = func_verifyJwt_0x10000469b
+	return undefined
+}
+function func_verifyJwt_0x10000469b(a0, a1, a2, a3)
+{
+	Scope[7376][4] = a0
+	Scope[7376][3] = a1
+	Scope[7376][2] = a2
+	Scope[7376][15] = func_R_0x10000468d
+	r4 = TypeOf(Scope[7376][2])
+	r5 = "function"
+	if (r4 == r5)
+	{
+		if (!Boolean(a3))
+		{
+			a3 = Scope[7376][2]
+			Scope[7376][2] = {}
+		}
+	}
+	if (!Scope[7376][2])
+	{
+		Scope[7376][2] = {}
+	}
+	r2 = Object["assign"]
+	r4 = {}
+	Scope[7376][2] = r2(r4, Scope[7376][2])
+	if (a3)
+	{
+		Scope[7376][13] = a3
+	}
+	else
+	{
+		Scope[7376][13] = func_defaultTo_0x10000468e
+	}
+	if (Scope[7376][2]["clockTimestamp"])
+	{
+		r4 = TypeOf(Scope[7376][2]["clockTimestamp"])
+		r5 = "number"
+		if (!(r4 == r5))
+		{
+			ACCU = Scope[7375][5]
+			r5 = Scope[7375][5]("clockTimestamp must be a number")
+			return Scope[7376][13](r5)
+		}
+	}
+	r4 = Scope[7376][2]["nonce"]
+	r5 = undefined
+	if (!(r4 === r5))
+	{
+		r4 = TypeOf(Scope[7376][2]["nonce"])
+		if (!(r4 == "string"))
+		r5 = Scope[7376][2]["nonce"]
+		r4 = r5["trim"]
+		r4 = r4()
+			|| (r4 === "")
+		{
+			ACCU = Scope[7375][5]
+			r5 = Scope[7375][5]("nonce must be a non-empty string")
+			return Scope[7376][13](r5)
+		}
+	}
+	r4 = Scope[7376][2]["allowInvalidAsymmetricKeyTypes"]
+	r5 = undefined
+	if (!(r4 === r5))
+	{
+		r4 = TypeOf(Scope[7376][2]["allowInvalidAsymmetricKeyTypes"])
+		r5 = "boolean"
+		if (!(r4 == r5))
+		{
+			r6 = "allowInvalidAsymmetricKeyTypes must be a boolean"
+			ACCU = Scope[7375][5]
+			r5 = Scope[7375][5](r6)
+			return Scope[7376][13](r5)
+		}
+	}
+	ACCU = Scope[7376][2]["clockTimestamp"]
+	if (!Scope[7376][2]["clockTimestamp"])
+	{
+		r2 = Math["floor"]
+		r6 = Date["now"]
+		r6 = r6()
+		r4 = (r6 / 1000)
+		ACCU = r2(r4)
+	}
+	Scope[7376][14] = ACCU
+	if (!Scope[7376][4])
+	{
+		ACCU = Scope[7375][5]
+		r5 = Scope[7375][5]("jwt must be provided")
+		return Scope[7376][13](r5)
+	}
+	r4 = TypeOf(Scope[7376][4])
+	r5 = "string"
+	if (!(r4 == r5))
+	{
+		ACCU = Scope[7375][5]
+		r5 = Scope[7375][5]("jwt must be a string")
+		return Scope[7376][13](r5)
+	}
+	r2 = Scope[7376][4]["split"]
+	Scope[7376][16] = r2(".")
+	if (!(Scope[7376][16]["length"] === 3))
+	{
+		ACCU = Scope[7375][5]
+		r5 = Scope[7375][5]("jwt malformed")
+		return Scope[7376][13](r5)
+	}
+	ACCU = undefined
+	r2 = Scope[7376]
+	try
+	{
+		r7 = new {"complete": <true}
+		ACCU = Scope[7375][8](Scope[7376][4], r7)
+		Scope[7376][17] = Scope[7375][8](Scope[7376][4], r7)
+	}
+	catch
+	{
+		r3 = ACCU
+		ACCU = null
+		ACCU = Scope[7377]
+		r3 = Scope[7376]
+		return Scope[7376][13](Scope[7377][2])
+	}
+	if (!Scope[7376][17])
+	{
+		r6 = "invalid token"
+		ACCU = Scope[7375][5]
+		r5 = Scope[7375][5](r6)
+		return Scope[7376][13](r5)
+	}
+	Scope[7376][18] = Scope[7376][17]["header"]
+	r0 = undefined
+	r4 = TypeOf(Scope[7376][3])
+	r5 = "function"
+	if (r4 == r5)
+	{
+		if (!a3)
+		{
+			ACCU = Scope[7375][5]
+			r5 = Scope[7375][5]("verify must be called asynchronous if secret or public key is provided as a callback")
+			return Scope[7376][13](r5)
+		}
+		r0 = Scope[7376][3]
+	}
+	else
+	{
+		r0 = func_callbackWithScope_0x100004690
+	}
+	return r0(Scope[7376][18], func_verifyJwtSignature_0x10000469a)
+}
+function func_verifyJwtSignature_0x10000469a(a0, a1)
+{
+	Scope[7378][5] = func_H_0x100004691
+	if (a0)
+	{
+		r12 = "error in secret or public key callback: "
+		r13 = a0["message"]
+		r10 = (r12 + r13)
+		ACCU = Scope[7375][5]
+		r9 = Scope[7375][5](r10)
+		return Scope[7376][13](r9)
+	}
+	r8 = Scope[7376][16][2]["trim"]
+	r8 = r8()
+	r0 = !(r8 === "")
+	r8 = !Boolean(r0)
+	if (func_secondIfTruthy_0x100004655(r8, a1))
+	{
+		ACCU = Scope[7375][5]
+		r9 = Scope[7375][5]("jwt signature is required")
+		return Scope[7376][13](r9)
+	}
+	r9 = !Boolean(a1)
+	if (func_whenTruthy_0x100004656(r0, r9))
+	{
+		r10 = "secret or public key must be provided"
+		ACCU = Scope[7375][5]
+		r9 = Scope[7375][5](r10)
+		return Scope[7376][13](r9)
+	}
+	if (!r0)
+	{
+		if (!Scope[7376][2]["algorithms"])
+		{
+			r10 = "please specify 'none' in 'algorithms' to verify unsigned tokens"
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (!(a1 == null))
+	{
+		if (!a1 instanceof Scope[7375][12])
+		{
+			try
+			{
+				a1 = Scope[7375][14](a1)
+			}
+			catch
+			{
+				ACCU = null
+				ACCU = Scope[7378]
+				r7 = Scope[7378]
+				try
+				{
+					r13 = TypeOf(a1)
+					r14 = "string"
+					ACCU = r13 == r14
+					if (r13 == r14)
+					{
+						r11 = Buffer["from"]
+						ACCU = r11(a1)
+					}
+					else
+					{
+						ACCU = a1
+					}
+					r11 = ACCU
+					a1 = Scope[7375][13](r11)
+				}
+				catch
+				{
+					ACCU = null
+					r12 = "secretOrPublicKey is not valid key material"
+					ACCU = Scope[7375][5]
+					r11 = Scope[7375][5](r12)
+					return Scope[7376][13](r11)
+				}
+			}
+		}
+	}
+	if (!Scope[7376][2]["algorithms"])
+	{
+		r8 = a1["type"]
+		r9 = "secret"
+		if (r8 === r9)
+		{
+			Scope[7376][2]["algorithms"] = Scope[7375][18]
+			ACCU = Scope[7375][18]
+		}
+		else
+		{
+			r8 = new [0, 0]
+			r8[0] = "rsa"
+			r8[1] = "rsa-pss"
+			r7 = r8
+			r6 = r7["includes"]
+			r8 = a1["asymmetricKeyType"]
+			if (r6(r8))
+			{
+				r7 = "algorithms"
+				Scope[7376][2][r7] = Scope[7375][17]
+				ACCU = Scope[7375][17]
+			}
+			else
+			{
+				r8 = a1["asymmetricKeyType"]
+				if (r8 === "ec")
+				{
+					Scope[7376][2]["algorithms"] = Scope[7375][16]
+					ACCU = Scope[7375][16]
+				}
+				else
+				{
+					r7 = "algorithms"
+					Scope[7376][2][r7] = Scope[7375][15]
+					ACCU = Scope[7375][15]
+				}
+			}
+		}
+	}
+	r9 = Scope[7376][2]["algorithms"]
+	r8 = r9["indexOf"]
+	r10 = Scope[7376][17]["header"]["alg"]
+	r8 = r8(r10)
+	if (r8 === -1)
+	{
+		r10 = "invalid algorithm"
+		ACCU = Scope[7375][5]
+		r9 = Scope[7375][5](r10)
+		return Scope[7376][13](r9)
+	}
+	r6 = Scope[7376][18]["alg"]["startsWith"]
+	if (r6("HS"))
+	{
+		r8 = a1["type"]
+		r9 = "secret"
+		if (!(r8 === r9))
+		{
+			r10 = ("secretOrPublicKey must be a symmetric key when using " + Scope[7376][18]["alg"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	r7 = \^(?:RS|PS|ES)\
+	r6 = r7["test"]
+	r8 = Scope[7376][18]["alg"]
+	if (r6(r8))
+	{
+		r8 = a1["type"]
+		r9 = "public"
+		if (!(r8 === r9))
+		{
+			r10 = ("secretOrPublicKey must be an asymmetric key when using " + Scope[7376][18]["alg"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	ACCU = Scope[7376][2]["allowInvalidAsymmetricKeyTypes"]
+	if (!Scope[7376][2]["allowInvalidAsymmetricKeyTypes"])
+	{
+		try
+		{
+			r10 = Scope[7376][18]["alg"]
+			r11 = a1
+			ACCU = Scope[7375][10](r10, r11)
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[7379]
+			return Scope[7376][13](Scope[7379][2])
+		}
+	}
+	ACCU = undefined
+	r1 = undefined
+	r6 = Scope[7378]
+	try
+	{
+		r7 = Scope[7375][11]["verify"]
+		r10 = Scope[7376][17]["header"]["alg"]
+		r11 = a1
+		ACCU = r7(Scope[7376][4], r10, r11)
+		r1 = r7(Scope[7376][4], r10, r11)
+	}
+	catch
+	{
+		r7 = ACCU
+		ACCU = null
+		ACCU = Scope[7380]
+		r7 = Scope[7378]
+		return Scope[7376][13](Scope[7380][2])
+	}
+	if (!r1)
+	{
+		r10 = "invalid signature"
+		ACCU = Scope[7375][5]
+		r9 = Scope[7375][5](r10)
+		return Scope[7376][13](r9)
+	}
+	r2 = Scope[7376][17]["payload"]
+	r8 = TypeOf(r2["nbf"])
+	if (r8 < "u")
+	{
+		if (!Scope[7376][2]["ignoreNotBefore"])
+		{
+			r8 = TypeOf(r2["nbf"])
+			r9 = "number"
+			if (!(r8 == r9))
+			{
+				ACCU = Scope[7375][5]
+				r9 = Scope[7375][5]("invalid nbf value")
+				return Scope[7376][13](r9)
+			}
+			r8 = r2["nbf"]
+			ACCU = Scope[7376][2]["clockTolerance"]
+			if (!Scope[7376][2]["clockTolerance"])
+			{
+				ACCU = 0
+			}
+			r12 = ACCU
+			r9 = (Scope[7376][14] + r12)
+			if (r8 > r9)
+			{
+				r10 = "jwt not active"
+				r12 = (r2["nbf"] * 1000)
+				ACCU = Date
+				r11 = Date(r12)
+				ACCU = Scope[7375][6]
+				r9 = Scope[7375][6](r10, r11)
+				return Scope[7376][13](r9)
+			}
+		}
+	}
+	r8 = TypeOf(r2["exp"])
+	if (r8 < "u")
+	{
+		if (!Scope[7376][2]["ignoreExpiration"])
+		{
+			r8 = TypeOf(r2["exp"])
+			r9 = "number"
+			if (!(r8 == r9))
+			{
+				ACCU = Scope[7375][5]
+				r9 = Scope[7375][5]("invalid exp value")
+				return Scope[7376][13](r9)
+			}
+			r11 = r2["exp"]
+			ACCU = Scope[7376][2]["clockTolerance"]
+			if (!Scope[7376][2]["clockTolerance"])
+			{
+				ACCU = 0
+			}
+			r12 = ACCU
+			r9 = (r11 + r12)
+			if (Scope[7376][14] >= r9)
+			{
+				r10 = "jwt expired"
+				r14 = r2["exp"]
+				r12 = (r14 * 1000)
+				ACCU = Date
+				r11 = Date(r12)
+				ACCU = Scope[7375][7]
+				r9 = Scope[7375][7](r10, r11)
+				return Scope[7376][13](r9)
+			}
+		}
+	}
+	if (Scope[7376][2]["audience"])
+	{
+		r6 = Scope[7378]
+		r7 = Array["isArray"]
+		r9 = Scope[7376][2]["audience"]
+		ACCU = r7(r9)
+		if (r7(r9))
+		{
+			ACCU = Scope[7376][2]["audience"]
+		}
+		else
+		{
+			r8 = new [0]
+			r8[0] = Scope[7376][2]["audience"]
+			ACCU = r8
+		}
+		Scope[7381][2] = ACCU
+		r8 = Array["isArray"]
+		r10 = r2["aud"]
+		ACCU = r8(r10)
+		if (r8(r10))
+		{
+			ACCU = r2["aud"]
+		}
+		else
+		{
+			r9 = new [0]
+			r9[0] = r2["aud"]
+			ACCU = r9
+		}
+		r8 = ACCU
+		r7 = r8["some"]
+		if (!r7(func_findMatchingAlgorithm_0x100004699))
+		{
+			r13 = "jwt audience invalid. expected: "
+			r14 = Scope[7381][2]["join"]
+			r14 = r14(" or ")
+			r11 = (r13 + r14)
+			ACCU = Scope[7375][5]
+			r10 = Scope[7375][5](r11)
+			return Scope[7376][13](r10)
+		}
+	}
+	if (Scope[7376][2]["issuer"])
+	{
+		r8 = TypeOf(Scope[7376][2]["issuer"])
+		if (r8 == "string")
+			&& (!(r2["iss"] === Scope[7376][2]["issuer"]))
+		r6 = Array["isArray"]
+			|| (r6(Scope[7376][2]["issuer"]))
+		r9 = Scope[7376][2]["issuer"]
+		r8 = r9["indexOf"]
+		r10 = r2["iss"]
+		r8 = r8(r10)
+			&& (r8 === -1)
+		{
+			r10 = ("jwt issuer invalid. expected: " + Scope[7376][2]["issuer"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (Scope[7376][2]["subject"])
+	{
+		if (!(r2["sub"] === Scope[7376][2]["subject"]))
+		{
+			r10 = ("jwt subject invalid. expected: " + Scope[7376][2]["subject"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (Scope[7376][2]["jwtid"])
+	{
+		r8 = r2["jti"]
+		r9 = Scope[7376][2]["jwtid"]
+		if (!(r8 === r9))
+		{
+			r10 = ("jwt jwtid invalid. expected: " + Scope[7376][2]["jwtid"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (Scope[7376][2]["nonce"])
+	{
+		r8 = r2["nonce"]
+		r9 = Scope[7376][2]["nonce"]
+		if (!(r8 === r9))
+		{
+			r12 = "jwt nonce invalid. expected: "
+			r10 = (r12 + Scope[7376][2]["nonce"])
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (Scope[7376][2]["maxAge"])
+	{
+		r8 = TypeOf(r2["iat"])
+		r9 = "number"
+		if (!(r8 == r9))
+		{
+			r10 = "iat required when maxAge is specified"
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5](r10)
+			return Scope[7376][13](r9)
+		}
+		r9 = Scope[7376][2]["maxAge"]
+		r10 = r2["iat"]
+		r4 = Scope[7375][9](r9, r10)
+		r8 = TypeOf(r4)
+		if (r8 > "u")
+		{
+			ACCU = Scope[7375][5]
+			r9 = Scope[7375][5]("'maxAge' should be a number of seconds or string representing a timespan eg: '1d', '20h', 60")
+			return Scope[7376][13](r9)
+		}
+		ACCU = Scope[7376][2]["clockTolerance"]
+		r11 = r4
+		if (!Scope[7376][2]["clockTolerance"])
+		{
+			ACCU = 0
+		}
+		r12 = ACCU
+		r9 = (r11 + r12)
+		if (Scope[7376][14] >= r9)
+		{
+			r10 = "maxAge exceeded"
+			r12 = (r4 * 1000)
+			ACCU = Date
+			r11 = Date(r12)
+			ACCU = Scope[7375][7]
+			r9 = Scope[7375][7](r10, r11)
+			return Scope[7376][13](r9)
+		}
+	}
+	if (Scope[7376][2]["complete"] === true)
+	{
+		r3 = Scope[7376][17]["signature"]
+		r10 = new {"header": null, "payload": null, "signature": null}
+		r10["header"] = Scope[7376][18]
+		r10["payload"] = r2
+		r10["signature"] = r3
+		return Scope[7376][13](null, r10)
+	}
+	return Scope[7376][13](null, r2)
+}
+function func_callbackWithScope_0x100004690(a0, a1)
+{
+return a1(null, Scope[7376][3])
+}
+function func_defaultTo_0x10000468e(a0, a1)
+{
+	if (a0)
+	{
+		ACCU = a0
+	}
+	return a1
+}
+function func_checkNodeVersion6or8_0x10000464d(a0, a1)
+{
+	r2 = func_initializeSemverMainModule_0x100004636["exports"]()
+	r7 = r2["satisfies"]
+	r9 = process["version"]
+	a1["exports"] = r7(r9, "^6.12.0 || >=8.0.0")
+	return undefined
+}
+function func_initializeKeyAlgorithmModule_0x10000464a(a0, a1)
+{
+	Scope[7385][9] = func_x_0x10000463d
+	Scope[7385][5] = func_checkNodeVersion15_0x100004639["exports"]()
+	Scope[7385][6] = func_checkNodeVersion16_0x10000463c["exports"]()
+	r4 = new [0, 0, 0]
+	r4[0] = "ES256"
+	r4[1] = "ES384"
+	r4[2] = "ES512"
+	r4 = new [0, 0, 0, 0, 0, 0]
+	r4[0] = "RS256"
+	r4[1] = "PS256"
+	r4[2] = "RS384"
+	r4[3] = "PS384"
+	r4[4] = "RS512"
+	r4[5] = "PS512"
+	r4 = new [0, 0, 0]
+	r4[0] = "PS256"
+	r4[1] = "PS384"
+	r4[2] = "PS512"
+	a1["exports"] = func_checkKeyAlgorithmCompatibility_0x100004649
+	return undefined
+}
+function func_checkKeyAlgorithmCompatibility_0x100004649(a0, a1)
+{
+	r13 = !Boolean(a0)
+	r14 = !Boolean(a1)
+	if (func_selectIfFalseA_0x10000463e(r13, r14))
+	{
+		return undefined
+	}
+	r0 = a1["asymmetricKeyType"]
+	if (!a1["asymmetricKeyType"])
+	{
+		return undefined
+	}
+	if (!Scope[7385][7][r0])
+	{
+		r12 = ("Unknown key type '" + r0)
+		r12 = (r12 + "\".")
+		ACCU = Error
+		ACCU = Error(r12)
+	}
+	r11 = Scope[7385][7][r0]["includes"]
+	if (!r11(a0))
+	{
+		r12 = ("'alg' parameter for \"" + r0)
+		r12 = (r12 + "' key type must be one of: ")
+		r13 = Scope[7385][7][r0]["join"]
+		r12 = (r12 + r13(", "))
+		r12 = (r12 + ".")
+		ACCU = Error
+		ACCU = Error(r12)
+	}
+	if (Scope[7385][5])
+	{
+		r4 = null
+		r5 = null
+		r11 = r0
+		switch ()
+		case r0 === "ec":
+		{
+			r12 = a1["asymmetricKeyDetails"]
+			r4 = r12["namedCurve"]
+			ACCU = r4
+			ACCU = Scope[7385][8][a0]
+			if (!(r4 === Scope[7385][8][a0]))
+			{
+				r13 = ("'alg' parameter \"" + a0)
+				r13 = (r13 + "' requires curve '")
+				r13 = (r13 + Scope[7385][8][a0])
+				r13 = (r13 + "\".")
+				ACCU = Error
+				ACCU = Error(r13)
+			}
+			break
+		}
+		case r11 === "rsa-pss":
+		{
+			if (Scope[7385][6])
+			{
+				r15 = a0["slice"]
+				r15 = r15(-3)
+				r6 = parseInt(r15, 10)
+				r12 = a1["asymmetricKeyDetails"]
+				r7 = r12["hashAlgorithm"]
+				r8 = r12["mgf1HashAlgorithm"]
+				r9 = r12["saltLength"]
+				r15 = ("sha" + r6)
+				if (!(r7 === r15))
+					|| (!(r8 === r7))
+				{
+					r13 = ("Invalid key for this operation, its RSA-PSS parameters do not meet the requirements of 'alg' " + a0)
+					r13 = (r13 + ".")
+					ACCU = Error
+					ACCU = Error(r13)
+				}
+				r15 = undefined
+				if (!(r9 === r15))
+				{
+					r15 = (r6 >> 3)
+					if (r9 > r15)
+					{
+						r13 = ("Invalid key for this operation, its RSA-PSS parameter saltLength does not meet the requirements of 'alg' " + a0)
+						r13 = (r13 + ".")
+						ACCU = Error
+						ACCU = Error(r13)
+					}
+				}
+			}
+		}
+	}
+	default:
+	{}
+	return undefined
+}
+function func_checkNodeVersion16_0x10000463c(a0, a1)
+{
+	r3 = func_initializeSemverMainModule_0x100004636["exports"]()
+	r7 = r3["satisfies"]
+	r9 = process["version"]
+	a1["exports"] = r7(r9, ">=16.9.0")
+	return undefined
+}
+function func_checkNodeVersion15_0x100004639(a0, a1)
+{
+	r3 = func_initializeSemverMainModule_0x100004636["exports"]()
+	r7 = r3["satisfies"]
+	r9 = process["version"]
+	a1["exports"] = r7(r9, ">=15.7.0")
+	return undefined
+}
+function func_initializeSemverMainModule_0x100004636(a0, a1)
+{
+	r3 = func_initSemverRegexModule_0x1000043f2["exports"]()
+	r4 = func_initSemverConstants_0x1000043ca["exports"]()
+	r5 = func_initializeSemverModule_0x10000443c["exports"]()
+	r6 = func_initIdentifierComparators_0x1000043fd["exports"]()
+	r7 = func_initializeParseModule_0x100004442["exports"]()
+	r8 = func_initializeGetSemverModule_0x100004448["exports"]()
+	r9 = func_initializeParseVersionModule_0x10000444e["exports"]()
+	r10 = func_initializeIncrementModule_0x100004455["exports"]()
+	r11 = func_initializeDiffVersionsModule_0x100004463["exports"]()
+	r12 = func_initializeMajorVersionModule_0x100004467["exports"]()
+	r13 = func_initializeMinorVersionModule_0x10000446b["exports"]()
+	r14 = func_initializePatchVersionModule_0x10000446f["exports"]()
+	r15 = func_initializePrereleaseModule_0x100004475["exports"]()
+	r16 = func_initializeCompareModule_0x100004479["exports"]()
+	r17 = func_initializeCompareVersions_0x10000447d["exports"]()
+	r18 = func_initializeParseRange_0x100004481["exports"]()
+	r19 = func_initializeCompareBuildModule_0x100004486["exports"]()
+	r20 = func_initializeSortAscendingModule_0x10000448b["exports"]()
+	r21 = func_initializeSortDescendingModule_0x100004490["exports"]()
+	r22 = func_initializeIsVersionGreater_0x100004494["exports"]()
+	r23 = func_initializeIsVersionLess_0x100004498["exports"]()
+	r24 = func_initializeIsVersionEqual_0x10000449c["exports"]()
+	r25 = func_initializeIsVersionNotEqual_0x1000044a0["exports"]()
+	r26 = func_initializeIsVersionGreaterOrEqual_0x1000044a4["exports"]()
+	r27 = func_initializeIsVersionLessOrEqual_0x1000044a8["exports"]()
+	r28 = func_initializeVersionComparators_0x1000044b7["exports"]()
+	r29 = func_initializeCoerceModule_0x1000044c6["exports"]()
+	r30 = func_initComparatorModule_0x100004581["exports"]()
+	r31 = func_initSemverRangeModule_0x10000455f["exports"]()
+	r32 = func_initRangeTestModule_0x100004586["exports"]()
+	r33 = func_initComparatorSetsModule_0x10000458c["exports"]()
+	r34 = func_initMinVersionModule_0x100004596["exports"]()
+	r35 = func_initMaxSatisfyingModule_0x1000045a1["exports"]()
+	r36 = func_initMinSatisfyingModule_0x1000045b0["exports"]()
+	r37 = func_initValidRangeModule_0x1000045b5["exports"]()
+	r38 = func_initializeCompareSemverSets_0x1000045d0["exports"]()
+	r39 = func_initializeFormatVersion_0x1000045d4["exports"]()
+	r40 = func_initializeFormatVersionWithOperator_0x1000045d8["exports"]()
+	r41 = func_initRangeIntersectsModule_0x1000045dc["exports"]()
+	r42 = func_initSubsetModule_0x1000045e9["exports"]()
+	r43 = func_initializeSemverRangeUtils_0x100004623["exports"]()
+	r46 = "exports"
+	r47 = new {"parse": null, "valid": null, "clean": null, "inc": null, "diff": null, "major": null, "minor": null, "patch": null, "prerelease": null, "compare": null, "rcompare": null, "compareLoose": null, "compareBuild": null, "sort": null, "rsort": null, "gt": null, "lt": null, "eq": null, "neq": null, "gte": null, "lte": null, "cmp": null, "coerce": null, "Comparator": null, "Range": null, "satisfies": null, "toComparators": null, "maxSatisfying": null, "minSatisfying": null, "minVersion": null, "validRange": null, "outside": null, "gtr": null, "ltr": null, "intersects": null, "simplifyRange": null, "subset": null, "SemVer": null, "re": null, "src": null, "tokens": null, "SEMVER_SPEC_VERSION": null, "RELEASE_TYPES": null, "compareIdentifiers": null, "rcompareIdentifiers": null}
+	r47["parse"] = r7
+	r47["valid"] = r8
+	r47["clean"] = r9
+	r47["inc"] = r10
+	r47["diff"] = r11
+	r47["major"] = r12
+	r47["minor"] = r13
+	r47["patch"] = r14
+	r47["prerelease"] = r15
+	r47["compare"] = r16
+	r47["rcompare"] = r17
+	r47["compareLoose"] = r18
+	r47["compareBuild"] = r19
+	r47["sort"] = r20
+	r47["rsort"] = r21
+	r47["gt"] = r22
+	r47["lt"] = r23
+	r47["eq"] = r24
+	r47["neq"] = r25
+	r47["gte"] = r26
+	r47["lte"] = r27
+	r47["cmp"] = r28
+	r47["coerce"] = r29
+	r47["Comparator"] = r30
+	r47["Range"] = r31
+	r47["satisfies"] = r32
+	r47["toComparators"] = r33
+	r47["maxSatisfying"] = r34
+	r47["minSatisfying"] = r35
+	r47["minVersion"] = r36
+	r47["validRange"] = r37
+	r47["outside"] = r38
+	r47["gtr"] = r39
+	r47["ltr"] = r40
+	r47["intersects"] = r41
+	r47["simplifyRange"] = r42
+	r47["subset"] = r43
+	r47["SemVer"] = r5
+	r47["re"] = r3["re"]
+	r47["src"] = r3["src"]
+	r47["tokens"] = r3["t"]
+	r47["SEMVER_SPEC_VERSION"] = r4["SEMVER_SPEC_VERSION"]
+	r47["RELEASE_TYPES"] = r4["RELEASE_TYPES"]
+	r47["compareIdentifiers"] = r6["compareIdentifiers"]
+	r47["rcompareIdentifiers"] = r6["rcompareIdentifiers"]
+	a1[r46] = r47
+	return undefined
+}
+function func_initExpirationModule_0x1000043c8(a0, a1)
+{
+	Scope[7495][5] = func_o_0x1000043bd
+	Scope[7495][6] = func_initializeDurationModule_0x100003605["exports"]()
+	a1["exports"] = func_resolveExpiration_0x1000043c7
+	return undefined
+}
+function func_resolveExpiration_0x1000043c7(a0, a1)
+{
+	ACCU = a1
+	if (!a1)
+	{
+		r4 = Math["floor"]
+		r8 = Date["now"]
+		r8 = r8()
+		r6 = (r8 / 1000)
+		ACCU = r4(r6)
+	}
+	r0 = ACCU
+	r6 = TypeOf(a0)
+	if (r6 == "string")
+	{
+		r2 = Scope[7495][6](a0)
+		r6 = TypeOf(r2)
+		ACCU = r6 > "u"
+		if (r6 > "u")
+		{
+			ACCU = undefined
+		}
+		else
+		{
+			r4 = Math["floor"]
+			r9 = (r2 / 1000)
+			r6 = (r0 + r9)
+			ACCU = r4(r6)
+		}
+		return ACCU
+	}
+	r6 = TypeOf(a0)
+	r7 = "number"
+	ACCU = r6 == r7
+	if (r6 == r7)
+	{
+		ACCU = (r0 + a0)
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	return ACCU
+}
+function func_initTokenExpiredErrorModule_0x1000043bc(a0, a1)
+{
+	Scope[7497][6] = func_s_0x1000043b8
+	Scope[7497][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r5 = Object["create"]
+	r7 = Scope[7497][5]["prototype"]
+	func_createTokenExpiredError_0x1000043bb["prototype"] = r5(r7)
+	r3 = func_createTokenExpiredError_0x1000043bb["prototype"]
+	r3["constructor"] = func_createTokenExpiredError_0x1000043bb
+	a1["exports"] = func_createTokenExpiredError_0x1000043bb
+	return undefined
+}
+function func_createTokenExpiredError_0x1000043bb(a0, a1)
+{
+	r2 = Scope[7497][5]["call"]
+	ACCU = r2(<this>, a0)
+	<this>["name"] = "TokenExpiredError"
+	<this>["expiredAt"] = a1
+	return undefined
+}
+function func_initNotBeforeErrorModule_0x1000043b7(a0, a1)
+{
+	Scope[7499][6] = func_s_0x1000043b3
+	Scope[7499][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r5 = Object["create"]
+	r7 = Scope[7499][5]["prototype"]
+	func_createNotBeforeError_0x1000043b6["prototype"] = r5(r7)
+	r3 = func_createNotBeforeError_0x1000043b6["prototype"]
+	r3["constructor"] = func_createNotBeforeError_0x1000043b6
+	a1["exports"] = func_createNotBeforeError_0x1000043b6
+	return undefined
+}
+function func_createNotBeforeError_0x1000043b6(a0, a1)
+{
+	r2 = Scope[7499][5]["call"]
+	ACCU = r2(<this>, a0)
+	<this>["name"] = "NotBeforeError"
+	<this>["date"] = a1
+	return undefined
+}
+function func_initJsonWebTokenErrorModule_0x1000043b2(a0, a1)
+{
+	Scope[7501][5] = func_o_0x1000043af
+	r5 = Object["create"]
+	r7 = Error["prototype"]
+	func_createJsonWebTokenError_0x1000043b1["prototype"] = r5(r7)
+	r3 = func_createJsonWebTokenError_0x1000043b1["prototype"]
+	r3["constructor"] = func_createJsonWebTokenError_0x1000043b1
+	a1["exports"] = func_createJsonWebTokenError_0x1000043b1
+	return undefined
+}
+function func_createJsonWebTokenError_0x1000043b1(a0, a1)
+{
+	r1 = Error["call"]
+	ACCU = r1(<this>, a0)
+	if (Error["captureStackTrace"])
+	{
+		ACCU = Error["captureStackTrace"](<this>, <this>["constructor"])
+	}
+	<this>["name"] = "JsonWebTokenError"
+	r2 = "message"
+	<this>[r2] = a0
+	if (a1)
+	{
+		<this>["inner"] = a1
+		ACCU = a1
+	}
+	return undefined
+}
+function func_initializeDecodeModule_0x1000043ae(a0, a1)
+{
+	Scope[7502][6] = func_a_0x1000043a6
+	Scope[7502][7] = func_initJwtModule_0x1000043a5["exports"]()
+	a1["exports"] = func_decodeToken_0x1000043ad
+	return undefined
+}
+function func_decodeToken_0x1000043ad(a0, a1)
+{
+	r2 = 0
+	r10 = {}
+	a1 = func_fallbackIfFalsy_0x1000043a9(a1, r10)
+	r5 = Scope[7502][7]["decode"](a0, a1)
+	if (!r5)
+	{
+		return null
+	}
+	r3 = r5["payload"]
+	r9 = TypeOf(r3)
+	r10 = "string"
+	if (r9 == r10)
+	{
+		try
+		{
+			r8 = JSON["parse"]
+			r4 = r8(r3)
+			if (!(r4 === null))
+			{
+				r10 = TypeOf(r4)
+				if (r10 == "object")
+				{
+					r3 = r4
+					ACCU = r3
+				}
+			}
+		}
+		catch
+		{
+			ACCU = null
+			ACCU = Scope[7502]
+		}
+	}
+	r9 = a1["complete"]
+	ACCU = r9 === true
+	if (r9 === true)
+	{
+		r7 = new {"header": null, "payload": null, "signature": null}
+		r7["header"] = r5["header"]
+		r7["payload"] = r3
+		r7["signature"] = r5["signature"]
+		ACCU = r7
+	}
+	else
+	{
+		ACCU = r3
+	}
+	return ACCU
+	return undefined
+}
+function func_initJwtModule_0x1000043a5(a0)
+{
+	r4 = 0
+	Scope[7503][3] = func_initJwtSignModule_0x100004376["exports"]()
+	Scope[7503][4] = func_initJwtVerifyModule_0x10000439f["exports"]()
+	r9 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r9[0] = "HS256"
+	r9[1] = "HS384"
+	r9[2] = "HS512"
+	r9[3] = "RS256"
+	r9[4] = "RS384"
+	r9[5] = "RS512"
+	r9[6] = "PS256"
+	r9[7] = "PS384"
+	r9[8] = "PS512"
+	r9[9] = "ES256"
+	r9[10] = "ES384"
+	r9[11] = "ES512"
+	r5 = r9
+	ACCU = r5
+	a0["ALGORITHMS"] = r5
+	a0["sign"] = Scope[7503][3]["sign"]
+	a0["verify"] = Scope[7503][4]["verify"]
+	a0["decode"] = Scope[7503][4]["decode"]
+	a0["isValid"] = Scope[7503][4]["isValid"]
+	a0["createSign"] = func_callScope3_0x1000043a4
+	a0["createVerify"] = func_callScope4_0x1000043a3
+	return undefined
+}
+function func_initializeDurationModule_0x100003605(a0, a1)
+{
+	Scope[8318][11] = func_l_0x1000035dc
+	Scope[8318][18] = func_parseTimeString_0x1000035de
+	Scope[8318][19] = func_formatDuration_0x1000035e0
+	Scope[8318][20] = func_humanizeDuration_0x1000035e2
+	Scope[8318][21] = func_formatDuration_0x1000035e4
+	Scope[8318][12] = 1000
+	Scope[8318][13] = (1000 * 60)
+	Scope[8318][14] = (Scope[8318][13] * 60)
+	Scope[8318][15] = (Scope[8318][14] * 24)
+	Scope[8318][16] = (Scope[8318][15] * 7)
+	Scope[8318][17] = (Scope[8318][15] * 365.25)
+	a1["exports"] = func_parseDuration_0x100003604
+	return undefined
+}

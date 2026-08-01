@@ -1,0 +1,70 @@
+function func_urlModule_0x100005cd5()
+{
+	Scope[6147][10] = func_c_0x100005cca
+	ACCU = ToName("target")
+	ACCU = ToName("link")
+	ACCU = ToName("match")
+	r4 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [13, 21, 28]], func_connectUrl_0x100005cce, URL, r7, func_href_0x100005cd0, 106216, func_originPath_0x100005cd2, 37547, func_sameOrigin_0x100005cd4)
+	Scope[6148][2] = func_connectUrl_0x100005cce
+	return undefined
+}
+function func_sameOrigin_0x100005cd4(a0)
+{
+	ACCU = func_connectUrl_0x100005cce
+	r4 = func_connectUrl_0x100005cce(a0, <this>["origin"])
+	r0 = r4["hostname"]
+	r1 = r4["pathname"]
+	r6 = <this>["hostname"]
+	ACCU = r6 === r0
+	if (r6 === r0)
+	{
+		ACCU = <this>["pathname"] === r1
+	}
+	return ACCU
+}
+function func_originPath_0x100005cd2()
+{
+	r2 = ("" + <this>["origin"])
+	return (r2 + <this>["pathname"])
+}
+function func_href_0x100005cd0()
+{
+	r1 = ("" + <this>["pathname"])
+	return (r1 + <this>["search"])
+}
+function func_connectUrl_0x100005cce(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}

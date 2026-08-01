@@ -1,0 +1,39 @@
+function func_listenServer_0x100000718(a0, a1)
+{
+	Scope[10714][3] = a0
+	Scope[10714][2] = a1
+	Scope[10714][10] = func_p_0x10000070b
+	r1 = new {"pMDVs": null, "tyibd": null, "hSYmk": null, "nhHmB": null, "RNCSk": null}
+	Scope[10714][11] = r1
+	r1 = Scope[10712][9]["once"]
+	ACCU = r1("error", Scope[10714][2])
+	r1 = Scope[10712][9]["once"]
+	ACCU = r1("listening", func_closeServer_0x100000717)
+	r1 = Scope[10712][9]["listen"]
+	ACCU = r1(0, Scope[10710][2])
+	return undefined
+}
+function func_closeServer_0x100000717()
+{
+	Scope[10715][3] = func_unknown_0x100000714
+	Scope[10715][4] = Scope[10712][9]["address"]()
+	r1 = Scope[10712][9]["close"]
+	ACCU = r1(func_resolvePort_0x100000716)
+	return undefined
+}
+function func_resolvePort_0x100000716(a0)
+{
+	if (a0)
+	{
+		return Scope[10714][2](a0)
+	}
+	if (!Scope[10715][4])
+	r3 = TypeOf(Scope[10715][4])
+		|| (!(r3 == "object"))
+	{
+		return Scope[10714][2]()
+	}
+	r4 = Scope[10715][4]["port"]
+	ACCU = Scope[10714][3](r4)
+	return undefined
+}

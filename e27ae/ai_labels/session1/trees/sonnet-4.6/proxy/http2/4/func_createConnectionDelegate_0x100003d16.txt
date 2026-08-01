@@ -1,0 +1,98 @@
+function func_createConnectionDelegate_0x100003d16(a0, a1)
+{
+	ACCU = func_initializeTunnelScope_0x100003d0e(<this>, a0, a1)
+	return undefined
+}
+function func_initializeTunnelScope_0x100003d0e(a0, a1, a2)
+{
+	Scope[7903][4] = a0
+	Scope[7903][3] = a1
+	Scope[7903][2] = a2
+	Scope[7903][11] = func_N_0x100003cf7
+	r1 = new {"tLvrG": null, "lkfUt": null, "RgWly": null, "lqENz": null, "dxbzk": null, "wYyqK": null, "cHVLX": null, "EusAQ": null, "sCnsA": null, "bgGfr": null, "naJeF": null, "aidnQ": null}
+	Scope[7903][12] = r1
+	ACCU = func_createProxyTunnelConnection_0x100003d0d()
+	return undefined
+}
+function func_createProxyTunnelConnection_0x100003d0d()
+{
+	r5 = <closure>
+	r6 = <this>
+	ACCU = func_U_0x100003d06
+	Scope[7904][4] = func_U_0x100003d06
+	try
+	{
+		ACCU = Scope[7905]
+		{
+			ACCU = PushContext("Block")
+			Scope[7905][2] = Scope[7903][4]["proxyOptions"]["raw"]
+			r8 = Scope[7900][22]["request"]
+			r13 = Scope[7900][25](Scope[7903][4])
+			r12 = CloneObject(r13)
+			ACCU = _CopyDataProperties(r12, Scope[7903][4]["proxyOptions"]["headers"])
+			r12[":method"] = "CONNECT"
+			r14 = (Scope[7903][3]["host"] + ":")
+			r12[":authority"] = (r14 + Scope[7903][3]["port"])
+			r9 = r8(Scope[7903][4]["proxyOptions"]["url"], Scope[7903][4]["proxyOptions"], r12)
+			r8 = await r9
+			r9 = _GeneratorGetResumeMode(Scope[7904])
+			if (!r9 === 0)
+			{
+				ACCU = r8
+			}
+			Scope[7905][3] = r8
+			r8 = Scope[7905][3]["once"]
+			ACCU = r8("error", Scope[7903][2])
+			r8 = Scope[7905][3]["once"]
+			ACCU = r8("response", func_handleProxyResponse_0x100003d0c)
+		}
+		catch
+		{
+			r8 = ACCU
+			ACCU = null
+			ACCU = Scope[7906]
+			ACCU = Scope[7903][2](Scope[7906][2])
+		}
+		r7 = undefined
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[7907]
+	return Scope[7907][2]
+}
+function func_handleProxyResponse_0x100003d0c(a0)
+{
+	Scope[7908][7] = func_le_0x100003d07
+	r0 = a0[":status"]
+	if (!(r0 === 200))
+	{
+		ACCU = Scope[7900][23]
+		r8 = Scope[7900][23](r0, "")
+		ACCU = Scope[7903][2](r8)
+		return undefined
+	}
+	r8 = Scope[7900][20]["Agent"]
+	r1 = Scope[7903][4] instanceof r8
+	if (func_andSelect_0x100003cf0(Scope[7905][2], r1))
+	{
+		r6 = "socket"
+		Scope[7903][3][r6] = Scope[7905][3]
+		r5 = Scope[7900][19]["connect"]
+		r3 = r5(Scope[7903][3])
+		r5 = r3["once"]
+		ACCU = r5("close", func_destroyStream_0x100003d09)
+		r9 = r3
+		ACCU = Scope[7903][2](null, r9)
+		return undefined
+	}
+	ACCU = Scope[7900][21]
+	r2 = Scope[7900][21](Scope[7905][3])
+	r2["encrypted"] = false
+	r5 = r2["_handle"]
+	r5["getpeername"] = func_clearAddressFields_0x100003d0b
+	ACCU = Scope[7903][2](null, r2)
+	return undefined
+}

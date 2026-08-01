@@ -1,0 +1,558 @@
+function func_setIssuerAttributes_0x100001a1b(a0, a1)
+{
+	ACCU = func_processAttributes_0x100001a04(a0)
+	Scope[9830][2]["issuer"]["attributes"] = a0
+	delete "uniqueId"[Scope[9830][2]["issuer"]]
+	if (a1)
+	{
+		Scope[9830][2]["issuer"]["uniqueId"] = a1
+		ACCU = a1
+	}
+	Scope[9830][2]["issuer"]["hash"] = null
+	return undefined
+}
+function func_buildExtension_0x100001a05(a0, a1)
+{
+	if (!a1)
+	{
+	}
+	a1 = {}
+	r16 = TypeOf(a0["name"])
+	if (r16 > "u")
+	{
+		if (a0["id"])
+		{
+			if (a0["id"] in Scope[9825][4]["oids"])
+			{
+				a0["name"] = Scope[9825][4]["oids"][a0["id"]]
+				ACCU = Scope[9825][4]["oids"][a0["id"]]
+			}
+		}
+	}
+	r16 = TypeOf(a0["id"])
+	if (r16 > "u")
+	{
+		if (a0["name"])
+			&& (a0["name"] in Scope[9825][4]["oids"])
+		{
+			a0["id"] = Scope[9825][4]["oids"][a0["name"]]
+		}
+		else
+		{
+			ACCU = Error
+			r0 = Error("Extension ID not specified.")
+			r0["extension"] = a0
+			ACCU = r0
+		}
+	}
+	r16 = TypeOf(a0["value"])
+	if (r16 < "u")
+	{
+		return a0
+	}
+	if (a0["name"] === "keyUsage")
+	{
+		r1 = 0
+		r2 = 0
+		r3 = 0
+		if (a0["digitalSignature"])
+		{
+			r2 = (0 | 128)
+			r1 = 7
+		}
+		if (a0["nonRepudiation"])
+		{
+			r2 = (r2 | 64)
+			r1 = 6
+		}
+		if (a0["keyEncipherment"])
+		{
+			r2 = (r2 | 32)
+			r1 = 5
+		}
+		if (a0["dataEncipherment"])
+		{
+			r2 = (r2 | 16)
+			r1 = 4
+		}
+		if (a0["keyAgreement"])
+		{
+			r2 = (r2 | 8)
+			r1 = 3
+		}
+		if (a0["keyCertSign"])
+		{
+			r2 = (r2 | 4)
+			r1 = 2
+		}
+		if (a0["cRLSign"])
+		{
+			r2 = (r2 | 2)
+			r1 = 1
+		}
+		if (a0["encipherOnly"])
+		{
+			r2 = (r2 | 1)
+			r1 = 0
+		}
+		if (a0["decipherOnly"])
+		{
+			r3 = (0 | 128)
+			r1 = 7
+		}
+		r4 = String["fromCharCode"](r1)
+		if (!r3 === 0)
+		{
+			r17 = String["fromCharCode"](r2)
+			r16 = r4
+			r4 = (r4 + (r17 + String["fromCharCode"](r3)))
+		}
+		else
+		{
+			if (!(r2 === 0))
+			{
+				r16 = r4
+				r4 = (r4 + String["fromCharCode"](r2))
+			}
+		}
+		r22 = r4
+		a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["BITSTRING"], false, r22)
+	}
+	else
+	{
+		if (a0["name"] === "basicConstraints")
+		{
+			r22 = []
+			a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r22)
+			if (a0["cA"])
+			{
+				r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["BOOLEAN"], false, "\\xff")
+				ACCU = a0["value"]["value"]["push"](r18)
+			}
+			if ("pathLenConstraint" in a0)
+			{
+				r24 = Scope[9825][3]["integerToDer"](a0["pathLenConstraint"])
+				r23 = r24["getBytes"]()
+				r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["INTEGER"], false, r23)
+				ACCU = a0["value"]["value"]["push"](r18)
+			}
+		}
+		else
+		{
+			if (a0["name"] === "extKeyUsage")
+			{
+				r22 = []
+				a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r22)
+				r16 = a0["value"]
+				r5 = a0["value"]["value"]
+				if (!a0 == undefined)
+				{
+					r16 = Generator(ToObject(a0))
+					r20 = 0
+					while (true)
+					{
+						if (!GeneratorContinue(r20)) break
+						if (r16.next().value == undefined) continue
+						r7 = r16.next().value
+						r6 = r16.next().value
+						r21 = a0[r7]
+						if (!r21 === true) continue
+						if (r6 in Scope[9825][5])
+						{
+							r29 = Scope[9825][3]["oidToDer"](Scope[9825][5][r6])
+							r28 = r29["getBytes"]()
+							r23 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["OID"], false, r28)
+							ACCU = r5["push"](r23)
+							continue
+						}
+						r21 = r6["indexOf"](".")
+						if (!!(r21 === -1)) continue
+						r29 = Scope[9825][3]["oidToDer"](r6)
+						r28 = r29["getBytes"]()
+						r23 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["OID"], false, r28)
+						ACCU = r5["push"](r23)
+						r20 = GeneratorStep(r20)
+					}
+				}
+			}
+			else
+			{
+				if (a0["name"] === "nsCertType")
+				{
+					r1 = 0
+					r2 = 0
+					if (a0["client"])
+					{
+						r2 = (0 | 128)
+						r1 = 7
+					}
+					if (a0["server"])
+					{
+						r2 = (r2 | 64)
+						r1 = 6
+					}
+					if (a0["email"])
+					{
+						r2 = (r2 | 32)
+						r1 = 5
+					}
+					if (a0["objsign"])
+					{
+						r2 = (r2 | 16)
+						r1 = 4
+					}
+					if (a0["reserved"])
+					{
+						r2 = (r2 | 8)
+						r1 = 3
+					}
+					if (a0["sslCA"])
+					{
+						r2 = (r2 | 4)
+						r1 = 2
+					}
+					if (a0["emailCA"])
+					{
+						r2 = (r2 | 2)
+						r1 = 1
+					}
+					if (a0["objCA"])
+					{
+						r2 = (r2 | 1)
+						r1 = 0
+					}
+					r4 = String["fromCharCode"](r1)
+					if (!(r2 === 0))
+					{
+						r16 = r4
+						r4 = (r4 + String["fromCharCode"](r2))
+					}
+					r22 = r4
+					a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["BITSTRING"], false, r22)
+				}
+				else
+				{
+					if (a0["name"] === "subjectAltName")
+						|| (a0["name"] === "issuerAltName")
+					{
+						r22 = []
+						a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r22)
+						r9 = 0
+						while (true)
+						{
+							if (!r9 < a0["altNames"]["length"]) break
+							r4 = a0["altNames"][r9]["value"]
+							if (a0["altNames"][r9]["type"] === 7)
+								&& (a0["altNames"][r9]["ip"])
+							{
+								r4 = Scope[9825][2]["util"]["bytesFromIP"](a0["altNames"][r9]["ip"])
+								if (Scope[9825][2]["util"]["bytesFromIP"](a0["altNames"][r9]["ip"]) == null)
+								{
+									ACCU = Error
+									r0 = Error("Extension \"ip\" value is not a valid IPv4 or IPv6 address.")
+									r0["extension"] = a0
+									ACCU = r0
+								}
+							}
+							else
+							{
+								if (a0["altNames"][r9]["type"] === 8)
+								{
+									if (a0["altNames"][r9]["oid"])
+									{
+										r18 = Scope[9825][3]["oidToDer"](a0["altNames"][r9]["oid"])
+										r4 = Scope[9825][3]["oidToDer"](r18)
+									}
+									else
+									{
+										r4 = Scope[9825][3]["oidToDer"](r4)
+									}
+								}
+							}
+							r23 = r4
+							r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], a0["altNames"][r9]["type"], false, r23)
+							ACCU = a0["value"]["value"]["push"](r18)
+							r9 = (r9 + 1)
+						}
+					}
+					else
+					{
+						if (a0["name"] === "nsComment")
+							&& (a1["cert"])
+						{
+							r17 = \^[\\\\x00-\\\\x7F]*$\
+							if (!r17["test"](a0["comment"]))
+								|| (a0["comment"]["length"] < 1)
+								|| (a0["comment"]["length"] > 128)
+							{
+								ACCU = Error
+								ACCU = Error("Invalid \"nsComment\" content.")
+							}
+							a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["IA5STRING"], false, a0["comment"])
+						}
+						else
+						{
+							if (a0["name"] === "subjectKeyIdentifier")
+								&& (a1["cert"])
+							{
+								r10 = a1["cert"]["generateSubjectKeyIdentifier"]()
+								a0["subjectKeyIdentifier"] = r10["toHex"]()
+								r22 = r10["getBytes"]()
+								a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["OCTETSTRING"], false, r22)
+							}
+							else
+							{
+								if (a0["name"] === "authorityKeyIdentifier")
+									&& (a1["cert"])
+								{
+									r22 = []
+									a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r22)
+									if (a0["keyIdentifier"])
+									{
+										ACCU = a0["keyIdentifier"] === true
+										if (a0["keyIdentifier"] === true)
+										{
+											r17 = a1["cert"]["generateSubjectKeyIdentifier"]()
+											ACCU = r17["getBytes"]()
+										}
+										else
+										{
+											ACCU = a0["keyIdentifier"]
+										}
+										r11 = ACCU
+										r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 0, false, r11)
+										ACCU = a0["value"]["value"]["push"](r18)
+									}
+									if (a0["authorityCertIssuer"])
+									{
+										r17 = new [0]
+										r24 = new [0]
+										ACCU = a0["authorityCertIssuer"] === true
+										if (a0["authorityCertIssuer"] === true)
+										{
+											ACCU = a1["cert"]["issuer"]
+										}
+										else
+										{
+											ACCU = a0["authorityCertIssuer"]
+										}
+										r26 = ACCU
+										r24[0] = func_buildDistinguishedName_0x100001a03(r26)
+										r17[0] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 4, true, r24)
+										r23 = r17
+										r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 1, true, r23)
+										ACCU = a0["value"]["value"]["push"](r18)
+									}
+									if (a0["serialNumber"])
+									{
+										ACCU = a0["serialNumber"] === true
+										if (a0["serialNumber"] === true)
+										{
+											ACCU = a1["cert"]["serialNumber"]
+										}
+										else
+										{
+											ACCU = a0["serialNumber"]
+										}
+										r18 = ACCU
+										r13 = Scope[9825][2]["util"]["hexToBytes"](r18)
+										r23 = r13
+										r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 2, false, r23)
+										ACCU = a0["value"]["value"]["push"](r18)
+									}
+								}
+								else
+								{
+									if (a0["name"] === "cRLDistributionPoints")
+									{
+										r22 = []
+										a0["value"] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r22)
+										r21 = []
+										r14 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r21)
+										r21 = []
+										r15 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 0, true, r21)
+										r9 = 0
+										while (true)
+										{
+											if (!r9 < a0["altNames"]["length"]) break
+											r4 = a0["altNames"][r9]["value"]
+											if (a0["altNames"][r9]["type"] === 7)
+												&& (a0["altNames"][r9]["ip"])
+											{
+												r4 = Scope[9825][2]["util"]["bytesFromIP"](a0["altNames"][r9]["ip"])
+												if (Scope[9825][2]["util"]["bytesFromIP"](a0["altNames"][r9]["ip"]) == null)
+												{
+													ACCU = Error
+													r0 = Error("Extension \"ip\" value is not a valid IPv4 or IPv6 address.")
+													r0["extension"] = a0
+													ACCU = r0
+												}
+											}
+											else
+											{
+												if (a0["altNames"][r9]["type"] === 8)
+												{
+													if (a0["altNames"][r9]["oid"])
+													{
+														r18 = Scope[9825][3]["oidToDer"](a0["altNames"][r9]["oid"])
+														r4 = Scope[9825][3]["oidToDer"](r18)
+													}
+													else
+													{
+														r4 = Scope[9825][3]["oidToDer"](r4)
+													}
+												}
+											}
+											r23 = r4
+											r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], a0["altNames"][r9]["type"], false, r23)
+											ACCU = r15["value"]["push"](r18)
+											r9 = (r9 + 1)
+										}
+										r24 = new [0]
+										r24[0] = r15
+										r18 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"], 0, true, r24)
+										ACCU = r14["value"]["push"](r18)
+										ACCU = a0["value"]["value"]["push"](r14)
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	r16 = TypeOf(a0["value"])
+	if (r16 > "u")
+	{
+		ACCU = Error
+		r0 = Error("Extension value not specified.")
+		r0["extension"] = a0
+		ACCU = r0
+	}
+	return a0
+}
+function func_processAttributes_0x100001a04(a0)
+{
+	r1 = 0
+	while (true)
+	{
+		if (!r1 < a0["length"]) break
+		r0 = a0[r1]
+		r4 = TypeOf(r0["name"])
+		if (r4 > "u")
+		{
+			if (r0["type"])
+				&& (r0["type"] in Scope[9825][4]["oids"])
+			{
+				r0["name"] = Scope[9825][4]["oids"][r0["type"]]
+				ACCU = Scope[9825][4]["oids"][r0["type"]]
+			}
+			else
+			{
+				if (r0["shortName"])
+				{
+					if (r0["shortName"] in Scope[9825][6])
+					{
+						r0["name"] = Scope[9825][4]["oids"][Scope[9825][6][r0["shortName"]]]
+						ACCU = Scope[9825][4]["oids"][Scope[9825][6][r0["shortName"]]]
+					}
+				}
+			}
+		}
+		r4 = TypeOf(r0["type"])
+		if (r4 > "u")
+		{
+			if (r0["name"])
+				&& (r0["name"] in Scope[9825][4]["oids"])
+			{
+				r0["type"] = Scope[9825][4]["oids"][r0["name"]]
+			}
+			else
+			{
+				ACCU = Error
+				r2 = Error("Attribute type not specified.")
+				r2["attribute"] = r0
+				ACCU = r2
+			}
+		}
+		r4 = TypeOf(r0["shortName"])
+		if (r4 > "u")
+		{
+			if (r0["name"])
+			{
+				if (r0["name"] in Scope[9825][6])
+				{
+					r0["shortName"] = Scope[9825][6][r0["name"]]
+					ACCU = Scope[9825][6][r0["name"]]
+				}
+			}
+		}
+		if (r0["type"] === Scope[9825][5]["extensionRequest"])
+		{
+			r0["valueConstructed"] = true
+			r0["valueTagClass"] = Scope[9825][3]["Type"]["SEQUENCE"]
+			if (!r0["value"])
+			{
+				if (r0["extensions"])
+				{
+					r0["value"] = []
+					r3 = 0
+					while (true)
+					{
+						if (!r3 < r0["extensions"]["length"]) break
+						r8 = func_buildExtension_0x100001a05(r0["extensions"][r3])
+						r6 = Scope[9825][4]["certificateExtensionToAsn1"](r8)
+						ACCU = r0["value"]["push"](r6)
+						r3 = (r3 + 1)
+					}
+				}
+			}
+		}
+		r4 = TypeOf(r0["value"])
+		if (!r4 > "u") continue
+		ACCU = Error
+		r2 = Error("Attribute value not specified.")
+		r2["attribute"] = r0
+		ACCU = r2
+		r1 = (r1 + 1)
+	}
+	return undefined
+}
+function func_buildDistinguishedName_0x100001a03(a0)
+{
+	r12 = []
+	r0 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r12)
+	r3 = a0["attributes"]
+	r4 = 0
+	while (true)
+	{
+		if (!r4 < r3["length"]) break
+		r1 = r3[r4]
+		r5 = r1["value"]
+		r6 = Scope[9825][3]["Type"]["PRINTABLESTRING"]
+		if ("valueTagClass" in r1)
+		{
+			r6 = r1["valueTagClass"]
+			if (r1["valueTagClass"] === Scope[9825][3]["Type"]["UTF8"])
+			{
+				r5 = Scope[9825][2]["util"]["encodeUtf8"](r1["value"])
+			}
+		}
+		r13 = new [0]
+		r20 = new [0, 0]
+		r27 = Scope[9825][3]["oidToDer"](r1["type"])
+		r26 = r27["getBytes"]()
+		r20[0] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["OID"], false, r26)
+		r24 = r6
+		r26 = r5
+		r20[1] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], r24, false, r26)
+		r19 = r20
+		r13[0] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r19)
+		r12 = r13
+		r2 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SET"], true, r12)
+		ACCU = r0["value"]["push"](r2)
+		r4 = (r4 + 1)
+	}
+	return r0
+}

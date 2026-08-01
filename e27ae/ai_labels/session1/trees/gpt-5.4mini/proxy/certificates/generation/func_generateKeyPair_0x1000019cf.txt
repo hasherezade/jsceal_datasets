@@ -1,0 +1,320 @@
+function func_generateKeyPair_0x1000019cf(a0, a1, a2, a3)
+{
+	Scope[9843][2] = a3
+	r3 = unmapped(a0)
+	if (r3["length"] === 1)
+	{
+		if (typeof(a0) == object)
+		{
+			a2 = a0
+			a0 = undefined
+		}
+		else
+		{
+			if (typeof(a0) == function)
+			{
+				Scope[9843][2] = a0
+				a0 = undefined
+			}
+		}
+	}
+	else
+	{
+		if (r3["length"] === 2)
+		{
+			if (typeof(a0) == number)
+			{
+				if (typeof(a1) == function)
+				{
+					Scope[9843][2] = a1
+					a1 = undefined
+				}
+				else
+				{
+					if (!(typeof(a1) == number))
+					{
+						a2 = a1
+						a1 = undefined
+					}
+				}
+			}
+			else
+			{
+				a2 = a0
+				Scope[9843][2] = a1
+				a0 = undefined
+				a1 = undefined
+			}
+		}
+		else
+		{
+			if (r3["length"] === 3)
+			{
+				if (typeof(a1) == number)
+				{
+					if (typeof(a2) == function)
+					{
+						Scope[9843][2] = a2
+						a2 = undefined
+					}
+				}
+				else
+				{
+					Scope[9843][2] = a2
+					a2 = a1
+					a1 = undefined
+				}
+			}
+		}
+	}
+	if (!a2)
+	{
+	}
+	a2 = {}
+	if (undefined == a0)
+	{
+		ACCU = a2["bits"]
+		if (!a2["bits"])
+		{
+			ACCU = 2048
+		}
+		a0 = ACCU
+	}
+	if (undefined == a1)
+	{
+		ACCU = a2["e"]
+		if (!a2["e"])
+		{
+			ACCU = 65537
+		}
+		a1 = ACCU
+	}
+	if (!Scope[9836][2]["options"]["usePureJavaScript"])
+	{
+		if (!a2["prng"])
+		{
+			if (a0 >= 256)
+			{
+				if (a0 <= 16384)
+				{
+					if (a1 === 65537)
+						|| (a1 === 3)
+					{
+						if (Scope[9843][2])
+						{
+							if (func_isFunction_0x1000019bb("generateKeyPair"))
+							{
+								r8 = new {"modulusLength": null, "publicExponent": null, "publicKeyEncoding": {"type": "spki", "format": "pem"}, "privateKeyEncoding": {"type": "pkcs8", "format": "pem"}}
+								r8["modulusLength"] = a0
+								r8["publicExponent"] = a1
+								return Scope[9836][4]["generateKeyPair"]("rsa", r8, func_loadKeys_0x1000019c7)
+							}
+							if (func_HasSubtle_0x1000019bc("generateKey"))
+							{
+								if (func_HasSubtle_0x1000019bc("exportKey"))
+								{
+									r10 = new {"name": "RSASSA-PKCS1-v1_5", "modulusLength": null, "publicExponent": null, "hash": {"name": "SHA-256"}}
+									r10["modulusLength"] = a0
+									r10["publicExponent"] = func_hexBytes_0x1000019be(a1)
+									r12 = new ["sign", "verify"]
+									r8 = Scope[9836][6]["globalScope"]["crypto"]["subtle"]["generateKey"](r10, true, r12)
+									r7 = r8["then"](func_exportPrivateKey_0x1000019c8)
+									r8 = undefined
+									r6 = r7["then"](r8, func_initDigest_0x1000019c9)
+									return r6["then"](func_loadKey_0x1000019ca)
+								}
+							}
+							if (func_hasCrypto_0x1000019bd("generateKey"))
+							{
+								if (func_hasCrypto_0x1000019bd("exportKey"))
+								{
+									r7 = new {"name": "RSASSA-PKCS1-v1_5", "modulusLength": null, "publicExponent": null, "hash": {"name": "SHA-256"}}
+									r7["modulusLength"] = a0
+									r7["publicExponent"] = func_hexBytes_0x1000019be(a1)
+									r9 = new ["sign", "verify"]
+									r0 = Scope[9836][6]["globalScope"]["msCrypto"]["subtle"]["generateKey"](r7, true, r9)
+									r0["oncomplete"] = func_exportPrivateKey_0x1000019cd
+									r0["onerror"] = func_invoke_0x1000019ce
+									return undefined
+								}
+							}
+						}
+						else
+						{
+							if (func_isFunction_0x1000019bb("generateKeyPairSync"))
+							{
+								r8 = new {"modulusLength": null, "publicExponent": null, "publicKeyEncoding": {"type": "spki", "format": "pem"}, "privateKeyEncoding": {"type": "pkcs8", "format": "pem"}}
+								r8["modulusLength"] = a0
+								r8["publicExponent"] = a1
+								r1 = Scope[9836][4]["generateKeyPairSync"]("rsa", r8)
+								r5 = new {"privateKey": null, "publicKey": null}
+								r5["privateKey"] = Scope[9836][7]["privateKeyFromPem"](r1["privateKey"])
+								r5["publicKey"] = Scope[9836][7]["publicKeyFromPem"](r1["publicKey"])
+								return r5
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	r2 = Scope[9836][7]["rsa"]["createKeyPairGenerationState"](a0, a1, a2)
+	if (!Scope[9843][2])
+	{
+		ACCU = Scope[9836][7]["rsa"]["stepKeyPairGenerationState"](r2, 0)
+		return r2["keys"]
+	}
+	ACCU = func_initPrime_0x1000019b8(r2, a2, Scope[9843][2])
+	return undefined
+}
+function func_invoke_0x1000019ce(a0)
+{
+	ACCU = Scope[9843][2](a0)
+	return undefined
+}
+function func_exportPrivateKey_0x1000019cd(a0)
+{
+	r1 = Scope[9836][6]["globalScope"]["msCrypto"]["subtle"]["exportKey"]("pkcs8", a0["target"]["result"]["privateKey"])
+	r1["oncomplete"] = func_loadPrivateKey_0x1000019cb
+	r1["onerror"] = func_validate_0x1000019cc
+	return undefined
+}
+function func_loadKey_0x1000019ca(a0)
+{
+	if (a0)
+	{
+		r5 = Scope[9836][2]["util"]["createBuffer"](a0)
+		r3 = Scope[9836][5]["fromDer"](r5)
+		r0 = Scope[9836][7]["privateKeyFromAsn1"](r3)
+		r3 = new {"privateKey": null, "publicKey": null}
+		r3["privateKey"] = r0
+		r3["publicKey"] = Scope[9836][7]["setRsaPublicKey"](r0["n"], r0["e"])
+		ACCU = Scope[9843][2](null, r3)
+	}
+	return undefined
+}
+function func_initDigest_0x1000019c9(a0)
+{
+	ACCU = Scope[9843][2](a0)
+	return undefined
+}
+function func_exportPrivateKey_0x1000019c8(a0)
+{
+	return Scope[9836][6]["globalScope"]["crypto"]["subtle"]["exportKey"]("pkcs8", a0["privateKey"])
+}
+function func_loadKeys_0x1000019c7(a0, a1, a2)
+{
+	if (a0)
+	{
+		return Scope[9843][2](a0)
+	}
+	r2 = new {"privateKey": null, "publicKey": null}
+	r2["privateKey"] = Scope[9836][7]["privateKeyFromPem"](a2)
+	r2["publicKey"] = Scope[9836][7]["publicKeyFromPem"](a1)
+	ACCU = Scope[9843][2](null, r2)
+	return undefined
+}
+function func_hexBytes_0x1000019be(a0)
+{
+	r5 = a0["toString"](16)
+	r0 = Scope[9836][2]["util"]["hexToBytes"](r5)
+	ACCU = Uint8Array
+	r1 = Uint8Array(r0["length"])
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < r0["length"]) break
+		r1[r2] = r0["charCodeAt"](r2)
+		r2 = (r2 + 1)
+	}
+	return r1
+}
+function func_hasCrypto_0x1000019bd(a0)
+{
+	r0 = TypeOf(Scope[9836][6]["globalScope"])
+	ACCU = r0 < "u"
+	if (r0 < "u")
+	{
+		ACCU = typeof(Scope[9836][6]["globalScope"]["msCrypto"]) == object
+		if (typeof(Scope[9836][6]["globalScope"]["msCrypto"]) == object)
+		{
+			if (typeof(Scope[9836][6]["globalScope"]["msCrypto"]["subtle"]) == object)
+			{
+				ACCU = typeof(Scope[9836][6]["globalScope"]["msCrypto"]["subtle"][a0]) == function
+			}
+		}
+	}
+	return ACCU
+}
+function func_HasSubtle_0x1000019bc(a0)
+{
+	r0 = TypeOf(Scope[9836][6]["globalScope"])
+	ACCU = r0 < "u"
+	if (r0 < "u")
+	{
+		ACCU = typeof(Scope[9836][6]["globalScope"]["crypto"]) == object
+		if (typeof(Scope[9836][6]["globalScope"]["crypto"]) == object)
+		{
+			if (typeof(Scope[9836][6]["globalScope"]["crypto"]["subtle"]) == object)
+			{
+				ACCU = typeof(Scope[9836][6]["globalScope"]["crypto"]["subtle"][a0]) == function
+			}
+		}
+	}
+	return ACCU
+}
+function func_isFunction_0x1000019bb(a0)
+{
+	ACCU = Scope[9836][2]["util"]["isNodejs"]
+	if (Scope[9836][2]["util"]["isNodejs"])
+	{
+		ACCU = typeof(Scope[9836][4][a0]) == function
+	}
+	return ACCU
+}
+function func_initPrime_0x1000019b8(a0, a1, a2)
+{
+	Scope[9845][3] = a0
+	Scope[9845][2] = a2
+	Scope[9845][5] = func_generatePrime_0x1000019b5
+	Scope[9845][6] = func_generatePrime_0x1000019b6
+	Scope[9845][7] = func_generateKeys_0x1000019b7
+	if (typeof(a1) == function)
+	{
+		Scope[9845][2] = a1
+		a1 = {}
+	}
+	if (!a1)
+	{
+	}
+	a1 = {}
+	r2 = new {"name": null, "options": null}
+	ACCU = a1["algorithm"]
+	if (!a1["algorithm"])
+	{
+		ACCU = "PRIMEINC"
+	}
+	r2["name"] = ACCU
+	r3 = new {"workers": null, "workLoad": null, "workerScript": null}
+	ACCU = a1["workers"]
+	if (!a1["workers"])
+	{
+		ACCU = 2
+	}
+	r3["workers"] = ACCU
+	ACCU = a1["workLoad"]
+	if (!a1["workLoad"])
+	{
+		ACCU = 100
+	}
+	r3["workLoad"] = ACCU
+	r3["workerScript"] = a1["workerScript"]
+	r2["options"] = r3
+	if ("prng" in a1)
+	{
+		Scope[9845][4]["prng"] = a1["prng"]
+		ACCU = a1["prng"]
+	}
+	ACCU = func_generatePrime_0x1000019b5()
+	return undefined
+}

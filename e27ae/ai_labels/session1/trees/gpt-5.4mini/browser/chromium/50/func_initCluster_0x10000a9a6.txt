@@ -1,0 +1,1350 @@
+function func_initCluster_0x10000a9a6()
+{
+	r4 = 0
+	ACCU = func_initWorkerPool_0x10000676d()
+	ACCU = func_ClusterInit_0x10000317e()
+	ACCU = func_noop_0x10000a9a0()
+	ACCU = func_workerPool_0x100006759
+	return undefined
+}
+function func_noop_0x10000a9a0()
+{
+	return undefined
+}
+function func_initWorkerPool_0x10000676d()
+{
+	Scope[5528][14] = func_f_0x100006751
+	r5 = func_duration_0x100003605["exports"]()
+	global_dT = func_interopProxy_0x10000317a(r5)
+	ACCU = func_defineSocketLink_0x10000673c()
+	r5 = require("events")
+	global_AT = func_interopProxy_0x10000317a(r5)
+	ACCU = func_bootstrap_0x100006750()
+	ACCU = func_initFaro_0x100005504()
+	r5 = global_AT["default"]
+	ACCU = ToName("get")
+	ACCU = ToName("all")
+	ACCU = ToName("withEverySession")
+	ACCU = ToName("dispose")
+	ACCU = ToName("rebuildWorkers")
+	ACCU = ToName("removeWorker")
+	r3 = DefineClass([15, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52]], func_workerPool_0x100006759, r5, global_AT, func_session_0x10000675d, 69149, func_sortPool_0x100006760, 38302, func_runSessions_0x100006765, func_f_0x100006751, func_shutdown_0x100006767, 99923, func_syncWorkers_0x10000676a, func_f_0x100006751, func_cleanupWorker_0x10000676c)
+	return undefined
+}
+function func_cleanupWorker_0x10000676c(a0, a1)
+{
+	r4 = <this>["pool"]["get"]
+	ACCU = r4(a0)
+	r4 = r4(a0)
+	if (!ACCU == undefined)
+	{
+		ACCU = r4["worker"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r4 = ACCU
+	if (r4 === a1)
+	{
+		r3 = <this>["pool"]
+		ACCU = r3["delete"](a0)
+		ACCU = a1["terminate"]()
+	}
+	return undefined
+}
+function func_syncWorkers_0x10000676a(a0)
+{
+	r16 = a0["map"]
+	r0 = r16(func_Id_0x100006769)
+	r19 = <this>["pool"]
+	r18 = r19["entries"]
+	r18 = Array.from(r18())
+	r17 = GetIterator(r18)
+	r16 = r17["next"]
+	ACCU = false
+	r18 = false
+	try
+	{
+		while (true)
+		{
+			r18 = true
+			r22 = r16()
+			if (r22["done"]) break
+			r18 = false
+			r23 = r22["value"]
+			r25 = GetIterator(r22["value"])
+			ACCU = false
+			r26 = false
+			try
+			{
+				if (!false)
+				r26 = true
+				r30 = r25["next"]()
+				ACCU = r30["done"]
+					&& (!r30["done"])
+				{
+					r26 = false
+					ACCU = r30["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r13 = ACCU
+				if (!r26)
+				r26 = true
+				r30 = r25["next"]()
+				ACCU = r30["done"]
+					&& (!r30["done"])
+				{
+					r26 = false
+					ACCU = r30["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r31 = ACCU
+				r14 = r31["worker"]
+				ACCU = -1
+				r28 = -1
+				r27 = -1
+			}
+			catch
+			{
+				r28 = ACCU
+				r27 = 0
+			}
+			if (!r26)
+			{
+				try
+				{
+					if (!r25["return"] == undefined)
+					{
+						ACCU = r25["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r27 === 0)
+			{
+				r19 = 0
+				r20 = r28
+				break
+			}
+			r23 = r0["includes"]
+			if (r23(r13)) continue
+			ACCU = <this>["removeWorker"](r13, r14)
+		}
+		ACCU = -1
+		r20 = -1
+		r19 = -1
+	}
+	catch
+	{
+		r20 = ACCU
+		r19 = 0
+	}
+	if (!r18)
+	{
+		try
+		{
+			if (!r17["return"] == undefined)
+			{
+				ACCU = r17["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r19 === 0)
+	{
+		ACCU = r20
+	}
+	r17 = GetIterator(a0)
+	r16 = r17["next"]
+	ACCU = false
+	r18 = false
+	try
+	{
+		while (true)
+		{
+			r18 = true
+			r22 = r16()
+			if (r22["done"]) break
+			r18 = false
+			r5 = r22["value"]
+			r6 = r22["value"]["id"]
+			r24 = <this>["pool"]
+			ACCU = r24["has"](r22["value"]["id"])
+			r22 = r22["value"]
+			if (ACCU)
+			{
+				continue
+			}
+			r25 = !Boolean(r5["domain"])
+			r26 = !Boolean(r5["username"])
+			if (!func_coalesce_0x100006752(r25, r26))
+				&& (!r5["sid"])
+			{
+				continue
+			}
+			r24 = <this>["createWorker"]["bind"]
+			r24 = r24(<this>, r6)
+			r25 = <this>["removeWorker"]["bind"]
+			r25 = r25(<this>, r6)
+			r27 = "10s"
+			r26 = global_dT["default"](r27)
+			ACCU = func_SocketLink_0x100006729
+			r10 = func_SocketLink_0x100006729(r24, r25, r26)
+			r24 = <this>["pool"]
+			r23 = r24["set"]
+			r26 = new {"info": null, "worker": null}
+			r27 = new {"domain": null, "username": null, "sid": null}
+			r27["domain"] = r5["domain"]
+			r27["username"] = r5["username"]
+			r27["sid"] = r5["sid"]
+			r26["info"] = r27
+			r26["worker"] = r10
+			ACCU = r23(r6, r26)
+			r23 = <this>["emit"]
+			r25 = "new-session"
+			ACCU = r23(r25, r6)
+		}
+		ACCU = -1
+		r20 = -1
+		r19 = -1
+	}
+	catch
+	{
+		r20 = ACCU
+		r19 = 0
+	}
+	if (!r18)
+	{
+		try
+		{
+			if (!r17["return"] == undefined)
+			{
+				ACCU = r17["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r19 === 0)
+	{
+		ACCU = r20
+	}
+	return undefined
+}
+function func_Id_0x100006769(a0)
+{
+	return a0["id"]
+}
+function func_shutdown_0x100006767()
+{
+	r5 = global_OV["off"]
+	ACCU = r5("sessions", <this>["rebuildWorkers"])
+	r6 = <this>["pool"]
+	r8 = 30391
+	r5 = r6["values"]
+	r7 = r5()
+	r6 = GetIterator(r7)
+	r5 = r6["next"]
+	ACCU = false
+	r7 = false
+	try
+	{
+		while (true)
+		{
+			r7 = true
+			r11 = r5()
+			if (r11["done"]) break
+			r7 = false
+			r12 = r11["value"]["worker"]["terminate"]
+			ACCU = r12()
+		}
+		ACCU = -1
+		r9 = -1
+		r8 = -1
+	}
+	catch
+	{
+		r9 = ACCU
+		r8 = 0
+	}
+	if (!r7)
+	{
+		try
+		{
+			if (!r6["return"] == undefined)
+			{
+				ACCU = r6["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r8 === 0)
+	{
+		ACCU = r9
+	}
+	r6 = <this>["pool"]
+	ACCU = r6["clear"]()
+	return undefined
+}
+function func_runSessions_0x100006765(a0, a1)
+{
+	Scope[5532][2] = <this>
+	Scope[5532][3] = a0
+	r2 = <closure>
+	r3 = <this>
+	r0 = a0
+	ACCU = func_V_0x100006761
+	Scope[5532][5] = func_V_0x100006761
+	try
+	{
+		Scope[5532][4] = func_wrapGet_0x100006762
+		r5 = "new-session"
+		ACCU = Scope[5532][2]["on"](r5, func_wrapGet_0x100006762)
+		r4 = a1
+		if (!a1 == undefined)
+		{
+			r3 = r4["addEventListener"]
+			r5 = "abort"
+			ACCU = r3(r5, func_removeListener_0x100006763)
+		}
+		else
+		{
+			ACCU = undefined
+		}
+		r3 = Promise["all"]
+		r6 = Scope[5532][2]["all"]
+		r6 = r6()
+		r5 = r6["map"]
+		r5 = r5(func_runHandler_0x100006764)
+		r4 = r3(r5)
+		r3 = r0
+		r3 = await r4
+		r4 = _GeneratorGetResumeMode(r0)
+		if (!r4 === 0)
+		{
+			ACCU = r3
+		}
+		r4 = undefined
+		r3 = r0
+		ACCU = r4
+		return r4
+	}
+	catch {}
+	r3 = ACCU
+	ACCU = null
+	ACCU = Scope[5533]
+	r4 = r0
+	return Scope[5533][2]
+}
+function func_runHandler_0x100006764(a0)
+{
+	r0 = func_wrapHandler_0x100000149(Scope[5532][3])
+	return r0(a0)
+}
+function func_removeListener_0x100006763()
+{
+	r0 = Scope[5532][2]["removeListener"]
+	return r0("new-session", func_wrapGet_0x100006762)
+}
+function func_wrapGet_0x100006762(a0)
+{
+	r0 = func_wrapHandler_0x100000149(Scope[5532][3])
+	r1 = Scope[5532][2]["get"]
+	r1 = r1(a0)
+	return r0(r1)
+}
+function func_sortPool_0x100006760()
+{
+	r0 = []
+	r6 = GetIterator(<this>["pool"])
+	r5 = r6["next"]
+	ACCU = false
+	r7 = false
+	try
+	{
+		while (true)
+		{
+			r7 = true
+			r11 = r5()
+			if (r11["done"]) break
+			r7 = false
+			r12 = r11["value"]
+			r14 = GetIterator(r11["value"])
+			ACCU = false
+			r15 = false
+			try
+			{
+				if (!false)
+				r15 = true
+				r19 = r14["next"]()
+				ACCU = r19["done"]
+					&& (!r19["done"])
+				{
+					r15 = false
+					ACCU = r19["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r4 = ACCU
+				ACCU = -1
+				r17 = -1
+				r16 = -1
+			}
+			catch
+			{
+				r17 = ACCU
+				r16 = 0
+			}
+			if (!r15)
+			{
+				try
+				{
+					if (!r14["return"] == undefined)
+					{
+						ACCU = r14["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r16 === 0)
+			{
+				r8 = 0
+				r9 = r17
+				break
+			}
+			r12 = r0["push"]
+			r14 = <this>["get"]
+			r14 = r14(r4)
+			ACCU = r12(r14)
+		}
+		ACCU = -1
+		r9 = -1
+		r8 = -1
+	}
+	catch
+	{
+		r9 = ACCU
+		r8 = 0
+	}
+	if (!r7)
+	{
+		try
+		{
+			if (!r6["return"] == undefined)
+			{
+				ACCU = r6["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r8 === 0)
+	{
+		ACCU = r9
+	}
+	r5 = r0["sort"]
+	return r5(func_compareId_0x10000675f)
+}
+function func_compareId_0x10000675f(a0, a1)
+{
+	return (a0["id"] - a1["id"])
+}
+function func_session_0x10000675d(a0)
+{
+	Scope[5534][3] = func_V_0x10000675a
+	r5 = <this>["pool"]
+	r4 = r5["get"]
+	r0 = r4(a0)
+	if (!r4(a0))
+	{
+		r5 = "Session not found"
+		ACCU = Error
+		ACCU = Error(r5)
+	}
+	Scope[5534][4] = r0["worker"]
+	r4 = new {"id": null, "info": null, "rpc": null, "terminated": null}
+	r4["id"] = a0
+	r4["info"] = r0["info"]
+	r4["rpc"] = Scope[5534][4]["rpc"]
+	r5 = r4
+	ACCU = DefineAccessorPropertyUnchecked(r5, "terminated", func_get_terminated_0x10000675c, null, 0)
+	return r5
+}
+function func_get_terminated_0x10000675c()
+{
+	return Scope[5534][4]["terminated"]
+}
+function func_workerPool_0x100006759(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["createWorker"] = a0
+	ACCU = <this>
+	<this>["pool"] = Map(r0)
+	ACCU = <this>
+	ACCU = <this>
+	r6 = <this>["rebuildWorkers"]["bind"]
+	ACCU = <this>
+	<this>["rebuildWorkers"] = r6(<this>)
+	ACCU = <this>
+	r7 = <this>["rebuildWorkers"]
+	ACCU = global_OV["on"]("sessions", r7)
+	return <this>
+}
+function func_coalesce_0x100006752(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_bootstrap_0x100006750()
+{
+	r0 = new {"V": 119152, "J": "BS4&", "S": 99794, "g": "I@Bf", "L": 87897, "X": "Yx9u", "j": 111811, "E": "O9*f", "c": 79868, "x": "p[w*", "K": 38661, "u": "A0Dr", "A": 34277, "s": "nvO5", "b": 30446, "i": "eeST", "w": 121834, "f": "F1xf", "t": 76116, "P": "]1@2"}
+	r4 = 0
+	r10 = require("events")
+	global_xT = func_interopProxy_0x10000317a(r10)
+	ACCU = func_noop_0x10000673d()
+	ACCU = func_noop_0x10000673e()
+	global_OV = global_xT["default"](r0)
+	ACCU = setImmediate(func_pollProviders_0x1000004d6)
+	return undefined
+}
+function func_noop_0x10000673e()
+{
+	return undefined
+}
+function func_noop_0x10000673d()
+{
+	return undefined
+}
+function func_defineSocketLink_0x10000673c()
+{
+	Scope[5544][17] = func_h_0x10000671c
+	r5 = func_Socket_0x100006719["exports"]()
+	global_cT = func_interopProxy_0x10000317a(r5)
+	r5 = func_initSocketLink_0x100006625["exports"]()
+	global_sT = func_interopProxy_0x10000317a(r5)
+	ACCU = func_initTrpc_0x1000066f2()
+	ACCU = func_noop_0x10000671b()
+	ACCU = ToName("terminate")
+	ACCU = ToName("createRPC")
+	ACCU = ToName("connect")
+	ACCU = ToName("send")
+	ACCU = ToName("start")
+	ACCU = ToName("stop")
+	ACCU = ToName("handleMessage")
+	ACCU = ToName("handleReady")
+	ACCU = ToName("handleRPCMessage")
+	r3 = DefineClass([21, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60, 68, 76]], func_SocketLink_0x100006729, null, 18415, func_terminate_0x10000672b, func_h_0x10000671c, func_resolveLink_0x10000672d, func_h_0x10000671c, func_startSocket_0x10000672f, "b48I", func_postMessage_0x100006731, "epz[", func_spawnWorker_0x100006733, "]C&)", func_dispose_0x100006735, "h^gm", func_handleMessage_0x100006737, func_h_0x10000671c, func_emitOpen_0x100006739, func_h_0x10000671c, func_emitMessage_0x10000673b)
+	return undefined
+}
+function func_emitMessage_0x10000673b(a0)
+{
+	r2 = <this>["socket"]["emit"]
+	ACCU = r2("message", a0)
+	return undefined
+}
+function func_emitOpen_0x100006739()
+{
+	r1 = <this>["socket"]
+	r1["open"] = true
+	r1 = <this>["socket"]["emit"]
+	ACCU = r1("open")
+	return undefined
+}
+function func_handleMessage_0x100006737(a0)
+{
+	if (a0 === ("ready"))
+	{
+		ACCU = <this>["handleReady"]()
+	}
+	ACCU = a0 instanceof Buffer
+	if (!a0 instanceof Buffer)
+	{
+		ACCU = a0 instanceof Uint8Array
+	}
+	if (ACCU)
+	{
+		ACCU = <this>["handleRPCMessage"](a0)
+	}
+	return undefined
+}
+function func_dispose_0x100006735()
+{
+	if (<this>["instance"])
+	{
+		r2 = <this>["instance"]["removeAllListeners"]
+		ACCU = r2()
+		r3 = Scope[5544][16]
+		if ("terminate" in <this>["instance"])
+		{
+			r3 = <this>["instance"]
+			if (!<this>["instance"] == undefined)
+			{
+				ACCU = r3["terminate"]()
+			}
+			else
+			{
+				ACCU = undefined
+			}
+		}
+		r3 = Scope[5544][16]
+		if ("kill" in <this>["instance"])
+		{
+			r3 = <this>["instance"]
+			if (!<this>["instance"] == undefined)
+			{
+				r2 = r3["kill"]
+				ACCU = r2()
+			}
+			else
+			{
+				ACCU = undefined
+			}
+		}
+		<this>["instance"] = undefined
+		r2 = <this>["socket"]["close"]
+		ACCU = r2()
+		r4 = undefined
+		<this>["socket"] = undefined
+		ACCU = r4
+	}
+	return undefined
+}
+function func_spawnWorker_0x100006733()
+{
+	if (<this>["terminated"])
+	{
+		r2 = "Worker is terminated"
+		ACCU = Error
+		ACCU = Error(r2)
+	}
+	ACCU = <this>["stop"]()
+	<this>["instance"] = <this>["factory"]()
+	r2 = <this>["instance"]
+	r3 = "message"
+	r4 = <this>["handleMessage"]["bind"]
+	r4 = r4(<this>)
+	ACCU = r2["on"](r3, r4)
+	r1 = <this>["instance"]["once"]
+	r3 = "error"
+	r4 = <this>["stop"]["bind"]
+	r4 = r4(<this>)
+	ACCU = r1(r3, r4)
+	r1 = <this>["instance"]["once"]
+	r3 = "exit"
+	r4 = <this>["stop"]["bind"]
+	r4 = r4(<this>)
+	ACCU = r1(r3, r4)
+	return undefined
+}
+function func_postMessage_0x100006731(a0)
+{
+	r1 = <this>["instance"]
+	if ("postMessage" in r1)
+	{
+		ACCU = r1["postMessage"](a0)
+	}
+	if ("send" in r1)
+	{
+		ACCU = r1["send"](a0)
+	}
+	return undefined
+}
+function func_startSocket_0x10000672f()
+{
+	r3 = "socket"
+	r4 = global_cT["Socket"]
+	r5 = <this>["send"]["bind"]
+	r5 = r5(<this>)
+	ACCU = r4
+	<this>[r3] = r4(r5, false)
+	r2 = <this>["socket"]["once"]
+	r4 = "close"
+	r5 = <this>["stop"]["bind"]
+	r5 = r5(<this>)
+	ACCU = r2(r4, r5)
+	ACCU = <this>["start"]()
+	return <this>["socket"]
+}
+function func_resolveLink_0x10000672d()
+{
+	r4 = new {"links": null}
+	r6 = new [0]
+	r7 = <this>["link"]["target"]
+	r6[0] = r7()
+	r4["links"] = r6
+	return func_clientResolve_0x1000004a1(r4)
+}
+function func_terminate_0x10000672b()
+{
+	<this>["terminated"] = true
+	ACCU = <this>["stop"]()
+	r3 = <this>["link"]
+	ACCU = r3["dispose"]()
+	r2 = <this>["unregister"]
+	r3 = <this>
+	if (!<this>["unregister"] == undefined)
+	{
+		ACCU = r2(<this>)
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	return undefined
+}
+function func_SocketLink_0x100006729(a0, a1, a2)
+{
+	<this>["terminated"] = false
+	<this>["factory"] = a0
+	<this>["unregister"] = a1
+	r3 = "link"
+	r4 = global_sT["SocketLink"]
+	r5 = new {"connect": null, "idleTimeout": null}
+	r6 = <this>["connect"]["bind"]
+	r5["connect"] = r6(<this>)
+	r5["idleTimeout"] = a2
+	ACCU = r4
+	<this>[r3] = r4(r5)
+	r4 = <this>["createRPC"]
+	<this>["rpc"] = r4()
+	return undefined
+}
+function func_noop_0x10000671b()
+{
+	return undefined
+}
+function func_Socket_0x100006719(a0)
+{
+	Scope[5553][6] = func_o_0x100006712
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interop_0x100006716
+	}
+	Scope[5553][7] = ACCU
+	r2 = Object["defineProperty"]
+	r5 = "__esModule"
+	r6 = new {"value": <true}
+	ACCU = r2(a0, r5, r6)
+	a0["Socket"] = undefined
+	Scope[5553][8] = func_exportSender_0x100006711["exports"]()
+	r2 = Object["defineProperty"]
+	r5 = "Socket"
+	r6 = new {"enumerable": <true, "get": null}
+	r6["get"] = func_getDefault_0x100006718
+	ACCU = r2(a0, r5, r6)
+	return undefined
+}
+function func_initTrpc_0x1000066f2()
+{
+	Scope[5562][24] = func_b_0x100006699
+	ACCU = func_exportAbortError_0x100006649()
+	ACCU = func_registerAbortHandler_0x10000664c()
+	ACCU = func_registerAbortHandler_0x10000664c()
+	ACCU = func_initError_0x100006663()
+	ACCU = func_initError_0x100006663()
+	ACCU = func_initErrors_0x100006654()
+	ACCU = func_methods_0x100006675()
+	ACCU = func_methods_0x100006675()
+	ACCU = func_initStream_0x10000668b()
+	ACCU = func_initStream_0x10000668b()
+	ACCU = func_fetch_0x100006690()
+	ACCU = func_fetch_0x100006690()
+	ACCU = func_Invoke_0x100006693()
+	ACCU = func_streamInit_0x100006698()
+	ACCU = func_Transform_0x100006658()
+	ACCU = ToName("$request")
+	ACCU = ToName("requestAsPromise")
+	ACCU = ToName("query")
+	ACCU = ToName("mutation")
+	ACCU = ToName("subscription")
+	r3 = DefineClass([13, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[28], [12, 20, 28, 36, 44]], func_Runtime_0x1000066b7, null, "O9*f", func_dispatch_0x1000066b9, func_b_0x100006699, func_Request_0x1000066c7, func_b_0x100006699, func_queryRequest_0x1000066c9, 70448, func_mutate_0x1000066cb, func_b_0x100006699, func_subscribe_0x1000066d3)
+	r2 = new {"query": null, "mutate": null, "subscribe": null}
+	r2["query"] = "query"
+	r2["mutate"] = "mutation"
+	r2["subscribe"] = "subscription"
+	global_Yw = r2
+	r5 = new {"requester": null}
+	r5["requester"] = func_requestFormData_0x1000066f1
+	global_t1e = func_fetchInit_0x100000497(r5)
+	return undefined
+}
+function func_initSocketLink_0x100006625(a0)
+{
+	Scope[5614][28] = func_F_0x1000065ed
+	Scope[5614][32] = func_clampDelay_0x1000065ef
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["SocketLink"] = undefined
+	Scope[5614][29] = func_link_0x100006032["exports"]()
+	Scope[5614][30] = func_trpcError_0x100006039["exports"]()
+	Scope[5614][31] = func_initPackr_0x1000065ec["exports"]()
+	ACCU = ToName("target")
+	ACCU = ToName("request")
+	ACCU = ToName("dispose")
+	ACCU = ToName("createSocket")
+	ACCU = ToName("handleResponse")
+	ACCU = ToName("dispatch")
+	ACCU = ToName("flush")
+	ACCU = ToName("reconnect")
+	ACCU = ToName("connect")
+	ACCU = ToName("disconnectOnIdle")
+	ACCU = ToName("disconnect")
+	ACCU = ToName("close")
+	r4 = DefineClass([27, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[101], <NumberDictionary[100], [12, 20, 28, 36, 44, 52, 60, 68, 76, 84, 92, 100]], func_request_0x1000065ff, null, 38183, func_createLink_0x100006601, "xQ)2", func_sendRequest_0x100006608, "O9*f", func_dispose_0x10000660a, "eeST", func_connectSocket_0x100006614, func_F_0x1000065ed, func_dispatchRequest_0x100006616, func_F_0x1000065ed, func_flushTimeout_0x100006618, func_F_0x1000065ed, func_flushOutgoing_0x10000661a, "9hYk", func_reconnect_0x10000661c, func_F_0x1000065ed, func_reconnect_0x10000661e, "eeST", func_resetIdle_0x100006620, func_F_0x1000065ed, func_closeWhenIdle_0x100006622, func_F_0x1000065ed, func_closeSocket_0x100006624)
+	a0["SocketLink"] = func_request_0x1000065ff
+	return undefined
+}
+function func_initFaro_0x100005504()
+{
+	r3 = 0
+	ACCU = func_config_0x100003185()
+	ACCU = func_initHttp2_0x10000425b()
+	ACCU = func_Load_0x1000047f7()
+	r10 = func_initFaroExports_0x100004e1b["exports"]()
+	global_M3 = func_interopProxy_0x10000317a(r10)
+	ACCU = func_machineId_0x1000054fc()
+	r7 = ("https://faro." + global_CE)
+	global_Bv = (r7 + "/collect")
+	r7 = global_M3["initializeFaro"]
+	r8 = new {"app": null, "user": null, "transports": null}
+	r9 = new {"name": null}
+	r9["name"] = "client"
+	r8["app"] = r9
+	r9 = new {"id": null}
+	r9["id"] = global_cE
+	r8["user"] = r9
+	r10 = new [0]
+	r11 = global_M3["AxiosTransport"]
+	r12 = new {"url": null, "axios": null}
+	r12["url"] = global_Bv
+	r12["axios"] = global__b
+	ACCU = _CopyDataProperties(r12, (global_EA["faro"]))
+	ACCU = r11
+	r10[0] = r11(r12)
+	r8["transports"] = r10
+	global_tP = r7(r8)
+	return undefined
+}
+function func_machineId_0x1000054fc()
+{
+	r7 = func_initModule_0x1000054f8["exports"]()
+	global_hv = func_interopProxy_0x10000317a(r7)
+	r4 = (require("path"))["join"]
+	r5 = "HKLM"
+	r6 = "SOFTWARE"
+	r7 = "Microsoft"
+	r8 = "Cryptography"
+	global_aE = r4(r5, r6, r7, r8)
+	r4 = global_hv["registryGetValueTyped"]
+	r6 = "MachineGuid"
+	global_cE = r4(global_aE, r6, "SZ")
+	if (!global_cE)
+	{
+		ACCU = Error
+		ACCU = Error("Machine ID not found")
+	}
+	return undefined
+}
+function func_initFaroExports_0x100004e1b(a0)
+{
+	Scope[6908][8] = func_A_0x100004e13
+	r3 = 0
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r7 = "FetchTransport"
+	r9 = "AxiosTransport"
+	r12 = undefined
+	a0["initializeFaro"] = undefined
+	a0[r9] = r12
+	a0[r7] = r12
+	Scope[6908][10] = func_initializeFaro_0x100004dd7["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "initializeFaro"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getInitializeFaro_0x100004e16
+	ACCU = r6(a0, r9, r10)
+	Scope[6908][9] = func_exportTransports_0x100004e12["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "AxiosTransport"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getAxiosTransport_0x100004e1a
+	ACCU = r6(a0, r9, r10)
+	r6 = Object["defineProperty"]
+	r9 = "FetchTransport"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getTransport_0x100004e18
+	ACCU = r6(a0, r9, r10)
+	return undefined
+}
+function func_Load_0x1000047f7()
+{
+	ACCU = func_config_0x100003185()
+	r7 = func_initJwt_0x1000047f2["exports"]()
+	global_lv = func_interopProxy_0x10000317a(r7)
+	r4 = global_lv["token"]
+	r5 = "loader"
+	r6 = "RS256"
+	r7 = global_EA["jwt"]["publicKey"]
+	global_Ev = r4(r5, r6, r7)
+	r4 = global_Ev["verify"]
+	r4 = r4(global_EA["loader"]["token"])
+	global_CE = r4["domain"]
+	return undefined
+}
+function func_initHttp2_0x10000425b()
+{
+	ACCU = func_invokeCall_0x100003ab2()
+	r7 = func_http2Proxy_0x100003d4b["exports"]()
+	global_Av = func_interopProxy_0x10000317a(r7)
+	r7 = func_initHttp2Adapter_0x100004256["exports"]()
+	global_fv = func_interopProxy_0x10000317a(r7)
+	r4 = global_fv["createHTTP2Adapter"]
+	r5 = new {"agent": null, "force": <true}
+	r5["agent"] = global_Av["globalAgent"]
+	global_oN = r4(r5)
+	r4 = (func_createClient_0x10000013b(global_yh))["create"]
+	r6 = new {"adapter": null}
+	r6["adapter"] = func_dispatch_0x10000013f
+	global__b = r4(r6)
+	return undefined
+}
+function func_duration_0x100003605(a0, a1)
+{
+	Scope[8318][11] = func_l_0x1000035dc
+	Scope[8318][18] = func_parseDuration_0x1000035de
+	Scope[8318][19] = func_formatDuration_0x1000035e0
+	Scope[8318][20] = func_formatDuration_0x1000035e2
+	Scope[8318][21] = func_pluralize_0x1000035e4
+	Scope[8318][12] = 1000
+	Scope[8318][13] = (1000 * 60)
+	Scope[8318][14] = (Scope[8318][13] * 60)
+	Scope[8318][15] = (Scope[8318][14] * 24)
+	Scope[8318][16] = (Scope[8318][15] * 7)
+	Scope[8318][17] = (Scope[8318][15] * 365.25)
+	a1["exports"] = func_formatDuration_0x100003604
+	return undefined
+}
+function func_formatDuration_0x100003604(a0, a1)
+{
+	r1 = 0
+	r9 = {}
+	a1 = func_Default_0x1000035e5(a1, r9)
+	r3 = TypeOf(a0)
+	if (r3 === "string")
+	{
+		if (a0["length"] > 0)
+		{
+			return func_parseDuration_0x1000035de(a0)
+		}
+	}
+	if (r3 === "number")
+	{
+		if (isFinite(a0))
+		{
+			ACCU = a1["long"]
+			if (a1["long"])
+			{
+				ACCU = func_formatDuration_0x1000035e2(a0)
+			}
+			else
+			{
+				ACCU = func_formatDuration_0x1000035e0(a0)
+			}
+			return ACCU
+		}
+	}
+	r9 = "val is not a non-empty string or a valid number. val="
+	r10 = JSON["stringify"]
+	r10 = r10(a0)
+	r7 = (r9 + r10)
+	ACCU = Error
+	ACCU = Error(r7)
+	return undefined
+}
+function func_pluralize_0x1000035e4(a0, a1, a2, a3)
+{
+	r5 = (a2 * 1.5)
+	r1 = a1 >= r5
+	r8 = Math["round"]
+	r10 = (a0 / a2)
+	r8 = r8(r10)
+	r6 = (r8 + " ")
+	r4 = (r6 + a3)
+	ACCU = r1
+	if (r1)
+	{
+		ACCU = "s"
+	}
+	else
+	{
+		ACCU = ""
+	}
+	r5 = ACCU
+	return (r4 + r5)
+}
+function func_formatDuration_0x1000035e2(a0)
+{
+	r3 = Math["abs"]
+	r1 = r3(a0)
+	ACCU = r1 >= Scope[8318][15]
+	if (r1 >= Scope[8318][15])
+	{
+		r9 = "day"
+		r6 = a0
+		r7 = r1
+		ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][15], r9)
+	}
+	else
+	{
+		ACCU = r1 >= Scope[8318][14]
+		if (r1 >= Scope[8318][14])
+		{
+			r9 = "hour"
+			r6 = a0
+			r7 = r1
+			ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][14], r9)
+		}
+		else
+		{
+			if (r1 >= Scope[8318][13])
+			{
+				r9 = "minute"
+				r6 = a0
+				r7 = r1
+				ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][13], r9)
+			}
+			else
+			{
+				if (r1 >= 1000)
+				{
+					ACCU = func_pluralize_0x1000035e4(a0, r1, 1000, "second")
+				}
+				else
+				{
+					ACCU = (a0 + " ms")
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_formatDuration_0x1000035e0(a0)
+{
+	r2 = Math["abs"]
+	r0 = r2(a0)
+	ACCU = r0 >= Scope[8318][15]
+	if (r0 >= Scope[8318][15])
+	{
+		r4 = Math["round"]
+		r6 = (a0 / Scope[8318][15])
+		r4 = r4(r6)
+		ACCU = (r4 + "d")
+	}
+	else
+	{
+		ACCU = r0 >= Scope[8318][14]
+		if (r0 >= Scope[8318][14])
+		{
+			r4 = Math["round"]
+			r6 = (a0 / Scope[8318][14])
+			r4 = r4(r6)
+			ACCU = (r4 + "h")
+		}
+		else
+		{
+			if (r0 >= Scope[8318][13])
+			{
+				r4 = Math["round"]
+				r6 = (a0 / Scope[8318][13])
+				r4 = r4(r6)
+				ACCU = (r4 + "m")
+			}
+			else
+			{
+				if (r0 >= 1000)
+				{
+					r4 = Math["round"]
+					r6 = (a0 / 1000)
+					r4 = r4(r6)
+					ACCU = (r4 + "s")
+				}
+				else
+				{
+					ACCU = (a0 + "ms")
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_parseDuration_0x1000035de(a0)
+{
+	a0 = String(a0)
+	if (!a0["length"] > 100)
+	{
+		r6 = \^(-?(?:\\\\d+)?\\\\.?\\\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$\
+		r5 = r6["exec"]
+		r1 = r5(a0)
+		if (r5(a0))
+		{
+			r2 = parseFloat(r1[1])
+			ACCU = r1[2]
+			if (!r1[2])
+			{
+				ACCU = "ms"
+			}
+			r6 = ACCU
+			r5 = r6["toLowerCase"]
+			r3 = r5()
+			r5 = r3
+			switch ()
+			case r3 === "years":
+			case r5 === "year":
+			case r5 === "yrs":
+			case r5 === "yr":
+			case r5 === "y":
+			{
+				return (r2 * Scope[8318][17])
+			}
+			case r5 === "weeks":
+			case r5 === "week":
+			case r5 === "w":
+			{
+				return (r2 * Scope[8318][16])
+			}
+			case r5 === "days":
+			case r5 === "day":
+			case r5 === "d":
+			{
+				return (r2 * Scope[8318][15])
+			}
+			case r5 === "hours":
+			case r5 === "hour":
+			case r5 === "hrs":
+			case r5 === "hr":
+			case r5 === "h":
+			{
+				return (r2 * Scope[8318][14])
+			}
+			case r5 === "minutes":
+			case r5 === "minute":
+			case r5 === "mins":
+			case r5 === "min":
+			case r5 === "m":
+			{
+				return (r2 * Scope[8318][13])
+			}
+			case r5 === "seconds":
+			case r5 === "second":
+			case r5 === "secs":
+			case r5 === "sec":
+			case r5 === "s":
+			{
+				return (r2 * 1000)
+			}
+			case r5 === "milliseconds":
+			case r5 === "millisecond":
+			case r5 === "msecs":
+			case r5 === "msec":
+			case r5 === "ms":
+			{
+				return r2
+			}
+			default:
+			{}
+			return undefined
+		}
+	}
+	return undefined
+}
+function func_config_0x100003185()
+{
+	r4 = new {"loader": null, "diagnostics": {"maxFailCount": 5, "successTimeout": 30000}, "leveldb": {"location": "db"}, "faro": null, "jwt": null, "encryption": null, "hmac": null, "server": null, "proxy": null}
+	r5 = new {"token": null, "task": null, "build": null}
+	r6 = process["env"]
+	r5["token"] = r6["TOKEN"]
+	r6 = new {"name": null}
+	r7 = process["env"]
+	r6["name"] = r7["TASK_NAME"]
+	r5["task"] = r6
+	r6 = new {"hash": null}
+	r7 = process["env"]
+	r6["hash"] = r7["BUILD_HASH"]
+	r5["build"] = r6
+	r4["loader"] = r5
+	r5 = new {"apiKey": null}
+	r5["apiKey"] = "HjvUyAdRCBwaSTak6iiXnaJDiCA4NuZt"
+	r4["faro"] = r5
+	r5 = new {"publicKey": null}
+	r5["publicKey"] = "\n-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtRdWl/ucoH+ZnVuxHrx2\ncTbwEY2LucyUqEJVl6trmNYaJTFX9qDYA8Z4VOaFO86MHg0cY1mJ8NALzTqDt20C\nlnqYtLEuo0Fqg9pJMhnEb078F31dilgdK+5bK7LgwXps06KQ+Dk7XxaqkbPFa7oZ\n73/q4FhrYEtBxFno0WJla7mq49/W4wJb753WYWTjRMjBKVaUIOtAtGdBp8Li2WX2\nPDqxftDcvT8hJf5H6tMJ3tQRpyHu7ljkwdivamG/labZpzKhijK7BMgrd7251sjh\n7zD6prnafayjK+nfD1dvok7Rd8TV8sa1FK8T0uMmGFdUVGK+X4f45AwNWn8OINLE\nVwIDAQAB\n-----END PUBLIC KEY-----"
+	r4["jwt"] = r5
+	r5 = new {"algorithm": null, "key": null}
+	r5["algorithm"] = "aes-256-cbc"
+	r6 = Buffer["from"]
+	r5["key"] = r6("f357d7ed8b7d51d2b086881383764272180b92a7f61de8f579032641a878b010", "hex")
+	r4["encryption"] = r5
+	r5 = new {"key": null}
+	r6 = Buffer["from"]
+	r5["key"] = r6("059cb73cd6ac2ef2281b00bbd0a20615", "hex")
+	r4["hmac"] = r5
+	r5 = new {"host": null, "domain": null}
+	r5["host"] = "127.0.0.1"
+	r5["domain"] = "internal"
+	r4["server"] = r5
+	r5 = new {"listen": null}
+	r6 = new {"socket": null, "httpReader": null, "socketPipe": null, "store": {"limit": 256}}
+	r7 = new {"bufferSize": null}
+	r10 = (1024 * 1024)
+	r7["bufferSize"] = (r10 * 8)
+	r6["socket"] = r7
+	r7 = new {"bufferSize": null, "headersSizeLimit": null}
+	r7["bufferSize"] = (1024 * 8)
+	r7["headersSizeLimit"] = (256 * 1024)
+	r6["httpReader"] = r7
+	r7 = new {"bufferSize": null}
+	r7["bufferSize"] = (1024 * 8)
+	r6["socketPipe"] = r7
+	r5["listen"] = r6
+	r4["proxy"] = r5
+	global_EA = r4
+	return undefined
+}
+function func_ClusterInit_0x10000317e()
+{
+	r7 = require("cluster")
+	global_uE = func_interopProxy_0x10000317a(r7)
+	return undefined
+}
+function func_interopProxy_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_proxy_0x100003179(r1, a0)
+}
+function func_pollProviders_0x1000004d6()
+{
+	r9 = <closure>
+	r10 = <this>
+	ACCU = func_e_0x1000004d2
+	try
+	{
+		r1 = new {"V": "mwAz", "J": 15042, "S": "A5nh", "g": 51139, "L": "[()[", "X": 122155, "j": "epz[", "E": 28041}
+		r11 = Promise["resolve"]()
+		r10 = r11["then"]
+		r11 = r10(func_init_0x1000004d5)
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[11004])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r4 = r10["providers"]
+		r13 = r1["L"]
+		r14 = r1["X"]
+		r12 = func_keys_0x1000004ce(r4)
+		r11 = GetIterator(r12)
+		r10 = r11["next"]
+		ACCU = false
+		r12 = false
+		try
+		{
+			while (true)
+			{
+				r12 = true
+				r16 = r10()
+				if (r16["done"]) break
+				r12 = false
+				r21 = r4[r16["value"]]
+				r18 = r3
+				ACCU = func_pollEmit_0x1000004da(r16["value"], r21)
+				r16 = r16["value"]
+			}
+			ACCU = -1
+			r14 = -1
+			r13 = -1
+		}
+		catch
+		{
+			r14 = ACCU
+			r13 = 0
+		}
+		if (!r12)
+		{
+			try
+			{
+				if (!r11["return"] == undefined)
+				{
+					ACCU = r11["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r13 === 0)
+		{
+			ACCU = r14
+		}
+		r11 = undefined
+		ACCU = r11
+		return r11
+	}
+	catch {}
+	r10 = ACCU
+	ACCU = null
+	ACCU = Scope[11005]
+	return Scope[11005][2]
+}

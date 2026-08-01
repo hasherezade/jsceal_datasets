@@ -1,0 +1,3265 @@
+function func_initialize_0x100001b1e(a0, a1)
+{
+	Scope[9795][2] = func_getExports_0x1000017d9(func_ExportOptions_0x1000017da)
+	Scope[9795][3] = func_getExports_0x1000017d9(func_base64Module_0x1000017de)
+	Scope[9795][4] = func_getExports_0x1000017d9(func_forge_0x10000186f)
+	Scope[9795][5] = func_getExports_0x1000017d9(func_registerCipher_0x10000187a)
+	Scope[9795][6] = func_getExports_0x1000017d9(func_initCipherModes_0x10000189f)
+	Scope[9795][7] = func_getExports_0x1000017d9(func_initAes_0x1000018b0)
+	Scope[9795][8] = func_getExports_0x1000017d9(func_registerOids_0x1000018b3)
+	Scope[9795][9] = func_getExports_0x1000017d9(func_asn1_0x1000018c7)
+	Scope[9795][10] = func_getExports_0x1000017d9(func_initModule_0x1000018c8)
+	Scope[9795][11] = func_getExports_0x1000017d9(func_initHmac_0x1000018cd)
+	Scope[9795][12] = func_getExports_0x1000017d9(func_initMd5_0x1000018d4)
+	Scope[9795][13] = func_getExports_0x1000017d9(func_pem_0x1000018da)
+	Scope[9795][14] = func_getExports_0x1000017d9(func_initDes_0x1000018e9)
+	Scope[9795][15] = func_getExports_0x1000017d9(func_pbkdf2_0x1000018ef)
+	Scope[9795][16] = func_getExports_0x1000017d9(func_initSha256_0x1000018f6)
+	Scope[9795][17] = func_getExports_0x1000017d9(func_initPrng_0x10000190d)
+	Scope[9795][18] = func_getExports_0x1000017d9(func_initialize_0x10000191a)
+	Scope[9795][19] = func_getExports_0x1000017d9(func_rc2_0x10000192b)
+	Scope[9795][20] = func_getExports_0x1000017d9(func_BigInteger_0x100001997)
+	Scope[9795][21] = func_getExports_0x1000017d9(func_initSha1_0x10000199e)
+	Scope[9795][22] = func_getExports_0x1000017d9(func_pkcs1_0x1000019a2)
+	Scope[9795][23] = func_getExports_0x1000017d9(func_initialize_0x1000019b1)
+	Scope[9795][24] = func_getExports_0x1000017d9(func_initRsa_0x1000019e4)
+	Scope[9795][25] = func_getExports_0x1000017d9(func_initPbe_0x1000019f8)
+	Scope[9795][26] = func_getExports_0x1000017d9(func_initPkcs7_0x1000019f9)
+	Scope[9795][27] = func_getExports_0x1000017d9(func_Mgf_0x1000019fc)
+	Scope[9795][28] = func_getExports_0x1000017d9(func_initMgf_0x1000019fd)
+	Scope[9795][29] = func_getExports_0x1000017d9(func_Init_0x100001a01)
+	Scope[9795][30] = func_getExports_0x1000017d9(func_pki_0x100001a4a)
+	Scope[9795][31] = func_getExports_0x1000017d9(func_pkcs12_0x100001a57)
+	Scope[9795][32] = func_getExports_0x1000017d9(func_pki_0x100001a5c)
+	Scope[9795][33] = func_getExports_0x1000017d9(func_Tls_0x100001aa4)
+	r1 = func_getExports_0x1000017d9(func_configureTls_0x100001aad)
+	Scope[9795][34] = func_getExports_0x1000017d9(func_initSha512_0x100001ab7)
+	Scope[9795][35] = func_getExports_0x1000017d9(func_validateKeys_0x100001ab8)
+	r2 = func_getExports_0x1000017d9(func_initEd25519_0x100001adc)
+	r3 = func_getExports_0x1000017d9(func_kem_0x100001ae4)
+	r4 = func_getExports_0x1000017d9(func_initLog_0x100001af2)
+	r5 = func_getExports_0x1000017d9(func_initExports_0x100001af3)
+	r6 = func_getExports_0x1000017d9(func_initPkcs7_0x100001b15)
+	r7 = func_getExports_0x1000017d9(func_ssh_0x100001b1d)
+	a1["exports"] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = r1()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][5]()
+	ACCU = Scope[9795][14]()
+	ACCU = r2()
+	ACCU = Scope[9795][11]()
+	ACCU = r3()
+	ACCU = r4()
+	ACCU = r5()
+	ACCU = Scope[9795][27]()
+	ACCU = Scope[9795][15]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][22]()
+	ACCU = Scope[9795][31]()
+	ACCU = r6()
+	ACCU = Scope[9795][32]()
+	ACCU = Scope[9795][23]()
+	ACCU = Scope[9795][17]()
+	ACCU = Scope[9795][29]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][19]()
+	ACCU = r7()
+	ACCU = Scope[9795][33]()
+	ACCU = Scope[9795][4]()
+	return undefined
+}
+function func_ssh_0x100001b1d(a0, a1)
+{
+	Scope[9796][3] = func_writeInt32_0x100001b16
+	Scope[9796][4] = func_writeString_0x100001b17
+	Scope[9796][5] = func_sha1_0x100001b18
+	Scope[9796][2] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][11]()
+	ACCU = Scope[9795][12]()
+	ACCU = Scope[9795][21]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9796][2]["ssh"])
+	{
+	}
+	r4 = {}
+	Scope[9796][2]["ssh"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	r0["privateKeyToPutty"] = func_exportKey_0x100001b19
+	r0["publicKeyToOpenSSH"] = func_sshRsa_0x100001b1a
+	r0["privateKeyToOpenSSH"] = func_serializeKey_0x100001b1b
+	r0["getPublicKeyFingerprint"] = func_fingerprint_0x100001b1c
+	return undefined
+}
+function func_initPkcs7_0x100001b15(a0, a1)
+{
+	Scope[9797][5] = func_parseRecipient_0x100001af4
+	Scope[9797][6] = func_certificateToAsn1_0x100001af5
+	Scope[9797][7] = func_parseRecipients_0x100001af6
+	Scope[9797][8] = func_certArray_0x100001af7
+	Scope[9797][9] = func_encodeSignedData_0x100001af8
+	Scope[9797][10] = func_encodeSigned_0x100001af9
+	Scope[9797][11] = func_encodeAttribute_0x100001afa
+	Scope[9797][12] = func_encodeAsn1_0x100001afb
+	Scope[9797][13] = func_parsePkcs7_0x100001afc
+	Scope[9797][14] = func_decryptContent_0x100001afd
+	Scope[9797][2] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][14]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][26]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][30]()
+	Scope[9797][3] = Scope[9797][2]["asn1"]
+	r1 = a1
+	if (!Scope[9797][2]["pkcs7"])
+	{
+	}
+	r3 = {}
+	Scope[9797][2]["pkcs7"] = {}
+	r1["exports"] = r3
+	Scope[9797][4] = r3
+	Scope[9797][4]["messageFromPem"] = func_decodePkcs7_0x100001afe
+	Scope[9797][4]["messageToPem"] = func_encodePem_0x100001aff
+	Scope[9797][4]["messageFromAsn1"] = func_parsePkcs7_0x100001b00
+	Scope[9797][4]["createSignedData"] = func_initSignedData_0x100001b0a
+	Scope[9797][4]["createEncryptedData"] = func_encryptedData_0x100001b0d
+	Scope[9797][4]["createEnvelopedData"] = func_createEnvelope_0x100001b14
+	return undefined
+}
+function func_initExports_0x100001af3(a0, a1)
+{
+	a1["exports"] = Scope[9795][10]()
+	ACCU = Scope[9795][12]()
+	ACCU = Scope[9795][21]()
+	ACCU = Scope[9795][16]()
+	ACCU = Scope[9795][34]()
+	return undefined
+}
+function func_initLog_0x100001af2(a0, a1)
+{
+	Scope[9801][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	r9 = a1
+	if (!Scope[9801][2]["log"])
+	{
+	}
+	r11 = {}
+	Scope[9801][2]["log"] = {}
+	r9["exports"] = r11
+	Scope[9801][2]["log"]["levels"] = new ["none", "error", "warning", "info", "debug", "verbose", "max"]
+	Scope[9801][3] = {}
+	Scope[9801][4] = []
+	r0 = null
+	Scope[9801][2]["log"]["LEVEL_LOCKED"] = 2
+	Scope[9801][2]["log"]["NO_LEVEL_CHECK"] = 4
+	Scope[9801][2]["log"]["INTERPOLATE"] = 8
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < Scope[9801][2]["log"]["levels"]["length"]) break
+		r11 = new {"index": null, "name": null}
+		r11["index"] = r2
+		r11["name"] = Scope[9801][2]["log"]["levels"][r2]["toUpperCase"]()
+		Scope[9801][3][Scope[9801][2]["log"]["levels"][r2]] = r11
+		r2 = (r2 + 1)
+	}
+	Scope[9801][2]["log"]["logMessage"] = func_runHooks_0x100001ae5
+	Scope[9801][2]["log"]["prepareStandard"] = func_standardize_0x100001ae6
+	Scope[9801][2]["log"]["prepareFull"] = func_formatError_0x100001ae7
+	Scope[9801][2]["log"]["prepareStandardFull"] = func_prepareStandard_0x100001ae8
+	r3 = new ["error", "warning", "info", "debug", "verbose"]
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < r3["length"]) break
+		r10 = r3[r2]
+		ACCU = func_setLogLevel_0x100001aea(r10)
+		r2 = (r2 + 1)
+	}
+	Scope[9801][2]["log"]["makeLogger"] = func_disableLogging_0x100001aeb
+	Scope[9801][2]["log"]["setLevel"] = func_setLevel_0x100001aec
+	Scope[9801][2]["log"]["lock"] = func_setLocked_0x100001aed
+	Scope[9801][2]["log"]["addLogger"] = func_push_0x100001aee
+	r9 = TypeOf(typeof(console))
+	if (r9 < "u")
+		&& ("log" in console)
+	{
+		if (console["error"])
+			&& (console["warn"])
+			&& (console["info"])
+			&& (console["debug"])
+		{
+			r9 = new {"error": null, "warning": null, "info": null, "debug": null, "verbose": null}
+			r9["error"] = console["error"]
+			r9["warning"] = console["warn"]
+			r9["info"] = console["info"]
+			r9["debug"] = console["debug"]
+			r9["verbose"] = console["debug"]
+			Scope[9801][5] = r9
+			r4 = Scope[9801][2]["log"]["makeLogger"](func_logStandard_0x100001aef)
+		}
+		else
+		{
+			r4 = Scope[9801][2]["log"]["makeLogger"](func_logStandard_0x100001af0)
+		}
+		ACCU = Scope[9801][2]["log"]["setLevel"](r4, "debug")
+		ACCU = Scope[9801][2]["log"]["addLogger"](r4)
+		r0 = r4
+		ACCU = r0
+	}
+	else
+	{
+		r9 = new {"log": null}
+		r9["log"] = func_noop_0x100001af1
+		console = r9
+		ACCU = r9
+	}
+	if (!(null == r0))
+	{
+		r9 = TypeOf(typeof(window))
+		if (r9 < "u")
+		{
+			if (window["location"])
+			{
+				ACCU = URL
+				r9 = URL(window["location"]["href"])
+				r6 = r9["searchParams"]
+				if (r9["searchParams"]["has"]("console.level"))
+				{
+					r13 = r6["get"]("console.level")
+					r12 = r13["slice"](-1)
+					r12 = r12[0]
+					ACCU = Scope[9801][2]["log"]["setLevel"](r0, r12)
+				}
+				if (r6["has"]("console.lock"))
+				{
+					r10 = r6["get"]("console.lock")
+					r9 = r10["slice"](-1)
+					if (r9[0] == "true")
+					{
+						ACCU = Scope[9801][2]["log"]["lock"](r0)
+					}
+				}
+			}
+		}
+	}
+	Scope[9801][2]["log"]["consoleLogger"] = r0
+	return undefined
+}
+function func_kem_0x100001ae4(a0, a1)
+{
+	Scope[9803][4] = func_deriveKey_0x100001ade
+	Scope[9803][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][20]()
+	r1 = a1
+	if (!Scope[9803][2]["kem"])
+	{
+	}
+	r3 = {}
+	Scope[9803][2]["kem"] = {}
+	r1["exports"] = r3
+	Scope[9803][3] = Scope[9803][2]["jsbn"]["BigInteger"]
+	Scope[9803][2]["kem"]["rsa"] = {}
+	Scope[9803][2]["kem"]["rsa"]["create"] = func_cryptoFactory_0x100001ae1
+	Scope[9803][2]["kem"]["kdf1"] = func_deriveDigest_0x100001ae2
+	Scope[9803][2]["kem"]["kdf2"] = func_deriveSecret_0x100001ae3
+	return undefined
+}
+function func_initEd25519_0x100001adc(a0, a1)
+{
+	Scope[9806][8] = func_messageBytes_0x100001ab9
+	Scope[9806][17] = func_sha512_0x100001aba
+	Scope[9806][18] = func_deriveKey_0x100001abb
+	Scope[9806][19] = func_deriveShared_0x100001abc
+	Scope[9806][20] = func_deriveKey_0x100001abd
+	Scope[9806][21] = func_reduceBigInt_0x100001abe
+	Scope[9806][22] = func_reduceBigInt_0x100001abf
+	Scope[9806][23] = func_multiplyTransform_0x100001ac0
+	Scope[9806][24] = func_xorSwapAll_0x100001ac1
+	Scope[9806][25] = func_expandKey_0x100001ac2
+	Scope[9806][26] = func_expandKey_0x100001ac3
+	Scope[9806][27] = func_reduce_0x100001ac4
+	Scope[9806][28] = func_decodeWords_0x100001ac5
+	Scope[9806][29] = func_pow_0x100001ac6
+	Scope[9806][30] = func_constantEqual_0x100001ac7
+	Scope[9806][31] = func_constTimeEqual_0x100001ac8
+	Scope[9806][32] = func_constantTimeEqual_0x100001ac9
+	Scope[9806][33] = func_parity_0x100001aca
+	Scope[9806][34] = func_applyPermutation_0x100001acb
+	Scope[9806][35] = func_applyMatrix_0x100001acc
+	Scope[9806][36] = func_copyWords_0x100001acd
+	Scope[9806][37] = func_powMatrix_0x100001ace
+	Scope[9806][38] = func_checksum_0x100001acf
+	Scope[9806][39] = func_xorSwap_0x100001ad0
+	Scope[9806][40] = func_float64Array_0x100001ad1
+	Scope[9806][41] = func_addVectors_0x100001ad2
+	Scope[9806][42] = func_subtract16_0x100001ad3
+	Scope[9806][43] = func_multiply_0x100001ad4
+	Scope[9806][44] = func_multiplyMatrix_0x100001ad5
+	Scope[9806][2] = Scope[9795][2]()
+	ACCU = Scope[9795][20]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][34]()
+	ACCU = Scope[9795][4]()
+	r0 = Scope[9795][35]()
+	Scope[9806][3] = r0["publicKeyValidator"]
+	Scope[9806][4] = r0["privateKeyValidator"]
+	r3 = TypeOf(r1)
+	if (r3 > "u")
+	{
+		r1 = Scope[9806][2]["jsbn"]["BigInteger"]
+	}
+	Scope[9806][5] = Scope[9806][2]["util"]["ByteBuffer"]
+	r3 = TypeOf(typeof(Buffer))
+	ACCU = r3 > "u"
+	if (r3 > "u")
+	{
+		ACCU = Uint8Array
+	}
+	else
+	{
+		ACCU = Buffer
+	}
+	Scope[9806][6] = ACCU
+	if (!Scope[9806][2]["pki"])
+	{
+	}
+	Scope[9806][2]["pki"] = {}
+	r3 = a1
+	if (!Scope[9806][2]["ed25519"])
+	{
+	}
+	r6 = {}
+	Scope[9806][2]["ed25519"] = {}
+	Scope[9806][2]["pki"]["ed25519"] = r6
+	r3["exports"] = r6
+	Scope[9806][7] = Scope[9806][2]["ed25519"]
+	Scope[9806][7]["constants"] = {}
+	Scope[9806][7]["constants"]["PUBLIC_KEY_BYTE_LENGTH"] = 32
+	Scope[9806][7]["constants"]["PRIVATE_KEY_BYTE_LENGTH"] = 64
+	Scope[9806][7]["constants"]["SEED_BYTE_LENGTH"] = 32
+	Scope[9806][7]["constants"]["SIGN_BYTE_LENGTH"] = 64
+	Scope[9806][7]["constants"]["HASH_BYTE_LENGTH"] = 64
+	Scope[9806][7]["generateKeyPair"] = func_keyPair_0x100001ad6
+	Scope[9806][7]["privateKeyFromAsn1"] = func_parsePrivateKey_0x100001ad7
+	Scope[9806][7]["publicKeyFromAsn1"] = func_validateEd25519_0x100001ad8
+	Scope[9806][7]["publicKeyFromPrivateKey"] = func_derivePublic_0x100001ad9
+	Scope[9806][7]["sign"] = func_sign_0x100001ada
+	Scope[9806][7]["verify"] = func_verifySignature_0x100001adb
+	Scope[9806][9] = func_float64Array_0x100001ad1()
+	r4 = new [1]
+	Scope[9806][10] = func_float64Array_0x100001ad1(r4)
+	r4 = new [30883, 4953, 19914, 30187, 55467, 16705, 2637, 112, 59544, 30585, 16505, 36039, 65139, 11119, 27886, 20995]
+	Scope[9806][11] = func_float64Array_0x100001ad1(r4)
+	r4 = new [61785, 9906, 39828, 60374, 45398, 33411, 5274, 224, 53552, 61171, 33010, 6542, 64743, 22239, 55772, 9222]
+	Scope[9806][12] = func_float64Array_0x100001ad1(r4)
+	r4 = new [54554, 36645, 11616, 51542, 42930, 38181, 51040, 26924, 56412, 64982, 57905, 49316, 21502, 52590, 14035, 8553]
+	Scope[9806][13] = func_float64Array_0x100001ad1(r4)
+	r4 = new [26200, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214, 26214]
+	Scope[9806][14] = func_float64Array_0x100001ad1(r4)
+	r4 = new [237, 211, 245, 92, 26, 99, 18, 88, 214, 156, 247, 162, 222, 249, 222, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16]
+	ACCU = Float64Array
+	Scope[9806][15] = Float64Array(r4)
+	r4 = new [41136, 18958, 6951, 50414, 58488, 44335, 6150, 12099, 55207, 15867, 153, 11085, 57099, 20417, 9344, 11139]
+	Scope[9806][16] = func_float64Array_0x100001ad1(r4)
+	return undefined
+}
+function func_validateKeys_0x100001ab8(a0)
+{
+	r0 = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	r3 = new {"name": "PrivateKeyInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r3["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r3["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r5 = new [0, 0, 0]
+	r6 = new {"name": "PrivateKeyInfo.version", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyVersion"}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r5[0] = r6
+	r6 = new {"name": "PrivateKeyInfo.privateKeyAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8 = new [0]
+	r9 = new {"name": "AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyOid"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["OID"]
+	r8[0] = r9
+	r6["value"] = r8
+	r5[1] = r6
+	r6 = new {"name": "PrivateKeyInfo", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKey"}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["OCTETSTRING"]
+	r5[2] = r6
+	r3["value"] = r5
+	a0["privateKeyValidator"] = r3
+	r3 = new {"name": "SubjectPublicKeyInfo", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "subjectPublicKeyInfo", "value": null}
+	r3["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r3["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r5 = new [0, 0]
+	r6 = new {"name": "SubjectPublicKeyInfo.AlgorithmIdentifier", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8 = new [0]
+	r9 = new {"name": "AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "publicKeyOid"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["OID"]
+	r8[0] = r9
+	r6["value"] = r8
+	r5[0] = r6
+	r6 = new {"tagClass": null, "type": null, "constructed": <false, "composed": <true, "captureBitStringValue": "ed25519PublicKey"}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["BITSTRING"]
+	r5[1] = r6
+	r3["value"] = r5
+	a0["publicKeyValidator"] = r3
+	return undefined
+}
+function func_initSha512_0x100001ab7(a0, a1)
+{
+	Scope[9807][8] = func_initSha512_0x100001aae
+	Scope[9807][9] = func_sha512_0x100001aaf
+	Scope[9807][2] = Scope[9795][2]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9807][2]["sha512"])
+	{
+	}
+	r4 = {}
+	Scope[9807][2]["sha512"] = {}
+	r2["exports"] = r4
+	Scope[9807][3] = r4
+	Scope[9807][2]["md"]["algorithms"]["sha512"] = Scope[9807][3]
+	Scope[9807][2]["md"]["sha512"] = Scope[9807][3]
+	if (!Scope[9807][2]["sha512"]["sha384"])
+	{
+	}
+	r4 = {}
+	Scope[9807][2]["sha512"]["sha384"] = {}
+	Scope[9807][2]["sha384"] = r4
+	r0 = r4
+	r0["create"] = func_sha384_0x100001ab0
+	Scope[9807][2]["md"]["algorithms"]["sha384"] = r0
+	Scope[9807][2]["md"]["sha384"] = r0
+	ACCU = Scope[9807][2]["sha512"]["sha256"]
+	if (!Scope[9807][2]["sha512"]["sha256"])
+	{
+		r3 = new {"create": null}
+		r3["create"] = func_CreateSha512_0x100001ab1
+		ACCU = r3
+	}
+	Scope[9807][2]["sha512"]["sha256"] = ACCU
+	Scope[9807][2]["md"]["algorithms"]["sha512/256"] = Scope[9807][2]["sha512"]["sha256"]
+	Scope[9807][2]["md"]["sha512/256"] = Scope[9807][2]["sha512"]["sha256"]
+	ACCU = Scope[9807][2]["sha512"]["sha224"]
+	if (!Scope[9807][2]["sha512"]["sha224"])
+	{
+		r3 = new {"create": null}
+		r3["create"] = func_sha512_0x100001ab2
+		ACCU = r3
+	}
+	Scope[9807][2]["sha512"]["sha224"] = ACCU
+	Scope[9807][2]["md"]["algorithms"]["sha512/224"] = Scope[9807][2]["sha512"]["sha224"]
+	Scope[9807][2]["md"]["sha512/224"] = Scope[9807][2]["sha512"]["sha224"]
+	Scope[9807][3]["create"] = func_InitSha512_0x100001ab6
+	Scope[9807][5] = false
+	return undefined
+}
+function func_configureTls_0x100001aad(a0, a1)
+{
+	Scope[9809][4] = func_encrypt_0x100001aa6
+	Scope[9809][5] = func_padBytes_0x100001aa7
+	Scope[9809][6] = func_truncateMatch_0x100001aa8
+	Scope[9809][7] = func_encryptRecord_0x100001aa9
+	Scope[9809][8] = func_verifyHmac_0x100001aaa
+	Scope[9809][2] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][33]()
+	a1["exports"] = Scope[9809][2]["tls"]
+	Scope[9809][3] = Scope[9809][2]["tls"]
+	r3 = new {"id": [0, 47], "name": "TLS_RSA_WITH_AES_128_CBC_SHA", "initSecurityParameters": null, "initConnectionState": null}
+	r3["initSecurityParameters"] = func_initSecurity_0x100001aab
+	r3["initConnectionState"] = func_setupCipher_0x100001aa5
+	Scope[9809][3]["CipherSuites"]["TLS_RSA_WITH_AES_128_CBC_SHA"] = r3
+	r3 = new {"id": [0, 53], "name": "TLS_RSA_WITH_AES_256_CBC_SHA", "initSecurityParameters": null, "initConnectionState": null}
+	r3["initSecurityParameters"] = func_InitSecurity_0x100001aac
+	r3["initConnectionState"] = func_setupCipher_0x100001aa5
+	Scope[9809][3]["CipherSuites"]["TLS_RSA_WITH_AES_256_CBC_SHA"] = r3
+	return undefined
+}
+function func_Tls_0x100001aa4(a0, a1)
+{
+	Scope[9810][2] = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][11]()
+	ACCU = Scope[9795][12]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][32]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][21]()
+	ACCU = Scope[9795][4]()
+	Scope[9810][3] = func_pbkdf2_0x100001a5d
+	Scope[9810][4] = func_deflateFragment_0x100001a5f
+	Scope[9810][5] = func_decompress_0x100001a60
+	Scope[9810][6] = func_readBytes_0x100001a61
+	Scope[9810][7] = func_writeBuffer_0x100001a62
+	Scope[9810][8] = {}
+	Scope[9810][8]["Versions"] = new {"TLS_1_0": {"major": 3, "minor": 1}, "TLS_1_1": {"major": 3, "minor": 2}, "TLS_1_2": {"major": 3, "minor": 3}}
+	r21 = new [0, 0]
+	r21[0] = Scope[9810][8]["Versions"]["TLS_1_1"]
+	r21[1] = Scope[9810][8]["Versions"]["TLS_1_0"]
+	Scope[9810][8]["SupportedVersions"] = r21
+	Scope[9810][8]["Version"] = Scope[9810][8]["SupportedVersions"][0]
+	Scope[9810][8]["MaxFragment"] = 15360
+	Scope[9810][8]["ConnectionEnd"] = new {"server": 0, "client": 1}
+	Scope[9810][8]["PRFAlgorithm"] = new {"tls_prf_sha256": 0}
+	Scope[9810][8]["BulkCipherAlgorithm"] = new {"none": <null, "rc4": 0, "des3": 1, "aes": 2}
+	Scope[9810][8]["CipherType"] = new {"stream": 0, "block": 1, "aead": 2}
+	Scope[9810][8]["MACAlgorithm"] = new {"none": <null, "hmac_md5": 0, "hmac_sha1": 1, "hmac_sha256": 2, "hmac_sha384": 3, "hmac_sha512": 4}
+	Scope[9810][8]["CompressionMethod"] = new {"none": 0, "deflate": 1}
+	Scope[9810][8]["ContentType"] = new {"change_cipher_spec": 20, "alert": 21, "handshake": 22, "application_data": 23, "heartbeat": 24}
+	Scope[9810][8]["HandshakeType"] = new {"hello_request": 0, "client_hello": 1, "server_hello": 2, "certificate": 11, "server_key_exchange": 12, "certificate_request": 13, "server_hello_done": 14, "certificate_verify": 15, "client_key_exchange": 16, "finished": 20}
+	Scope[9810][8]["Alert"] = {}
+	Scope[9810][8]["Alert"]["Level"] = new {"warning": 1, "fatal": 2}
+	Scope[9810][8]["Alert"]["Description"] = new {"close_notify": 0, "unexpected_message": 10, "bad_record_mac": 20, "decryption_failed": 21, "record_overflow": 22, "decompression_failure": 30, "handshake_failure": 40, "bad_certificate": 42, "unsupported_certificate": 43, "certificate_revoked": 44, "certificate_expired": 45, "certificate_unknown": 46, "illegal_parameter": 47, "unknown_ca": 48, "access_denied": 49, "decode_error": 50, "decrypt_error": 51, "export_restriction": 60, "protocol_version": 70, "insufficient_security": 71, "internal_error": 80, "user_canceled": 90, "no_renegotiation": 100}
+	Scope[9810][8]["HeartbeatMessageType"] = new {"heartbeat_request": 1, "heartbeat_response": 2}
+	Scope[9810][8]["CipherSuites"] = {}
+	Scope[9810][8]["getCipherSuite"] = func_lookupCipher_0x100001a63
+	Scope[9810][8]["handleUnexpected"] = func_handleTlsRecord_0x100001a64
+	Scope[9810][8]["handleHelloRequest"] = func_processHandshake_0x100001a65
+	Scope[9810][8]["parseHelloMessage"] = func_parseHandshake_0x100001a66
+	Scope[9810][8]["createSecurityParameters"] = func_deriveSecrets_0x100001a67
+	Scope[9810][8]["handleServerHello"] = func_handleHello_0x100001a68
+	Scope[9810][8]["handleClientHello"] = func_handleHello_0x100001a69
+	Scope[9810][8]["handleCertificate"] = func_parseCertificate_0x100001a6a
+	Scope[9810][8]["handleServerKeyExchange"] = func_processKey_0x100001a6b
+	Scope[9810][8]["handleClientKeyExchange"] = func_handleKeyExchange_0x100001a6c
+	Scope[9810][8]["handleCertificateRequest"] = func_parseCertificateRequest_0x100001a6d
+	Scope[9810][8]["handleCertificateVerify"] = func_verifyCertificate_0x100001a6e
+	Scope[9810][8]["handleServerHelloDone"] = func_serverHelloDone_0x100001a70
+	Scope[9810][8]["handleChangeCipherSpec"] = func_changeCipherSpec_0x100001a71
+	Scope[9810][8]["handleFinished"] = func_verifyFinish_0x100001a72
+	Scope[9810][8]["handleAlert"] = func_handleAlert_0x100001a73
+	Scope[9810][8]["handleHandshake"] = func_processHandshake_0x100001a74
+	Scope[9810][8]["handleApplicationData"] = func_Feed_0x100001a75
+	Scope[9810][8]["handleHeartbeat"] = func_Heartbeat_0x100001a76
+	Scope[9810][9] = 0
+	Scope[9810][10] = 1
+	Scope[9810][11] = 2
+	Scope[9810][12] = 3
+	Scope[9810][13] = 4
+	Scope[9810][14] = 5
+	Scope[9810][15] = 6
+	Scope[9810][16] = 7
+	Scope[9810][17] = 8
+	Scope[9810][18] = 0
+	Scope[9810][19] = 1
+	Scope[9810][20] = 2
+	Scope[9810][21] = 3
+	Scope[9810][22] = 4
+	Scope[9810][23] = 5
+	Scope[9810][24] = 6
+	Scope[9810][25] = []
+	r22 = new [0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[0] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[1] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[2] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[3] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[4] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleChangeCipherSpec"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[5] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[6] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleApplicationData"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[7] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[8] = r24
+	Scope[9810][25][Scope[9810][8]["ConnectionEnd"]["client"]] = r22
+	r22 = new [0, 0, 0, 0, 0, 0, 0, 0]
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[0] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[1] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[2] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[3] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleChangeCipherSpec"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[4] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[5] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleApplicationData"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[6] = r24
+	r24 = new [0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleAlert"]
+	r24[2] = Scope[9810][8]["handleHandshake"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleHeartbeat"]
+	r22[7] = r24
+	Scope[9810][25][Scope[9810][8]["ConnectionEnd"]["server"]] = r22
+	Scope[9810][26] = []
+	r22 = new [0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleServerHello"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[0] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleCertificate"]
+	r24[12] = Scope[9810][8]["handleServerKeyExchange"]
+	r24[13] = Scope[9810][8]["handleCertificateRequest"]
+	r24[14] = Scope[9810][8]["handleServerHelloDone"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[1] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleServerKeyExchange"]
+	r24[13] = Scope[9810][8]["handleCertificateRequest"]
+	r24[14] = Scope[9810][8]["handleServerHelloDone"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[2] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleCertificateRequest"]
+	r24[14] = Scope[9810][8]["handleServerHelloDone"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[3] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleServerHelloDone"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[4] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[5] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleFinished"]
+	r22[6] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[7] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleHelloRequest"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[8] = r24
+	Scope[9810][26][Scope[9810][8]["ConnectionEnd"]["client"]] = r22
+	r22 = new [0, 0, 0, 0, 0, 0, 0, 0]
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleClientHello"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[0] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleCertificate"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[1] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleClientKeyExchange"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[2] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleCertificateVerify"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[3] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[4] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleFinished"]
+	r22[5] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[6] = r24
+	r24 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r24[0] = Scope[9810][8]["handleUnexpected"]
+	r24[1] = Scope[9810][8]["handleUnexpected"]
+	r24[2] = Scope[9810][8]["handleUnexpected"]
+	r24[3] = Scope[9810][8]["handleUnexpected"]
+	r24[4] = Scope[9810][8]["handleUnexpected"]
+	r24[5] = Scope[9810][8]["handleUnexpected"]
+	r24[6] = Scope[9810][8]["handleUnexpected"]
+	r24[7] = Scope[9810][8]["handleUnexpected"]
+	r24[8] = Scope[9810][8]["handleUnexpected"]
+	r24[9] = Scope[9810][8]["handleUnexpected"]
+	r24[10] = Scope[9810][8]["handleUnexpected"]
+	r24[11] = Scope[9810][8]["handleUnexpected"]
+	r24[12] = Scope[9810][8]["handleUnexpected"]
+	r24[13] = Scope[9810][8]["handleUnexpected"]
+	r24[14] = Scope[9810][8]["handleUnexpected"]
+	r24[15] = Scope[9810][8]["handleUnexpected"]
+	r24[16] = Scope[9810][8]["handleUnexpected"]
+	r24[17] = Scope[9810][8]["handleUnexpected"]
+	r24[18] = Scope[9810][8]["handleUnexpected"]
+	r24[19] = Scope[9810][8]["handleUnexpected"]
+	r24[20] = Scope[9810][8]["handleUnexpected"]
+	r22[7] = r24
+	Scope[9810][26][Scope[9810][8]["ConnectionEnd"]["server"]] = r22
+	Scope[9810][8]["generateKeys"] = func_keyExpand_0x100001a77
+	Scope[9810][8]["createConnectionState"] = func_security_0x100001a7e
+	Scope[9810][8]["createRandom"] = func_seed_0x100001a7f
+	Scope[9810][8]["createRecord"] = func_fragment_0x100001a80
+	Scope[9810][8]["createAlert"] = func_Alert_0x100001a81
+	Scope[9810][8]["createClientHello"] = func_buildClientHello_0x100001a82
+	Scope[9810][8]["createServerHello"] = func_serverHello_0x100001a83
+	Scope[9810][8]["createCertificate"] = func_sendCertificate_0x100001a84
+	Scope[9810][8]["createClientKeyExchange"] = func_createClientKeyExchange_0x100001a85
+	Scope[9810][8]["createServerKeyExchange"] = func_serverKeyExchange_0x100001a86
+	Scope[9810][8]["getClientSignature"] = func_signRequest_0x100001a88
+	Scope[9810][8]["createCertificateVerify"] = func_CertificateVerify_0x100001a89
+	Scope[9810][8]["createCertificateRequest"] = func_certificateRequest_0x100001a8a
+	Scope[9810][8]["createServerHelloDone"] = func_ServerHelloDone_0x100001a8b
+	Scope[9810][8]["createChangeCipherSpec"] = func_marker_0x100001a8c
+	Scope[9810][8]["createFinished"] = func_finish_0x100001a8d
+	Scope[9810][8]["createHeartbeat"] = func_encrypt_0x100001a8e
+	Scope[9810][8]["queue"] = func_splitRecord_0x100001a8f
+	Scope[9810][8]["flush"] = func_flush_0x100001a90
+	Scope[9810][27] = func_certificateAlert_0x100001a91
+	Scope[9810][28] = func_mapCertificate_0x100001a92
+	Scope[9810][8]["verifyCertificateChain"] = func_verify_0x100001a94
+	Scope[9810][8]["createSessionCache"] = func_createCache_0x100001a97
+	Scope[9810][8]["createConnection"] = func_initTls_0x100001aa3
+	r19 = a1
+	if (!Scope[9810][2]["tls"])
+	{
+	}
+	r21 = {}
+	Scope[9810][2]["tls"] = {}
+	r19["exports"] = r21
+	if (!Scope[9810][8] == undefined)
+	{
+		r19 = Generator(ToObject(Scope[9810][8]))
+		r23 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r23)) break
+			if (r19.next().value == undefined) continue
+			r17 = r19.next().value
+			if (!!(typeof(Scope[9810][8][r17]) == function)) continue
+			Scope[9810][2]["tls"][r17] = Scope[9810][8][r17]
+			ACCU = Scope[9810][8][r17]
+			r23 = GeneratorStep(r23)
+		}
+	}
+	Scope[9810][2]["tls"]["prf_tls1"] = func_pbkdf2_0x100001a5d
+	Scope[9810][2]["tls"]["hmac_sha1"] = func_signHandshake_0x100001a5e
+	Scope[9810][2]["tls"]["createSessionCache"] = Scope[9810][8]["createSessionCache"]
+	Scope[9810][2]["tls"]["createConnection"] = Scope[9810][8]["createConnection"]
+	return undefined
+}
+function func_pki_0x100001a5c(a0, a1)
+{
+	Scope[9821][2] = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][25]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][15]()
+	ACCU = Scope[9795][31]()
+	ACCU = Scope[9795][29]()
+	ACCU = Scope[9795][24]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][30]()
+	Scope[9821][3] = Scope[9821][2]["asn1"]
+	r1 = a1
+	if (!Scope[9821][2]["pki"])
+	{
+	}
+	r3 = {}
+	Scope[9821][2]["pki"] = {}
+	r1["exports"] = r3
+	Scope[9821][4] = r3
+	Scope[9821][4]["pemToDer"] = func_pemToDer_0x100001a58
+	Scope[9821][4]["privateKeyFromPem"] = func_parsePem_0x100001a59
+	Scope[9821][4]["privateKeyToPem"] = func_encodePrivateKey_0x100001a5a
+	Scope[9821][4]["privateKeyInfoToPem"] = func_encodePem_0x100001a5b
+	return undefined
+}
+function func_pkcs12_0x100001a57(a0, a1)
+{
+	Scope[9822][11] = func_filterBags_0x100001a4b
+	Scope[9822][12] = func_flattenValue_0x100001a4c
+	Scope[9822][13] = func_parseAuthenticatedSafe_0x100001a4d
+	Scope[9822][14] = func_decryptContent_0x100001a4e
+	Scope[9822][15] = func_parseSafeContents_0x100001a50
+	Scope[9822][16] = func_parseBagAttributes_0x100001a51
+	Scope[9822][2] = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][11]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][26]()
+	ACCU = Scope[9795][25]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][24]()
+	ACCU = Scope[9795][21]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][30]()
+	Scope[9822][3] = Scope[9822][2]["asn1"]
+	Scope[9822][4] = Scope[9822][2]["pki"]
+	r1 = a1
+	if (!Scope[9822][2]["pkcs12"])
+	{
+	}
+	r3 = {}
+	Scope[9822][2]["pkcs12"] = {}
+	r1["exports"] = r3
+	Scope[9822][5] = r3
+	r1 = new {"name": "ContentInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r3 = new [0, 0]
+	r4 = new {"name": "ContentInfo.contentType", "tagClass": null, "type": null, "constructed": <false, "capture": "contentType"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["OID"]
+	r3[0] = r4
+	r4 = new {"name": "ContentInfo.content", "tagClass": null, "constructed": <true, "captureAsn1": "content"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["CONTEXT_SPECIFIC"]
+	r3[1] = r4
+	r1["value"] = r3
+	Scope[9822][6] = r1
+	r1 = new {"name": "PFX", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r3 = new [0, 0, 0]
+	r4 = new {"name": "PFX.version", "tagClass": null, "type": null, "constructed": <false, "capture": "version"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["INTEGER"]
+	r3[0] = r4
+	r3[1] = Scope[9822][6]
+	r4 = new {"name": "PFX.macData", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "captureAsn1": "mac", "value": null}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r6 = new [0, 0, 0]
+	r7 = new {"name": "PFX.macData.mac", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r7["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r9 = new [0, 0]
+	r10 = new {"name": "PFX.macData.mac.digestAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r10["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r10["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r12 = new [0, 0]
+	r13 = new {"name": "PFX.macData.mac.digestAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "macAlgorithm"}
+	r13["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r13["type"] = Scope[9822][3]["Type"]["OID"]
+	r12[0] = r13
+	r13 = new {"name": "PFX.macData.mac.digestAlgorithm.parameters", "tagClass": null, "captureAsn1": "macAlgorithmParameters"}
+	r13["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r12[1] = r13
+	r10["value"] = r12
+	r9[0] = r10
+	r10 = new {"name": "PFX.macData.mac.digest", "tagClass": null, "type": null, "constructed": <false, "capture": "macDigest"}
+	r10["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r10["type"] = Scope[9822][3]["Type"]["OCTETSTRING"]
+	r9[1] = r10
+	r7["value"] = r9
+	r6[0] = r7
+	r7 = new {"name": "PFX.macData.macSalt", "tagClass": null, "type": null, "constructed": <false, "capture": "macSalt"}
+	r7["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9822][3]["Type"]["OCTETSTRING"]
+	r6[1] = r7
+	r7 = new {"name": "PFX.macData.iterations", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "macIterations"}
+	r7["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9822][3]["Type"]["INTEGER"]
+	r6[2] = r7
+	r4["value"] = r6
+	r3[2] = r4
+	r1["value"] = r3
+	Scope[9822][7] = r1
+	r1 = new {"name": "SafeBag", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r3 = new [0, 0, 0]
+	r4 = new {"name": "SafeBag.bagId", "tagClass": null, "type": null, "constructed": <false, "capture": "bagId"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["OID"]
+	r3[0] = r4
+	r4 = new {"name": "SafeBag.bagValue", "tagClass": null, "constructed": <true, "captureAsn1": "bagValue"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["CONTEXT_SPECIFIC"]
+	r3[1] = r4
+	r4 = new {"name": "SafeBag.bagAttributes", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "capture": "bagAttributes"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["SET"]
+	r3[2] = r4
+	r1["value"] = r3
+	Scope[9822][8] = r1
+	r1 = new {"name": "Attribute", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r3 = new [0, 0]
+	r4 = new {"name": "Attribute.attrId", "tagClass": null, "type": null, "constructed": <false, "capture": "oid"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["OID"]
+	r3[0] = r4
+	r4 = new {"name": "Attribute.attrValues", "tagClass": null, "type": null, "constructed": <true, "capture": "values"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["SET"]
+	r3[1] = r4
+	r1["value"] = r3
+	Scope[9822][9] = r1
+	r1 = new {"name": "CertBag", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9822][3]["Type"]["SEQUENCE"]
+	r3 = new [0, 0]
+	r4 = new {"name": "CertBag.certId", "tagClass": null, "type": null, "constructed": <false, "capture": "certId"}
+	r4["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9822][3]["Type"]["OID"]
+	r3[0] = r4
+	r4 = new {"name": "CertBag.certValue", "tagClass": null, "constructed": <true, "value": null}
+	r4["tagClass"] = Scope[9822][3]["Class"]["CONTEXT_SPECIFIC"]
+	r6 = new [0]
+	r7 = new {"name": "CertBag.certValue[0]", "tagClass": null, "type": null, "constructed": <false, "capture": "cert"}
+	r7["tagClass"] = Scope[9822][3]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9822][3]["Class"]["OCTETSTRING"]
+	r6[0] = r7
+	r4["value"] = r6
+	r3[1] = r4
+	r1["value"] = r3
+	Scope[9822][10] = r1
+	Scope[9822][5]["pkcs12FromAsn1"] = func_parsePfx_0x100001a55
+	Scope[9822][5]["toPkcs12Asn1"] = func_createPfx_0x100001a56
+	Scope[9822][5]["generateKey"] = Scope[9822][2]["pbe"]["generatePkcs12Key"]
+	return undefined
+}
+function func_pki_0x100001a4a(a0, a1)
+{
+	Scope[9825][10] = func_findAttribute_0x100001a02
+	Scope[9825][14] = func_buildAttributes_0x100001a03
+	Scope[9825][15] = func_normalizeAttributes_0x100001a04
+	Scope[9825][16] = func_normalizeExtension_0x100001a05
+	Scope[9825][17] = func_EncodePss_0x100001a06
+	Scope[9825][18] = func_attributes_0x100001a07
+	Scope[9825][21] = func_encodeTime_0x100001a08
+	Scope[9825][2] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][14]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][28]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][29]()
+	ACCU = Scope[9795][24]()
+	ACCU = Scope[9795][4]()
+	Scope[9825][3] = Scope[9825][2]["asn1"]
+	r3 = a1
+	if (!Scope[9825][2]["pki"])
+	{
+	}
+	r5 = {}
+	Scope[9825][2]["pki"] = {}
+	r3["exports"] = r5
+	Scope[9825][4] = r5
+	Scope[9825][5] = Scope[9825][4]["oids"]
+	Scope[9825][6] = {}
+	Scope[9825][6]["CN"] = Scope[9825][5]["commonName"]
+	Scope[9825][6]["commonName"] = "CN"
+	Scope[9825][6]["C"] = Scope[9825][5]["countryName"]
+	Scope[9825][6]["countryName"] = "C"
+	Scope[9825][6]["L"] = Scope[9825][5]["localityName"]
+	Scope[9825][6]["localityName"] = "L"
+	Scope[9825][6]["ST"] = Scope[9825][5]["stateOrProvinceName"]
+	Scope[9825][6]["stateOrProvinceName"] = "ST"
+	Scope[9825][6]["O"] = Scope[9825][5]["organizationName"]
+	Scope[9825][6]["organizationName"] = "O"
+	Scope[9825][6]["OU"] = Scope[9825][5]["organizationalUnitName"]
+	Scope[9825][6]["organizationalUnitName"] = "OU"
+	Scope[9825][6]["E"] = Scope[9825][5]["emailAddress"]
+	Scope[9825][6]["emailAddress"] = "E"
+	r3 = new {"name": "Certificate", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r3["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r3["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r5 = new [0, 0, 0]
+	r6 = new {"name": "Certificate.TBSCertificate", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "tbsCertificate", "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r8 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r9 = new {"name": "Certificate.TBSCertificate.version", "tagClass": null, "type": 0, "constructed": <true, "optional": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r11 = new [0]
+	r12 = new {"name": "Certificate.TBSCertificate.version.integer", "tagClass": null, "type": null, "constructed": <false, "capture": "certVersion"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["INTEGER"]
+	r11[0] = r12
+	r9["value"] = r11
+	r8[0] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.serialNumber", "tagClass": null, "type": null, "constructed": <false, "capture": "certSerialNumber"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["INTEGER"]
+	r8[1] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.signature", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "Certificate.TBSCertificate.signature.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "certinfoSignatureOid"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["OID"]
+	r11[0] = r12
+	r12 = new {"name": "Certificate.TBSCertificate.signature.parameters", "tagClass": null, "optional": <true, "captureAsn1": "certinfoSignatureParams"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r11[1] = r12
+	r9["value"] = r11
+	r8[2] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.issuer", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "certIssuer"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r8[3] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.validity", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r11 = new [0, 0, 0, 0]
+	r12 = new {"name": "Certificate.TBSCertificate.validity.notBefore (utc)", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "certValidity1UTCTime"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["UTCTIME"]
+	r11[0] = r12
+	r12 = new {"name": "Certificate.TBSCertificate.validity.notBefore (generalized)", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "certValidity2GeneralizedTime"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["GENERALIZEDTIME"]
+	r11[1] = r12
+	r12 = new {"name": "Certificate.TBSCertificate.validity.notAfter (utc)", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "certValidity3UTCTime"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["UTCTIME"]
+	r11[2] = r12
+	r12 = new {"name": "Certificate.TBSCertificate.validity.notAfter (generalized)", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "certValidity4GeneralizedTime"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["GENERALIZEDTIME"]
+	r11[3] = r12
+	r9["value"] = r11
+	r8[4] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.subject", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "certSubject"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r8[5] = r9
+	r8[6] = Scope[9825][2]["pki"]["rsa"]["publicKeyValidator"]
+	r9 = new {"name": "Certificate.TBSCertificate.issuerUniqueID", "tagClass": null, "type": 1, "constructed": <true, "optional": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r11 = new [0]
+	r12 = new {"name": "Certificate.TBSCertificate.issuerUniqueID.id", "tagClass": null, "type": null, "constructed": <false, "captureBitStringValue": "certIssuerUniqueId"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["BITSTRING"]
+	r11[0] = r12
+	r9["value"] = r11
+	r8[7] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.subjectUniqueID", "tagClass": null, "type": 2, "constructed": <true, "optional": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r11 = new [0]
+	r12 = new {"name": "Certificate.TBSCertificate.subjectUniqueID.id", "tagClass": null, "type": null, "constructed": <false, "captureBitStringValue": "certSubjectUniqueId"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["BITSTRING"]
+	r11[0] = r12
+	r9["value"] = r11
+	r8[8] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.extensions", "tagClass": null, "type": 3, "constructed": <true, "captureAsn1": "certExtensions", "optional": <true}
+	r9["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8[9] = r9
+	r6["value"] = r8
+	r5[0] = r6
+	r6 = new {"name": "Certificate.signatureAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r8 = new [0, 0]
+	r9 = new {"name": "Certificate.signatureAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "certSignatureOid"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["OID"]
+	r8[0] = r9
+	r9 = new {"name": "Certificate.TBSCertificate.signature.parameters", "tagClass": null, "optional": <true, "captureAsn1": "certSignatureParams"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r8[1] = r9
+	r6["value"] = r8
+	r5[1] = r6
+	r6 = new {"name": "Certificate.signatureValue", "tagClass": null, "type": null, "constructed": <false, "captureBitStringValue": "certSignature"}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["BITSTRING"]
+	r5[2] = r6
+	r3["value"] = r5
+	Scope[9825][7] = r3
+	r3 = new {"name": "rsapss", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r3["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r3["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r5 = new [0, 0, 0, 0]
+	r6 = new {"name": "rsapss.hashAlgorithm", "tagClass": null, "type": 0, "constructed": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8 = new [0]
+	r9 = new {"name": "rsapss.hashAlgorithm.AlgorithmIdentifier", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Class"]["SEQUENCE"]
+	r11 = new [0]
+	r12 = new {"name": "rsapss.hashAlgorithm.AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "hashOid"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["OID"]
+	r11[0] = r12
+	r9["value"] = r11
+	r8[0] = r9
+	r6["value"] = r8
+	r5[0] = r6
+	r6 = new {"name": "rsapss.maskGenAlgorithm", "tagClass": null, "type": 1, "constructed": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8 = new [0]
+	r9 = new {"name": "rsapss.maskGenAlgorithm.AlgorithmIdentifier", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Class"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "rsapss.maskGenAlgorithm.AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "maskGenOid"}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["OID"]
+	r11[0] = r12
+	r12 = new {"name": "rsapss.maskGenAlgorithm.AlgorithmIdentifier.params", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r14 = new [0]
+	r15 = new {"name": "rsapss.maskGenAlgorithm.AlgorithmIdentifier.params.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "maskGenHashOid"}
+	r15["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r15["type"] = Scope[9825][3]["Type"]["OID"]
+	r14[0] = r15
+	r12["value"] = r14
+	r11[1] = r12
+	r9["value"] = r11
+	r8[0] = r9
+	r6["value"] = r8
+	r5[1] = r6
+	r6 = new {"name": "rsapss.saltLength", "tagClass": null, "type": 2, "optional": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8 = new [0]
+	r9 = new {"name": "rsapss.saltLength.saltLength", "tagClass": null, "type": null, "constructed": <false, "capture": "saltLength"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Class"]["INTEGER"]
+	r8[0] = r9
+	r6["value"] = r8
+	r5[2] = r6
+	r6 = new {"name": "rsapss.trailerField", "tagClass": null, "type": 3, "optional": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8 = new [0]
+	r9 = new {"name": "rsapss.trailer.trailer", "tagClass": null, "type": null, "constructed": <false, "capture": "trailer"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Class"]["INTEGER"]
+	r8[0] = r9
+	r6["value"] = r8
+	r5[3] = r6
+	r3["value"] = r5
+	Scope[9825][8] = r3
+	r3 = new {"name": "CertificationRequestInfo", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "certificationRequestInfo", "value": null}
+	r3["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r3["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r5 = new [0, 0, 0, 0]
+	r6 = new {"name": "CertificationRequestInfo.integer", "tagClass": null, "type": null, "constructed": <false, "capture": "certificationRequestInfoVersion"}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["INTEGER"]
+	r5[0] = r6
+	r6 = new {"name": "CertificationRequestInfo.subject", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "certificationRequestInfoSubject"}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r5[1] = r6
+	r5[2] = Scope[9825][2]["pki"]["rsa"]["publicKeyValidator"]
+	r6 = new {"name": "CertificationRequestInfo.attributes", "tagClass": null, "type": 0, "constructed": <true, "optional": <true, "capture": "certificationRequestInfoAttributes", "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["CONTEXT_SPECIFIC"]
+	r8 = new [0]
+	r9 = new {"name": "CertificationRequestInfo.attributes", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "CertificationRequestInfo.attributes.type", "tagClass": null, "type": null, "constructed": <false}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["OID"]
+	r11[0] = r12
+	r12 = new {"name": "CertificationRequestInfo.attributes.value", "tagClass": null, "type": null, "constructed": <true}
+	r12["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r12["type"] = Scope[9825][3]["Type"]["SET"]
+	r11[1] = r12
+	r9["value"] = r11
+	r8[0] = r9
+	r6["value"] = r8
+	r5[3] = r6
+	r3["value"] = r5
+	r1 = r3
+	r3 = new {"name": "CertificationRequest", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "csr", "value": null}
+	r3["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r3["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r5 = new [0, 0, 0]
+	r5[0] = r1
+	r6 = new {"name": "CertificationRequest.signatureAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["SEQUENCE"]
+	r8 = new [0, 0]
+	r9 = new {"name": "CertificationRequest.signatureAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "csrSignatureOid"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r9["type"] = Scope[9825][3]["Type"]["OID"]
+	r8[0] = r9
+	r9 = new {"name": "CertificationRequest.signatureAlgorithm.parameters", "tagClass": null, "optional": <true, "captureAsn1": "csrSignatureParams"}
+	r9["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r8[1] = r9
+	r6["value"] = r8
+	r5[1] = r6
+	r6 = new {"name": "CertificationRequest.signature", "tagClass": null, "type": null, "constructed": <false, "captureBitStringValue": "csrSignature"}
+	r6["tagClass"] = Scope[9825][3]["Class"]["UNIVERSAL"]
+	r6["type"] = Scope[9825][3]["Type"]["BITSTRING"]
+	r5[2] = r6
+	r3["value"] = r5
+	Scope[9825][9] = r3
+	Scope[9825][4]["RDNAttributesAsArray"] = func_parseAsn1_0x100001a09
+	Scope[9825][4]["CRIAttributesAsArray"] = func_parseExtensions_0x100001a0a
+	Scope[9825][11] = func_parsePss_0x100001a0b
+	Scope[9825][12] = func_getDigest_0x100001a0c
+	Scope[9825][13] = func_verifyCertificate_0x100001a0d
+	Scope[9825][4]["certificateFromPem"] = func_certificate_0x100001a0e
+	Scope[9825][4]["certificateToPem"] = func_pemEncode_0x100001a0f
+	Scope[9825][4]["publicKeyFromPem"] = func_publicKeyFromPem_0x100001a10
+	Scope[9825][4]["publicKeyToPem"] = func_encodePem_0x100001a11
+	Scope[9825][4]["publicKeyToRSAPublicKeyPem"] = func_encodePublicKey_0x100001a12
+	Scope[9825][4]["getPublicKeyFingerprint"] = func_fingerprint_0x100001a13
+	Scope[9825][4]["certificationRequestFromPem"] = func_request_0x100001a14
+	Scope[9825][4]["certificationRequestToPem"] = func_certify_0x100001a15
+	Scope[9825][4]["createCertificate"] = func_createCertificate_0x100001a24
+	Scope[9825][4]["certificateFromAsn1"] = func_parseCertificate_0x100001a29
+	Scope[9825][4]["certificateExtensionsFromAsn1"] = func_extensions_0x100001a2a
+	Scope[9825][4]["certificateExtensionFromAsn1"] = func_parseExtension_0x100001a2b
+	Scope[9825][4]["certificationRequestFromAsn1"] = func_parseCertificationRequest_0x100001a30
+	Scope[9825][4]["createCertificationRequest"] = func_createRequest_0x100001a39
+	ACCU = Date
+	Scope[9825][19] = Date("1950-01-01T00:00:00Z")
+	ACCU = Date
+	Scope[9825][20] = Date("2050-01-01T00:00:00Z")
+	Scope[9825][4]["getTBSCertificate"] = func_certAsn1_0x100001a3a
+	Scope[9825][4]["getCertificationRequestInfo"] = func_toAsn1_0x100001a3b
+	Scope[9825][4]["distinguishedNameToAsn1"] = func_buildAttributes_0x100001a3c
+	Scope[9825][4]["certificateToAsn1"] = func_sign_0x100001a3d
+	Scope[9825][4]["certificateExtensionsToAsn1"] = func_extensionsToAsn1_0x100001a3e
+	Scope[9825][4]["certificateExtensionToAsn1"] = func_encodeExtension_0x100001a3f
+	Scope[9825][4]["certificationRequestToAsn1"] = func_encodeSignature_0x100001a40
+	Scope[9825][4]["createCaStore"] = func_initCertificates_0x100001a48
+	Scope[9825][4]["certificateError"] = new {"bad_certificate": "forge.pki.BadCertificate", "unsupported_certificate": "forge.pki.UnsupportedCertificate", "certificate_revoked": "forge.pki.CertificateRevoked", "certificate_expired": "forge.pki.CertificateExpired", "certificate_unknown": "forge.pki.CertificateUnknown", "unknown_ca": "forge.pki.UnknownCertificateAuthority"}
+	Scope[9825][4]["verifyCertificateChain"] = func_validateCertificateChain_0x100001a49
+	return undefined
+}
+function func_Init_0x100001a01(a0, a1)
+{
+	Scope[9831][2] = Scope[9795][2]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9831][2]["pss"])
+	{
+	}
+	r4 = {}
+	Scope[9831][2]["pss"] = {}
+	r2["exports"] = r4
+	r4["create"] = func_initPss_0x100001a00
+	return undefined
+}
+function func_initMgf_0x1000019fd(a0, a1)
+{
+	r0 = Scope[9795][2]()
+	ACCU = Scope[9795][27]()
+	r1 = a1
+	r2 = r0
+	if (!r0["mgf"])
+	{
+	}
+	r3 = {}
+	r2["mgf"] = {}
+	r1["exports"] = r3
+	r0["mgf"]["mgf1"] = r0["mgf1"]
+	return undefined
+}
+function func_Mgf_0x1000019fc(a0, a1)
+{
+	Scope[9833][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	if (!Scope[9833][2]["mgf"])
+	{
+	}
+	Scope[9833][2]["mgf"] = {}
+	r2 = a1
+	if (!Scope[9833][2]["mgf1"])
+	{
+	}
+	r5 = {}
+	Scope[9833][2]["mgf1"] = {}
+	Scope[9833][2]["mgf"]["mgf1"] = r5
+	r2["exports"] = r5
+	r5["create"] = func_setValue_0x1000019fb
+	return undefined
+}
+function func_initPkcs7_0x1000019f9(a0, a1)
+{
+	r0 = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][4]()
+	r6 = a1
+	r7 = r0
+	if (!r0["pkcs7asn1"])
+	{
+	}
+	r8 = {}
+	r7["pkcs7asn1"] = {}
+	r6["exports"] = r8
+	r2 = r8
+	r6 = r0
+	if (!r0["pkcs7"])
+	{
+	}
+	r6["pkcs7"] = {}
+	r0["pkcs7"]["asn1"] = r2
+	r6 = new {"name": "ContentInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8 = new [0, 0]
+	r9 = new {"name": "ContentInfo.ContentType", "tagClass": null, "type": null, "constructed": <false, "capture": "contentType"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["OID"]
+	r8[0] = r9
+	r9 = new {"name": "ContentInfo.content", "tagClass": null, "type": 0, "constructed": <true, "optional": <true, "captureAsn1": "content"}
+	r9["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r8[1] = r9
+	r6["value"] = r8
+	r3 = r6
+	r2["contentInfoValidator"] = r3
+	r6 = new {"name": "EncryptedContentInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8 = new [0, 0, 0]
+	r9 = new {"name": "EncryptedContentInfo.contentType", "tagClass": null, "type": null, "constructed": <false, "capture": "contentType"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["OID"]
+	r8[0] = r9
+	r9 = new {"name": "EncryptedContentInfo.contentEncryptionAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "EncryptedContentInfo.contentEncryptionAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "encAlgorithm"}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r12["type"] = r0["asn1"]["Type"]["OID"]
+	r11[0] = r12
+	r12 = new {"name": "EncryptedContentInfo.contentEncryptionAlgorithm.parameter", "tagClass": null, "captureAsn1": "encParameter"}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r11[1] = r12
+	r9["value"] = r11
+	r8[1] = r9
+	r9 = new {"name": "EncryptedContentInfo.encryptedContent", "tagClass": null, "type": 0, "capture": "encryptedContent", "captureAsn1": "encryptedContentAsn1"}
+	r9["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r8[2] = r9
+	r6["value"] = r8
+	r4 = r6
+	r7 = new {"name": "EnvelopedData", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r7["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r7["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r10 = new [0, 0]
+	r11 = new {"name": "EnvelopedData.Version", "tagClass": null, "type": null, "constructed": <false, "capture": "version"}
+	r11["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r11["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r10[0] = r11
+	r11 = new {"name": "EnvelopedData.RecipientInfos", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "recipientInfos"}
+	r11["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r11["type"] = r0["asn1"]["Type"]["SET"]
+	r10[1] = r11
+	r9 = r10
+	r7["value"] = r10["concat"](r4)
+	r2["envelopedDataValidator"] = r7
+	r7 = new {"name": "EncryptedData", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r7["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r7["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r10 = new [0]
+	r11 = new {"name": "EncryptedData.Version", "tagClass": null, "type": null, "constructed": <false, "capture": "version"}
+	r11["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r11["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r10[0] = r11
+	r9 = r10
+	r7["value"] = r10["concat"](r4)
+	r2["encryptedDataValidator"] = r7
+	r6 = new {"name": "SignerInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r6["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r6["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8 = new [0, 0, 0, 0, 0, 0, 0]
+	r9 = new {"name": "SignerInfo.version", "tagClass": null, "type": null, "constructed": <false}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r8[0] = r9
+	r9 = new {"name": "SignerInfo.issuerAndSerialNumber", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "SignerInfo.issuerAndSerialNumber.issuer", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "issuer"}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r12["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r11[0] = r12
+	r12 = new {"name": "SignerInfo.issuerAndSerialNumber.serialNumber", "tagClass": null, "type": null, "constructed": <false, "capture": "serial"}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r12["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r11[1] = r12
+	r9["value"] = r11
+	r8[1] = r9
+	r9 = new {"name": "SignerInfo.digestAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r11 = new [0, 0]
+	r12 = new {"name": "SignerInfo.digestAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "digestAlgorithm"}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r12["type"] = r0["asn1"]["Type"]["OID"]
+	r11[0] = r12
+	r12 = new {"name": "SignerInfo.digestAlgorithm.parameter", "tagClass": null, "constructed": <false, "captureAsn1": "digestParameter", "optional": <true}
+	r12["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r11[1] = r12
+	r9["value"] = r11
+	r8[2] = r9
+	r9 = new {"name": "SignerInfo.authenticatedAttributes", "tagClass": null, "type": 0, "constructed": <true, "optional": <true, "capture": "authenticatedAttributes"}
+	r9["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r8[3] = r9
+	r9 = new {"name": "SignerInfo.digestEncryptionAlgorithm", "tagClass": null, "type": null, "constructed": <true, "capture": "signatureAlgorithm"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r8[4] = r9
+	r9 = new {"name": "SignerInfo.encryptedDigest", "tagClass": null, "type": null, "constructed": <false, "capture": "signature"}
+	r9["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r9["type"] = r0["asn1"]["Type"]["OCTETSTRING"]
+	r8[5] = r9
+	r9 = new {"name": "SignerInfo.unauthenticatedAttributes", "tagClass": null, "type": 1, "constructed": <true, "optional": <true, "capture": "unauthenticatedAttributes"}
+	r9["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r8[6] = r9
+	r6["value"] = r8
+	r5 = r6
+	r7 = new {"name": "SignedData", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r7["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r7["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r9 = new [0, 0, 0, 0, 0, 0]
+	r10 = new {"name": "SignedData.Version", "tagClass": null, "type": null, "constructed": <false, "capture": "version"}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r9[0] = r10
+	r10 = new {"name": "SignedData.DigestAlgorithms", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "digestAlgorithms"}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["SET"]
+	r9[1] = r10
+	r9[2] = r3
+	r10 = new {"name": "SignedData.Certificates", "tagClass": null, "type": 0, "optional": <true, "captureAsn1": "certificates"}
+	r10["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r9[3] = r10
+	r10 = new {"name": "SignedData.CertificateRevocationLists", "tagClass": null, "type": 1, "optional": <true, "captureAsn1": "crls"}
+	r10["tagClass"] = r0["asn1"]["Class"]["CONTEXT_SPECIFIC"]
+	r9[4] = r10
+	r10 = new {"name": "SignedData.SignerInfos", "tagClass": null, "type": null, "capture": "signerInfos", "optional": <true, "value": null}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["SET"]
+	r12 = new [0]
+	r12[0] = r5
+	r10["value"] = r12
+	r9[5] = r10
+	r7["value"] = r9
+	r2["signedDataValidator"] = r7
+	r7 = new {"name": "RecipientInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r7["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r7["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r9 = new [0, 0, 0, 0]
+	r10 = new {"name": "RecipientInfo.version", "tagClass": null, "type": null, "constructed": <false, "capture": "version"}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r9[0] = r10
+	r10 = new {"name": "RecipientInfo.issuerAndSerial", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r12 = new [0, 0]
+	r13 = new {"name": "RecipientInfo.issuerAndSerial.issuer", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "issuer"}
+	r13["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r13["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r12[0] = r13
+	r13 = new {"name": "RecipientInfo.issuerAndSerial.serialNumber", "tagClass": null, "type": null, "constructed": <false, "capture": "serial"}
+	r13["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r13["type"] = r0["asn1"]["Type"]["INTEGER"]
+	r12[1] = r13
+	r10["value"] = r12
+	r9[1] = r10
+	r10 = new {"name": "RecipientInfo.keyEncryptionAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["SEQUENCE"]
+	r12 = new [0, 0]
+	r13 = new {"name": "RecipientInfo.keyEncryptionAlgorithm.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "encAlgorithm"}
+	r13["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r13["type"] = r0["asn1"]["Type"]["OID"]
+	r12[0] = r13
+	r13 = new {"name": "RecipientInfo.keyEncryptionAlgorithm.parameter", "tagClass": null, "constructed": <false, "captureAsn1": "encParameter", "optional": <true}
+	r13["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r12[1] = r13
+	r10["value"] = r12
+	r9[2] = r10
+	r10 = new {"name": "RecipientInfo.encryptedKey", "tagClass": null, "type": null, "constructed": <false, "capture": "encKey"}
+	r10["tagClass"] = r0["asn1"]["Class"]["UNIVERSAL"]
+	r10["type"] = r0["asn1"]["Type"]["OCTETSTRING"]
+	r9[3] = r10
+	r7["value"] = r9
+	r2["recipientInfoValidator"] = r7
+	return undefined
+}
+function func_initPbe_0x1000019f8(a0, a1)
+{
+	Scope[9835][9] = func_hashBytes_0x1000019e5
+	Scope[9835][10] = func_prfHash_0x1000019e6
+	Scope[9835][11] = func_getHash_0x1000019e7
+	Scope[9835][12] = func_encodeSignature_0x1000019e8
+	Scope[9835][2] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][14]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][15]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][19]()
+	ACCU = Scope[9795][24]()
+	ACCU = Scope[9795][4]()
+	r2 = TypeOf(r0)
+	if (r2 > "u")
+	{
+		r0 = Scope[9835][2]["jsbn"]["BigInteger"]
+	}
+	Scope[9835][3] = Scope[9835][2]["asn1"]
+	if (!Scope[9835][2]["pki"])
+	{
+	}
+	r3 = {}
+	Scope[9835][2]["pki"] = {}
+	Scope[9835][4] = r3
+	r2 = a1
+	if (!Scope[9835][2]["pbe"])
+	{
+	}
+	r5 = {}
+	Scope[9835][2]["pbe"] = {}
+	Scope[9835][4]["pbe"] = r5
+	r2["exports"] = r5
+	Scope[9835][5] = Scope[9835][4]["oids"]
+	r2 = new {"name": "EncryptedPrivateKeyInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r2["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r2["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r4 = new [0, 0]
+	r5 = new {"name": "EncryptedPrivateKeyInfo.encryptionAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r7 = new [0, 0]
+	r8 = new {"name": "AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "encryptionOid"}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["OID"]
+	r7[0] = r8
+	r8 = new {"name": "AlgorithmIdentifier.parameters", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "encryptionParams"}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r7[1] = r8
+	r5["value"] = r7
+	r4[0] = r5
+	r5 = new {"name": "EncryptedPrivateKeyInfo.encryptedData", "tagClass": null, "type": null, "constructed": <false, "capture": "encryptedData"}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["OCTETSTRING"]
+	r4[1] = r5
+	r2["value"] = r4
+	Scope[9835][6] = r2
+	r2 = new {"name": "PBES2Algorithms", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r2["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r2["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r4 = new [0, 0]
+	r5 = new {"name": "PBES2Algorithms.keyDerivationFunc", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r7 = new [0, 0]
+	r8 = new {"name": "PBES2Algorithms.keyDerivationFunc.oid", "tagClass": null, "type": null, "constructed": <false, "capture": "kdfOid"}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["OID"]
+	r7[0] = r8
+	r8 = new {"name": "PBES2Algorithms.params", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r10 = new [0, 0, 0, 0]
+	r11 = new {"name": "PBES2Algorithms.params.salt", "tagClass": null, "type": null, "constructed": <false, "capture": "kdfSalt"}
+	r11["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r11["type"] = Scope[9835][3]["Type"]["OCTETSTRING"]
+	r10[0] = r11
+	r11 = new {"name": "PBES2Algorithms.params.iterationCount", "tagClass": null, "type": null, "constructed": <false, "capture": "kdfIterationCount"}
+	r11["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r11["type"] = Scope[9835][3]["Type"]["INTEGER"]
+	r10[1] = r11
+	r11 = new {"name": "PBES2Algorithms.params.keyLength", "tagClass": null, "type": null, "constructed": <false, "optional": <true, "capture": "keyLength"}
+	r11["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r11["type"] = Scope[9835][3]["Type"]["INTEGER"]
+	r10[2] = r11
+	r11 = new {"name": "PBES2Algorithms.params.prf", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "value": null}
+	r11["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r11["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r13 = new [0]
+	r14 = new {"name": "PBES2Algorithms.params.prf.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "prfOid"}
+	r14["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r14["type"] = Scope[9835][3]["Type"]["OID"]
+	r13[0] = r14
+	r11["value"] = r13
+	r10[3] = r11
+	r8["value"] = r10
+	r7[1] = r8
+	r5["value"] = r7
+	r4[0] = r5
+	r5 = new {"name": "PBES2Algorithms.encryptionScheme", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r7 = new [0, 0]
+	r8 = new {"name": "PBES2Algorithms.encryptionScheme.oid", "tagClass": null, "type": null, "constructed": <false, "capture": "encOid"}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["OID"]
+	r7[0] = r8
+	r8 = new {"name": "PBES2Algorithms.encryptionScheme.iv", "tagClass": null, "type": null, "constructed": <false, "capture": "encIv"}
+	r8["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9835][3]["Type"]["OCTETSTRING"]
+	r7[1] = r8
+	r5["value"] = r7
+	r4[1] = r5
+	r2["value"] = r4
+	Scope[9835][7] = r2
+	r2 = new {"name": "pkcs-12PbeParams", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r2["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r2["type"] = Scope[9835][3]["Type"]["SEQUENCE"]
+	r4 = new [0, 0]
+	r5 = new {"name": "pkcs-12PbeParams.salt", "tagClass": null, "type": null, "constructed": <false, "capture": "salt"}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["OCTETSTRING"]
+	r4[0] = r5
+	r5 = new {"name": "pkcs-12PbeParams.iterations", "tagClass": null, "type": null, "constructed": <false, "capture": "iterations"}
+	r5["tagClass"] = Scope[9835][3]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9835][3]["Type"]["INTEGER"]
+	r4[1] = r5
+	r2["value"] = r4
+	Scope[9835][8] = r2
+	Scope[9835][4]["encryptPrivateKeyInfo"] = func_EncryptPrivateKey_0x1000019e9
+	Scope[9835][4]["decryptPrivateKeyInfo"] = func_decryptPrivateKey_0x1000019ea
+	Scope[9835][4]["encryptedPrivateKeyToPem"] = func_encodePem_0x1000019eb
+	Scope[9835][4]["encryptedPrivateKeyFromPem"] = func_decodeEncryptedKey_0x1000019ec
+	Scope[9835][4]["encryptRsaPrivateKey"] = func_encryptPrivateKey_0x1000019ed
+	Scope[9835][4]["decryptRsaPrivateKey"] = func_decodePrivateKey_0x1000019f1
+	Scope[9835][4]["pbe"]["generatePkcs12Key"] = func_pbkdf2_0x1000019f2
+	Scope[9835][4]["pbe"]["getCipher"] = func_getCipher_0x1000019f3
+	Scope[9835][4]["pbe"]["getCipherForPBES2"] = func_decryptPrivateKey_0x1000019f4
+	Scope[9835][4]["pbe"]["getCipherForPKCS12PBE"] = func_readPbe_0x1000019f6
+	Scope[9835][4]["pbe"]["opensslDeriveBytes"] = func_DeriveKey_0x1000019f7
+	return undefined
+}
+function func_initRsa_0x1000019e4(a0, a1)
+{
+	Scope[9836][16] = func_pad_0x1000019b2
+	Scope[9836][17] = func_decrypt_0x1000019b3
+	Scope[9836][18] = func_initPrime_0x1000019b8
+	Scope[9836][19] = func_trimBytes_0x1000019b9
+	Scope[9836][20] = func_scale_0x1000019ba
+	Scope[9836][21] = func_isFunction_0x1000019bb
+	Scope[9836][22] = func_HasSubtle_0x1000019bc
+	Scope[9836][23] = func_hasCrypto_0x1000019bd
+	Scope[9836][24] = func_hexBytes_0x1000019be
+	Scope[9836][2] = Scope[9795][2]()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][20]()
+	ACCU = Scope[9795][8]()
+	ACCU = Scope[9795][22]()
+	ACCU = Scope[9795][23]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][4]()
+	r1 = TypeOf(Scope[9836][3])
+	if (r1 > "u")
+	{
+		Scope[9836][3] = Scope[9836][2]["jsbn"]["BigInteger"]
+	}
+	ACCU = Scope[9836][2]["util"]["isNodejs"]
+	if (Scope[9836][2]["util"]["isNodejs"])
+	{
+		ACCU = require("crypto")
+	}
+	else
+	{
+		ACCU = null
+	}
+	Scope[9836][4] = ACCU
+	Scope[9836][5] = Scope[9836][2]["asn1"]
+	Scope[9836][6] = Scope[9836][2]["util"]
+	if (!Scope[9836][2]["pki"])
+	{
+	}
+	Scope[9836][2]["pki"] = {}
+	r1 = a1
+	if (!Scope[9836][2]["rsa"])
+	{
+	}
+	r4 = {}
+	Scope[9836][2]["rsa"] = {}
+	Scope[9836][2]["pki"]["rsa"] = r4
+	r1["exports"] = r4
+	Scope[9836][7] = Scope[9836][2]["pki"]
+	Scope[9836][8] = new [6, 4, 2, 4, 2, 4, 6, 2]
+	r1 = new {"name": "PrivateKeyInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r3 = new [0, 0, 0]
+	r4 = new {"name": "PrivateKeyInfo.version", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyVersion"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[0] = r4
+	r4 = new {"name": "PrivateKeyInfo.privateKeyAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r6 = new [0]
+	r7 = new {"name": "AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyOid"}
+	r7["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9836][5]["Type"]["OID"]
+	r6[0] = r7
+	r4["value"] = r6
+	r3[1] = r4
+	r4 = new {"name": "PrivateKeyInfo", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKey"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["OCTETSTRING"]
+	r3[2] = r4
+	r1["value"] = r3
+	Scope[9836][9] = r1
+	r1 = new {"name": "RSAPrivateKey", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r3 = new [0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r4 = new {"name": "RSAPrivateKey.version", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyVersion"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[0] = r4
+	r4 = new {"name": "RSAPrivateKey.modulus", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyModulus"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[1] = r4
+	r4 = new {"name": "RSAPrivateKey.publicExponent", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyPublicExponent"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[2] = r4
+	r4 = new {"name": "RSAPrivateKey.privateExponent", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyPrivateExponent"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[3] = r4
+	r4 = new {"name": "RSAPrivateKey.prime1", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyPrime1"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[4] = r4
+	r4 = new {"name": "RSAPrivateKey.prime2", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyPrime2"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[5] = r4
+	r4 = new {"name": "RSAPrivateKey.exponent1", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyExponent1"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[6] = r4
+	r4 = new {"name": "RSAPrivateKey.exponent2", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyExponent2"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[7] = r4
+	r4 = new {"name": "RSAPrivateKey.coefficient", "tagClass": null, "type": null, "constructed": <false, "capture": "privateKeyCoefficient"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[8] = r4
+	r1["value"] = r3
+	Scope[9836][10] = r1
+	r1 = new {"name": "RSAPublicKey", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r3 = new [0, 0]
+	r4 = new {"name": "RSAPublicKey.modulus", "tagClass": null, "type": null, "constructed": <false, "capture": "publicKeyModulus"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[0] = r4
+	r4 = new {"name": "RSAPublicKey.exponent", "tagClass": null, "type": null, "constructed": <false, "capture": "publicKeyExponent"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["INTEGER"]
+	r3[1] = r4
+	r1["value"] = r3
+	Scope[9836][11] = r1
+	r2 = new {"name": "SubjectPublicKeyInfo", "tagClass": null, "type": null, "constructed": <true, "captureAsn1": "subjectPublicKeyInfo", "value": null}
+	r2["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r2["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r4 = new [0, 0]
+	r5 = new {"name": "SubjectPublicKeyInfo.AlgorithmIdentifier", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r5["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r7 = new [0]
+	r8 = new {"name": "AlgorithmIdentifier.algorithm", "tagClass": null, "type": null, "constructed": <false, "capture": "publicKeyOid"}
+	r8["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9836][5]["Type"]["OID"]
+	r7[0] = r8
+	r5["value"] = r7
+	r4[0] = r5
+	r5 = new {"name": "SubjectPublicKeyInfo.subjectPublicKey", "tagClass": null, "type": null, "constructed": <false, "value": null}
+	r5["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r5["type"] = Scope[9836][5]["Type"]["BITSTRING"]
+	r7 = new [0]
+	r8 = new {"name": "SubjectPublicKeyInfo.subjectPublicKey.RSAPublicKey", "tagClass": null, "type": null, "constructed": <true, "optional": <true, "captureAsn1": "rsaPublicKey"}
+	r8["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r8["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r7[0] = r8
+	r5["value"] = r7
+	r4[1] = r5
+	r2["value"] = r4
+	Scope[9836][2]["pki"]["rsa"]["publicKeyValidator"] = r2
+	Scope[9836][12] = r2
+	r1 = new {"name": "DigestInfo", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r1["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r1["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r3 = new [0, 0]
+	r4 = new {"name": "DigestInfo.DigestAlgorithm", "tagClass": null, "type": null, "constructed": <true, "value": null}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["SEQUENCE"]
+	r6 = new [0, 0]
+	r7 = new {"name": "DigestInfo.DigestAlgorithm.algorithmIdentifier", "tagClass": null, "type": null, "constructed": <false, "capture": "algorithmIdentifier"}
+	r7["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9836][5]["Type"]["OID"]
+	r6[0] = r7
+	r7 = new {"name": "DigestInfo.DigestAlgorithm.parameters", "tagClass": null, "type": null, "capture": "parameters", "optional": <true, "constructed": <false}
+	r7["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r7["type"] = Scope[9836][5]["Type"]["NULL"]
+	r6[1] = r7
+	r4["value"] = r6
+	r3[0] = r4
+	r4 = new {"name": "DigestInfo.digest", "tagClass": null, "type": null, "constructed": <false, "capture": "digest"}
+	r4["tagClass"] = Scope[9836][5]["Class"]["UNIVERSAL"]
+	r4["type"] = Scope[9836][5]["Type"]["OCTETSTRING"]
+	r3[1] = r4
+	r1["value"] = r3
+	Scope[9836][13] = r1
+	Scope[9836][14] = func_signDigest_0x1000019bf
+	Scope[9836][15] = func_ModPow_0x1000019c0
+	Scope[9836][7]["rsa"]["encrypt"] = func_modPow_0x1000019c1
+	Scope[9836][7]["rsa"]["decrypt"] = func_decryptMessage_0x1000019c2
+	Scope[9836][7]["rsa"]["createKeyPairGenerationState"] = func_keygen_0x1000019c4
+	Scope[9836][7]["rsa"]["stepKeyPairGenerationState"] = func_generateRsa_0x1000019c6
+	Scope[9836][7]["rsa"]["generateKeyPair"] = func_generateKeyPair_0x1000019cf
+	Scope[9836][7]["rsa"]["setPublicKey"] = func_setupRsa_0x1000019d7
+	Scope[9836][7]["setRsaPublicKey"] = func_setupRsa_0x1000019d7
+	Scope[9836][7]["rsa"]["setPrivateKey"] = func_crypto_0x1000019dd
+	Scope[9836][7]["setRsaPrivateKey"] = func_crypto_0x1000019dd
+	Scope[9836][7]["wrapRsaPrivateKey"] = func_wrapPrivateKey_0x1000019de
+	Scope[9836][7]["privateKeyFromAsn1"] = func_parseRsa_0x1000019df
+	Scope[9836][7]["privateKeyToRSAPrivateKey"] = func_EncodeRsa_0x1000019e0
+	Scope[9836][7]["privateKeyToAsn1"] = func_EncodeRsa_0x1000019e0
+	Scope[9836][7]["publicKeyFromAsn1"] = func_ReadRsa_0x1000019e1
+	Scope[9836][7]["publicKeyToSubjectPublicKeyInfo"] = func_wrapRsaPublicKey_0x1000019e2
+	Scope[9836][7]["publicKeyToAsn1"] = func_wrapRsaPublicKey_0x1000019e2
+	Scope[9836][7]["publicKeyToRSAPublicKey"] = func_encodeRsaKey_0x1000019e3
+	return undefined
+}
+function func_initialize_0x1000019b1(a0, a1)
+{
+	Scope[9846][2] = a1
+	Scope[9846][3] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][20]()
+	ACCU = Scope[9795][18]()
+	ACCU = func_prime_0x1000019b0()
+	return undefined
+}
+function func_pkcs1_0x1000019a2(a0, a1)
+{
+	Scope[9852][3] = func_deriveKey_0x10000199f
+	Scope[9852][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][21]()
+	r2 = a1
+	if (!Scope[9852][2]["pkcs1"])
+	{
+	}
+	r4 = {}
+	Scope[9852][2]["pkcs1"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	r0["encode_rsa_oaep"] = func_oaepEncode_0x1000019a0
+	r0["decode_rsa_oaep"] = func_oaepDecode_0x1000019a1
+	return undefined
+}
+function func_initSha1_0x10000199e(a0, a1)
+{
+	Scope[9853][5] = func_init_0x100001998
+	Scope[9853][6] = func_sha1_0x100001999
+	Scope[9853][2] = Scope[9795][2]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9853][2]["sha1"])
+	{
+	}
+	r4 = {}
+	Scope[9853][2]["sha1"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	Scope[9853][2]["md"]["algorithms"]["sha1"] = r0
+	Scope[9853][2]["md"]["sha1"] = r0
+	r0["create"] = func_sha1_0x10000199d
+	Scope[9853][4] = false
+	return undefined
+}
+function func_BigInteger_0x100001997(a0, a1)
+{
+	Scope[9855][2] = func_bytes_0x10000192c
+	Scope[9855][3] = func_Bytes_0x10000192d
+	Scope[9855][6] = func_charAt_0x100001931
+	Scope[9855][7] = func_index_0x100001932
+	Scope[9855][8] = func_fromInt_0x100001935
+	Scope[9855][9] = func_bitLength_0x10000193c
+	Scope[9855][10] = func_setM_0x100001947
+	Scope[9855][11] = func_barrett_0x10000194e
+	Scope[9855][12] = func_andBits_0x100001965
+	Scope[9855][13] = func_bitOr_0x100001967
+	Scope[9855][14] = func_xor_0x100001969
+	Scope[9855][15] = func_clearBits_0x10000196b
+	Scope[9855][16] = func_bitLength_0x100001970
+	Scope[9855][17] = func_popcount_0x100001972
+	Scope[9855][18] = func_noop_0x100001982
+	Scope[9855][19] = func_montgomery_0x100001989
+	Scope[9855][22] = func_randomSource_0x100001996
+	r0 = Scope[9795][2]()
+	r97 = a1
+	r98 = r0
+	if (!r0["jsbn"])
+	{
+	}
+	r99 = {}
+	r98["jsbn"] = {}
+	r97["exports"] = r99
+	r2 = 244837814094590.0
+	r0["jsbn"]["BigInteger"] = func_bytes_0x10000192c
+	r97 = TypeOf(typeof(navigator))
+	if (r97 > "u")
+	{
+		Scope[9855][2]["prototype"]["am"] = func_multiply_0x100001930
+		r1 = 28
+	}
+	else
+	{
+		if ((244837814094590.0 & 16777215) == 15715070)
+			&& (navigator["appName"] == "Microsoft Internet Explorer")
+		{
+			Scope[9855][2]["prototype"]["am"] = func_multiplyBigint_0x10000192f
+			r1 = 30
+		}
+		else
+		{
+			if ((244837814094590.0 & 16777215) == 15715070)
+				&& (!navigator["appName"] == "Netscape")
+			{
+				Scope[9855][2]["prototype"]["am"] = func_multiply_0x10000192e
+				r1 = 26
+			}
+			else
+			{
+				Scope[9855][2]["prototype"]["am"] = func_multiply_0x100001930
+				r1 = 28
+			}
+		}
+	}
+	Scope[9855][2]["prototype"]["DB"] = r1
+	Scope[9855][2]["prototype"]["DM"] = ((1 << r1) - 1)
+	Scope[9855][2]["prototype"]["DV"] = (1 << r1)
+	Scope[9855][2]["prototype"]["FV"] = Math["pow"](2, 52)
+	Scope[9855][2]["prototype"]["F1"] = (52 - r1)
+	r98 = (r1 * 2)
+	Scope[9855][2]["prototype"]["F2"] = (r98 - 52)
+	Scope[9855][4] = "0123456789abcdefghijklmnopqrstuvwxyz"
+	Scope[9855][5] = Array(r0)
+	r8 = 48
+	r9 = 0
+	while (true)
+	{
+		if (!r9 <= 9) break
+		r98 = Number(r8)
+		r8 = (Number(r8) + 1)
+		Scope[9855][5][r98] = r9
+		r9 = (r9 + 1)
+	}
+	r8 = 97
+	r9 = 10
+	while (true)
+	{
+		if (!r9 < 36) break
+		r98 = Number(r8)
+		r8 = (Number(r8) + 1)
+		Scope[9855][5][r98] = r9
+		r9 = (r9 + 1)
+	}
+	r8 = 65
+	r9 = 10
+	while (true)
+	{
+		if (!r9 < 36) break
+		r98 = Number(r8)
+		r8 = (Number(r8) + 1)
+		Scope[9855][5][r98] = r9
+		r9 = (r9 + 1)
+	}
+	Scope[9855][10]["prototype"]["convert"] = func_normalizeMod_0x100001948
+	Scope[9855][10]["prototype"]["revert"] = func_identity_0x100001949
+	Scope[9855][10]["prototype"]["reduce"] = func_reduceMod_0x10000194a
+	Scope[9855][10]["prototype"]["mulTo"] = func_multiply_0x10000194b
+	Scope[9855][10]["prototype"]["sqrTo"] = func_squareReduce_0x10000194c
+	Scope[9855][11]["prototype"]["convert"] = func_mod_0x10000194f
+	Scope[9855][11]["prototype"]["revert"] = func_reduceBytes_0x100001950
+	Scope[9855][11]["prototype"]["reduce"] = func_reduce_0x100001951
+	Scope[9855][11]["prototype"]["mulTo"] = func_multiplyReduce_0x100001953
+	Scope[9855][11]["prototype"]["sqrTo"] = func_reduceSquare_0x100001952
+	Scope[9855][2]["prototype"]["copyTo"] = func_copy_0x100001933
+	Scope[9855][2]["prototype"]["fromInt"] = func_fromInt_0x100001934
+	Scope[9855][2]["prototype"]["fromString"] = func_parseBigInt_0x100001936
+	Scope[9855][2]["prototype"]["clamp"] = func_trimTrailing_0x100001937
+	Scope[9855][2]["prototype"]["dlShiftTo"] = func_prepend_0x10000193e
+	Scope[9855][2]["prototype"]["drShiftTo"] = func_CopyState_0x10000193f
+	Scope[9855][2]["prototype"]["lShiftTo"] = func_shiftBits_0x100001940
+	Scope[9855][2]["prototype"]["rShiftTo"] = func_bitShift_0x100001941
+	Scope[9855][2]["prototype"]["subTo"] = func_subtract_0x100001942
+	Scope[9855][2]["prototype"]["multiplyTo"] = func_MultiplyTo_0x100001943
+	Scope[9855][2]["prototype"]["squareTo"] = func_square_0x100001944
+	Scope[9855][2]["prototype"]["divRemTo"] = func_modulo_0x100001945
+	Scope[9855][2]["prototype"]["invDigit"] = func_modInverse_0x10000194d
+	Scope[9855][2]["prototype"]["isEven"] = func_isZero_0x100001954
+	Scope[9855][2]["prototype"]["exp"] = func_ModPow_0x100001955
+	Scope[9855][2]["prototype"]["toString"] = func_toStringRadix_0x100001938
+	Scope[9855][2]["prototype"]["negate"] = func_negate_0x100001939
+	Scope[9855][2]["prototype"]["abs"] = func_Abs_0x10000193a
+	Scope[9855][2]["prototype"]["compareTo"] = func_compare_0x10000193b
+	Scope[9855][2]["prototype"]["bitLength"] = func_bitCount_0x10000193d
+	Scope[9855][2]["prototype"]["mod"] = func_Divide_0x100001946
+	Scope[9855][2]["prototype"]["modPowInt"] = func_modPow_0x100001956
+	Scope[9855][2]["ZERO"] = func_fromInt_0x100001935(0)
+	Scope[9855][2]["ONE"] = func_fromInt_0x100001935(1)
+	Scope[9855][18]["prototype"]["convert"] = func_identity_0x100001983
+	Scope[9855][18]["prototype"]["revert"] = func_identity_0x100001983
+	Scope[9855][18]["prototype"]["mulTo"] = func_multiplyTo_0x100001984
+	Scope[9855][18]["prototype"]["sqrTo"] = func_square_0x100001985
+	Scope[9855][19]["prototype"]["convert"] = func_reducer_0x10000198a
+	Scope[9855][19]["prototype"]["revert"] = func_identity_0x10000198b
+	Scope[9855][19]["prototype"]["reduce"] = func_reduceModulo_0x10000198c
+	Scope[9855][19]["prototype"]["mulTo"] = func_reduceMultiply_0x10000198e
+	Scope[9855][19]["prototype"]["sqrTo"] = func_squareReduce_0x10000198d
+	Scope[9855][20] = new [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509]
+	Scope[9855][21] = (67108864 / Scope[9855][20][(Scope[9855][20]["length"] - 1)])
+	Scope[9855][2]["prototype"]["chunkSize"] = func_log2_0x10000195b
+	Scope[9855][2]["prototype"]["toRadix"] = func_toString_0x10000195d
+	Scope[9855][2]["prototype"]["fromRadix"] = func_fromString_0x10000195e
+	Scope[9855][2]["prototype"]["fromNumber"] = func_generatePrime_0x10000195f
+	Scope[9855][2]["prototype"]["bitwiseTo"] = func_Combine_0x100001964
+	Scope[9855][2]["prototype"]["changeBit"] = func_shift_0x100001975
+	Scope[9855][2]["prototype"]["addTo"] = func_addBigInt_0x100001979
+	Scope[9855][2]["prototype"]["dMultiply"] = func_write_0x100001980
+	Scope[9855][2]["prototype"]["dAddOffset"] = func_addCarry_0x100001981
+	Scope[9855][2]["prototype"]["multiplyLowerTo"] = func_blend_0x100001987
+	Scope[9855][2]["prototype"]["multiplyUpperTo"] = func_multiply_0x100001988
+	Scope[9855][2]["prototype"]["modInt"] = func_modulo_0x100001991
+	Scope[9855][2]["prototype"]["millerRabin"] = func_isProbablePrime_0x100001994
+	Scope[9855][2]["prototype"]["clone"] = func_cloneBytes_0x100001957
+	Scope[9855][2]["prototype"]["intValue"] = func_decode_0x100001958
+	Scope[9855][2]["prototype"]["byteValue"] = func_readInt8_0x100001959
+	Scope[9855][2]["prototype"]["shortValue"] = func_short_0x10000195a
+	Scope[9855][2]["prototype"]["signum"] = func_signum_0x10000195c
+	Scope[9855][2]["prototype"]["toByteArray"] = func_signExtend_0x100001960
+	Scope[9855][2]["prototype"]["equals"] = func_equals_0x100001961
+	Scope[9855][2]["prototype"]["min"] = func_max_0x100001962
+	Scope[9855][2]["prototype"]["max"] = func_max_0x100001963
+	Scope[9855][2]["prototype"]["and"] = func_andBytes_0x100001966
+	Scope[9855][2]["prototype"]["or"] = func_bitwiseOr_0x100001968
+	Scope[9855][2]["prototype"]["xor"] = func_xorTo_0x10000196a
+	Scope[9855][2]["prototype"]["andNot"] = func_subtract_0x10000196c
+	Scope[9855][2]["prototype"]["not"] = func_not_0x10000196d
+	Scope[9855][2]["prototype"]["shiftLeft"] = func_shift_0x10000196e
+	Scope[9855][2]["prototype"]["shiftRight"] = func_shift_0x10000196f
+	Scope[9855][2]["prototype"]["getLowestSetBit"] = func_bitLength_0x100001971
+	Scope[9855][2]["prototype"]["bitCount"] = func_checksum_0x100001973
+	Scope[9855][2]["prototype"]["testBit"] = func_bitHas_0x100001974
+	Scope[9855][2]["prototype"]["setBit"] = func_setBit_0x100001976
+	Scope[9855][2]["prototype"]["clearBit"] = func_clearBit_0x100001977
+	Scope[9855][2]["prototype"]["flipBit"] = func_xorWith_0x100001978
+	Scope[9855][2]["prototype"]["add"] = func_addBytes_0x10000197a
+	Scope[9855][2]["prototype"]["subtract"] = func_subtract_0x10000197b
+	Scope[9855][2]["prototype"]["multiply"] = func_multiply_0x10000197c
+	Scope[9855][2]["prototype"]["divide"] = func_divide_0x10000197d
+	Scope[9855][2]["prototype"]["remainder"] = func_modTo_0x10000197e
+	Scope[9855][2]["prototype"]["divideAndRemainder"] = func_divide_0x10000197f
+	Scope[9855][2]["prototype"]["modPow"] = func_powMod_0x10000198f
+	Scope[9855][2]["prototype"]["modInverse"] = func_gcd_0x100001992
+	Scope[9855][2]["prototype"]["pow"] = func_callExp_0x100001986
+	Scope[9855][2]["prototype"]["gcd"] = func_gcd_0x100001990
+	Scope[9855][2]["prototype"]["isProbablePrime"] = func_isProbablePrime_0x100001993
+	return undefined
+}
+function func_rc2_0x10000192b(a0, a1)
+{
+	Scope[9856][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	Scope[9856][3] = new [217, 120, 249, 196, 25, 221, 181, 237, 40, 233, 253, 121, 74, 160, 216, 157, 198, 126, 55, 131, 43, 118, 83, 142, 98, 76, 100, 136, 68, 139, 251, 162, 23, 154, 89, 245, 135, 179, 79, 19, 97, 69, 109, 141, 9, 129, 125, 50, 189, 143, 64, 235, 134, 183, 123, 11, 240, 149, 33, 34, 92, 107, 78, 130, 84, 214, 101, 147, 206, 96, 178, 28, 115, 86, 192, 20, 167, 140, 241, 220, 18, 117, 202, 31, 59, 190, 228, 209, 66, 61, 212, 48, 163, 60, 182, 38, 111, 191, 14, 218, 70, 105, 7, 87, 39, 242, 29, 155, 188, 148, 67, 3, 248, 17, 199, 246, 144, 239, 62, 231, 6, 195, 213, 47, 200, 102, 30, 215, 8, 232, 234, 222, 128, 82, 238, 247, 132, 170, 114, 172, 53, 77, 106, 42, 150, 26, 210, 113, 90, 21, 73, 116, 75, 159, 208, 94, 4, 24, 164, 236, 194, 224, 65, 110, 15, 81, 203, 204, 36, 145, 175, 80, 161, 244, 112, 57, 153, 124, 58, 133, 35, 184, 180, 122, 252, 2, 54, 91, 37, 85, 151, 49, 45, 93, 250, 152, 227, 138, 146, 174, 5, 223, 41, 16, 103, 108, 186, 201, 211, 0, 230, 207, 225, 158, 168, 44, 99, 22, 1, 63, 88, 226, 137, 169, 13, 56, 52, 27, 171, 51, 255, 176, 187, 72, 12, 95, 185, 177, 205, 46, 197, 243, 219, 71, 229, 165, 156, 119, 10, 166, 32, 104, 254, 127, 193, 173]
+	Scope[9856][4] = new [1, 2, 3, 5]
+	Scope[9856][5] = func_rotate_0x10000191b
+	Scope[9856][6] = func_rotateRight_0x10000191c
+	r1 = a1
+	if (!Scope[9856][2]["rc2"])
+	{
+	}
+	r3 = {}
+	Scope[9856][2]["rc2"] = {}
+	r1["exports"] = r3
+	Scope[9856][2]["rc2"]["expandKey"] = func_shuffle_0x10000191d
+	Scope[9856][7] = func_initMd5_0x100001926
+	Scope[9856][2]["rc2"]["startEncrypting"] = func_createRc2Cipher_0x100001927
+	Scope[9856][2]["rc2"]["createEncryptionCipher"] = func_md5_0x100001928
+	Scope[9856][2]["rc2"]["startDecrypting"] = func_Decrypt_0x100001929
+	Scope[9856][2]["rc2"]["createDecryptionCipher"] = func_md5_0x10000192a
+	return undefined
+}
+function func_initialize_0x10000191a(a0, a1)
+{
+	Scope[9858][2] = a1
+	Scope[9858][3] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = Scope[9795][16]()
+	ACCU = Scope[9795][17]()
+	ACCU = Scope[9795][4]()
+	ACCU = func_InitRandom_0x100001919()
+	return undefined
+}
+function func_initPrng_0x10000190d(a0, a1)
+{
+	Scope[9861][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	if (Scope[9861][2]["util"]["isNodejs"])
+	{
+		if (!Boolean(Scope[9861][2]["options"]["usePureJavaScript"]))
+		{
+			if (!Boolean(process["versions"]["node-webkit"]))
+			{
+				Scope[9861][3] = require("crypto")
+			}
+		}
+	}
+	r2 = a1
+	if (!Scope[9861][2]["prng"])
+	{
+	}
+	r4 = {}
+	Scope[9861][2]["prng"] = {}
+	r2["exports"] = r4
+	r4["create"] = func_initRandom_0x10000190c
+	return undefined
+}
+function func_initSha256_0x1000018f6(a0, a1)
+{
+	Scope[9871][6] = func_initSha_0x1000018f0
+	Scope[9871][7] = func_sha256Transform_0x1000018f1
+	Scope[9871][2] = Scope[9795][2]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9871][2]["sha256"])
+	{
+	}
+	r4 = {}
+	Scope[9871][2]["sha256"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	Scope[9871][2]["md"]["algorithms"]["sha256"] = r0
+	Scope[9871][2]["md"]["sha256"] = r0
+	r0["create"] = func_createSha256_0x1000018f5
+	Scope[9871][4] = false
+	return undefined
+}
+function func_pbkdf2_0x1000018ef(a0, a1)
+{
+	Scope[9873][2] = Scope[9795][2]()
+	ACCU = Scope[9795][11]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	if (!Scope[9873][2]["pkcs5"])
+	{
+	}
+	r3 = {}
+	Scope[9873][2]["pkcs5"] = {}
+	r0 = r3
+	if (Scope[9873][2]["util"]["isNodejs"])
+	{
+		if (!Boolean(Scope[9873][2]["options"]["usePureJavaScript"]))
+		{
+			Scope[9873][3] = require("crypto")
+		}
+	}
+	r0["pbkdf2"] = func_pbkdf2_0x1000018ee
+	Scope[9873][2]["pbkdf2"] = func_pbkdf2_0x1000018ee
+	a1["exports"] = func_pbkdf2_0x1000018ee
+	return undefined
+}
+function func_initDes_0x1000018e9(a0, a1)
+{
+	Scope[9875][11] = func_desKey_0x1000018dd
+	Scope[9875][12] = func_desKey_0x1000018de
+	Scope[9875][13] = func_desCipher_0x1000018e0
+	Scope[9875][2] = Scope[9795][2]()
+	ACCU = Scope[9795][5]()
+	ACCU = Scope[9795][6]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9875][2]["des"])
+	{
+	}
+	r4 = {}
+	Scope[9875][2]["des"] = {}
+	r2["exports"] = r4
+	Scope[9875][2]["des"]["startEncrypting"] = func_createCipher_0x1000018e1
+	Scope[9875][2]["des"]["createEncryptionCipher"] = func_createCipher_0x1000018e2
+	Scope[9875][2]["des"]["startDecrypting"] = func_createCipher_0x1000018e3
+	Scope[9875][2]["des"]["createDecryptionCipher"] = func_createCipher_0x1000018e4
+	Scope[9875][2]["des"]["Algorithm"] = func_createCipher_0x1000018e7
+	Scope[9875][2]["des"]["Algorithm"]["prototype"]["initialize"] = func_initialize_0x1000018e8
+	ACCU = func_register_0x1000018dc("DES-ECB", Scope[9875][2]["cipher"]["modes"]["ecb"])
+	ACCU = func_register_0x1000018dc("DES-CBC", Scope[9875][2]["cipher"]["modes"]["cbc"])
+	ACCU = func_register_0x1000018dc("DES-CFB", Scope[9875][2]["cipher"]["modes"]["cfb"])
+	ACCU = func_register_0x1000018dc("DES-OFB", Scope[9875][2]["cipher"]["modes"]["ofb"])
+	ACCU = func_register_0x1000018dc("DES-CTR", Scope[9875][2]["cipher"]["modes"]["ctr"])
+	ACCU = func_register_0x1000018dc("3DES-ECB", Scope[9875][2]["cipher"]["modes"]["ecb"])
+	ACCU = func_register_0x1000018dc("3DES-CBC", Scope[9875][2]["cipher"]["modes"]["cbc"])
+	ACCU = func_register_0x1000018dc("3DES-CFB", Scope[9875][2]["cipher"]["modes"]["cfb"])
+	ACCU = func_register_0x1000018dc("3DES-OFB", Scope[9875][2]["cipher"]["modes"]["ofb"])
+	ACCU = func_register_0x1000018dc("3DES-CTR", Scope[9875][2]["cipher"]["modes"]["ctr"])
+	Scope[9875][3] = new [16843776, 0, 65536, 16843780, 16842756, 66564, 4, 65536, 1024, 16843776, 16843780, 1024, 16778244, 16842756, 16777216, 4, 1028, 16778240, 16778240, 66560, 66560, 16842752, 16842752, 16778244, 65540, 16777220, 16777220, 65540, 0, 1028, 66564, 16777216, 65536, 16843780, 4, 16842752, 16843776, 16777216, 16777216, 1024, 16842756, 65536, 66560, 16777220, 1024, 4, 16778244, 66564, 16843780, 65540, 16842752, 16778244, 16777220, 1028, 66564, 16843776, 1028, 16778240, 16778240, 0, 65540, 66560, 0, 16842756]
+	Scope[9875][4] = new [-2146402272, -2147450880, 32768, 1081376, 1048576, 32, -2146435040, -2147450848, -2147483616, -2146402272, -2146402304, -2147483648, -2147450880, 1048576, 32, -2146435040, 1081344, 1048608, -2147450848, 0, -2147483648, 32768, 1081376, -2146435072, 1048608, -2147483616, 0, 1081344, 32800, -2146402304, -2146435072, 32800, 0, 1081376, -2146435040, 1048576, -2147450848, -2146435072, -2146402304, 32768, -2146435072, -2147450880, 32, -2146402272, 1081376, 32, 32768, -2147483648, 32800, -2146402304, 1048576, -2147483616, 1048608, -2147450848, -2147483616, 1048608, 1081344, 0, -2147450880, 32800, -2147483648, -2146435040, -2146402272, 1081344]
+	Scope[9875][5] = new [520, 134349312, 0, 134348808, 134218240, 0, 131592, 134218240, 131080, 134217736, 134217736, 131072, 134349320, 131080, 134348800, 520, 134217728, 8, 134349312, 512, 131584, 134348800, 134348808, 131592, 134218248, 131584, 131072, 134218248, 8, 134349320, 512, 134217728, 134349312, 134217728, 131080, 520, 131072, 134349312, 134218240, 0, 512, 131080, 134349320, 134218240, 134217736, 512, 0, 134348808, 134218248, 131072, 134217728, 134349320, 8, 131592, 131584, 134217736, 134348800, 134218248, 520, 134348800, 131592, 8, 134348808, 131584]
+	Scope[9875][6] = new [8396801, 8321, 8321, 128, 8396928, 8388737, 8388609, 8193, 0, 8396800, 8396800, 8396929, 129, 0, 8388736, 8388609, 1, 8192, 8388608, 8396801, 128, 8388608, 8193, 8320, 8388737, 1, 8320, 8388736, 8192, 8396928, 8396929, 129, 8388736, 8388609, 8396800, 8396929, 129, 0, 0, 8396800, 8320, 8388736, 8388737, 1, 8396801, 8321, 8321, 128, 8396929, 129, 1, 8192, 8388609, 8193, 8396928, 8388737, 8193, 8320, 8388608, 8396801, 128, 8388608, 8192, 8396928]
+	Scope[9875][7] = new [256, 34078976, 34078720, 1107296512, 524288, 256, 1073741824, 34078720, 1074266368, 524288, 33554688, 1074266368, 1107296512, 1107820544, 524544, 1073741824, 33554432, 1074266112, 1074266112, 0, 1073742080, 1107820800, 1107820800, 33554688, 1107820544, 1073742080, 0, 1107296256, 34078976, 33554432, 1107296256, 524544, 524288, 1107296512, 256, 33554432, 1073741824, 34078720, 1107296512, 1074266368, 33554688, 1073741824, 1107820544, 34078976, 1074266368, 256, 33554432, 1107820544, 1107820800, 524544, 1107296256, 1107820800, 34078720, 0, 1074266112, 1107296256, 524544, 33554688, 1073742080, 524288, 0, 1074266112, 34078976, 1073742080]
+	Scope[9875][8] = new [536870928, 541065216, 16384, 541081616, 541065216, 16, 541081616, 4194304, 536887296, 4210704, 4194304, 536870928, 4194320, 536887296, 536870912, 16400, 0, 4194320, 536887312, 16384, 4210688, 536887312, 16, 541065232, 541065232, 0, 4210704, 541081600, 16400, 4210688, 541081600, 536870912, 536887296, 16, 541065232, 4210688, 541081616, 4194304, 16400, 536870928, 4194304, 536887296, 536870912, 16400, 536870928, 541081616, 4210688, 541065216, 4210704, 541081600, 0, 541065232, 16, 16384, 541065216, 4210704, 16384, 4194320, 536887312, 0, 541081600, 536870912, 4194320, 536887312]
+	Scope[9875][9] = new [2097152, 69206018, 67110914, 0, 2048, 67110914, 2099202, 69208064, 69208066, 2097152, 0, 67108866, 2, 67108864, 69206018, 2050, 67110912, 2099202, 2097154, 67110912, 67108866, 69206016, 69208064, 2097154, 69206016, 2048, 2050, 69208066, 2099200, 2, 67108864, 2099200, 67108864, 2099200, 2097152, 67110914, 67110914, 69206018, 69206018, 2, 2097154, 67108864, 67110912, 2097152, 69208064, 2050, 2099202, 69208064, 2050, 67108866, 69208066, 69206016, 2099200, 0, 2, 69208066, 0, 2099202, 69206016, 2048, 67108866, 67110912, 2048, 2097154]
+	Scope[9875][10] = new [268439616, 4096, 262144, 268701760, 268435456, 268439616, 64, 268435456, 262208, 268697600, 268701760, 266240, 268701696, 266304, 4096, 64, 268697600, 268435520, 268439552, 4160, 266240, 262208, 268697664, 268701696, 4160, 0, 0, 268697664, 268435520, 268439552, 266304, 262144, 266304, 262144, 268701696, 4096, 64, 268697664, 4096, 266304, 268439552, 64, 268435520, 268697600, 268697664, 268435456, 262144, 268439616, 0, 268701760, 262208, 268435520, 268697600, 268439552, 268439616, 0, 268701760, 266240, 266240, 4160, 4160, 262208, 268435456, 268701696]
+	return undefined
+}
+function func_pem_0x1000018da(a0, a1)
+{
+	Scope[9879][3] = func_foldHeader_0x1000018d6
+	Scope[9879][4] = func_trimStart_0x1000018d7
+	Scope[9879][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9879][2]["pem"])
+	{
+	}
+	r4 = {}
+	Scope[9879][2]["pem"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	r0["encode"] = func_encodePem_0x1000018d8
+	r0["decode"] = func_parsePem_0x1000018d9
+	return undefined
+}
+function func_initMd5_0x1000018d4(a0, a1)
+{
+	Scope[9880][8] = func_initMd5_0x1000018ce
+	Scope[9880][9] = func_md5Block_0x1000018cf
+	Scope[9880][2] = Scope[9795][2]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9880][2]["md5"])
+	{
+	}
+	r4 = {}
+	Scope[9880][2]["md5"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	Scope[9880][2]["md"]["algorithms"]["md5"] = r0
+	Scope[9880][2]["md"]["md5"] = r0
+	r0["create"] = func_initMd5_0x1000018d3
+	Scope[9880][7] = false
+	return undefined
+}
+function func_initHmac_0x1000018cd(a0, a1)
+{
+	Scope[9882][2] = Scope[9795][2]()
+	ACCU = Scope[9795][10]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9882][2]["hmac"])
+	{
+	}
+	r4 = {}
+	Scope[9882][2]["hmac"] = {}
+	r2["exports"] = r4
+	r4["create"] = func_hmac_0x1000018cc
+	return undefined
+}
+function func_initModule_0x1000018c8(a0, a1)
+{
+	r0 = Scope[9795][2]()
+	r1 = a1
+	r2 = r0
+	if (!r0["md"])
+	{
+	}
+	r3 = {}
+	r2["md"] = {}
+	r1["exports"] = r3
+	if (!r0["md"]["algorithms"])
+	{
+	}
+	r0["md"]["algorithms"] = {}
+	return undefined
+}
+function func_asn1_0x1000018c7(a0, a1)
+{
+	Scope[9884][4] = func_insufficientBytes_0x1000018b4
+	Scope[9884][6] = func_readAsn1_0x1000018b5
+	Scope[9884][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	ACCU = Scope[9795][8]()
+	r1 = a1
+	if (!Scope[9884][2]["asn1"])
+	{
+	}
+	r3 = {}
+	Scope[9884][2]["asn1"] = {}
+	r1["exports"] = r3
+	Scope[9884][3] = r3
+	Scope[9884][3]["Class"] = new {"UNIVERSAL": 0, "APPLICATION": 64, "CONTEXT_SPECIFIC": 128, "PRIVATE": 192}
+	Scope[9884][3]["Type"] = new {"NONE": 0, "BOOLEAN": 1, "INTEGER": 2, "BITSTRING": 3, "OCTETSTRING": 4, "NULL": 5, "OID": 6, "ODESC": 7, "EXTERNAL": 8, "REAL": 9, "ENUMERATED": 10, "EMBEDDED": 11, "UTF8": 12, "ROID": 13, "SEQUENCE": 16, "SET": 17, "PRINTABLESTRING": 19, "IA5STRING": 22, "UTCTIME": 23, "GENERALIZEDTIME": 24, "BMPSTRING": 30}
+	Scope[9884][3]["create"] = func_createAsn1_0x1000018b6
+	Scope[9884][3]["copy"] = func_copy_0x1000018b7
+	Scope[9884][3]["equals"] = func_deepEqual_0x1000018b8
+	Scope[9884][3]["getBerValueLength"] = func_readVarint_0x1000018b9
+	Scope[9884][5] = func_readLength_0x1000018ba
+	Scope[9884][3]["fromDer"] = func_parseAsn1_0x1000018bb
+	Scope[9884][3]["toDer"] = func_encodeDer_0x1000018bc
+	Scope[9884][3]["oidToDer"] = func_encodeOid_0x1000018bd
+	Scope[9884][3]["derToOid"] = func_decodeOid_0x1000018be
+	Scope[9884][3]["utcTimeToDate"] = func_parseDate_0x1000018bf
+	Scope[9884][3]["generalizedTimeToDate"] = func_parseDate_0x1000018c0
+	Scope[9884][3]["dateToUtcTime"] = func_formatDate_0x1000018c1
+	Scope[9884][3]["dateToGeneralizedTime"] = func_formatDate_0x1000018c2
+	Scope[9884][3]["integerToDer"] = func_encodeInteger_0x1000018c3
+	Scope[9884][3]["derToInteger"] = func_readSignedInt_0x1000018c4
+	Scope[9884][3]["validate"] = func_validateTag_0x1000018c5
+	Scope[9884][7] = \[^\\\\\\\\u0000-\\\\\\\\u00ff]\
+	Scope[9884][3]["prettyPrint"] = func_prettyPrint_0x1000018c6
+	return undefined
+}
+function func_registerOids_0x1000018b3(a0, a1)
+{
+	r0 = Scope[9795][2]()
+	r4 = r0
+	if (!r0["pki"])
+	{
+	}
+	r4["pki"] = {}
+	r4 = a1
+	r6 = r0
+	if (!r0["oids"])
+	{
+	}
+	r7 = {}
+	r6["oids"] = {}
+	r0["pki"]["oids"] = r7
+	r4["exports"] = r7
+	Scope[9886][2] = r7
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.1", "rsaEncryption")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.4", "md5WithRSAEncryption")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.5", "sha1WithRSAEncryption")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.7", "RSAES-OAEP")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.8", "mgf1")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.9", "pSpecified")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.10", "RSASSA-PSS")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.11", "sha256WithRSAEncryption")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.12", "sha384WithRSAEncryption")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.1.13", "sha512WithRSAEncryption")
+	ACCU = func_Pair_0x1000018b1("1.3.101.112", "EdDSA25519")
+	ACCU = func_Pair_0x1000018b1("1.2.840.10040.4.3", "dsa-with-sha1")
+	ACCU = func_Pair_0x1000018b1("1.3.14.3.2.7", "desCBC")
+	ACCU = func_Pair_0x1000018b1("1.3.14.3.2.26", "sha1")
+	ACCU = func_Pair_0x1000018b1("1.3.14.3.2.29", "sha1WithRSASignature")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.1", "sha256")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.2", "sha384")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.3", "sha512")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.4", "sha224")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.5", "sha512-224")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.2.6", "sha512-256")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.2", "md2")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.5", "md5")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.1", "data")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.2", "signedData")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.3", "envelopedData")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.4", "signedAndEnvelopedData")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.5", "digestedData")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.7.6", "encryptedData")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.1", "emailAddress")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.2", "unstructuredName")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.3", "contentType")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.4", "messageDigest")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.5", "signingTime")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.6", "counterSignature")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.7", "challengePassword")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.8", "unstructuredAddress")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.14", "extensionRequest")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.20", "friendlyName")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.21", "localKeyId")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.9.22.1", "x509Certificate")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.1", "keyBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.2", "pkcs8ShroudedKeyBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.3", "certBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.4", "crlBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.5", "secretBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.10.1.6", "safeContentsBag")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.5.13", "pkcs5PBES2")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.5.12", "pkcs5PBKDF2")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.1", "pbeWithSHAAnd128BitRC4")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.2", "pbeWithSHAAnd40BitRC4")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.3", "pbeWithSHAAnd3-KeyTripleDES-CBC")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.4", "pbeWithSHAAnd2-KeyTripleDES-CBC")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.5", "pbeWithSHAAnd128BitRC2-CBC")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.1.12.1.6", "pbewithSHAAnd40BitRC2-CBC")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.7", "hmacWithSHA1")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.8", "hmacWithSHA224")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.9", "hmacWithSHA256")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.10", "hmacWithSHA384")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.2.11", "hmacWithSHA512")
+	ACCU = func_Pair_0x1000018b1("1.2.840.113549.3.7", "des-EDE3-CBC")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.1.2", "aes128-CBC")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.1.22", "aes192-CBC")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.101.3.4.1.42", "aes256-CBC")
+	ACCU = func_Pair_0x1000018b1("2.5.4.3", "commonName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.4", "surname")
+	ACCU = func_Pair_0x1000018b1("2.5.4.5", "serialNumber")
+	ACCU = func_Pair_0x1000018b1("2.5.4.6", "countryName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.7", "localityName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.8", "stateOrProvinceName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.9", "streetAddress")
+	ACCU = func_Pair_0x1000018b1("2.5.4.10", "organizationName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.11", "organizationalUnitName")
+	ACCU = func_Pair_0x1000018b1("2.5.4.12", "title")
+	ACCU = func_Pair_0x1000018b1("2.5.4.13", "description")
+	ACCU = func_Pair_0x1000018b1("2.5.4.15", "businessCategory")
+	ACCU = func_Pair_0x1000018b1("2.5.4.17", "postalCode")
+	ACCU = func_Pair_0x1000018b1("2.5.4.42", "givenName")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.4.1.311.60.2.1.2", "jurisdictionOfIncorporationStateOrProvinceName")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.4.1.311.60.2.1.3", "jurisdictionOfIncorporationCountryName")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.113730.1.1", "nsCertType")
+	ACCU = func_Pair_0x1000018b1("2.16.840.1.113730.1.13", "nsComment")
+	ACCU = func_setOption_0x1000018b2("2.5.29.1", "authorityKeyIdentifier")
+	ACCU = func_setOption_0x1000018b2("2.5.29.2", "keyAttributes")
+	ACCU = func_setOption_0x1000018b2("2.5.29.3", "certificatePolicies")
+	ACCU = func_setOption_0x1000018b2("2.5.29.4", "keyUsageRestriction")
+	ACCU = func_setOption_0x1000018b2("2.5.29.5", "policyMapping")
+	ACCU = func_setOption_0x1000018b2("2.5.29.6", "subtreesConstraint")
+	ACCU = func_setOption_0x1000018b2("2.5.29.7", "subjectAltName")
+	ACCU = func_setOption_0x1000018b2("2.5.29.8", "issuerAltName")
+	ACCU = func_setOption_0x1000018b2("2.5.29.9", "subjectDirectoryAttributes")
+	ACCU = func_setOption_0x1000018b2("2.5.29.10", "basicConstraints")
+	ACCU = func_setOption_0x1000018b2("2.5.29.11", "nameConstraints")
+	ACCU = func_setOption_0x1000018b2("2.5.29.12", "policyConstraints")
+	ACCU = func_setOption_0x1000018b2("2.5.29.13", "basicConstraints")
+	ACCU = func_Pair_0x1000018b1("2.5.29.14", "subjectKeyIdentifier")
+	ACCU = func_Pair_0x1000018b1("2.5.29.15", "keyUsage")
+	ACCU = func_setOption_0x1000018b2("2.5.29.16", "privateKeyUsagePeriod")
+	ACCU = func_Pair_0x1000018b1("2.5.29.17", "subjectAltName")
+	ACCU = func_Pair_0x1000018b1("2.5.29.18", "issuerAltName")
+	ACCU = func_Pair_0x1000018b1("2.5.29.19", "basicConstraints")
+	ACCU = func_setOption_0x1000018b2("2.5.29.20", "cRLNumber")
+	ACCU = func_setOption_0x1000018b2("2.5.29.21", "cRLReason")
+	ACCU = func_setOption_0x1000018b2("2.5.29.22", "expirationDate")
+	ACCU = func_setOption_0x1000018b2("2.5.29.23", "instructionCode")
+	ACCU = func_setOption_0x1000018b2("2.5.29.24", "invalidityDate")
+	ACCU = func_setOption_0x1000018b2("2.5.29.25", "cRLDistributionPoints")
+	ACCU = func_setOption_0x1000018b2("2.5.29.26", "issuingDistributionPoint")
+	ACCU = func_setOption_0x1000018b2("2.5.29.27", "deltaCRLIndicator")
+	ACCU = func_setOption_0x1000018b2("2.5.29.28", "issuingDistributionPoint")
+	ACCU = func_setOption_0x1000018b2("2.5.29.29", "certificateIssuer")
+	ACCU = func_setOption_0x1000018b2("2.5.29.30", "nameConstraints")
+	ACCU = func_Pair_0x1000018b1("2.5.29.31", "cRLDistributionPoints")
+	ACCU = func_Pair_0x1000018b1("2.5.29.32", "certificatePolicies")
+	ACCU = func_setOption_0x1000018b2("2.5.29.33", "policyMappings")
+	ACCU = func_setOption_0x1000018b2("2.5.29.34", "policyConstraints")
+	ACCU = func_Pair_0x1000018b1("2.5.29.35", "authorityKeyIdentifier")
+	ACCU = func_setOption_0x1000018b2("2.5.29.36", "policyConstraints")
+	ACCU = func_Pair_0x1000018b1("2.5.29.37", "extKeyUsage")
+	ACCU = func_setOption_0x1000018b2("2.5.29.46", "freshestCRL")
+	ACCU = func_setOption_0x1000018b2("2.5.29.54", "inhibitAnyPolicy")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.4.1.11129.2.4.2", "timestampList")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.1.1", "authorityInfoAccess")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.3.1", "serverAuth")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.3.2", "clientAuth")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.3.3", "codeSigning")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.3.4", "emailProtection")
+	ACCU = func_Pair_0x1000018b1("1.3.6.1.5.5.7.3.8", "timeStamping")
+	return undefined
+}
+function func_initAes_0x1000018b0(a0, a1)
+{
+	Scope[9887][10] = func_initAes_0x1000018a2
+	Scope[9887][11] = func_crypt_0x1000018a3
+	Scope[9887][12] = func_Decrypt_0x1000018a4
+	Scope[9887][13] = func_createCipher_0x1000018a6
+	Scope[9887][2] = Scope[9795][2]()
+	ACCU = Scope[9795][5]()
+	ACCU = Scope[9795][6]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9887][2]["aes"])
+	{
+	}
+	r4 = {}
+	Scope[9887][2]["aes"] = {}
+	r2["exports"] = r4
+	Scope[9887][2]["aes"]["startEncrypting"] = func_startCipher_0x1000018a7
+	Scope[9887][2]["aes"]["createEncryptionCipher"] = func_createCipher_0x1000018a8
+	Scope[9887][2]["aes"]["startDecrypting"] = func_createCipher_0x1000018a9
+	Scope[9887][2]["aes"]["createDecryptionCipher"] = func_createCipher_0x1000018aa
+	Scope[9887][2]["aes"]["Algorithm"] = func_initCipher_0x1000018ad
+	Scope[9887][2]["aes"]["Algorithm"]["prototype"]["initialize"] = func_initCipher_0x1000018ae
+	Scope[9887][2]["aes"]["_expandKey"] = func_encrypt_0x1000018af
+	Scope[9887][2]["aes"]["_updateBlock"] = func_Decrypt_0x1000018a4
+	ACCU = func_register_0x1000018a1("AES-ECB", Scope[9887][2]["cipher"]["modes"]["ecb"])
+	ACCU = func_register_0x1000018a1("AES-CBC", Scope[9887][2]["cipher"]["modes"]["cbc"])
+	ACCU = func_register_0x1000018a1("AES-CFB", Scope[9887][2]["cipher"]["modes"]["cfb"])
+	ACCU = func_register_0x1000018a1("AES-OFB", Scope[9887][2]["cipher"]["modes"]["ofb"])
+	ACCU = func_register_0x1000018a1("AES-CTR", Scope[9887][2]["cipher"]["modes"]["ctr"])
+	ACCU = func_register_0x1000018a1("AES-GCM", Scope[9887][2]["cipher"]["modes"]["gcm"])
+	Scope[9887][3] = false
+	Scope[9887][4] = 4
+	return undefined
+}
+function func_initCipherModes_0x10000189f(a0, a1)
+{
+	Scope[9891][3] = func_NormalizeIv_0x10000187b
+	Scope[9891][4] = func_increment_0x10000187c
+	Scope[9891][5] = func_split64_0x10000187d
+	Scope[9891][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	if (!Scope[9891][2]["cipher"])
+	{
+	}
+	Scope[9891][2]["cipher"] = {}
+	r2 = a1
+	if (!Scope[9891][2]["cipher"]["modes"])
+	{
+	}
+	r4 = {}
+	Scope[9891][2]["cipher"]["modes"] = {}
+	r2["exports"] = r4
+	r0 = r4
+	r0["ecb"] = func_ecb_0x10000187e
+	r0["ecb"]["prototype"]["start"] = func_noop_0x10000187f
+	r0["ecb"]["prototype"]["encrypt"] = func_encrypt_0x100001880
+	r0["ecb"]["prototype"]["decrypt"] = func_decryptBlock_0x100001881
+	r0["ecb"]["prototype"]["pad"] = func_padBlock_0x100001882
+	r0["ecb"]["prototype"]["unpad"] = func_truncateBlock_0x100001883
+	r0["cbc"] = func_init_0x100001884
+	r0["cbc"]["prototype"]["start"] = func_initIv_0x100001885
+	r0["cbc"]["prototype"]["encrypt"] = func_encryptBlock_0x100001886
+	r0["cbc"]["prototype"]["decrypt"] = func_decryptBlock_0x100001887
+	r0["cbc"]["prototype"]["pad"] = func_padBlock_0x100001888
+	r0["cbc"]["prototype"]["unpad"] = func_truncateIfNeeded_0x100001889
+	r0["cfb"] = func_initCfb_0x10000188a
+	r0["cfb"]["prototype"]["start"] = func_resetIv_0x10000188b
+	r0["cfb"]["prototype"]["encrypt"] = func_processBlock_0x10000188c
+	r0["cfb"]["prototype"]["decrypt"] = func_process_0x10000188d
+	r0["ofb"] = func_ofbInit_0x10000188e
+	r0["ofb"]["prototype"]["start"] = func_initializeIv_0x10000188f
+	r0["ofb"]["prototype"]["encrypt"] = func_processBlock_0x100001890
+	r0["ofb"]["prototype"]["decrypt"] = r0["ofb"]["prototype"]["encrypt"]
+	r0["ctr"] = func_initCtr_0x100001891
+	r0["ctr"]["prototype"]["start"] = func_initializeIv_0x100001892
+	r0["ctr"]["prototype"]["encrypt"] = func_processBlock_0x100001893
+	r0["ctr"]["prototype"]["decrypt"] = r0["ctr"]["prototype"]["encrypt"]
+	r0["gcm"] = func_initGcm_0x100001894
+	r0["gcm"]["prototype"]["start"] = func_initGcm_0x100001895
+	r0["gcm"]["prototype"]["encrypt"] = func_processBlock_0x100001896
+	r0["gcm"]["prototype"]["decrypt"] = func_processBlock_0x100001897
+	r0["gcm"]["prototype"]["afterFinish"] = func_verifyTag_0x100001898
+	r0["gcm"]["prototype"]["multiply"] = func_expandKey_0x100001899
+	r0["gcm"]["prototype"]["pow"] = func_shiftRight_0x10000189a
+	r0["gcm"]["prototype"]["tableMultiply"] = func_desBlock_0x10000189b
+	r0["gcm"]["prototype"]["ghash"] = func_tableMultiply_0x10000189c
+	r0["gcm"]["prototype"]["generateHashTable"] = func_buildTable_0x10000189d
+	r0["gcm"]["prototype"]["generateSubHashTable"] = func_precomputeXor_0x10000189e
+	return undefined
+}
+function func_registerCipher_0x10000187a(a0, a1)
+{
+	Scope[9892][2] = Scope[9795][2]()
+	ACCU = Scope[9795][4]()
+	r2 = a1
+	if (!Scope[9892][2]["cipher"])
+	{
+	}
+	r4 = {}
+	Scope[9892][2]["cipher"] = {}
+	r2["exports"] = r4
+	if (!Scope[9892][2]["cipher"]["algorithms"])
+	{
+	}
+	Scope[9892][2]["cipher"]["algorithms"] = {}
+	Scope[9892][2]["cipher"]["createCipher"] = func_Cipher_0x100001870
+	Scope[9892][2]["cipher"]["createDecipher"] = func_createCipher_0x100001871
+	Scope[9892][2]["cipher"]["registerAlgorithm"] = func_registerCipher_0x100001872
+	Scope[9892][2]["cipher"]["getAlgorithm"] = func_getAlgorithm_0x100001873
+	Scope[9892][2]["cipher"]["BlockCipher"] = func_initializeCipher_0x100001874
+	func_initializeCipher_0x100001874["prototype"]["start"] = func_initialize_0x100001875
+	func_initializeCipher_0x100001874["prototype"]["update"] = func_processBuffer_0x100001876
+	func_initializeCipher_0x100001874["prototype"]["finish"] = func_finalize_0x100001879
+	return undefined
+}
+function func_forge_0x10000186f(a0, a1)
+{
+	Scope[9894][3] = func_validateBits_0x1000017df
+	Scope[9894][4] = func_Buffer_0x1000017e0
+	r0 = Scope[9795][2]()
+	r1 = Scope[9795][3]()
+	r4 = a1
+	r5 = r0
+	if (!r0["util"])
+	{
+	}
+	r6 = {}
+	r5["util"] = {}
+	r4["exports"] = r6
+	Scope[9894][2] = r6
+	ACCU = func_initImmediate_0x1000017eb()
+	r5 = TypeOf(typeof(process))
+	ACCU = r5 < "u"
+	if (r5 < "u")
+	{
+		ACCU = process["versions"]
+		if (process["versions"])
+		{
+			ACCU = process["versions"]["node"]
+		}
+	}
+	Scope[9894][2]["isNodejs"] = ACCU
+	Scope[9894][2]["globalScope"] = func_getGlobal_0x1000017ec()
+	ACCU = Array["isArray"]
+	if (!Array["isArray"])
+	{
+		ACCU = func_Array_0x1000017ed
+	}
+	Scope[9894][2]["isArray"] = ACCU
+	Scope[9894][2]["isArrayBuffer"] = func_isArrayBuffer_0x1000017ee
+	Scope[9894][2]["isArrayBufferView"] = func_IsArrayBufferView_0x1000017ef
+	Scope[9894][2]["ByteBuffer"] = func_Buffer_0x1000017e0
+	Scope[9894][2]["ByteStringBuffer"] = func_Buffer_0x1000017e0
+	Scope[9894][5] = 4096
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["_optimizeConstructedString"] = func_flushBuffer_0x1000017f0
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["length"] = func_remaining_0x1000017f1
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["isEmpty"] = func_isEmpty_0x1000017f2
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putByte"] = func_writeByte_0x1000017f3
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["fillWithByte"] = func_repeatString_0x1000017f4
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putBytes"] = func_AppendData_0x1000017f5
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putString"] = func_writeUtf8_0x1000017f6
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt16"] = func_putWord_0x1000017f7
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt24"] = func_writeInt24_0x1000017f8
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt32"] = func_write32_0x1000017f9
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt16Le"] = func_writeShort_0x1000017fa
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt24Le"] = func_writeUInt24_0x1000017fb
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt32Le"] = func_putInt32_0x1000017fc
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putInt"] = func_writeBytes_0x1000017fd
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putSignedInt"] = func_putSigned_0x1000017fe
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["putBuffer"] = func_copyBytes_0x1000017ff
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getByte"] = func_readByte_0x100001800
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt16"] = func_readWord_0x100001801
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt24"] = func_read24_0x100001802
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt32"] = func_ReadInt32_0x100001803
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt16Le"] = func_readUInt16_0x100001804
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt24Le"] = func_read24_0x100001805
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt32Le"] = func_readInt32_0x100001806
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getInt"] = func_readBits_0x100001807
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getSignedInt"] = func_signBit_0x100001808
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["getBytes"] = func_read_0x100001809
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["bytes"] = func_readSlice_0x10000180a
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["at"] = func_readCharCode_0x10000180b
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["setAt"] = func_insertChar_0x10000180c
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["last"] = func_lastCharCode_0x10000180d
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["copy"] = func_cloneBuffer_0x10000180e
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["compact"] = func_compact_0x10000180f
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["clear"] = func_reset_0x100001810
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["truncate"] = func_truncateBuffer_0x100001811
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["toHex"] = func_toHex_0x100001812
+	Scope[9894][2]["ByteStringBuffer"]["prototype"]["toString"] = func_stringify_0x100001813
+	Scope[9894][2]["DataBuffer"] = func_buffer_0x1000017e1
+	Scope[9894][2]["DataBuffer"]["prototype"]["length"] = func_available_0x100001814
+	Scope[9894][2]["DataBuffer"]["prototype"]["isEmpty"] = func_isEmpty_0x100001815
+	Scope[9894][2]["DataBuffer"]["prototype"]["accommodate"] = func_growBuffer_0x100001816
+	Scope[9894][2]["DataBuffer"]["prototype"]["putByte"] = func_write_0x100001817
+	Scope[9894][2]["DataBuffer"]["prototype"]["fillWithByte"] = func_fill_0x100001818
+	Scope[9894][2]["DataBuffer"]["prototype"]["putBytes"] = func_append_0x100001819
+	Scope[9894][2]["DataBuffer"]["prototype"]["putBuffer"] = func_clear_0x10000181a
+	Scope[9894][2]["DataBuffer"]["prototype"]["putString"] = func_utf16_0x10000181b
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt16"] = func_WriteInt16_0x10000181c
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt24"] = func_writeInt24_0x10000181d
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt32"] = func_writeInt32_0x10000181e
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt16Le"] = func_WriteInt16_0x10000181f
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt24Le"] = func_writeInt24_0x100001820
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt32Le"] = func_writeInt_0x100001821
+	Scope[9894][2]["DataBuffer"]["prototype"]["putInt"] = func_WriteBits_0x100001822
+	Scope[9894][2]["DataBuffer"]["prototype"]["putSignedInt"] = func_writeBits_0x100001823
+	Scope[9894][2]["DataBuffer"]["prototype"]["getByte"] = func_readInt8_0x100001824
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt16"] = func_readInt16_0x100001825
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt24"] = func_readInt24_0x100001826
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt32"] = func_readInt32_0x100001827
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt16Le"] = func_readInt16_0x100001828
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt24Le"] = func_readInt24_0x100001829
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt32Le"] = func_readInt_0x10000182a
+	Scope[9894][2]["DataBuffer"]["prototype"]["getInt"] = func_readBits_0x10000182b
+	Scope[9894][2]["DataBuffer"]["prototype"]["getSignedInt"] = func_readSigned_0x10000182c
+	Scope[9894][2]["DataBuffer"]["prototype"]["getBytes"] = func_read_0x10000182d
+	Scope[9894][2]["DataBuffer"]["prototype"]["bytes"] = func_sliceData_0x10000182e
+	Scope[9894][2]["DataBuffer"]["prototype"]["at"] = func_readByte_0x10000182f
+	Scope[9894][2]["DataBuffer"]["prototype"]["setAt"] = func_writeByte_0x100001830
+	Scope[9894][2]["DataBuffer"]["prototype"]["last"] = func_lastByte_0x100001831
+	Scope[9894][2]["DataBuffer"]["prototype"]["copy"] = func_dataBuffer_0x100001832
+	Scope[9894][2]["DataBuffer"]["prototype"]["compact"] = func_compactBuffer_0x100001833
+	Scope[9894][2]["DataBuffer"]["prototype"]["clear"] = func_initBuffer_0x100001834
+	Scope[9894][2]["DataBuffer"]["prototype"]["truncate"] = func_truncateBuffer_0x100001835
+	Scope[9894][2]["DataBuffer"]["prototype"]["toHex"] = func_toHex_0x100001836
+	Scope[9894][2]["DataBuffer"]["prototype"]["toString"] = func_decode_0x100001837
+	Scope[9894][2]["createBuffer"] = func_byteBuffer_0x100001838
+	Scope[9894][2]["fillString"] = func_repeat_0x100001839
+	Scope[9894][2]["xorBytes"] = func_xor_0x10000183a
+	Scope[9894][2]["hexToBytes"] = func_hexDecode_0x10000183b
+	Scope[9894][2]["bytesToHex"] = func_toHex_0x10000183c
+	Scope[9894][2]["int32ToBytes"] = func_intToString_0x10000183d
+	Scope[9894][6] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
+	Scope[9894][7] = new [62, -1, -1, -1, 63, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, 64, -1, -1, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1, -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+	Scope[9894][8] = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+	Scope[9894][2]["encode64"] = func_base64_0x10000183e
+	Scope[9894][2]["decode64"] = func_base64Decode_0x10000183f
+	Scope[9894][2]["encodeUtf8"] = func_unescapeUri_0x100001840
+	Scope[9894][2]["decodeUtf8"] = func_unescape_0x100001841
+	r5 = new {"raw": {}, "hex": {}, "base64": {}, "base58": {}, "baseN": null}
+	r6 = new {"encode": null, "decode": null}
+	r6["encode"] = r1["encode"]
+	r6["decode"] = r1["decode"]
+	r5["baseN"] = r6
+	Scope[9894][2]["binary"] = r5
+	Scope[9894][2]["binary"]["raw"]["encode"] = func_fromCharCodes_0x100001842
+	Scope[9894][2]["binary"]["raw"]["decode"] = func_toBytes_0x100001843
+	Scope[9894][2]["binary"]["hex"]["encode"] = Scope[9894][2]["bytesToHex"]
+	Scope[9894][2]["binary"]["hex"]["decode"] = func_hexToBytes_0x100001844
+	Scope[9894][2]["binary"]["base64"]["encode"] = func_encodeBase64_0x100001845
+	Scope[9894][2]["binary"]["base64"]["decode"] = func_decodeBase64_0x100001846
+	Scope[9894][2]["binary"]["base58"]["encode"] = func_base58_0x100001847
+	Scope[9894][2]["binary"]["base58"]["decode"] = func_decodeBase58_0x100001848
+	Scope[9894][2]["text"] = new {"utf8": {}, "utf16": {}}
+	Scope[9894][2]["text"]["utf8"]["encode"] = func_writeBytes_0x100001849
+	Scope[9894][2]["text"]["utf8"]["decode"] = func_utf8_0x10000184a
+	Scope[9894][2]["text"]["utf16"]["encode"] = func_encodeUtf16_0x10000184b
+	Scope[9894][2]["text"]["utf16"]["decode"] = func_utf16String_0x10000184c
+	Scope[9894][2]["deflate"] = func_inflate_0x10000184d
+	Scope[9894][2]["inflate"] = func_inflateDecode_0x10000184e
+	Scope[9894][9] = func_storageSet_0x10000184f
+	Scope[9894][10] = func_readStorage_0x100001850
+	Scope[9894][11] = func_storageSetItem_0x100001851
+	Scope[9894][12] = func_readValue_0x100001852
+	Scope[9894][13] = func_storageDeleteItem_0x100001853
+	Scope[9894][14] = func_storageSet_0x100001854
+	Scope[9894][15] = func_withStorage_0x100001855
+	Scope[9894][2]["setItem"] = func_setStorageItem_0x100001856
+	Scope[9894][2]["getItem"] = func_readStorage_0x100001857
+	Scope[9894][2]["removeItem"] = func_deleteStorage_0x100001858
+	Scope[9894][2]["clearItems"] = func_withStorage_0x100001859
+	Scope[9894][2]["isEmpty"] = func_hasOwn_0x10000185a
+	Scope[9894][2]["format"] = func_formatString_0x10000185b
+	Scope[9894][2]["formatNumber"] = func_formatNumber_0x10000185c
+	Scope[9894][2]["formatSize"] = func_formatBytes_0x10000185d
+	Scope[9894][2]["bytesFromIP"] = func_parseIp_0x10000185e
+	Scope[9894][2]["bytesFromIPv4"] = func_ipv4Bytes_0x10000185f
+	Scope[9894][2]["bytesFromIPv6"] = func_parseHex_0x100001861
+	Scope[9894][2]["bytesToIP"] = func_formatIp_0x100001862
+	Scope[9894][2]["bytesToIPv4"] = func_parseIpv4_0x100001863
+	Scope[9894][2]["bytesToIPv6"] = func_formatIpv6_0x100001864
+	Scope[9894][2]["estimateCores"] = func_detectCores_0x10000186e
+	return undefined
+}
+function func_base64Module_0x1000017de(a0, a1)
+{
+	Scope[9901][3] = func_baseConvert_0x1000017db
+	r0 = {}
+	a1["exports"] = r0
+	Scope[9901][2] = {}
+	r0["encode"] = func_encodeBase_0x1000017dc
+	r0["decode"] = func_baseDecode_0x1000017dd
+	return undefined
+}
+function func_ExportOptions_0x1000017da(a0, a1)
+{
+	a1["exports"] = new {"options": {"usePureJavaScript": <false}}
+	return undefined
+}
+function func_getExports_0x1000017d9(a0, a1)
+{
+	Scope[9902][3] = a0
+	Scope[9902][2] = a1
+	return func_getExports_0x1000017d8
+}
+function func_certificate_0x10000072c()
+{
+	r6 = (require("crypto"))["generateKeyPairSync"]
+	r7 = "rsa"
+	r8 = new {"modulusLength": 2048, "publicKeyEncoding": null, "privateKeyEncoding": null}
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs1"
+	r9["format"] = "pem"
+	r8["publicKeyEncoding"] = r9
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs8"
+	r9["format"] = "pem"
+	r8["privateKeyEncoding"] = r9
+	r6 = r6(r7, r8)
+	r3 = r6["privateKey"]
+	r4 = func_GenerateCert_0x10000071d(4096)
+	r6 = new {"privateKey": null, "certificate": null}
+	r6["privateKey"] = r3
+	r6["certificate"] = r4
+	return r6
+}
+function func_GenerateCert_0x10000071d(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "1y"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	r13 = (func_initialize_0x100001b1e["exports"]())["pki"]
+	r13 = r13["rsa"]
+	r12 = r13["generateKeyPair"]
+	r12 = r12(r0)
+	r5 = r12["publicKey"]
+	r6 = r12["privateKey"]
+	r13 = (func_initialize_0x100001b1e["exports"]())["pki"]
+	r12 = r13["createCertificate"]
+	r7 = r12()
+	r12 = Date["now"]
+	r8 = r12()
+	r7["publicKey"] = r5
+	r13 = "serialNumber"
+	r15 = (require("crypto"))["randomBytes"](20)
+	r14 = r15["toString"]
+	r7[r13] = r14("hex")
+	r12 = r7["subject"]["addField"]
+	r14 = new {"shortName": "C", "value": "US"}
+	ACCU = r12(r14)
+	r12 = r7["setIssuer"]
+	r14 = r7["subject"]["attributes"]
+	ACCU = r12(r14)
+	r12 = r7["validity"]
+	r13 = "notBefore"
+	r18 = global_zp["default"](r1)
+	r15 = (r8 - r18)
+	ACCU = Date
+	r12[r13] = Date(r15)
+	r12 = r7["validity"]
+	r13 = "notAfter"
+	r18 = global_zp["default"](r1)
+	r15 = (r8 + r18)
+	ACCU = Date
+	r12[r13] = Date(r15)
+	ACCU = r7["setExtensions"](global_ID)
+	r12 = r7["sign"]
+	r16 = (func_initialize_0x100001b1e["exports"]())["md"]["sha256"]
+	r15 = r16["create"]
+	r15 = r15()
+	ACCU = r12(r6, r15)
+	r13 = (func_initialize_0x100001b1e["exports"]())["pki"]
+	r12 = r13["privateKeyToPem"]
+	r9 = r12(r6)
+	r13 = (func_initialize_0x100001b1e["exports"]())["pki"]
+	r12 = r13["certificateToPem"]
+	r10 = r12(r7)
+	r12 = new {"key": null, "value": null}
+	r12["key"] = r9
+	r12["value"] = r10
+	return r12
+}

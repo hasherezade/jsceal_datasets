@@ -1,0 +1,522 @@
+function func_initializeOAuthRoutes_0x10000be07()
+{
+	Scope[1144][14] = func_f_0x10000bde3
+	r0 = new {"V": "mwAz", "J": 78266, "S": "pdVE", "g": 120846, "L": "XR6@", "X": 2293, "j": "x&b0", "E": 52517, "c": "F1xf", "x": 63054, "K": "93y[", "u": 70090, "A": "%r7r", "s": 11895, "b": 104743, "i": "I@Bf", "w": 85456, "f": "p[w*", "t": 25998, "P": "B@Sb", "I": 37888, "p": "vV[N", "o": 34248, "R": "*!!t", "v": 73367, "N": ")Lyh", "M": 30236, "k": "9pb7", "Q": 80377, "W": "89J2", "T": 43292, "G": 88331, "y": "VHeU", "e": 88251, "U": "mwAz", "q": 63570, "O": 54591, "C": "[Jy3", "n": 83718, "r": "F1xf", "H": 112785, "h": "gm42", "Y": 6946, "D": "F1xf", "l": 56935, "a": "b48I", "V0": 70775, "V1": "b48I", "V2": 14872, "V3": "epz[", "V6": 53860, "VV": "xQ)2", "VJ": 42710, "Vz": "JrBU", "Vd": 26783, "Vg": "YbH*", "VL": 61654, "Vc": 94237, "Vx": "9hYk", "VB": 68996, "VK": "kh^v", "Vu": 57278, "VA": "]C&)", "Vs": 93153, "Vb": "eeST", "Vw": 86232, "Vf": ")Ku4", "Vt": 77187, "VP": "[()[", "Vp": 26221, "Vo": "^Ceg", "VR": 103338, "VQ": "mwAz", "VW": 25931, "VT": "gm42", "VG": 71699, "Vy": "n@A0", "Ve": 93545, "VU": "F1xf", "Vq": 63054, "VO": "%r7r", "Vm": 60005, "VZ": 85372, "Vn": "xQ)2", "Vr": 76312, "VH": 43825, "Vh": "A5nh", "VY": 110285, "VD": 69079, "Vl": 30367, "Va": "BS4&", "J0": 32749, "J2": "eeST", "J3": 65508, "J4": "A0Dr", "J5": 102214, "J6": "8dGo", "J7": 88803, "J9": 28901, "Jd": "m[K#", "Jg": 72950, "JL": "epz[", "JX": 21036, "Jc": 35781, "Jx": "iSZ6", "JB": 91161, "Ju": 32639, "Js": ")Lyh", "Jb": 46742, "Ji": 31656, "Jw": 108613, "Jf": "h98j", "Jt": 88980, "JP": 39180, "Jp": "B@Sb", "JR": 47894, "JQ": "F1xf", "JW": 77839, "JT": "m[K#", "JG": 7227, "Jy": 24844, "JU": "%r7r", "JF": 5041, "Jq": 90154, "JO": "]1@2", "Jm": 71099, "JC": "[Jy3", "Jn": 65755, "Jr": ")Ku4", "Jh": 99571, "JY": 63136, "JD": "K&pk", "Jl": 69620, "z0": "toM2", "z1": 76438, "z2": 101491, "z3": "O9*f", "z6": 7160, "zV": "p8sI", "zJ": 80538, "zz": "vV[N", "zd": 120218, "zS": "BS4&", "zg": 88992, "zL": 36258, "zX": 75472, "zE": "M2Ty", "zc": 74771, "zx": "A5nh", "zB": 89905, "zu": "Yx9u", "zA": 14970, "zs": "nvO5", "zw": 116125, "zf": 81573, "zt": 38878, "zP": 108952, "zp": 71448, "zo": "iSZ6", "zW": 117210, "zG": "]1@2", "zy": 32910, "zU": "mwAz", "zF": 71227, "zO": "89J2", "zC": 112518, "zZ": 106244, "zn": 20048, "zr": "%]hf", "zH": 4417, "zh": "toM2", "zY": 45586, "zl": "A0Dr", "za": 63040, "d2": 20865, "d3": 72818, "d4": 58802, "d5": 119379, "d6": "%r7r", "d7": 33225, "d9": 110032, "dV": 93120, "dJ": 113406, "dz": 111653, "dd": 38491, "dg": 15793, "dL": 62875, "dX": ")Lyh", "dj": 105897, "dE": 116202}
+	ACCU = func_initializeNetworkClient_0x100006702()
+	r5 = func_initializeFetchModule_0x100006ba6["exports"]()
+	global_XK = func_interopRequireWildcard_0x10000317a(r5)
+	r5 = func_initializeJwtModule_0x1000047e4["exports"]()
+	global_aL = func_interopRequireWildcard_0x10000317a(r5)
+	ACCU = func_initializeUrlClass_0x100005cd5()
+	r5 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_cL = func_interopRequireWildcard_0x10000317a(r5)
+	r5 = func_initModule_0x10000bdaf["exports"]()
+	global_sL = func_interopRequireWildcard_0x10000317a(r5)
+	ACCU = func_initializeNetworkAndCore_0x10000a949()
+	ACCU = func_noopHandler_0x10000673e()
+	ACCU = func_noOp_0x10000bde2()
+	r2 = ("https://" + ("accounts.google.com"))
+	global_mB = (r2 + ("/o/oauth2/programmatic_auth"))
+	global_j5 = global_cL["Router"](r0)
+	r2 = global_j5["get"]
+	r6 = new [0, 0]
+	r6[0] = ("/ServiceLogin")
+	r6[1] = ("/AddSession")
+	r5 = r6
+	ACCU = r2(("accounts.google.com"), r5, func_createGoogleAuthPlugin_0x10000bdf7)
+	r2 = global_j5["get"]
+	r6 = new {"request": null}
+	r7 = new {"headers": null}
+	r7["headers"] = func_handleForceLogin_0x10000bdf9
+	r6["request"] = r7
+	ACCU = r2(("accounts.google.com"), ("/InteractiveLogin"), r6)
+	r2 = global_j5["get"]
+	ACCU = r2(("accounts.google.com"), ("/o/oauth2/programmatic_auth"), func_createOAuthCookiePlugin_0x10000be03)
+	r2 = global_j5["get"]
+	r5 = ("/oauth2/:version/token?grant_type=authorization_code&client_id=" + ("77185425430.apps.googleusercontent.com"))
+	ACCU = r2(("www.googleapis.com"), r5, func_createJsonTransformerPlugin_0x10000be06)
+	return undefined
+}
+function func_createJsonTransformerPlugin_0x10000be06()
+{
+	r0 = new {"response": null}
+	r1 = new {"full": null}
+	r2 = global_sL["jsonTransformer"]
+	r1["full"] = r2(func_extractAndSaveToken_0x10000be05)
+	r0["response"] = r1
+	return r0
+}
+function func_createOAuthCookiePlugin_0x10000be03()
+{
+	Scope[1148][4] = func_h_0x10000bdfa
+	r1 = new {"bipAE": null, "YTANN": null, "FHUbY": null, "Nrygh": null, "QWpXc": null, "knsHa": null, "kOkYx": null}
+	Scope[1148][5] = r1
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_updateContinueUrl_0x10000be00
+	r1["request"] = r2
+	r2 = new {"headers": null}
+	r2["headers"] = func_handleOAuthCookieHeader_0x10000be02
+	r1["response"] = r2
+	return r1
+}
+function func_handleForceLogin_0x10000bdf9(a0)
+{
+	ACCU = func_createUrlObject_0x100005cce
+	r7 = func_createUrlObject_0x100005cce(a0["target"])
+	r7 = r7["searchParams"]
+	r6 = r7["get"]
+	r8 = "continue"
+	r3 = r6(r8)
+	if (!r6(r8))
+	{
+		return undefined
+	}
+	ACCU = func_createUrlObject_0x100005cce
+	r6 = func_createUrlObject_0x100005cce(r3)
+	r6 = r6["searchParams"]["get"]
+	r8 = "forceLogin"
+	if (r6(r8))
+	{
+		r6 = a0["headers"]["delete"]
+		ACCU = r6("cookie")
+	}
+	return undefined
+}
+function func_createGoogleAuthPlugin_0x10000bdf7(a0, a1, a2)
+{
+	Scope[1155][8] = func_b_0x10000bdf2
+	ACCU = func_createUrlObject_0x100005cce
+	Scope[1155][6] = func_createUrlObject_0x100005cce(a2, ("accounts.google.com"))
+	r3 = Scope[1155][6]["pathname"]
+	Scope[1155][7] = r3 === ("/AddSession")
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_handleContinueHeader_0x10000bdf4
+	r1["request"] = r2
+	r2 = new {"headers": null}
+	r2["headers"] = func_redirectToGoogleAuth_0x10000bdf6
+	r1["response"] = r2
+	return r1
+}
+function func_noOp_0x10000bde2()
+{
+	return undefined
+}
+function func_initModule_0x10000bdaf(a0)
+{
+	Scope[1172][8] = func_x_0x10000bda3
+	r3 = 0
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r7 = "jsonTransformer"
+	r9 = "htmlTransformer"
+	r11 = "setHooks"
+	r14 = undefined
+	a0["router"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	a0[r7] = r14
+	Scope[1172][10] = func_initExchangeRouterModule_0x10000bda2["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "router"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getRouter_0x10000bdaa
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][12] = func_initModule_0x10000ba72["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "setHooks"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getSetHooks_0x10000bdae
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][11] = func_initializeHtmlTransformerModule_0x10000bc01["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "htmlTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getHtmlTransformer_0x10000bdac
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][9] = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "jsonTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getJsonTransformer_0x10000bda8
+	ACCU = r6(a0, r9, r10)
+	return undefined
+}
+function func_initializeRouterBridgeModule_0x10000ba61(a0)
+{
+	Scope[1364][7] = func_s_0x10000ba56
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultAlt2_0x10000ba5c
+	}
+	r5 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r9 = "Router"
+	r11 = "listen"
+	r14 = undefined
+	a0["bridge"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	r11 = func_initializeRouterModule_0x10000b99c["exports"]()
+	r4 = r5(r11)
+	a0["Router"] = r4["default"]
+	Scope[1364][8] = func_initializeBridgeModule_0x10000ba4b["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "bridge"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getBridge_0x10000ba60
+	ACCU = r8(a0, r11, r12)
+	Scope[1364][9] = func_initializeListenerModule_0x10000ba55["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "listen"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getListener_0x10000ba5e
+	ACCU = r8(a0, r11, r12)
+	return undefined
+}
+function func_initializeNetworkAndCore_0x10000a949()
+{
+	ACCU = func_initializeNetworkClient_0x100006702()
+	ACCU = func_initializeCoreModule_0x10000a945()
+	return undefined
+}
+function func_initializeFetchModule_0x100006ba6(a0, a1)
+{
+	Scope[5355][140] = func_createTypedError_0x100006a17
+	Scope[5355][144] = func_FetchBody_0x100006a1b
+	Scope[5355][145] = func_consumeBody_0x100006a33
+	Scope[5355][146] = func_textConverted_0x100006a35
+	Scope[5355][147] = func_isURLSearchParams_0x100006a37
+	Scope[5355][148] = func_isBlobLike_0x100006a39
+	Scope[5355][149] = func_cloneBody_0x100006a3b
+	Scope[5355][150] = func_extractContentType_0x100006a3d
+	Scope[5355][151] = func_getBodyLength_0x100006a3f
+	Scope[5355][152] = func_pipeRequestBody_0x100006a41
+	Scope[5355][155] = func_validateHeaderName_0x100006a43
+	Scope[5355][156] = func_validateHttpHeaderValue_0x100006a45
+	Scope[5355][157] = func_getHeaderValue_0x100006a47
+	Scope[5355][160] = func_normalizeHeaders_0x100006a4f
+	Scope[5355][162] = func_createIteratorResult_0x100006a51
+	Scope[5355][164] = func_normalizeHeaders_0x100006a53
+	Scope[5355][165] = func_buildHeadersMap_0x100006a55
+	Scope[5355][173] = func_normalizeUrlScheme_0x100006a57
+	Scope[5355][175] = func_isAsyncIterable_0x100006a59
+	Scope[5355][176] = func_isAbortSignal_0x100006a5b
+	Scope[5355][178] = func_buildFetchOptions_0x100006a5d
+	Scope[5355][179] = func_initAbortError_0x100006a5f
+	Scope[5355][180] = func_mu_0x100006a60
+	Scope[5355][184] = func_initFetchRequest_0x100006ac2
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = require("stream")
+	Scope[5355][132] = func_getDefault_0x100006a15(r8)
+	r8 = require("http")
+	Scope[5355][133] = func_getDefault_0x100006a15(r8)
+	r8 = require("url")
+	r2 = func_getDefault_0x100006a15(r8)
+	r8 = func_assignUrlExports_0x100006a02["exports"]()
+	r3 = func_getDefault_0x100006a15(r8)
+	r8 = require("https")
+	Scope[5355][134] = func_getDefault_0x100006a15(r8)
+	r8 = require("zlib")
+	Scope[5355][135] = func_getDefault_0x100006a15(r8)
+	Scope[5355][136] = Scope[5355][132]["Readable"]
+	Scope[5355][137] = Symbol("buffer")
+	Scope[5355][138] = Symbol("type")
+	ACCU = ToName("size")
+	ACCU = ToName("type")
+	ACCU = ToName("text")
+	ACCU = ToName("arrayBuffer")
+	ACCU = ToName("stream")
+	ACCU = ToName("toString")
+	ACCU = ToName("slice")
+	r7 = DefineClass([17, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 28, 36, 44, 52, 60]], func_initBlob_0x100006b41, null, "XR6@", func_getBlobSize_0x100006b43, ")Lyh", func_getBlobType_0x100006b44, "O9*f", func_blobToText_0x100006b46, ")Lyh", func_blobToArrayBuffer_0x100006b48, func_mu_0x100006a60, func_createReadableStream_0x100006b4b, "]1@2", func_toBlobString_0x100006b4d, func_mu_0x100006a60, func_sliceBlob_0x100006b4f)
+	Scope[5356][2] = func_initBlob_0x100006b41
+	Scope[5355][139] = func_initBlob_0x100006b41
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][139]["prototype"]
+	r8 = new {"size": {"enumerable": <true}, "type": {"enumerable": <true}, "slice": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][139]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Blob"
+	ACCU = r5(r7, r8, r9)
+	r7 = Object["create"]
+	r9 = Error["prototype"]
+	Scope[5355][140]["prototype"] = r7(r9)
+	r5 = Scope[5355][140]["prototype"]
+	r5["constructor"] = func_createTypedError_0x100006a17
+	r5 = Scope[5355][140]["prototype"]
+	r6 = "name"
+	r5[r6] = "FetchError"
+	try
+	{
+		r6 = func_initializeIconvModule_0x100006a13["exports"]()
+		Scope[5355][141] = r6["convert"]
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = Scope[5355]
+	}
+	r8 = "Body internals"
+	Scope[5355][142] = Symbol(r8)
+	Scope[5355][143] = Scope[5355][132]["PassThrough"]
+	r6 = "prototype"
+	ACCU = DefineAccessorPropertyUnchecked(r8, "body", func_getBodyFromState_0x100006b69, null, 0)
+	ACCU = DefineAccessorPropertyUnchecked(r8, "bodyUsed", func_getBodyUsedFromState_0x100006b6b, null, 0)
+	Scope[5355][144][r6] = r8
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][144]["prototype"]
+	r8 = new {"body": {"enumerable": <true}, "bodyUsed": {"enumerable": <true}, "arrayBuffer": {"enumerable": <true}, "blob": {"enumerable": <true}, "json": {"enumerable": <true}, "text": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	Scope[5355][144]["mixIn"] = func_applyPrototypeProperties_0x100006b6d
+	Scope[5355][144]["Promise"] = global["Promise"]
+	Scope[5355][153] = \[^\\\\^_`a-zA-Z\\\\-0-9!#$%&'*+.|~]\
+	Scope[5355][154] = \[^\\\\t\\\\x20-\\\\x7e\\\\x80-\\\\xff]\
+	Scope[5355][158] = Symbol("map")
+	ACCU = ToName("get")
+	ACCU = ToName("forEach")
+	ACCU = ToName("set")
+	ACCU = ToName("append")
+	ACCU = ToName("has")
+	ACCU = ToName("delete")
+	ACCU = ToName("raw")
+	ACCU = ToName("keys")
+	ACCU = ToName("values")
+	ACCU = ToName(Symbol["iterator"])
+	r7 = DefineClass([23, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60, 68, 76, 84]], func_initHeaders_0x100006b6f, null, "xQ)2", func_getHeader_0x100006b71, "gm42", func_defineTypeExtensions_0x100006b73, "K&pk", func_setHeader_0x100006b75, "m[K#", func_appendHeader_0x100006b77, "A5nh", func_hasHeader_0x100006b79, "pdVE", func_deleteHeader_0x100006b7b, "O9*f", func_getRawHeaders_0x100006b7c, "B@Sb", func_iterateKeys_0x100006b7e, "h^gm", func_iterateValues_0x100006b80, "K&pk", func_iterateEntries_0x100006b82)
+	Scope[5357][2] = func_initHeaders_0x100006b6f
+	Scope[5355][159] = func_initHeaders_0x100006b6f
+	r5 = Scope[5355][159]["prototype"]
+	r7 = Scope[5355][159]["prototype"]
+	r5["entries"] = r7[Symbol["iterator"]]
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][159]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Headers"
+	ACCU = r5(r7, r8, r9)
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][159]["prototype"]
+	r8 = new {"get": {"enumerable": <true}, "forEach": {"enumerable": <true}, "set": {"enumerable": <true}, "append": {"enumerable": <true}, "has": {"enumerable": <true}, "delete": {"enumerable": <true}, "keys": {"enumerable": <true}, "values": {"enumerable": <true}, "entries": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	Scope[5355][161] = Symbol("internal")
+	r5 = Object["setPrototypeOf"]
+	r7 = new {"next": null}
+	r7["next"] = func_headersIteratorNext_0x100006b84
+	r8 = Object["getPrototypeOf"]
+	r10 = Object["getPrototypeOf"]
+	r13 = []
+	r12 = r13[Symbol["iterator"]]
+	r12 = r12()
+	r10 = r10(r12)
+	r8 = r8(r10)
+	Scope[5355][163] = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "HeadersIterator"
+	ACCU = r5(Scope[5355][163], r8, r9)
+	Scope[5355][166] = Symbol("Response internals")
+	Scope[5355][167] = Scope[5355][133]["STATUS_CODES"]
+	ACCU = ToName("url")
+	ACCU = ToName("status")
+	ACCU = ToName("redirected")
+	ACCU = ToName("statusText")
+	ACCU = ToName("headers")
+	ACCU = ToName("clone")
+	r7 = DefineClass([16, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 33, 41, 49, 56]], func_initResponse_0x100006b86, null, "]C&)", func_getResponseUrl_0x100006b88, "toM2", func_getResponseStatus_0x100006b8a, func_isResponseOkScope_0x100006b8c, 117455, func_hasActiveConnections_0x100006b8e, func_mu_0x100006a60, func_getStatusText_0x100006b90, func_mu_0x100006a60, func_getResponseHeaders_0x100006b92, "Yx9u", func_cloneResponse_0x100006b94)
+	Scope[5358][2] = func_initResponse_0x100006b86
+	Scope[5355][168] = func_initResponse_0x100006b86
+	r5 = Scope[5355][144]["mixIn"]
+	ACCU = r5(Scope[5355][168]["prototype"])
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][168]["prototype"]
+	r8 = new {"url": {"enumerable": <true}, "status": {"enumerable": <true}, "ok": {"enumerable": <true}, "redirected": {"enumerable": <true}, "statusText": {"enumerable": <true}, "headers": {"enumerable": <true}, "clone": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][168]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Response"
+	ACCU = r5(r7, r8, r9)
+	Scope[5355][169] = Symbol("Request internals")
+	ACCU = r2["URL"]
+	if (!r2["URL"])
+	{
+		ACCU = r3["URL"]
+	}
+	Scope[5355][170] = ACCU
+	Scope[5355][171] = r2["parse"]
+	Scope[5355][172] = r2["format"]
+	r8 = Scope[5355][132]["Readable"]["prototype"]
+	Scope[5355][174] = "destroy" in r8
+	ACCU = ToName("method")
+	ACCU = ToName("url")
+	ACCU = ToName("headers")
+	ACCU = ToName("redirect")
+	ACCU = ToName("signal")
+	ACCU = ToName("clone")
+	r7 = DefineClass([15, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 29, 37, 45, 52]], func_initRequest_0x100006b96, null, func_mu_0x100006a60, func_getRequestMethod_0x100006b98, "vV[N", func_getParsedUrl_0x100006b9a, "xQ)2", func_getRequestHeaders_0x100006b9c, "9pb7", func_getRedirectMode_0x100006b9e, func_mu_0x100006a60, func_getSignal_0x100006ba0, "pdVE", func_initRequest_0x100006ba1)
+	Scope[5359][2] = func_initRequest_0x100006b96
+	Scope[5355][177] = func_initRequest_0x100006b96
+	r5 = Scope[5355][144]["mixIn"]
+	ACCU = r5(Scope[5355][177]["prototype"])
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][177]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Request"
+	ACCU = r5(r7, r8, r9)
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][177]["prototype"]
+	r8 = new {"method": {"enumerable": <true}, "url": {"enumerable": <true}, "headers": {"enumerable": <true}, "redirect": {"enumerable": <true}, "clone": {"enumerable": <true}, "signal": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r7 = Object["create"]
+	r9 = Error["prototype"]
+	Scope[5355][179]["prototype"] = r7(r9)
+	r5 = Scope[5355][179]["prototype"]
+	r5["constructor"] = func_initAbortError_0x100006a5f
+	r5 = Scope[5355][179]["prototype"]
+	r5["name"] = "AbortError"
+	ACCU = r2["URL"]
+	if (!r2["URL"])
+	{
+		ACCU = r3["URL"]
+	}
+	Scope[5355][181] = ACCU
+	Scope[5355][182] = Scope[5355][132]["PassThrough"]
+	Scope[5355][183] = func_isSameDomain_0x100006ba3
+	Scope[5355][184]["isRedirect"] = func_isRedirectStatus_0x100006ba5
+	Scope[5355][184]["Promise"] = global["Promise"]
+	a1["exports"] = func_initFetchRequest_0x100006ac2
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(func_initFetchRequest_0x100006ac2, r8, r9)
+	Scope[5355][184]["default"] = func_initFetchRequest_0x100006ac2
+	Scope[5355][184]["Headers"] = func_initHeaders_0x100006b6f
+	Scope[5355][184]["Request"] = func_initRequest_0x100006b96
+	Scope[5355][184]["Response"] = func_initResponse_0x100006b86
+	Scope[5355][184]["FetchError"] = func_createTypedError_0x100006a17
+	return undefined
+}
+function func_noopHandler_0x10000673e()
+{
+	return undefined
+}
+function func_initializeNetworkClient_0x100006702()
+{
+	Scope[5560][3] = func_u_0x1000066f5
+	r3 = 0
+	ACCU = func_initializeWebSocketClientModule_0x100005cc9()
+	ACCU = func_initHttp2Client_0x10000425b()
+	ACCU = func_initializeTokenVerification_0x1000047f7()
+	ACCU = func_initMachineId_0x1000054fc()
+	ACCU = func_initializeUrlClass_0x100005cd5()
+	r9 = func_initSocketLinkModule_0x100006625["exports"]()
+	global_nT = func_interopRequireWildcard_0x10000317a(r9)
+	r9 = func_initRequestLinkModule_0x100006643["exports"]()
+	global_rT = func_interopRequireWildcard_0x10000317a(r9)
+	ACCU = func_initializeTRPCClientModule_0x1000066f2()
+	r6 = global_nT["SocketLink"]
+	r7 = new {"connect": null}
+	r7["connect"] = func_connectWebSocket_0x1000066ff
+	ACCU = r6
+	global_iT = r6(r7)
+	r6 = global_rT["RequestLink"]
+	r7 = new {"send": null}
+	r7["send"] = func_sendBinaryData_0x100006700
+	ACCU = r6
+	global_oT = r6(r7)
+	r9 = new {"condition": null, "true": null, "false": null}
+	r9["condition"] = func_isSubscription_0x100006701
+	r11 = new [0]
+	r11[0] = global_iT["target"]()
+	r9["true"] = r11
+	r11 = new [0]
+	r11[0] = global_oT["target"]()
+	r9["false"] = r11
+	global_aT = func_setConditionalLinkScope_0x1000003ef(r9)
+	r9 = new {"links": null}
+	r11 = new [0]
+	r11[0] = global_aT
+	r9["links"] = r11
+	global_iB = func_createTracingClientWrapper_0x1000004a1(r9)
+	r7 = global_iB["core"]["api"]
+	r6 = r7["subscribe"]
+	r8 = undefined
+	r9 = new {"onData": null, "onStopped": null}
+	r9["onData"] = func_onDataPassthrough_0x1000066fd
+	r9["onStopped"] = func_onStopped_0x1000066fe
+	ACCU = r6(r8, r9)
+	return undefined
+}
+function func_initializeUrlClass_0x100005cd5()
+{
+	Scope[6147][10] = func_c_0x100005cca
+	ACCU = ToName("target")
+	ACCU = ToName("link")
+	ACCU = ToName("match")
+	r4 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [13, 21, 28]], func_createUrlObject_0x100005cce, URL, r7, func_getPathnameAndSearch_0x100005cd0, 106216, func_getOriginAndPathname_0x100005cd2, 37547, func_isSameOriginAndPath_0x100005cd4)
+	Scope[6148][2] = func_createUrlObject_0x100005cce
+	return undefined
+}
+function func_initializeJwtModule_0x1000047e4(a0, a1)
+{
+	r5 = "exports"
+	r6 = new {"decode": null, "verify": null, "sign": null, "JsonWebTokenError": null, "NotBeforeError": null, "TokenExpiredError": null}
+	r6["decode"] = func_initializeDecodeModule_0x1000043ae["exports"]()
+	r6["verify"] = func_initializeVerifyModule_0x10000469c["exports"]()
+	r6["sign"] = func_initializeSignModule_0x1000047df["exports"]()
+	r6["JsonWebTokenError"] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r6["NotBeforeError"] = func_initNotBeforeErrorModule_0x1000043b7["exports"]()
+	r6["TokenExpiredError"] = func_initTokenExpiredErrorModule_0x1000043bc["exports"]()
+	a1[r5] = r6
+	return undefined
+}
+function func_interopRequireWildcard_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_copyProperties_0x100003179(r1, a0)
+}

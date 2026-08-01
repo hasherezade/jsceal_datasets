@@ -1,0 +1,1753 @@
+function func_initAgent_0x100003bc7(a0, a1)
+{
+	Scope[7991][47] = func_j_0x100003ae1
+	r0 = new {"V": "YbH*", "J": 28865, "S": "]C&)", "g": 44539, "L": "C0qY", "X": 5303, "j": "xQ)2", "E": 48680, "c": "YbH*", "x": 121625, "K": "VHeU", "u": 57265, "A": "8dGo", "s": 89226, "b": "m[K#", "i": 44600, "w": "L@kv", "f": 103262, "t": "]C&)", "P": 106630, "I": "BS4&", "p": 116421, "o": "8dGo", "R": 51776, "v": 111177, "N": "iSZ6", "M": 89490, "k": "B@Sb", "Q": 72640, "W": "F1xf", "T": 29194, "G": "93y[", "y": 120744, "e": 125325, "U": "C0qY", "q": 119858, "O": "h98j", "C": 12195, "n": "kh^v", "r": 125886, "H": "n@A0", "h": 2739, "Y": "9pb7", "D": 79302, "l": "]1@2", "a": 13981, "V0": 95957, "V1": "VHeU", "V2": 79415, "V3": "9pb7", "V6": 112150, "VV": "b48I", "VJ": 97643, "Vz": "F1xf", "Vd": 121807, "Vg": "p[w*", "VL": 76860, "Vc": ")Ku4", "Vx": 14975, "VB": "eeST", "VK": 98090, "Vu": "p8sI", "VA": 82544, "Vs": "C0qY", "Vb": 8979, "Vw": "B@Sb", "Vf": 122428, "Vt": "epz[", "VP": 82214, "Vp": 70722, "Vo": 47270, "VR": "b48I", "VQ": 94469, "VW": "[Jy3", "VT": 121144, "VG": "K&pk", "Vy": 107692, "Ve": "M2Ty", "VU": 107286, "Vq": "mwAz", "VO": 126056, "Vm": "I@Bf", "VZ": 107380, "Vn": "toM2", "Vr": 26533, "VH": "h^gm", "Vh": 24420, "VY": "9pb7", "VD": 97918, "Vl": "89J2", "Va": 13514, "J0": 19009, "J2": "[()[", "J3": 4203, "J4": "^Ceg", "J5": 83966, "J6": "A0Dr", "J7": 37861, "J9": "*!!t", "Jd": 71481, "Jg": "VHeU", "JL": 111442, "JX": "eeST", "Jc": 13147, "Jx": "BS4&", "JB": 5871, "Ju": 96420, "Js": 87705, "Jb": "Yx9u", "Ji": 106636, "Jw": "BS4&", "Jf": 109067, "Jt": "Yx9u", "JP": 35397, "Jp": "F1xf", "JR": 121807, "JQ": 56911, "JW": "JrBU", "JT": 43673, "JG": "%r7r", "Jy": 28723, "JU": "m[K#", "JF": 112183, "Jq": "epz[", "JO": 59568, "Jm": "xQ)2", "JC": 18394, "Jn": 69435, "Jr": "A5nh", "Jh": 82200, "JY": 30912, "JD": 19403, "Jl": "pdVE", "z0": 16359, "z1": "XR6@", "z2": 6356, "z3": "pdVE", "z6": 83657, "zV": "vV[N", "zJ": 120467, "zz": "C0qY", "zd": 92133, "zS": 108987, "zg": 64468, "zL": 83773, "zX": "JrBU", "zE": 16936, "zc": 16483, "zx": 41124, "zB": 11231, "zu": 28025, "zA": "L@kv", "zs": 54209, "zw": "M2Ty", "zf": 13243, "zt": 61590, "zP": 13261, "zp": "]C&)", "zo": 45474, "zW": 42899, "zG": ")Lyh", "zy": 34105, "zU": "mwAz", "zF": 90786, "zO": "^Ceg", "zC": 10365, "zZ": "x&b0", "zn": 48961, "zr": 11228, "zH": "O9*f", "zh": 10511, "zY": 17853, "zl": "toM2", "za": 71676, "d2": 118423, "d3": 24048, "d4": "A0Dr", "d5": 113160, "d6": "9hYk", "d7": 45675, "d9": 59366, "dV": "93y[", "dJ": 33060, "dz": "nvO5", "dd": 66521, "dg": "eeST", "dL": 36778, "dX": 113977, "dj": "BS4&", "dE": 111214, "dc": 22078, "dx": 6441, "dB": "BS4&", "dK": 57475, "dA": 4699, "ds": "9pb7", "di": 16901, "dw": 109709, "df": "8dGo", "dt": 23935, "dP": "h98j", "dI": 55846, "dp": "p8sI", "dv": 94737, "dN": 74938, "dM": "p[w*", "dQ": 125950, "dW": "n@A0", "dy": 27533, "de": 14130, "dU": 97438, "dO": 85571, "dC": "I@Bf", "dZ": 122463, "dn": "K&pk", "dr": 77461, "dH": ")Lyh", "dY": 69927, "dD": 3595, "dl": 76235, "da": 15513, "S0": "9hYk", "S2": 39885, "S3": 7816, "S4": "xQ)2", "S5": 48611, "S6": "9hYk", "S7": 13464, "SV": "Yx9u", "SJ": 74898, "Sz": 45090, "Sd": "]C&)", "Sg": 69851, "SX": "%r7r", "Sj": 40692, "SE": "^Ceg", "Sc": 82983, "Sx": 55182, "SB": "toM2", "SK": 104485, "SA": 119824, "Ss": 101063, "Sb": 53131, "Si": 86637, "Sw": 31088, "Sf": "nvO5", "St": 81940, "SP": 96000, "Sp": "]C&)", "SR": 109648, "Sv": "h98j", "SN": 42952, "SM": "m[K#", "Sk": 14283, "SW": 20738, "ST": "h98j", "Se": 58155, "SU": "9hYk", "SF": 72568, "Sq": "pdVE", "SO": 92840, "Sm": 17112, "SZ": 57132, "SH": 122660, "SY": 75192, "Sl": "[()[", "g1": 108064, "g2": 125402, "g4": 56344, "g5": 28335, "g6": 117044, "g7": 123856, "g8": "[()[", "gV": 108324, "gz": "%r7r", "gd": 47647, "gg": 88827, "gX": 18012, "gj": "8dGo", "gE": 78268, "gc": "pdVE", "gx": 92034, "gB": 37172, "gK": 59318, "gu": "C0qY", "gs": 65376, "gb": 29858, "gw": 18233, "gt": "XR6@", "gP": 1729, "gp": ")Ku4", "go": 12651, "gR": 42976, "gv": "9hYk", "gN": 113994, "gk": "K&pk", "dM2": 107052, "dM3": 50680, "dM4": 41920, "dM5": "C0qY", "dM6": 47710, "dM7": "gm42", "dM8": 29748, "dM9": 82978, "dMV": 76120, "dMJ": 83896, "dMz": 42688, "dMd": "n@A0", "dMS": 88168, "dMg": "gm42", "dML": 31743, "dMX": 106971, "dMj": 50626, "dME": "iSZ6", "dMc": 95126, "dMx": "h^gm", "dMB": 64669, "dMK": "%r7r", "dMu": 122584, "dMA": 34683, "dMs": 91872, "dMb": "vV[N", "dMi": 99068, "dMw": 22950, "dMf": "93y[", "dMt": 88314, "dMP": "eeST", "dMI": 46241, "dMp": 72617, "dMo": ")Lyh", "dMR": 51719, "dMv": 104531, "dMN": 70220, "dMM": "*!!t", "dMk": 52214, "dMQ": "I@Bf", "dMW": 57546, "dMT": "8dGo", "dMG": 33970, "dMy": 96565, "dMU": "YbH*", "dMF": 59909, "dMq": 81072, "dMO": "nvO5", "dMm": 52582, "dMC": "h^gm", "dMZ": 73159, "dMn": "BS4&", "dMr": 15806, "dMH": "C0qY", "dMh": 52981, "dMY": 87520, "dMD": 37445, "dMl": 115302, "dMa": "mwAz", "dk0": 69306, "dk1": "kh^v", "dk2": 63828, "dk3": 28116, "dk4": "]C&)", "dk5": 17454, "dk6": "Yx9u", "dk7": 67803, "dk8": "K&pk", "dk9": 120105, "dkV": 46019, "dkJ": "kh^v", "dkz": 5918, "dkd": 86519, "dkS": 108609, "dkg": "x&b0", "dkL": 25850, "dkX": 62651, "dkj": 124094, "dkE": "9hYk", "dkc": 89187, "dkx": 82792, "dkB": 93123, "dkK": 56647, "dku": "VHeU", "dkA": 49924, "dks": "eeST", "dkb": 83457, "dki": 54378, "dkw": ")Ku4", "dkf": 112819, "dkt": "XR6@", "dkP": 15428, "dkI": 54396, "dkp": "89J2", "dko": 81789, "dkR": 104827, "dkv": 4864}
+	r4 = require("url")
+	Scope[7991][31] = r4["URL"]
+	r1 = require("events")
+	Scope[7991][32] = require("tls")
+	Scope[7991][33] = require("http2")
+	Scope[7991][34] = func_defineCache_0x100003ace["exports"]()
+	Scope[7991][35] = func_initDestroy_0x100003ae0["exports"]()
+	Scope[7991][36] = Symbol("currentStreamCount")
+	Scope[7991][37] = Symbol("request")
+	Scope[7991][38] = Symbol("cachedOriginSet")
+	Scope[7991][39] = Symbol("gracefullyClosing")
+	Scope[7991][40] = Symbol("length")
+	r5 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "ca", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r5[0] = "createConnection"
+	r5[1] = "maxDeflateDynamicTableSize"
+	r5[2] = "maxSettings"
+	r5[3] = "maxSessionMemory"
+	r5[4] = "maxHeaderListPairs"
+	r5[5] = "maxOutstandingPings"
+	r5[6] = "maxReservedRemoteStreams"
+	r5[7] = "maxSendHeaderBlockLength"
+	r5[8] = "paddingStrategy"
+	r5[9] = "peerMaxConcurrentStreams"
+	r5[10] = "settings"
+	r5[11] = "family"
+	r5[12] = "localAddress"
+	r5[13] = "rejectUnauthorized"
+	r5[14] = "pskCallback"
+	r5[15] = "minDHSize"
+	r5[16] = "path"
+	r5[17] = "socket"
+	r5[19] = "cert"
+	r5[20] = "sigalgs"
+	r5[21] = "ciphers"
+	r5[22] = "clientCertEngine"
+	r5[23] = "crl"
+	r5[24] = "dhparam"
+	r5[25] = "ecdhCurve"
+	r5[26] = "honorCipherOrder"
+	r5[27] = "key"
+	r5[28] = "privateKeyEngine"
+	r5[29] = "privateKeyIdentifier"
+	r5[30] = "maxVersion"
+	r5[31] = "minVersion"
+	r5[32] = "pfx"
+	r5[33] = "secureOptions"
+	r5[34] = "secureProtocol"
+	r5[35] = "sessionIdContext"
+	r5[36] = "ticketKeys"
+	Scope[7991][41] = r5
+	Scope[7991][42] = func_bisect_0x100003b13
+	Scope[7991][43] = func_concurrent_0x100003b14
+	Scope[7991][44] = func_closeSessions_0x100003b17
+	Scope[7991][45] = func_shouldCloseSession_0x100003b1a
+	Scope[7991][46] = func_closeSession_0x100003b1c
+	ACCU = ToName("protocol")
+	ACCU = ToName("normalizeOptions")
+	ACCU = ToName("_processQueue")
+	ACCU = ToName("_isBetterSession")
+	ACCU = ToName("_accept")
+	ACCU = ToName("getSession")
+	ACCU = ToName("request")
+	ACCU = ToName("createConnection")
+	ACCU = ToName("connect")
+	r8 = r1
+	if (func_j_0x100003ae1 === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("closeEmptySessions")
+	ACCU = ToName("destroy")
+	ACCU = ToName("emptySessionCount")
+	ACCU = ToName("pendingSessionCount")
+	ACCU = ToName("sessionCount")
+	r6 = DefineClass([31, <NameDictionary[53], <NumberDictionary[16], [76], <NameDictionary[101], <NumberDictionary[100], [13, 20, 28, 36, 44, 52, 60, 68, 84, 92, 101, 109, 117]], func_createAgent_0x100003b1e, r8, 51719, func_https_0x100003b20, func_j_0x100003ae1, func_joinPath_0x100003b22, func_j_0x100003ae1, func_processQueue_0x100003b24, func_j_0x100003ae1, func_greaterThan_0x100003b26, func_j_0x100003ae1, func_processQueue_0x100003b28, "C0qY", func_Promisify_0x100003baf, func_j_0x100003ae1, func_requestPromise_0x100003bb8, "gm42", func_connect_0x100003bba, func_j_0x100003ae1, func_connectTls_0x100003bbc, "]C&)", func_closeSessions_0x100003bbe, func_j_0x100003ae1, func_destroyCache_0x100003bc0, "kh^v", func_getEmptySessionCount_0x100003bc2, func_j_0x100003ae1, func_Active_0x100003bc4, func_j_0x100003ae1, func_count_0x100003bc6)
+	Scope[7992][2] = func_createAgent_0x100003b1e
+	func_createAgent_0x100003b1e["kCurrentStreamCount"] = Scope[7991][36]
+	func_createAgent_0x100003b1e["kGracefullyClosing"] = Scope[7991][39]
+	r5 = "exports"
+	r6 = new {"Agent": null, "globalAgent": null}
+	r6["Agent"] = func_createAgent_0x100003b1e
+	ACCU = func_createAgent_0x100003b1e
+	r6["globalAgent"] = func_createAgent_0x100003b1e(r0)
+	a1[r5] = r6
+	return undefined
+}
+function func_count_0x100003bc6()
+{
+	return <this>["_sessionCount"]
+}
+function func_Active_0x100003bc4()
+{
+	r4 = <this>["_sessionCount"]
+	return (r4 - <this>["_emptySessionCount"])
+}
+function func_getEmptySessionCount_0x100003bc2()
+{
+	return <this>["_emptySessionCount"]
+}
+function func_destroyCache_0x100003bc0(a0)
+{
+	r0 = <this>["sessions"]
+	r1 = <this>["queue"]
+	if (!<this>["sessions"] == undefined)
+	{
+		r16 = Generator(ToObject(<this>["sessions"]))
+		r20 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r20)) break
+			if (r16.next().value == undefined) continue
+			r2 = r16.next().value
+			r12 = r16.next().value
+			r13 = r0[r2]
+			r14 = 0
+			while (true)
+			{
+				r24 = r13["length"]
+				if (!r14 < r24) continue
+				r22 = r13[r14]
+				r21 = r22["destroy"]
+				ACCU = r21(a0)
+				r14 = (r14 + 1)
+			}
+			r20 = GeneratorStep(r20)
+		}
+	}
+	if (!<this>["queue"] == undefined)
+	{
+		r16 = Generator(ToObject(<this>["queue"]))
+		r20 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r20)) break
+			if (r16.next().value == undefined) continue
+			r4 = r16.next().value
+			r7 = r16.next().value
+			r8 = r1[r4]
+			if (r1[r4] == undefined) continue
+			r21 = Generator(ToObject(r1[r4]))
+			r25 = 0
+			while (true)
+			{
+				if (!GeneratorContinue(r25)) continue
+				if (r21.next().value == undefined) continue
+				r3 = r21.next().value
+				r10 = r21.next().value
+				r26 = r8[r3]
+				r27 = "destroyed"
+				r26[r27] = true
+				r25 = GeneratorStep(r25)
+			}
+			r20 = GeneratorStep(r20)
+		}
+	}
+	<this>["queue"] = {}
+	r17 = <this>["tlsSessionCache"]
+	ACCU = r17["clear"]()
+	return undefined
+}
+function func_closeSessions_0x100003bbe(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = Number["POSITIVE_INFINITY"]
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r0 = ACCU
+	r3 = 0
+	r4 = <this>["sessions"]
+	if (!<this>["sessions"] == undefined)
+	{
+		r10 = Generator(ToObject(<this>["sessions"]))
+		r14 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r14)) break
+			if (r10.next().value == undefined) continue
+			r1 = r10.next().value
+			r6 = r10.next().value
+			r7 = r4[r1]
+			r8 = 0
+			while (true)
+			{
+				r18 = r7["length"]
+				if (!r8 < r18) continue
+				r9 = r7[r8]
+				r17 = r9[Scope[7991][36]]
+				if (!r17 === 0) continue
+				r3 = (r3 + 1)
+				ACCU = r9["close"]()
+				if (!r3 >= r0) continue
+				return r3
+				r8 = (r8 + 1)
+			}
+			r14 = GeneratorStep(r14)
+		}
+	}
+	return r3
+}
+function func_connectTls_0x100003bbc(a0, a1)
+{
+	r6 = "ALPNProtocols"
+	a1[r6] = new ["h2"]
+	ACCU = a0["port"]
+	if (!a0["port"])
+	{
+		ACCU = 443
+	}
+	r0 = ACCU
+	r1 = a0["hostname"]
+	r7 = TypeOf(a1["servername"])
+	if (r7 > "u")
+	{
+		a1["servername"] = r1
+		ACCU = r1
+	}
+	r5 = Scope[7991][32]["connect"]
+	r7 = r0
+	r2 = r5(r7, r1, a1)
+	if (a1["socket"])
+	{
+		r6 = "_peername"
+		r7 = new {"family": null, "address": null, "port": null}
+		r7["family"] = undefined
+		r7["address"] = undefined
+		r7["port"] = r0
+		r2[r6] = r7
+		ACCU = r7
+	}
+	return r2
+}
+function func_connect_0x100003bba(a0, a1)
+{
+	r3 = <closure>
+	r4 = <this>
+	ACCU = func_ue_0x100003bb9
+	try
+	{
+		r5 = Scope[7992][2]["connect"](a0, a1)
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[7998]
+	return Scope[7998][2]
+}
+function func_requestPromise_0x100003bb8(a0, a1, a2, a3)
+{
+	Scope[7999][2] = <this>
+	Scope[7999][6] = a0
+	Scope[7999][5] = a1
+	Scope[7999][4] = a2
+	Scope[7999][3] = a3
+	ACCU = Promise
+	return Promise(func_session_0x100003bb7)
+}
+function func_session_0x100003bb7(a0, a1)
+{
+	Scope[8000][3] = a0
+	Scope[8000][2] = a1
+	Scope[8000][6] = func_be_0x100003bb4
+	r1 = Scope[7999][2]["getSession"]
+	r6 = new [0]
+	r7 = new {"reject": null, "resolve": null}
+	r7["reject"] = Scope[8000][2]
+	r7["resolve"] = func_sendRequest_0x100003bb6
+	r6[0] = r7
+	ACCU = r1(Scope[7999][6], Scope[7999][5], r6)
+	return undefined
+}
+function func_sendRequest_0x100003bb6(a0)
+{
+	ACCU = func_he_0x100003bb5
+	try
+	{
+		r3 = a0["request"]
+		r1 = r3(Scope[7999][4], Scope[7999][3])
+		ACCU = Scope[7991][35](r1)
+		ACCU = Scope[8000][3](r1)
+	}
+	catch
+	{
+		r3 = ACCU
+		ACCU = null
+		ACCU = Scope[8001]
+		ACCU = Scope[8000][2](Scope[8001][2])
+	}
+	return undefined
+}
+function func_Promisify_0x100003baf(a0, a1, a2)
+{
+	Scope[8003][2] = <this>
+	Scope[8003][5] = a0
+	Scope[8003][4] = a1
+	Scope[8003][3] = a2
+	ACCU = Promise
+	return Promise(func_connect_0x100003bae)
+}
+function func_connect_0x100003bae(a0, a1)
+{
+	Scope[8004][40] = func_iu_0x100003b29
+	r12 = new {"uUNkK": null, "nJwKN": null, "knNNT": null, "EJXRo": null, "ezTag": null, "mcbfe": null, "DjLwU": null, "tFTpd": null, "OtAVY": null, "EokVe": null, "IWtXD": null, "sHVak": null, "bLYOY": null, "infAU": null, "xYzcq": null, "THdBi": null, "tUZpD": null, "CyHyw": null, "cdwfI": null, "VaDdf": null, "wflOC": null, "KxAIa": null, "FPHBY": null, "mpmjT": null, "ZRWtL": null, "fnDCc": null, "AvvTr": null, "ajQtB": null, "jTXfR": null, "tGhlG": null, "vNaXO": null, "uLmaP": null, "AeqYk": null, "YEozJ": null, "iNrDP": null, "HWudl": null, "yubZZ": null}
+	Scope[8004][39] = r12
+	r12 = Array["isArray"]
+	if (r12(Scope[8003][3]))
+	r14 = Scope[8003][3]["length"]
+	ACCU = r14 > 0
+		&& (r14 > 0)
+	{
+		Scope[8003][3] = Array.from(Scope[8003][3])
+		ACCU = a0()
+	}
+	else
+	{
+		r13 = new [0]
+		r14 = new {"resolve": null, "reject": null}
+		r14["resolve"] = a0
+		r14["reject"] = a1
+		r13[0] = r14
+		ACCU = r13
+		Scope[8003][3] = r13
+	}
+	try
+	{
+		r15 = TypeOf(Scope[8003][5])
+		if (r15 == "string")
+		{
+			ACCU = Scope[7991][31]
+			Scope[8003][5] = Scope[7991][31](Scope[8003][5])
+		}
+		else
+		{
+			if (!Scope[8003][5] instanceof Scope[7991][31])
+			{
+				r14 = "The `origin` argument needs to be a string or an URL object"
+				ACCU = TypeError
+				ACCU = TypeError(r14)
+			}
+		}
+		ACCU = Scope[8003][4]
+		if (Scope[8003][4])
+		{
+			if (Scope[8003][4]["servername"])
+			{
+				if (!(Scope[8003][5]["hostname"] === Scope[8003][4]["servername"]))
+				{
+					r14 = ("Origin " + Scope[8003][5]["hostname"])
+					r14 = (r14 + " differs from servername ")
+					r14 = (r14 + Scope[8003][4]["servername"])
+					ACCU = Error
+					ACCU = Error(r14)
+				}
+			}
+		}
+	}
+	catch
+	{
+		r13 = ACCU
+		ACCU = null
+		ACCU = Scope[8005]
+		r13 = Scope[8004]
+		r8 = 0
+		while (true)
+		{
+			if (!r8 < Scope[8003][3]["length"]) break
+			r14 = Scope[8003][3][r8]["reject"]
+			ACCU = r14(Scope[8005][2])
+			r8 = (r8 + 1)
+		}
+		return undefined
+	}
+	r12 = Scope[8003][2]["normalizeOptions"]
+	Scope[8004][41] = r12(Scope[8003][4])
+	Scope[8004][42] = Scope[8003][5]["origin"]
+	r15 = Scope[8003][2]["sessions"]
+	if (Scope[8004][41] in r15)
+	{
+		r12 = Scope[8003][2]["sessions"]
+		r0 = r12[Scope[8004][41]]
+		r1 = -1
+		r2 = -1
+		r3 = undefined
+		r4 = 0
+		while (true)
+		{
+			r15 = r0["length"]
+			if (!r4 < r15) break
+			r5 = r0[r4]
+			r12 = r5["remoteSettings"]
+			r6 = r12["maxConcurrentStreams"]
+			if (r6 < r1)
+			{
+				break
+			}
+			r13 = r5[Scope[7991][38]]
+			r12 = r13["includes"]
+			if (!r12(Scope[8004][42]))
+			{
+				continue
+			}
+			r7 = r5[Scope[7991][36]]
+			if (r7 >= r6) continue
+			if (r5[Scope[7991][39]]) continue
+			if (r5["destroyed"]) continue
+			if (!r3)
+			{
+				r1 = r6
+				ACCU = r1
+			}
+			if (!Scope[8003][2]["_isBetterSession"](r7, r2)) continue
+			r3 = r5
+			r2 = r7
+			ACCU = r2
+			r4 = (r4 + 1)
+		}
+		if (r3)
+		{
+			r12 = Scope[8003][2]["_accept"]
+			r14 = r3
+			ACCU = r12(r14, Scope[8003][3], Scope[8004][42], Scope[8003][4])
+			return undefined
+		}
+	}
+	r15 = Scope[8003][2]["queue"]
+	if (Scope[8004][41] in r15)
+	{
+		r15 = Scope[8003][2]["queue"][Scope[8004][41]]
+		if (Scope[8004][42] in r15)
+		{
+			r13 = Scope[8003][2]["queue"][Scope[8004][41]]
+			r13 = r13[Scope[8004][42]]
+			r13 = r13["listeners"]
+			r12 = r13["push"]
+			ACCU = r12(...r13, Scope[8003][3])
+			return undefined
+		}
+	}
+	else
+	{
+		r12 = Scope[8003][2]["queue"]
+		r14 = new {}
+		ACCU = ToName(Scope[7991][40])
+		r14[25951] = 0
+		r12[Scope[8004][41]] = r14
+	}
+	Scope[8004][43] = func_removeQueue_0x100003b63
+	Scope[8004][44] = func_connectSession_0x100003bad
+	Scope[8004][44]["listeners"] = Scope[8003][3]
+	Scope[8004][44]["completed"] = false
+	Scope[8004][44]["destroyed"] = false
+	r12 = Scope[8003][2]["queue"][Scope[8004][41]]
+	r12[Scope[8004][42]] = func_connectSession_0x100003bad
+	r12 = Scope[8003][2]["queue"][Scope[8004][41]]
+	r12[Scope[7991][40]] = (r12[Scope[7991][40]] + 1)
+	r12 = Scope[8003][2]["_processQueue"]
+	ACCU = r12()
+	return undefined
+}
+function func_connectSession_0x100003bad()
+{
+	r4 = <closure>
+	r5 = <this>
+	ACCU = func_qu_0x100003b64
+	Scope[8006][33] = func_qu_0x100003b64
+	try
+	{
+		r5 = new {"NwhpB": null, "KjkAE": null, "ePVbG": null, "XobOD": null, "BbGrz": null, "PjUEI": null, "MxTXd": null, "OAowm": null, "DiRGO": null, "iOLEz": null, "GhbSS": null, "PhqpZ": null, "inqim": null, "tXiMe": null, "lGERJ": null, "jpuTJ": null, "EgpWc": null}
+		Scope[8006][29] = r5
+		Scope[8003][2]["_sessionCount"] = (Scope[8003][2]["_sessionCount"] + 1)
+		Scope[8006][30] = ((Scope[8004][42] + ":") + Scope[8004][41])
+		Scope[8006][31] = false
+		ACCU = Scope[8007]
+		{
+			ACCU = PushContext("Block")
+			r2 = CloneObject(Scope[8003][4])
+			r9 = r2["settings"]
+			if (r9 === undefined)
+			{
+				r9 = Scope[8003][2]["settings"]
+				r2["settings"] = Scope[8003][2]["settings"]
+				ACCU = r9
+			}
+			r9 = r2["session"]
+			r10 = undefined
+			if (r9 === r10)
+			{
+				r8 = "session"
+				r9 = Scope[8003][2]["tlsSessionCache"]["get"]
+				ACCU = r9(Scope[8006][30])
+				r9 = r9(Scope[8006][30])
+				r2[r8] = ACCU
+				ACCU = r9
+			}
+			ACCU = r2["createConnection"]
+			if (!r2["createConnection"])
+			{
+				ACCU = Scope[8003][2]["createConnection"]
+			}
+			r8 = ACCU
+			r7 = r8["call"]
+			r8 = r7(Scope[8003][2], Scope[8003][5], r2)
+			r7 = await r8
+			r8 = _GeneratorGetResumeMode(Scope[8006])
+			if (!r8 === 0)
+			{
+				ACCU = r7
+			}
+			Scope[8006][32] = r7
+			r2["createConnection"] = func_version_0x100003b83
+			r7 = Scope[7991][33]["connect"]
+			Scope[8007][2] = r7(Scope[8003][5], r2)
+			Scope[8007][2][Scope[7991][36]] = 0
+			Scope[8007][2][Scope[7991][39]] = false
+			Scope[8007][3] = func_originSet_0x100003b85
+			Scope[8007][4] = func_canStream_0x100003b86
+			r8 = Scope[8007][2]["socket"]
+			r7 = r8["once"]
+			ACCU = r7("session", func_cacheSession_0x100003b88)
+			r7 = Scope[8007][2]["once"]
+			ACCU = r7("error", func_rejectAll_0x100003b8a)
+			r7 = Scope[8007][2]["setTimeout"]
+			ACCU = r7(Scope[8003][2]["timeout"], func_destroySocket_0x100003b8c)
+			r7 = Scope[8007][2]["once"]
+			ACCU = r7("close", func_closeSession_0x100003b8e)
+			Scope[8007][5] = func_flush_0x100003b90
+			ACCU = Scope[8007][2]["on"]("origin", func_flushSession_0x100003b92)
+			r7 = Scope[8007][2]["once"]
+			ACCU = r7("remoteSettings", func_acceptSession_0x100003b9c)
+			Scope[8007][2][Scope[7991][37]] = Scope[8007][2]["request"]
+			r8 = "request"
+			ACCU = func_stream_0x100003bac
+			Scope[8007][2][r8] = func_stream_0x100003bac
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[8008]
+			ACCU = func_removeQueue_0x100003b63()
+			Scope[8003][2]["_sessionCount"] = (Scope[8003][2]["_sessionCount"] - 1)
+			r1 = 0
+			while (true)
+			{
+				if (!r1 < Scope[8003][3]["length"]) break
+				r8 = Scope[8003][3][r1]["reject"]
+				ACCU = r8(Scope[8008][2])
+				r1 = (r1 + 1)
+			}
+		}
+		r6 = undefined
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[8009]
+	return Scope[8009][2]
+}
+function func_removeQueue_0x100003b63()
+{
+	r4 = Scope[8003][2]["queue"]
+	if (Scope[8004][41] in r4)
+	{
+		r3 = Scope[8003][2]["queue"][Scope[8004][41]]
+		r3 = r3[Scope[8004][42]]
+		if (r3 === func_connectSession_0x100003bad)
+		{
+			r1 = Scope[8003][2]["queue"][Scope[8004][41]]
+			delete Scope[8004][42][r1]
+			r3 = Scope[8003][2]["queue"][Scope[8004][41]]
+			r5 = (r3[Scope[7991][40]] - 1)
+			r3[Scope[7991][40]] = (r3[Scope[7991][40]] - 1)
+			if (r5 === 0)
+			{
+				r1 = Scope[8003][2]["queue"]
+				delete Scope[8004][41][r1]
+			}
+		}
+	}
+	return undefined
+}
+function func_processQueue_0x100003b28(a0, a1, a2, a3)
+{
+	r1 = 0
+	while (true)
+	{
+		r6 = a1["length"]
+		if (!r1 < r6) break
+		r5 = a0[Scope[7991][36]]
+		r6 = a0["remoteSettings"]
+		r6 = r6["maxConcurrentStreams"]
+		if (!r5 < r6) break
+		r4 = a1[r1]
+		r3 = r4["resolve"]
+		ACCU = r3(a0)
+		r1 = (r1 + 1)
+	}
+	r3 = a1["splice"]
+	ACCU = r3(0, r1)
+	r5 = a1["length"]
+	if (r5 > 0)
+	{
+		r3 = <this>["getSession"]
+		r4 = <this>
+		ACCU = r3(a2, a3, a1)
+		a1["length"] = 0
+		ACCU = 0
+	}
+	return undefined
+}
+function func_greaterThan_0x100003b26(a0, a1)
+{
+	return a0 > a1
+}
+function func_processQueue_0x100003b24()
+{
+	r11 = <this>["_sessionCount"]
+	if (r11 >= <this>["maxSessions"])
+	{
+		r9 = <this>["closeEmptySessions"]
+		r15 = <this>["maxSessions"]
+		r13 = (r15 - <this>["_sessionCount"])
+		r11 = (r13 + 1)
+		ACCU = r9(r11)
+		return undefined
+	}
+	if (!<this>["queue"] == undefined)
+	{
+		r9 = Generator(ToObject(<this>["queue"]))
+		r13 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r13)) break
+			if (r9.next().value == undefined) continue
+			r2 = r9.next().value
+			r4 = r9.next().value
+			r14 = <this>["queue"]
+			if (r14[r2] == undefined) continue
+			r14 = Generator(ToObject(r14[r2]))
+			r18 = 0
+			while (true)
+			{
+				if (!GeneratorContinue(r18)) continue
+				if (r14.next().value == undefined) continue
+				r1 = r14.next().value
+				r6 = r14.next().value
+				r19 = <this>["queue"]
+				r19 = r19[r4]
+				r7 = r19[r1]
+				if (r7["completed"]) continue
+				r20 = "completed"
+				r7[r20] = true
+				ACCU = r7()
+				r18 = GeneratorStep(r18)
+			}
+			r13 = GeneratorStep(r13)
+		}
+	}
+	return undefined
+}
+function func_joinPath_0x100003b22(a0)
+{
+	r0 = ""
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < Scope[7991][41]["length"]) break
+		r4 = r0
+		r0 = (r0 + ":")
+		if (!a0) continue
+		r6 = a0[Scope[7991][41][r2]]
+		r7 = undefined
+		if (r6 === r7) continue
+		r4 = r0
+		r0 = (r0 + a0[Scope[7991][41][r2]])
+		r2 = (r2 + 1)
+	}
+	return r0
+}
+function func_https_0x100003b20()
+{
+	return "https:"
+}
+function func_createAgent_0x100003b1e(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = {}
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r7 = ACCU
+	ACCU = r7["timeout"]
+	if (r7["timeout"] == undefined)
+	{
+		ACCU = 0
+	}
+	r2 = ACCU
+	ACCU = r7["maxSessions"]
+	if (r7["maxSessions"] == undefined)
+	{
+		ACCU = Number["POSITIVE_INFINITY"]
+	}
+	r3 = ACCU
+	ACCU = r7["maxEmptySessions"]
+	if (r7["maxEmptySessions"] == undefined)
+	{
+		ACCU = 10
+	}
+	r4 = ACCU
+	ACCU = r7["maxCachedTlsSessions"]
+	if (r7["maxCachedTlsSessions"] == undefined)
+	{
+		ACCU = 100
+	}
+	r5 = ACCU
+	ACCU = <closure>
+	ACCU = r0
+	r10 = supper(r0)
+	ACCU = <this>
+	<this> = r10
+	ACCU = <this>
+	<this>["sessions"] = {}
+	ACCU = <this>
+	<this>["queue"] = {}
+	ACCU = <this>
+	<this>["timeout"] = r2
+	ACCU = <this>
+	<this>["maxSessions"] = r3
+	ACCU = <this>
+	<this>["maxEmptySessions"] = r4
+	ACCU = <this>
+	<this>["_emptySessionCount"] = 0
+	ACCU = <this>
+	<this>["_sessionCount"] = 0
+	ACCU = <this>
+	r9 = "settings"
+	r10 = new {"enablePush": <false, "initialWindowSize": null}
+	r13 = (1024 * 1024)
+	r10["initialWindowSize"] = (r13 * 32)
+	<this>[r9] = r10
+	ACCU = <this>
+	r9 = "tlsSessionCache"
+	r11 = new {"maxSize": null}
+	r11["maxSize"] = r5
+	ACCU = Scope[7991][34]
+	<this>[r9] = Scope[7991][34](r11)
+	return <this>
+}
+function func_closeSession_0x100003b1c(a0)
+{
+	a0[Scope[7991][39]] = true
+	r3 = a0[Scope[7991][36]]
+	if (r3 === 0)
+	{
+		ACCU = a0["close"]()
+	}
+	return undefined
+}
+function func_shouldCloseSession_0x100003b1a(a0, a1)
+{
+	Scope[8044][2] = func_z_0x100003b18
+	r0 = 0
+	r1 = 1
+	while (true)
+	{
+		r4 = r0
+		if (r1 == 1)
+		{
+			r1 = 0
+		}
+		else
+		{
+			r4 = (r4 + 1)
+		}
+		r2 = 1
+		r9 = a0["length"]
+		if (r4 < r9)
+		{
+			break
+		}
+		while (true)
+		{
+			if (!r2 == 1) continue
+			Scope[8045][2] = a0[r4]
+			r9 = a1[Scope[7991][38]]
+			r9 = r9["length"]
+			if (r9 > 0)
+			{
+				r9 = a1[Scope[7991][38]]
+				r9 = r9["length"]
+				if (r9 < Scope[8045][2][Scope[7991][38]]["length"])
+				{
+					r8 = a1[Scope[7991][38]]
+					r7 = r8["every"]
+					if (r7(func_includes_0x100003b19))
+					{
+						r11 = a1[Scope[7991][36]]
+						r9 = (r11 + Scope[8045][2][Scope[7991][36]])
+						r10 = Scope[8045][2]["remoteSettings"]
+						r10 = r10["maxConcurrentStreams"]
+						if (r9 <= r10)
+						{
+							ACCU = func_closeSession_0x100003b1c(a1)
+							return true
+						}
+					}
+				}
+			}
+			r2 = 0
+			r0 = r4
+			ACCU = r0
+		}
+		if (!r2 == 1) continue
+		break
+	}
+	return false
+}
+function func_includes_0x100003b19(a0)
+{
+	r0 = Scope[8045][2][Scope[7991][38]]["includes"]
+	return r0(a0)
+}
+function func_closeSessions_0x100003b17(a0, a1)
+{
+	Scope[8046][2] = a1
+	Scope[8046][4] = func_ne_0x100003b15
+	r0 = 0
+	r1 = 1
+	while (true)
+	{
+		r4 = r0
+		if (r1 == 1)
+		{
+			r1 = 0
+		}
+		else
+		{
+			r4 = (r4 + 1)
+		}
+		r2 = 1
+		r10 = a0["length"]
+		if (r4 < r10)
+		{
+			break
+		}
+		while (true)
+		{
+			if (!r2 == 1) continue
+			r5 = a0[r4]
+			r9 = r5[Scope[7991][38]]
+			r9 = r9["length"]
+			if (!r9 > 0) continue
+			r9 = r5[Scope[7991][38]]
+			r9 = r9["length"]
+			if (!r9 < Scope[8046][2][Scope[7991][38]]["length"]) continue
+			r8 = r5[Scope[7991][38]]
+			r7 = r8["every"]
+			if (!r7(func_includesValue_0x100003b16)) continue
+			r11 = r5[Scope[7991][36]]
+			r9 = (r11 + Scope[8046][2][Scope[7991][36]])
+			r10 = Scope[8046][2]["remoteSettings"]
+			r10 = r10["maxConcurrentStreams"]
+			if (!r9 <= r10) continue
+			ACCU = func_closeSession_0x100003b1c(r5)
+			r2 = 0
+			r0 = r4
+			ACCU = r0
+		}
+		if (!r2 == 1) continue
+		break
+	}
+	return undefined
+}
+function func_includesValue_0x100003b16(a0)
+{
+	r0 = Scope[8046][2][Scope[7991][38]]["includes"]
+	return r0(a0)
+}
+function func_concurrent_0x100003b14(a0, a1)
+{
+	r0 = a0["remoteSettings"]["maxConcurrentStreams"]
+	return r0 > a1["remoteSettings"]["maxConcurrentStreams"]
+}
+function func_bisect_0x100003b13(a0, a1, a2)
+{
+	r0 = 0
+	r1 = a0["length"]
+	while (true)
+	{
+		if (!r0 < r1) break
+		r7 = (r0 + r1)
+		r3 = (r7 >>> 1)
+		r8 = a0[r3]
+		r7 = a2
+		r9 = a1
+		if (r7(r8, r9))
+		{
+			r0 = (r3 + 1)
+			continue
+		}
+		r1 = r3
+		ACCU = r1
+	}
+	return r0
+}
+function func_initDestroy_0x100003ae0(a0, a1)
+{
+	Scope[8048][5] = func_o_0x100003acf
+	a1["exports"] = func_initDestroy_0x100003adf
+	return undefined
+}
+function func_initDestroy_0x100003adf(a0)
+{
+	Scope[8049][2] = a0
+	Scope[8049][12] = func_V_0x100003ad2
+	r3 = Scope[8049][2]["listenerCount"]
+	r3 = r3("error")
+	if (!(r3 === 0))
+	{
+		return Scope[8049][2]
+	}
+	Scope[8049][2]["__destroy"] = Scope[8049][2]["_destroy"]
+	Scope[8049][2]["_destroy"] = func_destroy_0x100003ad8
+	Scope[8049][13] = func_emitError_0x100003adc
+	r1 = Scope[8049][2]["once"]
+	ACCU = r1("error", func_emitError_0x100003adc)
+	r2 = Promise["resolve"]()
+	ACCU = r2["then"](func_detachError_0x100003ade)
+	return Scope[8049][2]
+}
+function func_detachError_0x100003ade()
+{
+	r1 = Scope[8049][2]["off"]
+	ACCU = r1("error", func_emitError_0x100003adc)
+	return undefined
+}
+function func_emitError_0x100003adc(a0)
+{
+	Scope[8050][2] = a0
+	Scope[8050][5] = func_unknown_0x100003ad9
+	r2 = Promise["resolve"]()
+	ACCU = r2["then"](func_emitError_0x100003adb)
+	return undefined
+}
+function func_destroy_0x100003ad8()
+{
+	r1 = ...
+	r0 = ...
+	Scope[8051][3] = func_g_0x100003ad3
+	r3 = r1["pop"]
+	Scope[8051][5] = r3()
+	r3 = Scope[8049][2]["__destroy"]
+	r6 = Array.from(r1)
+	r6[r6["length"]] = func_execute_0x100003ad7
+	ACCU = reflect_apply(r3, Scope[8049][2], r6)
+	return undefined
+}
+function func_defineCache_0x100003ace(a0, a1)
+{
+	Scope[8055][17] = func_p_0x100003ab3
+	ACCU = ToName("_set")
+	ACCU = ToName("get")
+	ACCU = ToName("set")
+	ACCU = ToName("has")
+	ACCU = ToName("peek")
+	ACCU = ToName("delete")
+	ACCU = ToName("clear")
+	ACCU = ToName("keys")
+	ACCU = ToName("values")
+	ACCU = ToName(Symbol["iterator"])
+	ACCU = ToName("size")
+	r4 = DefineClass([25, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[101], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60, 68, 76, 84, 93]], func_initCache_0x100003ab9, null, "pdVE", func_rotateCache_0x100003abb, 124671, func_lookupCache_0x100003abd, 31254, func_cacheSet_0x100003abf, 111280, func_contains_0x100003ac1, 70760, func_cacheGet_0x100003ac3, 13888, func_delete_0x100003ac5, 15124, func_clearCache_0x100003ac7, 101420, func_flatten_0x100003ac8, 18642, func_flatten_0x100003ac9, 60396, func_iterateCache_0x100003acb, r27, func_calcSize_0x100003acd)
+	a1["exports"] = func_initCache_0x100003ab9
+	return undefined
+}
+function func_calcSize_0x100003acd()
+{
+	r1 = 0
+	r7 = <this>["oldCache"]
+	r9 = 83815
+	r6 = r7["keys"]
+	r8 = r6()
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			r14 = <this>["cache"]
+			ACCU = r14["has"](r12["value"])
+			r12 = r12["value"]
+			if (ACCU) continue
+			r13 = Number(r1)
+			r1 = (Number(r1) + 1)
+			ACCU = r13
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	r6 = Math["min"]
+	r8 = (<this>["_size"] + r1)
+	return r6(r8, <this>["maxSize"])
+}
+function func_iterateCache_0x100003acb()
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r9 = r0
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r9
+	}
+	case (1):
+	{
+		return r9
+	}
+	case (0):
+	{}
+	r12 = 112854
+	r10 = GetIterator(<this>["cache"])
+	r9 = r10["next"]
+	ACCU = false
+	r11 = false
+	try
+	{
+		while (true)
+		{
+			r11 = true
+			r15 = r9()
+			if (r15["done"]) break
+			r11 = false
+			r16 = _CreateIterResultObject(r15["value"], false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r16
+			}
+			case (1):
+			{
+				r12 = 1
+				r13 = r16
+				break
+			}
+			case (0):
+			{}
+			ACCU = r16
+		}
+		ACCU = -1
+		r13 = -1
+		r12 = -1
+	}
+	catch
+	{
+		r13 = ACCU
+		r12 = 0
+	}
+	if (!r11)
+	{
+		try
+		{
+			if (!r10["return"] == undefined)
+			{
+				ACCU = r10["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r12)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r13
+	}
+	case (1):
+	{
+		return r13
+	}
+	r13 = 1509
+	r10 = GetIterator(<this>["oldCache"])
+	r9 = r10["next"]
+	ACCU = false
+	r11 = false
+	try
+	{
+		while (true)
+		{
+			r11 = true
+			r15 = r9()
+			if (r15["done"]) break
+			r11 = false
+			r16 = r15["value"]
+			r18 = GetIterator(r15["value"])
+			ACCU = false
+			r19 = false
+			try
+			{
+				if (!false)
+				r19 = true
+				r23 = r18["next"]()
+				ACCU = r23["done"]
+					&& (!r23["done"])
+				{
+					r19 = false
+					ACCU = r23["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r6 = ACCU
+				ACCU = -1
+				r21 = -1
+				r20 = -1
+			}
+			catch
+			{
+				r21 = ACCU
+				r20 = 0
+			}
+			if (!r19)
+			{
+				try
+				{
+					if (!r18["return"] == undefined)
+					{
+						ACCU = r18["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r20 === 0)
+			{
+				r12 = 0
+				r13 = r21
+				break
+			}
+			r17 = <this>["cache"]
+			r16 = r17["has"]
+			if (r16(r6)) continue
+			r16 = _CreateIterResultObject(r15["value"], false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r16
+			}
+			case (1):
+			{
+				r12 = 1
+				r13 = r16
+				break
+			}
+			case (0):
+			{}
+			ACCU = r16
+		}
+		ACCU = -1
+		r13 = -1
+		r12 = -1
+	}
+	catch
+	{
+		r13 = ACCU
+		r12 = 0
+	}
+	if (!r11)
+	{
+		try
+		{
+			if (!r10["return"] == undefined)
+			{
+				ACCU = r10["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r12)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r13
+	}
+	case (1):
+	{
+		return r13
+	}
+	return undefined
+}
+function func_flatten_0x100003ac9()
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r4 = _CreateJSGeneratorObject(<closure>, <this>)
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r4
+	}
+	case (1):
+	{
+		return r4
+	}
+	case (0):
+	{}
+	r5 = GetIterator(<this>)
+	r4 = r5["next"]
+	ACCU = false
+	r6 = false
+	try
+	{
+		while (true)
+		{
+			r6 = true
+			r10 = r4()
+			if (r10["done"]) break
+			r6 = false
+			r11 = r10["value"]
+			r13 = GetIterator(r10["value"])
+			ACCU = false
+			r14 = false
+			try
+			{
+				if (!false)
+				{
+					r14 = true
+					r18 = r13["next"]()
+					if (!r18["done"])
+					{
+						r14 = false
+					}
+				}
+				if (!r14)
+				r14 = true
+				r18 = r13["next"]()
+				ACCU = r18["done"]
+					&& (!r18["done"])
+				{
+					r14 = false
+					ACCU = r18["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r3 = ACCU
+				ACCU = -1
+				r16 = -1
+				r15 = -1
+			}
+			catch
+			{
+				r16 = ACCU
+				r15 = 0
+			}
+			if (!r14)
+			{
+				try
+				{
+					if (!r13["return"] == undefined)
+					{
+						ACCU = r13["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r15 === 0)
+			{
+				r7 = 0
+				r8 = r16
+				break
+			}
+			r11 = r3
+			r11 = _CreateIterResultObject(r11, false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r11
+			}
+			case (1):
+			{
+				r7 = 1
+				r8 = r11
+				break
+			}
+			case (0):
+			{}
+			ACCU = r11
+		}
+		ACCU = -1
+		r8 = -1
+		r7 = -1
+	}
+	catch
+	{
+		r8 = ACCU
+		r7 = 0
+	}
+	if (!r6)
+	{
+		try
+		{
+			if (!r5["return"] == undefined)
+			{
+				ACCU = r5["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r7)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r8
+	}
+	case (1):
+	{
+		return r8
+	}
+	return undefined
+}
+function func_flatten_0x100003ac8()
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r4 = _CreateJSGeneratorObject(<closure>, <this>)
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r4
+	}
+	case (1):
+	{
+		return r4
+	}
+	case (0):
+	{}
+	r5 = GetIterator(<this>)
+	r4 = r5["next"]
+	ACCU = false
+	r6 = false
+	try
+	{
+		while (true)
+		{
+			r6 = true
+			r10 = r4()
+			if (r10["done"]) break
+			r6 = false
+			r11 = r10["value"]
+			r13 = GetIterator(r10["value"])
+			ACCU = false
+			r14 = false
+			try
+			{
+				if (!false)
+				r14 = true
+				r18 = r13["next"]()
+				ACCU = r18["done"]
+					&& (!r18["done"])
+				{
+					r14 = false
+					ACCU = r18["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r3 = ACCU
+				ACCU = -1
+				r16 = -1
+				r15 = -1
+			}
+			catch
+			{
+				r16 = ACCU
+				r15 = 0
+			}
+			if (!r14)
+			{
+				try
+				{
+					if (!r13["return"] == undefined)
+					{
+						ACCU = r13["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r15 === 0)
+			{
+				r7 = 0
+				r8 = r16
+				break
+			}
+			r11 = r3
+			r11 = _CreateIterResultObject(r11, false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r11
+			}
+			case (1):
+			{
+				r7 = 1
+				r8 = r11
+				break
+			}
+			case (0):
+			{}
+			ACCU = r11
+		}
+		ACCU = -1
+		r8 = -1
+		r7 = -1
+	}
+	catch
+	{
+		r8 = ACCU
+		r7 = 0
+	}
+	if (!r6)
+	{
+		try
+		{
+			if (!r5["return"] == undefined)
+			{
+				ACCU = r5["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r7)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r8
+	}
+	case (1):
+	{
+		return r8
+	}
+	return undefined
+}
+function func_clearCache_0x100003ac7()
+{
+	r1 = <this>["cache"]["clear"]
+	ACCU = r1()
+	r1 = <this>["oldCache"]["clear"]
+	ACCU = r1()
+	<this>["_size"] = 0
+	return undefined
+}
+function func_delete_0x100003ac5(a0)
+{
+	r4 = <this>["cache"]
+	r3 = r4["delete"]
+	r0 = r3(a0)
+	if (r3(a0))
+	{
+		r4 = "_size"
+		r5 = Number(<this>["_size"])
+		r6 = (Number(<this>["_size"]) - 1)
+		<this>[r4] = (Number(<this>["_size"]) - 1)
+		ACCU = r5
+	}
+	r3 = <this>["oldCache"]["delete"]
+	ACCU = r3(a0)
+	if (!r3(a0))
+	{
+		ACCU = r0
+	}
+	return ACCU
+}
+function func_cacheGet_0x100003ac3(a0)
+{
+	r3 = <this>["cache"]
+	r2 = r3["has"]
+	if (r2(a0))
+	{
+		r3 = <this>["cache"]
+		r2 = r3["get"]
+		return r2(a0)
+	}
+	r3 = <this>["oldCache"]
+	r2 = r3["has"]
+	if (r2(a0))
+	{
+		r2 = <this>["oldCache"]["get"]
+		return r2(a0)
+	}
+	return undefined
+}
+function func_contains_0x100003ac1(a0)
+{
+	r3 = <this>["cache"]
+	r2 = r3["has"]
+	ACCU = r2(a0)
+	if (!r2(a0))
+	{
+		r3 = <this>["oldCache"]
+		ACCU = r3["has"](a0)
+	}
+	return ACCU
+}
+function func_cacheSet_0x100003abf(a0, a1)
+{
+	r3 = <this>["cache"]
+	r2 = r3["has"]
+	if (r2(a0))
+	{
+		r3 = <this>["cache"]
+		ACCU = r3["set"](a0, a1)
+	}
+	else
+	{
+		ACCU = <this>["_set"](a0, a1)
+	}
+	return <this>
+}
+function func_lookupCache_0x100003abd(a0)
+{
+	r4 = <this>["cache"]
+	r3 = r4["has"]
+	if (r3(a0))
+	{
+		r4 = <this>["cache"]
+		r3 = r4["get"]
+		return r3(a0)
+	}
+	r4 = <this>["oldCache"]
+	r3 = r4["has"]
+	if (r3(a0))
+	{
+		r3 = <this>["oldCache"]["get"]
+		r1 = r3(a0)
+		r4 = <this>["oldCache"]
+		ACCU = r4["delete"](a0)
+		ACCU = <this>["_set"](a0, r1)
+		return r1
+	}
+	return undefined
+}
+function func_rotateCache_0x100003abb(a0, a1)
+{
+	r6 = <this>["cache"]["set"]
+	ACCU = r6(a0, a1)
+	r7 = "_size"
+	<this>[r7] = (<this>["_size"] + 1)
+	r8 = <this>["_size"]
+	if (r8 >= <this>["maxSize"])
+	{
+		<this>["_size"] = 0
+		r7 = Scope[8055][16]
+		r8 = TypeOf(<this>["onEviction"])
+		r9 = "function"
+		if (r8 == r9)
+		{
+			r7 = <this>["oldCache"]
+			r9 = 20684
+			r6 = r7["entries"]
+			r8 = r6()
+			r7 = GetIterator(r8)
+			r6 = r7["next"]
+			ACCU = false
+			r8 = false
+			try
+			{
+				while (true)
+				{
+					r8 = true
+					r12 = r6()
+					if (r12["done"]) break
+					r8 = false
+					r13 = r12["value"]
+					r15 = GetIterator(r12["value"])
+					ACCU = false
+					r16 = false
+					try
+					{
+						if (!false)
+						r16 = true
+						r20 = r15["next"]()
+						ACCU = r20["done"]
+							&& (!r20["done"])
+						{
+							r16 = false
+							ACCU = r20["value"]
+						}
+						else
+						{
+							ACCU = undefined
+						}
+						r4 = ACCU
+						if (!r16)
+						r16 = true
+						r20 = r15["next"]()
+						ACCU = r20["done"]
+							&& (!r20["done"])
+						{
+							r16 = false
+							ACCU = r20["value"]
+						}
+						else
+						{
+							ACCU = undefined
+						}
+						r5 = ACCU
+						ACCU = -1
+						r18 = -1
+						r17 = -1
+					}
+					catch
+					{
+						r18 = ACCU
+						r17 = 0
+					}
+					if (!r16)
+					{
+						try
+						{
+							if (!r15["return"] == undefined)
+							{
+								ACCU = r15["return"]()
+							}
+							catch {}
+						}
+					}
+					ACCU = null
+					if (r17 === 0)
+					{
+						r9 = 0
+						r10 = r18
+						break
+					}
+					ACCU = <this>["onEviction"](r4, r5)
+				}
+				ACCU = -1
+				r10 = -1
+				r9 = -1
+			}
+			catch
+			{
+				r10 = ACCU
+				r9 = 0
+			}
+			if (!r8)
+			{
+				try
+				{
+					if (!r7["return"] == undefined)
+					{
+						ACCU = r7["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r9 === 0)
+			{
+				ACCU = r10
+			}
+		}
+		<this>["oldCache"] = <this>["cache"]
+		<this>["cache"] = Map(func_unknown_0x100003aba)
+	}
+	return undefined
+}
+function func_initCache_0x100003ab9(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = {}
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r0 = ACCU
+	if (!r0["maxSize"])
+		|| (!r0["maxSize"] > 0)
+	{
+		r4 = "`maxSize` must be a number greater than 0"
+		ACCU = TypeError
+		ACCU = TypeError(r4)
+	}
+	<this>["maxSize"] = r0["maxSize"]
+	<this>["onEviction"] = r0["onEviction"]
+	<this>["cache"] = Map(r0)
+	<this>["oldCache"] = Map(r0)
+	<this>["_size"] = 0
+	return undefined
+}

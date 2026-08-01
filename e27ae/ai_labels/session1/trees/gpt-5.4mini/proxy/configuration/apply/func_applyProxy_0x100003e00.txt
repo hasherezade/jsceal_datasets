@@ -1,0 +1,139 @@
+function func_applyProxy_0x100003e00(a0, a1, a2)
+{
+	Scope[7823][2] = a1
+	Scope[7823][6] = func_yn_0x100003dfb
+	r0 = Scope[7823][2]
+	if (!Scope[7823][2])
+	{
+		if (!(Scope[7823][2] === false))
+		{
+			r5 = Scope[7577][312]["default"]["getProxyForUrl"]
+			r3 = r5(a2)
+			if (r5(a2))
+			{
+				ACCU = URL
+				r0 = URL(r3)
+			}
+		}
+	}
+	if (r0)
+	{
+		if (r0["username"])
+		{
+			r6 = "auth"
+			ACCU = r0["username"]
+			r5 = r0
+			if (!r0["username"])
+			{
+				ACCU = ""
+			}
+			r11 = ACCU
+			r9 = (r11 + ":")
+			ACCU = r0["password"]
+			if (!r0["password"])
+			{
+				ACCU = ""
+			}
+			r10 = ACCU
+			ACCU = (r9 + r10)
+			r7 = (r9 + r10)
+			r5[r6] = ACCU
+			ACCU = r7
+		}
+		if (r0["auth"])
+		{
+			r5 = r0["auth"]
+			ACCU = r5["username"]
+			if (!r5["username"])
+			{
+				ACCU = r0["auth"]["password"]
+			}
+			if (ACCU)
+			{
+				r6 = "auth"
+				r11 = r0["auth"]
+				ACCU = r11["username"]
+				r5 = r0
+				if (!r11["username"])
+				{
+					ACCU = ""
+				}
+				r11 = ACCU
+				r9 = (r11 + ":")
+				r10 = r0["auth"]
+				ACCU = r10["password"]
+				if (!r10["password"])
+				{
+					ACCU = ""
+				}
+				r10 = ACCU
+				ACCU = (r9 + r10)
+				r7 = (r9 + r10)
+				r5[r6] = ACCU
+				ACCU = r7
+			}
+			r6 = Buffer["from"]
+			r8 = r0["auth"]
+			r6 = r6(r8, "utf8")
+			r5 = r6["toString"]
+			r2 = r5("base64")
+			r5 = a0["headers"]
+			r6 = "Proxy-Authorization"
+			r9 = "Basic "
+			r5[r6] = (r9 + r2)
+		}
+		r5 = a0["headers"]
+		r6 = "host"
+		r9 = a0["hostname"]
+		ACCU = a0["port"]
+		if (a0["port"])
+		{
+			ACCU = (":" + a0["port"])
+		}
+		else
+		{
+			ACCU = ""
+		}
+		r10 = ACCU
+		r5[r6] = (r9 + r10)
+		ACCU = r0["hostname"]
+		if (!r0["hostname"])
+		{
+			ACCU = r0["host"]
+		}
+		r1 = ACCU
+		a0["hostname"] = r1
+		a0["host"] = r1
+		a0["port"] = r0["port"]
+		r6 = "path"
+		a0[r6] = a2
+		if (r0["protocol"])
+		{
+			r6 = "protocol"
+			r7 = r0["protocol"]["includes"]
+			ACCU = r7(":")
+			r5 = a0
+			if (r7(":"))
+			{
+				ACCU = r0["protocol"]
+			}
+			else
+			{
+				r7 = r0["protocol"]
+				ACCU = (r7 + ":")
+			}
+			r7 = ACCU
+			r5[r6] = ACCU
+			ACCU = r7
+		}
+	}
+	r5 = a0["beforeRedirects"]
+	r5["proxy"] = func_resolveHref_0x100003dff
+	return undefined
+}
+function func_resolveHref_0x100003dff(a0)
+{
+	r6 = a0["href"]
+	ACCU = func_applyProxy_0x100003e00(a0, Scope[7823][2], r6)
+	return undefined
+}

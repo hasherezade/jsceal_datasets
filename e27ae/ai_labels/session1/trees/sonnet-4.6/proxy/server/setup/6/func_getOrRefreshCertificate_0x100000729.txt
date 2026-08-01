@@ -1,0 +1,329 @@
+function func_initializeForgeModule_0x100001b1e(a0, a1)
+{
+	Scope[9795][2] = func_setModuleScope_0x1000017d9(func_initPureJavaScript_0x1000017da)
+	Scope[9795][3] = func_setModuleScope_0x1000017d9(func_initBase58Module_0x1000017de)
+	Scope[9795][4] = func_setModuleScope_0x1000017d9(func_initForgeUtil_0x10000186f)
+	Scope[9795][5] = func_setModuleScope_0x1000017d9(func_initCipherModule_0x10000187a)
+	Scope[9795][6] = func_setModuleScope_0x1000017d9(func_initCipherModesModule_0x10000189f)
+	Scope[9795][7] = func_setModuleScope_0x1000017d9(func_initAesModule_0x1000018b0)
+	Scope[9795][8] = func_setModuleScope_0x1000017d9(func_registerOids_0x1000018b3)
+	Scope[9795][9] = func_setModuleScope_0x1000017d9(func_initAsn1Module_0x1000018c7)
+	Scope[9795][10] = func_setModuleScope_0x1000017d9(func_initMdModule_0x1000018c8)
+	Scope[9795][11] = func_setModuleScope_0x1000017d9(func_initHmacModule_0x1000018cd)
+	Scope[9795][12] = func_setModuleScope_0x1000017d9(func_initMd5Module_0x1000018d4)
+	Scope[9795][13] = func_setModuleScope_0x1000017d9(func_initPemModule_0x1000018da)
+	Scope[9795][14] = func_setModuleScope_0x1000017d9(func_initDesModule_0x1000018e9)
+	Scope[9795][15] = func_setModuleScope_0x1000017d9(func_initPbkdf2Module_0x1000018ef)
+	Scope[9795][16] = func_setModuleScope_0x1000017d9(func_initSha256Module_0x1000018f6)
+	Scope[9795][17] = func_setModuleScope_0x1000017d9(func_initializePrngModule_0x10000190d)
+	Scope[9795][18] = func_setModuleScope_0x1000017d9(func_initModule_0x10000191a)
+	Scope[9795][19] = func_setModuleScope_0x1000017d9(func_initRc2Module_0x10000192b)
+	Scope[9795][20] = func_setModuleScope_0x1000017d9(func_initBigIntegerModule_0x100001997)
+	Scope[9795][21] = func_setModuleScope_0x1000017d9(func_initSha1Module_0x10000199e)
+	Scope[9795][22] = func_setModuleScope_0x1000017d9(func_initPkcs1Module_0x1000019a2)
+	Scope[9795][23] = func_setModuleScope_0x1000017d9(func_initPrimeModule_0x1000019b1)
+	Scope[9795][24] = func_setModuleScope_0x1000017d9(func_initRsaModule_0x1000019e4)
+	Scope[9795][25] = func_setModuleScope_0x1000017d9(func_initPbeModule_0x1000019f8)
+	Scope[9795][26] = func_setModuleScope_0x1000017d9(func_initPkcs7Asn1Validators_0x1000019f9)
+	Scope[9795][27] = func_setModuleScope_0x1000017d9(func_initMgf1Module_0x1000019fc)
+	Scope[9795][28] = func_setModuleScope_0x1000017d9(func_initMgf_0x1000019fd)
+	Scope[9795][29] = func_setModuleScope_0x1000017d9(func_initPssModule_0x100001a01)
+	Scope[9795][30] = func_setModuleScope_0x1000017d9(func_initPkiModule_0x100001a4a)
+	Scope[9795][31] = func_setModuleScope_0x1000017d9(func_initPkcs12Module_0x100001a57)
+	Scope[9795][32] = func_setModuleScope_0x1000017d9(func_initPrivateKeyModule_0x100001a5c)
+	Scope[9795][33] = func_setModuleScope_0x1000017d9(func_initializeTlsModule_0x100001aa4)
+	r1 = func_setModuleScope_0x1000017d9(func_initializeTlsCipherSuites_0x100001aad)
+	Scope[9795][34] = func_setModuleScope_0x1000017d9(func_initSha512Module_0x100001ab7)
+	Scope[9795][35] = func_setModuleScope_0x1000017d9(func_initKeyValidators_0x100001ab8)
+	r2 = func_setModuleScope_0x1000017d9(func_initEd25519Module_0x100001adc)
+	r3 = func_setModuleScope_0x1000017d9(func_initKemModule_0x100001ae4)
+	r4 = func_setModuleScope_0x1000017d9(func_initLogger_0x100001af2)
+	r5 = func_setModuleScope_0x1000017d9(func_initModule_0x100001af3)
+	r6 = func_setModuleScope_0x1000017d9(func_initPkcs7Module_0x100001b15)
+	r7 = func_setModuleScope_0x1000017d9(func_initSshModule_0x100001b1d)
+	a1["exports"] = Scope[9795][2]()
+	ACCU = Scope[9795][7]()
+	ACCU = r1()
+	ACCU = Scope[9795][9]()
+	ACCU = Scope[9795][5]()
+	ACCU = Scope[9795][14]()
+	ACCU = r2()
+	ACCU = Scope[9795][11]()
+	ACCU = r3()
+	ACCU = r4()
+	ACCU = r5()
+	ACCU = Scope[9795][27]()
+	ACCU = Scope[9795][15]()
+	ACCU = Scope[9795][13]()
+	ACCU = Scope[9795][22]()
+	ACCU = Scope[9795][31]()
+	ACCU = r6()
+	ACCU = Scope[9795][32]()
+	ACCU = Scope[9795][23]()
+	ACCU = Scope[9795][17]()
+	ACCU = Scope[9795][29]()
+	ACCU = Scope[9795][18]()
+	ACCU = Scope[9795][19]()
+	ACCU = r7()
+	ACCU = Scope[9795][33]()
+	ACCU = Scope[9795][4]()
+	return undefined
+}
+function func_generateKeyPairAndCertificate_0x10000072c()
+{
+	r6 = (require("crypto"))["generateKeyPairSync"]
+	r7 = "rsa"
+	r8 = new {"modulusLength": 2048, "publicKeyEncoding": null, "privateKeyEncoding": null}
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs1"
+	r9["format"] = "pem"
+	r8["publicKeyEncoding"] = r9
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs8"
+	r9["format"] = "pem"
+	r8["privateKeyEncoding"] = r9
+	r6 = r6(r7, r8)
+	r3 = r6["privateKey"]
+	r4 = func_generateSelfSignedCertificate_0x10000071d(4096)
+	r6 = new {"privateKey": null, "certificate": null}
+	r6["privateKey"] = r3
+	r6["certificate"] = r4
+	return r6
+}
+function func_getOrRefreshCertificate_0x100000729(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r1 = ACCU
+	try
+	{
+		ACCU = a0
+		if (a0 == undefined)
+		{
+			ACCU = false
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r0 = ACCU
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[10704]
+		r9 = r1
+		return Scope[10704][2]
+	}
+	ACCU = func_n_0x100000725
+	try
+	{
+		if (r0)
+		{
+			r6 = func_generateKeyPairAndCertificate_0x10000072c()
+			r9 = global_Lm["set"]
+			r10 = r9(r6)
+			r9 = r1
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(r1)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r9 = r1
+			return r6
+		}
+		r9 = global_Lm["get"]
+		r10 = r9()
+		r9 = r1
+		r9 = await r10
+		r10 = _GeneratorGetResumeMode(r1)
+		if (!r10 === 0)
+		{
+			ACCU = r9
+		}
+		r4 = r9
+		if (!r4)
+		r12 = r4["certificate"]["value"]
+		ACCU = func_validateCertificate_0x100000724(r12)
+			|| (!func_validateCertificate_0x100000724(r12))
+		{
+			ACCU = func_getOrRefreshCertificate_0x100000729(true)
+		}
+		else
+		{
+			ACCU = r4
+		}
+		r10 = ACCU
+		r9 = r1
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10706]
+	r10 = r1
+	return Scope[10706][2]
+}
+function func_validateCertificate_0x100000724(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "30d"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	Scope[10707][3] = func_n_0x10000071e
+	r10 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r9 = r10["certificateFromPem"]
+	r5 = r9(r0)
+	r9 = Date["now"]
+	r6 = r9()
+	r14 = global_zp["default"](r1)
+	r11 = (r6 - r14)
+	r13 = r5["validity"]["notBefore"]
+	r12 = r13["getTime"]
+	r12 = r12()
+	if (r11 < r12)
+	r14 = global_zp["default"](r1)
+	r11 = (r6 + r14)
+	r13 = r5["validity"]["notAfter"]
+	r12 = r13["getTime"]
+	r12 = r12()
+		|| (r11 > r12)
+	{
+		return false
+	}
+	r10 = GetIterator(global_ID)
+	r9 = r10["next"]
+	ACCU = false
+	r11 = false
+	try
+	{
+		while (true)
+		{
+			r11 = true
+			r15 = r9()
+			if (r15["done"]) break
+			r11 = false
+			Scope[10708][2] = r15["value"]["name"]
+			r18 = r5["extensions"]
+			r17 = r18["some"]
+			r15 = r15["value"]
+			if (r17(func_matchName_0x100000723)) continue
+			r13 = false
+			ACCU = 1
+			r12 = 1
+			break
+		}
+		ACCU = -1
+		r13 = -1
+		r12 = -1
+	}
+	catch
+	{
+		r13 = ACCU
+		r12 = 0
+	}
+	if (!r11)
+	{
+		try
+		{
+			if (!r10["return"] == undefined)
+			{
+				ACCU = r10["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r12)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r13
+	}
+	case (1):
+	{
+		return r13
+	}
+	return true
+}
+function func_matchName_0x100000723(a0)
+{
+	return a0["name"] === Scope[10708][2]
+}
+function func_generateSelfSignedCertificate_0x10000071d(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "1y"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	r13 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r13 = r13["rsa"]
+	r12 = r13["generateKeyPair"]
+	r12 = r12(r0)
+	r5 = r12["publicKey"]
+	r6 = r12["privateKey"]
+	r13 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r12 = r13["createCertificate"]
+	r7 = r12()
+	r12 = Date["now"]
+	r8 = r12()
+	r7["publicKey"] = r5
+	r13 = "serialNumber"
+	r15 = (require("crypto"))["randomBytes"](20)
+	r14 = r15["toString"]
+	r7[r13] = r14("hex")
+	r12 = r7["subject"]["addField"]
+	r14 = new {"shortName": "C", "value": "US"}
+	ACCU = r12(r14)
+	r12 = r7["setIssuer"]
+	r14 = r7["subject"]["attributes"]
+	ACCU = r12(r14)
+	r12 = r7["validity"]
+	r13 = "notBefore"
+	r18 = global_zp["default"](r1)
+	r15 = (r8 - r18)
+	ACCU = Date
+	r12[r13] = Date(r15)
+	r12 = r7["validity"]
+	r13 = "notAfter"
+	r18 = global_zp["default"](r1)
+	r15 = (r8 + r18)
+	ACCU = Date
+	r12[r13] = Date(r15)
+	ACCU = r7["setExtensions"](global_ID)
+	r12 = r7["sign"]
+	r16 = (func_initializeForgeModule_0x100001b1e["exports"]())["md"]["sha256"]
+	r15 = r16["create"]
+	r15 = r15()
+	ACCU = r12(r6, r15)
+	r13 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r12 = r13["privateKeyToPem"]
+	r9 = r12(r6)
+	r13 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r12 = r13["certificateToPem"]
+	r10 = r12(r7)
+	r12 = new {"key": null, "value": null}
+	r12["key"] = r9
+	r12["value"] = r10
+	return r12
+}

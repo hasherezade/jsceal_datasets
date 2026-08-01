@@ -1,0 +1,534 @@
+function func_initBrowsersModule_0x10000b77e(a0)
+{
+	Scope[1560][15] = func_C_0x10000b767
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultC_0x10000b771
+	}
+	Scope[1560][16] = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	r5 = "browsers"
+	r7 = "findInstalledBrowser"
+	r9 = "iterInstalledBrowsers"
+	r11 = "iterBrowsers"
+	r13 = "BrowserExtension"
+	r15 = "BrowserProfile"
+	r18 = undefined
+	a0["Browser"] = undefined
+	a0[r15] = r18
+	a0[r13] = r18
+	a0[r11] = r18
+	a0[r9] = r18
+	a0[r7] = r18
+	a0[r5] = r18
+	r7 = func_initializeBrowserConfig_0x10000a9ad["exports"]()
+	r1 = Scope[1560][16](r7)
+	r2 = func_initializeKeysModule_0x10000a9b1["exports"]()
+	Scope[1560][17] = func_initBrowserProfileModule_0x10000b751["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "Browser"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getDefaultExport1560a_0x10000b773
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][18] = func_initBrowserDataModule_0x10000b6e2["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "BrowserProfile"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getDefaultExport1560b_0x10000b775
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][19] = func_initializeSessionContextModule_0x10000adff["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "BrowserExtension"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getDefaultExport1560c_0x10000b777
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][20] = func_initBrowserModule_0x10000b766["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "iterBrowsers"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getIterBrowsers_0x10000b779
+	ACCU = r4(a0, r7, r8)
+	r4 = Object["defineProperty"]
+	r7 = "iterInstalledBrowsers"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getIterInstalledBrowsers_0x10000b77b
+	ACCU = r4(a0, r7, r8)
+	r4 = Object["defineProperty"]
+	r7 = "findInstalledBrowser"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getFindInstalledBrowser_0x10000b77d
+	ACCU = r4(a0, r7, r8)
+	r6 = r2["keys"]
+	r7 = r1["default"]["browsers"]
+	a0["browsers"] = r6(r7)
+	return undefined
+}
+function func_initBrowserModule_0x10000b766(a0)
+{
+	Scope[1564][11] = func_l_0x10000b752
+	Scope[1564][16] = func_findApplicationInstallLocation_0x10000b75d
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultB_0x10000b765
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	a0["iterBrowsers"] = func_generateServiceKeys_0x10000b754
+	a0["iterInstalledBrowsers"] = func_listApplicationInstallations_0x10000b756
+	a0["findInstalledBrowser"] = func_createApplicationConfig_0x10000b758
+	r10 = func_initializeBrowserConfig_0x10000a9ad["exports"]()
+	r2 = r1(r10)
+	r10 = func_initBrowserProfileModule_0x10000b751["exports"]()
+	Scope[1564][12] = r1(r10)
+	Scope[1564][13] = func_initializeNativeModule_0x1000054f8["exports"]()
+	Scope[1564][14] = func_initializeKeysModule_0x10000a9b1["exports"]()
+	r7 = r2["default"]
+	Scope[1564][15] = r7["browsers"]
+	return undefined
+}
+function func_findApplicationInstallLocation_0x10000b75d(a0, a1, a2)
+{
+	Scope[1566][2] = a0
+	Scope[1566][3] = a1
+	ACCU = a2
+	if (a2 == undefined)
+	{
+		r4 = Scope[1564][13]["listInstalledApplications"]
+		ACCU = r4()
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r0 = ACCU
+	Scope[1567][3] = func_F_0x10000b759
+	r5 = r0["filter"]
+	r1 = r5(func_getExtensionInstallLocation_0x10000b75a)
+	r5 = r1["find"]
+	ACCU = r5(func_isUserScoped_0x10000b75b)
+	if (!r5(func_isUserScoped_0x10000b75b))
+	{
+		r5 = r1["find"]
+		ACCU = r5(func_hasNoUser_0x10000b75c)
+		if (!r5(func_hasNoUser_0x10000b75c))
+		{
+			ACCU = r1[0]
+		}
+	}
+	r2 = ACCU
+	if (!ACCU)
+	{
+		r6 = ("Could not find " + Scope[1566][2]["name"])
+		ACCU = Error
+		ACCU = Error(r6)
+	}
+	return r2["install"]["location"]
+}
+function func_createApplicationConfig_0x10000b758(a0, a1)
+{
+	r8 = func_findApplicationInstallLocation_0x10000b75d(Scope[1564][15][a0]["msi"], a1)
+	r9 = Scope[1564][12]["default"]
+	ACCU = Scope[1564][12]["default"]
+	return r9(a0, Scope[1564][15][a0]["userData"], Scope[1564][15][a0]["executable"], Scope[1564][15][a0]["hmacKey"], Scope[1564][15][a0]["serviceKeys"], Scope[1564][15][a0]["launch"], Scope[1564][15][a0]["extensions"], r8)
+}
+function func_listApplicationInstallations_0x10000b756(a0)
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r15 = r0
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r15
+	}
+	case (1):
+	{
+		return r15
+	}
+	case (0):
+	{}
+	r15 = Scope[1564][13]["listInstalledApplications"]
+	r1 = r15()
+	r19 = 106512
+	r15 = Scope[1564][14]["keys"]
+	r17 = r15(Scope[1564][15])
+	r16 = GetIterator(r17)
+	r15 = r16["next"]
+	ACCU = false
+	r17 = false
+	try
+	{
+		while (true)
+		{
+			r17 = true
+			r21 = r15()
+			if (r21["done"]) break
+			r17 = false
+			r5 = r21["value"]
+			r6 = Scope[1564][15][r21["value"]]["userData"]
+			r7 = Scope[1564][15][r21["value"]]["executable"]
+			r8 = Scope[1564][15][r21["value"]]["hmacKey"]
+			r9 = Scope[1564][15][r21["value"]]["serviceKeys"]
+			r10 = Scope[1564][15][r21["value"]]["launch"]
+			r11 = Scope[1564][15][r21["value"]]["msi"]
+			r12 = Scope[1564][15][r21["value"]]["extensions"]
+			r21 = r21["value"]
+			try
+			{
+				r26 = r11
+				r27 = a0
+				r28 = r1
+				r13 = func_findApplicationInstallLocation_0x10000b75d(r26, r27, r28)
+				r23 = Scope[1564][12]["default"]
+				ACCU = Scope[1564][12]["default"]
+				r24 = r5
+				r25 = r6
+				r26 = r7
+				r27 = r8
+				r28 = r9
+				r29 = r10
+				r30 = r12
+				r31 = r13
+				r23 = r23(r24, r25, r26, r27, r28, r29, r30, r31)
+				r23 = _CreateIterResultObject(r23, false)
+				switch (_GeneratorGetResumeMode(r0))
+				default:
+				{
+					ACCU = r23
+				}
+				case (1):
+				{
+					r18 = 1
+					r19 = r23
+					break
+				}
+				case (0):
+				{}
+				ACCU = r23
+				continue
+			}
+			catch {}
+			ACCU = null
+			ACCU = Scope[1568]
+		}
+		ACCU = -1
+		r19 = -1
+		r18 = -1
+	}
+	catch
+	{
+		r19 = ACCU
+		r18 = 0
+	}
+	if (!r17)
+	{
+		try
+		{
+			if (!r16["return"] == undefined)
+			{
+				ACCU = r16["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r18)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r19
+	}
+	case (1):
+	{
+		return r19
+	}
+	return undefined
+}
+function func_generateServiceKeys_0x10000b754()
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r11 = r0
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r11
+	}
+	case (1):
+	{
+		return r11
+	}
+	case (0):
+	{}
+	r14 = 125542
+	r11 = Scope[1564][14]["keys"]
+	r13 = r11(Scope[1564][15])
+	r12 = GetIterator(r13)
+	r11 = r12["next"]
+	ACCU = false
+	r13 = false
+	try
+	{
+		while (true)
+		{
+			r13 = true
+			r17 = r11()
+			if (r17["done"]) break
+			r13 = false
+			r18 = Scope[1564][12]["default"]
+			ACCU = Scope[1564][12]["default"]
+			r18 = r18(r17["value"], Scope[1564][15][r17["value"]]["userData"], Scope[1564][15][r17["value"]]["executable"], Scope[1564][15][r17["value"]]["hmacKey"], Scope[1564][15][r17["value"]]["serviceKeys"], Scope[1564][15][r17["value"]]["launch"], Scope[1564][15][r17["value"]]["extensions"])
+			r17 = r17["value"]
+			r18 = _CreateIterResultObject(r18, false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r18
+			}
+			case (1):
+			{
+				r14 = 1
+				r15 = r18
+				break
+			}
+			case (0):
+			{}
+			ACCU = r18
+		}
+		ACCU = -1
+		r15 = -1
+		r14 = -1
+	}
+	catch
+	{
+		r15 = ACCU
+		r14 = 0
+	}
+	if (!r13)
+	{
+		try
+		{
+			if (!r12["return"] == undefined)
+			{
+				ACCU = r12["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r14)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r15
+	}
+	case (1):
+	{
+		return r15
+	}
+	return undefined
+}
+function func_initBrowserProfileModule_0x10000b751(a0)
+{
+	Scope[1569][10] = func_l_0x10000b742
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultAlt_0x10000b748
+	}
+	r2 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = func_initBrowserDataModule_0x10000b6e2["exports"]()
+	Scope[1569][11] = r2(r8)
+	Scope[1569][12] = func_initLocalStateProfilesModule_0x10000b6f1["exports"]()
+	Scope[1569][13] = func_initBrowserLaunchModule_0x10000b741["exports"]()
+	Scope[1569][14] = require("path")
+	ACCU = ToName("iterProfiles")
+	ACCU = ToName("launch")
+	ACCU = ToName("executablePath")
+	r6 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 29]], func_appConfigConstructor_0x10000b74a, null, 108117, func_iterateProfiles_0x10000b74c, func_l_0x10000b742, func_launchBrowser_0x10000b74e, "[()[", func_getExecutablePath_0x10000b750)
+	a0["default"] = func_appConfigConstructor_0x10000b74a
+	return undefined
+}
+function func_getExecutablePath_0x10000b750()
+{
+	r2 = Scope[1569][14]["join"]
+	r3 = <this>["path"]
+	return r2(r3, <this>["executable"])
+}
+function func_launchBrowser_0x10000b74e(a0)
+{
+	r1 = Scope[1569][13]["launchBrowser"]
+	r2 = <this>["executablePath"]
+	r3 = <this>["launchOptions"]
+	return r1(r2, r3, a0)
+}
+function func_appConfigConstructor_0x10000b74a(a0, a1, a2, a3, a4, a5, a6, a7)
+{
+	r0 = a0
+	r1 = a1
+	r2 = a2
+	r3 = a3
+	r4 = a4
+	r5 = a5
+	r6 = a6
+	ACCU = a7
+	if (a7 == undefined)
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a7
+	}
+	r7 = ACCU
+	<this>["application"] = r0
+	<this>["userData"] = r1
+	<this>["executable"] = r2
+	<this>["hmacKey"] = r3
+	<this>["serviceKeys"] = r4
+	<this>["launchOptions"] = r5
+	<this>["extensions"] = r6
+	<this>["path"] = r7
+	return undefined
+}
+function func_initBrowserLaunchModule_0x10000b741(a0)
+{
+	Scope[1574][7] = func_a_0x10000b739
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000b740
+	}
+	r1 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	a0["launchBrowser"] = func_launchBrowser_0x10000b73b
+	r11 = func_initDeepMergeModule_0x10000b738["exports"]()
+	Scope[1574][8] = r1(r11)
+	r11 = func_unknown_0x1000017d5["exports"]()
+	Scope[1574][9] = r1(r11)
+	r2 = func_unknown_0x1000017d6["exports"]()
+	r9 = Array.from(r2["core"])
+	r8 = r9["length"]
+	r12 = r2["stealth"]
+	r11 = GetIterator(r12)
+	r10 = r11["next"]
+	while (true)
+	{
+		r12 = r10()
+		if (r12["done"]) break
+		r9[r8] = r12["value"]
+		r8 = (r8 + 1)
+	}
+	r9 = GetIterator(r9)
+	r8 = r9["next"]
+	ACCU = false
+	r10 = false
+	try
+	{
+		while (true)
+		{
+			r10 = true
+			r14 = r8()
+			if (r14["done"]) break
+			r10 = false
+			r16 = Scope[1574][9]["default"]
+			r15 = r16["use"]
+			r17 = r14["value"]()
+			ACCU = r15(r17)
+			r14 = r14["value"]
+		}
+		ACCU = -1
+		r12 = -1
+		r11 = -1
+	}
+	catch
+	{
+		r12 = ACCU
+		r11 = 0
+	}
+	if (!r10)
+	{
+		try
+		{
+			if (!r9["return"] == undefined)
+			{
+				ACCU = r9["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r11 === 0)
+	{
+		ACCU = r12
+	}
+	return undefined
+}
+function func_launchBrowser_0x10000b73b(a0, a1, a2)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = {}
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	ACCU = a2
+	if (a2 == undefined)
+	{
+		ACCU = {}
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r2 = ACCU
+	r5 = Scope[1574][9]["default"]["launch"]
+	r8 = Scope[1574][8]["default"]
+	r9 = new {"executablePath": null}
+	r9["executablePath"] = r0
+	ACCU = _CopyDataProperties(r9, r1)
+	r8 = r8(r9, r2)
+	r7 = CloneObject(r8)
+	r7["headless"] = "shell"
+	return r5(r7)
+}

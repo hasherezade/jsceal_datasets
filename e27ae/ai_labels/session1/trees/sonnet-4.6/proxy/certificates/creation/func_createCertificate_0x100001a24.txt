@@ -1,0 +1,256 @@
+function func_createCertificate_0x100001a24()
+{
+	Scope[9830][2] = {}
+	Scope[9830][2]["version"] = 2
+	Scope[9830][2]["serialNumber"] = "00"
+	Scope[9830][2]["signatureOid"] = null
+	Scope[9830][2]["signature"] = null
+	Scope[9830][2]["siginfo"] = {}
+	Scope[9830][2]["siginfo"]["algorithmOid"] = null
+	Scope[9830][2]["validity"] = {}
+	Scope[9830][2]["validity"]["notBefore"] = Date(Scope[9825])
+	Scope[9830][2]["validity"]["notAfter"] = Date(Scope[9825])
+	Scope[9830][2]["issuer"] = {}
+	Scope[9830][2]["issuer"]["getField"] = func_getIssuerAttribute_0x100001a16
+	Scope[9830][2]["issuer"]["addField"] = func_addIssuerAttribute_0x100001a17
+	Scope[9830][2]["issuer"]["attributes"] = []
+	Scope[9830][2]["issuer"]["hash"] = null
+	Scope[9830][2]["subject"] = {}
+	Scope[9830][2]["subject"]["getField"] = func_getSubjectAttribute_0x100001a18
+	Scope[9830][2]["subject"]["addField"] = func_addSubjectAttribute_0x100001a19
+	Scope[9830][2]["subject"]["attributes"] = []
+	Scope[9830][2]["subject"]["hash"] = null
+	Scope[9830][2]["extensions"] = []
+	Scope[9830][2]["publicKey"] = null
+	Scope[9830][2]["md"] = null
+	Scope[9830][2]["setSubject"] = func_setSubjectAttributes_0x100001a1a
+	Scope[9830][2]["setIssuer"] = func_setIssuerAttributes_0x100001a1b
+	Scope[9830][2]["setExtensions"] = func_setExtensions_0x100001a1c
+	Scope[9830][2]["getExtension"] = func_getExtension_0x100001a1d
+	Scope[9830][2]["sign"] = func_signCertificate_0x100001a1e
+	Scope[9830][2]["verify"] = func_verifyCertificate_0x100001a1f
+	Scope[9830][2]["isIssuer"] = func_checkIssuerMatch_0x100001a20
+	Scope[9830][2]["issued"] = func_isIssuedBy_0x100001a21
+	Scope[9830][2]["generateSubjectKeyIdentifier"] = func_generateSubjectKeyIdentifier_0x100001a22
+	Scope[9830][2]["verifySubjectKeyIdentifier"] = func_verifySubjectKeyIdentifier_0x100001a23
+	return Scope[9830][2]
+}
+function func_verifySubjectKeyIdentifier_0x100001a23()
+{
+	r0 = Scope[9825][5]["subjectKeyIdentifier"]
+	r1 = 0
+	while (true)
+	{
+		if (!r1 < Scope[9830][2]["extensions"]["length"]) break
+		if (!Scope[9830][2]["extensions"][r1]["id"] === r0) continue
+		r5 = Scope[9830][2]["generateSubjectKeyIdentifier"]()
+		r3 = r5["getBytes"]()
+		r4 = Scope[9825][2]["util"]["hexToBytes"](Scope[9830][2]["extensions"][r1]["subjectKeyIdentifier"])
+		return r4 === r3
+		r1 = (r1 + 1)
+	}
+	return false
+}
+function func_generateSubjectKeyIdentifier_0x100001a22()
+{
+	r3 = new {"type": "RSAPublicKey"}
+	return Scope[9825][4]["getPublicKeyFingerprint"](Scope[9830][2]["publicKey"], r3)
+}
+function func_isIssuedBy_0x100001a21(a0)
+{
+	return a0["isIssuer"](Scope[9830][2])
+}
+function func_checkIssuerMatch_0x100001a20(a0)
+{
+	r0 = false
+	r1 = Scope[9830][2]["issuer"]
+	r2 = a0["subject"]
+	if (Scope[9830][2]["issuer"]["hash"])
+		&& (a0["subject"]["hash"])
+	{
+		r0 = Scope[9830][2]["issuer"]["hash"] === a0["subject"]["hash"]
+	}
+	else
+	{
+		if (Scope[9830][2]["issuer"]["attributes"]["length"] === a0["subject"]["attributes"]["length"])
+		{
+			r0 = true
+			r5 = 0
+			while (true)
+			{
+				if (!r0) break
+				if (!r5 < r1["attributes"]["length"]) break
+				ACCU = !(r1["attributes"][r5]["type"] === r2["attributes"][r5]["type"])
+				if (!!(r1["attributes"][r5]["type"] === r2["attributes"][r5]["type"]))
+				{
+					ACCU = !(r1["attributes"][r5]["value"] === r2["attributes"][r5]["value"])
+				}
+				if (!ACCU) continue
+				r0 = false
+				r5 = (r5 + 1)
+			}
+		}
+	}
+	return r0
+}
+function func_verifyCertificate_0x100001a1f(a0)
+{
+	r0 = false
+	if (!Scope[9830][2]["issued"](a0))
+	{
+		ACCU = Error
+		r3 = Error("The parent certificate did not issue the given child certificate; the child certificate's issuer does not match the parent's subject.")
+		r3["expectedIssuer"] = Scope[9830][2]["subject"]["attributes"]
+		r3["actualIssuer"] = a0["issuer"]["attributes"]
+		ACCU = r3
+	}
+	r4 = a0["md"]
+	if (a0["md"] == null)
+	{
+		r8 = new {"signatureOid": null, "type": "certificate"}
+		r8["signatureOid"] = a0["signatureOid"]
+		r4 = func_createMessageDigest_0x100001a0c(r8)
+		ACCU = a0["tbsCertificate"]
+		if (!a0["tbsCertificate"])
+		{
+			ACCU = Scope[9825][4]["getTBSCertificate"](a0)
+		}
+		r5 = ACCU
+		r6 = Scope[9825][3]["toDer"](r5)
+		r9 = r6["getBytes"]()
+		ACCU = r4["update"](r9)
+	}
+	if (!(null == r4))
+	{
+		r8 = new {"certificate": null, "md": null, "signature": null}
+		r8["certificate"] = Scope[9830][2]
+		r8["md"] = r4
+		r8["signature"] = a0["signature"]
+		r0 = func_verifyCertSignature_0x100001a0d(r8)
+	}
+	return r0
+}
+function func_signCertificate_0x100001a1e(a0, a1)
+{
+	ACCU = a1
+	if (!a1)
+	{
+		ACCU = Scope[9825][2]["md"]["sha1"]["create"]()
+	}
+	Scope[9830][2]["md"] = ACCU
+	if (!Scope[9825][5][(Scope[9830][2]["md"]["algorithm"] + "WithRSAEncryption")])
+	{
+		ACCU = Error
+		r1 = Error("Could not compute certificate digest. Unknown message digest algorithm OID.")
+		r1["algorithm"] = Scope[9830][2]["md"]["algorithm"]
+		ACCU = r1
+	}
+	Scope[9830][2]["siginfo"]["algorithmOid"] = Scope[9825][5][(Scope[9830][2]["md"]["algorithm"] + "WithRSAEncryption")]
+	Scope[9830][2]["signatureOid"] = Scope[9825][5][(Scope[9830][2]["md"]["algorithm"] + "WithRSAEncryption")]
+	Scope[9830][2]["tbsCertificate"] = Scope[9825][4]["getTBSCertificate"](Scope[9830][2])
+	r2 = Scope[9825][3]["toDer"](Scope[9830][2]["tbsCertificate"])
+	r5 = r2["getBytes"]()
+	ACCU = Scope[9830][2]["md"]["update"](r5)
+	Scope[9830][2]["signature"] = a0["sign"](Scope[9830][2]["md"])
+	return undefined
+}
+function func_getExtension_0x100001a1d(a0)
+{
+	if (typeof(a0) == string)
+	{
+		r3 = new {"name": null}
+		r3["name"] = a0
+		a0 = r3
+		ACCU = r3
+	}
+	r0 = null
+	r2 = 0
+	while (true)
+	{
+		if (r0 != null) break
+		if (!r2 < Scope[9830][2]["extensions"]["length"]) break
+		ACCU = a0["id"]
+		if (a0["id"])
+		{
+			ACCU = Scope[9830][2]["extensions"][r2]["id"] === a0["id"]
+		}
+		if (!ACCU)
+		{
+			ACCU = a0["name"]
+			if (a0["name"])
+			{
+				ACCU = Scope[9830][2]["extensions"][r2]["name"] === a0["name"]
+			}
+		}
+		if (!ACCU) continue
+		r0 = Scope[9830][2]["extensions"][r2]
+		ACCU = Scope[9830][2]["extensions"][r2]
+		r2 = (r2 + 1)
+	}
+	return r0
+}
+function func_setExtensions_0x100001a1c(a0)
+{
+	r0 = 0
+	while (true)
+	{
+		if (!r0 < a0["length"]) break
+		r2 = a0[r0]
+		r3 = new {"cert": null}
+		r3["cert"] = Scope[9830][2]
+		ACCU = func_buildExtension_0x100001a05(r2, r3)
+		r0 = (r0 + 1)
+	}
+	Scope[9830][2]["extensions"] = a0
+	return undefined
+}
+function func_setIssuerAttributes_0x100001a1b(a0, a1)
+{
+	ACCU = func_processAttributes_0x100001a04(a0)
+	Scope[9830][2]["issuer"]["attributes"] = a0
+	delete "uniqueId"[Scope[9830][2]["issuer"]]
+	if (a1)
+	{
+		Scope[9830][2]["issuer"]["uniqueId"] = a1
+		ACCU = a1
+	}
+	Scope[9830][2]["issuer"]["hash"] = null
+	return undefined
+}
+function func_setSubjectAttributes_0x100001a1a(a0, a1)
+{
+	ACCU = func_processAttributes_0x100001a04(a0)
+	Scope[9830][2]["subject"]["attributes"] = a0
+	delete "uniqueId"[Scope[9830][2]["subject"]]
+	if (a1)
+	{
+		Scope[9830][2]["subject"]["uniqueId"] = a1
+		ACCU = a1
+	}
+	Scope[9830][2]["subject"]["hash"] = null
+	return undefined
+}
+function func_addSubjectAttribute_0x100001a19(a0)
+{
+	r2 = new [0]
+	r2[0] = a0
+	ACCU = func_processAttributes_0x100001a04(r2)
+	ACCU = Scope[9830][2]["subject"]["attributes"]["push"](a0)
+	return undefined
+}
+function func_getSubjectAttribute_0x100001a18(a0)
+{
+	return func_findCertAttribute_0x100001a02(Scope[9830][2]["subject"], a0)
+}
+function func_addIssuerAttribute_0x100001a17(a0)
+{
+	r2 = new [0]
+	r2[0] = a0
+	ACCU = func_processAttributes_0x100001a04(r2)
+	ACCU = Scope[9830][2]["issuer"]["attributes"]["push"](a0)
+	return undefined
+}
+function func_getIssuerAttribute_0x100001a16(a0)
+{
+	return func_findCertAttribute_0x100001a02(Scope[9830][2]["issuer"], a0)
+}

@@ -1,0 +1,103 @@
+function func_initProxy_0x100003ce6(a0, a1)
+{
+	Scope[7913][6] = func_a_0x100003cdf
+	r2 = require("url")
+	Scope[7913][7] = r2["URL"]
+	Scope[7913][8] = func_assertType_0x100003cde["exports"]()
+	a1["exports"] = func_proxyOptions_0x100003ce5
+	return undefined
+}
+function func_proxyOptions_0x100003ce5(a0, a1)
+{
+	r5 = "proxyOptions"
+	r8 = new [0]
+	r8[0] = "object"
+	r7 = r8
+	ACCU = Scope[7913][8](r5, a1, r7)
+	r5 = "proxyOptions.headers"
+	r6 = a1["headers"]
+	r8 = new [0, 0]
+	r8[0] = "object"
+	r8[1] = "undefined"
+	r7 = r8
+	ACCU = Scope[7913][8](r5, r6, r7)
+	r5 = "proxyOptions.raw"
+	r6 = a1["raw"]
+	r8 = new [0, 0]
+	r8[0] = "boolean"
+	r8[1] = "undefined"
+	r7 = r8
+	ACCU = Scope[7913][8](r5, r6, r7)
+	r5 = "proxyOptions.url"
+	r6 = a1["url"]
+	r8 = new [0, 0]
+	r8[0] = Scope[7913][7]
+	r8[1] = "string"
+	ACCU = Scope[7913][8](r5, r6, r8)
+	r3 = a1["url"]
+	ACCU = Scope[7913][7]
+	r1 = Scope[7913][7](r3)
+	r3 = "proxyOptions"
+	r4 = new {"raw": <true}
+	ACCU = _CopyDataProperties(r4, a1)
+	r7 = a1["headers"]
+	r4["headers"] = CloneObject(r7)
+	r4["url"] = r1
+	a0[r3] = r4
+	return undefined
+}
+function func_assertType_0x100003cde(a0, a1)
+{
+	Scope[7914][5] = func_a_0x100003cd9
+	a1["exports"] = func_assertType_0x100003cdd
+	return undefined
+}
+function func_assertType_0x100003cdd(a0, a1, a2)
+{
+	Scope[7915][2] = a1
+	Scope[7915][4] = func_l_0x100003cda
+	r2 = a2["some"]
+	if (!r2(func_isInstance_0x100003cdb))
+	{
+		r2 = a2["map"]
+		r0 = r2(func_getName_0x100003cdc)
+		r3 = ("Expected '" + a0)
+		r3 = (r3 + "' to be a type of ")
+		r4 = r0["join"]
+		r3 = (r3 + r4(" or "))
+		r3 = (r3 + ", got ")
+		r3 = (r3 + TypeOf(Scope[7915][2]))
+		ACCU = TypeError
+		ACCU = TypeError(r3)
+	}
+	return undefined
+}
+function func_getName_0x100003cdc(a0)
+{
+	r0 = TypeOf(a0)
+	ACCU = r0 == "string"
+	if (r0 == "string")
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = a0["name"]
+	}
+	return ACCU
+}
+function func_isInstance_0x100003cdb(a0)
+{
+	r0 = TypeOf(a0)
+	ACCU = r0 == "string"
+	if (r0 == "string")
+	{
+		r0 = TypeOf(Scope[7915][2])
+		ACCU = r0 === a0
+	}
+	else
+	{
+		ACCU = Scope[7915][2] instanceof a0
+	}
+	return ACCU
+}

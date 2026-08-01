@@ -1,0 +1,21 @@
+function func_setProxy_0x100004e4f(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r0 = ACCU
+	r3 = Scope[6898][9]["default"]
+	r2 = r3["setProxy"]
+	if (!r2(r0))
+	{
+		ACCU = Error
+		ACCU = Error("Failed to set proxy")
+	}
+	return undefined
+}

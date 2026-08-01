@@ -1,0 +1,15 @@
+function func_CreateProxy_0x10000be7c(a0)
+{
+	Scope[1123][7] = func_G_0x10000be73
+	r1 = new {"LVFry": null, "oRBLh": null, "kfrsX": null, "sZsDy": null, "xoZvv": null}
+	Scope[1123][5] = r1
+	Scope[1123][6] = a0["_def"]
+	return func_createProxy_0x10000be7b
+}
+function func_createProxy_0x10000be7b(a0)
+{
+	Scope[1124][2] = a0
+	Scope[1124][5] = func_te_0x10000be78
+	r1 = Scope[1121][18]["createRecursiveProxy"]
+	return r1(func_dispatchProcedure_0x10000be7a)
+}

@@ -1,0 +1,17 @@
+function func_withCreateProcessUser_0x10000b86b(a0)
+{
+	r0 = global_ZT["withCreateProcessUser"]
+	return r0(a0, func_forkFullImpersonation_0x10000b86a)
+}
+function func_forkFullImpersonation_0x10000b86a()
+{
+	return func_forkClusterWorker_0x100000003(("full-impersonation"))
+}
+function func_forkClusterWorker_0x100000003(a0)
+{
+	r3 = global_uE["default"]["fork"]
+	r5 = new {}
+	ACCU = ToName(("CLUSTER_POOL_ID"))
+	r5[75113] = a0
+	return r3(r5)
+}

@@ -1,0 +1,94 @@
+function func_headers_0x10000bdf6(a0)
+{
+	if (!Scope[1155][5])
+	{
+		return undefined
+	}
+	r8["client_id"] = ("1070009224336-sdh77n7uot3oc99ais00jmuft6sk2fg9.apps.googleusercontent.com")
+	r8["scope"] = ("https://www.google.com/accounts/OAuthLogin")
+	r8["authuser"] = Scope[1155][4]
+	r8["continue"] = Scope[1155][5]
+	if (Scope[1155][7])
+	{
+		ACCU = new {"forceLogin": "1"}
+	}
+	else
+	{
+	}
+	r10 = {}
+	ACCU = _CopyDataProperties(r9, r10)
+	r2 = func_Searchparams_0x1000002a6(global_mB, r8)
+	r4 = a0["headers"]["set"]
+	r6 = "location"
+	r7 = r2["toString"]
+	r7 = r7()
+	ACCU = r4(r6, r7)
+	return new {"status": 302}
+}
+function func_connectUrl_0x100005cce(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}
+function func_Searchparams_0x1000002a6(a0, a1)
+{
+	r0 = new {"V": "Yx9u", "J": 83904, "S": "m[K#", "g": 84337, "L": "nvO5", "X": 56895, "j": "O9*f", "E": 35968, "c": "BS4&", "x": 123482, "K": "YbH*", "u": 89146, "A": "XR6@", "s": 94433}
+	r9 = func_connectUrl_0x100005cce
+	ACCU = func_connectUrl_0x100005cce
+	r2 = func_connectUrl_0x100005cce(r0)
+	if (!a1 == undefined)
+	{
+		r9 = Generator(ToObject(a1))
+		r13 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r13)) break
+			if (r9.next().value == undefined) continue
+			r4 = r9.next().value
+			r6 = r9.next().value
+			r7 = a1[r4]
+			if (r7 == null)
+			{
+				r15 = r2["searchParams"]
+				r14 = r15["delete"]
+				ACCU = r14(r6)
+				continue
+			}
+			r15 = r2["searchParams"]
+			ACCU = r15["set"](r6, r7)
+			r13 = GeneratorStep(r13)
+		}
+	}
+	return r2
+}

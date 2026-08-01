@@ -1,0 +1,3107 @@
+function func_initializeTrpc_0x10000cdef()
+{
+	r3 = 0
+	r10 = require("cluster")
+	global_NU = func_interopProxy_0x10000317a(r10)
+	r10 = func_Socket_0x100006719["exports"]()
+	global_PU = func_interopProxy_0x10000317a(r10)
+	ACCU = func_initTrpc_0x100005534()
+	r10 = func_SocketAdapter_0x10000bfc8["exports"]()
+	global_XU = func_interopProxy_0x10000317a(r10)
+	ACCU = func_noop_0x10000671b()
+	return undefined
+}
+function func_SocketAdapter_0x10000bfc8(a0)
+{
+	Scope[1019][14] = func_E_0x10000bfa5
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["SocketAdapter"] = undefined
+	Scope[1019][16] = func_initRouter_0x10000bf8e["exports"]()
+	Scope[1019][17] = func_initObservable_0x100005d5d["exports"]()
+	Scope[1019][18] = func_trpc_0x100005dd1["exports"]()
+	Scope[1019][19] = func_trpcError_0x100006039["exports"]()
+	Scope[1019][20] = func_exportMessage_0x10000bfa4["exports"]()
+	Scope[1019][21] = func_initPackr_0x1000065ec["exports"]()
+	ACCU = ToName("respond")
+	ACCU = ToName("dispatch")
+	ACCU = ToName("flush")
+	ACCU = ToName("initContext")
+	ACCU = ToName("handleRequest")
+	ACCU = ToName("stopSubscription")
+	ACCU = ToName("close")
+	r4 = DefineClass([17, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60]], func_connection_0x10000bfb3, null, "n@A0", func_enqueueOutgoing_0x10000bfb5, 88447, func_scheduleFlush_0x10000bfb7, func_E_0x10000bfa5, func_SendOutgoing_0x10000bfba, 30739, func_handleRequest_0x10000bfbd, func_E_0x10000bfa5, func_handleMessage_0x10000bfc3, func_E_0x10000bfa5, func_stop_0x10000bfc5, func_E_0x10000bfa5, func_unsubscribeAll_0x10000bfc7)
+	a0["SocketAdapter"] = func_connection_0x10000bfb3
+	return undefined
+}
+function func_unsubscribeAll_0x10000bfc7()
+{
+	r6 = <this>["subscriptions"]
+	r9 = 106415
+	r5 = r6["values"]
+	r7 = r5()
+	r6 = GetIterator(r7)
+	r5 = r6["next"]
+	ACCU = false
+	r7 = false
+	try
+	{
+		while (true)
+		{
+			r7 = true
+			r11 = r5()
+			if (r11["done"]) break
+			r7 = false
+			ACCU = r11["value"]["unsubscribe"]()
+		}
+		ACCU = -1
+		r9 = -1
+		r8 = -1
+	}
+	catch
+	{
+		r9 = ACCU
+		r8 = 0
+	}
+	if (!r7)
+	{
+		try
+		{
+			if (!r6["return"] == undefined)
+			{
+				ACCU = r6["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r8 === 0)
+	{
+		ACCU = r9
+	}
+	r6 = <this>["subscriptions"]
+	ACCU = r6["clear"]()
+	return undefined
+}
+function func_stop_0x10000bfc5(a0, a1)
+{
+	ACCU = a0["unsubscribe"]()
+	r2 = <this>["respond"]
+	r4 = new {"id": null, "result": null}
+	r4["id"] = a1
+	r5 = new {"type": null}
+	r5["type"] = "stopped"
+	r4["result"] = r5
+	ACCU = r2(r4)
+	return undefined
+}
+function func_handleMessage_0x10000bfc3(a0)
+{
+	Scope[1022][2] = <this>
+	r7 = <closure>
+	r8 = <this>
+	Scope[1022][6] = func_D_0x10000bfbe
+	ACCU = null
+	try
+	{
+		Scope[1022][4] = a0["id"]
+		Scope[1022][5] = a0["method"]
+		if (Scope[1022][4] === null)
+		{
+			r8 = Scope[1019][16]["TRPCError"]
+			r9 = new {"code": null, "message": null}
+			r9["code"] = "BAD_REQUEST"
+			r9["message"] = "id is required"
+			ACCU = r8
+			ACCU = r8(r9)
+		}
+		r11 = "subscription.stop"
+		if (Scope[1022][5] === r11)
+		{
+			r8 = Scope[1022][2]["subscriptions"]["get"]
+			r5 = r8(Scope[1022][4])
+			if (r8(Scope[1022][4]))
+			{
+				ACCU = Scope[1022][2]["stopSubscription"](r5, Scope[1022][4])
+			}
+			r8 = Scope[1022][2]["subscriptions"]["delete"]
+			r9 = r8(Scope[1022][4])
+			r8 = <this>
+			return r9
+		}
+		r8 = a0["params"]
+		Scope[1022][7] = r8["path"]
+		ACCU = r8["input"]
+		Scope[1022][8] = r8["input"]
+		try
+		{
+			r10 = Scope[1022][2]["ctxPromise"]
+			r9 = <this>
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(<this>)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r9 = Scope[1019][16]["callProcedure"]
+			r10 = new {"procedures": null, "path": null, "rawInput": null, "ctx": null, "type": null}
+			r11 = Scope[1022][2]["def"]
+			r10["procedures"] = r11["procedures"]
+			r10["path"] = Scope[1022][7]
+			r10["rawInput"] = Scope[1022][8]
+			r10["ctx"] = Scope[1022][2]["ctx"]
+			r10["type"] = Scope[1022][5]
+			r10 = r9(r10)
+			r9 = <this>
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(<this>)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r3 = r9
+			r12 = "subscription"
+			if (!(Scope[1022][5] === r12))
+			{
+				r9 = Scope[1022][2]["respond"]
+				r11 = new {"id": null, "result": null}
+				r11["id"] = Scope[1022][4]
+				r12 = new {"type": null, "data": null}
+				r12["type"] = "data"
+				r12["data"] = r3
+				r11["result"] = r12
+				r10 = r9(r11)
+				r9 = <this>
+				return r10
+			}
+			if (!Scope[1019][17]["isObservable"](r3))
+			{
+				r9 = Scope[1019][16]["TRPCError"]
+				r10 = new {"message": null, "code": null}
+				r11 = ("Subscription " + Scope[1022][7])
+				r10["message"] = (r11 + " did not return an observable")
+				r10["code"] = "INTERNAL_SERVER_ERROR"
+				ACCU = r9
+				ACCU = r9(r10)
+			}
+			r9 = r3["subscribe"]
+			r11 = new {"next": null, "complete": null, "error": null}
+			r11["next"] = func_respondData_0x10000bfbf
+			r11["complete"] = func_stop_0x10000bfc0
+			r11["error"] = func_handleError_0x10000bfc2
+			r4 = r9(r11)
+			r9 = Scope[1022][2]["socket"]
+			if (!r9["open"])
+			{
+				r9 = r4["unsubscribe"]
+				r10 = r9()
+				r9 = <this>
+				return r10
+			}
+			r10 = Scope[1022][2]["subscriptions"]
+			r9 = r10["has"]
+			if (r9(Scope[1022][4]))
+			{
+				ACCU = Scope[1022][2]["stopSubscription"](r4, Scope[1022][4])
+				r9 = Scope[1019][16]["TRPCError"]
+				r10 = new {"message": null, "code": null}
+				r11 = "Duplicate id "
+				r10["message"] = (r11 + Scope[1022][4])
+				r10["code"] = "BAD_REQUEST"
+				ACCU = r9
+				ACCU = r9(r10)
+			}
+			r10 = Scope[1022][2]["subscriptions"]
+			ACCU = r10["set"](Scope[1022][4], r4)
+			r9 = Scope[1022][2]["respond"]
+			r11 = new {"id": null, "result": null}
+			r11["id"] = Scope[1022][4]
+			r12 = new {"type": null}
+			r12["type"] = "started"
+			r11["result"] = r12
+			ACCU = r9(r11)
+		}
+		catch
+		{
+			r9 = ACCU
+			ACCU = null
+			ACCU = Scope[1023]
+			r10 = Scope[1019][16]["getTRPCErrorFromUnknown"]
+			r1 = r10(Scope[1023][2])
+			r10 = Scope[1019][19]["getErrorShape"]
+			r11 = new {"config": null, "error": null, "type": null, "path": null, "input": null, "ctx": null}
+			r12 = Scope[1022][2]["def"]
+			r11["config"] = r12["_config"]
+			r11["error"] = r1
+			r11["type"] = Scope[1022][5]
+			r11["path"] = Scope[1022][7]
+			r11["input"] = Scope[1022][8]
+			r11["ctx"] = Scope[1022][2]["ctx"]
+			r2 = r10(r11)
+			r10 = Scope[1022][2]["respond"]
+			r12 = new {"id": null, "error": null}
+			r12["id"] = Scope[1022][4]
+			r12["error"] = r2
+			ACCU = r10(r12)
+		}
+		r9 = undefined
+		r8 = <this>
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[1024]
+	r9 = <this>
+	return Scope[1024][2]
+}
+function func_handleError_0x10000bfc2(a0)
+{
+	r4 = Scope[1019][16]["getTRPCErrorFromUnknown"]
+	r0 = r4(a0)
+	r4 = Scope[1019][19]["getErrorShape"]
+	r5 = new {"config": null, "error": null, "type": null, "path": null, "input": null, "ctx": null}
+	r6 = Scope[1022][2]["def"]
+	r5["config"] = r6["_config"]
+	r5["error"] = r0
+	r5["type"] = Scope[1022][5]
+	r5["path"] = Scope[1022][7]
+	r5["input"] = Scope[1022][8]
+	r5["ctx"] = Scope[1022][2]["ctx"]
+	r1 = r4(r5)
+	r4 = Scope[1022][2]["respond"]
+	r6 = new {"id": null, "error": null}
+	r6["id"] = Scope[1022][4]
+	r6["error"] = r1
+	ACCU = r4(r6)
+	return undefined
+}
+function func_stop_0x10000bfc0()
+{
+	r0 = Scope[1022][2]["respond"]
+	r2 = new {"id": null, "result": null}
+	r2["id"] = Scope[1022][4]
+	r3 = new {"type": null}
+	r3["type"] = "stopped"
+	r2["result"] = r3
+	return r0(r2)
+}
+function func_respondData_0x10000bfbf(a0)
+{
+	r0 = Scope[1022][2]["respond"]
+	r2 = new {"id": null, "result": null}
+	r2["id"] = Scope[1022][4]
+	r3 = new {"type": null, "data": null}
+	r3["type"] = "data"
+	r3["data"] = a0
+	r2["result"] = r3
+	return r0(r2)
+}
+function func_handleRequest_0x10000bfbd()
+{
+	Scope[1026][2] = <this>
+	r4 = <closure>
+	r5 = <this>
+	ACCU = func_I_0x10000bfbb
+	Scope[1026][4] = func_I_0x10000bfbb
+	try
+	{
+		ACCU = new {"V": 1163}
+		try
+		{
+			r7 = "ctx"
+			r9 = Scope[1026][2]["ctxPromise"]
+			r8 = <this>
+			r8 = await r9
+			r9 = _GeneratorGetResumeMode(<this>)
+			if (!r9 === 0)
+			{
+				ACCU = r8
+			}
+			ACCU = r8
+			Scope[1026][2][r7] = r8
+		}
+		catch
+		{
+			r6 = ACCU
+			ACCU = null
+			ACCU = Scope[1027]
+			r7 = Scope[1019][16]["getTRPCErrorFromUnknown"]
+			r1 = r7(Scope[1027][2])
+			r7 = Scope[1019][19]["getErrorShape"]
+			r8 = new {"config": null, "error": null, "ctx": null}
+			r9 = Scope[1026][2]["def"]
+			r8["config"] = r9["_config"]
+			r8["error"] = r1
+			r8["ctx"] = Scope[1026][2]["ctx"]
+			r2 = r7(r8)
+			r7 = Scope[1026][2]["respond"]
+			r9 = new {"id": <null, "error": null}
+			r9["error"] = r2
+			ACCU = r7(r9, true)
+			ACCU = setImmediate(func_Shutdown_0x10000bfbc)
+		}
+		r6 = undefined
+		r5 = <this>
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[1028]
+	r6 = <this>
+	return Scope[1028][2]
+}
+function func_Shutdown_0x10000bfbc()
+{
+	r0 = Scope[1026][2]["socket"]["close"]
+	return r0()
+}
+function func_SendOutgoing_0x10000bfba()
+{
+	Scope[1029][2] = <this>
+	Scope[1029][4] = func_S_0x10000bfb8
+	if (Scope[1029][2]["dispatchTimeout"])
+	{
+		ACCU = clearTimeout(Scope[1029][2]["dispatchTimeout"])
+		delete "dispatchTimeout"[Scope[1029][2]]
+	}
+	if (!Scope[1029][2]["socket"]["open"])
+		|| (!Scope[1029][2]["outgoing"]["length"])
+	{
+		return undefined
+	}
+	r3 = Scope[1029][2]["outgoing"]["splice"]
+	r3 = r3(0)
+	r2 = r3["map"]
+	r0 = r2(func_transformResponse_0x10000bfb9)
+	r4 = r0["length"]
+	if (r4 === 1)
+	{
+		r2 = Scope[1029][2]["socket"]["send"]
+		r4 = Scope[1019][21]["pack"]
+		r5 = r0["pop"]
+		r5 = r5()
+		r4 = r4(r5)
+		ACCU = r2(r4)
+	}
+	else
+	{
+		r2 = Scope[1029][2]["socket"]["send"]
+		r4 = Scope[1019][21]["pack"]
+		r4 = r4(r0)
+		ACCU = r2(r4)
+	}
+	return undefined
+}
+function func_transformResponse_0x10000bfb9(a0)
+{
+	r0 = Scope[1019][18]["transformTRPCResponse"]
+	r1 = Scope[1029][2]["def"]["_config"]
+	return r0(r1, a0)
+}
+function func_scheduleFlush_0x10000bfb7()
+{
+	if (!<this>["dispatchTimeout"] == undefined)
+	{
+		r2 = "dispatchTimeout"
+		r6 = <this>["flush"]["bind"]
+		r6 = r6(<this>)
+		ACCU = setTimeout(r6)
+		r3 = setTimeout(r6)
+		<this>[r2] = ACCU
+		ACCU = r3
+	}
+	return undefined
+}
+function func_enqueueOutgoing_0x10000bfb5(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = false
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	r5 = <this>["outgoing"]
+	ACCU = r5["push"](r0)
+	r4 = <this>["dispatch"]
+	ACCU = r4()
+	if (r1)
+	{
+		ACCU = <this>["flush"]()
+	}
+	return undefined
+}
+function func_connection_0x10000bfb3(a0)
+{
+	Scope[1031][2] = <this>
+	Scope[1032][5] = func_J_0x10000bfb0
+	Scope[1031][2]["subscriptions"] = Map(a0["socket"])
+	Scope[1031][2]["outgoing"] = []
+	Scope[1031][2]["socket"] = a0["socket"]
+	Scope[1031][2]["def"] = a0["router"]["_def"]
+	Scope[1031][2]["ctxPromise"] = a0["createContext"]()
+	ACCU = Scope[1031][2]["initContext"]()
+	ACCU = a0["socket"]["on"]("message", func_handle_0x10000bfb2)
+	r5 = a0["socket"]["once"]
+	r7 = "close"
+	r8 = Scope[1031][2]["close"]["bind"]
+	r8 = r8(Scope[1031][2])
+	ACCU = r5(r7, r8)
+	return undefined
+}
+function func_handle_0x10000bfb2(a0)
+{
+	r5 = <closure>
+	r6 = <this>
+	r1 = ACCU
+	ACCU = func_k_0x10000bfb1
+	try
+	{
+		try
+		{
+			r11 = new [0]
+			r11[0] = Scope[1019][21]["unpack"](a0)
+			r9 = r11["flat"]
+			r9 = r9()
+			r8 = r9["map"]
+			r8 = r8(Scope[1019][20]["parseMessage"])
+			r7 = r8["map"]
+			r9 = Scope[1031][2]["handleRequest"]["bind"]
+			r9 = r9(Scope[1031][2])
+			r4 = r7(r9)
+			r7 = Promise["all"]
+			r8 = r7(r4)
+			r7 = r1
+			r7 = await r8
+			r8 = _GeneratorGetResumeMode(r1)
+			if (!r8 === 0)
+			{
+				ACCU = r7
+			}
+			ACCU = r7
+		}
+		catch
+		{
+			r7 = ACCU
+			ACCU = null
+			ACCU = Scope[1033]
+			r8 = Scope[1019][16]["TRPCError"]
+			r9 = new {"code": null, "cause": null}
+			r9["code"] = "PARSE_ERROR"
+			r9["cause"] = Scope[1033][2]
+			ACCU = r8
+			r2 = r8(r9)
+			r8 = Scope[1019][19]["getErrorShape"]
+			r9 = new {"config": null, "error": null}
+			r10 = Scope[1031][2]["def"]
+			r9["config"] = r10["_config"]
+			r9["error"] = r2
+			r3 = r8(r9)
+			r8 = Scope[1031][2]["respond"]
+			r10 = new {"id": <null, "error": null}
+			r10["error"] = r3
+			ACCU = r8(r10)
+		}
+		r7 = undefined
+		r6 = r1
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[1034]
+	r7 = r1
+	return Scope[1034][2]
+}
+function func_exportMessage_0x10000bfa4(a0)
+{
+	Scope[1035][11] = func_A_0x10000bf8f
+	Scope[1035][12] = func_assertObject_0x10000bf93
+	Scope[1035][13] = func_validate_0x10000bf95
+	Scope[1035][14] = func_validateRequestId_0x10000bf97
+	Scope[1035][15] = func_validateString_0x10000bf99
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["parseMessage"] = func_normalizeRequest_0x10000bf91
+	return undefined
+}
+function func_validateString_0x10000bf99(a0)
+{
+	r4 = TypeOf(a0)
+	if (!(r4 == "string"))
+	{
+		ACCU = Error
+		ACCU = Error("Invalid string")
+	}
+	return undefined
+}
+function func_validateRequestId_0x10000bf97(a0)
+{
+	if (!(a0 === null))
+	{
+		r4 = TypeOf(a0)
+		if (!r4 == "number")
+		r2 = Number["isNaN"]
+			|| (r2(a0))
+		r5 = (1 / 0)
+			|| (a0 === r5)
+		{
+			r4 = TypeOf(a0)
+			if (!(r4 == "string"))
+			{
+				ACCU = Error
+				ACCU = Error("Invalid request id")
+			}
+		}
+	}
+	return undefined
+}
+function func_validate_0x10000bf95(a0)
+{
+	r4 = "query"
+	if (!(a0 === r4))
+	{
+		r4 = "subscription"
+		if (!(a0 === r4))
+		{
+			if (!(a0 === "mutation"))
+			{
+				ACCU = Error
+				ACCU = Error("Invalid procedure type")
+			}
+		}
+	}
+	return undefined
+}
+function func_assertObject_0x10000bf93(a0)
+{
+	r3 = TypeOf(a0)
+	if (!(r3 == "object"))
+		|| (Array["isArray"](a0))
+		|| (!a0)
+	{
+		ACCU = Error
+		ACCU = Error("Not an object")
+	}
+	return undefined
+}
+function func_normalizeRequest_0x10000bf91(a0)
+{
+	ACCU = func_assertObject_0x10000bf93(a0)
+	ACCU = func_validateRequestId_0x10000bf97(a0["id"])
+	if (a0["method"] === "subscription.stop")
+	{
+		r7 = new {"id": null, "method": null}
+		r7["id"] = a0["id"]
+		r7["method"] = a0["method"]
+		return r7
+	}
+	ACCU = func_validate_0x10000bf95(a0["method"])
+	ACCU = func_assertObject_0x10000bf93(a0["params"])
+	ACCU = func_validateString_0x10000bf99(a0["params"]["path"])
+	r7 = new {"id": null, "method": null, "params": null}
+	r7["id"] = a0["id"]
+	r7["method"] = a0["method"]
+	r8 = new {"input": null, "path": null}
+	r8["input"] = a0["params"]["input"]
+	r8["path"] = a0["params"]["path"]
+	r7["params"] = r8
+	return r7
+}
+function func_initRouter_0x10000bf8e(a0)
+{
+	Scope[1039][76] = func_validator_0x10000be95
+	Scope[1039][78] = func_configure_0x10000be9c
+	Scope[1039][79] = func_resolveValidator_0x10000be9f
+	Scope[1039][80] = func_bind_0x10000bea2
+	Scope[1039][81] = func_mergeObjects_0x10000bea4
+	Scope[1039][82] = func_wrap_0x10000beaf
+	Scope[1039][83] = func_isPlainObject_0x10000beb1
+	Scope[1039][84] = func_inputType_0x10000beb5
+	Scope[1039][85] = func_markOutput_0x10000beb9
+	Scope[1039][87] = func_mergePipeline_0x10000bebb
+	Scope[1039][88] = func_createRouter_0x10000bed0
+	Scope[1039][89] = func_mergePipeline_0x10000bed6
+	Scope[1039][91] = func_AttachMeta_0x10000beee
+	Scope[1039][92] = func_Procedure_0x10000bef1
+	Scope[1039][93] = func_buildRouter_0x10000bef3
+	Scope[1039][94] = func_normalizeInput_0x10000bef5
+	Scope[1039][96] = func_mergeDefaults_0x10000bef7
+	Scope[1039][98] = func_routerInit_0x10000bf08
+	Scope[1039][99] = func_createContext_0x10000bf16
+	Scope[1039][100] = func_ze_0x10000bf17
+	r0 = new {"V": "xQ)2", "J": 98766, "S": "]1@2", "g": 116630, "L": "VHeU", "X": 77007, "j": 110082, "E": "p8sI", "c": 32571, "x": "m[K#", "K": 50176, "u": "Yx9u", "A": 64222, "s": "eeST", "b": 30364, "i": 10253, "w": "L@kv", "f": 107174, "t": "%r7r", "P": 12067, "I": "C0qY", "p": 120764, "o": ")Lyh", "R": 33371, "v": "n@A0", "N": 53206, "M": ")Ku4", "k": 38484, "Q": "B@Sb", "W": 77452, "T": "toM2", "G": 42943, "y": 114488, "e": "p[w*", "U": 108753, "q": "kh^v", "O": 91368, "C": "n@A0", "n": 18919, "r": "]1@2", "H": 87239, "h": "h98j", "Y": 84245, "D": "K&pk", "l": 114990, "a": "JrBU", "V0": 71000, "V1": "vV[N", "V2": 73270, "V3": "9pb7", "V6": 108933, "VV": "h^gm", "VJ": 95440, "Vz": "I@Bf", "Vd": 55497, "Vg": "O9*f", "VL": 18852, "Vc": "p[w*", "Vx": 111085, "VB": "*!!t", "VK": 70172, "Vu": "epz[", "VA": 43762, "Vs": "pdVE", "Vb": 85586, "Vw": "89J2", "Vf": 22463, "Vt": 94931, "VP": "M2Ty", "Vp": 40181, "Vo": "L@kv", "VR": 5367, "VQ": 116414, "VW": "9hYk", "VT": 82719, "VG": "[Jy3", "Vy": 30563, "Ve": 57754, "VU": "pdVE", "Vq": 90444, "VO": "h98j", "Vm": 1239, "VZ": 48974, "Vn": "I@Bf", "Vr": 9126, "VH": ")Ku4", "Vh": 64916, "VY": 156, "VD": "gm42", "Vl": 65811, "Va": 46597, "J0": "x&b0", "J2": 34734, "J3": 12348, "J4": "b48I", "J5": 104430, "J6": 121287, "J7": "%]hf", "J9": 18486, "Jd": "BS4&", "Jg": 31819, "JL": "eeST", "JX": 121330, "Jc": "p8sI", "Jx": 9743, "JB": 20268, "Ju": ")Ku4", "Js": 106218, "Jb": 75512, "Ji": 28772, "Jw": 117495, "Jf": 113230, "Jt": "[Jy3", "JP": 59375, "Jp": "mwAz", "JR": 101017, "JQ": "BS4&", "JW": 1066, "JT": 111973, "JG": 117451, "Jy": 90062, "JU": 62737, "JF": "89J2", "Jq": 106787, "JO": "XR6@", "Jm": 117647, "JC": ")Lyh", "Jn": 39464, "Jr": "h98j", "Jh": 70588, "JY": "b48I", "JD": 62991, "Jl": 58047, "z0": 27677, "z1": "9hYk", "z2": 77589, "z3": "93y[", "z6": 86435, "zV": "p8sI", "zJ": 13663, "zz": 55716, "zd": "mwAz", "zS": 123277, "zg": "L@kv", "zL": 114675, "zX": "pdVE", "zE": 52159, "zc": "8dGo", "zx": 35773, "zB": 34375, "zu": 59297, "zA": "]C&)", "zs": 119757, "zw": "^Ceg", "zf": 75592, "zt": ")Lyh", "zP": 8412, "zp": 57713, "zo": "B@Sb", "zW": 5708, "zG": 22229, "zy": 125069, "zU": 55888, "zF": 124515, "zO": "[()[", "zC": 113944, "zZ": 80449, "zn": 50600, "zr": "^Ceg", "zH": 2310, "zh": "A0Dr", "zY": 119387, "zl": 111462, "za": "]C&)", "d2": 65804, "d3": 65512, "d4": 40671, "d5": "]C&)", "d6": 30663, "d7": 80403, "d9": 8163, "dV": "C0qY", "dJ": 86180, "dz": "9pb7", "dd": 31358, "dg": 122546, "dL": 79164, "dX": 69542, "dj": "%r7r", "dE": 34391, "dc": "93y[", "dx": 53250, "dB": "A5nh", "dK": 33311, "dA": "BS4&", "ds": 11639, "di": "%]hf", "dw": 96489, "df": "I@Bf", "dt": 62469, "dP": 86679, "dI": 112558, "dp": 75100, "dv": "mwAz", "dN": 120353, "dM": 119863, "dQ": "p[w*", "dW": 120307, "dy": "^Ceg", "de": 10417, "dU": 5649, "dO": 60057, "dC": "8dGo", "dZ": 44501, "dn": "kh^v", "dr": 74594, "dH": 50343, "dY": "F1xf", "dD": 103188, "dl": ")Ku4", "da": 123490, "S0": 57529, "S2": "%]hf", "S3": 47194, "S4": 109454, "S5": "[()[", "S6": 101058, "S7": "JrBU", "SV": 62475, "SJ": 24630, "Sz": "pdVE", "Sd": 34004, "Sg": "Yx9u", "SX": 107677, "Sj": "p[w*", "SE": 47078, "Sc": 98630, "Sx": "JrBU", "SB": 52439, "SK": "I@Bf", "SA": 17181, "Ss": 101548, "Sb": 19475, "Si": "vV[N", "Sw": 87386, "Sf": 116134, "St": "iSZ6", "SP": 54706, "Sp": 80478, "SR": "]C&)", "Sv": 79701, "SN": "gm42", "SM": 88735, "Sk": "B@Sb", "SW": 9365, "ST": 89873, "Se": "YbH*", "SU": 71155, "SF": 37939, "Sq": "nvO5", "SO": 73831, "Sm": 29207, "SZ": 86514, "SH": 86704, "SY": 57026, "Sl": "epz[", "g1": 36425, "g2": 79998, "g4": 38111, "g5": 112018, "g6": 102206, "g7": 9608, "g8": "89J2", "gV": 1604, "gz": 119241, "gd": 56017, "gg": "M2Ty", "gX": 118904, "gj": 32133, "gE": 49518, "gc": 64298, "gx": 1451, "gB": "*!!t", "gK": 20901, "gu": 8223, "gs": 74343, "gb": "]C&)", "gw": 125029, "gt": 93784, "gP": 111839, "gp": 74817, "go": "C0qY", "gR": 30664, "gv": 73216, "gN": "eeST", "gk": 113088, "BTA": "8dGo", "BTs": 55678, "BTb": "]1@2", "BTi": 114213, "BTw": 18660, "BTf": 70331, "BTt": "xQ)2", "BTP": 102500, "BTI": "b48I", "BTp": 38241, "BTo": 26056, "BTR": "9hYk", "BTv": 39371, "BTN": "x&b0", "BTM": 37318, "BTk": 61904, "BTQ": "kh^v", "BTW": 111565, "BTT": "93y[", "BTG": 55334, "BTy": 18259, "BTe": "A5nh", "BTU": 689, "BTF": 32209, "BTq": ")Lyh", "BTO": 4097, "BTm": 72331, "BTC": "K&pk", "BTZ": 18560, "BTn": 69667, "BTr": 27752, "BTH": "]C&)", "BTh": 33398, "BTY": "p8sI", "BTD": 94820, "BTl": "A0Dr", "BTa": 75908, "BG0": 13074, "BG1": "89J2", "BG2": 69978, "BG3": "M2Ty", "BG4": 34328, "BG5": "m[K#", "BG6": 111215, "BG7": 74998, "BG8": "eeST", "BG9": 16430, "BGV": 83590, "BGJ": "vV[N", "BGz": 91689, "BGd": "kh^v", "BGS": 17680, "BGg": "[Jy3", "BGL": 3100, "BGX": 97272, "BGj": "YbH*", "BGE": 19017, "BGc": "pdVE", "BGx": 59324, "BGB": "%]hf", "BGK": 104175, "BGu": 45389, "BGA": "^Ceg", "BGs": 30886, "BGb": 96180, "BGi": 101230, "BGw": ")Ku4", "BGf": 11968, "BGP": 120257, "BGI": ")Lyh", "BGp": 104158, "BGo": "93y[", "BGR": 120041, "BGv": "p[w*", "BGN": 102284, "BGM": 108541, "BGk": "^Ceg", "BGQ": 15923, "BGW": "^Ceg", "BGT": 78775, "BGG": 22849, "BGy": "%r7r", "BGe": 89906, "BGU": 72483, "BGF": 69938, "BGq": "BS4&", "BGO": 111733, "BGm": "p8sI", "BGC": 77277, "BGZ": 34412, "BGn": "F1xf", "BGr": 109108, "BGH": "*!!t", "BGh": 34267, "BGY": "B@Sb", "BGD": 56495, "BGl": 88825, "BGa": 57718, "By0": 22164, "By1": 41161, "By2": "eeST", "By3": 47334, "By4": "p[w*", "By5": 33509, "By6": 33349, "By7": "*!!t", "By8": 29182, "By9": 105231, "ByV": 103304, "ByJ": "C0qY", "Byz": 36841, "Byd": "]C&)", "ByS": 108865, "Byg": "89J2", "ByL": 20891, "ByX": "b48I", "Byj": 60933, "ByE": 57325, "Byc": 30015, "Byx": "vV[N", "ByB": 21056, "ByK": "K&pk", "Byu": 38263, "ByA": 78766, "Bys": 30676, "Byb": "*!!t", "Byi": 60023, "Byw": 73791, "Byf": "gm42", "Byt": 69614, "ByP": "L@kv", "ByI": 93402}
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	Scope[1039][71] = func_initTrpc_0x10000be93["exports"]()
+	Scope[1039][72] = func_trpcModule_0x10000be4e["exports"]()
+	Scope[1039][73] = func_initTrpc_0x100005db1["exports"]()
+	Scope[1039][74] = func_errors_0x100005d8a["exports"]()
+	ACCU = func_ErrorCause_0x100005dcb["exports"]()
+	Scope[1039][75] = "middlewareMarker"
+	ACCU = ToName("_def")
+	ACCU = ToName("parseInput")
+	ACCU = ToName("parseOutput")
+	ACCU = ToName("call")
+	ACCU = ToName("inheritMiddlewares")
+	r7 = DefineClass([13, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[28], [12, 20, 28, 36, 44]], func_configure_0x10000bf55, null, 57529, func_cloneProcedure_0x10000bf57, ")Lyh", func_parseRequest_0x10000bf59, func_ze_0x10000bf17, func_validateOutput_0x10000bf5b, func_ze_0x10000bf17, func_runMiddleware_0x10000bf62, "Yx9u", func_clonePipeline_0x10000bf64)
+	Scope[1039][77] = func_configure_0x10000bf55
+	Scope[1039][86] = "middlewareMarker"
+	r7 = "\nThis is a client-only function.\nIf you want to call this function on the server, see https://trpc.io/docs/server/server-side-calls\\n"
+	r6 = r7["trim"]
+	Scope[1039][90] = r6()
+	ACCU = ToName("prefixProcedures")
+	if (func_cloneProcedure_0x10000bf57 === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("query")
+	ACCU = ToName("mutation")
+	ACCU = ToName("subscription")
+	ACCU = ToName("merge")
+	ACCU = ToName("call")
+	ACCU = ToName("createCaller")
+	ACCU = ToName("middleware")
+	ACCU = ToName("formatError")
+	ACCU = ToName("getErrorShape")
+	ACCU = ToName("transformer")
+	ACCU = ToName("flat")
+	ACCU = ToName("interop")
+	r8 = DefineClass([29, <NameDictionary[53], <NumberDictionary[16], [12], <NameDictionary[101], <NumberDictionary[100], [20, 28, 36, 44, 52, 60, 68, 76, 84, 92, 100, 108]], func_initDef_0x10000bf67, null, func_cloneProcedure_0x10000bf57, func_flattenEntries_0x10000bf69, func_ze_0x10000bf17, func_query_0x10000bf6b, "]C&)", func_mutation_0x10000bf6d, func_ze_0x10000bf17, func_subscription_0x10000bf6f, func_ze_0x10000bf17, func_mergeRouter_0x10000bf76, "eeST", func_invokeProcedure_0x10000bf78, "eeST", func_createResolvers_0x10000bf7d, func_ze_0x10000bf17, func_withMiddleware_0x10000bf7f, func_ze_0x10000bf17, func_withFormatter_0x10000bf81, func_ze_0x10000bf17, func_formatError_0x10000bf83, func_ze_0x10000bf17, func_withTransformer_0x10000bf85, func_ze_0x10000bf17, func_identity_0x10000bf86, "93y[", func_router_0x10000bf88)
+	Scope[1040][2] = func_initDef_0x10000bf67
+	Scope[1039][97] = func_initDef_0x10000bf67
+	ACCU = ToName("context")
+	ACCU = ToName("meta")
+	ACCU = ToName("create")
+	r8 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 28]], func_Empty_0x10000bf89, null, func_cloneProcedure_0x10000bf57, func_empty_0x10000bf8a, "A5nh", func_identity_0x10000bf8b, "toM2", func_wrap_0x10000bf8d)
+	Scope[1041][2] = func_Empty_0x10000bf89
+	r4 = func_Empty_0x10000bf89(r0)
+	a0["callProcedure"] = Scope[1039][71]["callProcedure"]
+	a0["createCallerFactory"] = Scope[1039][71]["createCallerFactory"]
+	a0["defaultTransformer"] = Scope[1039][71]["defaultTransformer"]
+	a0["getDataTransformer"] = Scope[1039][71]["getDataTransformer"]
+	a0["procedureTypes"] = Scope[1039][71]["procedureTypes"]
+	a0["TRPCError"] = Scope[1039][72]["TRPCError"]
+	a0["getTRPCErrorFromUnknown"] = Scope[1039][72]["getTRPCErrorFromUnknown"]
+	a0["createInputMiddleware"] = func_inputType_0x10000beb5
+	a0["createOutputMiddleware"] = func_markOutput_0x10000beb9
+	a0["experimental_standaloneMiddleware"] = func_Factory_0x10000bf65
+	a0["initTRPC"] = r4
+	a0["router"] = func_identity_0x10000bef8
+	return undefined
+}
+function func_wrap_0x10000bf8d(a0)
+{
+	r2 = func_createContext_0x10000bf16()
+	return r2(a0)
+}
+function func_identity_0x10000bf8b()
+{
+	return func_Empty_0x10000bf89(func_Empty_0x10000bf89)
+}
+function func_empty_0x10000bf8a()
+{
+	return func_Empty_0x10000bf89(func_Empty_0x10000bf89)
+}
+function func_Empty_0x10000bf89()
+{
+	return undefined
+}
+function func_router_0x10000bf88()
+{
+	return func_buildRouter_0x10000bef3(<this>)
+}
+function func_identity_0x10000bf86()
+{
+	return <this>
+}
+function func_withTransformer_0x10000bf85(a0)
+{
+	r0 = func_normalizeInput_0x10000bef5(a0)
+	r5 = <this>["_def"]["transformer"]
+	if (!(r5 === Scope[1039][71]["defaultTransformer"]))
+	{
+		r4 = "You seem to have double `transformer()`-calls in your router tree"
+		ACCU = Error
+		ACCU = Error(r4)
+	}
+	r4 = CloneObject(<this>["_def"])
+	r4["transformer"] = r0
+	ACCU = func_initDef_0x10000bf67
+	return func_initDef_0x10000bf67(r4)
+}
+function func_formatError_0x10000bf83(a0)
+{
+	r2 = a0["error"]["code"]
+	r5 = new {"message": null, "code": null, "data": null}
+	r5["message"] = a0["error"]["message"]
+	r6 = Scope[1039][74]["TRPC_ERROR_CODES_BY_KEY"]
+	r5["code"] = r6[r2]
+	r6 = new {"code": null, "httpStatus": null}
+	r6["code"] = r2
+	r6["httpStatus"] = Scope[1039][73]["getHTTPStatusCodeFromError"](a0["error"])
+	r5["data"] = r6
+	r3 = r5
+	if (!globalThis["process"] == undefined)
+	ACCU = globalThis["process"]["env"]
+	r7 = globalThis["process"]["env"]
+		&& (!globalThis["process"]["env"] == undefined)
+	{
+		ACCU = r7["NODE_ENV"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r7 = ACCU
+	r8 = "production"
+	if (!(r7 === r8))
+	{
+		r7 = TypeOf(a0["error"]["stack"])
+		r8 = "string"
+		if (r7 == r8)
+		{
+			r5 = r3["data"]
+			r6 = "stack"
+			r7 = a0["error"]
+			ACCU = r7["stack"]
+			r7 = r7["stack"]
+			r5[r6] = ACCU
+			ACCU = r7
+		}
+	}
+	r7 = TypeOf(a0["path"])
+	if (r7 == "string")
+	{
+		r5 = r3["data"]
+		r6 = "path"
+		r5[r6] = a0["path"]
+		ACCU = a0["path"]
+	}
+	r5 = <this>["_def"]["errorFormatter"]
+	r7 = CloneObject(a0)
+	r7["shape"] = r3
+	return r5(r7)
+}
+function func_withFormatter_0x10000bf81(a0)
+{
+	r4 = <this>["_def"]["errorFormatter"]
+	if (!(r4 === Scope[1039][71]["defaultFormatter"]))
+	{
+		r3 = "You seem to have double `formatError()`-calls in your router tree"
+		ACCU = Error
+		ACCU = Error(r3)
+	}
+	r3 = CloneObject(<this>["_def"])
+	r3["errorFormatter"] = a0
+	ACCU = func_initDef_0x10000bf67
+	return func_initDef_0x10000bf67(r3)
+}
+function func_withMiddleware_0x10000bf7f(a0)
+{
+	r3 = CloneObject(<this>["_def"])
+	r6 = <this>["_def"]
+	r5 = Array.from(r6["middlewares"])
+	r5[r5["length"]] = a0
+	r3["middlewares"] = r5
+	ACCU = func_initDef_0x10000bf67
+	return func_initDef_0x10000bf67(r3)
+}
+function func_createResolvers_0x10000bf7d(a0)
+{
+	Scope[1046][2] = <this>
+	Scope[1046][3] = a0
+	Scope[1046][5] = func_yt_0x10000bf79
+	r1 = new {"query": null, "mutation": null, "subscription": null}
+	r1["query"] = func_query_0x10000bf7a
+	r1["mutation"] = func_mutation_0x10000bf7b
+	r1["subscription"] = func_subscription_0x10000bf7c
+	return r1
+}
+function func_invokeProcedure_0x10000bf78(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	r0 = ACCU
+	ACCU = func_Me_0x10000bf77
+	try
+	{
+		r7 = <this>["_def"][Scope[1039][95][a0["type"]]]
+		r4 = r7[a0["path"]]
+		if (!r7[a0["path"]])
+		{
+			r7 = Scope[1039][72]["TRPCError"]
+			r8 = new {"code": null, "message": null}
+			r8["code"] = "NOT_FOUND"
+			r9 = ("No '" + a0["type"])
+			r9 = (r9 + "'-procedure on path \"")
+			r9 = (r9 + a0["path"])
+			r8["message"] = (r9 + "\"")
+			ACCU = r7
+			ACCU = r7(r8)
+		}
+		r7 = r4["call"]
+		r8 = r7(a0)
+		r7 = r0
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[1047]
+	r8 = r0
+	return Scope[1047][2]
+}
+function func_mergeRouter_0x10000bf76(a0, a1)
+{
+	Scope[1048][2] = <this>
+	Scope[1048][5] = func_Me_0x10000bf70
+	Scope[1048][4] = ""
+	r0 = undefined
+	r9 = TypeOf(a0)
+	if (r9 == "string")
+		&& (a1 instanceof func_initDef_0x10000bf67)
+	{
+		Scope[1048][4] = a0
+		r0 = a1
+		ACCU = r0
+	}
+	else
+	{
+		if (a0 instanceof func_initDef_0x10000bf67)
+		{
+			r0 = a0
+			ACCU = r0
+		}
+		else
+		{
+			r8 = "Invalid args"
+			ACCU = Error
+			ACCU = Error(r8)
+		}
+	}
+	r8 = Object["keys"]
+	r10 = r0["_def"]["queries"]
+	r8 = r8(r10)
+	r7 = r8["filter"]
+	r1 = r7(func_hasQuery_0x10000bf71)
+	r8 = Object["keys"]
+	r10 = r0["_def"]["mutations"]
+	r8 = r8(r10)
+	r7 = r8["filter"]
+	r2 = r7(func_hasMutation_0x10000bf72)
+	r8 = Object["keys"]
+	r10 = r0["_def"]["subscriptions"]
+	r8 = r8(r10)
+	r7 = r8["filter"]
+	r3 = r7(func_subscribed_0x10000bf73)
+	r8 = Array.from(r1)
+	r7 = r8["length"]
+	r10 = GetIterator(r2)
+	r9 = r10["next"]
+	while (true)
+	{
+		r11 = r9()
+		if (r11["done"]) break
+		r8[r7] = r11["value"]
+		r7 = (r7 + 1)
+	}
+	r10 = GetIterator(r3)
+	r9 = r10["next"]
+	while (true)
+	{
+		r11 = r9()
+		if (r11["done"]) break
+		r8[r7] = r11["value"]
+		r7 = (r7 + 1)
+	}
+	r4 = r8
+	if (r4["length"])
+	{
+		r9 = r4["join"]
+		r8 = ("Duplicate endpoint(s): " + r9(", "))
+		ACCU = Error
+		ACCU = Error(r8)
+	}
+	r8 = CloneObject(Scope[1048][2]["_def"])
+	r12 = Scope[1048][2]["_def"]["queries"]
+	r16 = r0["_def"]["queries"]
+	r13 = func_prefixMiddlewares_0x10000bf75(r16)
+	r8["queries"] = func_mergeDefaults_0x10000bef7(r12, r13)
+	r12 = Scope[1048][2]["_def"]["mutations"]
+	r16 = r0["_def"]["mutations"]
+	r13 = func_prefixMiddlewares_0x10000bf75(r16)
+	r8["mutations"] = func_mergeDefaults_0x10000bef7(r12, r13)
+	r12 = Scope[1048][2]["_def"]["subscriptions"]
+	r16 = r0["_def"]["subscriptions"]
+	r13 = func_prefixMiddlewares_0x10000bf75(r16)
+	r8["subscriptions"] = func_mergeDefaults_0x10000bef7(r12, r13)
+	ACCU = func_initDef_0x10000bf67
+	return func_initDef_0x10000bf67(r8)
+}
+function func_subscription_0x10000bf6f(a0, a1)
+{
+	r4 = new {"subscriptions": null}
+	r8 = new {}
+	ACCU = ToName(a0)
+	r8[119193] = func_configure_0x10000be9c(a1)
+	r4["subscriptions"] = func_mergeDefaults_0x10000bef7(r8)
+	ACCU = func_initDef_0x10000bf67
+	r1 = func_initDef_0x10000bf67(r4)
+	r3 = <this>["merge"]
+	return r3(r1)
+}
+function func_mutation_0x10000bf6d(a0, a1)
+{
+	r4 = new {"mutations": null}
+	r8 = new {}
+	ACCU = ToName(a0)
+	r8[74995] = func_configure_0x10000be9c(a1)
+	r4["mutations"] = func_mergeDefaults_0x10000bef7(r8)
+	ACCU = func_initDef_0x10000bf67
+	r0 = func_initDef_0x10000bf67(r4)
+	r3 = <this>["merge"]
+	return r3(r0)
+}
+function func_query_0x10000bf6b(a0, a1)
+{
+	r3 = new {"queries": null}
+	r7 = new {}
+	ACCU = ToName(a0)
+	r7[98966] = func_configure_0x10000be9c(a1)
+	r3["queries"] = func_mergeDefaults_0x10000bef7(r7)
+	ACCU = func_initDef_0x10000bf67
+	r1 = func_initDef_0x10000bf67(r3)
+	r2 = <this>["merge"]
+	return r2(r1)
+}
+function func_flattenEntries_0x10000bf69(a0, a1)
+{
+	r0 = func_mergeDefaults_0x10000bef7()
+	r12 = 84523
+	r10 = Object["entries"](a0)
+	r9 = GetIterator(r10)
+	r8 = r9["next"]
+	ACCU = false
+	r10 = false
+	try
+	{
+		while (true)
+		{
+			r10 = true
+			r14 = r8()
+			if (r14["done"]) break
+			r10 = false
+			r15 = r14["value"]
+			r17 = GetIterator(r14["value"])
+			ACCU = false
+			r18 = false
+			try
+			{
+				if (!false)
+				r18 = true
+				r22 = r17["next"]()
+				ACCU = r22["done"]
+					&& (!r22["done"])
+				{
+					r18 = false
+					ACCU = r22["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r5 = ACCU
+				if (!r18)
+				r18 = true
+				r22 = r17["next"]()
+				ACCU = r22["done"]
+					&& (!r22["done"])
+				{
+					r18 = false
+					ACCU = r22["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r6 = ACCU
+				ACCU = -1
+				r20 = -1
+				r19 = -1
+			}
+			catch
+			{
+				r20 = ACCU
+				r19 = 0
+			}
+			if (!r18)
+			{
+				try
+				{
+					if (!r17["return"] == undefined)
+					{
+						ACCU = r17["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r19 === 0)
+			{
+				r11 = 0
+				r12 = r20
+				break
+			}
+			r16 = (a1 + r5)
+			ACCU = r6
+			r0[r16] = r6
+		}
+		ACCU = -1
+		r12 = -1
+		r11 = -1
+	}
+	catch
+	{
+		r12 = ACCU
+		r11 = 0
+	}
+	if (!r10)
+	{
+		try
+		{
+			if (!r9["return"] == undefined)
+			{
+				ACCU = r9["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r11 === 0)
+	{
+		ACCU = r12
+	}
+	return r0
+}
+function func_initDef_0x10000bf67(a0)
+{
+	r3 = "_def"
+	r4 = new {"queries": null, "mutations": null, "subscriptions": null, "middlewares": null, "errorFormatter": null, "transformer": null}
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["queries"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = func_mergeDefaults_0x10000bef7()
+	}
+	r4["queries"] = ACCU
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["mutations"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = func_mergeDefaults_0x10000bef7()
+	}
+	r4["mutations"] = ACCU
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["subscriptions"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = func_mergeDefaults_0x10000bef7()
+	}
+	r4["subscriptions"] = ACCU
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["middlewares"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = []
+	}
+	r4["middlewares"] = ACCU
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["errorFormatter"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = Scope[1039][71]["defaultFormatter"]
+	}
+	r4["errorFormatter"] = ACCU
+	ACCU = a0
+	r5 = a0
+	if (!a0 == undefined)
+	{
+		ACCU = r5["transformer"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU == undefined)
+	{
+		ACCU = Scope[1039][71]["defaultTransformer"]
+	}
+	r4["transformer"] = ACCU
+	<this>[r3] = r4
+	return undefined
+}
+function func_Factory_0x10000bf65()
+{
+	r0 = new {"create": null}
+	r0["create"] = func_wrap_0x10000beaf()
+	return r0
+}
+function func_clonePipeline_0x10000bf64(a0)
+{
+	r1 = <this>["constructor"]
+	r3 = new {"middlewares": null, "resolver": null, "inputParser": null, "outputParser": null, "meta": null}
+	r5 = Array.from(a0)
+	r4 = r5["length"]
+	r2 = r1
+	r7 = GetIterator(<this>["middlewares"])
+	r6 = r7["next"]
+	while (true)
+	{
+		r8 = r6()
+		if (r8["done"]) break
+		r5[r4] = r8["value"]
+		r4 = (r4 + 1)
+	}
+	r3["middlewares"] = r5
+	r3["resolver"] = <this>["resolver"]
+	r3["inputParser"] = <this>["inputParser"]
+	r3["outputParser"] = <this>["outputParser"]
+	r3["meta"] = <this>["meta"]
+	ACCU = r2
+	return r2(r3)
+}
+function func_runMiddleware_0x10000bf62(a0)
+{
+	Scope[1054][2] = <this>
+	Scope[1054][3] = a0
+	r3 = <closure>
+	r4 = <this>
+	r0 = a0
+	ACCU = func_e_0x10000bf5c
+	Scope[1054][10] = func_e_0x10000bf5c
+	try
+	{
+		r4 = Scope[1054][2]["middlewares"]["concat"]
+		r7 = new [0]
+		r7[0] = func_ResolveRequest_0x10000bf5e
+		Scope[1054][8] = r4(r7)
+		Scope[1054][9] = func_parseStep_0x10000bf61
+		r5 = func_parseStep_0x10000bf61()
+		r4 = r0
+		r4 = await r5
+		r5 = _GeneratorGetResumeMode(r0)
+		if (!r5 === 0)
+		{
+			ACCU = r4
+		}
+		r1 = r4
+		if (!r1)
+		{
+			r4 = Scope[1039][72]["TRPCError"]
+			r5 = new {"code": null, "message": null}
+			r5["code"] = "INTERNAL_SERVER_ERROR"
+			r5["message"] = "No result from middlewares - did you forget to `return next()`?"
+			ACCU = r4
+			ACCU = r4(r5)
+		}
+		if (!r1["ok"])
+		{
+			ACCU = r1["error"]
+		}
+		r5 = r1["data"]
+		r4 = r0
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[1055]
+	r5 = r0
+	return Scope[1055][2]
+}
+function func_validateOutput_0x10000bf5b(a0)
+{
+	r3 = <closure>
+	r4 = <this>
+	ACCU = func_qe_0x10000bf5a
+	try
+	{
+		ACCU = new {"V": 296}
+		try
+		{
+			r5 = <this>["parseOutputFn"]
+			r6 = r5(a0)
+			r5 = await r6
+			r6 = _GeneratorGetResumeMode(Scope[1065])
+			if (!r6 === 0)
+			{
+				ACCU = r5
+			}
+			r6 = r5
+			ACCU = r6
+			return r6
+		}
+		catch {}
+		r5 = ACCU
+		ACCU = null
+		ACCU = Scope[1066]
+		r6 = Scope[1039][72]["TRPCError"]
+		r7 = new {"code": null, "cause": null, "message": null}
+		r7["code"] = "INTERNAL_SERVER_ERROR"
+		r7["cause"] = Scope[1066][2]
+		r7["message"] = "Output validation failed"
+		ACCU = r6
+		ACCU = r6(r7)
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[1067]
+	return Scope[1067][2]
+}
+function func_parseRequest_0x10000bf59(a0)
+{
+	r2 = <closure>
+	r3 = <this>
+	r0 = ACCU
+	ACCU = func_je_0x10000bf58
+	try
+	{
+		try
+		{
+			r5 = <this>["parseInputFn"](a0)
+			r4 = r0
+			r4 = await r5
+			r5 = _GeneratorGetResumeMode(r0)
+			if (!r5 === 0)
+			{
+				ACCU = r4
+			}
+			r5 = r4
+			r4 = r0
+			ACCU = r5
+			return r5
+		}
+		catch {}
+		r4 = ACCU
+		ACCU = null
+		ACCU = Scope[1068]
+		r5 = Scope[1039][72]["TRPCError"]
+		r6 = new {"code": null, "cause": null}
+		r6["code"] = "BAD_REQUEST"
+		r6["cause"] = Scope[1068][2]
+		ACCU = r5
+		ACCU = r5(r6)
+	}
+	catch {}
+	r3 = ACCU
+	ACCU = null
+	ACCU = Scope[1069]
+	r4 = r0
+	return Scope[1069][2]
+}
+function func_cloneProcedure_0x10000bf57()
+{
+	r2 = new {"middlewares": null, "resolver": null, "inputParser": null, "outputParser": null, "meta": null}
+	r2["middlewares"] = <this>["middlewares"]
+	r2["resolver"] = <this>["resolver"]
+	r2["inputParser"] = <this>["inputParser"]
+	r2["outputParser"] = <this>["outputParser"]
+	r2["meta"] = <this>["meta"]
+	return r2
+}
+function func_configure_0x10000bf55(a0)
+{
+	<this>["middlewares"] = a0["middlewares"]
+	<this>["resolver"] = a0["resolver"]
+	<this>["inputParser"] = a0["inputParser"]
+	<this>["parseInputFn"] = func_validator_0x10000be95(<this>["inputParser"])
+	<this>["outputParser"] = a0["outputParser"]
+	<this>["parseOutputFn"] = func_validator_0x10000be95(<this>["outputParser"])
+	<this>["meta"] = a0["meta"]
+	return undefined
+}
+function func_createContext_0x10000bf16()
+{
+	Scope[1071][11] = func_Te_0x10000bf09
+	r1 = new {"sBlUo": null, "hNgHX": null, "tpiRy": null, "boJrC": null, "SzMSe": null, "CYcKS": null}
+	Scope[1071][10] = r1
+	return func_createContext_0x10000bf15
+}
+function func_routerInit_0x10000bf08()
+{
+	r1 = ...
+	r0 = ...
+	Scope[1076][9] = func_Ct_0x10000bef9
+	r6 = new {"jUtre": null, "pNUjx": null, "CPUao": null, "xobmR": null, "sLfwT": null}
+	Scope[1076][8] = r6
+	r9 = {}
+	r10 = r1["map"]
+	r10 = r10(func_record_0x10000bf00)
+	r2 = func_applyArgs_0x10000bf4e(...Scope[1039][70], func_mergeObjects_0x10000bea4, r9, r10)
+	r6 = r1["reduce"]
+	r3 = r6(func_errorFormatter_0x10000bf02, Scope[1039][71]["defaultFormatter"])
+	r6 = r1["reduce"]
+	r4 = r6(func_resolveTransformer_0x10000bf04, Scope[1039][71]["defaultTransformer"])
+	r7 = Scope[1039][71]["createRouterFactory"]
+	r9 = new {"errorFormatter": null, "transformer": null, "isDev": null, "allowOutsideOfServer": null, "isServer": null, "$types": null}
+	r9["errorFormatter"] = r3
+	r9["transformer"] = r4
+	r10 = r1["some"]
+	r9["isDev"] = r10(func_isDev_0x10000bf05)
+	r10 = r1["some"]
+	r9["allowOutsideOfServer"] = r10(func_allowOutside_0x10000bf06)
+	r10 = r1["some"]
+	r9["isServer"] = r10(func_isServer_0x10000bf07)
+	ACCU = r1[0]
+	r10 = r1[0]
+	if (!r1[0] == undefined)
+	{
+		r10 = r10["_def"]
+		r10 = r10["_config"]
+		ACCU = r10["$types"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r9["$types"] = ACCU
+	r6 = r7(r9)
+	return r6(r2)
+}
+function func_identity_0x10000bef8()
+{
+	return func_initDef_0x10000bf67(func_initDef_0x10000bf67)
+}
+function func_mergeDefaults_0x10000bef7()
+{
+	r1 = ...
+	r0 = ...
+	r4 = Object["assign"]
+	r6 = Object["create"]
+	r6 = r6(null)
+	return r4(...Object, r6, r1)
+}
+function func_normalizeInput_0x10000bef5(a0)
+{
+	r3 = "input"
+	ACCU = r3 in a0
+	if (r3 in a0)
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r1 = new {"input": null, "output": null}
+		r1["input"] = a0
+		r1["output"] = a0
+		ACCU = r1
+	}
+	return ACCU
+}
+function func_buildRouter_0x10000bef3(a0)
+{
+	r1 = a0["_def"]["errorFormatter"]
+	r2 = a0["_def"]["transformer"]
+	r3 = {}
+	r4 = {}
+	r5 = {}
+	r22 = Object["entries"]
+	r24 = a0["_def"]
+	r26 = 31820
+	r24 = r24["queries"]
+	r24 = r22(r24)
+	r23 = GetIterator(r24)
+	r22 = r23["next"]
+	ACCU = false
+	r24 = false
+	try
+	{
+		while (true)
+		{
+			r24 = true
+			r28 = r22()
+			if (r28["done"]) break
+			r24 = false
+			r29 = r28["value"]
+			r31 = GetIterator(r28["value"])
+			ACCU = false
+			r32 = false
+			try
+			{
+				if (!false)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r20 = ACCU
+				if (!r32)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r21 = ACCU
+				ACCU = -1
+				r34 = -1
+				r33 = -1
+			}
+			catch
+			{
+				r34 = ACCU
+				r33 = 0
+			}
+			if (!r32)
+			{
+				try
+				{
+					if (!r31["return"] == undefined)
+					{
+						ACCU = r31["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r33 === 0)
+			{
+				r25 = 0
+				r26 = r34
+				break
+			}
+			r35 = "query"
+			r34 = r21
+			ACCU = func_Procedure_0x10000bef1(r34, r35)
+			r3[r20] = func_Procedure_0x10000bef1(r34, r35)
+		}
+		ACCU = -1
+		r26 = -1
+		r25 = -1
+	}
+	catch
+	{
+		r26 = ACCU
+		r25 = 0
+	}
+	if (!r24)
+	{
+		try
+		{
+			if (!r23["return"] == undefined)
+			{
+				ACCU = r23["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r25 === 0)
+	{
+		ACCU = r26
+	}
+	r22 = Object["entries"]
+	r24 = a0["_def"]
+	r26 = 36366
+	r24 = r24["mutations"]
+	r24 = r22(r24)
+	r23 = GetIterator(r24)
+	r22 = r23["next"]
+	ACCU = false
+	r24 = false
+	try
+	{
+		while (true)
+		{
+			r24 = true
+			r28 = r22()
+			if (r28["done"]) break
+			r24 = false
+			r29 = r28["value"]
+			r31 = GetIterator(r28["value"])
+			ACCU = false
+			r32 = false
+			try
+			{
+				if (!false)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r16 = ACCU
+				if (!r32)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r17 = ACCU
+				ACCU = -1
+				r34 = -1
+				r33 = -1
+			}
+			catch
+			{
+				r34 = ACCU
+				r33 = 0
+			}
+			if (!r32)
+			{
+				try
+				{
+					if (!r31["return"] == undefined)
+					{
+						ACCU = r31["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r33 === 0)
+			{
+				r25 = 0
+				r26 = r34
+				break
+			}
+			r35 = "mutation"
+			r34 = r17
+			ACCU = func_Procedure_0x10000bef1(r34, r35)
+			r4[r16] = func_Procedure_0x10000bef1(r34, r35)
+		}
+		ACCU = -1
+		r26 = -1
+		r25 = -1
+	}
+	catch
+	{
+		r26 = ACCU
+		r25 = 0
+	}
+	if (!r24)
+	{
+		try
+		{
+			if (!r23["return"] == undefined)
+			{
+				ACCU = r23["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r25 === 0)
+	{
+		ACCU = r26
+	}
+	r22 = Object["entries"]
+	r24 = a0["_def"]
+	r26 = 77315
+	r24 = r24["subscriptions"]
+	r24 = r22(r24)
+	r23 = GetIterator(r24)
+	r22 = r23["next"]
+	ACCU = false
+	r24 = false
+	try
+	{
+		while (true)
+		{
+			r24 = true
+			r28 = r22()
+			if (r28["done"]) break
+			r24 = false
+			r29 = r28["value"]
+			r31 = GetIterator(r28["value"])
+			ACCU = false
+			r32 = false
+			try
+			{
+				if (!false)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r12 = ACCU
+				if (!r32)
+				r32 = true
+				r36 = r31["next"]()
+				ACCU = r36["done"]
+					&& (!r36["done"])
+				{
+					r32 = false
+					ACCU = r36["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r13 = ACCU
+				ACCU = -1
+				r34 = -1
+				r33 = -1
+			}
+			catch
+			{
+				r34 = ACCU
+				r33 = 0
+			}
+			if (!r32)
+			{
+				try
+				{
+					if (!r31["return"] == undefined)
+					{
+						ACCU = r31["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r33 === 0)
+			{
+				r25 = 0
+				r26 = r34
+				break
+			}
+			r35 = "subscription"
+			r34 = r13
+			ACCU = func_Procedure_0x10000bef1(r34, r35)
+			r5[r12] = func_Procedure_0x10000bef1(r34, r35)
+		}
+		ACCU = -1
+		r26 = -1
+		r25 = -1
+	}
+	catch
+	{
+		r26 = ACCU
+		r25 = 0
+	}
+	if (!r24)
+	{
+		r29 = Scope[1039]
+		try
+		{
+			if (!r23["return"] == undefined)
+			{
+				ACCU = r23["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r25 === 0)
+	{
+		ACCU = r26
+	}
+	r9 = func_mergeObjects_0x10000bea4(r3, r4, r5)
+	r23 = Scope[1039][71]["createRouterFactory"]
+	r25 = new {"transformer": null, "errorFormatter": null, "isDev": null}
+	r25["transformer"] = r2
+	r25["errorFormatter"] = r1
+	r28 = process["env"]["NODE_ENV"]
+	r25["isDev"] = !(r28 === "production")
+	r22 = r23(r25)
+	return r22(r9)
+}
+function func_Procedure_0x10000bef1(a0, a1)
+{
+	Scope[1079][3] = func_yt_0x10000beef
+	r4 = a0["_def"]
+	Scope[1079][4] = r4()
+	r0 = func_bind_0x10000bea2(Scope[1079][4]["inputParser"])
+	r1 = func_bind_0x10000bea2(Scope[1079][4]["outputParser"])
+	r2 = func_inputType_0x10000beb5(r0)
+	r8 = new {"inputs": null, "middlewares": null, "meta": null, "output": null, "mutation": null, "query": null, "subscription": null}
+	r10 = new [0]
+	r10[0] = Scope[1079][4]["inputParser"]
+	r8["inputs"] = r10
+	r10 = Array.from(Scope[1079][4]["middlewares"])
+	r10[r10["length"]] = r2
+	r9 = (r10["length"] + 1)
+	r10[r9] = func_markOutput_0x10000beb9(r1)
+	r8["middlewares"] = r10
+	r8["meta"] = Scope[1079][4]["meta"]
+	r8["output"] = Scope[1079][4]["outputParser"]
+	r8["mutation"] = a1 === "mutation"
+	r8["query"] = a1 === "query"
+	r8["subscription"] = a1 === "subscription"
+	r5 = func_createRouter_0x10000bed0(r8)
+	r4 = r5[a1]
+	return r4(func_resolve_0x10000bef0)
+}
+function func_AttachMeta_0x10000beee(a0)
+{
+	Scope[1080][2] = a0
+	func_handler_0x10000beed["_def"] = Scope[1080][2]
+	func_handler_0x10000beed["meta"] = Scope[1080][2]["meta"]
+	return func_handler_0x10000beed
+}
+function func_mergePipeline_0x10000bed6(a0, a1)
+{
+	Scope[1095][2] = a1
+	Scope[1095][5] = func_gt_0x10000bed1
+	r6 = new {"resolver": null, "middlewares": null}
+	r6["resolver"] = Scope[1095][2]
+	r8 = new [0]
+	r8[0] = func_AsyncWrap_0x10000bed5
+	r6["middlewares"] = r8
+	r0 = func_mergePipeline_0x10000bebb(a0, r6)
+	return func_AttachMeta_0x10000beee(r0["_def"])
+}
+function func_createRouter_0x10000bed0(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = {}
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r0 = ACCU
+	r2 = new {"inputs": [], "middlewares": []}
+	r3 = r2
+	ACCU = _CopyDataProperties(r3, r0)
+	Scope[1098][12] = r3
+	r2 = new {"_def": null, "input": null, "output": null, "meta": null, "unstable_concat": null, "use": null, "query": null, "mutation": null, "subscription": null}
+	r2["_def"] = Scope[1098][12]
+	r2["input"] = func_Input_0x10000bec1
+	r2["output"] = func_mergeOutput_0x10000bec3
+	r2["meta"] = func_withMeta_0x10000bec5
+	r2["unstable_concat"] = func_concatPipeline_0x10000bec7
+	r2["use"] = func_useMiddleware_0x10000bec9
+	r2["query"] = func_query_0x10000becb
+	r2["mutation"] = func_mutation_0x10000becd
+	r2["subscription"] = func_subscription_0x10000becf
+	return r2
+}
+function func_mergePipeline_0x10000bebb(a0, a1)
+{
+	ACCU = a1["middlewares"]
+	r5 = a1
+	if (a1["middlewares"] == undefined)
+	{
+		ACCU = []
+	}
+	r1 = ACCU
+	r2 = r5["inputs"]
+	r3 = r5["meta"]
+	r4 = _CopyDataPropertiesWithExcludedPropertiesOnStack(r5, "middlewares", "inputs", "meta")
+	r9 = func_mergeObjects_0x10000bea4(a0, r4)
+	r8 = CloneObject(r9)
+	r10 = Array.from(a0["inputs"])
+	r9 = r10["length"]
+	ACCU = r2
+	if (!r2 == undefined)
+	{
+		ACCU = []
+	}
+	r13 = ACCU
+	r12 = GetIterator(r13)
+	r11 = r12["next"]
+	while (true)
+	{
+		r13 = r11()
+		if (r13["done"]) break
+		r10[r9] = r13["value"]
+		r9 = (r9 + 1)
+	}
+	r8["inputs"] = r10
+	r10 = Array.from(a0["middlewares"])
+	r9 = r10["length"]
+	r12 = GetIterator(r1)
+	r11 = r12["next"]
+	while (true)
+	{
+		r13 = r11()
+		if (r13["done"]) break
+		r10[r9] = r13["value"]
+		r9 = (r9 + 1)
+	}
+	r8["middlewares"] = r10
+	if (a0["meta"])
+	ACCU = r3
+		&& (r3)
+	{
+		r9 = CloneObject(a0["meta"])
+		r10 = r9
+		ACCU = _CopyDataProperties(r10, r3)
+		ACCU = r10
+	}
+	else
+	{
+		ACCU = r3
+		if (!r3 == undefined)
+		{
+			ACCU = a0["meta"]
+		}
+	}
+	r8["meta"] = ACCU
+	return func_createRouter_0x10000bed0(r8)
+}
+function func_markOutput_0x10000beb9(a0)
+{
+	Scope[1104][2] = a0
+	func_validateOutput_0x10000beb8["_type"] = "output"
+	return func_validateOutput_0x10000beb8
+}
+function func_inputType_0x10000beb5(a0)
+{
+	Scope[1108][2] = a0
+	func_callProcedure_0x10000beb4["_type"] = "input"
+	return func_callProcedure_0x10000beb4
+}
+function func_isPlainObject_0x10000beb1(a0)
+{
+	ACCU = a0
+	if (a0)
+	{
+		r3 = TypeOf(a0)
+		r4 = "object"
+		ACCU = r3 == r4
+		if (r3 == r4)
+		{
+			ACCU = !Boolean(Array["isArray"](a0))
+		}
+	}
+	return ACCU
+}
+function func_wrap_0x10000beaf()
+{
+	Scope[1112][6] = func_middlewareInit_0x10000beac
+	return func_wrap_0x10000beae
+}
+function func_mergeObjects_0x10000bea4(a0)
+{
+	r2 = ...
+	r0 = a0
+	r1 = r2
+	r11 = Object["assign"]
+	r14 = Object
+	r13 = Object["create"]
+	r15 = null
+	r13 = r13(null)
+	r5 = r11(r13, a0)
+	r12 = GetIterator(r2)
+	r11 = r12["next"]
+	ACCU = false
+	r13 = false
+	try
+	{
+		while (true)
+		{
+			r13 = true
+			r17 = r11()
+			if (r17["done"]) break
+			r13 = false
+			r8 = r17["value"]
+			if (r17["value"] == undefined) continue
+			r18 = Generator(ToObject(r17["value"]))
+			ACCU = 0
+			r22 = 0
+			while (true)
+			{
+				if (!GeneratorContinue(r22)) continue
+				if (r18.next().value == undefined) continue
+				r3 = r18.next().value
+				r10 = r18.next().value
+				if (r3 in r5)
+				{
+					r25 = r5[r10]
+					r26 = r8[r10]
+					if (!(r25 === r26))
+					{
+						r24 = "Duplicate key "
+						r24 = (r24 + r10)
+						ACCU = Error
+						ACCU = Error(r24)
+					}
+				}
+				r5[r10] = r8[r10]
+				r22 = GeneratorStep(r22)
+			}
+		}
+		ACCU = -1
+		r15 = -1
+		r14 = -1
+	}
+	catch
+	{
+		r15 = ACCU
+		r14 = 0
+	}
+	if (!r13)
+	{
+		try
+		{
+			if (!r12["return"] == undefined)
+			{
+				ACCU = r12["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r14 === 0)
+	{
+		ACCU = r15
+	}
+	return r5
+}
+function func_bind_0x10000bea2(a0)
+{
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = func_resolveValidator_0x10000be9f(a0)
+	}
+	else
+	{
+		ACCU = func_identity_0x10000bea1
+	}
+	return ACCU
+}
+function func_resolveValidator_0x10000be9f(a0)
+{
+	Scope[1116][4] = func_yt_0x10000be9d
+	Scope[1116][3] = a0
+	r3 = TypeOf(Scope[1116][3])
+	if (r3 == "function")
+	{
+		return Scope[1116][3]
+	}
+	r3 = TypeOf(Scope[1116][3]["parseAsync"])
+	if (r3 == "function")
+	{
+		r1 = Scope[1116][3]["parseAsync"]["bind"]
+		return r1(Scope[1116][3])
+	}
+	r3 = TypeOf(Scope[1116][3]["parse"])
+	if (r3 == "function")
+	{
+		r1 = Scope[1116][3]["parse"]["bind"]
+		return r1(Scope[1116][3])
+	}
+	r3 = TypeOf(Scope[1116][3]["validateSync"])
+	if (r3 == "function")
+	{
+		r1 = Scope[1116][3]["validateSync"]["bind"]
+		return r1(Scope[1116][3])
+	}
+	r3 = TypeOf(Scope[1116][3]["create"])
+	if (r3 == "function")
+	{
+		r2 = Scope[1116][3]["create"]
+		r1 = r2["bind"]
+		return r1(Scope[1116][3])
+	}
+	r3 = TypeOf(Scope[1116][3]["assert"])
+	if (r3 == "function")
+	{
+		return func_assert_0x10000be9e
+	}
+	ACCU = Error
+	ACCU = Error("Could not find a validator fn")
+}
+function func_configure_0x10000be9c(a0)
+{
+	Scope[1117][5] = func_Ft_0x10000be96
+	r3 = new {"zoFEP": null, "xnyMU": null, "JpHcF": null}
+	Scope[1117][4] = r3
+	r5 = "input"
+	ACCU = r5 in a0
+	if (r5 in a0)
+	{
+		ACCU = a0["input"]
+	}
+	else
+	{
+		ACCU = func_forbidInput_0x10000be9a
+	}
+	r0 = ACCU
+	if ("output" in a0)
+	ACCU = a0["output"]
+		&& (a0["output"])
+	{
+		ACCU = a0["output"]
+	}
+	else
+	{
+		ACCU = func_identity_0x10000be9b
+	}
+	r1 = ACCU
+	r4 = new {"inputParser": null, "resolver": null, "middlewares": [], "outputParser": null, "meta": null}
+	r4["inputParser"] = r0
+	r4["resolver"] = a0["resolve"]
+	r4["outputParser"] = r1
+	r4["meta"] = a0["meta"]
+	ACCU = func_configure_0x10000bf55
+	return func_configure_0x10000bf55(r4)
+}
+function func_validator_0x10000be95(a0)
+{
+	r0 = a0
+	r5 = TypeOf(a0)
+	if (r5 == "function")
+	{
+		return r0
+	}
+	r5 = TypeOf(r0["parseAsync"])
+	if (r5 == "function")
+	{
+		r3 = r0["parseAsync"]["bind"]
+		return r3(r0)
+	}
+	r5 = TypeOf(r0["parse"])
+	if (r5 == "function")
+	{
+		r3 = r0["parse"]["bind"]
+		return r3(r0)
+	}
+	r5 = TypeOf(r0["validateSync"])
+	if (r5 == "function")
+	{
+		r3 = r0["validateSync"]["bind"]
+		return r3(r0)
+	}
+	r5 = TypeOf(r0["create"])
+	if (r5 == "function")
+	{
+		r4 = r0["create"]
+		r3 = r4["bind"]
+		return r3(r0)
+	}
+	ACCU = Error
+	ACCU = Error("Could not find a validator fn")
+}
+function func_initTrpc_0x10000be93(a0)
+{
+	Scope[1121][20] = func_cloneObject_0x10000be52
+	Scope[1121][22] = func_hasRouter_0x10000be54
+	Scope[1121][25] = func_J_0x10000be70
+	Scope[1121][26] = func_dispatchProcedure_0x10000be72
+	Scope[1121][27] = func_GetUnknown_0x10000be7d
+	Scope[1121][17] = func_trpcModule_0x10000be4e["exports"]()
+	Scope[1121][18] = func_initTrpc_0x100005db1["exports"]()
+	Scope[1121][19] = func_errors_0x100005d8a["exports"]()
+	r7 = new {"_default": <true, "input": null, "output": null}
+	r7["input"] = r8
+	r7["output"] = r8
+	r2 = r7
+	r8 = new [0, 0, 0]
+	r8[0] = "query"
+	r8[1] = "mutation"
+	r8[2] = "subscription"
+	r7 = new {"_ctx": <null, "_errorShape": <null, "_meta": <null, "queries": {}, "mutations": {}, "subscriptions": {}, "errorFormatter": null, "transformer": null}
+	r7["errorFormatter"] = func_shape_0x10000be92
+	r7["transformer"] = r2
+	Scope[1121][23] = r7
+	r8 = new [0]
+	r8[0] = "then"
+	r9 = TypeOf(typeof(window))
+	ACCU = r9 > "u"
+	if (!r9 > "u")
+	{
+		r9 = "Deno"
+		ACCU = r9 in window
+		if (!r9 in window)
+		{
+			r9 = globalThis["process"]
+			if (!globalThis["process"] == undefined)
+			ACCU = r9["env"]
+			r9 = r9["env"]
+				&& (!ACCU == undefined)
+			{
+				ACCU = r9["NODE_ENV"]
+			}
+			else
+			{
+				ACCU = undefined
+			}
+			r9 = ACCU
+			if (!r9 === "test")
+			{
+				r7 = globalThis["process"]
+				if (!globalThis["process"] == undefined)
+				ACCU = r7["env"]
+				r7 = r7["env"]
+					&& (!ACCU == undefined)
+				{
+					ACCU = r7["JEST_WORKER_ID"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				if (!!(!Boolean(ACCU)))
+				{
+					r7 = globalThis["process"]
+					if (!globalThis["process"] == undefined)
+					ACCU = r7["env"]
+					r7 = r7["env"]
+						&& (!ACCU == undefined)
+					{
+						ACCU = r7["VITEST_WORKER_ID"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					ACCU = !(!Boolean(ACCU))
+				}
+			}
+		}
+	}
+	r5 = ACCU
+	a0["callProcedure"] = func_dispatchProcedure_0x10000be72
+	a0["createCallerFactory"] = func_GetUnknown_0x10000be7d
+	a0["createRouterFactory"] = func_router_0x10000be6f
+	a0["defaultFormatter"] = func_shape_0x10000be92
+	a0["defaultTransformer"] = r2
+	a0["getDataTransformer"] = func_normalizePair_0x10000be50
+	a0["isServerDefault"] = r5
+	a0["procedureTypes"] = Scope[1121][21]
+	return undefined
+}
+function func_trpcModule_0x10000be4e(a0)
+{
+	Scope[1134][9] = func_c_0x10000be45
+	Scope[1134][8] = func_ErrorCause_0x100005dcb["exports"]()
+	r4 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_createError_0x10000be4d, Error)
+	Scope[1134][10] = func_createError_0x10000be4d
+	a0["TRPCError"] = func_createError_0x10000be4d
+	a0["getTRPCErrorFromUnknown"] = func_normalizeError_0x10000be47
+	return undefined
+}
+function func_noop_0x10000671b()
+{
+	return undefined
+}
+function func_Socket_0x100006719(a0)
+{
+	Scope[5553][6] = func_o_0x100006712
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interop_0x100006716
+	}
+	Scope[5553][7] = ACCU
+	r2 = Object["defineProperty"]
+	r5 = "__esModule"
+	r6 = new {"value": <true}
+	ACCU = r2(a0, r5, r6)
+	a0["Socket"] = undefined
+	Scope[5553][8] = func_exportSender_0x100006711["exports"]()
+	r2 = Object["defineProperty"]
+	r5 = "Socket"
+	r6 = new {"enumerable": <true, "get": null}
+	r6["get"] = func_getDefault_0x100006718
+	ACCU = r2(a0, r5, r6)
+	return undefined
+}
+function func_getDefault_0x100006718()
+{
+	r2 = Scope[5553][7](Scope[5553][8])
+	return r2["default"]
+}
+function func_interop_0x100006716(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_exportSender_0x100006711(a0)
+{
+	Scope[5556][11] = func_A_0x100006703
+	r0 = new {"V": 53719, "J": "iSZ6", "S": 28091, "g": "]1@2", "L": 32186, "X": "x&b0", "j": 27564, "E": "9hYk", "c": 17346, "x": "eeST", "K": 13527, "u": "kh^v", "A": 27087, "s": "toM2", "b": 119080, "i": "x&b0", "w": 75513, "f": "F1xf", "t": 41410, "P": 121209, "I": "b48I", "p": 15252, "o": "kh^v", "R": 95589, "v": "iSZ6", "N": 52523, "M": "h98j", "k": 94189, "Q": "XR6@", "W": 43336, "T": "I@Bf", "G": 85368, "y": "[()[", "e": 89215, "U": "O9*f", "q": 76112, "O": "A0Dr", "C": 66073, "n": "9hYk"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x100006706
+	}
+	r1 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = require("events")
+	r2 = r1(r8)
+	r8 = r2["default"]
+	ACCU = ToName("send")
+	ACCU = ToName("close")
+	ACCU = ToName("fromWebSocket")
+	if (r0["W"] === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	r6 = DefineClass([9, <NameDictionary[53], <NumberDictionary[16], [28], <NameDictionary[17], <NumberDictionary[16], [12, 20]], func_createSender_0x100006708, r8, "events", func_sendBuffer_0x10000670a, 94189, func_closeStream_0x10000670c, 43336, func_decorateStream_0x100006710)
+	a0["default"] = func_createSender_0x100006708
+	return undefined
+}
+function func_decorateStream_0x100006710(a0)
+{
+	Scope[5557][2] = a0
+	Scope[5557][4] = func_V_0x10000670d
+	r1 = Object["defineProperty"]
+	r4 = "open"
+	r5 = new {"get": null}
+	r5["get"] = func_isOpen_0x10000670e
+	ACCU = r1(Scope[5557][2], r4, r5)
+	r1 = Scope[5557][2]["once"]
+	ACCU = r1("error", func_emitClose_0x10000670f)
+	return Scope[5557][2]
+}
+function func_closeStream_0x10000670c()
+{
+	<this>["open"] = false
+	r1 = <this>["emit"]
+	ACCU = r1("close")
+	return undefined
+}
+function func_sendBuffer_0x10000670a(a0)
+{
+	r1 = <this>["_send"]
+	r3 = Buffer["from"]
+	r3 = r3(a0)
+	ACCU = r1(r3)
+	return undefined
+}
+function func_createSender_0x100006708(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = true
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	ACCU = <closure>
+	ACCU = r0
+	r8 = supper(r0)
+	ACCU = <this>
+	<this> = r8
+	ACCU = <this>
+	<this>["_send"] = r2
+	ACCU = <this>
+	<this>["open"] = r3
+	return <this>
+}
+function func_interopDefault_0x100006706(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_initPackr_0x1000065ec(a0)
+{
+	Scope[5627][10] = func_l_0x1000065e0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_Interop_0x1000065e7
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	r9 = a0
+	ACCU = r7(r9, r10, r11)
+	r8 = "unpack"
+	r11 = undefined
+	a0["pack"] = undefined
+	a0[r8] = r11
+	r10 = func_combineExports_0x1000060ca["exports"]()
+	Scope[5627][7] = r1(r10)
+	Scope[5627][8] = func_exportBuffer_0x1000060cf["exports"]()
+	r2 = func_initUmd_0x1000065df["exports"]()
+	r7 = r2["Packr"]
+	r8 = new {"transform": null, "moreTypes": <true}
+	r8["transform"] = func_applyTransforms_0x1000065e9
+	ACCU = r7
+	Scope[5627][9] = r7(r8)
+	r5 = 0
+	while (true)
+	{
+		r10 = Scope[5627][7]["default"]
+		r10 = r10["length"]
+		if (!r5 < r10) break
+		r7 = r2["addExtension"]
+		r8 = new {"type": null}
+		r8["type"] = (r5 + 1)
+		r11 = Scope[5627][7]["default"][r5]
+		r10 = r11["extension"]
+		r9 = r8
+		ACCU = _CopyDataProperties(r9, r10)
+		ACCU = r7(r8)
+		r5 = (r5 + 1)
+	}
+	a0["pack"] = func_pack_0x1000065ea
+	a0["unpack"] = func_unpack_0x1000065eb
+	return undefined
+}
+function func_unpack_0x1000065eb(a0)
+{
+	r0 = Scope[5627][9]["unpack"]
+	r2 = Scope[5627][8]["toBuffer"]
+	r2 = r2(a0)
+	return r0(r2)
+}
+function func_pack_0x1000065ea(a0)
+{
+	r0 = Scope[5627][9]["pack"]
+	return r0(a0)
+}
+function func_applyTransforms_0x1000065e9(a0)
+{
+	r8 = 50472
+	r6 = GetIterator(Scope[5627][7]["default"])
+	r5 = r6["next"]
+	ACCU = false
+	r7 = false
+	try
+	{
+		while (true)
+		{
+			r7 = true
+			r11 = r5()
+			if (r11["done"]) break
+			r7 = false
+			ACCU = r11["value"]["transform"](a0)
+			a0 = r11["value"]["transform"](a0)
+		}
+		ACCU = -1
+		r9 = -1
+		r8 = -1
+	}
+	catch
+	{
+		r9 = ACCU
+		r8 = 0
+	}
+	if (!r7)
+	{
+		try
+		{
+			if (!r6["return"] == undefined)
+			{
+				ACCU = r6["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r8 === 0)
+	{
+		ACCU = r9
+	}
+	return a0
+}
+function func_Interop_0x1000065e7(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r1 = new {"default": null}
+		r1["default"] = a0
+		ACCU = r1
+	}
+	return ACCU
+}
+function func_initUmd_0x1000065df(a0, a1)
+{
+	Scope[5629][3] = a0
+	Scope[5629][2] = a1
+	Scope[5629][211] = func_Mn_0x1000060d0
+	r2 = Object["defineProperty"]
+	r5 = "__esModule"
+	r6 = new {"value": <true}
+	ACCU = r2(Scope[5629][3], r5, r6)
+	ACCU = func_umdWrapper_0x1000061fa(Scope[5629][3], func_initPackr_0x1000065de)
+	return undefined
+}
+function func_exportBuffer_0x1000060cf(a0)
+{
+	Scope[5906][5] = func_n_0x1000060cb
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["toBuffer"] = func_bufferize_0x1000060cd
+	return undefined
+}
+function func_combineExports_0x1000060ca(a0)
+{
+	Scope[5908][5] = func_o_0x1000060c2
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!(ACCU))
+	{
+		r8 = func_unknown_0x1000060c9
+	}
+	r11 = Object["defineProperty"]
+	r14 = "__esModule"
+	r15 = new {"value": <true}
+	ACCU = r11(a0, r14, r15)
+	r14 = func_initModule_0x10000609f["exports"]()
+	r4 = r8(r14)
+	r14 = func_exportEncoding_0x1000060b5["exports"]()
+	r5 = r8(r14)
+	r14 = func_Hexify_0x1000060be["exports"]()
+	r6 = r8(r14)
+	r14 = func_exportEncoding_0x1000060c1["exports"]()
+	r7 = r8(r14)
+	r12 = "default"
+	r14 = new [0, 0, 0, 0]
+	r14[0] = r4["default"]
+	r14[1] = r5["default"]
+	r14[2] = r6["default"]
+	r14[3] = r7["default"]
+	a0[r12] = r14
+	return undefined
+}
+function func_trpcError_0x100006039(a0)
+{
+	Scope[5937][10] = func_A_0x100006035
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["clientError"] = func_WrapError_0x100006034
+	a0["getErrorShape"] = func_shapeError_0x100006037
+	Scope[5937][8] = func_trpcInit_0x100006017["exports"]()
+	Scope[5937][9] = func_trpc_0x100005dd1["exports"]()
+	return undefined
+}
+function func_shapeError_0x100006037(a0)
+{
+	r1 = Scope[5937][9]["getErrorShape"]
+	r2["path"] = undefined
+	r2["input"] = undefined
+	r2["ctx"] = undefined
+	ACCU = _CopyDataProperties(r3, a0)
+	return r1(r2)
+}
+function func_WrapError_0x100006034(a0)
+{
+	r1 = Scope[5937][8]["TRPCClientError"]["from"]
+	ACCU = Error
+	r3 = Error(func_E_0x100006033)
+	return r1(r3)
+}
+function func_trpcInit_0x100006017(a0)
+{
+	Scope[5945][38] = func_O_0x100005f99
+	Scope[5945][48] = func_createProxy_0x100005fa0
+	Scope[5945][49] = func_getTextDecoder_0x100005fa6
+	Scope[5945][50] = func_parseStream_0x100005faa
+	Scope[5945][51] = func_readStream_0x100005fae
+	Scope[5945][52] = func_attachEvents_0x100005fb2
+	Scope[5945][53] = func_ReadStream_0x100005fb4
+	r14 = Object["defineProperty"]
+	r17 = "__esModule"
+	r18 = new {"value": <true}
+	ACCU = r14(a0, r17, r18)
+	Scope[5945][40] = func_initObservable_0x100005d5d["exports"]()
+	Scope[5945][41] = func_initLinks_0x100005d85["exports"]()
+	Scope[5945][42] = func_initClientError_0x100005df3["exports"]()
+	Scope[5945][43] = func_trpc_0x100005dd1["exports"]()
+	Scope[5945][44] = func_initHttp_0x100005e29["exports"]()
+	r1 = func_initHttpBatch_0x100005e9f["exports"]()
+	r2 = func_initHttpLink_0x100005eb9["exports"]()
+	r3 = func_LoggerLink_0x100005eea["exports"]()
+	r4 = func_initWsClient_0x100005f98["exports"]()
+	ACCU = func_defineResponse_0x100005de2["exports"]()
+	ACCU = ToName("$request")
+	ACCU = ToName("requestAsPromise")
+	ACCU = ToName("query")
+	ACCU = ToName("mutation")
+	ACCU = ToName("subscription")
+	r15 = DefineClass([13, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[28], [12, 20, 28, 36, 44]], func_client_0x100005fda, null, "m[K#", func_createChainPipe_0x100005fdc, func_O_0x100005f99, func_fetchAbort_0x100005fe8, func_O_0x100005f99, func_queryRequest_0x100005fea, 71342, func_mutationRequest_0x100005fec, func_O_0x100005f99, func_subscribe_0x100005ff8)
+	Scope[5945][45] = func_client_0x100005fda
+	Scope[5945][47] = func_getValue_0x100005ff9
+	Scope[5945][54] = func_sendBatch_0x100006001
+	r14 = r1["createHTTPBatchLink"]
+	r10 = r14(func_setup_0x100006010)
+	Scope[5945][55] = func_getInput_0x100006012
+	r14 = r2["httpLinkFactory"]
+	r16 = new {"requester": null}
+	r16["requester"] = func_sendMutation_0x100006016
+	r12 = r14(r16)
+	a0["splitLink"] = Scope[5945][41]["splitLink"]
+	a0["TRPCClientError"] = Scope[5945][42]["TRPCClientError"]
+	a0["getFetch"] = Scope[5945][44]["getFetch"]
+	a0["httpBatchLink"] = r1["httpBatchLink"]
+	a0["httpLink"] = r2["httpLink"]
+	a0["httpLinkFactory"] = r2["httpLinkFactory"]
+	a0["loggerLink"] = r3["loggerLink"]
+	a0["createWSClient"] = r4["createWSClient"]
+	a0["wsLink"] = r4["wsLink"]
+	a0["TRPCUntypedClient"] = func_client_0x100005fda
+	a0["clientCallTypeToProcedureType"] = func_getValue_0x100005ff9
+	a0["createTRPCClient"] = func_identity_0x100005f9b
+	a0["createTRPCClientProxy"] = func_createProxy_0x100005fa0
+	a0["createTRPCProxyClient"] = func_clientNe_0x100005fa2
+	a0["createTRPCUntypedClient"] = func_identity_0x100005f9a
+	a0["experimental_formDataLink"] = r12
+	a0["getUntypedClient"] = func_getClient_0x100005fa4
+	a0["unstable_httpBatchStreamLink"] = r10
+	return undefined
+}
+function func_trpc_0x100005dd1(a0)
+{
+	r4 = 0
+	r10 = Object["defineProperty"]
+	r13 = "__esModule"
+	r14 = new {"value": <true}
+	ACCU = r10(a0, r13, r14)
+	r5 = func_initTrpc_0x100005db1["exports"]()
+	r6 = func_initTrpc_0x100005dbe["exports"]()
+	r7 = func_ErrorCause_0x100005dcb["exports"]()
+	ACCU = func_errors_0x100005d8a["exports"]()
+	a0["createFlatProxy"] = r5["createFlatProxy"]
+	a0["createRecursiveProxy"] = r5["createRecursiveProxy"]
+	a0["getErrorShape"] = r6["getErrorShape"]
+	a0["transformTRPCResponse"] = r6["transformTRPCResponse"]
+	a0["getCauseFromUnknown"] = r7["getCauseFromUnknown"]
+	return undefined
+}
+function func_ErrorCause_0x100005dcb(a0)
+{
+	Scope[6086][7] = func_objectLike_0x100005dc0
+	Scope[6086][9] = func_c_0x100005dc1
+	r4 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_superCall_0x100005dca, Error)
+	Scope[6086][8] = func_superCall_0x100005dca
+	a0["getCauseFromUnknown"] = func_normalizeError_0x100005dc3
+	return undefined
+}
+function func_initTrpc_0x100005dbe(a0)
+{
+	Scope[6088][10] = func_x_0x100005db2
+	Scope[6088][11] = func_serializeResult_0x100005db6
+	Scope[6088][8] = func_initTrpc_0x100005db1["exports"]()
+	Scope[6088][9] = func_errors_0x100005d8a["exports"]()
+	a0["getErrorShape"] = func_formatError_0x100005db4
+	a0["transformTRPCResponse"] = func_serialize_0x100005db9
+	return undefined
+}
+function func_initTrpc_0x100005db1(a0)
+{
+	Scope[6091][17] = func_statusCode_0x100005d8b
+	Scope[6091][19] = func_unknown_0x100005d98
+	Scope[6091][20] = func_createProxy_0x100005d9d
+	r1 = func_errors_0x100005d8a["exports"]()
+	r7 = r1["invert"]
+	r9 = r1["TRPC_ERROR_CODES_BY_KEY"]
+	Scope[6091][15] = r7(r9)
+	Scope[6091][18] = func_noop_0x100005dac
+	a0["TRPC_ERROR_CODES_BY_NUMBER"] = Scope[6091][15]
+	a0["createFlatProxy"] = func_proxy_0x100005db0
+	a0["createRecursiveProxy"] = func_parseInput_0x100005dad
+	a0["getHTTPStatusCode"] = func_statusCode_0x100005d95
+	a0["getHTTPStatusCodeFromError"] = func_getStatus_0x100005d97
+	return undefined
+}
+function func_errors_0x100005d8a(a0)
+{
+	r4 = new {"PARSE_ERROR": -32700, "BAD_REQUEST": -32600, "INTERNAL_SERVER_ERROR": -32603, "NOT_IMPLEMENTED": -32603, "UNAUTHORIZED": -32001, "FORBIDDEN": -32003, "NOT_FOUND": -32004, "METHOD_NOT_SUPPORTED": -32005, "TIMEOUT": -32008, "CONFLICT": -32009, "PRECONDITION_FAILED": -32012, "PAYLOAD_TOO_LARGE": -32013, "UNPROCESSABLE_CONTENT": -32022, "TOO_MANY_REQUESTS": -32029, "CLIENT_CLOSED_REQUEST": -32099}
+	r5 = func_invertMap_0x100005d87(r4)
+	a0["TRPC_ERROR_CODES_BY_KEY"] = r4
+	a0["TRPC_ERROR_CODES_BY_NUMBER"] = r5
+	a0["invert"] = func_invertMap_0x100005d87
+	return undefined
+}
+function func_initObservable_0x100005d5d(a0)
+{
+	Scope[6112][16] = func_g_0x100005d51
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r1 = func_observable_0x100005d05["exports"]()
+	r9 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_abortError_0x100005d5c, Error)
+	Scope[6113][2] = func_abortError_0x100005d5c
+	Scope[6112][15] = func_abortError_0x100005d5c
+	a0["isObservable"] = r1["isObservable"]
+	a0["observable"] = r1["observable"]
+	a0["map"] = func_setSubscriber_0x100005d2e
+	a0["observableToPromise"] = func_initAbort_0x100005d50
+	a0["share"] = func_subscriber_0x100005d22
+	a0["tap"] = func_Bind_0x100005d38
+	return undefined
+}
+function func_abortError_0x100005d5c(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["name"] = "ObservableAbortError"
+	r3 = Object["setPrototypeOf"]
+	ACCU = <this>
+	ACCU = r3(<this>, Scope[6113][2]["prototype"])
+	return <this>
+}
+function func_initAbort_0x100005d50(a0)
+{
+	Scope[6114][2] = a0
+	Scope[6114][10] = func_y_0x100005d39
+	r1 = new {"lcrnn": null, "sfwku": null, "cecDW": null, "ihAQw": null, "XokDk": null}
+	Scope[6114][11] = r1
+	r1 = new {"promise": null, "abort": null}
+	ACCU = Promise
+	r1["promise"] = Promise(func_subscribeAbort_0x100005d4f)
+	r1["abort"] = func_abortError_0x100005d43
+	return r1
+}
+function func_Bind_0x100005d38(a0)
+{
+	Scope[6119][2] = a0
+	return func_createSubscriber_0x100005d37
+}
+function func_setSubscriber_0x100005d2e(a0)
+{
+	Scope[6124][2] = a0
+	return func_subscribe_0x100005d2d
+}
+function func_subscriber_0x100005d22(a0)
+{
+	return func_subscriber_0x100005d21
+}
+function func_observable_0x100005d05(a0)
+{
+	Scope[6137][12] = func_identity_0x100005cd6
+	Scope[6137][13] = func_compose_0x100005cdb
+	Scope[6137][14] = func_h_0x100005cfc
+	a0["isObservable"] = func_observable_0x100005cdd
+	a0["observable"] = func_createStream_0x100005cfb
+	return undefined
+}
+function func_initTrpc_0x100005534()
+{
+	Scope[6541][6] = func_n_0x100005527
+	r0 = new {"V": 64100, "J": "89J2", "S": 72422, "g": "O9*f", "L": 51429, "X": "eeST", "j": 48606, "E": "93y[", "c": 45950, "x": "O9*f", "K": 63622, "u": "C0qY", "A": 91787, "s": 72093, "b": "m[K#", "i": 42709, "w": "]1@2", "f": 83946, "t": "I@Bf", "P": 32652, "I": "kh^v", "p": 61596, "o": "h98j", "R": 100837, "v": "iSZ6", "N": 35663, "M": "M2Ty", "k": 103230, "Q": "eeST", "W": 37516, "T": "m[K#", "G": 89404, "y": "p8sI", "e": 61014, "U": "[Jy3", "q": 125323, "O": ")Ku4", "C": 100490, "n": "b48I", "r": 79175, "H": "B@Sb", "h": 75853, "Y": "M2Ty", "D": 77086, "l": 91185, "a": "93y[", "V0": 10410, "V1": "vV[N", "V2": 29376, "V3": "x&b0", "V6": 46921, "VV": "*!!t", "VJ": 94583, "Vz": "pdVE", "Vd": 123734, "Vg": "x&b0", "VL": 26849, "Vc": "9pb7", "Vx": 78841, "VB": "YbH*", "VK": 99544, "Vu": "XR6@", "VA": 123489, "Vs": "%r7r", "Vb": 5562, "Vw": "b48I", "Vf": 64857, "Vt": 1157, "VP": "BS4&", "Vp": 96363, "Vo": "YbH*", "VR": 6523, "VQ": "JrBU", "VW": 22710, "VT": "toM2", "VG": 111449, "Vy": "[()[", "Ve": 94254, "VU": "xQ)2"}
+	ACCU = func_InitTrpc_0x100005526()
+	ACCU = func_InitTrpc_0x100005526()
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_initStatus_0x10000551a()
+	ACCU = func_initErrors_0x10000550f()
+	ACCU = func_defineError_0x100005506()
+	r3 = "\nThis is a client-only function.\nIf you want to call this function on the server, see https://trpc.io/docs/server/server-side-calls\\n"
+	r2 = r3["trim"]
+	global_lP = r2()
+	ACCU = ToName("context")
+	ACCU = ToName("meta")
+	ACCU = ToName("create")
+	r4 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 28]], func_noop_0x10000552f, null, r7, func_identity_0x100005530, 22710, func_noop_0x100005531, 111449, func_wrap_0x100005533)
+	Scope[6542][2] = func_noop_0x10000552f
+	global_h4 = func_noop_0x10000552f(r0)
+	return undefined
+}
+function func_wrap_0x100005533(a0)
+{
+	r1 = func_context_0x100000225()
+	return r1(a0)
+}
+function func_noop_0x100005531()
+{
+	return func_noop_0x10000552f(func_noop_0x10000552f)
+}
+function func_identity_0x100005530()
+{
+	return func_noop_0x10000552f(func_noop_0x10000552f)
+}
+function func_noop_0x10000552f()
+{
+	return undefined
+}
+function func_InitTrpc_0x100005526()
+{
+	r0 = new {"V": ")Ku4", "J": 124396, "S": "B@Sb", "g": 98729, "L": "p[w*", "X": 119325, "j": "^Ceg", "E": 121083, "c": "YbH*", "x": 57736, "K": "mwAz", "u": 95455, "A": "]C&)", "s": 125033, "b": "n@A0", "i": 111426, "w": "]C&)", "f": 26423, "t": "b48I", "P": 76945, "I": "93y[", "p": 22057, "o": "]1@2", "R": 95672, "v": "A5nh", "N": 70372, "M": "epz[", "k": 124539, "Q": "toM2", "W": 56054, "T": "]C&)", "G": 97377, "y": "8dGo", "e": 77734, "U": "nvO5", "q": 116780, "O": "[Jy3", "C": 79579, "n": "XR6@", "r": 94456, "H": "%r7r", "h": 60349, "Y": "h98j", "D": 65360, "l": "VHeU", "a": 60288, "V0": "[()[", "V1": 55324, "V2": "A0Dr", "V3": 27661, "V6": "I@Bf", "VV": 88447, "VJ": "F1xf", "Vz": 81995, "Vd": "89J2", "Vg": 42893, "VL": "]1@2", "Vc": 45493, "Vx": 16044, "VB": 1303, "VK": 113079, "Vu": "L@kv", "VA": 51961, "Vs": 49757, "Vb": "xQ)2", "Vw": 106128, "Vf": "JrBU", "Vt": 12611, "VP": "mwAz", "Vp": 10385, "Vo": "eeST", "VR": 12204, "VQ": 91431}
+	r9 = r0["v"]
+	r6 = r7["split"]
+	r2 = r6("|")
+	r3 = 0
+	r9 = func_defineTrpc_0x10000550c
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_initStatus_0x10000551a()
+	ACCU = func_initErrors_0x10000550f()
+	r7 = new {"_default": <true, "input": null, "output": null}
+	r8 = new {"serialize": null, "deserialize": null}
+	r8["serialize"] = func_identity_0x100005521
+	r8["deserialize"] = func_deserialize_0x100005522
+	r7["input"] = r8
+	r8 = new {"serialize": null, "deserialize": null}
+	r8["serialize"] = func_identity_0x100005523
+	r8["deserialize"] = func_deserialize_0x100005524
+	r7["output"] = r8
+	global_nE = r7
+	r8 = new [0, 0, 0]
+	r8[0] = "query"
+	r8[1] = "mutation"
+	r8[2] = "subscription"
+	global_sP = r8
+	r7 = new {"_ctx": <null, "_errorShape": <null, "_meta": <null, "queries": {}, "mutations": {}, "subscriptions": {}, "errorFormatter": null, "transformer": null}
+	r7["errorFormatter"] = func_shape_0x100005525
+	r7["transformer"] = global_nE
+	global_xP = r7
+	r8 = new [0]
+	r8[0] = "then"
+	global_dP = r8
+	r9 = TypeOf(typeof(window))
+	ACCU = r9 > "u"
+	if (!r9 > "u")
+	{
+		r9 = "Deno"
+		ACCU = r9 in window
+		if (!r9 in window)
+		{
+			r8 = r1
+			if (!globalThis["process"] == undefined)
+			ACCU = globalThis["process"]["env"]
+			r9 = globalThis["process"]["env"]
+				&& (!globalThis["process"]["env"] == undefined)
+			{
+				ACCU = r9["NODE_ENV"]
+			}
+			else
+			{
+				ACCU = undefined
+			}
+			r9 = ACCU
+			if (!r9 === "test")
+			{
+				if (!globalThis["process"] == undefined)
+				ACCU = globalThis["process"]["env"]
+				r7 = globalThis["process"]["env"]
+					&& (!globalThis["process"]["env"] == undefined)
+				{
+					ACCU = r7["JEST_WORKER_ID"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				if (!!(!Boolean(ACCU)))
+				{
+					if (!globalThis["process"] == undefined)
+					ACCU = globalThis["process"]["env"]
+					r7 = globalThis["process"]["env"]
+						&& (!globalThis["process"]["env"] == undefined)
+					{
+						ACCU = r7["VITEST_WORKER_ID"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					ACCU = !(!Boolean(ACCU))
+				}
+			}
+		}
+	}
+	global_zB = ACCU
+	return undefined
+}
+function func_shape_0x100005525(a0)
+{
+	return a0["shape"]
+}
+function func_deserialize_0x100005524(a0)
+{
+	return a0
+}
+function func_identity_0x100005523(a0)
+{
+	return a0
+}
+function func_deserialize_0x100005522(a0)
+{
+	return a0
+}
+function func_identity_0x100005521(a0)
+{
+	return a0
+}
+function func_initStatus_0x10000551a()
+{
+	Scope[6544][5] = func_u_0x100005510
+	ACCU = func_initErrors_0x10000550f()
+	global_oP = new {"PARSE_ERROR": 400, "BAD_REQUEST": 400, "UNAUTHORIZED": 401, "NOT_FOUND": 404, "FORBIDDEN": 403, "METHOD_NOT_SUPPORTED": 405, "TIMEOUT": 408, "CONFLICT": 409, "PRECONDITION_FAILED": 412, "PAYLOAD_TOO_LARGE": 413, "UNPROCESSABLE_CONTENT": 422, "TOO_MANY_REQUESTS": 429, "CLIENT_CLOSED_REQUEST": 499, "INTERNAL_SERVER_ERROR": 500, "NOT_IMPLEMENTED": 501}
+	return undefined
+}
+function func_initErrors_0x10000550f()
+{
+	global_vV = new {"PARSE_ERROR": -32700, "BAD_REQUEST": -32600, "INTERNAL_SERVER_ERROR": -32603, "NOT_IMPLEMENTED": -32603, "UNAUTHORIZED": -32001, "FORBIDDEN": -32003, "NOT_FOUND": -32004, "METHOD_NOT_SUPPORTED": -32005, "TIMEOUT": -32008, "CONFLICT": -32009, "PRECONDITION_FAILED": -32012, "PAYLOAD_TOO_LARGE": -32013, "UNPROCESSABLE_CONTENT": -32022, "TOO_MANY_REQUESTS": -32029, "CLIENT_CLOSED_REQUEST": -32099}
+	return undefined
+}
+function func_defineTrpc_0x10000550c()
+{
+	Scope[6548][6] = func_n_0x100005507
+	ACCU = func_defineError_0x100005506()
+	r3 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_trpc_0x10000550b, Error)
+	return undefined
+}
+function func_defineError_0x100005506()
+{
+	r1 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_callSuper_0x100005505, Error)
+	return undefined
+}
+function func_callSuper_0x100005505()
+{
+	r2 = ...
+	ACCU = <closure>
+	ACCU = r0
+	return supper(...r2))
+}
+function func_interopProxy_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_proxy_0x100003179(r1, a0)
+}
+function func_proxy_0x100003179(a0, a1, a2, a3)
+{
+	Scope[8550][2] = a1
+	r0 = new {"V": "gm42", "J": 112252, "S": "gm42", "g": 33189, "L": "O9*f", "X": 14008, "j": "YbH*", "E": 33727, "c": "kh^v", "x": 28142, "K": 49447, "u": "C0qY", "A": 19054, "s": "eeST", "b": 69771, "i": "m[K#", "w": 104964, "f": "VHeU", "t": 48465, "P": "h98j", "I": 22091, "p": "m[K#", "o": 4205, "R": "89J2", "v": 73023, "N": "A0Dr", "M": 47134}
+	if (Scope[8550][2])
+	r8 = TypeOf(Scope[8550][2])
+		&& (r8 == "object")
+	r8 = TypeOf(Scope[8550][2])
+	r9 = "function"
+		|| (r8 == r9)
+	{
+		r10 = r0["b"]
+		r9 = Scope[8550][2]
+		r8 = (Object["getOwnPropertyNames"])(Scope[8550][2])
+		r7 = GetIterator(r8)
+		r6 = r7["next"]
+		ACCU = false
+		r8 = false
+		try
+		{
+			while (true)
+			{
+				r8 = true
+				r12 = r6()
+				if (r12["done"]) break
+				r8 = false
+				Scope[8551][2] = r12["value"]
+				r14 = global_boe["call"]
+				r12 = r12["value"]
+				if (!!Boolean(r14(a0, Scope[8551][2]))) continue
+				if (Scope[8551][2] === a2) continue
+				r19 = new {"get": null, "enumerable": null}
+				r19["get"] = func_getValue_0x100003178
+				r21 = r2
+				a3 = (Object["getOwnPropertyDescriptor"])(Scope[8550][2], Scope[8551][2])
+				r15 = r2
+				r17 = a0
+				if (!Boolean((Object["getOwnPropertyDescriptor"])(Scope[8550][2], Scope[8551][2]))) continue
+				r19["enumerable"] = a3["enumerable"]
+				ACCU = (Object["defineProperty"])(r17, Scope[8551][2], r19)
+			}
+			ACCU = -1
+			r10 = -1
+			r9 = -1
+		}
+		catch
+		{
+			r10 = ACCU
+			r9 = 0
+		}
+		if (!r8)
+		{
+			try
+			{
+				if (!r7["return"] == undefined)
+				{
+					ACCU = r7["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r9 === 0)
+		{
+			ACCU = r10
+		}
+	}
+	return a0
+}
+function func_getValue_0x100003178()
+{
+	return Scope[8550][2][Scope[8551][2]]
+}
+function func_context_0x100000225()
+{
+	Scope[11149][7] = func_o_0x10000021a
+	return func_createContext_0x100000224
+}

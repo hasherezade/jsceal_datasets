@@ -1,0 +1,3348 @@
+function func_initializeCoinsRouterModule_0x10000bdd2()
+{
+	r0 = new {"V": "xQ)2", "J": 51666, "S": "^Ceg", "g": 15993, "L": "eeST", "X": 1814, "j": "p8sI", "E": 34904, "c": "toM2", "x": 87880, "K": "Yx9u", "u": 1619, "A": "[()[", "s": 17345, "b": "[()[", "i": 54297, "w": "p8sI", "f": 109713, "t": "x&b0", "P": 118467}
+	r7 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_rL = func_interopRequireWildcard_0x10000317a(r7)
+	r7 = func_initModule_0x10000bdaf["exports"]()
+	global_TK = func_interopRequireWildcard_0x10000317a(r7)
+	global_Pm = global_rL["Router"](r0)
+	return undefined
+}
+function func_initModule_0x10000bdaf(a0)
+{
+	Scope[1172][8] = func_x_0x10000bda3
+	r3 = 0
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r7 = "jsonTransformer"
+	r9 = "htmlTransformer"
+	r11 = "setHooks"
+	r14 = undefined
+	a0["router"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	a0[r7] = r14
+	Scope[1172][10] = func_initExchangeRouterModule_0x10000bda2["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "router"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getRouter_0x10000bdaa
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][12] = func_initModule_0x10000ba72["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "setHooks"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getSetHooks_0x10000bdae
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][11] = func_initializeHtmlTransformerModule_0x10000bc01["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "htmlTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getHtmlTransformer_0x10000bdac
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][9] = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "jsonTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getJsonTransformer_0x10000bda8
+	ACCU = r6(a0, r9, r10)
+	return undefined
+}
+function func_getSetHooks_0x10000bdae()
+{
+	return Scope[1172][12]["setHooks"]
+}
+function func_getHtmlTransformer_0x10000bdac()
+{
+	return Scope[1172][11]["htmlTransformer"]
+}
+function func_getRouter_0x10000bdaa()
+{
+	return Scope[1172][10]["router"]
+}
+function func_getJsonTransformer_0x10000bda8()
+{
+	return Scope[1172][9]["jsonTransformer"]
+}
+function func_initExchangeRouterModule_0x10000bda2(a0)
+{
+	Scope[1176][13] = func_ge_0x10000bd4e
+	r0 = new {"V": 78164, "J": "^Ceg", "S": 11200, "g": ")Lyh", "L": 88964, "X": "x&b0", "j": 122457, "E": "Yx9u", "c": 55543, "x": 52379, "K": ")Lyh", "u": 12310, "A": "^Ceg", "s": 3618, "b": ")Lyh", "i": 80940, "w": "]C&)", "f": 8417, "t": "m[K#", "P": 38586, "I": "JrBU", "p": 77212, "o": "K&pk", "R": 9155, "v": "h98j", "N": 39205, "M": "BS4&", "k": 47319, "Q": "mwAz", "W": 66579, "T": "]1@2", "G": 69920, "y": "[()[", "e": 42976, "U": "pdVE", "q": 58994, "O": "h98j", "C": 91980, "n": "iSZ6", "r": 10063, "H": "O9*f", "h": 18833, "Y": "p[w*", "D": 43641, "l": "[()[", "a": 44603, "V0": "JrBU", "V1": 95021, "V2": "iSZ6", "V3": 61580, "V6": "eeST", "VV": 119095, "VJ": "vV[N", "Vz": 122748, "Vd": "XR6@", "Vg": 25161, "VL": ")Ku4", "Vc": 43709, "Vx": "93y[", "VB": 123586, "VK": "x&b0", "Vu": 105629, "VA": "B@Sb", "Vs": 35310, "Vb": 2676, "Vw": ")Ku4", "Vf": 88247, "Vt": "K&pk", "VP": 29691, "Vp": "C0qY", "Vo": 27616, "VR": "b48I", "VQ": 25523, "VW": "h^gm", "VT": 68586, "VG": "VHeU", "Vy": 24974, "Ve": "I@Bf", "VU": 100113, "Vq": 85869, "VO": "L@kv", "Vm": 76786, "VZ": "89J2", "Vn": 89906, "Vr": "M2Ty", "VH": 9650, "Vh": "9hYk", "VY": 110977, "VD": "A0Dr", "Vl": 38588, "Va": "A5nh", "J0": 54424, "J2": 85078, "J3": 66967, "J4": 11546, "J5": 79340, "J6": 1590, "J7": "8dGo", "J9": 12705, "Jd": "*!!t", "Jg": 123274, "JL": "F1xf", "JX": 11249, "Jc": ")Lyh", "Jx": 82643, "JB": "n@A0", "Ju": 76845, "Js": "iSZ6", "Jb": 87246, "Ji": 46737, "Jw": "93y[", "Jf": 63712, "Jt": "9hYk", "JP": 69403, "Jp": "p8sI", "JR": 782, "JQ": 14397, "JW": "%]hf", "JT": 72197, "JG": "epz[", "Jy": 109771, "JU": 15504, "JF": 18189, "Jq": "[()[", "JO": 11017, "Jm": "9pb7", "JC": 15556, "Jn": 933, "Jr": 75418, "Jh": "pdVE", "JY": 97464, "JD": "p[w*", "Jl": 43097, "z0": "n@A0", "z1": 99182, "z2": 63219, "z3": "gm42", "z6": 98568, "zV": "p[w*", "zJ": 90818, "zz": 96191, "zd": 107349, "zS": 6270, "zg": 91864, "zL": 50086, "zX": "L@kv", "zE": 50009, "zc": "XR6@", "zx": 10008, "zB": "n@A0", "zu": 44879, "zA": "^Ceg", "zs": 8682, "zw": 120329, "zf": "8dGo", "zt": 100703, "zP": "C0qY", "zp": 108924, "zo": 105038, "zW": 88754, "zG": "toM2", "zy": 4416, "zU": 112139, "zF": 35493, "zO": 68985, "zC": "]1@2", "zZ": 92275, "zn": "[Jy3", "zr": 25083, "zH": 81569, "zh": "h^gm", "zY": 118750, "zl": 81917, "za": "A0Dr", "d2": 88469, "d3": "93y[", "d4": 72710, "d5": "mwAz", "d6": 72699, "d7": "8dGo", "d9": 85969, "dV": "x&b0", "dJ": 105779, "dz": "O9*f", "dd": 86533, "dg": 114405, "dL": "h^gm", "dX": 88454, "dj": "pdVE", "dE": 32522, "dc": "[Jy3", "dx": 38322, "dB": 122677, "dK": "[()[", "dA": 51499, "ds": 76161, "di": 69112, "dw": 120869, "df": "p8sI", "dt": 20565, "dP": "%r7r", "dI": 122444, "dp": 85869, "dv": "L@kv", "dN": 27495, "dM": "toM2", "dQ": 96845, "dW": 41901, "dy": "^Ceg", "de": 32643, "dU": 7562, "dO": 80371, "dC": 7827, "dZ": 84962, "dn": 70980, "dr": "VHeU", "dH": 96845, "dY": "n@A0", "dD": 59231, "dl": "p[w*", "da": 71671, "S0": 100700, "S2": "BS4&", "S3": 78971, "S4": 109383, "S5": "Yx9u", "S6": 3317, "S7": 22578, "SV": "I@Bf", "SJ": 33730, "Sz": 123233, "Sd": 6841, "Sg": 110921, "SX": "F1xf", "Sj": 62278, "SE": 28409, "Sc": "xQ)2", "Sx": 90030, "SB": 49630, "SK": "kh^v", "SA": 72003, "Ss": 45250, "Sb": 74135, "Si": "BS4&", "Sw": 5743, "Sf": "BS4&", "St": 88902, "SP": "93y[", "Sp": 28409, "SR": 83405, "Sv": "O9*f", "SN": "XR6@", "SM": 25890, "Sk": 14636, "SW": "b48I", "ST": 97023, "Se": 50863, "SU": 52886, "SF": ")Ku4", "Sq": 15479, "SO": 54945, "Sm": 11032, "SZ": "m[K#", "SH": 18099, "SY": "h^gm", "Sl": 74084, "g1": 106675, "g2": "gm42", "g4": 44263, "g5": 104022, "g6": "p[w*", "g7": 52870, "g8": 62278, "gV": 82841, "gz": "Yx9u", "gd": 10780, "gg": 21197, "gX": 109973, "gj": "*!!t", "gE": 18099, "gc": "h^gm", "gx": 8539, "gB": 6673, "gK": 18099, "gu": "h^gm", "gs": 86694, "gb": 67789, "gw": 9683, "gt": "K&pk", "gP": 93385, "gp": 35524, "go": 42021, "gR": "]C&)", "gv": 90758, "gN": "C0qY", "gk": 43590, "BKQ": 69874, "BKW": 116082, "BKT": 37462, "BKG": 32626, "BKy": 107243, "BKU": 48178, "BKF": 91238, "BKq": "iSZ6", "BKO": 93385, "BKm": "p[w*", "BKC": 91980, "BKZ": "iSZ6", "BKn": 54945, "BKr": "m[K#", "BKH": "*!!t", "BKh": 41986, "BKY": "89J2", "BKD": 40589, "BKl": "]1@2", "BKa": 117687, "Bu0": "m[K#", "Bu1": 101872, "Bu2": 109973, "Bu3": "*!!t", "Bu4": 37462, "Bu5": 60848, "Bu6": ")Lyh", "Bu7": 36205, "Bu8": 24243, "Bu9": "]1@2", "BuV": 20508, "BuJ": "%r7r", "Buz": 72003, "Bud": 45250, "BuS": 44263, "Bug": "BS4&", "BuL": 72769, "BuX": "JrBU", "Buj": 11032, "BuE": "m[K#", "Buc": 117767, "Bux": "I@Bf", "BuB": 58567, "BuK": 49446, "Buu": "89J2", "BuA": 67789, "Bus": "iSZ6", "Bub": 36201, "Bui": "M2Ty", "Buw": 46392, "Buf": "pdVE", "But": "p[w*", "BuP": 92923, "BuI": 3137, "Bup": 85687, "Buo": 103496, "BuR": 108755, "Buv": "%r7r", "BuN": 33830, "BuM": 34654, "Buk": 75567, "BuQ": "gm42", "BuW": 44263, "BuT": "BS4&", "BuG": 23953, "Buy": 84298, "Bue": "xQ)2", "BuU": 93449, "BuF": "9pb7", "Buq": 52886, "BuO": 36974, "Bum": "p8sI", "BuC": 68030, "BuZ": "nvO5", "Bun": 85687, "Bur": "]C&)", "BuH": "L@kv", "Buh": 73022, "BuY": 82596, "BuD": "93y[", "Bul": 36205, "Bua": 118627, "BA0": "p8sI", "BA1": 66420, "BA2": "L@kv", "BA3": 42021, "BA4": "]C&)", "BA5": 120107, "BA6": 10495, "BA7": "A5nh", "BA8": 29106, "BA9": 113613, "BAV": 65487, "BAJ": 29106, "BAz": "9pb7", "BAd": 73022, "BAS": "toM2", "BAg": 52843, "BAL": "]C&)", "BAX": 88902, "BAj": "]C&)", "BAE": 18538, "BAc": "YbH*", "BAx": "JrBU", "BAB": 56915, "BAK": 111488, "BAu": 119632, "BAA": 95068, "BAs": "YbH*", "BAb": 58567, "BAi": 6696, "BAw": 63040, "BAf": "x&b0", "BAt": 90758, "BAP": "C0qY", "BAI": 90384, "BAp": "[()[", "BAo": "K&pk", "BAR": "p[w*", "BAv": 82382, "BAN": "p[w*", "BAM": 78630, "BAk": "9pb7", "BAQ": 82742, "BAW": 85827, "BAT": "pdVE", "BAG": 30364, "BAy": "p[w*", "BAe": 93449, "BAU": "[Jy3", "BAF": 4481, "BAq": "mwAz", "BAO": 34654, "BAm": "VHeU", "BAC": 8539, "BAZ": "A5nh", "BAn": 36205, "BAr": "%r7r", "BAH": 23953, "BAh": 35235, "BAY": 22578, "BAD": "I@Bf", "BAl": 60848, "BAa": "p[w*", "Bs0": "]C&)", "Bs1": 86694, "Bs2": "O9*f", "Bs3": "YbH*", "Bs4": "b48I", "Bs5": 78630, "Bs6": 48961, "Bs7": "A5nh", "Bs8": 58785, "Bs9": "gm42", "BsV": 95068, "BsJ": 49630, "Bsz": "xQ)2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineExportProperty_0x10000bd92
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x10000bd94
+		}
+	}
+	Scope[1176][11] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefaultExport_0x10000bd96
+		}
+		else
+		{
+			ACCU = func_setDefaultExport_0x10000bd98
+		}
+	}
+	Scope[1176][12] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_initializeInteropModule_0x10000bda1()
+	}
+	r1 = ACCU
+	r62 = Object["defineProperty"]
+	r65 = "__esModule"
+	r66 = new {"value": <true}
+	ACCU = r62(a0, r65, r66)
+	a0["router"] = undefined
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r65 = func_initAscendexRouterModule_0x10000ba83["exports"]()
+	r3 = r1(r65)
+	r65 = func_initPriceIndexerRouter_0x10000ba92["exports"]()
+	r4 = r1(r65)
+	r65 = func_initBinanceRouter_0x10000bac3["exports"]()
+	r5 = r1(r65)
+	r65 = func_initBinanceThRouter_0x10000bad8["exports"]()
+	r6 = r1(r65)
+	r65 = func_initBingxRouter_0x10000bae1["exports"]()
+	r7 = r1(r65)
+	r65 = func_initBitgetRouter_0x10000baeb["exports"]()
+	r8 = r1(r65)
+	r65 = func_initBitkubRouter_0x10000baf7["exports"]()
+	r9 = r1(r65)
+	r65 = func_initBitmartRouter_0x10000bb01["exports"]()
+	r10 = r1(r65)
+	r65 = func_initBitrueRouter_0x10000bb0b["exports"]()
+	r11 = r1(r65)
+	r65 = func_initBitunixRouter_0x10000bb15["exports"]()
+	r12 = r1(r65)
+	r65 = func_initBybitRouter_0x10000bb1e["exports"]()
+	r13 = r1(r65)
+	r65 = func_initCoinexRouter_0x10000bb27["exports"]()
+	r14 = r1(r65)
+	r65 = func_initCoinhubRouter_0x10000bb31["exports"]()
+	r15 = r1(r65)
+	r65 = func_initializeCoinsphRouterModule_0x10000bb3d["exports"]()
+	r16 = r1(r65)
+	r65 = func_initializeCoinwRouterModule_0x10000bb45["exports"]()
+	r17 = r1(r65)
+	r65 = func_initializeDecryptoRouterModule_0x10000bb4d["exports"]()
+	r18 = r1(r65)
+	r65 = func_initializeDeepcoinRouterModule_0x10000bb57["exports"]()
+	r19 = r1(r65)
+	r65 = func_initializeDigifinexRouterModule_0x10000bb63["exports"]()
+	r20 = r1(r65)
+	r65 = func_initBalanceModule_0x10000bb85["exports"]()
+	r21 = r1(r65)
+	r65 = func_initializeFmcpayRouterModule_0x10000bb8e["exports"]()
+	r22 = r1(r65)
+	r65 = func_initializeGateioRouterModule_0x10000bb98["exports"]()
+	r23 = r1(r65)
+	r65 = func_initializeHataRouterModule_0x10000bba3["exports"]()
+	r24 = r1(r65)
+	r65 = func_initializeHtxRouterModule_0x10000bbad["exports"]()
+	r25 = r1(r65)
+	r65 = func_initializeI3qRouterModule_0x10000bbb5["exports"]()
+	r26 = r1(r65)
+	r65 = func_initializeBinanceTrRouterModule_0x10000bbbe["exports"]()
+	r27 = r1(r65)
+	r65 = func_initializeBitazzaRouterModule_0x10000bbc8["exports"]()
+	r28 = r1(r65)
+	r65 = func_initializeBitstreetxRouterModule_0x10000bbd2["exports"]()
+	r29 = r1(r65)
+	r65 = func_initCexIoModule_0x10000bc0b["exports"]()
+	r30 = r1(r65)
+	r65 = func_initCsgoempireRouter_0x10000bc14["exports"]()
+	r31 = r1(r65)
+	r65 = func_initFortunoRouter_0x10000bc1d["exports"]()
+	r32 = r1(r65)
+	r65 = func_initGoonusRouter_0x10000bc2b["exports"]()
+	r33 = r1(r65)
+	r65 = func_initKcexRouter_0x10000bc34["exports"]()
+	r34 = r1(r65)
+	r65 = func_initKrakenRouter_0x10000bc3e["exports"]()
+	r35 = r1(r65)
+	r65 = func_initKucoinRouter_0x10000bc46["exports"]()
+	r36 = r1(r65)
+	r65 = func_initLazzaglobalRouter_0x10000bc4f["exports"]()
+	r37 = r1(r65)
+	r65 = func_initLbankRouter_0x10000bc57["exports"]()
+	r38 = r1(r65)
+	r65 = func_initMexcRouter_0x10000bc60["exports"]()
+	r39 = r1(r65)
+	r65 = func_initNexoRouter_0x10000bc6a["exports"]()
+	r40 = r1(r65)
+	r65 = func_initNoonesRouter_0x10000bc73["exports"]()
+	r41 = r1(r65)
+	r65 = func_initOkxRouter_0x10000bc80["exports"]()
+	r42 = r1(r65)
+	r65 = func_initOslRouter_0x10000bc8b["exports"]()
+	r43 = r1(r65)
+	r65 = func_initPaxfulRouter_0x10000bc99["exports"]()
+	r44 = r1(r65)
+	r65 = func_initPdaxRouter_0x10000bcaa["exports"]()
+	r45 = r1(r65)
+	r65 = func_initPionexModule_0x10000bcb2["exports"]()
+	r46 = r1(r65)
+	r65 = func_initPoloniexModule_0x10000bcbb["exports"]()
+	r47 = r1(r65)
+	r65 = func_initRemitanoModule_0x10000bccd["exports"]()
+	r48 = r1(r65)
+	r65 = func_initRipioModule_0x10000bcd6["exports"]()
+	r49 = r1(r65)
+	r65 = func_initSkrillModule_0x10000bcde["exports"]()
+	r50 = r1(r65)
+	r65 = func_initializeStakeRouterModule_0x10000bcf8["exports"]()
+	r51 = r1(r65)
+	r65 = func_initStormgainModule_0x10000bd00["exports"]()
+	r52 = r1(r65)
+	r65 = func_initSuperexModule_0x10000bd0a["exports"]()
+	r53 = r1(r65)
+	r65 = func_initTdPplgmModule_0x10000bd13["exports"]()
+	r54 = r1(r65)
+	r65 = func_initTokocryptoModule_0x10000bd1e["exports"]()
+	r55 = r1(r65)
+	r65 = func_initTtxVipModule_0x10000bd26["exports"]()
+	r56 = r1(r65)
+	r65 = func_initUbitexModule_0x10000bd2e["exports"]()
+	r57 = r1(r65)
+	r65 = func_initWeltradeModule_0x10000bd39["exports"]()
+	r58 = r1(r65)
+	r65 = func_initXtModule_0x10000bd43["exports"]()
+	r59 = r1(r65)
+	r65 = func_initZaifModule_0x10000bd4d["exports"]()
+	r60 = r1(r65)
+	r64 = r2["Router"]
+	a0["router"] = r64(r0)
+	r62 = a0["router"]["use"]
+	ACCU = r62(r5["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r13["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r35["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r36["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r42["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r39["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r7["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r8["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r47["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r11["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r20["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r23["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r9["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r40["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r6["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r21["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r25["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r12["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r50["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r45["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r10["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r3["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r41["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r51["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r4["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r14["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r15["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r16["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r19["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r17["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r18["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r22["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r26["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r34["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r37["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r38["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r46["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r52["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r53["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r57["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r59["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r24["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r44["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r55["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r48["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r30["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r60["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r28["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r58["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r31["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r27["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r56["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r43["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r29["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r33["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r54["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r32["default"])
+	r63 = a0["router"]
+	r62 = r63["use"]
+	ACCU = r62(r49["default"])
+	return undefined
+}
+function func_initializeInteropModule_0x10000bda1()
+{
+	Scope[1177][7] = func_getPropertyNames_0x10000bd9e
+	return func_createInteropModule_0x10000bda0
+}
+function func_setDefaultExport_0x10000bd98(a0, a1)
+{
+	a0["default"] = a1
+	return undefined
+}
+function func_defineDefaultExport_0x10000bd96(a0, a1)
+{
+	r1 = Object["defineProperty"]
+	r4 = "default"
+	r5 = new {"enumerable": <true, "value": null}
+	r5["value"] = a1
+	ACCU = r1(a0, r4, r5)
+	return undefined
+}
+function func_copyProperty_0x10000bd94(a0, a1, a2, a3)
+{
+	if (a3 === undefined)
+	{
+		a3 = a2
+		ACCU = a3
+	}
+	a0[a3] = a1[a2]
+	return undefined
+}
+function func_defineExportProperty_0x10000bd92(a0, a1, a2, a3)
+{
+	Scope[1182][3] = a1
+	Scope[1182][2] = a2
+	if (a3 === undefined)
+	{
+		a3 = Scope[1182][2]
+	}
+	r3 = Object["getOwnPropertyDescriptor"]
+	r1 = r3(Scope[1182][3], Scope[1182][2])
+	ACCU = !Boolean(r3(Scope[1182][3], Scope[1182][2]))
+	if (!!Boolean(r3(Scope[1182][3], Scope[1182][2])))
+	{
+		r5 = "get"
+		ACCU = r5 in r1
+		if (r5 in r1)
+		{
+			ACCU = !Boolean(Scope[1182][3]["__esModule"])
+		}
+		else
+		{
+			if (!r1["writable"])
+			{
+				ACCU = r1["configurable"]
+			}
+		}
+	}
+	if (ACCU)
+	{
+		r3 = new {"enumerable": <true, "get": null}
+		r3["get"] = func_getScopeValue1182_0x10000bd91
+		r1 = r3
+		ACCU = r3
+	}
+	r3 = Object["defineProperty"]
+	ACCU = r3(a0, a3, r1)
+	return undefined
+}
+function func_initZaifModule_0x10000bd4d(a0)
+{
+	Scope[1183][9] = func_E_0x10000bd44
+	r0 = new {"V": "A5nh", "J": 83881, "S": "iSZ6", "g": 111431, "L": "x&b0", "X": 31022, "j": "M2Ty", "E": 33421, "c": "9pb7", "x": 57716, "K": "YbH*", "u": 89961, "A": "93y[", "s": 49916, "b": 102872, "i": "h^gm", "w": 118514, "f": "n@A0", "t": 25275, "P": "L@kv", "I": 81777, "p": "*!!t", "o": 51927, "R": "K&pk", "v": 23081, "N": "xQ)2", "M": 14091, "k": "kh^v", "Q": 81521, "W": "B@Sb", "T": 83444, "G": "XR6@", "y": 79541, "e": 1845, "U": "h98j", "q": 80000, "O": "A5nh", "C": 69350, "n": "h98j", "r": 60273, "H": "89J2", "h": 35337, "Y": "]1@2", "D": 95708, "l": "xQ)2", "a": 28986, "V0": 106150, "V1": "kh^v", "V2": 120881, "V3": "A0Dr", "V6": 64331, "VV": "p8sI", "VJ": 101455, "Vz": "eeST", "Vd": 5991, "Vg": "Yx9u", "VL": 46671, "Vc": 50696, "Vx": 114839}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd4a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1183][7] = r1(r10)
+	r2 = func_initializeHtmlTransformerModule_0x10000bc01["exports"]()
+	Scope[1183][8] = func_initObjectUtilsModule_0x10000baaa["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "zaifjp.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/user/dashboard"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["htmlTransformer"]
+	r12["full"] = r13(func_saveZaifBalance_0x10000bd4c)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initXtModule_0x10000bd43(a0)
+{
+	Scope[1185][9] = func_E_0x10000bd3a
+	r0 = new {"V": 93242, "J": "I@Bf", "S": 124055, "g": "93y[", "L": 103618, "X": ")Lyh", "j": 97180, "E": "F1xf", "c": 101208, "x": "I@Bf", "K": 23964, "u": "Yx9u", "A": 121911, "s": "VHeU", "b": 66558, "i": "]C&)", "w": 106243, "f": "gm42", "t": 30976, "P": "A0Dr", "I": 76633, "p": "M2Ty", "o": 99330, "R": "9hYk", "v": 96783, "N": 72611, "M": "JrBU", "k": 63596, "Q": "9pb7", "W": 75549, "T": "F1xf", "G": 28000, "y": "x&b0", "e": 118158, "U": "*!!t", "q": 12362, "O": "A5nh", "C": 68764, "n": "YbH*", "r": 67641, "H": 8707, "h": 3979, "Y": 34558, "D": "h98j", "l": 56527, "a": "8dGo", "V0": 45375, "V1": "toM2", "V2": 121447, "V3": "9pb7", "V6": 111159, "VV": "89J2", "VJ": 45169, "Vz": "Yx9u", "Vd": 37090, "Vg": "pdVE", "VL": 44939, "Vc": "89J2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd40
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1185][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.xt.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/sapi/v4/balance/balance/total"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveXtBalance_0x10000bd42)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initWeltradeModule_0x10000bd39(a0)
+{
+	Scope[1186][7] = func_a_0x10000bd2f
+	r0 = new {"V": "O9*f", "J": 34379, "S": "M2Ty", "g": 9607, "L": "F1xf", "X": 7746, "j": "pdVE", "E": 931, "c": "^Ceg", "x": 90265, "K": "nvO5", "u": 39851, "A": "8dGo", "s": 17683, "b": "A5nh", "i": 45176, "w": "%r7r", "f": 7945, "t": ")Lyh", "P": 105056, "I": "xQ)2", "p": 120130, "o": "vV[N", "R": 40965, "v": ")Ku4", "N": 95570, "M": "BS4&", "k": 14993, "Q": "BS4&", "W": 45204, "T": "[()[", "G": 25893, "y": "h^gm", "e": 39935, "U": "A0Dr", "q": 4187, "O": "Yx9u", "C": 103524, "n": "]C&)", "r": 8785, "H": "epz[", "h": 36584, "Y": "[Jy3", "D": 113646, "l": "XR6@", "a": 119737, "V0": "8dGo", "V1": 38942, "V2": "L@kv", "V3": 67188, "V6": "89J2", "VV": 68054, "VJ": "9hYk", "Vz": 26171, "Vd": 95272, "Vg": "M2Ty", "VL": 21275, "Vc": "M2Ty", "Vx": 64701, "VB": "B@Sb", "VK": 24802, "Vu": 79679, "VA": "C0qY", "Vs": 79448, "Vb": "I@Bf", "Vw": 98628, "Vf": "n@A0", "Vt": 114775}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd36
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1186][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "secure.weltrade.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/api/v2"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveWeltradeBalance_0x10000bd38)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initUbitexModule_0x10000bd2e(a0)
+{
+	Scope[1188][8] = func_f_0x10000bd27
+	r0 = new {"V": 6214, "J": "vV[N", "S": 7156, "g": "iSZ6", "L": 83581, "X": "VHeU", "j": 100154, "E": "B@Sb", "c": 58268, "x": "toM2", "K": 59111, "u": "^Ceg", "A": 37144, "s": "BS4&", "b": 77841, "i": "p[w*", "w": 60554, "f": "A5nh", "t": 46449, "P": "9hYk", "I": 48885, "p": "]C&)", "o": 115586, "R": "8dGo", "v": 21851, "N": "K&pk", "M": 65239, "k": "L@kv", "Q": 70536, "W": "89J2", "T": 18738, "G": 64182, "y": "%]hf", "e": 9453, "U": "93y[", "q": 80824, "O": "p8sI", "C": 1300, "n": "p8sI", "r": 92794, "H": 21082, "h": "h^gm", "Y": 93096, "D": "pdVE", "l": 500, "a": 7233, "V0": 2330, "V1": "[()[", "V2": 46077, "V3": ")Lyh", "V6": 52190, "VV": "F1xf", "VJ": 2213, "Vz": "8dGo", "Vd": 80602, "Vg": "]1@2", "VL": 100710, "Vc": "m[K#", "Vx": 84051, "VB": "*!!t", "VK": 84017, "Vu": "xQ)2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd2b
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1188][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.ubitex.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/v1/spot/balance/balance/total"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveUbitexBalance_0x10000bd2d)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initTtxVipModule_0x10000bd26(a0)
+{
+	Scope[1190][7] = func_s_0x10000bd1f
+	r0 = new {"V": "]C&)", "J": 4056, "S": "toM2", "g": 60443, "L": "^Ceg", "X": 90036, "j": "pdVE", "E": 62647, "c": "[Jy3", "x": 119321, "K": "A0Dr", "u": 48577, "A": "nvO5", "s": 49574, "b": "]1@2", "i": 121585, "w": 88279, "f": "M2Ty", "t": 34622, "P": "8dGo", "I": 56690, "p": 52363, "o": "YbH*", "R": 88541, "v": "vV[N", "N": 82899, "M": 74152, "k": "mwAz", "Q": 116539, "W": 47736, "T": "*!!t", "G": 72142, "y": "C0qY", "e": 89377, "U": "toM2", "q": 18984, "O": "VHeU", "C": 87541, "n": "C0qY", "r": 118206, "H": "VHeU", "h": 1143, "Y": "JrBU", "D": 22101, "l": "h98j", "a": 32156, "V0": "%]hf", "V1": 62748, "V2": "9pb7", "V3": 86483, "V6": "%r7r", "VV": 83250, "VJ": "89J2", "Vz": 111153, "Vd": "Yx9u", "Vg": 45163, "VL": 78053, "Vc": 58250}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd23
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1190][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api-spot.ttx.vip"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api-x/v2/account/asset"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveTtxVipBalance_0x10000bd25)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initTokocryptoModule_0x10000bd1e(a0)
+{
+	Scope[1192][7] = func_s_0x10000bd14
+	r0 = new {"V": "93y[", "J": 67082, "S": "BS4&", "g": 96980, "L": "9hYk", "X": 2941, "j": "xQ)2", "E": 20899, "c": "vV[N", "x": 52448, "K": "93y[", "u": 53235, "A": "C0qY", "s": 19148, "b": "h^gm", "i": 71783, "w": "eeST", "f": 89914, "t": "epz[", "P": 54722, "I": "A0Dr", "p": 86804, "o": "89J2", "R": 28193, "v": "p[w*", "N": 35586, "M": 39702, "k": ")Lyh", "Q": 40085, "W": "B@Sb", "T": 8977, "G": 96960, "y": "p[w*", "e": 71255, "U": "89J2", "q": 97937, "O": "mwAz", "C": 119078, "n": "n@A0", "r": 60895, "H": "XR6@", "h": 54097, "Y": 39272, "D": "m[K#", "l": 36988, "a": "YbH*", "V0": 97900, "V1": "93y[", "V2": 10198, "V3": "b48I", "V6": 103011, "VV": "L@kv", "VJ": 20330, "Vz": 21136, "Vd": "89J2", "Vg": 52051, "VL": "]1@2", "Vc": 49641, "Vx": "F1xf", "VB": 100119, "VK": "h98j", "Vu": 20630, "VA": 90646, "Vs": "pdVE", "Vb": 37781, "Vw": 10557, "Vf": "K&pk", "Vt": 2982, "VP": 47393, "Vp": "9pb7", "Vo": 5698, "VR": "M2Ty", "VQ": 576, "VW": "M2Ty", "VT": 7137}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd1a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1192][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.tokocrypto.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/bapi/asset/v3/private/asset-service/asset/get-user-asset"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveTokocryptoBalance_0x10000bd1d)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initTdPplgmModule_0x10000bd13(a0)
+{
+	Scope[1194][9] = func_E_0x10000bd0b
+	r0 = new {"V": "JrBU", "J": 69507, "S": "gm42", "g": 23919, "L": "]1@2", "X": 9474, "j": "JrBU", "E": 88969, "c": 28305, "x": "K&pk", "K": 11877, "u": "8dGo", "A": 28432, "s": "eeST", "b": 100222, "i": "gm42", "w": 21849, "f": 68364, "t": "]1@2", "P": 3625, "I": "mwAz", "p": 62469, "o": "kh^v", "R": 55103, "v": 14021, "N": "b48I", "M": 56030, "k": "XR6@", "Q": 98630, "W": "[Jy3", "T": 57214, "G": "9pb7", "y": 93779, "e": "p8sI", "U": 2085, "q": "h^gm", "O": 82831, "C": ")Lyh", "n": 96523, "r": "YbH*", "H": 65227, "h": "VHeU", "Y": 55289, "D": "p8sI", "l": 24144, "a": "n@A0", "V0": 122858, "V1": "JrBU", "V2": 38008, "V3": 33303, "V6": 36363, "VV": "F1xf", "VJ": 47433, "Vz": 65063, "Vd": "*!!t", "Vg": 84836, "VL": "vV[N", "Vc": 91714}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd10
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1194][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "td.pplgm.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/td-api/api/v1/accounts"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveTdPplgmBalance_0x10000bd12)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initSuperexModule_0x10000bd0a(a0)
+{
+	Scope[1195][8] = func_c_0x10000bd01
+	r0 = new {"V": "M2Ty", "J": 108913, "S": "gm42", "g": 24139, "L": "[()[", "X": 33840, "j": "A5nh", "E": 3990, "c": "]1@2", "x": 22760, "K": "toM2", "u": 41457, "A": "nvO5", "s": 31528, "b": 113926, "i": "mwAz", "w": 49402, "f": 28503, "t": "h^gm", "P": 102117, "I": "*!!t", "p": 24593, "o": 97188, "R": "[Jy3", "v": 92811, "N": "epz[", "M": 122597, "k": 59396, "Q": ")Lyh", "W": 114293, "T": "I@Bf", "G": 54382, "y": 110691, "e": "pdVE", "U": 43700, "q": ")Lyh", "O": 107828, "C": "XR6@", "n": 86082, "r": "O9*f", "H": 100686, "h": "VHeU", "Y": 10639, "D": "x&b0", "l": 123902, "a": 33157, "V0": "9pb7", "V1": 85429, "V2": "Yx9u", "V3": 6936, "V6": "p[w*", "VV": 34237, "VJ": "h98j", "Vz": 105336, "Vd": "pdVE", "Vg": 45723, "VL": "b48I", "Vc": 21455, "Vx": 84129}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bd07
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1195][9] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api.superexchang.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/wallet/user-asset/total"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveSuperexBalance_0x10000bd09)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initStormgainModule_0x10000bd00(a0)
+{
+	Scope[1196][7] = func_s_0x10000bcf9
+	r0 = new {"V": 108118, "J": "toM2", "S": 10232, "g": "eeST", "L": 122616, "X": "p8sI", "j": 76435, "E": "K&pk", "c": 67032, "x": "nvO5", "K": 68885, "u": "pdVE", "A": 117581, "s": "93y[", "b": 34099, "i": "^Ceg", "w": 517, "f": "VHeU", "t": 43054, "P": "[()[", "I": 116560, "p": "XR6@", "o": 106712, "R": "[Jy3", "v": 121900, "N": "epz[", "M": 11998, "k": "eeST", "Q": 61935, "W": "C0qY", "T": 100378, "G": "BS4&", "y": 78377, "e": 68509, "U": "M2Ty", "q": 84182, "O": "F1xf", "C": 110398, "n": "B@Sb", "r": 83803, "H": "Yx9u", "h": 117029, "Y": "vV[N", "D": 111120, "l": "JrBU", "a": 88053, "V0": ")Ku4", "V1": 49859, "V2": "xQ)2", "V3": 61896, "V6": "toM2", "VV": 43434, "VJ": "mwAz", "Vz": 84445, "Vd": "eeST", "Vg": 66209, "VL": "B@Sb", "Vc": 91099, "Vx": 82769, "VB": "A0Dr"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcfd
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1196][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "app.stormgain.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/spa/datalayer"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveStormgainBalance_0x10000bcff)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeStakeRouterModule_0x10000bcf8(a0)
+{
+	Scope[1198][17] = func_g_0x10000bcdf
+	Scope[1198][18] = func_aggregateStakeBalance_0x10000bce1
+	Scope[1198][19] = func_fetchCurrencyConversionRates_0x10000bce3
+	Scope[1198][20] = func_fetchUserBalances_0x10000bce5
+	Scope[1198][21] = func_convertCurrency_0x10000bce8
+	Scope[1198][22] = func_fetchGraphQL_0x10000bcea
+	r0 = new {"V": "gm42", "J": 59151, "S": "C0qY", "g": 23856, "L": "YbH*", "X": 40862, "j": "A5nh", "E": 45778, "c": "vV[N", "x": 7899, "K": "F1xf", "u": 57223, "A": "9hYk", "s": 61839, "b": "epz[", "i": 17072, "w": "A5nh", "f": 77799, "t": "m[K#", "P": 18332, "I": "]C&)", "p": 29304, "o": "nvO5", "R": 54419, "v": "xQ)2", "N": 108016, "M": "eeST", "k": 57559, "Q": "toM2", "W": 57814, "T": "K&pk", "G": 33802, "y": 106257, "e": 81380, "U": "h^gm", "q": 71062, "O": "p[w*", "C": 21649, "n": "n@A0", "r": 15642, "H": 28261, "h": "]1@2", "Y": 86969, "D": 53511, "l": "Yx9u", "a": 92486, "V0": "mwAz", "V1": 50629, "V2": "[()[", "V3": 77792, "V6": "9pb7", "VV": 29761, "VJ": "B@Sb", "Vz": 19703, "Vd": 60259, "Vg": 111976, "VL": "m[K#", "Vc": 57516, "Vx": "M2Ty", "VB": 115631, "VK": "x&b0", "Vu": 106521, "VA": "n@A0", "Vs": 122175, "Vb": "XR6@", "Vw": 61238, "Vf": "mwAz", "Vt": 112099, "VP": 16235, "Vp": "VHeU", "Vo": 108361, "VR": "x&b0", "VQ": 6680, "VW": "*!!t", "VT": 2302, "VG": 30589, "Vy": 87911, "Ve": 46284, "VU": "p8sI", "Vq": 4543, "VO": "[Jy3", "Vm": 121379, "VZ": 108840, "Vn": "iSZ6", "Vr": 16688, "VH": 108347, "Vh": "9pb7", "VY": 118869, "VD": 100193, "Vl": 120502, "Va": 121540, "J0": ")Ku4", "J2": 57207, "J3": "p8sI", "J4": 110013, "J5": "epz[", "J6": 50977, "J7": "[Jy3", "J9": 123538, "Jd": "Yx9u", "Jg": 31884, "JL": 79911, "JX": "kh^v", "Jc": 7515, "Jx": "[()[", "JB": 48902, "Ju": "BS4&", "Js": 107157, "Jb": 105200, "Ji": "O9*f", "Jw": 82594, "Jf": 118470, "Jt": 124976, "JP": 110559, "Jp": 50728, "JR": "^Ceg", "JQ": 7511, "JW": "]1@2", "JT": 62913, "JG": 53138, "Jy": 75664, "JU": "[()[", "JF": 91666, "Jq": 84191, "JO": ")Ku4", "Jm": 46111, "JC": 46458, "Jn": "nvO5", "Jr": 79457, "Jh": 117844, "JY": "C0qY", "JD": 63947, "Jl": "x&b0", "z0": 24358, "z1": "8dGo", "z2": 40624, "z3": "vV[N", "z6": 40450, "zV": "h^gm", "zJ": 22118, "zz": 120009, "zd": "%r7r", "zS": 51173, "zg": "gm42", "zL": 86057, "zX": "h^gm", "zE": 19675, "zc": "9hYk", "zx": 59670, "zB": "%r7r", "zu": 68733, "zA": "m[K#", "zs": "%r7r", "zw": 62013, "zf": "b48I", "zt": 121466, "zP": "I@Bf", "zp": 101624, "zo": "9hYk", "zW": 40763, "zG": "h^gm", "zy": 63627, "zU": "BS4&", "zF": 105215, "zO": "nvO5", "zC": 35455, "zZ": "YbH*", "zn": 95928, "zr": "JrBU", "zH": 100524, "zh": "M2Ty", "zY": 65754, "zl": "xQ)2", "za": 110342, "d2": "mwAz", "d3": 10835, "d4": 29095, "d5": "h98j", "d6": 105623, "d7": 59168, "d9": 37459, "dV": 118083, "dJ": "%]hf", "dz": 52510, "dd": 38097, "dg": "%r7r", "dL": 45653, "dX": "XR6@", "dj": 15869, "dE": "%r7r", "dc": 76982, "dx": "L@kv", "dB": 36181, "dK": "m[K#", "dA": 81952, "ds": "9pb7", "di": 40892, "dw": "L@kv", "df": 45787, "dt": "B@Sb", "dP": 72383, "dI": "Yx9u", "dp": 62085, "dv": 103348, "dN": "Yx9u", "dM": 60371, "dQ": "pdVE", "dW": 25718, "dy": "XR6@", "de": 55484, "dU": "p8sI", "dO": 41895, "dC": "89J2", "dZ": 48099, "dn": 115631, "dr": 76699, "dH": "Yx9u", "dY": 35990, "dD": "p8sI", "dl": 69071, "da": 35197, "S0": 40387, "S2": 58957, "S3": 59745, "S4": "%r7r", "S5": 102048, "S6": "A5nh", "S7": 61342, "SV": "A0Dr", "SJ": 88682, "Sz": 48407, "Sd": "m[K#", "Sg": 108953, "SX": "%]hf", "Sj": 23384, "SE": 109812, "Sc": "p8sI", "Sx": 38097, "SB": "9pb7", "SK": 74680, "SA": 21409, "Ss": "pdVE", "Sb": 16526, "Si": "XR6@", "Sw": 86848, "Sf": 47065, "St": 117818, "SP": 20175, "Sp": "]1@2", "SR": 31227, "Sv": 23197, "SN": 58615, "SM": "pdVE", "Sk": 66248, "SW": 118570, "ST": 114971, "Se": "F1xf", "SU": 15987, "SF": "p8sI", "Sq": 13412, "SO": 89561, "Sm": 69853, "SZ": "]1@2", "SH": 26053, "SY": "xQ)2", "Sl": 53900, "g1": 36521, "g2": "iSZ6", "g4": 65870, "g5": "9hYk", "g6": 75147, "g7": 69189, "g8": 22783, "gV": "epz[", "gz": 14284, "gd": "h98j", "gg": 112786, "gX": 68291, "gj": 92954, "gE": "O9*f", "gc": 84940, "gx": 97110, "gB": "A5nh", "gK": 21005, "gu": ")Lyh", "gs": 5575, "gb": "F1xf", "gw": 63860, "gt": "h^gm", "gP": 110115, "gp": ")Ku4", "go": 74234, "gR": 62143, "gv": 97562, "gN": 115487, "gk": "x&b0", "BcY": 90368, "BcD": 19624, "Bcl": 23855, "Bca": "XR6@", "Bx0": 44152, "Bx1": "B@Sb", "Bx2": 89909, "Bx3": "%r7r", "Bx4": 54565, "Bx5": "%r7r", "Bx6": 65161, "Bx7": "A5nh", "Bx8": 77356, "Bx9": 48103, "BxV": 117532, "BxJ": "^Ceg", "Bxz": 11342, "Bxd": "F1xf", "BxS": 43161, "Bxg": 67476, "BxL": 8058, "BxX": 124827, "Bxj": 39732, "BxE": 113318, "Bxc": "toM2", "Bxx": 108749, "BxB": "JrBU", "BxK": 2959, "Bxu": "A5nh", "BxA": 7568, "Bxs": "[Jy3", "Bxb": 89762, "Bxi": 42249, "Bxw": 13059, "Bxf": "93y[", "Bxt": 69787, "BxP": 116197, "BxI": "M2Ty", "Bxp": 3850, "Bxo": 120469, "BxR": 92306, "Bxv": "kh^v", "BxN": 36331}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcf5
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r9 = func_initializeFetchModule_0x100006ba6["exports"]()
+	Scope[1198][13] = r1(r9)
+	r9 = func_initModule_0x10000ba72["exports"]()
+	Scope[1198][14] = r1(r9)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	Scope[1198][15] = func_initObjectUtilsModule_0x10000baaa["exports"]()
+	Scope[1198][16] = "stake.com"
+	r6 = r2["Router"]
+	r4 = r6(r0)
+	r6 = r4["post"]
+	r9 = "/_api/graphql"
+	r10 = new {"request": null}
+	r11 = new {"full": null}
+	r12 = r3["jsonTransformer"]
+	r11["full"] = r12(func_handleUserBalancesOperation_0x10000bcf7)
+	r10["request"] = r11
+	r7 = r4
+	ACCU = r6(Scope[1198][16], r9, r10)
+	a0["default"] = r4
+	return undefined
+}
+function func_initSkrillModule_0x10000bcde(a0)
+{
+	Scope[1209][8] = func_s_0x10000bcd7
+	r0 = new {"V": "K&pk", "J": 86853, "S": "vV[N", "g": 101238, "L": "[()[", "X": 121867, "j": "toM2", "E": 15394, "c": "]1@2", "x": 22728, "K": "M2Ty", "u": 96469, "A": 34425, "s": "x&b0", "b": 20358, "i": "x&b0", "w": 69066, "f": 63618, "t": "JrBU", "P": 6163, "I": 48337, "p": "A5nh", "o": 27635, "R": "XR6@", "v": 83398, "N": "M2Ty", "M": 29427, "k": "BS4&", "Q": 930, "W": "93y[", "T": 10426, "G": "iSZ6", "y": 33932, "e": "p[w*", "U": 59365, "q": "iSZ6", "O": 80955, "C": "YbH*", "n": 59227, "r": 124304, "H": ")Lyh", "h": 75314, "Y": "B@Sb", "D": 26910, "l": "b48I", "a": 97268, "V0": "A0Dr", "V1": 20685, "V2": "F1xf", "V3": 53163, "V6": "^Ceg", "VV": 84298, "VJ": "XR6@", "Vz": 83760, "Vd": "VHeU", "Vg": 52508, "VL": "x&b0", "Vc": 107340, "Vx": "9hYk", "VB": 67112}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcdb
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1209][9] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "account.skrill.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/wallet/preflight"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveSkrillBalance_0x10000bcdd)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initRipioModule_0x10000bcd6(a0)
+{
+	Scope[1210][7] = func_s_0x10000bcce
+	r0 = new {"V": 77813, "J": "BS4&", "S": 68427, "g": "p[w*", "L": 83261, "X": "[Jy3", "j": 88877, "E": "YbH*", "c": 85432, "x": "9hYk", "K": 66739, "u": "BS4&", "A": 33846, "s": "F1xf", "b": 3948, "i": "XR6@", "w": 49536, "f": "h^gm", "t": 38804, "P": "Yx9u", "I": 96261, "p": "9pb7", "o": 85469, "R": "M2Ty", "v": 97694, "N": "89J2", "M": 84861, "k": 45978, "Q": "gm42", "W": 97123, "T": "*!!t", "G": 19126, "y": "L@kv", "e": 69449, "U": "89J2", "q": 79195, "O": "kh^v", "C": 83332, "n": "]1@2", "r": 102250, "H": "%]hf", "h": 63472, "Y": 118310, "D": "epz[", "l": 54933, "a": "8dGo", "V0": 7215, "V1": "A5nh", "V2": 41967, "V3": "n@A0", "V6": 81734, "VV": "%r7r", "VJ": 52975, "Vz": "C0qY", "Vd": 97943, "Vg": "x&b0", "VL": 4109, "Vc": "h98j", "Vx": 94424, "VB": 43906, "VK": "b48I", "Vu": 113496, "VA": 5850, "Vs": "BS4&"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcd3
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1210][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "nexus.ripio.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/v1/balances?ref_currency=USD"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveRipioBalance_0x10000bcd5)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initRemitanoModule_0x10000bccd(a0)
+{
+	Scope[1212][11] = func_h_0x10000bcbc
+	r0 = new {"V": "O9*f", "J": 110689, "S": "%]hf", "g": 53135, "L": "89J2", "X": 70798, "j": "x&b0", "E": 31292, "c": "h98j", "x": 112626, "K": "vV[N", "u": 114450, "A": "]1@2", "s": 100578, "b": "93y[", "i": 49251, "w": "h^gm", "f": 49229, "t": 15499, "P": "9pb7", "I": 116488, "p": "%r7r", "o": 68740, "R": "M2Ty", "v": 72536, "N": "[Jy3", "M": 61892, "k": ")Ku4", "Q": 71647, "W": "*!!t", "T": 51066, "G": "YbH*", "y": 60228, "e": "[Jy3", "U": 6804, "q": 4706, "O": "Yx9u", "C": 102197, "n": "9pb7", "r": 58611, "H": "b48I", "h": 102347, "Y": "%r7r", "D": 616, "l": "9hYk", "a": 102293, "V0": "B@Sb", "V1": 57116, "V2": "9hYk", "V3": 122379, "V6": "]C&)", "VV": 15339, "VJ": "mwAz", "Vz": 27799, "Vd": "xQ)2", "Vg": 55306, "VL": "toM2", "Vc": 27421, "Vx": "I@Bf", "VB": 76899, "VK": "VHeU", "Vu": 68537, "VA": "XR6@", "Vs": 82868, "Vb": "93y[", "Vw": 62742, "Vf": 97301, "Vt": "89J2", "VP": 112027, "Vp": "pdVE", "Vo": 73075, "VR": "%r7r", "VQ": 117127, "VW": 39198, "VT": "8dGo", "VG": 17750, "Vy": "A0Dr", "Ve": 82542}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcc2
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1212][9] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "remitano.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	Scope[1212][10] = {}
+	r7 = r5["get"]
+	r10 = "/api/v1/rates/recent"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_parseTodayRates_0x10000bcc4)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	r7 = r5["get"]
+	r10 = "/api/v1/users/coin_accounts"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveRemitanoBalance_0x10000bccc)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initPoloniexModule_0x10000bcbb(a0)
+{
+	Scope[1218][6] = func_a_0x10000bcb3
+	r0 = new {"V": 16365, "J": "A5nh", "S": 69155, "g": "9hYk", "L": 74841, "X": "K&pk", "j": 90410, "E": "93y[", "c": 84465, "x": "xQ)2", "K": 15818, "u": "nvO5", "A": 61540, "s": "O9*f", "b": 111101, "i": "9hYk", "w": 113688, "f": "%]hf", "t": 100328, "P": "XR6@", "I": 26946, "p": "[()[", "o": 46647, "R": "9pb7", "v": 119746, "N": "89J2", "M": 14631, "k": "h98j", "Q": 112652, "W": "m[K#", "T": 30350, "G": "M2Ty", "y": 47358, "e": "L@kv", "U": 49668, "q": "mwAz", "O": 71630, "C": "B@Sb", "n": 11483, "r": "JrBU", "H": 96548, "h": "xQ)2", "Y": 32135, "D": "A5nh", "l": 87067, "a": "Yx9u", "V0": 96150, "V1": "BS4&", "V2": 104947, "V3": "b48I", "V6": 3550, "VV": "I@Bf", "VJ": 59437, "Vz": "gm42", "Vd": 79779, "Vg": "^Ceg", "VL": 1619, "Vc": "A0Dr", "Vx": 113085, "VB": "89J2", "VK": 76856, "Vu": "]C&)", "VA": 2231, "Vs": "kh^v", "Vb": 87302}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcb8
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1218][7] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "poloniex.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/proxy/sapi/spot/account/balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_savePoloniexBalance_0x10000bcba)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initPionexModule_0x10000bcb2(a0)
+{
+	Scope[1221][7] = func_s_0x10000bcab
+	r0 = new {"V": "vV[N", "J": 6898, "S": "F1xf", "g": 56222, "L": "^Ceg", "X": 55615, "j": "n@A0", "E": 36469, "c": "p8sI", "x": 47037, "K": "Yx9u", "u": 88561, "A": "gm42", "s": 63868, "b": "O9*f", "i": 52832, "w": "89J2", "f": 58250, "t": "93y[", "P": 1974, "I": "M2Ty", "p": 60556, "o": "toM2", "R": 105627, "v": "8dGo", "N": 40511, "M": 73995, "k": "A0Dr", "Q": 3463, "W": "%r7r", "T": 34315, "G": "9pb7", "y": 59214, "e": "*!!t", "U": 72862, "q": 56155, "O": "89J2", "C": 100731, "n": "kh^v", "r": 99371, "H": 81966, "h": "kh^v", "Y": 22089, "D": "h^gm", "l": 93514, "a": 60361, "V0": "L@kv", "V1": 34133, "V2": 14575, "V3": 112535, "V6": "8dGo", "VV": 78955, "VJ": ")Lyh", "Vz": 78806, "Vd": "]1@2", "Vg": 2191, "VL": "toM2", "Vc": 107646}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bcaf
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1221][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.pionex.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/apis/wapi/v2/balances_coin"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_savePionexBalance_0x10000bcb1)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initPdaxRouter_0x10000bcaa(a0)
+{
+	Scope[1223][9] = func_c_0x10000bc9a
+	r0 = new {"V": "[()[", "J": 111251, "S": "9hYk", "g": 125061, "L": "BS4&", "X": 89990, "j": "toM2", "E": 56488, "c": "O9*f", "x": 551, "K": "pdVE", "u": 5923, "A": "Yx9u", "s": 62360, "b": "L@kv", "i": 57972, "w": "*!!t", "f": 118535, "t": "xQ)2", "P": 83662, "I": "A5nh", "p": 33644, "o": ")Ku4", "R": 83514, "v": "XR6@", "N": 57251, "M": "M2Ty", "k": 7367, "Q": "XR6@", "W": 46989, "T": "C0qY", "G": 10553, "y": "O9*f", "e": 120794, "U": "%r7r", "q": 34164, "O": "iSZ6", "C": 71823, "n": "8dGo", "r": 121015, "H": "h98j", "h": 5611, "Y": "JrBU", "D": 40741, "l": "eeST", "a": 71014, "V0": "K&pk", "V1": 107806, "V2": "mwAz", "V3": 73245, "V6": "A0Dr", "VV": 3872, "VJ": "%]hf", "Vz": 65275, "Vd": 16321, "Vg": "toM2", "VL": 110779, "Vc": "iSZ6", "Vx": 3576, "VB": 105364, "VK": "x&b0", "Vu": 28911, "VA": "F1xf", "Vs": 76570, "Vb": 52576, "Vw": "gm42", "Vf": 124593, "Vt": 112875, "VP": "iSZ6", "Vp": 56629, "Vo": "kh^v", "VR": 71103, "VQ": "vV[N", "VW": 44805, "VT": "M2Ty", "VG": 8933, "Vy": "B@Sb", "Ve": 36719, "VU": "K&pk", "Vq": 33982, "VO": "%r7r", "Vm": 22440, "VZ": 73265, "Vn": "Yx9u", "Vr": 46292, "VH": "B@Sb", "Vh": 119297, "VY": 48043, "VD": 120752, "Vl": 109731, "Va": 50987, "J0": "]C&)", "J2": 18092, "J3": "]1@2", "J4": 41401}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bca1
+	}
+	r1 = ACCU
+	r9 = Object["defineProperty"]
+	r12 = "__esModule"
+	r13 = new {"value": <true}
+	ACCU = r9(a0, r12, r13)
+	r12 = func_initModule_0x10000ba72["exports"]()
+	Scope[1223][10] = r1(r12)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "pdax.ph"
+	r5 = ("services." + r4)
+	r6 = ("api.trade." + r4)
+	r9 = r2["Router"]
+	r7 = r9(r0)
+	Scope[1223][11] = {}
+	Scope[1223][12] = []
+	r9 = r7["get"]
+	r12 = "/api/pdax-api/retail/v1/assets/prices/change"
+	r13 = new {"request": null, "response": null}
+	r14 = new {"headers": null}
+	r14["headers"] = func_appendNoCacheHeaders_0x10000bca3
+	r13["request"] = r14
+	r14 = new {"full": null}
+	r15 = r3["jsonTransformer"]
+	r14["full"] = r15(func_processAssetPrices_0x10000bca6)
+	r13["response"] = r14
+	r10 = r7
+	ACCU = r9(r5, r12, r13)
+	r9 = r7["get"]
+	r12 = "/pixo/v4/balances"
+	r13 = new {"response": null}
+	r14 = new {"full": null}
+	r15 = r3["jsonTransformer"]
+	r14["full"] = r15(func_processWalletBalance_0x10000bca9)
+	r13["response"] = r14
+	r10 = r7
+	ACCU = r9(r6, r12, r13)
+	a0["default"] = r7
+	return undefined
+}
+function func_initPaxfulRouter_0x10000bc99(a0)
+{
+	Scope[1227][9] = func_c_0x10000bc8c
+	r0 = new {"V": 9623, "J": "%r7r", "S": 20448, "g": "p8sI", "L": 83231, "X": "BS4&", "j": 900, "E": "F1xf", "c": 97565, "x": "F1xf", "K": 239, "u": "h^gm", "A": 73604, "s": "B@Sb", "b": 64775, "i": "mwAz", "w": 88341, "f": "eeST", "t": 37248, "P": "]C&)", "I": 23242, "p": "vV[N", "o": 71062, "R": "VHeU", "v": 89203, "N": "kh^v", "M": 42537, "k": "vV[N", "Q": 24996, "W": "epz[", "T": 99029, "G": "[Jy3", "y": 79055, "e": "BS4&", "U": 43029, "q": "x&b0", "O": 43102, "C": 61982, "n": "C0qY", "r": 13017, "H": "b48I", "h": 35531, "Y": "epz[", "D": 16403, "l": "m[K#", "a": 60255, "V0": "p[w*", "V1": 73762, "V2": "x&b0", "V3": 46823, "V6": "8dGo", "VV": 3058, "VJ": "*!!t", "Vz": 9316, "Vd": ")Ku4", "Vg": 70815, "VL": "iSZ6", "Vc": 57896, "Vx": "gm42", "VB": 69910, "VK": "JrBU", "Vu": 58042, "VA": 122591, "Vs": ")Lyh", "Vb": 54461, "Vw": "YbH*", "Vf": 17354, "Vt": "]C&)", "VP": 79855, "Vp": "B@Sb", "Vo": 48970, "VR": "^Ceg", "VQ": 94142, "VW": 39472, "VT": "%]hf", "VG": 49579, "Vy": "Yx9u", "Ve": 110995}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc92
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1227][11] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "paxful.com"
+	Scope[1227][12] = {}
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/rest/v2/crypto-fiat-rates"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_storeCryptoRates_0x10000bc94)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	r7 = r5["get"]
+	r10 = "/rest/v2/wallet/balances"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_savePaxfulBalance_0x10000bc98)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initOslRouter_0x10000bc8b(a0)
+{
+	Scope[1229][7] = func_s_0x10000bc81
+	r0 = new {"V": "A0Dr", "J": 83253, "S": "M2Ty", "g": 32969, "L": "BS4&", "X": 5422, "j": "vV[N", "E": 117316, "c": "O9*f", "x": 124945, "K": "9pb7", "u": 100431, "A": 20121, "s": "YbH*", "b": 24724, "i": "VHeU", "w": 106925, "f": "8dGo", "t": 76277, "P": "89J2", "I": 84208, "p": "gm42", "o": 105806, "R": "*!!t", "v": 97755, "N": "*!!t", "M": 99577, "k": "[Jy3", "Q": 24138, "W": 57449, "T": "epz[", "G": 36196, "y": 66811, "e": "XR6@", "U": 86251, "q": "]C&)", "O": 46597, "C": "JrBU", "n": 20104, "r": "toM2", "H": 86619, "h": "h98j", "Y": 119452, "D": "m[K#", "l": 70903, "a": 68396, "V0": 88588, "V1": "p8sI", "V2": 18365, "V3": ")Lyh", "V6": 123256, "VV": "89J2", "VJ": 109321, "Vz": 91641, "Vd": 19277}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc88
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1229][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "trade-hk.osl.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/v1/pri/mix/overview"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveOslBalances_0x10000bc8a)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initOkxRouter_0x10000bc80(a0)
+{
+	Scope[1231][8] = func_s_0x10000bc74
+	r0 = new {"V": "C0qY", "J": 85722, "S": ")Ku4", "g": 39160, "L": "JrBU", "X": 4278, "j": "^Ceg", "E": 14428, "c": "x&b0", "x": 16562, "K": "n@A0", "u": 28098, "A": "F1xf", "s": 19170, "b": "mwAz", "i": 31296, "w": "Yx9u", "f": 38149, "t": "[()[", "P": 64533, "I": "BS4&", "p": 10977, "o": "iSZ6", "R": 59745, "v": "p[w*", "N": 95160, "M": "%]hf", "k": 109100, "Q": "Yx9u", "W": 95501, "T": 85550, "G": 38853, "y": "8dGo", "e": 99280, "U": "eeST", "q": 104534, "O": 76040, "C": "K&pk", "n": 18284, "r": "O9*f", "H": 5673, "h": "BS4&", "Y": 38739, "D": "C0qY", "l": 62226, "a": 2441, "V0": "nvO5", "V1": 5223, "V2": "K&pk", "V3": 118049, "V6": "xQ)2", "VV": 103478, "VJ": "]1@2", "Vz": 237, "Vd": 64764, "Vg": 110613, "VL": "epz[", "Vc": 106343, "Vx": 105237, "VB": "%]hf", "VK": 63383, "Vu": 68255, "VA": "9pb7", "Vs": 10225, "Vb": "gm42", "Vw": 105048, "Vf": "p8sI", "Vt": 50253, "VP": "vV[N", "Vp": 120326, "Vo": "C0qY", "VR": 68255, "VQ": "^Ceg", "VW": 30810, "VT": ")Lyh", "VG": 122835, "Vy": "*!!t", "Ve": 50493, "VU": 115254, "Vq": 20505}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc7b
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1231][10] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.okx.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/v2/asset/balance/balance-portfolio"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveOkxBalanceV1_0x10000bc7d)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	r7 = r5["get"]
+	r10 = "/v2/asset/analysis/assetTrendHomePage"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveOkxBalanceV2_0x10000bc7f)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initNoonesRouter_0x10000bc73(a0)
+{
+	Scope[1233][7] = func_a_0x10000bc6b
+	r0 = new {"V": 119436, "J": "iSZ6", "S": 26085, "g": "XR6@", "L": 10104, "X": "[()[", "j": 14071, "E": "9pb7", "c": 100154, "x": "h^gm", "K": 111474, "u": "9hYk", "A": 6994, "s": "m[K#", "b": 80300, "i": "A5nh", "w": 54908, "f": "%]hf", "t": 88028, "P": "pdVE", "I": 45786, "p": "[Jy3", "o": 6480, "R": "89J2", "v": 7007, "N": 58675, "M": "]1@2", "k": 30903, "Q": "B@Sb", "W": 110441, "T": 56586, "G": 102146, "y": 74956, "e": 87227, "U": "M2Ty", "q": 31578, "O": ")Ku4", "C": 5833, "n": "93y[", "r": 88276, "H": "^Ceg", "h": 16791, "Y": 52751, "D": "Yx9u", "l": 4520, "a": 32639, "V0": "A0Dr", "V1": 2449, "V2": 47254, "V3": "x&b0", "V6": 78373, "VV": "VHeU", "VJ": 91213, "Vz": "vV[N"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc70
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1233][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "noones.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/proxy/wallet/v3/summary"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveNoonesBalance_0x10000bc72)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initNexoRouter_0x10000bc6a(a0)
+{
+	Scope[1235][6] = func_o_0x10000bc61
+	r0 = new {"V": 78936, "J": "b48I", "S": 85688, "g": "A5nh", "L": 88296, "X": "[Jy3", "j": 98862, "E": "L@kv", "c": 20262, "x": "C0qY", "K": 92705, "u": "JrBU", "A": 50591, "s": "M2Ty", "b": 74673, "i": "I@Bf", "w": 96683, "f": "BS4&", "t": 83629, "P": 122701, "I": "%r7r", "p": 107045, "o": "p8sI", "R": 44533, "v": "x&b0", "N": 29012, "M": "toM2", "k": 98066, "Q": "K&pk", "W": 55774, "T": "p8sI", "G": 105266, "y": "9hYk", "e": 41218, "U": "mwAz", "q": 32340, "O": "p[w*", "C": 3576, "n": "B@Sb", "r": 15438, "H": "^Ceg", "h": 63448, "Y": "VHeU", "D": 30432, "l": "Yx9u", "a": 8131, "V0": "A5nh", "V1": 4116, "V2": 89441, "V3": 7442, "V6": "xQ)2", "VV": 27710, "VJ": "p8sI", "Vz": 47058, "Vd": 2194, "Vg": "kh^v", "VL": 36505, "Vc": "kh^v"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc67
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1235][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "platform.nexo.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/api/1/get_balances"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveNexoBalance_0x10000bc69)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initMexcRouter_0x10000bc60(a0)
+{
+	Scope[1237][6] = func_o_0x10000bc58
+	r0 = new {"V": "h98j", "J": 97759, "S": "YbH*", "g": 99413, "L": "]C&)", "X": 78105, "j": "K&pk", "E": 17774, "c": "epz[", "x": 19100, "K": "[()[", "u": 5925, "A": ")Ku4", "s": 119151, "b": "9pb7", "i": 27854, "w": "[Jy3", "f": 15174, "t": "n@A0", "P": 60285, "I": 14892, "p": "K&pk", "o": 112591, "R": "B@Sb", "v": 10691, "N": "A0Dr", "M": 75906, "k": "8dGo", "Q": 48929, "W": "F1xf", "T": 53047, "G": 50438, "y": "b48I", "e": 34267, "U": "[Jy3", "q": 43142, "O": ")Lyh", "C": 114449, "n": 13823, "r": "p[w*", "H": 76876, "h": "toM2", "Y": 20431, "D": "%]hf", "l": 22420, "a": "XR6@", "V0": 107784, "V1": 107261, "V2": "93y[", "V3": 29393, "V6": 71778, "VV": "[()[", "VJ": 111851, "Vz": "b48I", "Vd": 45955, "Vg": "8dGo", "VL": 48111, "Vc": ")Lyh", "Vx": 64323, "VB": "89J2", "VK": 112350, "Vu": 44679, "VA": "Yx9u", "Vs": 50385, "Vb": "%r7r", "Vw": 21388}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc5c
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1237][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.mexc.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/platform/asset/api/asset/overview/convert/v2"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveMexcBalance_0x10000bc5f)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initLbankRouter_0x10000bc57(a0)
+{
+	Scope[1240][8] = func_s_0x10000bc50
+	r0 = new {"V": ")Lyh", "J": 79987, "S": "89J2", "g": 22853, "L": "vV[N", "X": 15038, "j": "epz[", "E": 123357, "c": "[Jy3", "x": 120290, "K": "toM2", "u": 87566, "A": "93y[", "s": 31541, "b": ")Lyh", "i": 60512, "w": "A5nh", "f": 90169, "t": "[Jy3", "P": 85580, "I": "A0Dr", "p": 100691, "o": "iSZ6", "R": 75965, "v": "93y[", "N": 70511, "M": 98573, "k": "I@Bf", "Q": 39505, "W": "n@A0", "T": 65269, "G": 25400, "y": "BS4&", "e": 113578, "U": ")Ku4", "q": 73648, "O": "A5nh", "C": 76604, "n": "kh^v", "r": 23781, "H": "nvO5", "h": 5684, "Y": "89J2", "D": 111090, "l": "O9*f", "a": 54371, "V0": 56405, "V1": "iSZ6", "V2": 19672, "V3": "VHeU", "V6": 14851, "VV": 17061, "VJ": "[Jy3", "Vz": 66704, "Vd": "h98j", "Vg": 93814, "VL": "B@Sb", "Vc": 121885, "Vx": "x&b0", "VB": 119089, "VK": ")Lyh", "Vu": 71726, "VA": 40770, "Vs": "p8sI", "Vb": 26784, "Vw": 52468, "Vf": "]C&)", "Vt": 17932, "VP": "A0Dr", "Vp": 83394}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc54
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1240][9] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "ccapi.ierpifvid.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/coin-wallet-center/customer/asset/convertAmt/v2"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveLbankBalance_0x10000bc56)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initLazzaglobalRouter_0x10000bc4f(a0)
+{
+	Scope[1241][7] = func_a_0x10000bc47
+	r0 = new {"V": "K&pk", "J": 86815, "S": "C0qY", "g": 111199, "L": "M2Ty", "X": 75999, "j": "BS4&", "E": 4227, "c": "xQ)2", "x": 83504, "K": "I@Bf", "u": 17700, "A": "9hYk", "s": 106609, "b": "8dGo", "i": 56698, "w": "A0Dr", "f": 42505, "t": "gm42", "P": 108323, "I": "VHeU", "p": 35072, "o": "b48I", "R": 112961, "v": "89J2", "N": 71471, "M": 82168, "k": "8dGo", "Q": 278, "W": "A0Dr", "T": 106024, "G": "x&b0", "y": 28965, "e": "YbH*", "U": 66726, "q": 44070, "O": "eeST", "C": 96500, "n": "]C&)", "r": 91829, "H": "O9*f", "h": 14320, "Y": "h^gm", "D": 118019, "l": "93y[", "a": 121185, "V0": "h^gm", "V1": 82016, "V2": "nvO5", "V3": 68228, "V6": "pdVE", "VV": 3866, "VJ": "kh^v", "Vz": 5395, "Vd": 18215, "Vg": 117432, "VL": "Yx9u", "Vc": 104007}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc4c
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1241][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "office.lazzaglobal.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/v2/user"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveLazzaglobalBalance_0x10000bc4e)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initKucoinRouter_0x10000bc46(a0)
+{
+	Scope[1243][6] = func_o_0x10000bc3f
+	r0 = new {"V": 67344, "J": "93y[", "S": 22927, "g": "89J2", "L": 24890, "X": "[()[", "j": 83911, "E": 69584, "c": "pdVE", "x": 60311, "K": "9pb7", "u": 107004, "A": "mwAz", "s": 106705, "b": 61042, "i": "C0qY", "w": 28140, "f": "h98j", "t": 8479, "P": "p[w*", "I": 45690, "p": "epz[", "o": 61607, "R": "p8sI", "v": 36195, "N": "O9*f", "M": 10489, "k": "]1@2", "Q": 24656, "W": "BS4&", "T": 66034, "G": ")Ku4", "y": 119437, "e": "pdVE", "U": 87837, "q": "toM2", "O": 24188, "C": "toM2", "n": 86635, "r": "h^gm", "H": 102869, "h": "%]hf", "Y": 110411, "D": "gm42", "l": 14721, "a": "XR6@", "V0": 72734, "V1": "L@kv", "V2": 1950, "V3": "x&b0", "V6": 48935, "VV": "O9*f", "VJ": 1241, "Vz": 20606, "Vd": "O9*f", "Vg": 72847, "VL": "kh^v", "Vc": 73928, "Vx": "xQ)2", "VB": 119622, "VK": 104722, "Vu": "8dGo", "VA": 112337, "Vs": "A0Dr", "Vb": 107969, "Vw": "toM2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc43
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1243][7] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.kucoin.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/_api/kucoin-web-front/v3/asset/overview"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveKucoinBalance_0x10000bc45)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initKrakenRouter_0x10000bc3e(a0)
+{
+	Scope[1246][6] = func_a_0x10000bc35
+	r0 = new {"V": 25926, "J": "^Ceg", "S": 67768, "g": "9hYk", "L": 24133, "X": "XR6@", "j": 10036, "E": "mwAz", "c": 18220, "x": "9pb7", "K": 92505, "u": "x&b0", "A": 122906, "s": ")Lyh", "b": 63400, "i": "nvO5", "w": 118184, "f": 14409, "t": "n@A0", "P": 47952, "I": "C0qY", "p": 43155, "o": ")Ku4", "R": 107866, "v": "x&b0", "N": 84329, "M": "L@kv", "k": 77448, "Q": "p[w*", "W": 97322, "T": "M2Ty", "G": 36752, "y": "m[K#", "e": 148, "U": "8dGo", "q": 105598, "O": "A0Dr", "C": 88135, "n": "JrBU", "r": 102371, "H": "%]hf", "h": 20241, "Y": "A5nh", "D": 98614, "l": "F1xf", "a": 85141, "V0": "VHeU", "V1": 29006, "V2": "O9*f", "V3": 117109, "V6": "nvO5", "VV": 37354, "VJ": "vV[N", "Vz": 118665, "Vd": "x&b0", "Vg": 20877, "VL": 3194, "Vc": "]C&)", "Vx": 95496, "VB": "93y[", "VK": 91296, "Vu": "gm42", "VA": 91300, "Vs": "XR6@", "Vb": 35155, "Vw": "kh^v"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc3a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1246][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "iapi.kraken.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/internal/account/balance/history"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveKrakenBalance_0x10000bc3d)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initKcexRouter_0x10000bc34(a0)
+{
+	Scope[1249][8] = func_f_0x10000bc2c
+	r0 = new {"V": 49485, "J": "]1@2", "S": 100497, "g": "vV[N", "L": 3686, "X": "K&pk", "j": 109169, "E": "%]hf", "c": 72600, "x": "8dGo", "K": 67573, "u": "Yx9u", "A": 111047, "s": "iSZ6", "b": 57488, "i": 14245, "w": "[Jy3", "f": 22274, "t": "9pb7", "P": 68227, "I": "JrBU", "p": 100227, "o": 30879, "R": "p[w*", "v": 6314, "N": "gm42", "M": 113360, "k": "toM2", "Q": 112266, "W": "%r7r", "T": 1471, "G": "p8sI", "y": 42906, "e": "x&b0", "U": 42857, "q": 64414, "O": "%]hf", "C": 110389, "n": "89J2", "r": 97682, "H": "M2Ty", "h": 21806, "Y": "[()[", "D": 105485, "l": "89J2", "a": 58865, "V0": "L@kv", "V1": 20776, "V2": 24540, "V3": "A0Dr", "V6": 9315, "VV": "b48I", "VJ": 94276, "Vz": "B@Sb", "Vd": 10631, "Vg": "n@A0", "VL": 86074, "Vc": "m[K#", "Vx": 86647, "VB": "*!!t", "VK": 122148, "Vu": "VHeU", "VA": 107857, "Vs": 116729, "Vb": "O9*f", "Vw": 45796, "Vf": "^Ceg"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc30
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1249][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "kcex.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/platform/asset/api/asset/overview/convert/v2"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveKcexBalance_0x10000bc33)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initGoonusRouter_0x10000bc2b(a0)
+{
+	Scope[1252][11] = func_C_0x10000bc1e
+	r0 = new {"V": "pdVE", "J": 51557, "S": "9hYk", "g": 68077, "L": "89J2", "X": 42123, "j": "p8sI", "E": 109366, "c": "xQ)2", "x": 119540, "K": "89J2", "u": 50329, "A": "nvO5", "s": 12718, "b": "iSZ6", "i": 79908, "w": "VHeU", "f": 120047, "t": ")Ku4", "P": 65583, "I": "epz[", "p": 28808, "o": "h98j", "R": 115552, "v": "%]hf", "N": 81660, "M": 25887, "k": "I@Bf", "Q": 123326, "W": "XR6@", "T": 50790, "G": "^Ceg", "y": 113237, "e": "9hYk", "U": 58361, "q": "M2Ty", "O": 62404, "C": "[()[", "n": 112299, "r": "I@Bf", "H": 85420, "h": 92479, "Y": "L@kv", "D": 120741, "l": "h^gm", "a": 14866, "V0": "93y[", "V1": 85691, "V2": "]C&)", "V3": 40652, "V6": 46280, "VV": "F1xf", "VJ": 76397, "Vz": "%]hf", "Vd": 124295, "Vg": 78945, "VL": ")Lyh", "Vc": 75839, "Vx": "%r7r", "VB": 72100, "VK": 83728, "Vu": 18790, "VA": "8dGo", "Vs": 77549, "Vb": "O9*f", "Vw": 20417, "Vf": "b48I", "Vt": 56064, "VP": "p8sI", "Vp": 35023, "Vo": "BS4&", "VR": 122657, "VQ": 76363, "VW": "gm42", "VT": 91605, "VG": "8dGo", "Vy": 18487, "Ve": "I@Bf", "VU": 77636, "Vq": "BS4&", "VO": 111945, "Vm": 52509, "VZ": "I@Bf", "Vn": 9988, "Vr": "]1@2", "VH": 108443, "Vh": "K&pk", "VY": 103128, "VD": "m[K#", "Vl": 11569}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc26
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r9 = func_initModule_0x10000ba72["exports"]()
+	Scope[1252][9] = r1(r9)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r6 = r3["Router"]
+	r4 = r6(r0)
+	Scope[1252][10] = {}
+	r6 = r4["get"]
+	r8 = "api-invest.goonus.io"
+	r9 = "/api/v1/currency?baseCurrency=USDT"
+	r10 = new {"response": null}
+	r11 = new {"full": null}
+	r12 = r2["jsonTransformer"]
+	r11["full"] = r12(func_storeGoonusPrices_0x10000bc28)
+	r10["response"] = r11
+	r7 = r4
+	ACCU = r6(r8, r9, r10)
+	r6 = r4["get"]
+	r8 = "onus-gateway.goonus.io"
+	r9 = "/api/v1/users/balance"
+	r10 = new {"response": null}
+	r11 = new {"full": null}
+	r12 = r2["jsonTransformer"]
+	r11["full"] = r12(func_saveGoonusBalances_0x10000bc2a)
+	r10["response"] = r11
+	r7 = r4
+	ACCU = r6(r8, r9, r10)
+	a0["default"] = r4
+	return undefined
+}
+function func_initFortunoRouter_0x10000bc1d(a0)
+{
+	Scope[1254][5] = func_n_0x10000bc15
+	r0 = new {"V": 97149, "J": "9hYk", "S": 85911, "g": "BS4&", "L": 80532, "X": "mwAz", "j": 64515, "E": "m[K#", "c": 35089, "x": "[Jy3", "K": 7102, "u": "]C&)", "A": 17871, "s": "I@Bf", "b": 30802, "i": "JrBU", "w": 49510, "f": 71082, "t": "epz[", "P": 35933, "I": "toM2", "p": 114063, "o": "93y[", "R": 85276, "v": 56469, "N": "mwAz", "M": 43545, "k": "YbH*", "Q": 59830, "W": "B@Sb", "T": 118419, "G": "h^gm", "y": 67970, "e": "]1@2", "U": 17773, "q": "nvO5", "O": 111862, "C": "m[K#", "n": 1172, "r": "8dGo", "H": 16570, "h": "h^gm", "Y": 74088, "D": "[()[", "l": 124583, "a": "%]hf", "V0": 85400, "V1": "B@Sb", "V2": 34605, "V3": "nvO5", "V6": 114335, "VV": "A5nh", "VJ": 118646, "Vz": "O9*f", "Vd": 97045, "Vg": 112507, "VL": "]1@2", "Vc": 37762, "Vx": "L@kv", "VB": 20705, "VK": 119289, "Vu": ")Ku4", "VA": 84038, "Vs": 109457, "Vb": "epz[", "Vw": 6059, "Vf": "9pb7", "Vt": 2613, "VP": "]1@2", "Vp": 21333, "Vo": "%r7r"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc1a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1254][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "client.fortunomarkets.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/manager/trading-account-details/:id"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveFortunoBalance_0x10000bc1c)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initCsgoempireRouter_0x10000bc14(a0)
+{
+	Scope[1257][8] = func_s_0x10000bc0c
+	r0 = new {"V": "m[K#", "J": 63497, "S": "C0qY", "g": 110352, "L": 98383, "X": "x&b0", "j": 88731, "E": "JrBU", "c": 72861, "x": "p[w*", "K": 14292, "u": "L@kv", "A": 80768, "s": "nvO5", "b": 119480, "i": "x&b0", "w": 26238, "f": "^Ceg", "t": 11651, "P": 107380, "I": "toM2", "p": 81541, "o": "BS4&", "R": 39012, "v": "A5nh", "N": 6316, "M": "[()[", "k": 67470, "Q": "K&pk", "W": 92081, "T": "iSZ6", "G": 33047, "y": "gm42", "e": 36210, "U": "h^gm", "q": 69228, "O": "vV[N", "C": 26718, "n": "pdVE", "r": 52761, "H": "I@Bf", "h": 114715, "Y": "F1xf", "D": 96392, "l": "h98j", "a": 70453, "V0": "^Ceg", "V1": 10924, "V2": "n@A0", "V3": 34534, "V6": "A0Dr", "VV": 60757, "VJ": 29511, "Vz": "epz[", "Vd": 78852, "Vg": "9pb7", "VL": 70971, "Vc": "O9*f", "Vx": 83212}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc10
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1257][9] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "csgoempire.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/v2/metadata"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCsgoempireBalance_0x10000bc13)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initCexIoModule_0x10000bc0b(a0)
+{
+	Scope[1258][9] = func_E_0x10000bc02
+	r0 = new {"V": "xQ)2", "J": 114251, "S": "]1@2", "g": 101468, "L": "kh^v", "X": 20980, "j": "K&pk", "E": 86338, "c": "kh^v", "x": 65877, "K": "vV[N", "u": 46845, "A": "B@Sb", "s": 100612, "b": "9hYk", "i": 85502, "w": "L@kv", "f": 55047, "t": "%]hf", "P": 59840, "I": "89J2", "p": 104918, "o": "eeST", "R": 66969, "v": "h^gm", "N": 8096, "M": "eeST", "k": 40478, "Q": "[Jy3", "W": 7181, "T": "vV[N", "G": 15495, "y": ")Lyh", "e": 113746, "U": "M2Ty", "q": 12713, "O": "toM2", "C": 110144, "n": "YbH*", "r": 66249, "H": "%]hf", "h": 111834, "Y": 88803, "D": "L@kv", "l": 121600, "a": "xQ)2", "V0": 71822, "V1": "93y[", "V2": 68603, "V3": "kh^v", "V6": 33953, "VV": 6004, "VJ": "[()[", "Vz": 27045, "Vd": "pdVE", "Vg": 106723, "VL": "JrBU", "Vc": 4375, "Vx": "h98j", "VB": 66905, "VK": "p8sI", "Vu": 50112, "VA": "L@kv", "Vs": 92710, "Vb": "kh^v", "Vw": 35104}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bc08
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1258][7] = r1(r10)
+	r2 = func_initializeHtmlTransformerModule_0x10000bc01["exports"]()
+	Scope[1258][8] = func_initObjectUtilsModule_0x10000baaa["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "wallet.cex.io"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/dashboard/crypto"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["htmlTransformer"]
+	r12["full"] = r13(func_saveCexIoBalance_0x10000bc0a)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeHtmlTransformerModule_0x10000bc01(a0)
+{
+	Scope[1260][18] = func_p_0x10000bbd3
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineBindingProperty_0x10000bbe6
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x10000bbe8
+		}
+	}
+	Scope[1260][16] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefaultProperty_0x10000bbea
+		}
+		else
+		{
+			ACCU = func_setDefaultProperty_0x10000bbec
+		}
+	}
+	Scope[1260][17] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_initializeInteropModule_0x10000bc00()
+	}
+	r1 = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["htmlTransformer"] = func_createScopedHandler_0x10000bbd8
+	r7 = func_initializeCheerioBundle_0x100002834["exports"]()
+	Scope[1260][19] = r1(r7)
+	return undefined
+}
+function func_initializeInteropModule_0x10000bc00()
+{
+	Scope[1261][12] = func_w_0x10000bbed
+	r1 = new {"UADpX": null, "Oqnag": null, "dVrnK": null, "ALJYv": null, "mAIcI": null, "iXvdK": null, "xGRyb": null}
+	Scope[1261][13] = r1
+	Scope[1261][14] = func_getOwnPropertyNames_0x10000bbfd
+	return func_interopRequireWildcard_0x10000bbff
+}
+function func_setDefaultProperty_0x10000bbec(a0, a1)
+{
+	a0["default"] = a1
+	return undefined
+}
+function func_defineDefaultProperty_0x10000bbea(a0, a1)
+{
+	r1 = Object["defineProperty"]
+	r4 = "default"
+	r5 = new {"enumerable": <true, "value": null}
+	r5["value"] = a1
+	ACCU = r1(a0, r4, r5)
+	return undefined
+}
+function func_copyProperty_0x10000bbe8(a0, a1, a2, a3)
+{
+	if (a3 === undefined)
+	{
+		a3 = a2
+		ACCU = a3
+	}
+	a0[a3] = a1[a2]
+	return undefined
+}
+function func_defineBindingProperty_0x10000bbe6(a0, a1, a2, a3)
+{
+	Scope[1267][3] = a1
+	Scope[1267][2] = a2
+	if (a3 === undefined)
+	{
+		a3 = Scope[1267][2]
+	}
+	r3 = Object["getOwnPropertyDescriptor"]
+	r1 = r3(Scope[1267][3], Scope[1267][2])
+	ACCU = !Boolean(r3(Scope[1267][3], Scope[1267][2]))
+	if (!!Boolean(r3(Scope[1267][3], Scope[1267][2])))
+	{
+		r5 = "get"
+		ACCU = r5 in r1
+		if (r5 in r1)
+		{
+			ACCU = !Boolean(Scope[1267][3]["__esModule"])
+		}
+		else
+		{
+			if (!r1["writable"])
+			{
+				ACCU = r1["configurable"]
+			}
+		}
+	}
+	if (ACCU)
+	{
+		r3 = new {"enumerable": <true, "get": null}
+		r3["get"] = func_getCurrentScopeValue_0x10000bbe5
+		r1 = r3
+		ACCU = r3
+	}
+	r3 = Object["defineProperty"]
+	ACCU = r3(a0, a3, r1)
+	return undefined
+}
+function func_createScopedHandler_0x10000bbd8(a0)
+{
+	Scope[1268][2] = a0
+	return func_loadHtmlBalance_0x10000bbd7
+}
+function func_initializeBitstreetxRouterModule_0x10000bbd2(a0)
+{
+	Scope[1272][7] = func_a_0x10000bbc9
+	r0 = new {"V": "gm42", "J": 85912, "S": "kh^v", "g": 66794, "L": "YbH*", "X": 5079, "j": "eeST", "E": 9433, "c": "b48I", "x": 89374, "K": "h^gm", "u": 101245, "A": "K&pk", "s": 96802, "b": "B@Sb", "i": 10655, "w": "p8sI", "f": 85464, "t": "L@kv", "P": 9362, "I": "93y[", "p": 15785, "o": "A0Dr", "R": 74044, "v": "JrBU", "N": 43811, "M": "gm42", "k": 91145, "Q": "epz[", "W": 75278, "T": "%r7r", "G": 122207, "y": "mwAz", "e": 73527, "U": "[()[", "q": 57983, "O": "xQ)2", "C": 70933, "n": "B@Sb", "r": 83347, "H": "nvO5", "h": 5999, "Y": "8dGo", "D": 60672, "l": "K&pk", "a": 113086, "V0": "8dGo", "V1": 110677, "V2": "Yx9u", "V3": 75980, "V6": "iSZ6", "VV": 27782, "VJ": 34789, "Vz": "m[K#", "Vd": 57601, "Vg": "pdVE", "VL": 30180, "Vc": "BS4&", "Vx": 88595, "VB": "gm42", "VK": 38144, "Vu": "[Jy3", "VA": 100882, "Vs": "89J2", "Vb": 109676, "Vw": "p[w*", "Vf": 14897, "Vt": "XR6@", "VP": 70085}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bbcf
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1272][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r7 = r3["Router"]
+	r4 = r7(r0)
+	r5 = "www.bitstreetx.com"
+	r7 = r4["post"]
+	r10 = "/uc/withdraw/support/chain/info"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveBitsteetxBalances_0x10000bbd1)
+	r11["response"] = r12
+	r8 = r4
+	ACCU = r7(r5, r10, r11)
+	a0["default"] = r4
+	return undefined
+}
+function func_initializeBitazzaRouterModule_0x10000bbc8(a0)
+{
+	Scope[1274][6] = func_o_0x10000bbbf
+	r0 = new {"V": 98602, "J": "xQ)2", "S": 119852, "g": "h98j", "L": 11719, "X": 4505, "j": "I@Bf", "E": 14810, "c": "p[w*", "x": 85189, "K": "nvO5", "u": 84212, "A": "JrBU", "s": 74336, "b": "%r7r", "i": 36201, "w": 13175, "f": "%]hf", "t": 4147, "P": "Yx9u", "I": 53373, "p": "eeST", "o": 83031, "R": "XR6@", "v": 43231, "N": "iSZ6", "M": 116453, "k": "^Ceg", "Q": 100676, "W": "BS4&", "T": 102872, "G": "b48I", "y": 84900, "e": "B@Sb", "U": 123965, "q": 44305, "O": "toM2", "C": 111577, "n": "M2Ty", "r": 32301, "H": "kh^v", "h": 116430, "Y": "*!!t", "D": 43306, "l": 49013, "a": 98161, "V0": "x&b0", "V1": 100067, "V2": "b48I", "V3": 122842, "V6": ")Lyh", "VV": 50260, "VJ": "p8sI", "Vz": 120333, "Vd": "vV[N", "Vg": 79992}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bbc4
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1274][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "gateway.bitazza.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/me/level"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveBitzazzaBalance_0x10000bbc7)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeBinanceTrRouterModule_0x10000bbbe(a0)
+{
+	Scope[1277][7] = func_s_0x10000bbb6
+	r0 = new {"V": "93y[", "J": 68158, "S": "]1@2", "g": 90163, "L": "p8sI", "X": 43911, "j": "%]hf", "E": 84350, "c": "*!!t", "x": 66240, "K": "kh^v", "u": 98961, "A": "9hYk", "s": 86865, "b": "YbH*", "i": 115964, "w": "iSZ6", "f": 105606, "t": "eeST", "P": 67645, "I": "I@Bf", "p": 34518, "o": "m[K#", "R": 58737, "v": "B@Sb", "N": 52682, "M": "I@Bf", "k": 77784, "Q": "A5nh", "W": 88393, "T": "O9*f", "G": 6895, "y": 13511, "e": 104558, "U": "VHeU", "q": 5949, "O": 71555, "C": 120009, "n": 68782, "r": 6594, "H": "%]hf", "h": 35161, "Y": "epz[", "D": 17237, "l": "pdVE", "a": 64587, "V0": "[Jy3", "V1": 82174, "V2": "pdVE", "V3": 38857, "V6": "A0Dr", "VV": 64680, "VJ": "93y[", "Vz": 117285, "Vd": "eeST", "Vg": 85958, "VL": "8dGo", "Vc": 105536, "Vx": "A5nh", "VB": 114929, "VK": "L@kv", "Vu": 36775}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bbbb
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1277][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.binance.tr"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/v1/account/wallet-spot"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveBinanceTrBalance_0x10000bbbd)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeI3qRouterModule_0x10000bbb5(a0)
+{
+	Scope[1279][7] = func_a_0x10000bbae
+	r0 = new {"V": 79403, "J": ")Lyh", "S": 10273, "g": "eeST", "L": 50482, "X": "h^gm", "j": 97489, "E": "kh^v", "c": 122525, "x": "Yx9u", "K": 85997, "u": "p[w*", "A": 113672, "s": "O9*f", "b": 39202, "i": "*!!t", "w": 39220, "f": "C0qY", "t": 64441, "P": "BS4&", "I": 60496, "p": "YbH*", "o": 58629, "R": "nvO5", "v": 3128, "N": "A0Dr", "M": 5100, "k": 15577, "Q": "A5nh", "W": 70083, "T": "B@Sb", "G": 117408, "y": "F1xf", "e": 31406, "U": "]1@2", "q": 36840, "O": "VHeU", "C": 97348, "n": "XR6@", "r": 67807, "H": "89J2", "h": 62038, "Y": "L@kv", "D": 89113, "l": "h98j", "a": 46216, "V0": "93y[", "V1": 79849, "V2": 118197, "V3": "B@Sb", "V6": 91596, "VV": "p[w*", "VJ": 17629, "Vz": "xQ)2", "Vd": 102659, "Vg": "K&pk", "VL": 79735, "Vc": "I@Bf"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bbb2
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1279][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api.i3q.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/v1/users/account"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveI3qBalance_0x10000bbb4)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeHtxRouterModule_0x10000bbad(a0)
+{
+	Scope[1281][7] = func_l_0x10000bba4
+	r0 = new {"V": 8894, "J": "h^gm", "S": 8875, "g": "iSZ6", "L": 35010, "X": "M2Ty", "j": 118015, "E": "vV[N", "c": 38411, "x": "m[K#", "K": 113469, "u": "gm42", "A": 37459, "s": "F1xf", "b": 61637, "i": "vV[N", "w": 46292, "f": "mwAz", "t": 78777, "P": "^Ceg", "I": 22129, "p": "JrBU", "o": 40787, "R": "VHeU", "v": 24393, "N": "iSZ6", "M": 71011, "k": "*!!t", "Q": 43965, "W": "Yx9u", "T": 38291, "G": "L@kv", "y": 82952, "e": "C0qY", "U": 35325, "q": "pdVE", "O": 24900, "C": "toM2", "n": 34082, "r": "YbH*", "H": 2092, "h": "XR6@", "Y": 63187, "D": 110371, "l": "p[w*", "a": 93794, "V0": "A0Dr", "V1": 29146, "V2": "I@Bf", "V3": 52028, "V6": "9hYk", "VV": 110922, "VJ": "h98j", "Vz": 50782, "Vd": "9hYk", "Vg": 22403, "VL": "epz[", "Vc": 101575, "Vx": "%r7r", "VB": 114328, "VK": 45237, "Vu": "b48I", "VA": 82208, "Vs": "epz[", "Vb": 92196}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bbaa
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1281][6] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.htx.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/-/x/hbg/v1/open/profit/web/balance-assets"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveHtxBalance_0x10000bbac)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeHataRouterModule_0x10000bba3(a0)
+{
+	Scope[1284][6] = func_a_0x10000bb99
+	r0 = new {"V": 7426, "J": "h^gm", "S": 24234, "g": "xQ)2", "L": 11200, "X": "M2Ty", "j": 14672, "E": "toM2", "c": 122427, "x": "Yx9u", "K": 39044, "u": "K&pk", "A": 27466, "s": "8dGo", "b": 43660, "i": "9pb7", "w": 74128, "f": "toM2", "t": 76374, "P": "M2Ty", "I": 150, "p": "epz[", "o": 56694, "R": "B@Sb", "v": 28705, "N": 33857, "M": "pdVE", "k": 10300, "Q": "eeST", "W": 69929, "T": "h98j", "G": 18427, "y": "I@Bf", "e": 109492, "U": "x&b0", "q": 59594, "O": "p[w*", "C": 31657, "n": "]C&)", "r": 9387, "H": 73904, "h": "YbH*", "Y": 7346, "D": "B@Sb", "l": 35877, "a": "B@Sb", "V0": 79082, "V1": "9hYk", "V2": 76570, "V3": "A5nh", "V6": 91498, "VV": "p[w*", "VJ": 66152, "Vz": 20701, "Vd": "b48I", "Vg": 18508, "VL": "YbH*"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb9f
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1284][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api.hata.io"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/orderbook/jwt/balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveHataBalance_0x10000bba2)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeGateioRouterModule_0x10000bb98(a0)
+{
+	Scope[1287][6] = func_a_0x10000bb8f
+	r0 = new {"V": 120252, "J": "iSZ6", "S": 99352, "g": "YbH*", "L": 95298, "X": "eeST", "j": 10627, "E": "mwAz", "c": 19503, "x": "C0qY", "K": 19372, "u": "93y[", "A": 20367, "s": "p[w*", "b": 122446, "i": "epz[", "w": 51644, "f": "toM2", "t": 52970, "P": "eeST", "I": 37428, "p": "M2Ty", "o": 43002, "R": "h98j", "v": 48064, "N": "A5nh", "M": 115056, "k": ")Lyh", "Q": 66000, "W": "89J2", "T": 65282, "G": "%]hf", "y": 39231, "e": 43307, "U": 40459, "q": "mwAz", "O": 78726, "C": "O9*f", "n": 92840, "r": "epz[", "H": 118839, "h": "x&b0", "Y": 39479, "D": "^Ceg", "l": 81621, "a": "epz[", "V0": 61181, "V1": "89J2", "V2": 105814, "V3": "]1@2", "V6": 42105, "VV": 78320, "VJ": "kh^v", "Vz": 47748, "Vd": "F1xf", "Vg": 121677, "VL": 8558, "Vc": "p8sI", "Vx": 79319, "VB": "B@Sb"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb95
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1287][7] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.gate.io"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/apiw/v2/account/total_funds"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveGateioBalance_0x10000bb97)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeFmcpayRouterModule_0x10000bb8e(a0)
+{
+	Scope[1290][6] = func_o_0x10000bb86
+	r0 = new {"V": 38572, "J": "nvO5", "S": 32078, "g": "M2Ty", "L": 86708, "X": "]C&)", "j": 3114, "E": "A5nh", "c": 124054, "x": "O9*f", "K": 224, "u": "toM2", "A": 6637, "s": "xQ)2", "b": 100213, "i": "xQ)2", "w": 75191, "f": "mwAz", "t": 7798, "P": "9pb7", "I": 86911, "p": 26593, "o": "K&pk", "R": 21427, "v": "9pb7", "N": 109759, "M": 6357, "k": "A5nh", "Q": 115095, "W": "iSZ6", "T": 38260, "G": "YbH*", "y": 63459, "e": "]C&)", "U": 114181, "q": ")Ku4", "O": 108006, "C": "%r7r", "n": 19879, "r": "[()[", "H": 108612, "h": "YbH*", "Y": 62326, "D": "mwAz", "l": 6058, "a": "vV[N", "V0": 25195, "V1": "89J2", "V2": 10965, "V3": "^Ceg", "V6": 61717, "VV": 5814, "VJ": "9hYk", "Vz": 4589, "Vd": "kh^v", "Vg": 78169, "VL": "C0qY", "Vc": 13651, "Vx": "p[w*", "VB": 35083, "VK": "L@kv"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb8a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1290][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api.fmcpay.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/api/v2/wallets/getBalances"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveFmcpayBalance_0x10000bb8d)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBalanceModule_0x10000bb85(a0)
+{
+	Scope[1293][9] = func_c_0x10000bb71
+	Scope[1293][15] = func_fetchAndSaveBalance_0x10000bb73
+	Scope[1293][16] = func_fetchAccountBalances_0x10000bb78
+	r0 = new {"V": "%r7r", "J": 9527, "S": "8dGo", "g": 16534, "L": "9pb7", "X": 24697, "j": "YbH*", "E": 104045, "c": "b48I", "x": 32949, "K": "A5nh", "u": 88114, "A": "]1@2", "s": 30823, "b": "gm42", "i": 122229, "w": "nvO5", "f": 17084, "t": "toM2", "P": 75265, "I": "L@kv", "p": 101017, "o": 76243, "R": "F1xf", "v": 16484, "N": "M2Ty", "M": 3860, "k": "A5nh", "Q": 83931, "W": "p[w*", "T": 66461, "G": "B@Sb", "y": 71260, "e": "XR6@", "U": 27870, "q": "O9*f", "O": 112180, "C": 49875, "n": "[()[", "r": 242, "H": "C0qY", "h": 106023, "Y": "pdVE", "D": 11939, "l": "[Jy3", "a": 30871, "V0": "vV[N", "V1": 43028, "V2": "Yx9u", "V3": 77425, "V6": "]1@2", "VV": 38762, "VJ": "*!!t", "Vz": 10359, "Vd": ")Lyh", "Vg": 103907, "VL": 68836, "Vc": 71064, "Vx": "h^gm", "VB": 78156, "VK": "x&b0", "Vu": 68352, "VA": "93y[", "Vs": 111836, "Vb": "VHeU", "Vw": 108680, "Vf": "m[K#", "Vt": 98056, "VP": "I@Bf", "Vp": 118020, "Vo": 73968, "VR": "9hYk", "VQ": 25563, "VW": "^Ceg", "VT": 44073, "VG": 24893, "Vy": 21236, "Ve": 72369, "VU": 98148, "Vq": 25974, "VO": "eeST", "Vm": 50527, "VZ": 114215, "Vn": "F1xf", "Vr": 43006, "VH": "JrBU", "Vh": 74912, "VY": "h98j", "VD": 99591, "Vl": "x&b0", "Va": 28289, "J0": 18435, "J2": "m[K#", "J3": 34683, "J4": "n@A0", "J5": 115769, "J6": "C0qY", "J7": 100394, "J9": "VHeU", "Jd": 44152, "Jg": "%]hf", "JL": 900, "JX": "epz[", "Jc": 84163, "Jx": "epz[", "JB": 3214, "Ju": "XR6@", "Js": 86184, "Jb": 50285, "Ji": 16854, "Jw": "vV[N", "Jf": 103914, "Jt": 118098, "JP": "iSZ6", "Jp": 33926, "JR": "L@kv", "JQ": 35213}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb83
+	}
+	r1 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = func_initModule_0x10000ba72["exports"]()
+	Scope[1293][10] = r1(r8)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	Scope[1293][11] = func_initFetchModule_0x10000bb70["exports"]()
+	Scope[1293][12] = "my.exness.com"
+	r5 = r2["Router"]
+	r3 = r5(r0)
+	r5 = r3["get"]
+	r9 = new [0, 0, 0]
+	r9[0] = "/v4/tam/wallets-manager/accounts"
+	r9[1] = "/v4/wta-api/async/personal_area/account"
+	r9[2] = "/v4/tam/crypto/accounts"
+	r8 = r9
+	r9 = new {"request": null}
+	r10 = new {"headers": null}
+	r10["headers"] = func_processSimpleHeaders_0x10000bb84
+	r9["request"] = r10
+	r6 = r3
+	ACCU = r5(Scope[1293][12], r8, r9)
+	r7 = (1000 * 60)
+	Scope[1293][13] = (r7 * 5)
+	a0["default"] = r3
+	return undefined
+}
+function func_initializeDigifinexRouterModule_0x10000bb63(a0)
+{
+	Scope[1302][8] = func_s_0x10000bb58
+	r0 = new {"V": "h98j", "J": 96544, "S": "[Jy3", "g": 33929, "L": ")Lyh", "X": 32818, "j": "F1xf", "E": 7259, "c": "gm42", "x": 36126, "K": "I@Bf", "u": 16711, "A": "xQ)2", "s": 97400, "b": "Yx9u", "i": 36723, "w": 57331, "f": "JrBU", "t": 9824, "P": "pdVE", "I": 76377, "p": "%]hf", "o": 68719, "R": "K&pk", "v": 100423, "N": "iSZ6", "M": 12037, "k": 31583, "Q": "n@A0", "W": 43555, "T": "BS4&", "G": 97490, "y": "M2Ty", "e": 43116, "U": "*!!t", "q": 96681, "O": "xQ)2", "C": 12565, "n": "9pb7", "r": 63572, "H": "m[K#", "h": 106396, "Y": "b48I", "D": 102212, "l": 2429, "a": "93y[", "V0": 122987, "V1": ")Ku4", "V2": 121295, "V3": "YbH*", "V6": 115856, "VV": "[Jy3", "VJ": 121245, "Vz": "89J2", "Vd": 109178, "Vg": "h98j", "VL": 123369, "Vc": "mwAz", "Vx": 1259, "VB": 90258, "VK": 21960, "Vu": "vV[N", "VA": 89233, "Vs": "x&b0", "Vb": 46916, "Vw": 501, "Vf": "]C&)", "Vt": 39126, "VP": 30446, "Vp": "BS4&", "Vo": 68776, "VR": "[()[", "VQ": 86639, "VW": "nvO5", "VT": 93916, "VG": "vV[N", "Vy": 90875}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb5e
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1302][9] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "api.digifinex.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/asset/v1/total_list"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveDigifinexTotalBalance_0x10000bb60)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	r7 = r5["post"]
+	r10 = "/contract_asset/v1/asset"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveDigifinexUsdtBalance_0x10000bb62)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeDeepcoinRouterModule_0x10000bb57(a0)
+{
+	Scope[1305][7] = func_a_0x10000bb4e
+	r0 = new {"V": "[()[", "J": 41476, "S": "[Jy3", "g": 34122, "L": "%r7r", "X": 84303, "j": "pdVE", "E": 78884, "c": "L@kv", "x": 97142, "K": "^Ceg", "u": 35268, "A": "vV[N", "s": 112156, "b": "m[K#", "i": 105100, "w": "n@A0", "f": 44569, "t": "YbH*", "P": 14846, "I": "L@kv", "p": 56623, "o": 18207, "R": "B@Sb", "v": 88052, "N": "9pb7", "M": 65918, "k": "JrBU", "Q": 56847, "W": "Yx9u", "T": 8394, "G": "JrBU", "y": 72780, "e": "C0qY", "U": 61766, "q": 92134, "O": "iSZ6", "C": 33098, "n": "x&b0", "r": 40805, "H": 38350, "h": "]C&)", "Y": 2260, "D": "*!!t", "l": 119196, "a": 79400, "V0": "m[K#", "V1": 84613, "V2": "epz[", "V3": 110900, "V6": "p[w*", "VV": 6035, "VJ": "O9*f", "Vz": 87707, "Vd": "9hYk", "Vg": 28603, "VL": "93y[", "Vc": 95126, "Vx": "iSZ6", "VB": 120462, "VK": "p8sI", "Vu": 7597, "VA": "b48I", "Vs": 14494}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb54
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1305][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "net-wapi.deepcoin.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/v3/balance/account-balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveDeepcoinBalance_0x10000bb56)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeDecryptoRouterModule_0x10000bb4d(a0)
+{
+	Scope[1307][8] = func_s_0x10000bb46
+	r0 = new {"V": "]C&)", "J": 5787, "S": "F1xf", "g": 57233, "L": "A0Dr", "X": 40814, "j": "M2Ty", "E": 110505, "c": "p[w*", "x": 90855, "K": "]C&)", "u": 49947, "A": "[()[", "s": 71804, "b": "M2Ty", "i": 15760, "w": "pdVE", "f": 29309, "t": "nvO5", "P": 86441, "I": ")Ku4", "p": 54320, "o": "89J2", "R": 49962, "v": "C0qY", "N": 23866, "M": "A5nh", "k": 77366, "Q": "93y[", "W": 3220, "T": 69077, "G": "BS4&", "y": 101765, "e": ")Lyh", "U": 91793, "q": "eeST", "O": 41508, "C": "JrBU", "n": 37374, "r": "[Jy3", "H": 68724, "h": "eeST", "Y": 100188, "D": 10364, "l": 10364, "a": "9pb7", "V0": 122485, "V1": "%]hf", "V2": 64479, "V3": "vV[N", "V6": 114073, "VV": 36027, "VJ": "p8sI", "Vz": 27546, "Vd": "xQ)2", "Vg": 18975, "VL": "[Jy3", "Vc": 89714, "Vx": "8dGo", "VB": 35005}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb4a
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1307][9] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "api.decrypto.la"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/1.0/frontend/balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveDecryptoBalance_0x10000bb4c)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeCoinwRouterModule_0x10000bb45(a0)
+{
+	Scope[1308][7] = func_s_0x10000bb3e
+	r0 = new {"V": 114328, "J": "F1xf", "S": 124760, "g": "93y[", "L": 115811, "X": "I@Bf", "j": 25095, "E": "VHeU", "c": 37367, "x": "m[K#", "K": 64592, "u": "M2Ty", "A": 90360, "s": "JrBU", "b": 13983, "i": "pdVE", "w": 90161, "f": "b48I", "t": 76343, "P": "]1@2", "I": 77742, "p": "8dGo", "o": 88742, "R": "A5nh", "v": 97518, "N": "%r7r", "M": 60954, "k": "x&b0", "Q": 37247, "W": "L@kv", "T": 100450, "G": "9hYk", "y": 13991, "e": 77094, "U": "nvO5", "q": 44307, "O": "gm42", "C": 121950, "n": 60445, "r": "[()[", "H": 52278, "h": "[Jy3", "Y": 50130, "D": 58686, "l": 43366, "a": "vV[N", "V0": 69419, "V1": 1988, "V2": "mwAz", "V3": 104447, "V6": 2792, "VV": 13137, "VJ": "x&b0", "Vz": 79439, "Vd": "epz[", "Vg": 1010, "VL": "kh^v", "Vc": 107637, "Vx": "toM2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb42
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1308][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.coinw.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/asset/v1/api/wallet/account"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCoinwBalance_0x10000bb44)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initializeCoinsphRouterModule_0x10000bb3d(a0)
+{
+	Scope[1310][8] = func_s_0x10000bb32
+	r0 = new {"V": 41383, "J": "[()[", "S": 68897, "g": "VHeU", "L": 9618, "X": "p8sI", "j": 51780, "E": "89J2", "c": 119403, "x": "[Jy3", "K": 80634, "u": "iSZ6", "A": 104553, "s": "8dGo", "b": 83079, "i": "8dGo", "w": 108084, "f": "Yx9u", "t": 109145, "P": "toM2", "I": 57467, "p": "h98j", "o": 123290, "R": "Yx9u", "v": 102814, "N": "toM2", "M": 107290, "k": "n@A0", "Q": 45992, "W": "[()[", "T": 40296, "G": "p[w*", "y": 40635, "e": "]1@2", "U": 74219, "q": "pdVE", "O": 91909, "C": ")Lyh", "n": 34414, "r": 88366, "H": "O9*f", "h": 103960, "Y": "x&b0", "D": 4476, "l": "XR6@", "a": 45658, "V0": "YbH*", "V1": 86454, "V2": 102783, "V3": "]1@2", "V6": 47751, "VV": "%]hf", "VJ": 51130, "Vz": "VHeU", "Vd": 53210, "Vg": "h98j", "VL": 124030, "Vc": "JrBU", "Vx": 89860, "VB": "I@Bf", "VK": 120812, "Vu": 60387, "VA": "nvO5", "Vs": 15558, "Vb": "m[K#", "Vw": 39359, "Vf": "JrBU", "Vt": 84470, "VP": "9pb7", "Vp": 70839, "Vo": ")Lyh", "VR": 56630, "VQ": 9216, "VW": 51581, "VT": 113154, "VG": "A5nh", "Vy": 33244, "Ve": "A0Dr", "VU": 89276, "Vq": 93833, "VO": "mwAz", "Vm": 10399, "VZ": "BS4&", "Vn": 381, "Vr": "kh^v", "VH": 45610, "Vh": "^Ceg"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb37
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1310][10] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "pro.coins.ph"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/biz-api/v1/public/quote/rates"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCoinhubUsdtRate_0x10000bb3a)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	r7 = r5["post"]
+	r10 = "/biz-api/v1/private/asset/balance/portfolio-balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCoinsphBalance_0x10000bb3c)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initCoinhubRouter_0x10000bb31(a0)
+{
+	Scope[1313][7] = func_a_0x10000bb28
+	r0 = new {"V": "p[w*", "J": 66941, "S": "p8sI", "g": 21846, "L": "9hYk", "X": 94962, "j": "mwAz", "E": 11280, "c": "gm42", "x": 80965, "K": "9pb7", "u": 125133, "A": "A5nh", "s": 64164, "b": "BS4&", "i": 22098, "w": "epz[", "f": 47927, "t": "x&b0", "P": 9984, "I": 52835, "p": 63437, "o": "F1xf", "R": 58800, "v": "%]hf", "N": 87272, "M": 40677, "k": "VHeU", "Q": 124232, "W": "^Ceg", "T": 117600, "G": "L@kv", "y": 39328, "e": "%r7r", "U": 45826, "q": ")Ku4", "O": 115805, "C": 35110, "n": "xQ)2", "r": 70647, "H": "pdVE", "h": 23748, "Y": "B@Sb", "D": 117652, "l": "8dGo", "a": 55662, "V0": "]1@2", "V1": 68914, "V2": 12589, "V3": "9pb7", "V6": 88272, "VV": "p8sI", "VJ": 3181, "Vz": 95789, "Vd": 3244, "Vg": 38873, "VL": "I@Bf", "Vc": 81139}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb2d
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1313][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.coinhub.mn"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/v2/peatio/account/balances"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCoinHubBalance_0x10000bb30)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initCoinexRouter_0x10000bb27(a0)
+{
+	Scope[1315][7] = func_a_0x10000bb1f
+	r0 = new {"V": 93635, "J": "I@Bf", "S": 16638, "g": "8dGo", "L": 98, "X": "%]hf", "j": 16976, "E": "K&pk", "c": 119085, "x": "xQ)2", "K": 13173, "u": 29196, "A": ")Ku4", "s": 78100, "b": "pdVE", "i": 66539, "w": "Yx9u", "f": 124305, "t": "iSZ6", "P": 6136, "I": "h^gm", "p": 95211, "o": 12172, "R": "YbH*", "v": 43998, "N": "x&b0", "M": 97098, "k": "*!!t", "Q": 3142, "W": "A0Dr", "T": 10610, "G": "vV[N", "y": 11176, "e": "O9*f", "U": 63693, "q": "]C&)", "O": 62265, "C": "epz[", "n": 8449, "r": "F1xf", "H": 58874, "h": "[()[", "Y": 17058, "D": "O9*f", "l": 22189, "a": "mwAz", "V0": 17058, "V1": 46085, "V2": 63147, "V3": "%]hf", "V6": 86882, "VV": "9pb7", "VJ": 32454, "Vz": "8dGo", "Vd": 99870, "Vg": "[Jy3", "VL": 25193, "Vc": "JrBU", "Vx": 10290, "VB": 93467, "VK": "p[w*"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb24
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1315][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.coinex.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/res/account/realtime-balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveCoinexBalance_0x10000bb26)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBybitRouter_0x10000bb1e(a0)
+{
+	Scope[1317][8] = func_E_0x10000bb16
+	r0 = new {"V": 77113, "J": "b48I", "S": 81326, "g": "b48I", "L": 26329, "X": "I@Bf", "j": 82940, "E": "[()[", "c": 14240, "x": "p[w*", "K": 95312, "u": "xQ)2", "A": 124077, "s": "gm42", "b": 79987, "i": "eeST", "w": 50597, "f": "C0qY", "t": 88357, "P": "O9*f", "I": 71017, "p": "toM2", "o": 31373, "R": "^Ceg", "v": 86792, "N": "h^gm", "M": 96346, "k": "%]hf", "Q": 96558, "W": "K&pk", "T": 19988, "G": "A0Dr", "y": 40341, "e": "93y[", "U": 70345, "q": "%]hf", "O": 366, "C": "9hYk", "n": 31228, "r": 6218, "H": "Yx9u", "h": 56703, "Y": "pdVE", "D": 88037, "l": "VHeU", "a": 85458, "V0": "B@Sb", "V1": 35799, "V2": "gm42", "V3": 73645, "V6": "h98j", "VV": 50341, "VJ": 108852, "Vz": 92655, "Vd": "*!!t", "Vg": 43413, "VL": "A0Dr", "Vc": 64234, "Vx": "8dGo", "VB": 68244, "VK": 65719, "Vu": "[Jy3", "VA": 21495, "Vs": "epz[", "Vb": 109950, "Vw": "89J2", "Vf": 69031, "Vt": "n@A0", "VP": 90810, "Vp": "F1xf", "Vo": 124359, "VR": "mwAz", "VQ": 28894, "VW": "VHeU", "VT": 40511, "VG": "K&pk", "Vy": 99202, "Ve": "x&b0", "VU": 12723, "Vq": 14515, "VO": 19686, "Vm": "BS4&", "VZ": 20536, "Vn": "vV[N", "Vr": 38896, "VH": "vV[N", "Vh": 58285, "VY": 28894, "VD": 53655, "Vl": 66479, "Va": 44463, "J0": "]C&)", "J2": 47439, "J3": "JrBU", "J4": 122326, "J5": 21662, "J6": 123489, "J7": "[Jy3", "J9": 121628, "Jd": 39870, "Jg": "]C&)", "JL": 69097, "JX": "89J2", "Jc": 107737, "Jx": "p[w*", "JB": 90134, "Ju": ")Lyh", "Js": 4597, "Jb": "A0Dr", "Ji": 96008, "Jw": 120308, "Jf": "9hYk", "Jt": 78505, "JP": "nvO5", "Jp": 39475, "JR": "I@Bf", "JQ": 112777, "JW": "p8sI", "JT": 17212, "JG": 110542, "Jy": "L@kv", "JU": 82466, "JF": "B@Sb", "Jq": 120083, "JO": "*!!t", "Jm": 49269, "JC": 93013, "Jn": 57817, "Jr": "h^gm", "Jh": 109816, "JY": "m[K#", "JD": 22438, "Jl": "vV[N", "z0": 123631, "z1": "%r7r", "z2": 37702, "z3": "m[K#", "z6": 19291, "zV": "JrBU", "zJ": 92853, "zz": "%]hf", "zd": 85428, "zS": 82823, "zg": "XR6@", "zL": 1527, "zX": "A5nh", "zE": 49260, "zc": "Yx9u", "zx": 98840}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb1a
+	}
+	r1 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r11 = func_initModule_0x10000ba72["exports"]()
+	Scope[1317][7] = r1(r11)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r9 = new [0, 0, 0, 0, 0, 0, 0]
+	r9[0] = "bybit.com"
+	r9[1] = "bybitglobal.com"
+	r9[2] = "bytick.com"
+	r9[3] = "bybits.org"
+	r9[4] = "bybits.io"
+	r9[5] = "byhkbit.com"
+	r9[6] = "bybit-tr.com"
+	r4 = r9
+	r8 = r9["map"]
+	r5 = r8(func_prependApi2_0x10000bb1b)
+	r8 = r2["Router"]
+	r6 = r8(r0)
+	r8 = r6["get"]
+	r12 = new [0, 0, 0, 0]
+	r12[0] = "/v3/private/cht/asset-common/total-balance"
+	r12[1] = "/v3/private/cht/asset-show/mepage-total-balance"
+	r12[2] = "/v3/private/cht/asset-show/navbar-total-balance"
+	r12[3] = "/v3/private/cht/asset-show/asset-total-balance"
+	r11 = r12
+	r12 = new {"response": null}
+	r13 = new {"full": null}
+	r14 = r3["jsonTransformer"]
+	r13["full"] = r14(func_saveBybitBalance_0x10000bb1d)
+	r12["response"] = r13
+	r9 = r6
+	ACCU = r8(r5, r11, r12)
+	a0["default"] = r6
+	return undefined
+}
+function func_initBitunixRouter_0x10000bb15(a0)
+{
+	Scope[1319][8] = func_f_0x10000bb0c
+	r0 = new {"V": 96842, "J": "h98j", "S": 119459, "g": "[()[", "L": 103141, "X": "[Jy3", "j": 94881, "E": "C0qY", "c": 48688, "x": "93y[", "K": 94789, "u": "iSZ6", "A": 86161, "s": "%r7r", "b": 112693, "i": "h^gm", "w": 114923, "f": "K&pk", "t": 28545, "P": "O9*f", "I": 10879, "p": "I@Bf", "o": 119602, "R": "^Ceg", "v": 38425, "N": "p[w*", "M": 117816, "k": "mwAz", "Q": 70780, "W": "89J2", "T": 40846, "G": ")Lyh", "y": 96451, "e": 23425, "U": "toM2", "q": 75959, "O": 55715, "C": "Yx9u", "n": 59724, "r": "]C&)", "H": 24428, "h": "eeST", "Y": 121979, "D": "p8sI", "l": 9209, "a": "*!!t", "V0": 28560, "V1": "]1@2", "V2": 114075, "V3": "VHeU", "V6": 37467, "VV": "JrBU", "VJ": 20928, "Vz": "epz[", "Vd": 9998, "Vg": "m[K#", "VL": 72416, "Vc": 78284, "Vx": "C0qY", "VB": 91035, "VK": "XR6@", "Vu": 110884, "VA": "F1xf"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb12
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1319][7] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "api.bitunix.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/web/finance/coin/balance/total"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveBitunixBalance_0x10000bb14)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBitrueRouter_0x10000bb0b(a0)
+{
+	Scope[1321][7] = func_a_0x10000bb02
+	r0 = new {"V": 73003, "J": "kh^v", "S": 68461, "g": "p[w*", "L": 92303, "X": "YbH*", "j": 50862, "E": "%r7r", "c": 51552, "x": "VHeU", "K": 96257, "u": "C0qY", "A": 80776, "s": ")Ku4", "b": 39039, "i": 104719, "w": "nvO5", "f": 6592, "t": "gm42", "P": 124126, "I": "9pb7", "p": 121320, "o": "JrBU", "R": 77784, "v": "b48I", "N": 76093, "M": "A5nh", "k": 82015, "Q": "nvO5", "W": 58185, "T": "eeST", "G": 23603, "y": "toM2", "e": 24418, "U": "I@Bf", "q": 6812, "O": "9hYk", "C": 28710, "n": "O9*f", "r": 42110, "H": "pdVE", "h": 85391, "Y": "mwAz", "D": 102119, "l": "A0Dr", "a": 61589, "V0": 58619, "V1": "F1xf", "V2": 36048, "V3": "B@Sb", "V6": 39409, "VV": 112198, "VJ": 40459, "Vz": "nvO5", "Vd": 108047, "Vg": "]1@2", "VL": 19832, "Vc": "h^gm", "Vx": 90899}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bb08
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1321][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "b.bitrue.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/assets-web/assets/totalAssets"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveBitrueBalance_0x10000bb0a)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBitmartRouter_0x10000bb01(a0)
+{
+	Scope[1323][7] = func_a_0x10000baf8
+	r0 = new {"V": "vV[N", "J": 8062, "S": "x&b0", "g": 88854, "L": "h98j", "X": 75199, "j": "pdVE", "E": 79876, "c": "A5nh", "x": 4833, "K": "[Jy3", "u": 121205, "A": "93y[", "s": 64631, "b": "VHeU", "i": 99168, "w": "%r7r", "f": 27571, "t": 37957, "P": "h^gm", "I": 9246, "p": "p8sI", "o": 120112, "R": 71341, "v": 82606, "N": "eeST", "M": 63308, "k": "kh^v", "Q": 63388, "W": "I@Bf", "T": 67709, "G": "F1xf", "y": 44595, "e": "mwAz", "U": 118423, "q": "F1xf", "O": 77427, "C": "p8sI", "n": 82672, "r": "K&pk", "H": 119298, "h": "YbH*", "Y": 49610, "D": 79105, "l": "9hYk", "a": 9300, "V0": "h98j", "V1": 119570, "V2": "b48I", "V3": 118937, "V6": "C0qY", "VV": 9656, "VJ": "XR6@", "Vz": 69224, "Vd": "O9*f", "Vg": 89416, "VL": "epz[", "Vc": 119219, "Vx": "I@Bf", "VB": 11018, "VK": "n@A0", "Vu": 66126, "VA": 121575, "Vs": "eeST", "Vb": 30673}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bafe
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1323][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.bitmart.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/gw-api/asset-gateway/asset/total"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveBitmartBalance_0x10000bb00)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBitkubRouter_0x10000baf7(a0)
+{
+	Scope[1325][9] = func_E_0x10000baec
+	r0 = new {"V": "M2Ty", "J": 108972, "S": "eeST", "g": 10988, "L": "XR6@", "X": 72587, "j": "mwAz", "E": 10591, "c": "p[w*", "x": 15268, "K": "vV[N", "u": 38368, "A": "L@kv", "s": 31443, "b": "]1@2", "i": 125101, "w": "n@A0", "f": 46339, "t": "XR6@", "P": 115847, "I": "B@Sb", "p": 37612, "o": "%]hf", "R": 87585, "v": "kh^v", "N": 23912, "M": 117639, "k": "p8sI", "Q": 54979, "W": "89J2", "T": 118047, "G": 1437, "y": "Yx9u", "e": 38511, "U": "m[K#", "q": 15159, "O": ")Ku4", "C": 104913, "n": "A5nh", "r": 3746, "H": "YbH*", "h": 101346, "Y": "x&b0", "D": 40471, "l": "x&b0", "a": 119220, "V0": "mwAz", "V1": 38000, "V2": "iSZ6", "V3": 39278, "V6": 50287, "VV": "9pb7", "VJ": 6017, "Vz": "[()[", "Vd": 12324, "Vg": ")Lyh", "VL": 11983}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000baf2
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1325][8] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "www.bitkub.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/api/account-info"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveBitkubBalance_0x10000baf6)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBitgetRouter_0x10000baeb(a0)
+{
+	Scope[1327][7] = func_a_0x10000bae2
+	r0 = new {"V": "[()[", "J": 42104, "S": ")Ku4", "g": 39328, "L": "L@kv", "X": 66361, "j": "xQ)2", "E": 83336, "c": "C0qY", "x": 19170, "K": "]1@2", "u": 35560, "A": "A0Dr", "s": 65612, "b": "%]hf", "i": 41903, "w": 27243, "f": "93y[", "t": 94647, "P": "mwAz", "I": 109592, "p": "[Jy3", "o": 7490, "R": "9pb7", "v": 88061, "N": 35115, "M": 38342, "k": "h98j", "Q": 70445, "W": "]C&)", "T": 6228, "G": "m[K#", "y": 9854, "e": "YbH*", "U": 98242, "q": "kh^v", "O": 34301, "C": ")Lyh", "n": 49901, "r": "A0Dr", "H": 13024, "h": "b48I", "Y": 119012, "D": "B@Sb", "l": 36393, "a": 54331, "V0": 102196, "V1": "[()[", "V2": 119382, "V3": "h98j", "V6": 114081, "VV": "h98j", "VJ": 48310, "Vz": "K&pk", "Vd": 34316}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bae8
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1327][9] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "www.bitget.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["post"]
+	r10 = "/v1/mix/assetsV2"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveBitgetBalance_0x10000baea)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBingxRouter_0x10000bae1(a0)
+{
+	Scope[1328][7] = func_s_0x10000bad9
+	r0 = new {"V": 86462, "J": "C0qY", "S": 99591, "g": "YbH*", "L": 110820, "X": "[Jy3", "j": 53073, "E": "89J2", "c": 36468, "x": "^Ceg", "K": 92042, "u": "*!!t", "A": 68677, "s": "h^gm", "b": 56762, "i": "JrBU", "w": 63741, "f": "93y[", "t": 17836, "P": 53861, "I": "nvO5", "p": 18270, "o": "JrBU", "R": 25087, "v": "m[K#", "N": 65639, "M": 36555, "k": "xQ)2", "Q": 92908, "W": "JrBU", "T": 23406, "G": "mwAz", "y": 115295, "e": ")Lyh", "U": 16376, "q": "vV[N", "O": 120221, "C": "p[w*", "n": 8716, "r": "]C&)", "H": 34826, "h": ")Ku4", "Y": 41152, "D": "eeST", "l": 100921, "a": 77220, "V0": "XR6@", "V1": 12382, "V2": "9pb7", "V3": 122820, "V6": "toM2", "VV": 122820, "VJ": 50254, "Vz": "Yx9u", "Vd": 90775, "Vg": "A5nh", "VL": 48289, "Vc": "8dGo", "Vx": 35050, "VB": "pdVE", "VK": 90626, "Vu": "vV[N", "VA": 5478, "Vs": "XR6@", "Vb": 8797, "Vw": "p8sI", "Vf": 35985, "Vt": "kh^v"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bade
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1328][8] = r1(r10)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r4 = "bingx.com"
+	r7 = r2["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/api/asset-manager/v1/assets/account-total-overview"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r3["jsonTransformer"]
+	r12["full"] = r13(func_saveBingxBalance_0x10000bae0)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initBinanceThRouter_0x10000bad8(a0)
+{
+	Scope[1330][13] = func_V_0x10000bac4
+	r0 = new {"V": "93y[", "J": 57304, "S": "m[K#", "g": 76548, "L": "%r7r", "X": 10335, "j": "XR6@", "E": 26868, "c": "8dGo", "x": 54563, "K": "x&b0", "u": 24311, "A": "xQ)2", "s": 83636, "b": "O9*f", "i": 124992, "w": "^Ceg", "f": 60476, "t": "F1xf", "P": 122487, "I": ")Lyh", "p": 2764, "o": ")Lyh", "R": 33438, "v": "O9*f", "N": 94301, "M": "L@kv", "k": 1795, "Q": "B@Sb", "W": 65870, "T": "b48I", "G": 18958, "y": "BS4&", "e": 124170, "U": "eeST", "q": 55868, "O": "9hYk", "C": 6633, "n": "nvO5", "r": 103010, "H": "BS4&", "h": 55081, "Y": 10499, "D": 22440, "l": 86489, "a": "YbH*", "V0": 30718, "V1": "M2Ty", "V2": 12763, "V3": "n@A0", "V6": 74236, "VV": 97282, "VJ": 88722, "Vz": "]C&)", "Vd": 108726, "Vg": "9pb7", "VL": 81993, "Vc": "%]hf", "Vx": 2234, "VB": 87588, "VK": "Yx9u", "Vu": 36249, "VA": "iSZ6", "Vs": 116033, "Vb": ")Lyh", "Vw": 64929, "Vf": "[()[", "Vt": 70706, "VP": "C0qY", "Vp": 90480, "Vo": "p8sI", "VR": 109109, "VQ": "A0Dr", "VW": 4390, "VT": 104382, "VG": 20554, "Vy": "mwAz", "Ve": 49162, "VU": "epz[", "Vq": 110088, "VO": "kh^v", "Vm": 76929, "VZ": 84209, "Vn": 20666, "Vr": ")Ku4", "VH": 9563, "Vh": "8dGo", "VY": 48017, "VD": "I@Bf", "Vl": 37157, "Va": 41104, "J0": "L@kv", "J2": 73066, "J3": ")Ku4", "J4": 10994, "J5": "JrBU", "J6": 70622, "J7": 96697, "J9": "p[w*", "Jd": 94171}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bacc
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r9 = func_initUrlModule_0x10000ba98["exports"]()
+	Scope[1330][8] = r1(r9)
+	r9 = func_initModule_0x10000ba72["exports"]()
+	Scope[1330][9] = r1(r9)
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	Scope[1330][10] = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = "www.binance.th"
+	r6 = r2["Router"]
+	r4 = r6(r0)
+	Scope[1330][11] = "THB"
+	r6 = r4["get"]
+	r9 = "/bapi/asset/v1/public/asset-service/product/currency"
+	r10 = new {"response": null}
+	r11 = new {"full": null}
+	r12 = Scope[1330][10]["jsonTransformer"]
+	r11["full"] = r12(func_saveBinanceUsdRate_0x10000bacf)
+	r10["response"] = r11
+	r7 = r4
+	ACCU = r6(r3, r9, r10)
+	r6 = r4["get"]
+	r7 = r4
+	ACCU = r6(r3, "/bapi/asset/v2/private/asset-service/wallet/balance", func_buildThBalanceRequestConfig_0x10000bad7)
+	a0["default"] = r4
+	return undefined
+}
+function func_initBinanceRouter_0x10000bac3(a0)
+{
+	Scope[1335][8] = func_s_0x10000bab0
+	r0 = new {"V": "x&b0", "J": 10136, "S": ")Ku4", "g": 84006, "L": "]C&)", "X": 29017, "j": "xQ)2", "E": 27011, "c": "8dGo", "x": 51251, "K": "B@Sb", "u": 63044, "A": "%]hf", "s": 60980, "b": "epz[", "i": 13492, "w": "8dGo", "f": 56652, "t": 71012, "P": "Yx9u", "I": 86563, "p": "XR6@", "o": 123717, "R": "A0Dr", "v": 114084, "N": "b48I", "M": 4898, "k": "Yx9u", "Q": 24302, "W": "I@Bf", "T": 76914, "G": "h^gm", "y": 78768, "e": "L@kv", "U": 25340, "q": "pdVE", "O": 28626, "C": 8816, "n": "kh^v", "r": 110497, "H": "93y[", "h": 96021, "Y": 84440, "D": "pdVE", "l": 35815, "a": 35960, "V0": "L@kv", "V1": 40095, "V2": "M2Ty", "V3": 79388, "V6": "C0qY", "VV": 41529, "VJ": "[Jy3", "Vz": 123615, "Vd": 49977, "Vg": "vV[N", "VL": 101860, "Vc": 33495, "Vx": ")Lyh", "VB": 105243, "VK": "toM2", "Vu": 59863, "VA": "8dGo", "Vs": 23205, "Vb": "m[K#", "Vw": 95015, "Vf": "%]hf", "Vt": 100370, "VP": 28767, "Vp": "BS4&", "Vo": 97237, "VR": 123691, "VQ": 98002, "VW": "eeST", "VT": 81652, "VG": "*!!t", "Vy": 64167, "Ve": "JrBU", "VU": 94021, "Vq": 110341, "VO": "O9*f", "Vm": 66457, "VZ": "[Jy3", "Vn": 37140, "Vr": "C0qY", "VH": 81896, "Vh": "p8sI", "VY": 26199, "VD": "epz[", "Vl": 17940, "Va": "F1xf", "J0": 69322, "J2": "p8sI", "J3": 48884, "J4": "nvO5", "J5": 38253, "J6": 33104, "J7": "*!!t", "J9": 35284, "Jd": 10636, "Jg": "A5nh", "JL": 46819, "JX": ")Lyh", "Jc": 71214, "Jx": 69221, "JB": 6835, "Ju": 23115, "Js": ")Ku4", "Jb": 84924, "Ji": "b48I", "Jw": 53479, "Jf": "8dGo", "Jt": 98308, "JP": "O9*f", "Jp": 103847, "JR": "B@Sb", "JQ": 68555, "JW": "m[K#", "JT": 21256, "JG": "p[w*", "Jy": 122456, "JU": "9hYk", "JF": 68540, "Jq": "]1@2", "JO": 97463, "Jm": "b48I", "JC": 103957, "Jn": "mwAz", "Jr": 110730, "Jh": ")Ku4", "JY": 61726, "JD": "L@kv", "Jl": 99393, "z0": 49655, "z1": "F1xf", "z2": 84389, "z3": "h98j", "z6": 49945, "zV": "h98j", "zJ": 114581, "zz": "89J2", "zd": 72131, "zS": "eeST", "zg": 13285, "zL": "kh^v", "zX": 81644, "zE": "[()[", "zc": 74577, "zx": "93y[", "zB": 111190, "zu": "iSZ6", "zA": 4078, "zs": "^Ceg", "zw": 107844, "zf": "kh^v", "zt": 8077, "zP": "A0Dr", "zp": 91264, "zo": "L@kv", "zW": 18541, "zG": 70876, "zy": "nvO5", "zU": 8210, "zF": 53251, "zO": 99589, "zC": "p8sI", "zZ": 102647, "zn": "B@Sb", "zr": 37221, "zH": 101704, "zh": 61284, "zY": "n@A0", "zl": 37098, "za": "M2Ty", "d2": 80352, "d3": 54546, "d4": "gm42", "d5": 74014, "d6": 73075, "d7": 100399}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000bab5
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r9 = func_initUrlModule_0x10000ba98["exports"]()
+	Scope[1335][9] = r1(r9)
+	Scope[1335][10] = func_initHeadersModule_0x10000baaf["exports"]()
+	r9 = func_initModule_0x10000ba72["exports"]()
+	Scope[1335][11] = r1(r9)
+	Scope[1335][12] = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r3 = "www.binance.com"
+	r6 = r2["Router"]
+	r4 = r6(r0)
+	r10 = new [0, 0]
+	r10[0] = "GET"
+	r10[1] = "POST"
+	r11 = new [0, 0, 0]
+	r9 = r10
+	r11[0] = "/bapi/accounts/v1/private/account/get-user-base-info"
+	r11[1] = "/bapi/accounts/v1/private/account/user/base-detail"
+	r11[2] = "/bapi/accounts/v1/private/account/user/userInfo"
+	r7 = r4
+	ACCU = r4["on"](r3, r9, r11, func_createBinanceTransformers_0x10000babb)
+	r6 = r4["get"]
+	r7 = r4
+	ACCU = r6(r3, "/bapi/asset/v2/private/asset-service/wallet/balance", func_buildBalanceRequestConfig_0x10000bac2)
+	a0["default"] = r4
+	return undefined
+}
+function func_initPriceIndexerRouter_0x10000ba92(a0)
+{
+	Scope[1350][9] = func_c_0x10000ba84
+	r0 = new {"V": "]1@2", "J": 75285, "S": "]C&)", "g": 4325, "L": "vV[N", "X": 100498, "j": "]1@2", "E": 17686, "c": "p8sI", "x": 65724, "K": "9pb7", "u": 14020, "A": ")Lyh", "s": 33078, "b": 74737, "i": "]1@2", "w": 16765, "f": "%r7r", "t": 69566, "P": "epz[", "I": 83289, "p": "L@kv", "o": 24942, "R": "nvO5", "v": 86794, "N": "8dGo", "M": 68312, "k": "JrBU", "Q": 110236, "W": 1614, "T": "]C&)", "G": 65377, "y": "^Ceg", "e": 67588, "U": "8dGo", "q": 4418, "O": "mwAz", "C": 98691, "n": "h^gm", "r": 64762, "H": "Yx9u", "h": 25412, "Y": "89J2", "D": 67155, "l": "[()[", "a": 94819, "V0": "89J2", "V1": 70769, "V2": "iSZ6", "V3": 42858, "V6": "nvO5", "VV": 4984, "VJ": "m[K#", "Vz": 106683, "Vd": 90331, "Vg": "xQ)2", "VL": 67591, "Vc": "pdVE", "Vx": 58420, "VB": "kh^v", "VK": 50671, "Vu": "9pb7", "VA": 1530, "Vs": "XR6@", "Vb": 51131, "Vw": "B@Sb", "Vf": 81146, "Vt": "K&pk", "VP": 39792, "Vp": 10508, "Vo": "nvO5", "VR": 48640, "VQ": 39220, "VW": 66688, "VT": 82788, "VG": "*!!t", "Vy": 84284, "Ve": "B@Sb", "VU": 79733, "Vq": 49422, "VO": 50065, "Vm": "m[K#", "VZ": 100943, "Vn": "toM2", "Vr": 33074, "VH": "VHeU", "Vh": 114945}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000ba8d
+	}
+	r1 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r11 = func_initModule_0x10000ba72["exports"]()
+	Scope[1350][10] = r1(r11)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "price-indexer.workers.madlads.com"
+	r5 = "api.backpack.exchange"
+	r8 = r3["Router"]
+	r6 = r8(r0)
+	Scope[1350][11] = {}
+	r8 = r6["get"]
+	r12 = new {"response": null}
+	r13 = new {"full": null}
+	r14 = r2["jsonTransformer"]
+	r13["full"] = r14(func_updateTokenPrices_0x10000ba8f)
+	r12["response"] = r13
+	r9 = r6
+	ACCU = r8(r4, null, r12)
+	r8 = r6["get"]
+	r11 = "/wapi/v1/subaccount/balances"
+	r12 = new {"response": null}
+	r13 = new {"full": null}
+	r14 = r2["jsonTransformer"]
+	r13["full"] = r14(func_saveBackpackBalance_0x10000ba91)
+	r12["response"] = r13
+	r9 = r6
+	ACCU = r8(r5, r11, r12)
+	a0["default"] = r6
+	return undefined
+}
+function func_initAscendexRouterModule_0x10000ba83(a0)
+{
+	Scope[1352][5] = func_n_0x10000ba7c
+	r0 = new {"V": 114036, "J": "XR6@", "S": 55342, "g": "*!!t", "L": 104330, "X": "m[K#", "j": 27054, "E": "B@Sb", "c": 7906, "x": "]C&)", "K": 19849, "u": "epz[", "A": 15383, "s": "toM2", "b": 83146, "i": "m[K#", "w": 19630, "f": 2909, "t": "^Ceg", "P": 93392, "I": "%r7r", "p": 66649, "o": "M2Ty", "R": 30272, "v": "[()[", "N": 17866, "M": "n@A0", "k": 12476, "Q": "p[w*", "W": 47372, "T": "L@kv", "G": 87130, "y": 71549, "e": "[()[", "U": 60302, "q": 104254, "O": 103604, "C": "]C&)", "n": 88938, "r": 94532, "H": "h98j", "h": 27071, "Y": "9pb7", "D": 125875, "l": ")Ku4", "a": 21509, "V0": "O9*f", "V1": 108175, "V2": "pdVE", "V3": 43301, "V6": "Yx9u", "VV": 80051, "VJ": "A0Dr", "Vz": 55876, "Vd": "I@Bf", "Vg": 19579, "VL": "8dGo", "Vc": 80129}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000ba80
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	r10 = func_initModule_0x10000ba72["exports"]()
+	Scope[1352][7] = r1(r10)
+	r2 = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r3 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r4 = "ascendex.com"
+	r7 = r3["Router"]
+	r5 = r7(r0)
+	r7 = r5["get"]
+	r10 = "/2/api/t/v3/all-balance"
+	r11 = new {"response": null}
+	r12 = new {"full": null}
+	r13 = r2["jsonTransformer"]
+	r12["full"] = r13(func_saveAscendexBalance_0x10000ba82)
+	r11["response"] = r12
+	r8 = r5
+	ACCU = r7(r4, r10, r11)
+	a0["default"] = r5
+	return undefined
+}
+function func_initJsonTransformerModule_0x10000ba7b(a0)
+{
+	Scope[1355][5] = func_n_0x10000ba73
+	Scope[1355][6] = func_parseJsonBuffer_0x10000ba78
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["jsonTransformer"] = func_createContextHandler_0x10000ba76
+	return undefined
+}
+function func_parseJsonBuffer_0x10000ba78(a0)
+{
+	try
+	{
+		r3 = JSON["parse"]
+		r5 = a0["toString"]
+		r5 = r5()
+		return r3(r5)
+	}
+	catch {}
+	ACCU = null
+	return undefined
+}
+function func_createContextHandler_0x10000ba76(a0)
+{
+	Scope[1357][2] = a0
+	return func_applyJsonTransformer_0x10000ba75
+}
+function func_initModule_0x10000ba72(a0)
+{
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["setHooks"] = func_assignScopeProperties_0x10000ba71
+	Scope[1360][3] = {}
+	a0["default"] = Scope[1360][3]
+	return undefined
+}
+function func_assignScopeProperties_0x10000ba71(a0)
+{
+	if (!a0 == undefined)
+	{
+		r3 = Generator(ToObject(a0))
+		r7 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r7)) break
+			if (r3.next().value == undefined) continue
+			r0 = r3.next().value
+			r2 = r3.next().value
+			Scope[1360][3][r0] = a0[r0]
+			r7 = GeneratorStep(r7)
+		}
+	}
+	return undefined
+}
+function func_initializeRouterBridgeModule_0x10000ba61(a0)
+{
+	Scope[1364][7] = func_s_0x10000ba56
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultAlt2_0x10000ba5c
+	}
+	r5 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r9 = "Router"
+	r11 = "listen"
+	r14 = undefined
+	a0["bridge"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	r11 = func_initializeRouterModule_0x10000b99c["exports"]()
+	r4 = r5(r11)
+	a0["Router"] = r4["default"]
+	Scope[1364][8] = func_initializeBridgeModule_0x10000ba4b["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "bridge"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getBridge_0x10000ba60
+	ACCU = r8(a0, r11, r12)
+	Scope[1364][9] = func_initializeListenerModule_0x10000ba55["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "listen"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getListener_0x10000ba5e
+	ACCU = r8(a0, r11, r12)
+	return undefined
+}
+function func_interopRequireWildcard_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_copyProperties_0x100003179(r1, a0)
+}
+function func_copyProperties_0x100003179(a0, a1, a2, a3)
+{
+	Scope[8550][2] = a1
+	r0 = new {"V": "gm42", "J": 112252, "S": "gm42", "g": 33189, "L": "O9*f", "X": 14008, "j": "YbH*", "E": 33727, "c": "kh^v", "x": 28142, "K": 49447, "u": "C0qY", "A": 19054, "s": "eeST", "b": 69771, "i": "m[K#", "w": 104964, "f": "VHeU", "t": 48465, "P": "h98j", "I": 22091, "p": "m[K#", "o": 4205, "R": "89J2", "v": 73023, "N": "A0Dr", "M": 47134}
+	if (Scope[8550][2])
+	r8 = TypeOf(Scope[8550][2])
+		&& (r8 == "object")
+	r8 = TypeOf(Scope[8550][2])
+	r9 = "function"
+		|| (r8 == r9)
+	{
+		r10 = r0["b"]
+		r9 = Scope[8550][2]
+		r8 = (Object["getOwnPropertyNames"])(Scope[8550][2])
+		r7 = GetIterator(r8)
+		r6 = r7["next"]
+		ACCU = false
+		r8 = false
+		try
+		{
+			while (true)
+			{
+				r8 = true
+				r12 = r6()
+				if (r12["done"]) break
+				r8 = false
+				Scope[8551][2] = r12["value"]
+				r14 = global_boe["call"]
+				r12 = r12["value"]
+				if (!!Boolean(r14(a0, Scope[8551][2]))) continue
+				if (Scope[8551][2] === a2) continue
+				r19 = new {"get": null, "enumerable": null}
+				r19["get"] = func_getScope8550Value_0x100003178
+				r21 = r2
+				a3 = (Object["getOwnPropertyDescriptor"])(Scope[8550][2], Scope[8551][2])
+				r15 = r2
+				r17 = a0
+				if (!Boolean((Object["getOwnPropertyDescriptor"])(Scope[8550][2], Scope[8551][2]))) continue
+				r19["enumerable"] = a3["enumerable"]
+				ACCU = (Object["defineProperty"])(r17, Scope[8551][2], r19)
+			}
+			ACCU = -1
+			r10 = -1
+			r9 = -1
+		}
+		catch
+		{
+			r10 = ACCU
+			r9 = 0
+		}
+		if (!r8)
+		{
+			try
+			{
+				if (!r7["return"] == undefined)
+				{
+					ACCU = r7["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r9 === 0)
+		{
+			ACCU = r10
+		}
+	}
+	return a0
+}
+function func_getScope8550Value_0x100003178()
+{
+	return Scope[8550][2][Scope[8551][2]]
+}
+function func_initializeCheerioBundle_0x100002834(a0)
+{
+	Scope[9093][219] = func_createParserStream_0x100001b24
+	Scope[9093][220] = func_createDecodingParserStream_0x100001b26
+	Scope[9093][2] = func_createModuleWrapper_0x100001b2c(func_initializeModule_0x100001b2e)
+	Scope[9093][3] = func_createModuleWrapper_0x100001b2c(func_initElementTypes_0x100001b31)
+	Scope[9093][4] = func_createModuleWrapper_0x100001b2c(func_initModule_0x100001b70)
+	Scope[9093][5] = func_createModuleWrapper_0x100001b2c(func_initDomHandlerModule_0x100001b85)
+	Scope[9093][6] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100001b87)
+	Scope[9093][7] = func_createModuleWrapper_0x100001b2c(func_initDecodeTable_0x100001b89)
+	Scope[9093][8] = func_createModuleWrapper_0x100001b2c(func_initCodePointModule_0x100001b8d)
+	Scope[9093][9] = func_createModuleWrapper_0x100001b2c(func_initEntitiesModule_0x100001bb4)
+	Scope[9093][10] = func_createModuleWrapper_0x100001b2c(func_initHtmlEntities_0x100001bb6)
+	Scope[9093][11] = func_createModuleWrapper_0x100001b2c(func_initXmlEncodeModule_0x100001bbc)
+	Scope[9093][12] = func_createModuleWrapper_0x100001b2c(func_initEncodeModule_0x100001bc1)
+	Scope[9093][13] = func_createModuleWrapper_0x100001b2c(func_initEntitiesModule_0x100001bdb)
+	Scope[9093][14] = func_createModuleWrapper_0x100001b2c(func_initSvgCamelCaseMaps_0x100001bde)
+	Scope[9093][15] = func_createModuleWrapper_0x100001b2c(func_initializeModule_0x100001bf1)
+	Scope[9093][16] = func_createModuleWrapper_0x100001b2c(func_initDomSerializerModule_0x100001bf9)
+	Scope[9093][17] = func_createModuleWrapper_0x100001b2c(func_initTraversalModule_0x100001c02)
+	Scope[9093][18] = func_createModuleWrapper_0x100001b2c(func_initManipulationModule_0x100001c09)
+	Scope[9093][19] = func_createModuleWrapper_0x100001b2c(func_initializeDomUtils_0x100001c11)
+	Scope[9093][20] = func_createModuleWrapper_0x100001b2c(func_initDomUtilities_0x100001c28)
+	Scope[9093][21] = func_createModuleWrapper_0x100001b2c(func_initDocumentPositionModule_0x100001c2f)
+	Scope[9093][22] = func_createModuleWrapper_0x100001b2c(func_initFeedModule_0x100001c3b)
+	Scope[9093][23] = func_createModuleWrapper_0x100001b2c(func_initDomUtilsModule_0x100001c46)
+	Scope[9093][24] = func_createModuleWrapper_0x100001b2c(func_initRenderUtilities_0x100001c52)
+	Scope[9093][25] = func_createModuleWrapper_0x100001b2c(func_initializeModule_0x100001c5a)
+	Scope[9093][26] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100001c5c)
+	Scope[9093][27] = func_createModuleWrapper_0x100001b2c(func_initXmlDecodeTree_0x100001c5e)
+	Scope[9093][28] = func_createModuleWrapper_0x100001b2c(func_initCodePointModule_0x100001c62)
+	Scope[9093][29] = func_createModuleWrapper_0x100001b2c(func_initEntitiesModule_0x100001c84)
+	Scope[9093][30] = func_createModuleWrapper_0x100001b2c(func_initTokenizerModule_0x100001cb7)
+	Scope[9093][31] = func_createModuleWrapper_0x100001b2c(func_initParserModule_0x100001ce0)
+	Scope[9093][32] = func_createModuleWrapper_0x100001b2c(func_initHtmlParserModule_0x100001cf7)
+	Scope[9093][33] = func_createModuleWrapper_0x100001b2c(func_initAttributesModule_0x100001d18)
+	Scope[9093][34] = func_createModuleWrapper_0x100001b2c(func_initSelectorModule_0x100001d1b)
+	Scope[9093][35] = func_createModuleWrapper_0x100001b2c(func_initCssSelectorModule_0x100001d2b)
+	Scope[9093][36] = func_createModuleWrapper_0x100001b2c(func_initStringifyModule_0x100001d37)
+	Scope[9093][37] = func_createModuleWrapper_0x100001b2c(func_initCssSelectorParser_0x100001d3f)
+	Scope[9093][38] = func_createModuleWrapper_0x100001b2c(func_initBoolFuncs_0x100001d42)
+	Scope[9093][39] = func_createModuleWrapper_0x100001b2c(func_initializeSelectorWeights_0x100001d47)
+	Scope[9093][40] = func_createModuleWrapper_0x100001b2c(func_initAttributeRules_0x100001d62)
+	Scope[9093][41] = func_createModuleWrapper_0x100001b2c(func_initNthArgumentParser_0x100001d67)
+	Scope[9093][42] = func_createModuleWrapper_0x100001b2c(func_initNthFunctions_0x100001d74)
+	Scope[9093][43] = func_createModuleWrapper_0x100001b2c(func_initNthModule_0x100001d7a)
+	Scope[9093][44] = func_createModuleWrapper_0x100001b2c(func_initializeFiltersModule_0x100001d92)
+	Scope[9093][45] = func_createModuleWrapper_0x100001b2c(func_initPseudos_0x100001d9f)
+	Scope[9093][46] = func_createModuleWrapper_0x100001b2c(func_initAliases_0x100001da0)
+	Scope[9093][47] = func_createModuleWrapper_0x100001b2c(func_initializeCssSelectModule_0x100001daf)
+	Scope[9093][48] = func_createModuleWrapper_0x100001b2c(func_initializePseudoModule_0x100001db6)
+	Scope[9093][49] = func_createModuleWrapper_0x100001b2c(func_initializeGeneralSelectorModule_0x100001dc3)
+	Scope[9093][50] = func_createModuleWrapper_0x100001b2c(func_initializeSelectorModule_0x100001dd8)
+	Scope[9093][51] = func_createModuleWrapper_0x100001b2c(func_initializeSelectorModule_0x100001dee)
+	Scope[9093][52] = func_createModuleWrapper_0x100001b2c(func_initFilterModule_0x100001df2)
+	Scope[9093][53] = func_createModuleWrapper_0x100001b2c(func_initUtils_0x100001df5)
+	Scope[9093][54] = func_createModuleWrapper_0x100001b2c(func_initModule_0x100001e18)
+	Scope[9093][55] = func_createModuleWrapper_0x100001b2c(func_initTraversalModule_0x100001e5d)
+	Scope[9093][56] = func_createModuleWrapper_0x100001b2c(func_initParseModule_0x100001e61)
+	Scope[9093][57] = func_createModuleWrapper_0x100001b2c(func_initManipulationModule_0x100001e87)
+	Scope[9093][58] = func_createModuleWrapper_0x100001b2c(func_initializeCssModule_0x100001e8f)
+	Scope[9093][59] = func_createModuleWrapper_0x100001b2c(func_initSerializeModule_0x100001e96)
+	Scope[9093][60] = func_createModuleWrapper_0x100001b2c(func_initExtractModule_0x100001e9c)
+	Scope[9093][61] = func_createModuleWrapper_0x100001b2c(func_initCheerioModule_0x100001ea7)
+	Scope[9093][62] = func_createModuleWrapper_0x100001b2c(func_initCheerioModule_0x100001eb9)
+	Scope[9093][63] = func_createModuleWrapper_0x100001b2c(func_initUnicodeModule_0x100001ec0)
+	Scope[9093][64] = func_createModuleWrapper_0x100001b2c(func_initParseErrorModule_0x100001ec2)
+	Scope[9093][65] = func_createModuleWrapper_0x100001b2c(func_initializePreprocessorModule_0x100001ed3)
+	Scope[9093][66] = func_createModuleWrapper_0x100001b2c(func_initTokenTypeModule_0x100001ed6)
+	Scope[9093][67] = func_createModuleWrapper_0x100001b2c(func_initHtmlConstants_0x100001ede)
+	Scope[9093][68] = func_createModuleWrapper_0x100001b2c(func_initTokenizerModule_0x100001f58)
+	Scope[9093][69] = func_createModuleWrapper_0x100001b2c(func_initializeOpenElementStack_0x100001f7e)
+	Scope[9093][70] = func_createModuleWrapper_0x100001b2c(func_initFormattingElementListModule_0x100001f8e)
+	Scope[9093][71] = func_createModuleWrapper_0x100001b2c(func_initDefaultTreeAdapter_0x100001fb3)
+	Scope[9093][72] = func_createModuleWrapper_0x100001b2c(func_initDoctypeModule_0x100001fb8)
+	Scope[9093][73] = func_createModuleWrapper_0x100001b2c(func_initNamespaceAdjustments_0x100001fc4)
+	Scope[9093][74] = func_createModuleWrapper_0x100001b2c(func_initModule_0x100002078)
+	Scope[9093][75] = func_createModuleWrapper_0x100001b2c(func_initXmlEscapeModule_0x10000207e)
+	Scope[9093][76] = func_createModuleWrapper_0x100001b2c(func_initSerializer_0x100002089)
+	Scope[9093][77] = func_createModuleWrapper_0x100001b2c(func_initParse5Module_0x100002093)
+	Scope[9093][78] = func_createModuleWrapper_0x100001b2c(func_initAlternateAdapter_0x1000020b6)
+	Scope[9093][79] = func_createModuleWrapper_0x100001b2c(func_initHtmlParserModule_0x1000020b9)
+	r1 = func_createModuleWrapper_0x100001b2c(func_initCheerioLoad_0x1000020bd)
+	r2 = func_createModuleWrapper_0x100001b2c(func_initParserStreamModule_0x1000020c7)
+	Scope[9093][80] = func_createModuleWrapper_0x100001b2c(func_initBufferModule_0x1000020ca)
+	Scope[9093][81] = func_createModuleWrapper_0x100001b2c(func_initBomCodec_0x1000020d1)
+	Scope[9093][82] = func_createModuleWrapper_0x100001b2c(func_initInternalCodecModule_0x1000020e3)
+	Scope[9093][83] = func_createModuleWrapper_0x100001b2c(func_initUtf32CodecModule_0x1000020f4)
+	Scope[9093][84] = func_createModuleWrapper_0x100001b2c(func_initUtf16CodecModule_0x100002104)
+	Scope[9093][85] = func_createModuleWrapper_0x100001b2c(func_initUtf7Codec_0x100002114)
+	Scope[9093][86] = func_createModuleWrapper_0x100001b2c(func_initSbcsCodec_0x10000211c)
+	Scope[9093][87] = func_createModuleWrapper_0x100001b2c(func_initEncodingAliases_0x10000211d)
+	Scope[9093][88] = func_createModuleWrapper_0x100001b2c(func_unknown_0x10000211e)
+	Scope[9093][89] = func_createModuleWrapper_0x100001b2c(func_initDbcsModule_0x10000212d)
+	Scope[9093][90] = func_createModuleWrapper_0x100001b2c(func_unknown_0x10000212e)
+	Scope[9093][91] = func_createModuleWrapper_0x100001b2c(func_unknown_0x10000212f)
+	Scope[9093][92] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100002130)
+	Scope[9093][93] = func_createModuleWrapper_0x100001b2c(func_initGbkTable_0x100002131)
+	Scope[9093][94] = func_createModuleWrapper_0x100001b2c(func_initGb18030Ranges_0x100002132)
+	Scope[9093][95] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100002133)
+	Scope[9093][96] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100002134)
+	Scope[9093][97] = func_createModuleWrapper_0x100001b2c(func_initDbcsData_0x100002135)
+	Scope[9093][98] = func_createModuleWrapper_0x100001b2c(func_initDbcsEncodings_0x10000213f)
+	Scope[9093][99] = func_createModuleWrapper_0x100001b2c(func_mergeObjects_0x100002140)
+	Scope[9093][100] = func_createModuleWrapper_0x100001b2c(func_initBufferStreamModule_0x10000214e)
+	Scope[9093][101] = func_createModuleWrapper_0x100001b2c(func_initIconvLite_0x10000215a)
+	Scope[9093][102] = func_createModuleWrapper_0x100001b2c(func_exportEncodings_0x10000215b)
+	Scope[9093][103] = func_createModuleWrapper_0x100001b2c(func_exportEncodingAliases_0x10000215c)
+	Scope[9093][104] = func_createModuleWrapper_0x100001b2c(func_setupEncoding_0x100002161)
+	Scope[9093][105] = func_createModuleWrapper_0x100001b2c(func_initCharsetSniffer_0x10000219c)
+	r3 = func_createModuleWrapper_0x100001b2c(func_initDecodeStreamModule_0x1000021a6)
+	Scope[9093][106] = func_createModuleWrapper_0x100001b2c(func_initSymbols_0x1000021a7)
+	Scope[9093][107] = func_createModuleWrapper_0x100001b2c(func_initializeTimerModuleAlt_0x1000021b5)
+	Scope[9093][108] = func_createModuleWrapper_0x100001b2c(func_initErrorClasses_0x1000021cd)
+	Scope[9093][109] = func_createModuleWrapper_0x100001b2c(func_initHeaderNames_0x1000021cf)
+	Scope[9093][110] = func_createModuleWrapper_0x100001b2c(func_initTernarySearchTree_0x1000021d8)
+	Scope[9093][111] = func_createModuleWrapper_0x100001b2c(func_initializeUtilsModule_0x100002217)
+	Scope[9093][112] = func_createModuleWrapper_0x100001b2c(func_initStatsClasses_0x10000221a)
+	Scope[9093][113] = func_createModuleWrapper_0x100001b2c(func_initDiagnosticsModule_0x10000222a)
+	Scope[9093][114] = func_createModuleWrapper_0x100001b2c(func_initRequestModule_0x10000223a)
+	Scope[9093][115] = func_createModuleWrapper_0x100001b2c(func_defineDispatcherClassAlt_0x10000224f)
+	Scope[9093][116] = func_createModuleWrapper_0x100001b2c(func_defineDispatcher_0x100002258)
+	Scope[9093][117] = func_createModuleWrapper_0x100001b2c(func_initPipelineModule_0x10000226a)
+	Scope[9093][118] = func_createModuleWrapper_0x100001b2c(func_initPoolModule_0x10000227d)
+	Scope[9093][119] = func_createModuleWrapper_0x100001b2c(func_defineHttpAgent_0x100002287)
+	Scope[9093][120] = func_createModuleWrapper_0x100001b2c(func_initExports_0x10000228a)
+	Scope[9093][121] = func_createModuleWrapper_0x100001b2c(func_initHttpParserConstants_0x10000228d)
+	Scope[9093][122] = func_createModuleWrapper_0x100001b2c(func_unknown_0x10000228f)
+	Scope[9093][123] = func_createModuleWrapper_0x100001b2c(func_unknown_0x100002291)
+	Scope[9093][124] = func_createModuleWrapper_0x100001b2c(func_initFetchConstants_0x100002292)
+	Scope[9093][125] = func_createModuleWrapper_0x100001b2c(func_initGlobalOriginModule_0x100002295)
+	Scope[9093][126] = func_createModuleWrapper_0x100001b2c(func_initFetchUtilsModuleAlt_0x1000022ac)
+	Scope[9093][127] = func_createModuleWrapper_0x100001b2c(func_initializeWebidl_0x1000022d6)
+	Scope[9093][128] = func_createModuleWrapper_0x100001b2c(func_initFetchUtils_0x10000232c)
+	Scope[9093][129] = func_createModuleWrapper_0x100001b2c(func_initializeFormData_0x100002341)
+	Scope[9093][130] = func_createModuleWrapper_0x100001b2c(func_initFormDataParser_0x100002357)
+	Scope[9093][131] = func_createModuleWrapper_0x100001b2c(func_initBodyModule_0x10000237c)
+	Scope[9093][132] = func_createModuleWrapper_0x100001b2c(func_initHttpClientModule_0x1000023ba)
+	Scope[9093][133] = func_createModuleWrapper_0x100001b2c(func_initializeH2ModuleAlt_0x1000023e5)
+	Scope[9093][134] = func_createModuleWrapper_0x100001b2c(func_initUndiciClientModule_0x100002406)
+	Scope[9093][135] = func_createModuleWrapper_0x100001b2c(func_initQueueModule_0x100002410)
+	Scope[9093][136] = func_createModuleWrapper_0x100001b2c(func_initPoolBaseModule_0x10000242b)
+	Scope[9093][137] = func_createModuleWrapper_0x100001b2c(func_initPoolModule_0x100002431)
+	Scope[9093][138] = func_createModuleWrapper_0x100001b2c(func_initBalancedPoolModule_0x100002445)
+	Scope[9093][139] = func_createModuleWrapper_0x100001b2c(func_initDispatcherModule_0x100002451)
+	Scope[9093][140] = func_createModuleWrapper_0x100001b2c(func_initProxyAgentModule_0x100002466)
+	Scope[9093][141] = func_createModuleWrapper_0x100001b2c(func_initProxyAgentModule_0x100002471)
+	Scope[9093][142] = func_createModuleWrapper_0x100001b2c(func_initRetryHandlerModule_0x100002480)
+	Scope[9093][143] = func_createModuleWrapper_0x100001b2c(func_initRetryModule_0x100002486)
+	Scope[9093][144] = func_createModuleWrapper_0x100001b2c(func_initH2cClient_0x100002490)
+	Scope[9093][145] = func_createModuleWrapper_0x100001b2c(func_initBodyStreamModule_0x1000024b8)
+	Scope[9093][146] = func_createModuleWrapper_0x100001b2c(func_initPipelineModule_0x1000024c7)
+	Scope[9093][147] = func_createModuleWrapper_0x100001b2c(func_initAbortSignalModule_0x1000024cc)
+	Scope[9093][148] = func_createModuleWrapper_0x100001b2c(func_initStreamModule_0x1000024db)
+	Scope[9093][149] = func_createModuleWrapper_0x100001b2c(func_initPipelineModule_0x1000024f2)
+	Scope[9093][150] = func_createModuleWrapper_0x100001b2c(func_initUpgradeModule_0x1000024fd)
+	Scope[9093][151] = func_createModuleWrapper_0x100001b2c(func_initConnectModule_0x100002508)
+	Scope[9093][152] = func_createModuleWrapper_0x100001b2c(func_assignUndiciExports_0x100002509)
+	Scope[9093][153] = func_createModuleWrapper_0x100001b2c(func_initMockNotMatchedError_0x10000250b)
+	Scope[9093][154] = func_createModuleWrapper_0x100001b2c(func_initMockSymbols_0x10000250c)
+	Scope[9093][155] = func_createModuleWrapper_0x100001b2c(func_initModule_0x100002530)
+	Scope[9093][156] = func_createModuleWrapper_0x100001b2c(func_initMockInterceptorModuleAlt_0x10000253e)
+	Scope[9093][157] = func_createModuleWrapper_0x100001b2c(func_initMockClientModule_0x100002544)
+	Scope[9093][158] = func_createModuleWrapper_0x100001b2c(func_initMockCallHistory_0x10000255b)
+	Scope[9093][159] = func_createModuleWrapper_0x100001b2c(func_initMockPoolModule_0x100002561)
+	Scope[9093][160] = func_createModuleWrapper_0x100001b2c(func_initMockLoggerModule_0x100002566)
+	Scope[9093][161] = func_createModuleWrapper_0x100001b2c(func_initMockAgentModule_0x10000257f)
+	Scope[9093][162] = func_createModuleWrapper_0x100001b2c(func_initGlobalDispatcher_0x100002582)
+	Scope[9093][163] = func_createModuleWrapper_0x100001b2c(func_initDecoratorHandlerModule_0x10000258c)
+	Scope[9093][164] = func_createModuleWrapper_0x100001b2c(func_initRedirectModule_0x10000259d)
+	Scope[9093][165] = func_createModuleWrapper_0x100001b2c(func_initRedirectInterceptor_0x1000025a1)
+	Scope[9093][166] = func_createModuleWrapper_0x100001b2c(func_initHandlerWrapperInterceptor_0x1000025ad)
+	Scope[9093][167] = func_createModuleWrapper_0x100001b2c(func_initRetryInterceptor_0x1000025b1)
+	Scope[9093][168] = func_createModuleWrapper_0x100001b2c(func_initDumpInterceptor_0x1000025bd)
+	Scope[9093][169] = func_createModuleWrapper_0x100001b2c(func_initDnsModule_0x1000025d1)
+	Scope[9093][170] = func_createModuleWrapper_0x100001b2c(func_initCacheUtilsModule_0x1000025db)
+	Scope[9093][171] = func_createModuleWrapper_0x100001b2c(func_initHttpDateParser_0x1000025e0)
+	Scope[9093][172] = func_createModuleWrapper_0x100001b2c(func_initCacheInterceptorModule_0x1000025f6)
+	Scope[9093][173] = func_createModuleWrapper_0x100001b2c(func_initMemoryCacheStoreModule_0x100002603)
+	Scope[9093][174] = func_createModuleWrapper_0x100001b2c(func_initCacheHandlerModule_0x10000260c)
+	Scope[9093][175] = func_createModuleWrapper_0x100001b2c(func_initializeCacheModule_0x100002624)
+	Scope[9093][176] = func_createModuleWrapper_0x100001b2c(func_initSqliteCacheStoreModule_0x100002634)
+	Scope[9093][177] = func_createModuleWrapper_0x100001b2c(func_initHeadersModule_0x100002656)
+	Scope[9093][178] = func_createModuleWrapper_0x100001b2c(func_initResponseModule_0x10000267a)
+	Scope[9093][179] = func_createModuleWrapper_0x100001b2c(func_exportWeakRefRegistry_0x10000267c)
+	Scope[9093][180] = func_createModuleWrapper_0x100001b2c(func_initRequestModule_0x1000026a1)
+	Scope[9093][181] = func_createModuleWrapper_0x100001b2c(func_initializeFetchModuleAlt_0x1000026db)
+	Scope[9093][182] = func_createModuleWrapper_0x100001b2c(func_initCacheUtils_0x1000026de)
+	Scope[9093][183] = func_createModuleWrapper_0x100001b2c(func_initCacheModule_0x1000026f5)
+	Scope[9093][184] = func_createModuleWrapper_0x100001b2c(func_initCacheStorage_0x1000026fd)
+	Scope[9093][185] = func_createModuleWrapper_0x100001b2c(func_exportCookieLimits_0x1000026fe)
+	Scope[9093][186] = func_createModuleWrapper_0x100001b2c(func_initCookieValidationModule_0x100002708)
+	Scope[9093][187] = func_createModuleWrapper_0x100001b2c(func_initCookieParser_0x10000270b)
+	Scope[9093][188] = func_createModuleWrapper_0x100001b2c(func_initCookieApiModule_0x10000271c)
+	Scope[9093][189] = func_createModuleWrapper_0x100001b2c(func_initializeWebEvents_0x100002741)
+	Scope[9093][190] = func_createModuleWrapper_0x100001b2c(func_exportWebSocketConstants_0x100002742)
+	Scope[9093][191] = func_createModuleWrapper_0x100001b2c(func_initWebSocketUtilsModule_0x100002757)
+	Scope[9093][192] = func_createModuleWrapper_0x100001b2c(func_initWebSocketFrame_0x10000275d)
+	Scope[9093][193] = func_createModuleWrapper_0x100001b2c(func_initWebSocketConnection_0x100002762)
+	Scope[9093][194] = func_createModuleWrapper_0x100001b2c(func_initPerMessageDeflate_0x100002769)
+	Scope[9093][195] = func_createModuleWrapper_0x100001b2c(func_initializeByteParser_0x100002775)
+	Scope[9093][196] = func_createModuleWrapper_0x100001b2c(func_initSendQueue_0x10000277d)
+	Scope[9093][197] = func_createModuleWrapper_0x100001b2c(func_initWebSocketModule_0x1000027ae)
+	Scope[9093][198] = func_createModuleWrapper_0x100001b2c(func_initializeWebSocketError_0x1000027b4)
+	Scope[9093][199] = func_createModuleWrapper_0x100001b2c(func_initializeWebSocketStream_0x1000027da)
+	Scope[9093][200] = func_createModuleWrapper_0x100001b2c(func_exportEventSourceUtils_0x1000027df)
+	Scope[9093][201] = func_createModuleWrapper_0x100001b2c(func_initEventSourceStreamModule_0x1000027e6)
+	Scope[9093][202] = func_createModuleWrapper_0x100001b2c(func_initEventSourceModule_0x1000027fa)
+	r4 = func_createModuleWrapper_0x100001b2c(func_initUndici_0x1000027ff)
+	Scope[9093][203] = func_createModuleWrapper_0x100001b2c(func_assignHeaderUtils_0x100002808)
+	Scope[9093][204] = func_createModuleWrapper_0x100001b2c(func_initMimeTypeModule_0x100002815)
+	Scope[9093][205] = func_createModuleWrapper_0x100001b2c(func_initMimeTypeModule_0x100002817)
+	Scope[9093][206] = func_createModuleWrapper_0x100001b2c(func_initMimeTypeSerializer_0x100002819)
+	r5 = func_createModuleWrapper_0x100001b2c(func_initializeMimeTypeModule_0x100002826)
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineExportProperty_0x100002828
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x100002829
+		}
+	}
+	Scope[9093][207] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefaultProperty_0x10000282a
+		}
+		else
+		{
+			ACCU = func_setDefaultExport_0x10000282b
+		}
+	}
+	Scope[9093][208] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__exportStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_reexportModule_0x10000282c
+	}
+	r6 = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_getInteropRequireWildcard_0x100002830()
+	}
+	r7 = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x100002831
+	}
+	r8 = ACCU
+	r17 = new {"value": <true}
+	ACCU = Object["defineProperty"](a0, "__esModule", r17)
+	r15 = undefined
+	a0["contains"] = undefined
+	a0["merge"] = r15
+	a0["loadBuffer"] = func_loadHtml_0x100001b1f
+	a0["stringStream"] = func_createParserStreamFromOptions_0x100001b25
+	a0["decodeStream"] = func_createDecodingParserStream_0x100001b26
+	a0["fromURL"] = func_initParserStreamWrapper_0x100001b2a
+	r14 = r1()
+	ACCU = r6(r14, a0)
+	Scope[9093][209] = Scope[9093][24]()
+	r17 = new {"enumerable": <true, "get": null}
+	r17["get"] = func_getContains_0x100002832
+	ACCU = Object["defineProperty"](a0, "contains", r17)
+	r17 = new {"enumerable": <true, "get": null}
+	r17["get"] = func_getMerge_0x100002833
+	ACCU = Object["defineProperty"](a0, "merge", r17)
+	Scope[9093][210] = Scope[9093][78]()
+	r14 = Scope[9093][32]()
+	Scope[9093][211] = r7(r14)
+	Scope[9093][212] = r2()
+	Scope[9093][213] = r3()
+	r14 = r4()
+	Scope[9093][214] = r7(r14)
+	r14 = r5()
+	Scope[9093][215] = r8(r14)
+	Scope[9093][216] = require("node:stream")
+	Scope[9093][217] = Scope[9093][2]()
+	Scope[9093][218] = r1()
+	return undefined
+}

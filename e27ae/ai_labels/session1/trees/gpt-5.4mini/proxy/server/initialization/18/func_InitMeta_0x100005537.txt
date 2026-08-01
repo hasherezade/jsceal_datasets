@@ -1,0 +1,192 @@
+function func_InitMeta_0x100005537()
+{
+	ACCU = func_initTrpc_0x100005534()
+	r5 = global_h4["meta"]
+	r5 = r5()
+	r4 = r5["create"]
+	global_Nh = r4()
+	return undefined
+}
+function func_initTrpc_0x100005534()
+{
+	Scope[6541][6] = func_n_0x100005527
+	r0 = new {"V": 64100, "J": "89J2", "S": 72422, "g": "O9*f", "L": 51429, "X": "eeST", "j": 48606, "E": "93y[", "c": 45950, "x": "O9*f", "K": 63622, "u": "C0qY", "A": 91787, "s": 72093, "b": "m[K#", "i": 42709, "w": "]1@2", "f": 83946, "t": "I@Bf", "P": 32652, "I": "kh^v", "p": 61596, "o": "h98j", "R": 100837, "v": "iSZ6", "N": 35663, "M": "M2Ty", "k": 103230, "Q": "eeST", "W": 37516, "T": "m[K#", "G": 89404, "y": "p8sI", "e": 61014, "U": "[Jy3", "q": 125323, "O": ")Ku4", "C": 100490, "n": "b48I", "r": 79175, "H": "B@Sb", "h": 75853, "Y": "M2Ty", "D": 77086, "l": 91185, "a": "93y[", "V0": 10410, "V1": "vV[N", "V2": 29376, "V3": "x&b0", "V6": 46921, "VV": "*!!t", "VJ": 94583, "Vz": "pdVE", "Vd": 123734, "Vg": "x&b0", "VL": 26849, "Vc": "9pb7", "Vx": 78841, "VB": "YbH*", "VK": 99544, "Vu": "XR6@", "VA": 123489, "Vs": "%r7r", "Vb": 5562, "Vw": "b48I", "Vf": 64857, "Vt": 1157, "VP": "BS4&", "Vp": 96363, "Vo": "YbH*", "VR": 6523, "VQ": "JrBU", "VW": 22710, "VT": "toM2", "VG": 111449, "Vy": "[()[", "Ve": 94254, "VU": "xQ)2"}
+	ACCU = func_InitTrpc_0x100005526()
+	ACCU = func_InitTrpc_0x100005526()
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_initStatus_0x10000551a()
+	ACCU = func_initErrors_0x10000550f()
+	ACCU = func_defineError_0x100005506()
+	r3 = "\nThis is a client-only function.\nIf you want to call this function on the server, see https://trpc.io/docs/server/server-side-calls\\n"
+	r2 = r3["trim"]
+	global_lP = r2()
+	ACCU = ToName("context")
+	ACCU = ToName("meta")
+	ACCU = ToName("create")
+	r4 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 28]], func_noop_0x10000552f, null, r7, func_identity_0x100005530, 22710, func_noop_0x100005531, 111449, func_wrap_0x100005533)
+	Scope[6542][2] = func_noop_0x10000552f
+	global_h4 = func_noop_0x10000552f(r0)
+	return undefined
+}
+function func_wrap_0x100005533(a0)
+{
+	r1 = func_context_0x100000225()
+	return r1(a0)
+}
+function func_noop_0x100005531()
+{
+	return func_noop_0x10000552f(func_noop_0x10000552f)
+}
+function func_identity_0x100005530()
+{
+	return func_noop_0x10000552f(func_noop_0x10000552f)
+}
+function func_noop_0x10000552f()
+{
+	return undefined
+}
+function func_InitTrpc_0x100005526()
+{
+	r0 = new {"V": ")Ku4", "J": 124396, "S": "B@Sb", "g": 98729, "L": "p[w*", "X": 119325, "j": "^Ceg", "E": 121083, "c": "YbH*", "x": 57736, "K": "mwAz", "u": 95455, "A": "]C&)", "s": 125033, "b": "n@A0", "i": 111426, "w": "]C&)", "f": 26423, "t": "b48I", "P": 76945, "I": "93y[", "p": 22057, "o": "]1@2", "R": 95672, "v": "A5nh", "N": 70372, "M": "epz[", "k": 124539, "Q": "toM2", "W": 56054, "T": "]C&)", "G": 97377, "y": "8dGo", "e": 77734, "U": "nvO5", "q": 116780, "O": "[Jy3", "C": 79579, "n": "XR6@", "r": 94456, "H": "%r7r", "h": 60349, "Y": "h98j", "D": 65360, "l": "VHeU", "a": 60288, "V0": "[()[", "V1": 55324, "V2": "A0Dr", "V3": 27661, "V6": "I@Bf", "VV": 88447, "VJ": "F1xf", "Vz": 81995, "Vd": "89J2", "Vg": 42893, "VL": "]1@2", "Vc": 45493, "Vx": 16044, "VB": 1303, "VK": 113079, "Vu": "L@kv", "VA": 51961, "Vs": 49757, "Vb": "xQ)2", "Vw": 106128, "Vf": "JrBU", "Vt": 12611, "VP": "mwAz", "Vp": 10385, "Vo": "eeST", "VR": 12204, "VQ": 91431}
+	r9 = r0["v"]
+	r6 = r7["split"]
+	r2 = r6("|")
+	r3 = 0
+	r9 = func_defineTrpc_0x10000550c
+	ACCU = func_defineTrpc_0x10000550c()
+	ACCU = func_initStatus_0x10000551a()
+	ACCU = func_initErrors_0x10000550f()
+	r7 = new {"_default": <true, "input": null, "output": null}
+	r8 = new {"serialize": null, "deserialize": null}
+	r8["serialize"] = func_identity_0x100005521
+	r8["deserialize"] = func_deserialize_0x100005522
+	r7["input"] = r8
+	r8 = new {"serialize": null, "deserialize": null}
+	r8["serialize"] = func_identity_0x100005523
+	r8["deserialize"] = func_deserialize_0x100005524
+	r7["output"] = r8
+	global_nE = r7
+	r8 = new [0, 0, 0]
+	r8[0] = "query"
+	r8[1] = "mutation"
+	r8[2] = "subscription"
+	global_sP = r8
+	r7 = new {"_ctx": <null, "_errorShape": <null, "_meta": <null, "queries": {}, "mutations": {}, "subscriptions": {}, "errorFormatter": null, "transformer": null}
+	r7["errorFormatter"] = func_shape_0x100005525
+	r7["transformer"] = global_nE
+	global_xP = r7
+	r8 = new [0]
+	r8[0] = "then"
+	global_dP = r8
+	r9 = TypeOf(typeof(window))
+	ACCU = r9 > "u"
+	if (!r9 > "u")
+	{
+		r9 = "Deno"
+		ACCU = r9 in window
+		if (!r9 in window)
+		{
+			r8 = r1
+			if (!globalThis["process"] == undefined)
+			ACCU = globalThis["process"]["env"]
+			r9 = globalThis["process"]["env"]
+				&& (!globalThis["process"]["env"] == undefined)
+			{
+				ACCU = r9["NODE_ENV"]
+			}
+			else
+			{
+				ACCU = undefined
+			}
+			r9 = ACCU
+			if (!r9 === "test")
+			{
+				if (!globalThis["process"] == undefined)
+				ACCU = globalThis["process"]["env"]
+				r7 = globalThis["process"]["env"]
+					&& (!globalThis["process"]["env"] == undefined)
+				{
+					ACCU = r7["JEST_WORKER_ID"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				if (!!(!Boolean(ACCU)))
+				{
+					if (!globalThis["process"] == undefined)
+					ACCU = globalThis["process"]["env"]
+					r7 = globalThis["process"]["env"]
+						&& (!globalThis["process"]["env"] == undefined)
+					{
+						ACCU = r7["VITEST_WORKER_ID"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					ACCU = !(!Boolean(ACCU))
+				}
+			}
+		}
+	}
+	global_zB = ACCU
+	return undefined
+}
+function func_shape_0x100005525(a0)
+{
+	return a0["shape"]
+}
+function func_deserialize_0x100005524(a0)
+{
+	return a0
+}
+function func_identity_0x100005523(a0)
+{
+	return a0
+}
+function func_deserialize_0x100005522(a0)
+{
+	return a0
+}
+function func_identity_0x100005521(a0)
+{
+	return a0
+}
+function func_initStatus_0x10000551a()
+{
+	Scope[6544][5] = func_u_0x100005510
+	ACCU = func_initErrors_0x10000550f()
+	global_oP = new {"PARSE_ERROR": 400, "BAD_REQUEST": 400, "UNAUTHORIZED": 401, "NOT_FOUND": 404, "FORBIDDEN": 403, "METHOD_NOT_SUPPORTED": 405, "TIMEOUT": 408, "CONFLICT": 409, "PRECONDITION_FAILED": 412, "PAYLOAD_TOO_LARGE": 413, "UNPROCESSABLE_CONTENT": 422, "TOO_MANY_REQUESTS": 429, "CLIENT_CLOSED_REQUEST": 499, "INTERNAL_SERVER_ERROR": 500, "NOT_IMPLEMENTED": 501}
+	return undefined
+}
+function func_initErrors_0x10000550f()
+{
+	global_vV = new {"PARSE_ERROR": -32700, "BAD_REQUEST": -32600, "INTERNAL_SERVER_ERROR": -32603, "NOT_IMPLEMENTED": -32603, "UNAUTHORIZED": -32001, "FORBIDDEN": -32003, "NOT_FOUND": -32004, "METHOD_NOT_SUPPORTED": -32005, "TIMEOUT": -32008, "CONFLICT": -32009, "PRECONDITION_FAILED": -32012, "PAYLOAD_TOO_LARGE": -32013, "UNPROCESSABLE_CONTENT": -32022, "TOO_MANY_REQUESTS": -32029, "CLIENT_CLOSED_REQUEST": -32099}
+	return undefined
+}
+function func_defineTrpc_0x10000550c()
+{
+	Scope[6548][6] = func_n_0x100005507
+	ACCU = func_defineError_0x100005506()
+	r3 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_trpc_0x10000550b, Error)
+	return undefined
+}
+function func_defineError_0x100005506()
+{
+	r1 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_callSuper_0x100005505, Error)
+	return undefined
+}
+function func_callSuper_0x100005505()
+{
+	r2 = ...
+	ACCU = <closure>
+	ACCU = r0
+	return supper(...r2))
+}
+function func_context_0x100000225()
+{
+	Scope[11149][7] = func_o_0x10000021a
+	return func_createContext_0x100000224
+}

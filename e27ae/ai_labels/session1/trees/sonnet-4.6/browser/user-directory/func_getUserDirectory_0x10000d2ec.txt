@@ -1,0 +1,5 @@
+function func_getUserDirectory_0x10000d2ec()
+{
+	r0 = global_JB["default"]["getUserDirectory"]
+	return r0()
+}

@@ -1,0 +1,29 @@
+function func_initFileExistsModule_0x10000b852(a0)
+{
+	Scope[1502][5] = func_n_0x10000b84d
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["exists"] = func_checkFileAccess_0x10000b851
+	Scope[1502][6] = require("fs/promises")
+	return undefined
+}
+function func_checkFileAccess_0x10000b851(a0)
+{
+	r3 = Scope[1502][6]["access"]
+	r5 = Scope[1502][6]["constants"]["F_OK"]
+	r3 = r3(a0, r5)
+	r2 = r3["then"]
+	r2 = r2(func_returnTrue_0x10000b84f)
+	r1 = r2["catch"]
+	return r1(func_returnFalse_0x10000b850)
+}
+function func_returnFalse_0x10000b850()
+{
+	return false
+}
+function func_returnTrue_0x10000b84f()
+{
+	return true
+}

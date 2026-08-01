@@ -1,0 +1,5 @@
+function func_setProxy_0x10000d2f4(a0)
+{
+	r1 = global_NL["default"]["setProxy"]
+	return r1(a0["input"])
+}

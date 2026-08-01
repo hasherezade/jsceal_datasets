@@ -1,0 +1,9 @@
+function func_addCertificate_0x100001b08(a0)
+{
+	if (typeof(a0) == string)
+	{
+		a0 = Scope[9797][2]["pki"]["certificateFromPem"](a0)
+	}
+	ACCU = Scope[9800][2]["certificates"]["push"](a0)
+	return undefined
+}

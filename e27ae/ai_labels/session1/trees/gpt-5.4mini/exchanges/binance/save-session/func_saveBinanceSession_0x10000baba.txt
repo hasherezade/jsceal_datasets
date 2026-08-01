@@ -1,0 +1,43 @@
+function func_saveBinanceSession_0x10000baba(a0)
+{
+	if (!a0["json"]["success"])
+	{
+		return undefined
+	}
+	r2 = a0["json"]["data"]["userId"]
+	r5 = Scope[1335][10]["parseHeaders"]
+	r7 = new {"headers": null}
+	r9 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r9[0] = "clienttype"
+	r9[1] = "bnc-level"
+	r9[2] = "bnc-location"
+	r9[3] = "bnc-currency"
+	r9[4] = "bnc-time-zone"
+	r9[5] = "bnc-uuid"
+	r9[6] = "device-info"
+	r9[7] = "versionname"
+	r9[8] = "x-token"
+	r9[9] = "fvideo-id"
+	r9[10] = "fvideo-token"
+	r9[11] = "user-agent"
+	r7["headers"] = r9
+	r5 = r5(Scope[1339][7], r7)
+	r3 = r5["headers"]
+	r4 = r5["cookies"]
+	r6 = Scope[1335][11]["default"]
+	r5 = r6["saveSession"]
+	if (!r6["saveSession"] == undefined)
+	{
+		r7 = new {"application": null, "userId": null, "headers": null, "cookies": null}
+		r7["application"] = "BINANCE_WEBSITE"
+		r7["userId"] = r2
+		r7["headers"] = r3
+		r7["cookies"] = r4
+		ACCU = r5(r7)
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	return undefined
+}

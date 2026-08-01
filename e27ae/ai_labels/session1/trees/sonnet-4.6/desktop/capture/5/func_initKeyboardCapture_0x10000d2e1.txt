@@ -1,0 +1,42 @@
+function func_initKeyboardCapture_0x10000d2e1()
+{
+	Scope[8][8] = func_h_0x10000d2d6
+	r1 = new {"GdcJL": null, "KfGUE": null, "yGdbY": null}
+	Scope[8][7] = r1
+	Scope[8][9] = global_TL()
+	return func_setContextAndCallback_0x1000003a2(func_initKeyboardCapture_0x10000d2e0)
+}
+function func_initKeyboardCapture_0x10000d2e0(a0)
+{
+	Scope[9][2] = a0["next"]
+	Scope[10][4] = func_g_0x10000d2db
+	Scope[10][3] = func_emitKeyEvent_0x10000d2dd
+	r3 = global_e6["keyboard"]
+	ACCU = r3["on"]("keydown", func_emitKeyEvent_0x10000d2dd)
+	return func_stopKeyboardCapture_0x10000d2df
+}
+function func_stopKeyboardCapture_0x10000d2df()
+{
+	r3 = global_e6["keyboard"]
+	r2 = r3["off"]
+	ACCU = r2("keydown", func_emitKeyEvent_0x10000d2dd)
+	ACCU = Scope[8][9]()
+	return undefined
+}
+function func_emitKeyEvent_0x10000d2dd(a0)
+{
+	r9 = new {"vkCode": null, "scanCode": null, "pid": null, "value": null, "state": null}
+	r9["vkCode"] = a0["vkCode"]
+	r9["scanCode"] = a0["scanCode"]
+	r9["pid"] = a0["pid"]
+	r9["value"] = a0["value"]
+	r9["state"] = a0["state"]
+	ACCU = Scope[9][2](r9)
+	return undefined
+}
+function func_setContextAndCallback_0x1000003a2(a0)
+{
+	Scope[11095][2] = a0
+	Scope[11095][10] = func_c_0x10000038c
+	return Scope[11095][9]
+}

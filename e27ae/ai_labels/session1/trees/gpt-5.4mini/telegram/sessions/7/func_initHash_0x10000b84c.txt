@@ -1,0 +1,89 @@
+function func_initHash_0x10000b84c(a0)
+{
+	Scope[1503][5] = func_n_0x10000b847
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["deriveSessionName"] = func_hash_0x10000b849
+	Scope[1503][6] = func_hashInit_0x10000b846["exports"]()
+	return undefined
+}
+function func_hash_0x10000b849(a0)
+{
+	r1 = "data"
+	if (a0)
+	{
+		r3 = r1
+		r1 = (r1 + ("#" + (a0 + 1)))
+	}
+	r11 = Scope[1503][6]["md5"]
+	r11 = r11(r1)
+	r10 = r11["subarray"]
+	r10 = r10(0, 8)
+	r9 = r10["reverse"]
+	r9 = r9()
+	r8 = r9["toString"]
+	r8 = r8("hex")
+	r7 = r8["toUpperCase"]
+	r5 = Array.from(r7())
+	r4 = r5["reverse"]
+	r4 = r4()
+	r3 = r4["join"]
+	return r3("")
+}
+function func_hashInit_0x10000b846(a0)
+{
+	Scope[1505][8] = func_s_0x10000b83b
+	Scope[1505][10] = func_Map_0x10000b843
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	r4 = "md5"
+	r7 = undefined
+	a0["sha1"] = undefined
+	a0[r4] = r7
+	Scope[1505][9] = require("crypto")
+	a0["sha1"] = func_Unknown_0x10000b840("sha1")
+	a0["md5"] = func_Unknown_0x10000b840("md5")
+	return undefined
+}
+function func_Map_0x10000b843(a0)
+{
+	Scope[1506][2] = func_f_0x10000b841
+	r1 = a0["map"]
+	return r1(func_toBuffer_0x10000b842)
+}
+function func_toBuffer_0x10000b842(a0)
+{
+	ACCU = a0 instanceof Buffer
+	if (a0 instanceof Buffer)
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r0 = Buffer["from"]
+		ACCU = r0(a0)
+	}
+	return ACCU
+}
+function func_Unknown_0x10000b840(a0)
+{
+	Scope[1507][2] = a0
+	return func_Hash_0x10000b83f
+}
+function func_Hash_0x10000b83f()
+{
+	r1 = ...
+	r0 = ...
+	r5 = Buffer["concat"]
+	r7 = func_Map_0x10000b843(r1)
+	r3 = r5(r7)
+	r5 = Scope[1505][9]["createHash"]
+	r4 = r5(Scope[1507][2])
+	ACCU = r4["update"](r3)
+	r5 = r4["digest"]
+	return r5()
+}

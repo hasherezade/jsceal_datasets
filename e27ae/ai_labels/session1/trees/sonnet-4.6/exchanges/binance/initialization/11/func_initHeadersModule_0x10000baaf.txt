@@ -1,0 +1,248 @@
+function func_initHeadersModule_0x10000baaf(a0)
+{
+	Scope[1342][4] = func_n_0x10000baab
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["parseHeaders"] = func_parseHeadersAndCookies_0x10000baad
+	Scope[1342][5] = func_initCookieModule_0x10000baa0["exports"]()
+	Scope[1342][6] = func_initObjectUtilsModule_0x10000baaa["exports"]()
+	return undefined
+}
+function func_parseHeadersAndCookies_0x10000baad(a0, a1)
+{
+	r5 = Scope[1342][6]["select"]
+	r6 = a0
+	ACCU = a1
+	r7 = a1
+	if (!a1 == undefined)
+	{
+		ACCU = r7["headers"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r7 = ACCU
+	r5 = r5(r6, r7)
+	r1 = r5["result"]
+	r5 = Scope[1342][5]["parseCookies"]
+	r2 = r5(a0["cookie"])
+	r5 = Scope[1342][6]["select"]
+	ACCU = a1
+	r7 = a1
+	r6 = r2
+	if (!a1 == undefined)
+	{
+		ACCU = r7["cookies"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r7 = ACCU
+	r5 = r5(r6, r7)
+	r3 = r5["result"]
+	r5 = new {"headers": null, "cookies": null}
+	r5["headers"] = r1
+	r5["cookies"] = r3
+	return r5
+}
+function func_initObjectUtilsModule_0x10000baaa(a0)
+{
+	Scope[1344][9] = func_c_0x10000baa1
+	Scope[1344][10] = func_getObjectKeys_0x10000baa5
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["select"] = func_partitionObject_0x10000baa3
+	a0["keys"] = func_getObjectKeys_0x10000baa5
+	a0["ignore"] = func_noop_0x10000baa6
+	a0["parseNumber"] = func_extractNumericString_0x10000baa8
+	return undefined
+}
+function func_extractNumericString_0x10000baa8(a0)
+{
+	r1 = ""
+	r9 = 90080
+	r2 = "0123456789."
+	r7 = GetIterator(a0)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			r5 = r12["value"]
+			ACCU = r2["includes"](r12["value"])
+			r12 = r12["value"]
+			if (!ACCU) continue
+			ACCU = (r1 + r5)
+			r13 = r1
+			r1 = (r1 + r5)
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	ACCU = r1
+	if (r1)
+	{
+		ACCU = Number(r1)
+	}
+	else
+	{
+		ACCU = 0
+	}
+	return ACCU
+}
+function func_noop_0x10000baa6()
+{
+	return undefined
+}
+function func_getObjectKeys_0x10000baa5(a0)
+{
+	r1 = Object["keys"]
+	return r1(a0)
+}
+function func_partitionObject_0x10000baa3(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = func_getObjectKeys_0x10000baa5(r0)
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	r4 = {}
+	r5 = {}
+	r12 = 32510
+	r11 = func_getObjectKeys_0x10000baa5(r0)
+	r10 = GetIterator(r11)
+	r9 = r10["next"]
+	ACCU = false
+	r11 = false
+	try
+	{
+		while (true)
+		{
+			r11 = true
+			r15 = r9()
+			if (r15["done"]) break
+			r11 = false
+			r7 = r15["value"]
+			ACCU = r1["includes"](r15["value"])
+			r15 = r15["value"]
+			if (ACCU)
+			{
+				r18 = r0[r7]
+				r4[r7] = r0[r7]
+				ACCU = r18
+				continue
+			}
+			r18 = r0[r7]
+			r5[r7] = r0[r7]
+			ACCU = r18
+		}
+		ACCU = -1
+		r13 = -1
+		r12 = -1
+	}
+	catch
+	{
+		r13 = ACCU
+		r12 = 0
+	}
+	if (!r11)
+	{
+		try
+		{
+			if (!r10["return"] == undefined)
+			{
+				ACCU = r10["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r12 === 0)
+	{
+		ACCU = r13
+	}
+	r9 = new {"result": null, "rest": null}
+	r9["result"] = r4
+	r9["rest"] = r5
+	return r9
+}
+function func_initCookieModule_0x10000baa0(a0)
+{
+	Scope[1346][6] = func_o_0x10000ba99
+	Scope[1346][8] = func_splitKeyValue_0x10000ba9e
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["parseCookies"] = func_parseCookieString_0x10000ba9c
+	return undefined
+}
+function func_splitKeyValue_0x10000ba9e(a0)
+{
+	r2 = a0["indexOf"]
+	r1 = r2("=")
+	r3 = new [0, 0]
+	r4 = a0["substring"]
+	r3[0] = r4(0, r1)
+	r4 = a0["substring"]
+	r6 = (r1 + 1)
+	r3[1] = r4(r6)
+	return r3
+}
+function func_parseCookieString_0x10000ba9c(a0)
+{
+	Scope[1347][3] = func_f_0x10000ba9a
+	r3 = a0["split"]
+	r3 = r3(";")
+	r2 = r3["map"]
+	r0 = r2(func_trimString_0x10000ba9b)
+	r2 = Object["fromEntries"]
+	r4 = r0["map"]
+	r4 = r4(func_splitKeyValue_0x10000ba9e)
+	return r2(r4)
+}
+function func_trimString_0x10000ba9b(a0)
+{
+	r0 = a0["trim"]
+	return r0()
+}

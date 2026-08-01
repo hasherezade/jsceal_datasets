@@ -1,0 +1,190 @@
+function func_handleHeaders_0x10000bdf4(a0)
+{
+	r5 = <closure>
+	r6 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["headers"]
+	}
+	catch
+	{
+		r6 = ACCU
+		ACCU = null
+		ACCU = Scope[1157]
+		r7 = r1
+		return Scope[1157][2]
+	}
+	ACCU = func_B_0x10000bdf3
+	try
+	{
+		r6 = Scope[1155][6]["searchParams"]["get"]
+		r8 = "continue"
+		r2 = r6(r8)
+		if (!r6(r8))
+		ACCU = func_connectUrl_0x100005cce
+		r7 = func_connectUrl_0x100005cce(r2)
+		r6 = r7["match"]
+			|| (!r6(global_mB))
+		{
+			r6 = Scope[1155][6]["searchParams"]["get"]
+			r8 = "authuser"
+			r6 = r6(r8)
+			ACCU = Scope[1155][4]
+			Scope[1155][4] = r6
+			if (Scope[1155][7])
+			{
+				r6 = func_coalesce_0x10000bde4(r2, "https://google.com")
+				ACCU = Scope[1155][5]
+				Scope[1155][5] = r6
+			}
+			else
+			{
+				r9 = r0["simple"]
+				r9 = r9()
+				r7 = func_listAccounts_0x100000a15(r9)
+				r6 = r1
+				r6 = await r7
+				r7 = _GeneratorGetResumeMode(r1)
+				if (!r7 === 0)
+				{
+					ACCU = r6
+				}
+				r4 = r6[Number(Scope[1155][4])]
+				r8 = TypeOf(r4)
+				if (r8 == "string")
+				{
+					r7 = global_iB["google"]["hasToken"]
+					r6 = r7["query"]
+					r8 = new {"userId": null, "scope": null}
+					r8["userId"] = r4
+					r8["scope"] = "ANDROID"
+					r7 = r6(r8)
+					r6 = r1
+					r6 = await r7
+					r7 = _GeneratorGetResumeMode(r1)
+					if (!r7 === 0)
+					{
+						ACCU = r6
+					}
+					if (r6)
+					{
+						r6 = r1
+						return undefined
+					}
+				}
+				r6 = Scope[1155][6]["toString"]
+				r6 = r6()
+				ACCU = Scope[1155][5]
+				Scope[1155][5] = r6
+			}
+		}
+		r7 = undefined
+		r6 = r1
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[1158]
+	r7 = r1
+	return Scope[1158][2]
+}
+function func_coalesce_0x10000bde4(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_connectUrl_0x100005cce(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}
+function func_listAccounts_0x100000a15(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_u_0x100000a13
+	try
+	{
+		r7 = global_XK["default"]
+		r8 = "https://accounts.google.com/ListAccounts"
+		r9 = new {"method": null, "headers": null}
+		r9["method"] = "POST"
+		r9["headers"] = a0
+		r8 = r7(r8, r9)
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[10618])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r4 = r7
+		ACCU = r7["ok"]
+		if (r7["ok"])
+		{
+			r8 = r4["json"]
+			r9 = r8()
+			r8 = await r9
+			r9 = _GeneratorGetResumeMode(Scope[10618])
+			if (!r9 === 0)
+			{
+				ACCU = r8
+			}
+			r8 = r8[1]
+			ACCU = r8["map"](func_offset_0x100000a14)
+		}
+		else
+		{
+			ACCU = []
+		}
+		r8 = ACCU
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10619]
+	return Scope[10619][2]
+}
+function func_offset_0x100000a14(a0)
+{
+	return a0[10]
+}

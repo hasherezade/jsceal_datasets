@@ -1,0 +1,53 @@
+function func_createSignal_0x1000004e4(a0, a1)
+{
+	Scope[10998][2] = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = func_noop_0x1000004de
+	}
+	else
+	{
+		ACCU = a1
+	}
+	Scope[10998][3] = ACCU
+	Scope[10999][6] = func_o_0x1000004df
+	Scope[10999][7] = 0
+	return func_signal_0x1000004e3
+}
+function func_signal_0x1000004e3()
+{
+	r0 = Number(Scope[10999][7])
+	r1 = (Number(Scope[10999][7]) + 1)
+	ACCU = Scope[10999][7]
+	Scope[10999][7] = r1
+	if (!r0)
+	{
+		if (!Scope[10999][8] == undefined)
+		{
+			r0 = AbortController(AbortController)
+			ACCU = Scope[10999][8]
+			Scope[10999][8] = r0
+		}
+		ACCU = Scope[10998][2](Scope[10999][8]["signal"])
+	}
+	return func_release_0x1000004e2
+}
+function func_release_0x1000004e2()
+{
+	ACCU = Scope[10999][7]
+	Scope[10999][7] = (Scope[10999][7] - 1)
+	if (!(Scope[10999][7] - 1))
+	{
+		r1 = Scope[10999][8]["abort"]
+		ACCU = r1()
+		ACCU = Scope[10999][8]
+		Scope[10999][8] = undefined
+		ACCU = Scope[10998][3]()
+	}
+	return undefined
+}
+function func_noop_0x1000004de()
+{
+	return undefined
+}

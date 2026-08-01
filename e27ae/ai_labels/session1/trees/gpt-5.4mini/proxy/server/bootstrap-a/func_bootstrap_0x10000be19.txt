@@ -1,0 +1,77 @@
+function func_bootstrap_0x10000be19()
+{
+	r0 = new {"V": "L@kv", "J": 81117, "S": "A0Dr", "g": 40858, "L": "vV[N", "X": 22743}
+	r7 = func_initRouter_0x10000ba61["exports"]()
+	global_pL = func_interopProxy_0x10000317a(r7)
+	global_Up = global_pL["Router"](r0)
+	return undefined
+}
+function func_initRouter_0x10000ba61(a0)
+{
+	Scope[1364][7] = func_s_0x10000ba56
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_wrapModule_0x10000ba5c
+	}
+	r5 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r9 = "Router"
+	r11 = "listen"
+	r14 = undefined
+	a0["bridge"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	r11 = func_routerInit_0x10000b99c["exports"]()
+	r4 = r5(r11)
+	a0["Router"] = r4["default"]
+	Scope[1364][8] = func_initBridge_0x10000ba4b["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "bridge"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_bridge_0x10000ba60
+	ACCU = r8(a0, r11, r12)
+	Scope[1364][9] = func_initListen_0x10000ba55["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "listen"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getListen_0x10000ba5e
+	ACCU = r8(a0, r11, r12)
+	return undefined
+}
+function func_interopProxy_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_proxy_0x100003179(r1, a0)
+}

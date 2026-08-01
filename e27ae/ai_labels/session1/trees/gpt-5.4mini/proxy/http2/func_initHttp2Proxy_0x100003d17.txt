@@ -1,0 +1,201 @@
+function func_initHttp2Proxy_0x100003d17(a0, a1)
+{
+	Scope[7900][17] = func_W_0x100003cec
+	Scope[7900][19] = require("tls")
+	r1 = require("http")
+	Scope[7900][20] = require("https")
+	Scope[7900][21] = func_exportTls_0x100003cd3["exports"]()
+	r5 = func_initAgent_0x100003bc7["exports"]()
+	Scope[7900][22] = r5["globalAgent"]
+	Scope[7900][23] = func_proxyErrorModule_0x100003cd8["exports"]()
+	Scope[7900][24] = func_initProxy_0x100003ce6["exports"]()
+	Scope[7900][25] = func_initProxyAuth_0x100003ceb["exports"]()
+	Scope[7900][26] = func_proxyConnect_0x100003d0e
+	r8 = r1["Agent"]
+	ACCU = ToName("createConnection")
+	r6 = DefineClass([5, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[17], <NumberDictionary[16], [12]], func_Proxy_0x100003d10, r8, 51884, func_connectProxy_0x100003d12)
+	r8 = Scope[7900][20]["Agent"]
+	ACCU = ToName("createConnection")
+	r6 = DefineClass([5, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[17], <NumberDictionary[16], [12]], func_Proxy_0x100003d14, r8, Scope[7900][20], func_forwardCall_0x100003d16)
+	r6 = "exports"
+	r7 = new {"HttpOverHttp2": null, "HttpsOverHttp2": null}
+	r7["HttpOverHttp2"] = func_Proxy_0x100003d10
+	r7["HttpsOverHttp2"] = func_Proxy_0x100003d14
+	a1[r6] = r7
+	return undefined
+}
+function func_forwardCall_0x100003d16(a0, a1)
+{
+	ACCU = func_proxyConnect_0x100003d0e(<this>, a0, a1)
+	return undefined
+}
+function func_Proxy_0x100003d14(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r7 = supper(r0)
+	ACCU = <this>
+	<this> = r7
+	ACCU = <this>
+	r8 = a0["proxyOptions"]
+	ACCU = Scope[7900][24](<this>, r8)
+	return <this>
+}
+function func_connectProxy_0x100003d12(a0, a1)
+{
+	ACCU = func_proxyConnect_0x100003d0e(<this>, a0, a1)
+	return undefined
+}
+function func_Proxy_0x100003d10(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	r7 = a0["proxyOptions"]
+	ACCU = Scope[7900][24](<this>, r7)
+	return <this>
+}
+function func_proxyConnect_0x100003d0e(a0, a1, a2)
+{
+	Scope[7903][4] = a0
+	Scope[7903][3] = a1
+	Scope[7903][2] = a2
+	Scope[7903][11] = func_N_0x100003cf7
+	r1 = new {"tLvrG": null, "lkfUt": null, "RgWly": null, "lqENz": null, "dxbzk": null, "wYyqK": null, "cHVLX": null, "EusAQ": null, "sCnsA": null, "bgGfr": null, "naJeF": null, "aidnQ": null}
+	Scope[7903][12] = r1
+	ACCU = func_connectProxy_0x100003d0d()
+	return undefined
+}
+function func_initProxyAuth_0x100003ceb(a0, a1)
+{
+	Scope[7912][6] = func_a_0x100003ce7
+	a1["exports"] = func_proxyAuth_0x100003cea
+	return undefined
+}
+function func_initProxy_0x100003ce6(a0, a1)
+{
+	Scope[7913][6] = func_a_0x100003cdf
+	r2 = require("url")
+	Scope[7913][7] = r2["URL"]
+	Scope[7913][8] = func_assertType_0x100003cde["exports"]()
+	a1["exports"] = func_proxyOptions_0x100003ce5
+	return undefined
+}
+function func_proxyErrorModule_0x100003cd8(a0, a1)
+{
+	Scope[7916][6] = func_a_0x100003cd4
+	r4 = DefineClass([3, <DescriptorArray[4], <NumberDictionary[7], [], <DescriptorArray[1], <NumberDictionary[7], []], func_proxyError_0x100003cd7, Error)
+	a1["exports"] = func_proxyError_0x100003cd7
+	return undefined
+}
+function func_exportTls_0x100003cd3(a0, a1)
+{
+	r0 = new {"V": 5156, "J": "A0Dr", "S": 101163, "g": "]1@2", "L": 37010, "X": "nvO5", "j": 79087, "E": "%]hf", "c": 44802, "x": "O9*f", "K": 81558, "u": "8dGo", "A": 55150, "s": "gm42", "b": 114545, "i": "A5nh", "w": 55498, "f": "B@Sb", "t": 11474, "P": "93y["}
+	r1 = require("stream")
+	r2 = require("tls")
+	r6 = r2["TLSSocket"]
+	r7 = r1["PassThrough"]
+	r7 = r7(r0)
+	ACCU = r6
+	r6 = r6(r7)
+	r6 = r6["_handle"]
+	r6 = r6["_parentWrap"]
+	r3 = r6["constructor"]
+	a1["exports"] = r3
+	return undefined
+}
+function func_initAgent_0x100003bc7(a0, a1)
+{
+	Scope[7991][47] = func_j_0x100003ae1
+	r0 = new {"V": "YbH*", "J": 28865, "S": "]C&)", "g": 44539, "L": "C0qY", "X": 5303, "j": "xQ)2", "E": 48680, "c": "YbH*", "x": 121625, "K": "VHeU", "u": 57265, "A": "8dGo", "s": 89226, "b": "m[K#", "i": 44600, "w": "L@kv", "f": 103262, "t": "]C&)", "P": 106630, "I": "BS4&", "p": 116421, "o": "8dGo", "R": 51776, "v": 111177, "N": "iSZ6", "M": 89490, "k": "B@Sb", "Q": 72640, "W": "F1xf", "T": 29194, "G": "93y[", "y": 120744, "e": 125325, "U": "C0qY", "q": 119858, "O": "h98j", "C": 12195, "n": "kh^v", "r": 125886, "H": "n@A0", "h": 2739, "Y": "9pb7", "D": 79302, "l": "]1@2", "a": 13981, "V0": 95957, "V1": "VHeU", "V2": 79415, "V3": "9pb7", "V6": 112150, "VV": "b48I", "VJ": 97643, "Vz": "F1xf", "Vd": 121807, "Vg": "p[w*", "VL": 76860, "Vc": ")Ku4", "Vx": 14975, "VB": "eeST", "VK": 98090, "Vu": "p8sI", "VA": 82544, "Vs": "C0qY", "Vb": 8979, "Vw": "B@Sb", "Vf": 122428, "Vt": "epz[", "VP": 82214, "Vp": 70722, "Vo": 47270, "VR": "b48I", "VQ": 94469, "VW": "[Jy3", "VT": 121144, "VG": "K&pk", "Vy": 107692, "Ve": "M2Ty", "VU": 107286, "Vq": "mwAz", "VO": 126056, "Vm": "I@Bf", "VZ": 107380, "Vn": "toM2", "Vr": 26533, "VH": "h^gm", "Vh": 24420, "VY": "9pb7", "VD": 97918, "Vl": "89J2", "Va": 13514, "J0": 19009, "J2": "[()[", "J3": 4203, "J4": "^Ceg", "J5": 83966, "J6": "A0Dr", "J7": 37861, "J9": "*!!t", "Jd": 71481, "Jg": "VHeU", "JL": 111442, "JX": "eeST", "Jc": 13147, "Jx": "BS4&", "JB": 5871, "Ju": 96420, "Js": 87705, "Jb": "Yx9u", "Ji": 106636, "Jw": "BS4&", "Jf": 109067, "Jt": "Yx9u", "JP": 35397, "Jp": "F1xf", "JR": 121807, "JQ": 56911, "JW": "JrBU", "JT": 43673, "JG": "%r7r", "Jy": 28723, "JU": "m[K#", "JF": 112183, "Jq": "epz[", "JO": 59568, "Jm": "xQ)2", "JC": 18394, "Jn": 69435, "Jr": "A5nh", "Jh": 82200, "JY": 30912, "JD": 19403, "Jl": "pdVE", "z0": 16359, "z1": "XR6@", "z2": 6356, "z3": "pdVE", "z6": 83657, "zV": "vV[N", "zJ": 120467, "zz": "C0qY", "zd": 92133, "zS": 108987, "zg": 64468, "zL": 83773, "zX": "JrBU", "zE": 16936, "zc": 16483, "zx": 41124, "zB": 11231, "zu": 28025, "zA": "L@kv", "zs": 54209, "zw": "M2Ty", "zf": 13243, "zt": 61590, "zP": 13261, "zp": "]C&)", "zo": 45474, "zW": 42899, "zG": ")Lyh", "zy": 34105, "zU": "mwAz", "zF": 90786, "zO": "^Ceg", "zC": 10365, "zZ": "x&b0", "zn": 48961, "zr": 11228, "zH": "O9*f", "zh": 10511, "zY": 17853, "zl": "toM2", "za": 71676, "d2": 118423, "d3": 24048, "d4": "A0Dr", "d5": 113160, "d6": "9hYk", "d7": 45675, "d9": 59366, "dV": "93y[", "dJ": 33060, "dz": "nvO5", "dd": 66521, "dg": "eeST", "dL": 36778, "dX": 113977, "dj": "BS4&", "dE": 111214, "dc": 22078, "dx": 6441, "dB": "BS4&", "dK": 57475, "dA": 4699, "ds": "9pb7", "di": 16901, "dw": 109709, "df": "8dGo", "dt": 23935, "dP": "h98j", "dI": 55846, "dp": "p8sI", "dv": 94737, "dN": 74938, "dM": "p[w*", "dQ": 125950, "dW": "n@A0", "dy": 27533, "de": 14130, "dU": 97438, "dO": 85571, "dC": "I@Bf", "dZ": 122463, "dn": "K&pk", "dr": 77461, "dH": ")Lyh", "dY": 69927, "dD": 3595, "dl": 76235, "da": 15513, "S0": "9hYk", "S2": 39885, "S3": 7816, "S4": "xQ)2", "S5": 48611, "S6": "9hYk", "S7": 13464, "SV": "Yx9u", "SJ": 74898, "Sz": 45090, "Sd": "]C&)", "Sg": 69851, "SX": "%r7r", "Sj": 40692, "SE": "^Ceg", "Sc": 82983, "Sx": 55182, "SB": "toM2", "SK": 104485, "SA": 119824, "Ss": 101063, "Sb": 53131, "Si": 86637, "Sw": 31088, "Sf": "nvO5", "St": 81940, "SP": 96000, "Sp": "]C&)", "SR": 109648, "Sv": "h98j", "SN": 42952, "SM": "m[K#", "Sk": 14283, "SW": 20738, "ST": "h98j", "Se": 58155, "SU": "9hYk", "SF": 72568, "Sq": "pdVE", "SO": 92840, "Sm": 17112, "SZ": 57132, "SH": 122660, "SY": 75192, "Sl": "[()[", "g1": 108064, "g2": 125402, "g4": 56344, "g5": 28335, "g6": 117044, "g7": 123856, "g8": "[()[", "gV": 108324, "gz": "%r7r", "gd": 47647, "gg": 88827, "gX": 18012, "gj": "8dGo", "gE": 78268, "gc": "pdVE", "gx": 92034, "gB": 37172, "gK": 59318, "gu": "C0qY", "gs": 65376, "gb": 29858, "gw": 18233, "gt": "XR6@", "gP": 1729, "gp": ")Ku4", "go": 12651, "gR": 42976, "gv": "9hYk", "gN": 113994, "gk": "K&pk", "dM2": 107052, "dM3": 50680, "dM4": 41920, "dM5": "C0qY", "dM6": 47710, "dM7": "gm42", "dM8": 29748, "dM9": 82978, "dMV": 76120, "dMJ": 83896, "dMz": 42688, "dMd": "n@A0", "dMS": 88168, "dMg": "gm42", "dML": 31743, "dMX": 106971, "dMj": 50626, "dME": "iSZ6", "dMc": 95126, "dMx": "h^gm", "dMB": 64669, "dMK": "%r7r", "dMu": 122584, "dMA": 34683, "dMs": 91872, "dMb": "vV[N", "dMi": 99068, "dMw": 22950, "dMf": "93y[", "dMt": 88314, "dMP": "eeST", "dMI": 46241, "dMp": 72617, "dMo": ")Lyh", "dMR": 51719, "dMv": 104531, "dMN": 70220, "dMM": "*!!t", "dMk": 52214, "dMQ": "I@Bf", "dMW": 57546, "dMT": "8dGo", "dMG": 33970, "dMy": 96565, "dMU": "YbH*", "dMF": 59909, "dMq": 81072, "dMO": "nvO5", "dMm": 52582, "dMC": "h^gm", "dMZ": 73159, "dMn": "BS4&", "dMr": 15806, "dMH": "C0qY", "dMh": 52981, "dMY": 87520, "dMD": 37445, "dMl": 115302, "dMa": "mwAz", "dk0": 69306, "dk1": "kh^v", "dk2": 63828, "dk3": 28116, "dk4": "]C&)", "dk5": 17454, "dk6": "Yx9u", "dk7": 67803, "dk8": "K&pk", "dk9": 120105, "dkV": 46019, "dkJ": "kh^v", "dkz": 5918, "dkd": 86519, "dkS": 108609, "dkg": "x&b0", "dkL": 25850, "dkX": 62651, "dkj": 124094, "dkE": "9hYk", "dkc": 89187, "dkx": 82792, "dkB": 93123, "dkK": 56647, "dku": "VHeU", "dkA": 49924, "dks": "eeST", "dkb": 83457, "dki": 54378, "dkw": ")Ku4", "dkf": 112819, "dkt": "XR6@", "dkP": 15428, "dkI": 54396, "dkp": "89J2", "dko": 81789, "dkR": 104827, "dkv": 4864}
+	r4 = require("url")
+	Scope[7991][31] = r4["URL"]
+	r1 = require("events")
+	Scope[7991][32] = require("tls")
+	Scope[7991][33] = require("http2")
+	Scope[7991][34] = func_defineCache_0x100003ace["exports"]()
+	Scope[7991][35] = func_initDestroy_0x100003ae0["exports"]()
+	Scope[7991][36] = Symbol("currentStreamCount")
+	Scope[7991][37] = Symbol("request")
+	Scope[7991][38] = Symbol("cachedOriginSet")
+	Scope[7991][39] = Symbol("gracefullyClosing")
+	Scope[7991][40] = Symbol("length")
+	r5 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "ca", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r5[0] = "createConnection"
+	r5[1] = "maxDeflateDynamicTableSize"
+	r5[2] = "maxSettings"
+	r5[3] = "maxSessionMemory"
+	r5[4] = "maxHeaderListPairs"
+	r5[5] = "maxOutstandingPings"
+	r5[6] = "maxReservedRemoteStreams"
+	r5[7] = "maxSendHeaderBlockLength"
+	r5[8] = "paddingStrategy"
+	r5[9] = "peerMaxConcurrentStreams"
+	r5[10] = "settings"
+	r5[11] = "family"
+	r5[12] = "localAddress"
+	r5[13] = "rejectUnauthorized"
+	r5[14] = "pskCallback"
+	r5[15] = "minDHSize"
+	r5[16] = "path"
+	r5[17] = "socket"
+	r5[19] = "cert"
+	r5[20] = "sigalgs"
+	r5[21] = "ciphers"
+	r5[22] = "clientCertEngine"
+	r5[23] = "crl"
+	r5[24] = "dhparam"
+	r5[25] = "ecdhCurve"
+	r5[26] = "honorCipherOrder"
+	r5[27] = "key"
+	r5[28] = "privateKeyEngine"
+	r5[29] = "privateKeyIdentifier"
+	r5[30] = "maxVersion"
+	r5[31] = "minVersion"
+	r5[32] = "pfx"
+	r5[33] = "secureOptions"
+	r5[34] = "secureProtocol"
+	r5[35] = "sessionIdContext"
+	r5[36] = "ticketKeys"
+	Scope[7991][41] = r5
+	Scope[7991][42] = func_bisect_0x100003b13
+	Scope[7991][43] = func_concurrent_0x100003b14
+	Scope[7991][44] = func_closeSessions_0x100003b17
+	Scope[7991][45] = func_shouldCloseSession_0x100003b1a
+	Scope[7991][46] = func_closeSession_0x100003b1c
+	ACCU = ToName("protocol")
+	ACCU = ToName("normalizeOptions")
+	ACCU = ToName("_processQueue")
+	ACCU = ToName("_isBetterSession")
+	ACCU = ToName("_accept")
+	ACCU = ToName("getSession")
+	ACCU = ToName("request")
+	ACCU = ToName("createConnection")
+	ACCU = ToName("connect")
+	r8 = r1
+	if (func_j_0x100003ae1 === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("closeEmptySessions")
+	ACCU = ToName("destroy")
+	ACCU = ToName("emptySessionCount")
+	ACCU = ToName("pendingSessionCount")
+	ACCU = ToName("sessionCount")
+	r6 = DefineClass([31, <NameDictionary[53], <NumberDictionary[16], [76], <NameDictionary[101], <NumberDictionary[100], [13, 20, 28, 36, 44, 52, 60, 68, 84, 92, 101, 109, 117]], func_createAgent_0x100003b1e, r8, 51719, func_https_0x100003b20, func_j_0x100003ae1, func_joinPath_0x100003b22, func_j_0x100003ae1, func_processQueue_0x100003b24, func_j_0x100003ae1, func_greaterThan_0x100003b26, func_j_0x100003ae1, func_processQueue_0x100003b28, "C0qY", func_Promisify_0x100003baf, func_j_0x100003ae1, func_requestPromise_0x100003bb8, "gm42", func_connect_0x100003bba, func_j_0x100003ae1, func_connectTls_0x100003bbc, "]C&)", func_closeSessions_0x100003bbe, func_j_0x100003ae1, func_destroyCache_0x100003bc0, "kh^v", func_getEmptySessionCount_0x100003bc2, func_j_0x100003ae1, func_Active_0x100003bc4, func_j_0x100003ae1, func_count_0x100003bc6)
+	Scope[7992][2] = func_createAgent_0x100003b1e
+	func_createAgent_0x100003b1e["kCurrentStreamCount"] = Scope[7991][36]
+	func_createAgent_0x100003b1e["kGracefullyClosing"] = Scope[7991][39]
+	r5 = "exports"
+	r6 = new {"Agent": null, "globalAgent": null}
+	r6["Agent"] = func_createAgent_0x100003b1e
+	ACCU = func_createAgent_0x100003b1e
+	r6["globalAgent"] = func_createAgent_0x100003b1e(r0)
+	a1[r5] = r6
+	return undefined
+}

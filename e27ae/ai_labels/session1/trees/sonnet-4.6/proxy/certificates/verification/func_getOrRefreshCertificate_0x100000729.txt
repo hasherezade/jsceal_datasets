@@ -1,0 +1,190 @@
+function func_generateKeyPairAndCertificate_0x10000072c()
+{
+	r6 = (require("crypto"))["generateKeyPairSync"]
+	r7 = "rsa"
+	r8 = new {"modulusLength": 2048, "publicKeyEncoding": null, "privateKeyEncoding": null}
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs1"
+	r9["format"] = "pem"
+	r8["publicKeyEncoding"] = r9
+	r9 = new {"type": null, "format": null}
+	r9["type"] = "pkcs8"
+	r9["format"] = "pem"
+	r8["privateKeyEncoding"] = r9
+	r6 = r6(r7, r8)
+	r3 = r6["privateKey"]
+	r4 = func_generateSelfSignedCertificate_0x10000071d(4096)
+	r6 = new {"privateKey": null, "certificate": null}
+	r6["privateKey"] = r3
+	r6["certificate"] = r4
+	return r6
+}
+function func_getOrRefreshCertificate_0x100000729(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r1 = ACCU
+	try
+	{
+		ACCU = a0
+		if (a0 == undefined)
+		{
+			ACCU = false
+		}
+		else
+		{
+			ACCU = a0
+		}
+		r0 = ACCU
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[10704]
+		r9 = r1
+		return Scope[10704][2]
+	}
+	ACCU = func_n_0x100000725
+	try
+	{
+		if (r0)
+		{
+			r6 = func_generateKeyPairAndCertificate_0x10000072c()
+			r9 = global_Lm["set"]
+			r10 = r9(r6)
+			r9 = r1
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(r1)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r9 = r1
+			return r6
+		}
+		r9 = global_Lm["get"]
+		r10 = r9()
+		r9 = r1
+		r9 = await r10
+		r10 = _GeneratorGetResumeMode(r1)
+		if (!r10 === 0)
+		{
+			ACCU = r9
+		}
+		r4 = r9
+		if (!r4)
+		r12 = r4["certificate"]["value"]
+		ACCU = func_validateCertificate_0x100000724(r12)
+			|| (!func_validateCertificate_0x100000724(r12))
+		{
+			ACCU = func_getOrRefreshCertificate_0x100000729(true)
+		}
+		else
+		{
+			ACCU = r4
+		}
+		r10 = ACCU
+		r9 = r1
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10706]
+	r10 = r1
+	return Scope[10706][2]
+}
+function func_validateCertificate_0x100000724(a0, a1)
+{
+	r0 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "30d"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r1 = ACCU
+	Scope[10707][3] = func_n_0x10000071e
+	r10 = (func_initializeForgeModule_0x100001b1e["exports"]())["pki"]
+	r9 = r10["certificateFromPem"]
+	r5 = r9(r0)
+	r9 = Date["now"]
+	r6 = r9()
+	r14 = global_zp["default"](r1)
+	r11 = (r6 - r14)
+	r13 = r5["validity"]["notBefore"]
+	r12 = r13["getTime"]
+	r12 = r12()
+	if (r11 < r12)
+	r14 = global_zp["default"](r1)
+	r11 = (r6 + r14)
+	r13 = r5["validity"]["notAfter"]
+	r12 = r13["getTime"]
+	r12 = r12()
+		|| (r11 > r12)
+	{
+		return false
+	}
+	r10 = GetIterator(global_ID)
+	r9 = r10["next"]
+	ACCU = false
+	r11 = false
+	try
+	{
+		while (true)
+		{
+			r11 = true
+			r15 = r9()
+			if (r15["done"]) break
+			r11 = false
+			Scope[10708][2] = r15["value"]["name"]
+			r18 = r5["extensions"]
+			r17 = r18["some"]
+			r15 = r15["value"]
+			if (r17(func_matchName_0x100000723)) continue
+			r13 = false
+			ACCU = 1
+			r12 = 1
+			break
+		}
+		ACCU = -1
+		r13 = -1
+		r12 = -1
+	}
+	catch
+	{
+		r13 = ACCU
+		r12 = 0
+	}
+	if (!r11)
+	{
+		try
+		{
+			if (!r10["return"] == undefined)
+			{
+				ACCU = r10["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r12)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r13
+	}
+	case (1):
+	{
+		return r13
+	}
+	return true
+}

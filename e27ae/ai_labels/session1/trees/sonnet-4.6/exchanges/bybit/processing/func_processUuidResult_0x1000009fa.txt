@@ -1,0 +1,54 @@
+function func_processUuidResult_0x1000009fa(a0)
+{
+	if (!(a0["json"]["ret_code"] === 0))
+	{
+		return undefined
+	}
+	r3 = a0["json"]["result"]["uuid"]
+	ACCU = Scope[10625][8]
+	Scope[10625][8] = r3
+	r6 = "https://app.bybit.com/spot-download/en-US/download.html"
+	r7 = new {"uuid": null}
+	r7["uuid"] = Scope[10625][2]
+	r1 = func_buildUrlWithParams_0x1000002a6(r6, r7)
+	r4 = "result"
+	r5 = new {"uuid": null, "codeContent": null}
+	r5["uuid"] = Scope[10625][2]
+	r6 = r1["toString"]
+	r5["codeContent"] = r6()
+	a0["json"][r4] = r5
+	r3 = new {"json": null}
+	r3["json"] = a0["json"]
+	return r3
+}
+function func_buildUrlWithParams_0x1000002a6(a0, a1)
+{
+	r0 = new {"V": "Yx9u", "J": 83904, "S": "m[K#", "g": 84337, "L": "nvO5", "X": 56895, "j": "O9*f", "E": 35968, "c": "BS4&", "x": 123482, "K": "YbH*", "u": 89146, "A": "XR6@", "s": 94433}
+	r9 = func_createUrlObject_0x100005cce
+	ACCU = func_createUrlObject_0x100005cce
+	r2 = func_createUrlObject_0x100005cce(r0)
+	if (!a1 == undefined)
+	{
+		r9 = Generator(ToObject(a1))
+		r13 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r13)) break
+			if (r9.next().value == undefined) continue
+			r4 = r9.next().value
+			r6 = r9.next().value
+			r7 = a1[r4]
+			if (r7 == null)
+			{
+				r15 = r2["searchParams"]
+				r14 = r15["delete"]
+				ACCU = r14(r6)
+				continue
+			}
+			r15 = r2["searchParams"]
+			ACCU = r15["set"](r6, r7)
+			r13 = GeneratorStep(r13)
+		}
+	}
+	return r2
+}

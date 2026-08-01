@@ -1,0 +1,121 @@
+function func_verifyCertificate_0x100001a1f(a0)
+{
+	r0 = false
+	if (!Scope[9830][2]["issued"](a0))
+	{
+		ACCU = Error
+		r3 = Error("The parent certificate did not issue the given child certificate; the child certificate's issuer does not match the parent's subject.")
+		r3["expectedIssuer"] = Scope[9830][2]["subject"]["attributes"]
+		r3["actualIssuer"] = a0["issuer"]["attributes"]
+		ACCU = r3
+	}
+	r4 = a0["md"]
+	if (a0["md"] == null)
+	{
+		r8 = new {"signatureOid": null, "type": "certificate"}
+		r8["signatureOid"] = a0["signatureOid"]
+		r4 = func_getDigest_0x100001a0c(r8)
+		ACCU = a0["tbsCertificate"]
+		if (!a0["tbsCertificate"])
+		{
+			ACCU = Scope[9825][4]["getTBSCertificate"](a0)
+		}
+		r5 = ACCU
+		r6 = Scope[9825][3]["toDer"](r5)
+		r9 = r6["getBytes"]()
+		ACCU = r4["update"](r9)
+	}
+	if (!(null == r4))
+	{
+		r8 = new {"certificate": null, "md": null, "signature": null}
+		r8["certificate"] = Scope[9830][2]
+		r8["md"] = r4
+		r8["signature"] = a0["signature"]
+		r0 = func_verifyCertificate_0x100001a0d(r8)
+	}
+	return r0
+}
+function func_verifyCertificate_0x100001a0d(a0)
+{
+	switch ()
+	case a0["certificate"]["signatureOid"] === Scope[9825][5]["sha1WithRSAEncryption"]:
+	case a0["certificate"]["signatureOid"] === Scope[9825][5]["sha1WithRSASignature"]:
+	{
+		break
+	}
+	case a0["certificate"]["signatureOid"] === Scope[9825][5]["RSASSA-PSS"]:
+	{
+		if (Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["hash"]["algorithmOid"]] == undefined)
+			|| (Scope[9825][2]["md"][Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["hash"]["algorithmOid"]]] == undefined)
+		{
+			ACCU = Error
+			r4 = Error("Unsupported MGF hash function.")
+			r4["oid"] = a0["certificate"]["signatureParameters"]["mgf"]["hash"]["algorithmOid"]
+			r4["name"] = Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["hash"]["algorithmOid"]]
+			ACCU = r4
+		}
+		if (Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["algorithmOid"]] == undefined)
+			|| (Scope[9825][2]["mgf"][Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["algorithmOid"]]] == undefined)
+		{
+			ACCU = Error
+			r4 = Error("Unsupported MGF function.")
+			r4["oid"] = a0["certificate"]["signatureParameters"]["mgf"]["algorithmOid"]
+			r4["name"] = Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["algorithmOid"]]
+			ACCU = r4
+		}
+		r8 = Scope[9825][2]["md"][Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["hash"]["algorithmOid"]]]["create"]()
+		r3 = Scope[9825][2]["mgf"][Scope[9825][5][a0["certificate"]["signatureParameters"]["mgf"]["algorithmOid"]]]["create"](r8)
+		if (Scope[9825][5][a0["certificate"]["signatureParameters"]["hash"]["algorithmOid"]] == undefined)
+			|| (Scope[9825][2]["md"][Scope[9825][5][a0["certificate"]["signatureParameters"]["hash"]["algorithmOid"]]] == undefined)
+		{
+			ACCU = Error
+			r4 = Error("Unsupported RSASSA-PSS hash function.")
+			r4["oid"] = a0["certificate"]["signatureParameters"]["hash"]["algorithmOid"]
+			r4["name"] = Scope[9825][5][a0["certificate"]["signatureParameters"]["hash"]["algorithmOid"]]
+			ACCU = r4
+		}
+		r8 = Scope[9825][2]["md"][Scope[9825][5][a0["certificate"]["signatureParameters"]["hash"]["algorithmOid"]]]["create"]()
+		r9 = r3
+		r1 = Scope[9825][2]["pss"]["create"](r8, r9, a0["certificate"]["signatureParameters"]["saltLength"])
+	}
+	default:
+	{}
+	r8 = a0["md"]["digest"]()
+	r7 = r8["getBytes"]()
+	return a0["certificate"]["publicKey"]["verify"](r7, a0["signature"], r1)
+}
+function func_getDigest_0x100001a0c(a0)
+{
+	switch ()
+	case Scope[9825][5][a0["signatureOid"]] === "sha1WithRSAEncryption":
+	case Scope[9825][5][a0["signatureOid"]] === "sha1WithRSASignature":
+	{
+		return Scope[9825][2]["md"]["sha1"]["create"]()
+	}
+	case Scope[9825][5][a0["signatureOid"]] === "md5WithRSAEncryption":
+	{
+		return Scope[9825][2]["md"]["md5"]["create"]()
+	}
+	case Scope[9825][5][a0["signatureOid"]] === "sha256WithRSAEncryption":
+	{
+		return Scope[9825][2]["md"]["sha256"]["create"]()
+	}
+	case Scope[9825][5][a0["signatureOid"]] === "sha384WithRSAEncryption":
+	{
+		return Scope[9825][2]["md"]["sha384"]["create"]()
+	}
+	case Scope[9825][5][a0["signatureOid"]] === "sha512WithRSAEncryption":
+	{
+		return Scope[9825][2]["md"]["sha512"]["create"]()
+	}
+	case Scope[9825][5][a0["signatureOid"]] === "RSASSA-PSS":
+	{
+		return Scope[9825][2]["md"]["sha256"]["create"]()
+	}
+	default:
+	{}
+	ACCU = Error
+	r0 = Error((("Could not compute " + a0["type"]) + " digest. Unknown signature OID."))
+	r0["signatureOid"] = a0["signatureOid"]
+	ACCU = r0
+}

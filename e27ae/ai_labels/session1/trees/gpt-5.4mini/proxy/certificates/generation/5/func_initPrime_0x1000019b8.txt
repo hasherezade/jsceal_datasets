@@ -1,0 +1,132 @@
+function func_initPrime_0x1000019b8(a0, a1, a2)
+{
+	Scope[9845][3] = a0
+	Scope[9845][2] = a2
+	Scope[9845][5] = func_generatePrime_0x1000019b5
+	Scope[9845][6] = func_generatePrime_0x1000019b6
+	Scope[9845][7] = func_generateKeys_0x1000019b7
+	if (typeof(a1) == function)
+	{
+		Scope[9845][2] = a1
+		a1 = {}
+	}
+	if (!a1)
+	{
+	}
+	a1 = {}
+	r2 = new {"name": null, "options": null}
+	ACCU = a1["algorithm"]
+	if (!a1["algorithm"])
+	{
+		ACCU = "PRIMEINC"
+	}
+	r2["name"] = ACCU
+	r3 = new {"workers": null, "workLoad": null, "workerScript": null}
+	ACCU = a1["workers"]
+	if (!a1["workers"])
+	{
+		ACCU = 2
+	}
+	r3["workers"] = ACCU
+	ACCU = a1["workLoad"]
+	if (!a1["workLoad"])
+	{
+		ACCU = 100
+	}
+	r3["workLoad"] = ACCU
+	r3["workerScript"] = a1["workerScript"]
+	r2["options"] = r3
+	if ("prng" in a1)
+	{
+		Scope[9845][4]["prng"] = a1["prng"]
+		ACCU = a1["prng"]
+	}
+	ACCU = func_generatePrime_0x1000019b5()
+	return undefined
+}
+function func_generateKeys_0x1000019b7(a0, a1)
+{
+	if (a0)
+	{
+		return Scope[9845][2](a0)
+	}
+	Scope[9845][3]["q"] = a1
+	r2 = Scope[9845][3]["p"]["compareTo"](Scope[9845][3]["q"])
+	if (r2 < 0)
+	{
+		Scope[9845][3]["p"] = Scope[9845][3]["q"]
+		Scope[9845][3]["q"] = Scope[9845][3]["p"]
+	}
+	r4 = Scope[9845][3]["p"]["subtract"](Scope[9836][3]["ONE"])
+	r3 = r4["gcd"](Scope[9845][3]["e"])
+	r2 = r3["compareTo"](Scope[9836][3]["ONE"])
+	if (!r2 === 0)
+	{
+		Scope[9845][3]["p"] = null
+		ACCU = func_generatePrime_0x1000019b5()
+		return undefined
+	}
+	r4 = Scope[9845][3]["q"]["subtract"](Scope[9836][3]["ONE"])
+	r3 = r4["gcd"](Scope[9845][3]["e"])
+	r2 = r3["compareTo"](Scope[9836][3]["ONE"])
+	if (!r2 === 0)
+	{
+		Scope[9845][3]["q"] = null
+		ACCU = func_generatePrime_0x1000019b6(Scope[9845][3]["qBits"], func_generateKeys_0x1000019b7)
+		return undefined
+	}
+	Scope[9845][3]["p1"] = Scope[9845][3]["p"]["subtract"](Scope[9836][3]["ONE"])
+	Scope[9845][3]["q1"] = Scope[9845][3]["q"]["subtract"](Scope[9836][3]["ONE"])
+	Scope[9845][3]["phi"] = Scope[9845][3]["p1"]["multiply"](Scope[9845][3]["q1"])
+	r3 = Scope[9845][3]["phi"]["gcd"](Scope[9845][3]["e"])
+	r2 = r3["compareTo"](Scope[9836][3]["ONE"])
+	if (!r2 === 0)
+	{
+		Scope[9845][3]["q"] = null
+		Scope[9845][3]["p"] = null
+		ACCU = func_generatePrime_0x1000019b5()
+		return undefined
+	}
+	Scope[9845][3]["n"] = Scope[9845][3]["p"]["multiply"](Scope[9845][3]["q"])
+	r2 = Scope[9845][3]["n"]["bitLength"]()
+	if (!r2 === Scope[9845][3]["bits"])
+	{
+		Scope[9845][3]["q"] = null
+		ACCU = func_generatePrime_0x1000019b6(Scope[9845][3]["qBits"], func_generateKeys_0x1000019b7)
+		return undefined
+	}
+	r1 = Scope[9845][3]["e"]["modInverse"](Scope[9845][3]["phi"])
+	r3 = new {"privateKey": null, "publicKey": null}
+	r11 = r1["mod"](Scope[9845][3]["p1"])
+	r12 = r1["mod"](Scope[9845][3]["q1"])
+	r13 = Scope[9845][3]["q"]["modInverse"](Scope[9845][3]["p"])
+	r3["privateKey"] = Scope[9836][7]["rsa"]["setPrivateKey"](Scope[9845][3]["n"], Scope[9845][3]["e"], r1, Scope[9845][3]["p"], Scope[9845][3]["q"], r11, r12, r13)
+	r3["publicKey"] = Scope[9836][7]["rsa"]["setPublicKey"](Scope[9845][3]["n"], Scope[9845][3]["e"])
+	Scope[9845][3]["keys"] = r3
+	ACCU = Scope[9845][2](null, Scope[9845][3]["keys"])
+	return undefined
+}
+function func_generatePrime_0x1000019b6(a0, a1)
+{
+	ACCU = Scope[9836][2]["prime"]["generateProbablePrime"](a0, Scope[9845][4], a1)
+	return undefined
+}
+function func_generatePrime_0x1000019b5()
+{
+	ACCU = func_generatePrime_0x1000019b6(Scope[9845][3]["pBits"], func_prime_0x1000019b4)
+	return undefined
+}
+function func_prime_0x1000019b4(a0, a1)
+{
+	if (a0)
+	{
+		return Scope[9845][2](a0)
+	}
+	Scope[9845][3]["p"] = a1
+	if (!Scope[9845][3]["q"] == null)
+	{
+		return func_generateKeys_0x1000019b7(a0, Scope[9845][3]["q"])
+	}
+	ACCU = func_generatePrime_0x1000019b6(Scope[9845][3]["qBits"], func_generateKeys_0x1000019b7)
+	return undefined
+}

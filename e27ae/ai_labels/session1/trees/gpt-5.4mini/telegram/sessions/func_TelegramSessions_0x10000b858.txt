@@ -1,0 +1,104 @@
+function func_TelegramSessions_0x10000b858(a0)
+{
+	Scope[1499][5] = func_n_0x10000b853
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["listTelegramSessions"] = func_FindSessions_0x10000b855
+	Scope[1499][7] = func_initHash_0x10000b84c["exports"]()
+	Scope[1499][8] = func_ExportExists_0x10000b852["exports"]()
+	Scope[1499][9] = require("path")
+	return undefined
+}
+function func_FindSessions_0x10000b855(a0, a1)
+{
+	r9 = <closure>
+	r10 = <this>
+	r2 = ACCU
+	try
+	{
+		r0 = a0
+		ACCU = a1
+		if (a1 == undefined)
+		{
+			ACCU = 5
+		}
+		else
+		{
+			ACCU = a1
+		}
+		r1 = ACCU
+	}
+	catch
+	{
+		r10 = ACCU
+		ACCU = null
+		ACCU = Scope[1500]
+		r10 = Scope[1499]
+		r11 = r2
+		return Scope[1500][2]
+	}
+	ACCU = func_f_0x10000b854
+	try
+	{
+		r4 = []
+		r5 = 0
+		r6 = 0
+		while (true)
+		{
+			if (!r6 < r1) break
+			r7 = Scope[1499][7]["deriveSessionName"](r5)
+			r10 = Scope[1499][9]["join"]
+			r12 = (r7 + "s")
+			r8 = r10(r0, r12)
+			r11 = Scope[1499][8]["exists"](r8)
+			r10 = r2
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(r2)
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			if (r10)
+			{
+				ACCU = r4["push"](r7)
+				r6 = 0
+			}
+			r5 = (r5 + 1)
+			r6 = (r6 + 1)
+		}
+		r10 = r2
+		r11 = r4
+		ACCU = r11
+		return r11
+	}
+	catch {}
+	r10 = ACCU
+	ACCU = null
+	ACCU = Scope[1501]
+	r11 = r2
+	return Scope[1501][2]
+}
+function func_ExportExists_0x10000b852(a0)
+{
+	Scope[1502][5] = func_n_0x10000b84d
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["exists"] = func_checkExists_0x10000b851
+	Scope[1502][6] = require("fs/promises")
+	return undefined
+}
+function func_initHash_0x10000b84c(a0)
+{
+	Scope[1503][5] = func_n_0x10000b847
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	a0["deriveSessionName"] = func_hash_0x10000b849
+	Scope[1503][6] = func_hashInit_0x10000b846["exports"]()
+	return undefined
+}

@@ -1,0 +1,94 @@
+function func_hasCertificate_0x100001a45(a0)
+{
+	if (typeof(a0) == string)
+	{
+		a0 = Scope[9825][2]["pki"]["certificateFromPem"](a0)
+	}
+	r0 = func_getCertByHash_0x100001a41(a0["subject"])
+	if (!func_getCertByHash_0x100001a41(a0["subject"]))
+	{
+		return false
+	}
+	if (!Scope[9825][2]["util"]["isArray"](r0))
+	{
+		r5 = new [0]
+		r5[0] = r0
+		r0 = r5
+		ACCU = r5
+	}
+	r7 = Scope[9825][4]["certificateToAsn1"](a0)
+	r5 = Scope[9825][3]["toDer"](r7)
+	r1 = r5["getBytes"]()
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < r0["length"]) break
+		r9 = r0[r2]
+		r7 = Scope[9825][4]["certificateToAsn1"](r9)
+		r5 = Scope[9825][3]["toDer"](r7)
+		r3 = r5["getBytes"]()
+		if (!r1 === r3) continue
+		return true
+		r2 = (r2 + 1)
+	}
+	return false
+}
+function func_hashDistinguishedName_0x100001a42(a0)
+{
+	if (!a0["hash"])
+	{
+		r0 = Scope[9825][2]["md"]["sha1"]["create"]()
+		r4 = func_buildDistinguishedName_0x100001a03(a0)
+		a0["attributes"] = Scope[9825][4]["RDNAttributesAsArray"](r4, r0)
+		r3 = r0["digest"]()
+		a0["hash"] = r3["toHex"]()
+	}
+	return undefined
+}
+function func_getCertByHash_0x100001a41(a0)
+{
+	ACCU = func_hashDistinguishedName_0x100001a42(a0)
+	ACCU = Scope[9826][2]["certs"][a0["hash"]]
+	if (!Scope[9826][2]["certs"][a0["hash"]])
+	{
+		ACCU = null
+	}
+	return ACCU
+}
+function func_buildDistinguishedName_0x100001a03(a0)
+{
+	r12 = []
+	r0 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r12)
+	r3 = a0["attributes"]
+	r4 = 0
+	while (true)
+	{
+		if (!r4 < r3["length"]) break
+		r1 = r3[r4]
+		r5 = r1["value"]
+		r6 = Scope[9825][3]["Type"]["PRINTABLESTRING"]
+		if ("valueTagClass" in r1)
+		{
+			r6 = r1["valueTagClass"]
+			if (r1["valueTagClass"] === Scope[9825][3]["Type"]["UTF8"])
+			{
+				r5 = Scope[9825][2]["util"]["encodeUtf8"](r1["value"])
+			}
+		}
+		r13 = new [0]
+		r20 = new [0, 0]
+		r27 = Scope[9825][3]["oidToDer"](r1["type"])
+		r26 = r27["getBytes"]()
+		r20[0] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["OID"], false, r26)
+		r24 = r6
+		r26 = r5
+		r20[1] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], r24, false, r26)
+		r19 = r20
+		r13[0] = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SEQUENCE"], true, r19)
+		r12 = r13
+		r2 = Scope[9825][3]["create"](Scope[9825][3]["Class"]["UNIVERSAL"], Scope[9825][3]["Type"]["SET"], true, r12)
+		ACCU = r0["value"]["push"](r2)
+		r4 = (r4 + 1)
+	}
+	return r0
+}

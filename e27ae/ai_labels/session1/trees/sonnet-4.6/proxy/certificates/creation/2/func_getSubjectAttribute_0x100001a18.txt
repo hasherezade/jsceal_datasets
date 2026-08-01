@@ -1,0 +1,46 @@
+function func_getSubjectAttribute_0x100001a18(a0)
+{
+	return func_findCertAttribute_0x100001a02(Scope[9830][2]["subject"], a0)
+}
+function func_findCertAttribute_0x100001a02(a0, a1)
+{
+	if (typeof(a1) == string)
+	{
+		r3 = new {"shortName": null}
+		r3["shortName"] = a1
+		a1 = r3
+		ACCU = r3
+	}
+	r0 = null
+	r2 = 0
+	while (true)
+	{
+		if (r0 != null) break
+		if (!r2 < a0["attributes"]["length"]) break
+		ACCU = a1["type"]
+		if (a1["type"])
+		{
+			ACCU = a1["type"] === a0["attributes"][r2]["type"]
+		}
+		if (!ACCU)
+		{
+			ACCU = a1["name"]
+			if (a1["name"])
+			{
+				ACCU = a1["name"] === a0["attributes"][r2]["name"]
+			}
+			if (!ACCU)
+			{
+				if (a1["shortName"])
+				{
+					ACCU = a1["shortName"] === a0["attributes"][r2]["shortName"]
+				}
+			}
+		}
+		if (!ACCU) continue
+		r0 = a0["attributes"][r2]
+		ACCU = a0["attributes"][r2]
+		r2 = (r2 + 1)
+	}
+	return r0
+}

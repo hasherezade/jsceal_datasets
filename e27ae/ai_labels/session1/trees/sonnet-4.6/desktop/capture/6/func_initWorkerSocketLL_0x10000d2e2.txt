@@ -1,0 +1,88 @@
+function func_initWorkerSocketLL_0x10000d2e2()
+{
+	return func_initWorkerSocket_0x100000abd(global_LL)
+}
+function func_initWorkerSocket_0x100000abd(a0)
+{
+	Scope[10547][6] = func_o_0x100000ab6
+	ACCU = (require("worker_threads"))["parentPort"]
+	r5 = (require("worker_threads"))["parentPort"]
+	if (!(require("worker_threads"))["parentPort"] == undefined)
+	{
+		r5 = r5["postMessage"]
+		r4 = r5["bind"]
+		r6 = (require("worker_threads"))["parentPort"]
+		ACCU = r4(r6)
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU)
+	{
+		ACCU = process["send"]
+		r5 = process["send"]
+		if (!process["send"] == undefined)
+		{
+			r4 = r5["bind"]
+			ACCU = r4(process)
+		}
+		else
+		{
+			ACCU = undefined
+		}
+	}
+	r1 = ACCU
+	ACCU = (require("worker_threads"))["parentPort"]
+	if (!(require("worker_threads"))["parentPort"])
+	{
+		r4 = global_NU["default"]
+		ACCU = r4["worker"]
+	}
+	r2 = ACCU
+	r6 = !Boolean(r1)
+	r7 = !Boolean(r2)
+	if (func_coalesce_0x100000ab7(r6, r7))
+	{
+		r5 = "Invalid worker environment"
+		ACCU = Error
+		ACCU = Error(r5)
+	}
+	ACCU = r1(("ready"))
+	ACCU = global_PU["Socket"]
+	Scope[10547][7] = global_PU["Socket"](r1)
+	ACCU = r2["on"]("message", func_emitMessage_0x100000ab9)
+	r4 = Scope[10547][7]["once"]
+	ACCU = r4("close", func_createSocketClosedError_0x100000abb)
+	r4 = global_XU["SocketAdapter"]
+	r5 = new {"router": null, "socket": null, "createContext": null}
+	r5["router"] = a0
+	r5["socket"] = Scope[10547][7]
+	r5["createContext"] = func_createContextNull_0x100000abc
+	ACCU = r4
+	ACCU = r4(r5)
+	return undefined
+}
+function func_createContextNull_0x100000abc()
+{
+	return undefined
+}
+function func_createSocketClosedError_0x100000abb()
+{
+	ACCU = Error
+	ACCU = Error("Socket closed")
+}
+function func_emitMessage_0x100000ab9(a0)
+{
+	r0 = Scope[10547][7]["emit"]
+	return r0("message", a0)
+}
+function func_coalesce_0x100000ab7(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}

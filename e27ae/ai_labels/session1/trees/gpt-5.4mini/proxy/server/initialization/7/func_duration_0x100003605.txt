@@ -1,0 +1,258 @@
+function func_duration_0x100003605(a0, a1)
+{
+	Scope[8318][11] = func_l_0x1000035dc
+	Scope[8318][18] = func_parseDuration_0x1000035de
+	Scope[8318][19] = func_formatDuration_0x1000035e0
+	Scope[8318][20] = func_formatDuration_0x1000035e2
+	Scope[8318][21] = func_pluralize_0x1000035e4
+	Scope[8318][12] = 1000
+	Scope[8318][13] = (1000 * 60)
+	Scope[8318][14] = (Scope[8318][13] * 60)
+	Scope[8318][15] = (Scope[8318][14] * 24)
+	Scope[8318][16] = (Scope[8318][15] * 7)
+	Scope[8318][17] = (Scope[8318][15] * 365.25)
+	a1["exports"] = func_formatDuration_0x100003604
+	return undefined
+}
+function func_formatDuration_0x100003604(a0, a1)
+{
+	r1 = 0
+	r9 = {}
+	a1 = func_Default_0x1000035e5(a1, r9)
+	r3 = TypeOf(a0)
+	if (r3 === "string")
+	{
+		if (a0["length"] > 0)
+		{
+			return func_parseDuration_0x1000035de(a0)
+		}
+	}
+	if (r3 === "number")
+	{
+		if (isFinite(a0))
+		{
+			ACCU = a1["long"]
+			if (a1["long"])
+			{
+				ACCU = func_formatDuration_0x1000035e2(a0)
+			}
+			else
+			{
+				ACCU = func_formatDuration_0x1000035e0(a0)
+			}
+			return ACCU
+		}
+	}
+	r9 = "val is not a non-empty string or a valid number. val="
+	r10 = JSON["stringify"]
+	r10 = r10(a0)
+	r7 = (r9 + r10)
+	ACCU = Error
+	ACCU = Error(r7)
+	return undefined
+}
+function func_Default_0x1000035e5(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_pluralize_0x1000035e4(a0, a1, a2, a3)
+{
+	r5 = (a2 * 1.5)
+	r1 = a1 >= r5
+	r8 = Math["round"]
+	r10 = (a0 / a2)
+	r8 = r8(r10)
+	r6 = (r8 + " ")
+	r4 = (r6 + a3)
+	ACCU = r1
+	if (r1)
+	{
+		ACCU = "s"
+	}
+	else
+	{
+		ACCU = ""
+	}
+	r5 = ACCU
+	return (r4 + r5)
+}
+function func_formatDuration_0x1000035e2(a0)
+{
+	r3 = Math["abs"]
+	r1 = r3(a0)
+	ACCU = r1 >= Scope[8318][15]
+	if (r1 >= Scope[8318][15])
+	{
+		r9 = "day"
+		r6 = a0
+		r7 = r1
+		ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][15], r9)
+	}
+	else
+	{
+		ACCU = r1 >= Scope[8318][14]
+		if (r1 >= Scope[8318][14])
+		{
+			r9 = "hour"
+			r6 = a0
+			r7 = r1
+			ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][14], r9)
+		}
+		else
+		{
+			if (r1 >= Scope[8318][13])
+			{
+				r9 = "minute"
+				r6 = a0
+				r7 = r1
+				ACCU = func_pluralize_0x1000035e4(r6, r7, Scope[8318][13], r9)
+			}
+			else
+			{
+				if (r1 >= 1000)
+				{
+					ACCU = func_pluralize_0x1000035e4(a0, r1, 1000, "second")
+				}
+				else
+				{
+					ACCU = (a0 + " ms")
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_formatDuration_0x1000035e0(a0)
+{
+	r2 = Math["abs"]
+	r0 = r2(a0)
+	ACCU = r0 >= Scope[8318][15]
+	if (r0 >= Scope[8318][15])
+	{
+		r4 = Math["round"]
+		r6 = (a0 / Scope[8318][15])
+		r4 = r4(r6)
+		ACCU = (r4 + "d")
+	}
+	else
+	{
+		ACCU = r0 >= Scope[8318][14]
+		if (r0 >= Scope[8318][14])
+		{
+			r4 = Math["round"]
+			r6 = (a0 / Scope[8318][14])
+			r4 = r4(r6)
+			ACCU = (r4 + "h")
+		}
+		else
+		{
+			if (r0 >= Scope[8318][13])
+			{
+				r4 = Math["round"]
+				r6 = (a0 / Scope[8318][13])
+				r4 = r4(r6)
+				ACCU = (r4 + "m")
+			}
+			else
+			{
+				if (r0 >= 1000)
+				{
+					r4 = Math["round"]
+					r6 = (a0 / 1000)
+					r4 = r4(r6)
+					ACCU = (r4 + "s")
+				}
+				else
+				{
+					ACCU = (a0 + "ms")
+				}
+			}
+		}
+	}
+	return ACCU
+}
+function func_parseDuration_0x1000035de(a0)
+{
+	a0 = String(a0)
+	if (!a0["length"] > 100)
+	{
+		r6 = \^(-?(?:\\\\d+)?\\\\.?\\\\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$\
+		r5 = r6["exec"]
+		r1 = r5(a0)
+		if (r5(a0))
+		{
+			r2 = parseFloat(r1[1])
+			ACCU = r1[2]
+			if (!r1[2])
+			{
+				ACCU = "ms"
+			}
+			r6 = ACCU
+			r5 = r6["toLowerCase"]
+			r3 = r5()
+			r5 = r3
+			switch ()
+			case r3 === "years":
+			case r5 === "year":
+			case r5 === "yrs":
+			case r5 === "yr":
+			case r5 === "y":
+			{
+				return (r2 * Scope[8318][17])
+			}
+			case r5 === "weeks":
+			case r5 === "week":
+			case r5 === "w":
+			{
+				return (r2 * Scope[8318][16])
+			}
+			case r5 === "days":
+			case r5 === "day":
+			case r5 === "d":
+			{
+				return (r2 * Scope[8318][15])
+			}
+			case r5 === "hours":
+			case r5 === "hour":
+			case r5 === "hrs":
+			case r5 === "hr":
+			case r5 === "h":
+			{
+				return (r2 * Scope[8318][14])
+			}
+			case r5 === "minutes":
+			case r5 === "minute":
+			case r5 === "mins":
+			case r5 === "min":
+			case r5 === "m":
+			{
+				return (r2 * Scope[8318][13])
+			}
+			case r5 === "seconds":
+			case r5 === "second":
+			case r5 === "secs":
+			case r5 === "sec":
+			case r5 === "s":
+			{
+				return (r2 * 1000)
+			}
+			case r5 === "milliseconds":
+			case r5 === "millisecond":
+			case r5 === "msecs":
+			case r5 === "msec":
+			case r5 === "ms":
+			{
+				return r2
+			}
+			default:
+			{}
+			return undefined
+		}
+	}
+	return undefined
+}

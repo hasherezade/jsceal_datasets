@@ -1,0 +1,186 @@
+function func_createCaStore_0x100001a48(a0)
+{
+	Scope[9826][3] = func_getCertByHash_0x100001a41
+	Scope[9826][4] = func_hashDistinguishedName_0x100001a42
+	Scope[9826][2]["getIssuer"] = func_getIssuerCertificate_0x100001a43
+	Scope[9826][2]["addCertificate"] = func_addCertificate_0x100001a44
+	Scope[9826][2]["hasCertificate"] = func_hasCertificate_0x100001a45
+	Scope[9826][2]["listAllCertificates"] = func_listCertificates_0x100001a46
+	Scope[9826][2]["removeCertificate"] = func_removeCertificate_0x100001a47
+	if (a0)
+	{
+		r0 = 0
+		while (true)
+		{
+			if (!r0 < a0["length"]) break
+			r1 = a0[r0]
+			ACCU = Scope[9826][2]["addCertificate"](r1)
+			r0 = (r0 + 1)
+		}
+	}
+	return Scope[9826][2]
+}
+function func_removeCertificate_0x100001a47(a0)
+{
+	if (typeof(a0) == string)
+	{
+		a0 = Scope[9825][2]["pki"]["certificateFromPem"](a0)
+	}
+	ACCU = func_hashDistinguishedName_0x100001a42(a0["subject"])
+	if (!Scope[9826][2]["hasCertificate"](a0))
+	{
+		return null
+	}
+	r1 = func_getCertByHash_0x100001a41(a0["subject"])
+	if (!Scope[9825][2]["util"]["isArray"](r1))
+	{
+		delete a0["subject"]["hash"][Scope[9826][2]["certs"]]
+		return Scope[9826][2]["certs"][a0["subject"]["hash"]]
+	}
+	r8 = Scope[9825][4]["certificateToAsn1"](a0)
+	r6 = Scope[9825][3]["toDer"](r8)
+	r2 = r6["getBytes"]()
+	r3 = 0
+	while (true)
+	{
+		if (!r3 < r1["length"]) break
+		r10 = r1[r3]
+		r8 = Scope[9825][4]["certificateToAsn1"](r10)
+		r6 = Scope[9825][3]["toDer"](r8)
+		r4 = r6["getBytes"]()
+		if (!r2 === r4) continue
+		r0 = r1[r3]
+		ACCU = r1["splice"](r3, 1)
+		r3 = (r3 + 1)
+	}
+	if (r1["length"] === 0)
+	{
+		delete a0["subject"]["hash"][Scope[9826][2]["certs"]]
+	}
+	return r0
+}
+function func_listCertificates_0x100001a46()
+{
+	r0 = []
+	r5 = Scope[9826][2]
+	if (!Scope[9826][2]["certs"] == undefined)
+	{
+		r5 = Generator(ToObject(Scope[9826][2]["certs"]))
+		r9 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r9)) break
+			if (r5.next().value == undefined) continue
+			r4 = r5.next().value
+			r1 = r5.next().value
+			if (!Scope[9826][2]["certs"]["hasOwnProperty"](r4)) continue
+			r2 = Scope[9826][2]["certs"][r1]
+			if (!Scope[9825][2]["util"]["isArray"](Scope[9826][2]["certs"][r1]))
+			{
+				ACCU = r0["push"](Scope[9826][2]["certs"][r1])
+				continue
+			}
+			r3 = 0
+			while (true)
+			{
+				if (!r3 < r2["length"]) continue
+				r12 = r2[r3]
+				ACCU = r0["push"](r12)
+				r3 = (r3 + 1)
+			}
+			r9 = GeneratorStep(r9)
+		}
+	}
+	return r0
+}
+function func_hasCertificate_0x100001a45(a0)
+{
+	if (typeof(a0) == string)
+	{
+		a0 = Scope[9825][2]["pki"]["certificateFromPem"](a0)
+	}
+	r0 = func_getCertByHash_0x100001a41(a0["subject"])
+	if (!func_getCertByHash_0x100001a41(a0["subject"]))
+	{
+		return false
+	}
+	if (!Scope[9825][2]["util"]["isArray"](r0))
+	{
+		r5 = new [0]
+		r5[0] = r0
+		r0 = r5
+		ACCU = r5
+	}
+	r7 = Scope[9825][4]["certificateToAsn1"](a0)
+	r5 = Scope[9825][3]["toDer"](r7)
+	r1 = r5["getBytes"]()
+	r2 = 0
+	while (true)
+	{
+		if (!r2 < r0["length"]) break
+		r9 = r0[r2]
+		r7 = Scope[9825][4]["certificateToAsn1"](r9)
+		r5 = Scope[9825][3]["toDer"](r7)
+		r3 = r5["getBytes"]()
+		if (!r1 === r3) continue
+		return true
+		r2 = (r2 + 1)
+	}
+	return false
+}
+function func_addCertificate_0x100001a44(a0)
+{
+	if (typeof(a0) == string)
+	{
+		a0 = Scope[9825][2]["pki"]["certificateFromPem"](a0)
+	}
+	ACCU = func_hashDistinguishedName_0x100001a42(a0["subject"])
+	if (!Scope[9826][2]["hasCertificate"](a0))
+	{
+		if (a0["subject"]["hash"] in Scope[9826][2]["certs"])
+		{
+			r0 = Scope[9826][2]["certs"][a0["subject"]["hash"]]
+			if (!Scope[9825][2]["util"]["isArray"](Scope[9826][2]["certs"][a0["subject"]["hash"]]))
+			{
+				r2 = new [0]
+				r2[0] = Scope[9826][2]["certs"][a0["subject"]["hash"]]
+				r0 = r2
+				ACCU = r2
+			}
+			ACCU = r0["push"](a0)
+			Scope[9826][2]["certs"][a0["subject"]["hash"]] = r0
+		}
+		else
+		{
+			Scope[9826][2]["certs"][a0["subject"]["hash"]] = a0
+		}
+	}
+	return undefined
+}
+function func_getIssuerCertificate_0x100001a43(a0)
+{
+	r0 = func_getCertByHash_0x100001a41(a0["issuer"])
+	return r0
+}
+function func_hashDistinguishedName_0x100001a42(a0)
+{
+	if (!a0["hash"])
+	{
+		r0 = Scope[9825][2]["md"]["sha1"]["create"]()
+		r4 = func_buildDistinguishedName_0x100001a03(a0)
+		a0["attributes"] = Scope[9825][4]["RDNAttributesAsArray"](r4, r0)
+		r3 = r0["digest"]()
+		a0["hash"] = r3["toHex"]()
+	}
+	return undefined
+}
+function func_getCertByHash_0x100001a41(a0)
+{
+	ACCU = func_hashDistinguishedName_0x100001a42(a0)
+	ACCU = Scope[9826][2]["certs"][a0["hash"]]
+	if (!Scope[9826][2]["certs"][a0["hash"]])
+	{
+		ACCU = null
+	}
+	return ACCU
+}

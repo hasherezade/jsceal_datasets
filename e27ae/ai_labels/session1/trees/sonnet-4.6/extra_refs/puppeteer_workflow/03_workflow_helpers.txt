@@ -1,0 +1,181 @@
+function func_isNotAllowed_0x1000006cd(a0)
+{
+	r0 = Scope[10746][2]["includes"]
+	return !Boolean(r0(a0))
+}
+function func_isNotIncluded_0x1000006ba(a0)
+{
+	r0 = Scope[10757][2]["includes"]
+	return !Boolean(r0(a0))
+}
+function func_defaultValue_0x1000006ae(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_getInnerText_0x1000006aa(a0)
+{
+	return func_getPropertyJsonValue_0x10000069f(a0, "innerText")
+}
+function func_findFirstMatch_0x1000006a5(a0, a1)
+{
+	r0 = new {"V": 115797, "J": "YbH*", "S": 32325, "g": "[Jy3", "L": 97814, "X": "VHeU"}
+	r9 = r0["V"]
+	r10 = r0["J"]
+	ACCU = Array["isArray"](a1)
+	if (Array["isArray"](a1))
+	{
+		ACCU = a1
+	}
+	else
+	{
+		r7 = new [0]
+		r7[0] = a1
+		ACCU = r7
+	}
+	r8 = ACCU
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			r4 = r12["value"]
+			ACCU = a0["includes"](r12["value"])
+			r12 = r12["value"]
+			if (!ACCU) continue
+			ACCU = 1
+			r9 = 1
+			r10 = r4
+			break
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r9)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r10
+	}
+	case (1):
+	{
+		return r10
+	}
+	return undefined
+}
+function func_normalizeSameSite_0x1000006a3(a0)
+{
+	r4 = a0
+	switch ()
+	case a0 === "NONE":
+	{
+		return "None"
+	}
+	case r4 === "LAX":
+	{
+		return "Lax"
+	}
+	case r4 === "STRICT":
+	{
+		return "Strict"
+	}
+	default:
+	{}
+	return undefined
+}
+function func_extractPathname_0x1000006a1(a0)
+{
+	r6 = a0["url"]
+	r6 = r6()
+	r5 = r6["toLowerCase"]
+	r5 = r5()
+	ACCU = URL
+	r4 = URL(r5)
+	return r4["pathname"]
+}
+function func_getPropertyJsonValue_0x10000069f(a0, a1)
+{
+	r4 = <closure>
+	r5 = <this>
+	ACCU = func_u_0x10000069e
+	try
+	{
+		r6 = a0["getProperty"]
+		r7 = r6(a1)
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(Scope[10771])
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		r5 = r6["jsonValue"]
+		r6 = r5()
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[10772]
+	return Scope[10772][2]
+}
+function func_selectIfFalsy_0x10000069c(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_conditionalSelect_0x10000069b(a0, a1)
+{
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_scheduleTimeoutPromise_0x1000004c9(a0)
+{
+	Scope[11011][2] = a0
+	ACCU = Promise
+	return Promise(func_scheduleTimeout_0x1000004c8)
+}
+function func_scheduleTimeout_0x1000004c8(a0)
+{
+	return setTimeout(a0, Scope[11011][2])
+}

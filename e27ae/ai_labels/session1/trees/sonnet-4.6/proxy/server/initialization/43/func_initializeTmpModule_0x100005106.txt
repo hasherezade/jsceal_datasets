@@ -1,0 +1,1205 @@
+function func_initializeTmpModule_0x100005106(a0, a1)
+{
+	Scope[6728][2] = a1
+	Scope[6728][11] = func_A_0x1000050f4
+	r2 = require("util")
+	Scope[6728][7] = r2["promisify"]
+	Scope[6728][8] = func_initializeTmpModule_0x1000050f3["exports"]()
+	r2 = Scope[6728][2]["exports"]
+	r2["fileSync"] = Scope[6728][8]["fileSync"]
+	Scope[6728][9] = Scope[6728][7](func_processFile_0x1000050fd)
+	r2 = Scope[6728][2]["exports"]
+	r2["file"] = func_safeDeleteFile_0x1000050fe
+	r2 = Scope[6728][2]["exports"]
+	r2["withFile"] = func_withTempFile_0x100005100
+	r2 = Scope[6728][2]["exports"]
+	r2["dirSync"] = Scope[6728][8]["dirSync"]
+	Scope[6728][10] = Scope[6728][7](func_processDirectory_0x100005102)
+	r2 = Scope[6728][2]["exports"]
+	r2["dir"] = func_safeDeleteDir_0x100005103
+	r2 = Scope[6728][2]["exports"]
+	r2["withDir"] = func_withTempDir_0x100005105
+	r2 = Scope[6728][2]["exports"]
+	r2["tmpNameSync"] = Scope[6728][8]["tmpNameSync"]
+	r2 = Scope[6728][2]["exports"]
+	r2["tmpName"] = Scope[6728][7](Scope[6728][8]["tmpName"])
+	r2 = Scope[6728][2]["exports"]
+	r2["tmpdir"] = Scope[6728][8]["tmpdir"]
+	r2 = Scope[6728][2]["exports"]
+	r2["setGracefulCleanup"] = Scope[6728][8]["setGracefulCleanup"]
+	return undefined
+}
+function func_withTempDir_0x100005105(a0, a1)
+{
+	r5 = <closure>
+	r6 = <this>
+	ACCU = func_V_0x100005104
+	try
+	{
+		r6 = Scope[6728][2]["exports"]["dir"]
+		r7 = r6(a1)
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(Scope[6729])
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		ACCU = r6["cleanup"]
+		r2 = r6["cleanup"]
+		try
+		{
+			r12 = new {"path": null}
+			r12["path"] = r6["path"]
+			r10 = a0(r12)
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(Scope[6729])
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			ACCU = 1
+			r6 = 1
+			r7 = r9
+		}
+		catch
+		{
+			r7 = ACCU
+			r6 = 0
+		}
+		r10 = r2()
+		r9 = await r10
+		r10 = _GeneratorGetResumeMode(Scope[6729])
+		if (!r10 === 0)
+		{
+			ACCU = r9
+		}
+		ACCU = null
+		switch (r6)
+		default:
+		{
+			break
+		}
+		case (0):
+		{
+			ACCU = r7
+		}
+		case (1):
+		{
+			return r7
+		}
+		r7 = undefined
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[6730]
+	return Scope[6730][2]
+}
+function func_safeDeleteDir_0x100005103(a0)
+{
+	r1 = <closure>
+	r2 = <this>
+	r0 = ACCU
+	try
+	{
+		r3 = Scope[6728][10](a0)
+		r2 = r0
+		return r3
+	}
+	catch {}
+	r2 = ACCU
+	ACCU = null
+	ACCU = Scope[6731]
+	r3 = r0
+	return Scope[6731][2]
+}
+function func_processDirectory_0x100005102(a0, a1)
+{
+	Scope[6732][2] = a1
+	r1 = Scope[6728][8]["dir"]
+	return r1(a0, func_buildDirResult_0x100005101)
+}
+function func_buildDirResult_0x100005101(a0, a1, a2)
+{
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = Scope[6732][2](a0)
+	}
+	else
+	{
+		r1 = undefined
+		r2 = new {"path": null, "cleanup": null}
+		r2["path"] = a1
+		r2["cleanup"] = Scope[6728][7](a2)
+		ACCU = Scope[6732][2](r1, r2)
+	}
+	return ACCU
+}
+function func_withTempFile_0x100005100(a0, a1)
+{
+	r6 = <closure>
+	r7 = <this>
+	ACCU = func_W_0x1000050ff
+	try
+	{
+		r7 = Scope[6728][2]["exports"]["file"]
+		r8 = r7(a1)
+		r7 = await r8
+		r8 = _GeneratorGetResumeMode(Scope[6733])
+		if (!r8 === 0)
+		{
+			ACCU = r7
+		}
+		ACCU = r7["cleanup"]
+		r3 = r7["cleanup"]
+		try
+		{
+			r13 = new {"path": null, "fd": null}
+			r13["path"] = r7["path"]
+			r13["fd"] = r7["fd"]
+			r11 = a0(r13)
+			r10 = await r11
+			r11 = _GeneratorGetResumeMode(Scope[6733])
+			if (!r11 === 0)
+			{
+				ACCU = r10
+			}
+			ACCU = 1
+			r7 = 1
+			r8 = r10
+		}
+		catch
+		{
+			r8 = ACCU
+			r7 = 0
+		}
+		r11 = r3()
+		r10 = await r11
+		r11 = _GeneratorGetResumeMode(Scope[6733])
+		if (!r11 === 0)
+		{
+			ACCU = r10
+		}
+		ACCU = null
+		switch (r7)
+		default:
+		{
+			break
+		}
+		case (0):
+		{
+			ACCU = r8
+		}
+		case (1):
+		{
+			return r8
+		}
+		r8 = undefined
+		ACCU = r8
+		return r8
+	}
+	catch {}
+	r7 = ACCU
+	ACCU = null
+	ACCU = Scope[6734]
+	return Scope[6734][2]
+}
+function func_safeDeleteFile_0x1000050fe(a0)
+{
+	r1 = <closure>
+	r2 = <this>
+	r0 = ACCU
+	try
+	{
+		r3 = Scope[6728][9](a0)
+		r2 = r0
+		return r3
+	}
+	catch {}
+	r2 = ACCU
+	ACCU = null
+	ACCU = Scope[6735]
+	r3 = r0
+	return Scope[6735][2]
+}
+function func_processFile_0x1000050fd(a0, a1)
+{
+	Scope[6736][2] = a1
+	r1 = Scope[6728][8]["file"]
+	return r1(a0, func_buildFileResult_0x1000050fc)
+}
+function func_buildFileResult_0x1000050fc(a0, a1, a2, a3)
+{
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = Scope[6736][2](a0)
+	}
+	else
+	{
+		r1 = undefined
+		r2 = new {"path": null, "fd": null, "cleanup": null}
+		r2["path"] = a1
+		r2["fd"] = a2
+		r2["cleanup"] = Scope[6728][7](a3)
+		ACCU = Scope[6736][2](r1, r2)
+	}
+	return ACCU
+}
+function func_initializeTmpModule_0x1000050f3(a0, a1)
+{
+	Scope[6737][66] = func_removeRecursive_0x100005046
+	Scope[6737][67] = func_removeDirectoryRecursive_0x100005048
+	Scope[6737][68] = func_initFileOperation_0x100005064
+	Scope[6737][69] = func_generateTmpFilename_0x100005066
+	Scope[6737][70] = func_cleanupTempFile_0x100005092
+	Scope[6737][71] = func_closeFdAndUnlink_0x100005094
+	Scope[6737][72] = func_createFileCleaner_0x100005096
+	Scope[6737][73] = func_setupTempDirCleanup_0x100005098
+	Scope[6737][74] = func_initTempDirCleaner_0x10000509c
+	Scope[6737][75] = func_randomString_0x1000050a0
+	Scope[6737][76] = func_isBlankString_0x1000050a2
+	Scope[6737][77] = func_isUndefined_0x1000050a4
+	Scope[6737][78] = func_parseOptionsOrCallback_0x1000050a6
+	Scope[6737][79] = func_generateTmpPath_0x1000050a8
+	Scope[6737][80] = func_normalizeOptions_0x1000050aa
+	Scope[6737][81] = func_resolveFilePath_0x1000050ac
+	Scope[6737][82] = func_validatePathOption_0x1000050ae
+	Scope[6737][83] = func_isEBADF_0x1000050b0
+	Scope[6737][84] = func_isEnoent_0x1000050b2
+	Scope[6737][85] = func_matchErrorCode_0x1000050b4
+	Scope[6737][86] = func_resolveTmpDir_0x1000050b7
+	Scope[6737][87] = func_at_0x1000050b8
+	Scope[6737][50] = require("fs")
+	Scope[6737][51] = require("os")
+	Scope[6737][52] = require("path")
+	Scope[6737][53] = require("crypto")
+	r10 = new {"fs": null, "os": null}
+	r10["fs"] = Scope[6737][50]["constants"]
+	r10["os"] = Scope[6737][51]["constants"]
+	r1 = r10
+	Scope[6737][54] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+	Scope[6737][55] = \XXXXXX\
+	Scope[6737][56] = 3
+	ACCU = r1["O_CREAT"]
+	if (!r1["O_CREAT"])
+	{
+		ACCU = r1["fs"]["O_CREAT"]
+	}
+	r14 = ACCU
+	ACCU = r1["O_EXCL"]
+	if (!r1["O_EXCL"])
+	{
+		ACCU = r1["fs"]["O_EXCL"]
+	}
+	r15 = ACCU
+	r12 = (r14 | r15)
+	ACCU = r1["O_RDWR"]
+	if (!r1["O_RDWR"])
+	{
+		ACCU = r1["fs"]["O_RDWR"]
+	}
+	r13 = ACCU
+	Scope[6737][57] = (r12 | r13)
+	r12 = Scope[6737][51]["platform"]
+	r12 = r12()
+	Scope[6737][58] = r12 === "win32"
+	ACCU = r1["EBADF"]
+	if (!r1["EBADF"])
+	{
+		ACCU = r1["os"]["errno"]["EBADF"]
+	}
+	Scope[6737][59] = ACCU
+	ACCU = r1["ENOENT"]
+	if (!r1["ENOENT"])
+	{
+		r10 = r1["os"]["errno"]
+		ACCU = r10["ENOENT"]
+	}
+	Scope[6737][60] = ACCU
+	Scope[6737][61] = 448
+	Scope[6737][62] = 384
+	r2 = "exit"
+	Scope[6737][63] = []
+	r10 = Scope[6737][50]["rmdirSync"]["bind"]
+	Scope[6737][64] = r10(Scope[6737][50])
+	Scope[6737][65] = false
+	ACCU = process["addListener"](r2, func_drainQueue_0x10000509e)
+	r10 = Object["defineProperty"]
+	r12 = a1["exports"]
+	r13 = "tmpdir"
+	r14 = new {"enumerable": <true, "configurable": <false, "get": null}
+	r14["get"] = func_getTmpDir_0x1000050f2
+	ACCU = r10(r12, r13, r14)
+	r10 = a1["exports"]
+	r10["dir"] = func_mkdtemp_0x100005086
+	r10 = a1["exports"]
+	r10["dirSync"] = func_createTempDir_0x100005088
+	r10 = a1["exports"]
+	r10["file"] = func_initWriteOperation_0x100005078
+	r10 = a1["exports"]
+	r10["fileSync"] = func_createTempFile_0x10000507a
+	r10 = a1["exports"]
+	r10["tmpName"] = func_initFileOperation_0x100005064
+	r10 = a1["exports"]
+	r10["tmpNameSync"] = func_generateTmpFilename_0x100005066
+	r10 = a1["exports"]
+	r10["setGracefulCleanup"] = func_setDrainedFlag_0x1000050b5
+	return undefined
+}
+function func_getTmpDir_0x1000050f2()
+{
+	return func_resolveTmpDir_0x1000050b7()
+}
+function func_resolveTmpDir_0x1000050b7(a0)
+{
+	r2 = Scope[6737][52]["resolve"]
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["tmpdir"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Scope[6737][51]["tmpdir"]()
+	}
+	r4 = ACCU
+	return r2(r4)
+}
+function func_setDrainedFlag_0x1000050b5()
+{
+	Scope[6737][65] = true
+	return undefined
+}
+function func_matchErrorCode_0x1000050b4(a0, a1, a2)
+{
+	ACCU = Scope[6737][58]
+	if (Scope[6737][58])
+	{
+		ACCU = a0["code"] === a2
+	}
+	else
+	{
+		r4 = a0["code"]
+		ACCU = r4 === a2
+		if (r4 === a2)
+		{
+			ACCU = a0["errno"] === a1
+		}
+	}
+	return ACCU
+}
+function func_isEnoent_0x1000050b2(a0)
+{
+	r6 = (-Scope[6737][60])
+	return func_matchErrorCode_0x1000050b4(a0, r6, "ENOENT")
+}
+function func_isEBADF_0x1000050b0(a0)
+{
+	r6 = (-Scope[6737][59])
+	return func_matchErrorCode_0x1000050b4(a0, r6, "EBADF")
+}
+function func_validatePathOption_0x1000050ae(a0, a1, a2)
+{
+	r6 = "name"
+	if (a1 === r6)
+	{
+		r3 = Scope[6737][52]["isAbsolute"]
+		if (r3(a0))
+		{
+			r4 = (a1 + " option must not contain an absolute path, found '")
+			r4 = (r4 + a0)
+			r4 = (r4 + "\".")
+			ACCU = Error
+			ACCU = Error(r4)
+		}
+		r3 = Scope[6737][52]["basename"]
+		r2 = r3(a0)
+		if (r2 === "..")
+			|| (r2 === ".")
+			|| (!(r2 === a0))
+		{
+			r4 = (a1 + " option must not contain a path, found '")
+			r4 = (r4 + a0)
+			r4 = (r4 + "\".")
+			ACCU = Error
+			ACCU = Error(r4)
+		}
+	}
+	else
+	{
+		r3 = Scope[6737][52]["isAbsolute"]
+		if (r3(a0))
+		{
+			r3 = a0["startsWith"]
+			if (!r3(a2))
+			{
+				r4 = (a1 + " option must be relative to '")
+				r4 = (r4 + a2)
+				r4 = (r4 + "', found '")
+				r4 = (r4 + a0)
+				r4 = (r4 + "\".")
+				ACCU = Error
+				ACCU = Error(r4)
+			}
+		}
+		r1 = func_resolveFilePath_0x1000050ac(a0, a2)
+		r3 = r1["startsWith"]
+		if (!r3(a2))
+		{
+			r4 = (a1 + " option must be relative to '")
+			r4 = (r4 + a2)
+			r4 = (r4 + "', found '")
+			r4 = (r4 + r1)
+			r4 = (r4 + "\".")
+			ACCU = Error
+			ACCU = Error(r4)
+		}
+	}
+	return undefined
+}
+function func_resolveFilePath_0x1000050ac(a0, a1)
+{
+	r2 = a0["startsWith"]
+	ACCU = r2(a1)
+	if (r2(a1))
+	{
+		ACCU = Scope[6737][52]["resolve"](a0)
+	}
+	else
+	{
+		r2 = Scope[6737][52]["resolve"]
+		r4 = Scope[6737][52]["join"]
+		r4 = r4(a1, a0)
+		ACCU = r2(r4)
+	}
+	return ACCU
+}
+function func_normalizeOptions_0x1000050aa(a0)
+{
+	r4 = "tmpdir"
+	a0[r4] = func_resolveTmpDir_0x1000050b7(a0)
+	r0 = a0["tmpdir"]
+	r6 = a0["name"]
+	if (!func_isUndefined_0x1000050a4(r6))
+	{
+		r6 = a0["name"]
+		ACCU = func_validatePathOption_0x1000050ae(r6, "name", r0)
+	}
+	r6 = a0["dir"]
+	if (!func_isUndefined_0x1000050a4(r6))
+	{
+		r6 = a0["dir"]
+		ACCU = func_validatePathOption_0x1000050ae(r6, "dir", r0)
+	}
+	r6 = a0["template"]
+	if (!func_isUndefined_0x1000050a4(r6))
+	{
+		r6 = a0["template"]
+		r8 = r0
+		ACCU = func_validatePathOption_0x1000050ae(r6, "template", r8)
+		r4 = a0["template"]
+		r3 = r4["match"]
+		if (!r3(Scope[6737][55]))
+		{
+			r4 = ("Invalid template, found '" + a0["template"])
+			r4 = (r4 + "\".")
+			ACCU = Error
+			ACCU = Error(r4)
+		}
+	}
+	if (!func_isUndefined_0x1000050a4(a0["tries"]))
+		&& (isNaN(a0["tries"]))
+	r5 = a0["tries"]
+		|| (r5 < 0)
+	{
+		r4 = ("Invalid tries, found \"" + a0["tries"])
+		r4 = (r4 + "\".")
+		ACCU = Error
+		ACCU = Error(r4)
+	}
+	r4 = "tries"
+	r8 = a0["name"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = a0["tries"]
+		if (!a0["tries"])
+		{
+			ACCU = 3
+		}
+	}
+	else
+	{
+		ACCU = 1
+	}
+	r3[r4] = ACCU
+	a0["keep"] = !(!Boolean(a0["keep"]))
+	a0["detachDescriptor"] = !(!Boolean(a0["detachDescriptor"]))
+	a0["discardDescriptor"] = !(!Boolean(a0["discardDescriptor"]))
+	a0["unsafeCleanup"] = !(!Boolean(a0["unsafeCleanup"]))
+	r4 = "dir"
+	r8 = a0["dir"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = ""
+	}
+	else
+	{
+		r5 = Scope[6737][52]["relative"]
+		r11 = a0["dir"]
+		r8 = func_resolveFilePath_0x1000050ac(r11, r0)
+		ACCU = r5(r0, r8)
+	}
+	r3[r4] = ACCU
+	r4 = "template"
+	r8 = a0["template"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = undefined
+	}
+	else
+	{
+		r5 = Scope[6737][52]["relative"]
+		r11 = a0["template"]
+		r8 = func_resolveFilePath_0x1000050ac(r11, r0)
+		ACCU = r5(r0, r8)
+	}
+	r3[r4] = ACCU
+	r4 = "template"
+	r8 = a0["template"]
+	ACCU = func_isBlankString_0x1000050a2(r8)
+	r3 = a0
+	if (func_isBlankString_0x1000050a2(r8))
+	{
+		ACCU = undefined
+	}
+	else
+	{
+		r5 = Scope[6737][52]["relative"]
+		r7 = a0["dir"]
+		r8 = a0["template"]
+		ACCU = r5(r7, r8)
+	}
+	r3[r4] = ACCU
+	r4 = "name"
+	r8 = a0["name"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = undefined
+	}
+	else
+	{
+		ACCU = a0["name"]
+	}
+	r3[r4] = ACCU
+	r4 = "prefix"
+	r8 = a0["prefix"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a0["prefix"]
+	}
+	r3[r4] = ACCU
+	r4 = "postfix"
+	r8 = a0["postfix"]
+	ACCU = func_isUndefined_0x1000050a4(r8)
+	r3 = a0
+	if (func_isUndefined_0x1000050a4(r8))
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a0["postfix"]
+	}
+	r3[r4] = ACCU
+	return undefined
+}
+function func_generateTmpPath_0x1000050a8(a0)
+{
+	r0 = a0["tmpdir"]
+	r6 = a0["name"]
+	if (!func_isUndefined_0x1000050a4(r6))
+	{
+		r3 = Scope[6737][52]["join"]
+		r6 = a0["dir"]
+		r7 = a0["name"]
+		return r3(r0, r6, r7)
+	}
+	r6 = a0["template"]
+	if (!func_isUndefined_0x1000050a4(r6))
+	{
+		r4 = Scope[6737][52]["join"]
+		r7 = a0["dir"]
+		r8 = a0["template"]
+		r4 = r4(r0, r7, r8)
+		r3 = r4["replace"]
+		r6 = func_randomString_0x1000050a0(6)
+		return r3(Scope[6737][55], r6)
+	}
+	r5 = new [0, "-", 0, "-", 0, 0]
+	ACCU = a0["prefix"]
+	if (a0["prefix"])
+	{
+		ACCU = a0["prefix"]
+	}
+	else
+	{
+		ACCU = "tmp"
+	}
+	r5[0] = ACCU
+	r5[2] = process["pid"]
+	r5[4] = func_randomString_0x1000050a0(12)
+	ACCU = a0["postfix"]
+	if (a0["postfix"])
+	{
+		ACCU = ("-" + a0["postfix"])
+	}
+	else
+	{
+		ACCU = ""
+	}
+	r5[5] = ACCU
+	r4 = r5
+	r3 = r4["join"]
+	r2 = r3("")
+	r3 = Scope[6737][52]["join"]
+	r6 = a0["dir"]
+	return r3(r0, r6, r2)
+}
+function func_parseOptionsOrCallback_0x1000050a6(a0, a1)
+{
+	r8 = TypeOf(a0)
+	if (r8 == "function")
+	{
+		r7 = new [{}, 0]
+		r7[1] = a0
+		return r7
+	}
+	if (func_isUndefined_0x1000050a4(a0))
+	{
+		r7 = new [{}, 0]
+		r7[1] = a1
+		return r7
+	}
+	r1 = {}
+	r9 = 86847
+	r10 = 55866
+	r6 = Object["getOwnPropertyNames"]
+	r8 = r6(a0)
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			ACCU = a0[r12["value"]]
+			r1[r12["value"]] = a0[r12["value"]]
+			r12 = r12["value"]
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	r7 = new [0, 0]
+	r7[0] = r1
+	r7[1] = a1
+	return r7
+}
+function func_isUndefined_0x1000050a4(a0)
+{
+	r4 = TypeOf(a0)
+	return r4 > "u"
+}
+function func_isBlankString_0x1000050a2(a0)
+{
+	ACCU = a0 === null
+	if (!a0 === null)
+	{
+		ACCU = func_isUndefined_0x1000050a4(a0)
+		if (!func_isUndefined_0x1000050a4(a0))
+		{
+			r1 = a0["trim"]
+			ACCU = !Boolean(r1())
+		}
+	}
+	return ACCU
+}
+function func_randomString_0x1000050a0(a0)
+{
+	r1 = []
+	r2 = null
+	r5 = Scope[6747]
+	try
+	{
+		r2 = Scope[6737][53]["randomBytes"](a0)
+	}
+	catch
+	{
+		ACCU = null
+		r2 = Scope[6737][53]["pseudoRandomBytes"](a0)
+	}
+	r3 = 0
+	while (true)
+	{
+		if (!r3 < a0) break
+		r5 = r1["push"]
+		r10 = r2[r3]
+		r7 = Scope[6737][54][(r10 % Scope[6737][54]["length"])]
+		ACCU = r5(r7)
+		r3 = (r3 + 1)
+	}
+	r5 = r1["join"]
+	return r5("")
+}
+function func_drainQueue_0x10000509e()
+{
+	if (Scope[6737][65])
+	{
+		while (true)
+		{
+			if (!Scope[6737][63]["length"]) break
+			try
+			{
+				ACCU = Scope[6737][63][0]()
+				continue
+			}
+			catch {}
+			ACCU = null
+			ACCU = Scope[6737]
+		}
+	}
+	return undefined
+}
+function func_initTempDirCleaner_0x10000509c(a0, a1, a2, a3)
+{
+	Scope[6748][5] = a0
+	Scope[6748][4] = a1
+	Scope[6748][3] = a2
+	Scope[6748][2] = a3
+	Scope[6748][7] = false
+	return func_cleanupTempDir_0x10000509b
+}
+function func_cleanupTempDir_0x10000509b(a0)
+{
+	if (!Scope[6748][7])
+	{
+		r2 = func_defaultIfFalsyAlt_0x1000050d8(Scope[6748][2], <closure>)
+		r3 = Scope[6737][63]["indexOf"](r2)
+		if (r3 >= 0)
+		{
+			ACCU = Scope[6737][63]["splice"](r3, 1)
+		}
+		ACCU = Scope[6748][7]
+		Scope[6748][7] = true
+		if (Scope[6748][3])
+			|| (Scope[6748][5] === Scope[6737][64])
+		ACCU = Scope[6748][5] === func_removeDirectoryRecursive_0x100005048
+			|| (Scope[6748][5] === func_removeDirectoryRecursive_0x100005048)
+		{
+			ACCU = Scope[6748][5](Scope[6748][4])
+		}
+		else
+		{
+			ACCU = a0
+			if (!a0)
+			{
+				ACCU = func_noop_0x10000509a
+			}
+			r8 = ACCU
+			ACCU = Scope[6748][5](Scope[6748][4], r8)
+		}
+		return ACCU
+	}
+	return undefined
+}
+function func_setupTempDirCleanup_0x100005098(a0, a1, a2)
+{
+	ACCU = a1["unsafeCleanup"]
+	if (a1["unsafeCleanup"])
+	{
+		ACCU = func_removeRecursive_0x100005046
+	}
+	else
+	{
+		r7 = Scope[6737][50]["rmdir"]
+		ACCU = r7["bind"](Scope[6737][50])
+	}
+	r0 = ACCU
+	ACCU = a1["unsafeCleanup"]
+	if (a1["unsafeCleanup"])
+	{
+		ACCU = func_removeDirectoryRecursive_0x100005048
+	}
+	else
+	{
+		ACCU = Scope[6737][64]
+	}
+	r1 = ACCU
+	r2 = func_initTempDirCleaner_0x10000509c(r1, a0, a2)
+	r3 = func_initTempDirCleaner_0x10000509c(r0, a0, a2, r2)
+	if (!a1["keep"])
+	{
+		ACCU = Scope[6737][63]["unshift"](r2)
+	}
+	ACCU = a2
+	if (a2)
+	{
+		ACCU = r2
+	}
+	else
+	{
+		ACCU = r3
+	}
+	return ACCU
+}
+function func_createFileCleaner_0x100005096(a0, a1, a2, a3)
+{
+	r8 = new [0, 0]
+	r8[0] = a1
+	r8[1] = a0
+	r7 = r8
+	r1 = func_initTempDirCleaner_0x10000509c(func_closeFdAndUnlink_0x100005094, r7, a3)
+	r8 = new [0, 0]
+	r8[0] = a1
+	r8[1] = a0
+	r7 = r8
+	r2 = func_initTempDirCleaner_0x10000509c(func_cleanupTempFile_0x100005092, r7, a3, r1)
+	if (!a2["keep"])
+	{
+		ACCU = Scope[6737][63]["unshift"](r1)
+	}
+	ACCU = a3
+	if (a3)
+	{
+		ACCU = r1
+	}
+	else
+	{
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_closeFdAndUnlink_0x100005094(a0)
+{
+	ACCU = null
+	r0 = null
+	try
+	{
+		try
+		{
+			r9 = a0[0]
+			ACCU = 0 <= r9
+			if (0 <= r9)
+			{
+				r6 = Scope[6737][50]["closeSync"]
+				r8 = a0[0]
+				ACCU = r6(r8)
+			}
+		}
+		catch
+		{
+			r6 = ACCU
+			ACCU = null
+			ACCU = Scope[6750]
+			ACCU = func_isEBADF_0x1000050b0(Scope[6750][2])
+			if (!func_isEBADF_0x1000050b0(Scope[6750][2]))
+			{
+				if (!func_isEnoent_0x1000050b2(Scope[6750][2]))
+				{
+					ACCU = Scope[6750][2]
+				}
+			}
+		}
+		ACCU = -1
+		r3 = -1
+		r2 = -1
+	}
+	catch
+	{
+		r3 = ACCU
+		r2 = 0
+	}
+	ACCU = null
+	try
+	{
+		r6 = Scope[6737][50]["unlinkSync"]
+		ACCU = r6(a0[1])
+	}
+	catch
+	{
+		r6 = ACCU
+		ACCU = null
+		ACCU = Scope[6751]
+		if (!func_isEnoent_0x1000050b2(Scope[6751][2]))
+		{
+			r0 = Scope[6751][2]
+		}
+	}
+	ACCU = null
+	if (r2 === 0)
+	{
+		ACCU = r3
+	}
+	if (!(r0 === null))
+	{
+		ACCU = r0
+	}
+	return undefined
+}
+function func_cleanupTempFile_0x100005092(a0, a1)
+{
+	Scope[6752][3] = a0
+	Scope[6752][2] = a1
+	Scope[6752][11] = func_je_0x100005089
+	Scope[6752][13] = func_handleFileError_0x10000508f
+	if (0 <= Scope[6752][3][0])
+	{
+		r1 = Scope[6737][50]["close"]
+		ACCU = r1(Scope[6752][3][0], func_unlinkTempFile_0x100005091)
+	}
+	else
+	{
+		r1 = Scope[6737][50]["unlink"]
+		ACCU = r1(Scope[6752][3][1], func_handleFileError_0x10000508f)
+	}
+	return undefined
+}
+function func_unlinkTempFile_0x100005091()
+{
+	r1 = Scope[6737][50]["unlink"]
+	ACCU = r1(Scope[6752][3][1], func_handleFileError_0x10000508f)
+	return undefined
+}
+function func_handleFileError_0x10000508f(a0)
+{
+	if (a0)
+	{
+		if (!func_isEnoent_0x1000050b2(a0))
+		{
+			return Scope[6752][2](a0)
+		}
+	}
+	ACCU = Scope[6752][2]()
+	return undefined
+}
+function func_createTempDir_0x100005088(a0)
+{
+	r1 = func_parseOptionsOrCallback_0x1000050a6(a0)
+	r2 = r1[0]
+	r3 = func_generateTmpFilename_0x100005066(r2)
+	r5 = Scope[6737][50]["mkdirSync"]
+	ACCU = r2["mode"]
+	r7 = r3
+	if (!r2["mode"])
+	{
+		ACCU = 448
+	}
+	r8 = ACCU
+	ACCU = r5(r7, r8)
+	r5 = new {"name": null, "removeCallback": null}
+	r5["name"] = r3
+	r5["removeCallback"] = func_setupTempDirCleanup_0x100005098(r3, r2, true)
+	return r5
+}
+function func_mkdtemp_0x100005086(a0, a1)
+{
+	Scope[6755][4] = func_t_0x10000507b
+	r0 = func_parseOptionsOrCallback_0x1000050a6(a0, a1)
+	Scope[6755][6] = r0[0]
+	Scope[6755][7] = r0[1]
+	ACCU = func_initFileOperation_0x100005064(Scope[6755][6], func_handleTempDirCreation_0x100005085)
+	return undefined
+}
+function func_handleTempDirCreation_0x100005085(a0, a1)
+{
+	Scope[6756][2] = a1
+	Scope[6756][6] = func_Me_0x100005082
+	if (a0)
+	{
+		return Scope[6755][7](a0)
+	}
+	r1 = Scope[6737][50]["mkdir"]
+	ACCU = Scope[6755][6]["mode"]
+	if (!Scope[6755][6]["mode"])
+	{
+		ACCU = 448
+	}
+	r4 = ACCU
+	ACCU = r1(Scope[6756][2], r4, func_handleTempDirOrCleanup_0x100005084)
+	return undefined
+}
+function func_createTempFile_0x10000507a(a0)
+{
+	r0 = func_parseOptionsOrCallback_0x1000050a6(a0)
+	r1 = r0[0]
+	ACCU = r1["discardDescriptor"]
+	if (!r1["discardDescriptor"])
+	{
+		ACCU = r1["detachDescriptor"]
+	}
+	r2 = ACCU
+	r3 = func_generateTmpFilename_0x100005066(r1)
+	r6 = Scope[6737][50]["openSync"]
+	ACCU = r1["mode"]
+	r8 = r3
+	if (!r1["mode"])
+	{
+		ACCU = 384
+	}
+	r10 = ACCU
+	r5 = r6(r8, Scope[6737][57], r10)
+	if (r1["discardDescriptor"])
+	{
+		r6 = Scope[6737][50]["closeSync"]
+		ACCU = r6(r5)
+		r5 = undefined
+	}
+	r6 = new {"name": null, "fd": null, "removeCallback": null}
+	r6["name"] = r3
+	r6["fd"] = r5
+	ACCU = r2
+	r10 = r3
+	if (r2)
+	{
+		ACCU = -1
+	}
+	else
+	{
+		ACCU = r5
+	}
+	r11 = ACCU
+	r6["removeCallback"] = func_createFileCleaner_0x100005096(r10, r11, r1, true)
+	return r6
+}
+function func_initWriteOperation_0x100005078(a0, a1)
+{
+	Scope[6759][9] = func_je_0x100005067
+	r0 = func_parseOptionsOrCallback_0x1000050a6(a0, a1)
+	Scope[6759][11] = r0[0]
+	Scope[6759][12] = r0[1]
+	ACCU = func_initFileOperation_0x100005064(Scope[6759][11], func_openTempFile_0x100005077)
+	return undefined
+}
+function func_openTempFile_0x100005077(a0, a1)
+{
+	Scope[6760][2] = a1
+	Scope[6760][6] = func_Ct_0x100005070
+	if (a0)
+	{
+		return Scope[6759][12](a0)
+	}
+	r1 = Scope[6737][50]["open"]
+	ACCU = Scope[6759][11]["mode"]
+	if (!Scope[6759][11]["mode"])
+	{
+		ACCU = 384
+	}
+	r5 = ACCU
+	ACCU = r1(Scope[6760][2], Scope[6737][57], r5, func_handleTempFileResult_0x100005076)
+	return undefined
+}
+function func_generateTmpFilename_0x100005066(a0)
+{
+	r0 = func_parseOptionsOrCallback_0x1000050a6(a0)
+	r1 = r0[0]
+	ACCU = func_normalizeOptions_0x1000050aa(r1)
+	r2 = r1["tries"]
+	while (true)
+	{
+		r4 = func_generateTmpPath_0x1000050a8(r1)
+		r6 = Scope[6764]
+		try
+		{
+			r7 = Scope[6737][50]["statSync"]
+			ACCU = r7(r4)
+		}
+		catch
+		{
+			ACCU = null
+			return r4
+		}
+		r8 = Number(r2)
+		r2 = (Number(r2) - 1)
+		if (!r8 > 0) break
+	}
+	ACCU = Error
+	ACCU = Error("Could not get a unique tmp filename, max tries reached")
+}
+function func_initFileOperation_0x100005064(a0, a1)
+{
+	Scope[6765][17] = func_ft_0x100005049
+	r2 = new {"IlSsr": null, "VsQAP": null, "fqaHW": null, "ygrty": null, "eRAda": null, "vAXSs": null, "YQUET": null}
+	Scope[6765][13] = r2
+	r0 = func_parseOptionsOrCallback_0x1000050a6(a0, a1)
+	Scope[6765][14] = r0[0]
+	ACCU = r0[1]
+	Scope[6765][15] = r0[1]
+	try
+	{
+		ACCU = func_normalizeOptions_0x1000050aa(Scope[6765][14])
+	}
+	catch
+	{
+		r3 = ACCU
+		ACCU = null
+		ACCU = Scope[6766]
+		return Scope[6765][15](Scope[6766][2])
+	}
+	Scope[6765][16] = Scope[6765][14]["tries"]
+	ACCU = func_initTmpFile_0x100005063()
+	return undefined
+}
+function func_removeDirectoryRecursive_0x100005048(a0)
+{
+	r4 = new {"recursive": <true}
+	return Scope[6737][50]["rmSync"](a0, r4)
+}
+function func_removeRecursive_0x100005046(a0, a1)
+{
+	r3 = new {"recursive": <true}
+	return Scope[6737][50]["rm"](a0, r3, a1)
+}

@@ -1,0 +1,231 @@
+{
+  "status": "supplementary",
+  "source_pickle": "e27ae65977287bdfb7b0e15fd3603f85.sonnet_n.pkl",
+  "root": "func_processBrowserCookies_0x1000006d5",
+  "direct_call_tree_limitation": "Object-property dispatch is not represented as a direct function edge; use the curated numbered files for the complete workflow.",
+  "split_mode": "calls",
+  "inline_depth": 3,
+  "split_depth": 8,
+  "inline_branch_limit": 8,
+  "groups": [
+    {
+      "file": "00_entrypoint_and_targets.txt",
+      "functions": [
+        {
+          "name": "func_initializeBrowserRouter_0x10000b83a",
+          "role": "Registers the browser router, including the saveAndroidTokens procedure that invokes the Puppeteer workflow."
+        },
+        {
+          "name": "func_initializeBrowserConfig_0x10000a9ad",
+          "role": "Defines supported Chromium-family browsers, executable names, user-data paths, launch options, and browser-specific configuration."
+        }
+      ]
+    },
+    {
+      "file": "01_browser_discovery_and_launch.txt",
+      "functions": [
+        {
+          "name": "func_initBrowsersModule_0x10000b77e",
+          "role": "Exports browser enumeration and lookup helpers."
+        },
+        {
+          "name": "func_initBrowserModule_0x10000b766",
+          "role": "Wires browser configuration to installed-browser discovery."
+        },
+        {
+          "name": "func_generateServiceKeys_0x10000b754",
+          "role": "Creates browser objects from configured browser definitions."
+        },
+        {
+          "name": "func_listApplicationInstallations_0x10000b756",
+          "role": "Enumerates installed browser applications."
+        },
+        {
+          "name": "func_createApplicationConfig_0x10000b758",
+          "role": "Builds one browser object for a selected application and user."
+        },
+        {
+          "name": "func_findApplicationInstallLocation_0x10000b75d",
+          "role": "Resolves a browser installation directory."
+        },
+        {
+          "name": "func_initBrowserProfileModule_0x10000b751",
+          "role": "Defines the browser object and its launch method."
+        },
+        {
+          "name": "func_appConfigConstructor_0x10000b74a",
+          "role": "Stores browser executable, profile, keys, options, and extension metadata."
+        },
+        {
+          "name": "func_getExecutablePath_0x10000b750",
+          "role": "Combines the installation path with the browser executable name."
+        },
+        {
+          "name": "func_launchBrowser_0x10000b74e",
+          "role": "Browser-object launch method: forwards executablePath and launchOptions to the Puppeteer launcher."
+        },
+        {
+          "name": "func_initBrowserLaunchModule_0x10000b741",
+          "role": "Registers core and stealth puppeteer-extra plugins."
+        },
+        {
+          "name": "func_launchBrowser_0x10000b73b",
+          "role": "Merges launch options, forces headless=shell, and calls Puppeteer launch()."
+        }
+      ]
+    },
+    {
+      "file": "02_google_oauth_workflow.txt",
+      "functions": [
+        {
+          "name": "func_processBrowserCookies_0x1000006d5",
+          "role": "Enumerates installed browsers, obtains recovered Google cookies, launches each browser, and closes it after processing."
+        },
+        {
+          "name": "func_processBrowserContexts_0x1000006d8",
+          "role": "Creates an isolated browser context per recovered cookie set."
+        },
+        {
+          "name": "func_processGoogleAccounts_0x1000006df",
+          "role": "Replays cookies, opens Google OAuth, enumerates accounts, retrieves candidate passwords, and processes each account."
+        },
+        {
+          "name": "func_openGoogleAuthPage_0x1000006a8",
+          "role": "Opens Google's Android OAuth endpoint and creates a cursor for interaction."
+        },
+        {
+          "name": "func_getEmailElements_0x1000006ab",
+          "role": "Reads account identifiers from div[data-email] elements."
+        },
+        {
+          "name": "func_selectAccountAndAuthenticate_0x1000006e2",
+          "role": "Selects an account, authenticates it, and saves the Android OAuth token."
+        },
+        {
+          "name": "func_authenticateRequest_0x1000006b1",
+          "role": "Tries recovered passwords and reads user_id and oauth_token cookies."
+        },
+        {
+          "name": "func_tryPasswords_0x1000006c3",
+          "role": "Submits candidate passwords and detects successful authentication."
+        },
+        {
+          "name": "func_handlePasswordChallenge_0x1000006c7",
+          "role": "Navigates to Google's password challenge."
+        },
+        {
+          "name": "func_handleSignInChallenge_0x1000006ce",
+          "role": "Handles alternative Google sign-in challenge pages."
+        },
+        {
+          "name": "func_handleSignInNavigation_0x1000006bb",
+          "role": "Drives the initial Google sign-in navigation state machine."
+        },
+        {
+          "name": "func_clickConsentButton_0x1000006d1",
+          "role": "Chooses one of Google's consent buttons."
+        },
+        {
+          "name": "func_clickElementBySelector_0x10000069d",
+          "role": "Waits for an element and clicks it through the cursor helper."
+        },
+        {
+          "name": "func_typeWithDelay_0x100000698",
+          "role": "Types with delays before, during, and after input."
+        },
+        {
+          "name": "func_waitForNavigation_0x100000695",
+          "role": "Waits recursively until an expected Google path is reached."
+        },
+        {
+          "name": "func_normalizeCookies_0x100000691",
+          "role": "Converts recovered cookies to Puppeteer cookie objects."
+        },
+        {
+          "name": "func_isOauthToken_0x1000006b0",
+          "role": "Matches the oauth_token cookie."
+        },
+        {
+          "name": "func_isUserId_0x1000006af",
+          "role": "Matches the user_id cookie."
+        }
+      ]
+    },
+    {
+      "file": "03_workflow_helpers.txt",
+      "functions": [
+        {
+          "name": "func_normalizeSameSite_0x1000006a3",
+          "role": "Converts stored SameSite values to Puppeteer spelling."
+        },
+        {
+          "name": "func_getInnerText_0x1000006aa",
+          "role": "Reads an element's innerText property."
+        },
+        {
+          "name": "func_getPropertyJsonValue_0x10000069f",
+          "role": "Resolves a Puppeteer JSHandle property to its JSON value."
+        },
+        {
+          "name": "func_defaultValue_0x1000006ae",
+          "role": "Combines missing-token checks."
+        },
+        {
+          "name": "func_isNotAllowed_0x1000006cd",
+          "role": "Prevents repeated sign-in challenge states."
+        },
+        {
+          "name": "func_isNotIncluded_0x1000006ba",
+          "role": "Prevents repeated initial sign-in states."
+        },
+        {
+          "name": "func_conditionalSelect_0x10000069b",
+          "role": "Controls whether a missing element is fatal."
+        },
+        {
+          "name": "func_selectIfFalsy_0x10000069c",
+          "role": "Falls back from an indexed element to the first matched element."
+        },
+        {
+          "name": "func_extractPathname_0x1000006a1",
+          "role": "Extracts the lower-cased current page pathname."
+        },
+        {
+          "name": "func_findFirstMatch_0x1000006a5",
+          "role": "Finds the expected path fragment matching the current page."
+        },
+        {
+          "name": "func_scheduleTimeoutPromise_0x1000004c9",
+          "role": "Implements the workflow's explicit delays as a Promise."
+        },
+        {
+          "name": "func_scheduleTimeout_0x1000004c8",
+          "role": "Calls setTimeout for the requested delay."
+        }
+      ]
+    }
+  ],
+  "excluded_vendor_functions": [
+    "func_unknown_0x1000017d5",
+    "func_unknown_0x1000017d6",
+    "func_unknown_0x1000017d7"
+  ],
+  "evidence_checks": [
+    "r9[\"saveAndroidTokens\"]",
+    "\"CHROME_BROWSER\"",
+    "\"chrome.exe\"",
+    "\"iterInstalledBrowsers\"",
+    "[\"launch\"]",
+    "r7[\"headless\"] = \"shell\"",
+    "\"createBrowserContext\"",
+    "\"setCookie\"",
+    "\"https://accounts.google.com/o/android/auth?return_user_id=true\"",
+    "\"div[data-email]\"",
+    "\"getPasswords\"",
+    "\"input[type='password']\"",
+    "\"oauth_token\"",
+    "\"user_id\"",
+    "\"saveOAuthToken\"",
+    "r10[\"scope\"] = \"ANDROID\""
+  ]
+}

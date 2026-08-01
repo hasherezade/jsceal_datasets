@@ -1,0 +1,53 @@
+function func_initUrlModule_0x10000ba98(a0)
+{
+	Scope[1348][6] = func_o_0x10000ba93
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	ACCU = ToName("target")
+	r5 = DefineClass([5, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[17], <NumberDictionary[16], [13]], func_createRequestUrl_0x10000ba95, URL, r8, func_getUrlPath_0x10000ba97)
+	a0["default"] = func_createRequestUrl_0x10000ba95
+	return undefined
+}
+function func_getUrlPath_0x10000ba97()
+{
+	r2 = ("" + <this>["pathname"])
+	return (r2 + <this>["search"])
+}
+function func_createRequestUrl_0x10000ba95(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}

@@ -1,0 +1,332 @@
+function func_keyboard_0x10000d2c6(a0)
+{
+	Scope[13][5] = func_o_0x10000d2c1
+	r0 = new {"V": 23187, "J": ")Ku4", "S": 88972, "g": "kh^v", "L": 24671, "X": "[Jy3", "j": 58430, "E": "toM2", "c": 70635, "x": "b48I", "K": 1202, "u": 37737, "A": "L@kv", "s": 103569, "b": "9hYk", "i": 16241, "w": "]1@2", "f": 101292, "t": "eeST", "P": 110316, "I": "p8sI", "p": 119892, "o": "9pb7", "R": 76166, "v": "A5nh", "N": 89272, "M": "8dGo", "k": 44392, "Q": 107771, "W": "kh^v", "T": 4362, "G": "mwAz", "y": 73473, "e": "gm42", "U": 58553, "q": 97317, "O": "YbH*"}
+	r3 = 0
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!(ACCU))
+	{
+		r5 = func_unknown_0x10000d2c5
+	}
+	r8 = Object["defineProperty"]
+	r11 = "__esModule"
+	r12 = new {"value": <true}
+	ACCU = r8(a0, r11, r12)
+	a0["keyboard"] = undefined
+	r11 = func_timer_0x10000d2c0["exports"]()
+	r4 = r5(r11)
+	r10 = r4["default"]
+	a0["keyboard"] = r10(r0)
+	return undefined
+}
+function func_unknown_0x10000d2c5(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r1 = new {"default": null}
+		r1["default"] = a0
+		ACCU = r1
+	}
+	return ACCU
+}
+function func_timer_0x10000d2c0(a0)
+{
+	Scope[14][9] = func_c_0x10000d2b2
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000d2b8
+	}
+	r1 = ACCU
+	r5 = Object["defineProperty"]
+	r8 = "__esModule"
+	r9 = new {"value": <true}
+	ACCU = r5(a0, r8, r9)
+	r8 = func_exportKeys_0x10000d2ad["exports"]()
+	Scope[14][10] = r1(r8)
+	r2 = require("events")
+	Scope[14][11] = func_setupCli_0x10000d29a["exports"]()
+	Scope[14][12] = func_exportLower_0x10000d2b1["exports"]()
+	r8 = r2["EventEmitter"]
+	ACCU = ToName("start")
+	ACCU = ToName("stop")
+	ACCU = ToName("handler")
+	r6 = DefineClass([9, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[29], <NumberDictionary[16], [12, 20, 28]], func_inherit_0x10000d2b9, r8, 56752, func_startTimer_0x10000d2bb, "xQ)2", func_stopTimer_0x10000d2bd, "epz[", func_dispatch_0x10000d2bf)
+	a0["default"] = func_inherit_0x10000d2b9
+	return undefined
+}
+function func_dispatch_0x10000d2bf()
+{
+	r1 = ...
+	r0 = ...
+	try
+	{
+		ACCU = Scope[14][10]["default"]
+		r3 = Scope[14][10]["default"](...r0))
+		r6 = <this>["emit"]
+		r8 = Scope[14][12]["toLowerCase"]
+		r8 = r8(r3["action"])
+		ACCU = r6(r8, r3)
+		r6 = <this>["emit"]
+		ACCU = r6("event", r3)
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = Scope[15]
+	}
+	return undefined
+}
+function func_stopTimer_0x10000d2bd()
+{
+	r2 = Scope[14][8]
+	ACCU = !(<this>["id"] == null)
+	if (!(<this>["id"] == null))
+	{
+		try
+		{
+			r4 = Scope[14][11]["stop"]
+			ACCU = r4(<this>["id"])
+			ACCU = -1
+			r2 = -1
+			r1 = -1
+		}
+		catch
+		{
+			r2 = ACCU
+			r1 = 0
+		}
+		<this>["id"] = undefined
+		ACCU = null
+		if (r1 === 0)
+		{
+			ACCU = r2
+		}
+	}
+	return undefined
+}
+function func_startTimer_0x10000d2bb()
+{
+	if (<this>["id"] == null)
+	{
+		r3 = Scope[14][11]["start"]
+		r4 = <this>["handler"]["bind"]
+		r4 = r4(<this>)
+		ACCU = r3(r4)
+		r3 = r3(r4)
+		<this>["id"] = ACCU
+		ACCU = r3
+	}
+	return undefined
+}
+function func_inherit_0x10000d2b9()
+{
+	ACCU = <closure>
+	ACCU = r0
+	r4 = supper(r0)
+	ACCU = <this>
+	<this> = r4
+	return <this>
+}
+function func_interopDefault_0x10000d2b8(a0)
+{
+	if (a0)
+	ACCU = a0["__esModule"]
+		&& (a0["__esModule"])
+	{
+		ACCU = a0
+	}
+	else
+	{
+		r2 = new {"default": null}
+		r2["default"] = a0
+		ACCU = r2
+	}
+	return ACCU
+}
+function func_exportLower_0x10000d2b1(a0)
+{
+	Scope[18][4] = func_n_0x10000d2ae
+	r4 = Object["defineProperty"]
+	r7 = "__esModule"
+	r8 = new {"value": <true}
+	ACCU = r4(a0, r7, r8)
+	a0["toLowerCase"] = func_Lower_0x10000d2b0
+	return undefined
+}
+function func_Lower_0x10000d2b0(a0)
+{
+	r2 = a0["toLowerCase"]
+	return r2()
+}
+function func_exportKeys_0x10000d2ad(a0)
+{
+	Scope[20][13] = func_E_0x10000d29b
+	Scope[20][14] = func_tagName_0x10000d29d
+	r3 = Object["defineProperty"]
+	r6 = "__esModule"
+	r7 = new {"value": <true}
+	ACCU = r3(a0, r6, r7)
+	Scope[20][12] = func_setupCli_0x10000d29a["exports"]()
+	ACCU = ToName("value")
+	ACCU = ToName("state")
+	ACCU = ToName("isKeyPressed")
+	ACCU = ToName("isKeyToggled")
+	ACCU = ToName("isKeyBitSet")
+	r4 = DefineClass([13, <DescriptorArray[4], <NumberDictionary[7], [], <NameDictionary[53], <NumberDictionary[28], [13, 21, 28, 36, 44]], func_init_0x10000d2a2, null, 55574, func_getKeyValue_0x10000d2a4, "^Ceg", func_modifiers_0x10000d2a6, "M2Ty", func_isBitSet_0x10000d2a8, func_E_0x10000d29b, func_bit_0x10000d2aa, func_E_0x10000d29b, func_hasFlag_0x10000d2ac)
+	a0["default"] = func_init_0x10000d2a2
+	return undefined
+}
+function func_hasFlag_0x10000d2ac(a0, a1)
+{
+	ACCU = <this>["keyState"]
+	r4 = <this>["keyState"]
+	if (!<this>["keyState"] == undefined)
+	{
+		ACCU = r4[a0]
+	}
+	else
+	{
+		ACCU = undefined
+	}
+	if (!ACCU)
+	{
+		ACCU = 0
+	}
+	r4 = ACCU
+	return !(!Boolean((r4 & a1)))
+}
+function func_bit_0x10000d2aa(a0)
+{
+	return <this>["isKeyBitSet"](a0, 1)
+}
+function func_isBitSet_0x10000d2a8(a0)
+{
+	return <this>["isKeyBitSet"](a0, 128)
+}
+function func_modifiers_0x10000d2a6()
+{
+	r1 = new {"shift": null, "ctrl": null, "alt": null, "win": null, "caps": null, "num": null}
+	r2 = <this>["isKeyPressed"]
+	r1["shift"] = r2(16)
+	r2 = <this>["isKeyPressed"]
+	r1["ctrl"] = r2(17)
+	r2 = <this>["isKeyPressed"]
+	r1["alt"] = r2(18)
+	r2 = <this>["isKeyPressed"]
+	ACCU = r2(91)
+	if (!r2(91))
+	{
+		r2 = <this>["isKeyPressed"]
+		ACCU = r2(92)
+	}
+	r1["win"] = ACCU
+	r2 = <this>["isKeyToggled"]
+	r1["caps"] = r2(20)
+	r2 = <this>["isKeyToggled"]
+	r1["num"] = r2(144)
+	return r1
+}
+function func_getKeyValue_0x10000d2a4()
+{
+	if (!<this>["keyState"])
+	{
+		return ""
+	}
+	try
+	{
+		if (!<this>["_value"] == undefined)
+		{
+			r4 = "_value"
+			r5 = Scope[20][12]["convertKeypress"]
+			r6 = <this>["vkCode"]
+			r7 = <this>["scanCode"]
+			r8 = <this>["hkl"]
+			r9 = <this>["keyState"]
+			ACCU = r5(r6, r7, r8, r9)
+			r5 = r5(r6, r7, r8, r9)
+			<this>[r4] = ACCU
+			ACCU = r5
+		}
+	}
+	catch
+	{
+		ACCU = null
+		<this>["_value"] = ""
+	}
+	return <this>["_value"]
+}
+function func_init_0x10000d2a2(a0, a1, a2, a3, a4, a5)
+{
+	<this>["vkCode"] = a1
+	<this>["scanCode"] = a2
+	<this>["pid"] = a3
+	<this>["hkl"] = a4
+	<this>["keyState"] = a5
+	<this>["action"] = func_tagName_0x10000d29d(a0)
+	return undefined
+}
+function func_tagName_0x10000d29d(a0)
+{
+	r2 = a0
+	switch ()
+	case a0 === 256:
+	{
+		return "KEYDOWN"
+	}
+	case r2 === 257:
+	{
+		return "KEYUP"
+	}
+	case r2 === 260:
+	{
+		return "SYSKEYDOWN"
+	}
+	case r2 === 261:
+	{
+		return "SYSKEYUP"
+	}
+	default:
+	{}
+	r3 = ("Invalid tag: " + a0)
+	ACCU = Error
+	ACCU = Error(r3)
+}
+function func_setupCli_0x10000d29a(a0)
+{
+	Scope[27][10] = func_x_0x10000d28e
+	ACCU = a0
+	if (a0)
+	{
+		ACCU = a0["__importDefault"]
+	}
+	if (!ACCU)
+	{
+		ACCU = func_interopDefault_0x10000d299
+	}
+	r1 = ACCU
+	r6 = Object["defineProperty"]
+	r9 = "__esModule"
+	r10 = new {"value": <true}
+	ACCU = r6(a0, r9, r10)
+	a0["start"] = func_start_0x10000d290
+	a0["stop"] = func_stop_0x10000d292
+	a0["convertKeypress"] = func_convertKeypress_0x10000d294
+	r9 = func_exportDefault_0x10000d28d["exports"]()
+	Scope[27][11] = r1(r9)
+	return undefined
+}

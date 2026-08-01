@@ -1,0 +1,283 @@
+function func_createRequest_0x10000be03()
+{
+	Scope[1148][4] = func_h_0x10000bdfa
+	r1 = new {"bipAE": null, "YTANN": null, "FHUbY": null, "Nrygh": null, "QWpXc": null, "knsHa": null, "kOkYx": null}
+	Scope[1148][5] = r1
+	r1 = new {"request": null, "response": null}
+	r2 = new {"headers": null}
+	r2["headers"] = func_redirect_0x10000be00
+	r1["request"] = r2
+	r2 = new {"headers": null}
+	r2["headers"] = func_handleCookies_0x10000be02
+	r1["response"] = r2
+	return r1
+}
+function func_handleCookies_0x10000be02(a0)
+{
+	r7 = <closure>
+	r8 = <this>
+	r1 = ACCU
+	try
+	{
+		r0 = a0["headers"]
+	}
+	catch
+	{
+		r8 = ACCU
+		ACCU = null
+		ACCU = Scope[1149]
+		r9 = r1
+		return Scope[1149][2]
+	}
+	ACCU = func_S_0x10000be01
+	try
+	{
+		r9 = r0["getAll"]
+		r2 = r9("set-cookie")
+		r3 = func_parseCookies_0x100000a12(r2)
+		r4 = r3["user_id"]
+		r5 = r3["oauth_token"]
+		r11 = !Boolean(r4)
+		r12 = !Boolean(r5)
+		if (!func_coalesce_0x10000bde4(r11, r12))
+		{
+			r11 = global_iB["google"]["saveOAuthToken"]
+			r10 = r11["mutate"]
+			r12 = new {"userId": null, "scope": null, "value": null}
+			r12["userId"] = r4
+			r12["scope"] = "ANDROID"
+			r12["value"] = r5
+			r10 = r10(r12)
+			r9 = r10["catch"]
+			r10 = r9(func_noop_0x1000004cf)
+			r9 = r1
+			r9 = await r10
+			r10 = _GeneratorGetResumeMode(r1)
+			if (!r10 === 0)
+			{
+				ACCU = r9
+			}
+			if (Scope[1148][6])
+			{
+				r9 = r0["set"]
+				ACCU = r9("location", Scope[1148][6])
+				r10 = new {"status": 302}
+				r9 = r1
+				return r10
+			}
+		}
+		r10 = undefined
+		r9 = r1
+		ACCU = r10
+		return r10
+	}
+	catch {}
+	r9 = ACCU
+	ACCU = null
+	ACCU = Scope[1151]
+	r10 = r1
+	return Scope[1151][2]
+}
+function func_redirect_0x10000be00(a0)
+{
+	ACCU = func_connectUrl_0x100005cce
+	r6 = func_connectUrl_0x100005cce(a0["target"])
+	r1 = r6["searchParams"]
+	r6 = r6["searchParams"]["get"]
+	r6 = r6("continue")
+	ACCU = Scope[1148][6]
+	Scope[1148][6] = r6
+	if (!Scope[1148][6])
+	{
+		return undefined
+	}
+	r6 = r1["get"]
+	r8 = "authuser"
+	r2 = r6(r8)
+	if (!r6(r8))
+	{
+		return undefined
+	}
+	ACCU = func_connectUrl_0x100005cce
+	r4 = func_connectUrl_0x100005cce(Scope[1148][6])
+	r7 = r4["searchParams"]
+	r6 = r7["set"]
+	ACCU = r6("authuser", r2)
+	r6 = r4["toString"]
+	r6 = r6()
+	ACCU = Scope[1148][6]
+	Scope[1148][6] = r6
+	return undefined
+}
+function func_coalesce_0x10000bde4(a0, a1)
+{
+	ACCU = a0
+	if (!a0)
+	{
+		ACCU = a1
+	}
+	return ACCU
+}
+function func_connectUrl_0x100005cce(a0, a1)
+{
+	r2 = a0
+	ACCU = a1
+	if (a1 == undefined)
+	{
+		ACCU = "https://unknown"
+	}
+	else
+	{
+		ACCU = a1
+	}
+	r3 = ACCU
+	try
+	{
+		ACCU = <closure>
+		ACCU = r0
+		r10 = supper(r2, r3)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	catch
+	{
+		ACCU = null
+		ACCU = <closure>
+		r7 = supper
+		r9 = ("https://" + r3)
+		ACCU = r0
+		r10 = r7(r2, r9)
+		ACCU = <this>
+		<this> = r10
+		ACCU = <this>
+	}
+	return <this>
+}
+function func_parseCookies_0x100000a12(a0)
+{
+	ACCU = a0
+	if (a0 == undefined)
+	{
+		ACCU = []
+	}
+	else
+	{
+		ACCU = a0
+	}
+	r0 = ACCU
+	r2 = new {"V": "epz[", "J": 42366, "S": "toM2", "g": 21661, "L": "%r7r", "X": 79234}
+	r4 = {}
+	r11 = GetIterator(r0)
+	r10 = r11["next"]
+	ACCU = false
+	r12 = false
+	try
+	{
+		while (true)
+		{
+			r12 = true
+			r16 = r10()
+			if (r16["done"]) break
+			r12 = false
+			r19 = r16["value"]["split"]
+			r19 = r19(";")
+			r19 = r19[0]
+			r22 = r2["g"]
+			r18 = r19["trim"]
+			r18 = r18()
+			r21 = r2["X"]
+			r17 = r18["split"]
+			r17 = r17("=")
+			r19 = GetIterator(r17)
+			ACCU = false
+			r20 = false
+			try
+			{
+				if (!false)
+				r20 = true
+				r24 = r19["next"]()
+				ACCU = r24["done"]
+					&& (!r24["done"])
+				{
+					r20 = false
+					ACCU = r24["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r7 = ACCU
+				if (!r20)
+				r20 = true
+				r24 = r19["next"]()
+				ACCU = r24["done"]
+					&& (!r24["done"])
+				{
+					r20 = false
+					ACCU = r24["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r8 = ACCU
+				ACCU = -1
+				r22 = -1
+				r21 = -1
+			}
+			catch
+			{
+				r22 = ACCU
+				r21 = 0
+			}
+			if (!r20)
+			{
+				try
+				{
+					if (!r19["return"] == undefined)
+					{
+						ACCU = r19["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (!r21 === 0) continue
+			r13 = 0
+			r14 = r22
+			break
+			ACCU = r8
+			r4[r7] = r8
+		}
+		ACCU = -1
+		r14 = -1
+		r13 = -1
+	}
+	catch
+	{
+		r14 = ACCU
+		r13 = 0
+	}
+	if (!r12)
+	{
+		try
+		{
+			if (!r11["return"] == undefined)
+			{
+				ACCU = r11["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r13 === 0)
+	{
+		ACCU = r14
+	}
+	return r4
+}
+function func_noop_0x1000004cf()
+{
+	return undefined
+}

