@@ -1,0 +1,263 @@
+function func_unknown_0x10000338f()
+{
+	r5 = Scope[0]
+	r3 = func_r_0x100003381
+	r0 = new {"M": "@Boa", "q": 22533, "o": "t2fh", "N": 27057, "a": "8rJa", "e": 21704, "x": "DOCG", "L": 4530, "R": "T@Nv", "O": 7926, "t": "gFw1", "U": 19366, "B": "7)d%", "u": 30309, "F": "5Rrg", "w": 22040, "J": "ey1O", "p": 14297, "K": "SD[%", "Q": 21680, "G": "0mV*", "b": 18379, "E": "PPql", "l": 19562, "v": "zR$z", "z": 6938, "i": "Ggjr", "f": 33715, "g": "0g^R", "C": 30400, "k": "Trqd", "s": 7856, "n": "t2fh", "r": 23469, "y": "RTNU", "D": 22554, "S": 5872, "c": "hHs[", "d": 2759, "I": "quv[", "P": 9689, "Z": "H[vw", "W": 34056, "m": "Ggjr", "M1": 22403, "M3": "Trqd", "M4": 6555, "M9": "PLQR", "MM": 14966, "Mq": "7m!f", "MT": 10882, "MN": "R@Xo", "Ma": 13673, "Me": "%vM1", "MY": 17633, "Mx": "Ggjr", "ML": 33463, "MR": "Trqd", "MO": 36033, "MA": "2)MW", "MH": 13425, "MU": "Q7R0", "MB": 24354, "Mu": "G%T)", "MF": 34682, "Mw": 24228, "MJ": "T04x", "Mp": 10941, "MK": "G%T)", "MQ": 4189, "MG": "RTNU", "ME": 2623, "Ml": "sR@P", "Mv": 7146, "Mz": "ey1O", "MX": 19898, "Mf": 18480, "MC": "jET!", "Mk": 11331, "Ms": "t2fh", "Mn": 29797, "Mr": "7)d%", "My": 8329, "MD": "7m!f", "MS": 23309, "Md": 17792, "MI": 26858, "MZ": "yj1s", "MW": 22334, "Mj": 8137, "h0": "Q7R0", "h2": 21396, "h3": "1llZ", "h5": 22739, "h6": "0g^R", "h7": 4483, "h8": "zR$z", "h9": 10782, "hM": "c43k", "hq": 1783, "hT": "up8v", "ho": 25770, "hN": "Q7R0", "ha": 36710, "he": "1llZ", "hY": 27055, "hx": "ByHW", "hO": 2724, "hA": "cjp7", "hH": 21587, "ht": 1785, "hU": "q]&U", "hB": 36152, "hu": 32591, "hF": "2)MW", "hJ": 18257, "hp": "%vM1", "hK": 12724, "hQ": "@Xw%", "hG": 30688, "hb": 1190, "hE": 13286, "hz": "YaU*", "hX": 12028, "hf": "2)MW", "hg": 21077, "hk": 8638, "hs": 21345, "hn": 8372, "hr": "Pusi", "hS": 12670, "hc": "[@0#", "hd": 26757, "hI": "@Xw%", "hP": 5582, "hZ": "jET!", "hW": 4654, "hm": "[@0#", "hj": 36770, "q0": "1llZ", "q3": 14402, "q4": 30259, "q6": 17456, "q7": "PLQR", "q8": 7069, "q9": "Q7R0", "qM": 34428}
+	Scope[21][2] = new {"M": 31}
+	r6 = new {"BMgbP": null, "cZGPi": null, "zaWpC": null, "lqFBG": null, "keTgD": null, "fkuel": null, "pgxVh": null, "shqbr": null, "BmNAx": null, "bWcBM": null, "dcVPO": null, "jiLjB": null, "acbCO": null, "lnLRT": null, "CvAHx": null, "gFiiS": null, "Iyjrs": null, "iLcse": null, "ovuXu": null, "umRIY": null, "inppR": null, "YLqrj": null}
+	r7 = func_r_0x100003381(r0["M"], r0["q"])
+	r7 = (r7 + func_r_0x100003381(r0["o"], r0["N"]))
+	r7 = (r7 + func_r_0x100003381(r0["a"], r0["e"]))
+	r7 = (r7 + func_r_0x100003381(r0["x"], r0["L"]))
+	r7 = (r7 + func_r_0x100003381(r0["R"], r0["O"]))
+	r7 = (r7 + func_r_0x100003381(r0["t"], r0["U"]))
+	r7 = (r7 + func_r_0x100003381(r0["B"], r0["u"]))
+	r7 = (r7 + func_r_0x100003381(r0["F"], r0["w"]))
+	r7 = (r7 + func_r_0x100003381(r0["J"], r0["p"]))
+	r7 = (r7 + func_r_0x100003381(r0["K"], r0["Q"]))
+	r7 = (r7 + func_r_0x100003381(r0["G"], r0["b"]))
+	r7 = (r7 + func_r_0x100003381(r0["E"], r0["l"]))
+	r6["BMgbP"] = (r7 + "2")
+	r6["cZGPi"] = func_cZGPi_0x100003382
+	r6["zaWpC"] = func_zaWpC_0x100003383
+	r6["lqFBG"] = func_lqFBG_0x100003384
+	r6["keTgD"] = func_keTgD_0x100003385
+	r6["fkuel"] = func_fkuel_0x100003386
+	r7 = func_r_0x100003381(r0["v"], r0["z"])
+	r6["pgxVh"] = (r7 + "n")
+	r6["shqbr"] = func_shqbr_0x100003387
+	r7 = func_r_0x100003381(r0["i"], r0["f"])
+	r7 = (r7 + func_r_0x100003381(r0["g"], r0["C"]))
+	r7 = (r7 + func_r_0x100003381(r0["k"], r0["s"]))
+	r7 = (r7 + func_r_0x100003381(r0["n"], r0["r"]))
+	r7 = (r7 + func_r_0x100003381(r0["y"], r0["D"]))
+	r7 = (r7 + func_r_0x100003381(r0["R"], r0["S"]))
+	r7 = (r7 + func_r_0x100003381(r0["c"], r0["d"]))
+	r6["BmNAx"] = (r7 + "b")
+	r6["bWcBM"] = func_r_0x100003381(r0["I"], r0["P"])
+	r6["dcVPO"] = func_r_0x100003381(r0["Z"], r0["W"])
+	r7 = func_r_0x100003381(r0["m"], r0["M1"])
+	r7 = (r7 + func_r_0x100003381(r0["M3"], r0["M4"]))
+	r7 = (r7 + func_r_0x100003381(r0["M9"], r0["MM"]))
+	r7 = (r7 + func_r_0x100003381(r0["Mq"], r0["MT"]))
+	r7 = (r7 + func_r_0x100003381(r0["MN"], r0["Ma"]))
+	r7 = (r7 + func_r_0x100003381(r0["Me"], r0["MY"]))
+	r7 = (r7 + func_r_0x100003381(r0["Mx"], r0["ML"]))
+	r7 = (r7 + func_r_0x100003381(r0["MR"], r0["MO"]))
+	r7 = (r7 + func_r_0x100003381(r0["MA"], r0["MH"]))
+	r7 = (r7 + func_r_0x100003381(r0["MU"], r0["MB"]))
+	r7 = (r7 + func_r_0x100003381(r0["Mu"], r0["MF"]))
+	r6["jiLjB"] = (r7 + func_r_0x100003381(r0["MA"], r0["Mw"]))
+	r6["acbCO"] = func_acbCO_0x100003388
+	r6["lnLRT"] = func_r_0x100003381(r0["MJ"], r0["Mp"])
+	r7 = func_r_0x100003381(r0["MK"], r0["MQ"])
+	r6["CvAHx"] = (r7 + "ll")
+	r6["gFiiS"] = func_r_0x100003381(r0["MG"], r0["ME"])
+	r6["Iyjrs"] = func_Iyjrs_0x100003389
+	r6["iLcse"] = func_iLcse_0x10000338a
+	r6["ovuXu"] = func_ovuXu_0x10000338b
+	r6["umRIY"] = func_umRIY_0x10000338c
+	r6["inppR"] = func_inppR_0x10000338d
+	r6["YLqrj"] = func_YLqrj_0x10000338e
+	r1 = r6
+	r7 = r1[func_r_0x100003381(r0["Ml"], r0["Mv"])]
+	r6 = r7[func_r_0x100003381(r0["Mz"], r0["MX"])]
+	r2 = r6("|")
+	r4 = 0
+	while (true)
+	{
+		if (![]) break
+		r7 = Number(r4)
+		r4 = (Number(r4) + 1)
+		r6 = r2[r7]
+		if (!r6 === "0")
+		{
+			if (!r6 === "1")
+			{
+				if (!r6 === "2")
+				{
+					if (!r6 === "3")
+					{
+						if (!r6 === "4")
+						{
+							if (!r6 === "5")
+							{
+								if (!r6 === "6")
+								{
+									if (!r6 === "7")
+									{
+										if (!r6 === "8")
+										{
+											if (!r6 === "9")
+											{
+												if (!r6 === "10")
+												{
+													if (!r6 === "11")
+													{
+														if (!r6 === "12")
+														{
+															if (!r6 === "13")
+															{
+																if (!r6 === "14")
+																{
+																	if (!r6 === "15")
+																	{
+																		if (!r6 === "16")
+																		{
+																			if (!r6 === "17")
+																			{
+																				if (!r6 === "18")
+																				{
+																					if (!r6 === "19")
+																					{
+																						if (!r6 === "20")
+																						{
+																							if (!r6 === "21")
+																							{
+																								if (!r6 === "22")
+																								{
+																									if (!r6 === "23")
+																									{
+																										continue
+																									}
+																									r7 = r1[r3(r0["MJ"], r0["Mf"])]
+																									ACCU = r7(global__6)
+																									continue
+																								}
+																								r7 = r1[r3(r0["MC"], r0["Mk"])]
+																								ACCU = r7(global_p6)
+																								continue
+																							}
+																							r7 = r1[r3(r0["Ms"], r0["Mn"])]
+																							r10 = r1[r3(r0["Mr"], r0["My"])]
+																							r10 = r10(global_jo)
+																							global_sa = r7(global_Dn, r10)
+																							continue
+																						}
+																						r7 = r1[r3(r0["MD"], r0["MS"])]
+																						r10 = r1[r3(r0["MA"], r0["Md"])]
+																						r10 = r10(global_Tu)
+																						global_J1 = r7(global_Dn, r10)
+																						global_SA = require("fs/promises")
+																						continue
+																					}
+																					r7 = r1[r3(r0["Mz"], r0["MI"])]
+																					r10 = r1[r3(r0["MZ"], r0["MW"])]
+																					r8 = r1
+																					ACCU = r7(global_Ea, r10, false)
+																					continue
+																				}
+																				r7 = r1[r3(r0["Ms"], r0["Mj"])]
+																				ACCU = r7(global_Ko)
+																				continue
+																			}
+																			r7 = r1[r3(r0["h0"], r0["h2"])]
+																			ACCU = r7(global_t6)
+																			continue
+																		}
+																		r7 = r1[r3(r0["h3"], r0["h5"])]
+																		r10 = r1[r3(r0["h6"], r0["h7"])]
+																		r10 = r10(global_N1)
+																		global_wA = r7(global_Dn, r10)
+																		continue
+																	}
+																	global_cM = r1[r3(r0["h8"], r0["h9"])]
+																	global_uM = r1[r3(r0["hM"], r0["hq"])]
+																	global_AM = r1[r3(r0["hT"], r0["ho"])]
+																	r7 = global_io[r3(r0["hN"], r0["ha"])]
+																	global_j1 = r7["updateInterval"]
+																	global_lM = _CopyDataPropertiesWithExcludedPropertiesOnStack(r7, "updateInterval")
+																	r8 = r3(r0["he"], r0["hY"])
+																	r7 = global_lM[(r8 + "n")]
+																	r8 = r3(r0["hx"], r0["hO"])
+																	r8 = (r8 + r3(r0["hA"], r0["hH"]))
+																	r7 = r7[(r8 + "es")]
+																	r7 = r7[r3(r0["R"], r0["ht"])]
+																	global_K1 = r7[r3(r0["hU"], r0["hB"])]
+																	global_Cl = r1[r3(r0["MC"], r0["hu"])]
+																	r7 = r1[r3(r0["hF"], r0["hJ"])]
+																	r10 = new {"id": null, "name": null, "version": null, "initchain": null, "entrychain": null, "functions": null}
+																	r10["id"] = global_cM
+																	r10["name"] = global_uM
+																	r10["version"] = global_AM
+																	r12 = new [0]
+																	r12[0] = r1[r3(r0["hp"], r0["hK"])]
+																	r10["initchain"] = r12
+																	r12 = new [0, 0, 0]
+																	r12[0] = r1[r3(r0["hQ"], r0["hG"])]
+																	r12[1] = r1[r3(r0["hU"], r0["hb"])]
+																	r12[2] = r1[r3(r0["E"], r0["hE"])]
+																	r10["entrychain"] = r12
+																	r11 = new {"install": null, "listen": null, "set": null, "unset": null}
+																	r11["install"] = func_y6_0x1000003c8
+																	r11["listen"] = func_E6_0x1000003cc
+																	r11["set"] = func_b6_0x1000003d1
+																	r11["unset"] = func_B6_0x1000003d5
+																	r10["functions"] = r11
+																	r7 = r7(func_za_0x100000242, r10)
+																	global_Ea = r7["setAvailable"]
+																	continue
+																}
+																r7 = r1[r3(r0["hz"], r0["hX"])]
+																ACCU = r7(global_Fw)
+																continue
+															}
+															r7 = r1[r3(r0["hf"], r0["hg"])]
+															ACCU = r7(global_r6)
+															continue
+														}
+														r7 = r1[r3(r0["F"], r0["hk"])]
+														ACCU = r7(global_C6)
+														continue
+													}
+													r7 = r1[r3(r0["R"], r0["hs"])]
+													ACCU = r7(global_n6)
+													continue
+												}
+												r7 = r1[r3(r0["hU"], r0["hn"])]
+												ACCU = r7(global_I6)
+												continue
+											}
+											r7 = r1[r3(r0["hr"], r0["hS"])]
+											ACCU = r7(global_m6)
+											continue
+										}
+										r7 = r1[r3(r0["hc"], r0["hd"])]
+										ACCU = r7(global_i6)
+										continue
+									}
+									r7 = r1[r3(r0["hI"], r0["hP"])]
+									ACCU = r7(global_o6)
+									continue
+								}
+								continue
+							}
+							r7 = r1[r3(r0["hZ"], r0["hW"])]
+							ACCU = r7(global_qa)
+							continue
+						}
+						r7 = r1[r3(r0["hm"], r0["hj"])]
+						ACCU = r7(global_g6)
+						continue
+					}
+					r7 = r1[r3(r0["q0"], r0["q3"])]
+					ACCU = r7(global_Dw)
+					continue
+				}
+				r7 = r1[r3(r0["MG"], r0["q4"])]
+				ACCU = r7(global_Mo)
+				continue
+			}
+			r7 = r1[r3(r0["Mu"], r0["q6"])]
+			r10 = r1[r3(r0["q7"], r0["q8"])]
+			r8 = r1
+			ACCU = r7(global_Ea, r10, false)
+			continue
+		}
+		r7 = r1[r3(r0["q9"], r0["qM"])]
+		ACCU = r7(global_M6)
+		continue
+		break
+	}
+	return undefined
+}
