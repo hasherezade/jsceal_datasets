@@ -1,6 +1,11 @@
 # Basic
 
-Input: deobfuscated file, relabeled in the basic mode
+Input: deobfuscated file, relabeled in the basic mode, func: `func_proxy_0x10000338f`
+
+Commandline used:
+```
+$ ~/jsc_deobfuscator/deobf_ai.py --inp ai_deobf/6e023b9b3097a2dba311cb06a91fe259.basic_openai.pkl --func func_proxy_0x10000338f
+```
 
 ## Suggested name
 
