@@ -1,3 +1,7 @@
+# Basic
+
+Input: deobfuscated file, relabeled in the basic mode
+
 ## Suggested name
 
 `initProxyModule`
