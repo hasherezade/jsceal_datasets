@@ -70,7 +70,7 @@ Always returns `undefined` explicitly.
 
 ## Cleaned pseudocode
 
-```
+```js
 function initProxyModule():
     // Phase 1: Core initialization
     func_Config()
