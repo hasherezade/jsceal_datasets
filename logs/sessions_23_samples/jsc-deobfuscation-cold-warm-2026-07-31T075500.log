@@ -23,7 +23,7 @@ Removing resolved-function CSV caches for the cold run:
   removing: /media/tester/black_hat_materials/samples/all/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.resolved_funcs.csv
   removing: /media/tester/black_hat_materials/samples/all/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.resolved_funcs.csv
   removing: /media/tester/black_hat_materials/samples/all/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.resolved_funcs.csv
-  removing: /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv
+  removing: /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
   removing: /media/tester/black_hat_materials/samples/all/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.resolved_funcs.csv
   removing: /media/tester/black_hat_materials/samples/all/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.resolved_funcs.csv
 
@@ -1011,10 +1011,10 @@ Done.
 Finished:   /media/tester/black_hat_materials/samples/all/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
 Completed:  2026-07-31T09:29:07+02:00
 ============================================================
-Processing: /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
-Output:     /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
+Processing: /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output:     /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
 Started:    2026-07-31T09:29:07+02:00
-Reading from serialized, already decompiled input: /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
+Reading from serialized, already decompiled input: /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
 Replace global scope done. Changed: False
 Propagating values by scopes: Done. Changed: True
 Propagating values by local variables. Done. Changed: True
@@ -1026,13 +1026,13 @@ Deobf root: func_ot_0x100000559
 Inner root: func_at_0x100000668
 Strings loaded from: func_um_0x1000005d9
 Loaded string chunks: 119315
-Warning: CSV file '/media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv' not found
+Warning: CSV file '/media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv' not found
 Missing 12523 required cached decoder functions
 Trying to brutforce values of the initial function: {'func_ot_0x100000559'}
 Searching for all deobf funcs...
 Searching finished, total: 12524
 Resolving functions finished, total: 12524
-Saved 12524 function configurations to /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv
+Saved 12524 function configurations to /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
 String deobfuscation OK
 Strings loaded from: func_um_0x1000005d9
 Hidden the strings definitions
@@ -1053,11 +1053,11 @@ Applied strict local final-pass cleanup: 25258 change(s) in 8693 function(s)
 Final refresh of decoded strings...
 String refresh: 128/13272 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.271 s
 Deobfuscation OK. Total time: 282.7252690840396 s. = 4.712087818067327 min
-Serializing to file: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.pkl
-Exporting to file /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
-Saved string list (total: 83332) to: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt.strings.txt
+Serializing to file: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.pkl
+Exporting to file /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+Saved string list (total: 83332) to: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt.strings.txt
 Done.
-Finished:   /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
+Finished:   /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
 Completed:  2026-07-31T09:34:08+02:00
 ============================================================
 Processing: /media/tester/black_hat_materials/samples/all/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
@@ -1284,9 +1284,9 @@ CSV:    /media/tester/black_hat_materials/samples/all/decompiled/e711a90b5ece538
 Unresolved decoder references: 0
 
 ------------------------------------------------------------
-Input:  /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
-Output: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
-CSV:    /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv
+Input:  /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+CSV:    /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
 Unresolved decoder references: 0
 
 ------------------------------------------------------------
@@ -2176,10 +2176,10 @@ Done.
 Finished:   /media/tester/black_hat_materials/samples/all/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
 Completed:  2026-07-31T11:15:12+02:00
 ============================================================
-Processing: /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
-Output:     /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
+Processing: /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output:     /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
 Started:    2026-07-31T11:15:12+02:00
-Reading from serialized, already decompiled input: /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
+Reading from serialized, already decompiled input: /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
 Replace global scope done. Changed: False
 Propagating values by scopes: Done. Changed: True
 Propagating values by local variables. Done. Changed: True
@@ -2191,7 +2191,7 @@ Deobf root: func_ot_0x100000559
 Inner root: func_at_0x100000668
 Strings loaded from: func_um_0x1000005d9
 Loaded string chunks: 119315
-Loaded 12524 current-payload function configurations from /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv
+Loaded 12524 current-payload function configurations from /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
 String deobfuscation OK
 Strings loaded from: func_um_0x1000005d9
 Hidden the strings definitions
@@ -2212,11 +2212,11 @@ Applied strict local final-pass cleanup: 25258 change(s) in 8693 function(s)
 Final refresh of decoded strings...
 String refresh: 128/13272 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.289 s
 Deobfuscation OK. Total time: 251.3922510339762 s. = 4.18987085056627 min
-Serializing to file: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.pkl
-Exporting to file /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
-Saved string list (total: 83332) to: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt.strings.txt
+Serializing to file: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.pkl
+Exporting to file /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+Saved string list (total: 83332) to: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt.strings.txt
 Done.
-Finished:   /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
+Finished:   /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
 Completed:  2026-07-31T11:19:42+02:00
 ============================================================
 Processing: /media/tester/black_hat_materials/samples/all/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
@@ -2431,9 +2431,9 @@ CSV:    /media/tester/black_hat_materials/samples/all/decompiled/e711a90b5ece538
 Unresolved decoder references: 0
 
 ------------------------------------------------------------
-Input:  /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.pkl
-Output: /media/tester/black_hat_materials/samples/all/deobfuscated/e81b35b76b4d97751c0724bc0c7f3b83.deobf.txt
-CSV:    /media/tester/black_hat_materials/samples/all/decompiled/e81b35b76b4d97751c0724bc0c7f3b83.dec.resolved_funcs.csv
+Input:  /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output: /media/tester/black_hat_materials/samples/all/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+CSV:    /media/tester/black_hat_materials/samples/all/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
 Unresolved decoder references: 0
 
 ------------------------------------------------------------
