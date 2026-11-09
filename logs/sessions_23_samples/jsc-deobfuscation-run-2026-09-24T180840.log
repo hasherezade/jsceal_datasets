@@ -1,0 +1,1276 @@
+Started: 2026-09-24T18:08:40+02:00
+Inputs:  23
+
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/03f4e47b9c2283c32bb8f8f042ce6e41.deobf.txt
+Started:    2026-09-24T18:08:40+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x1000079b2
+All Deobf functions found: 8230
+Checking: func_ut_0x1000000ef
+Deobf root: func_ut_0x1000000ef
+Inner root: func_lt_0x1000008a3
+Strings loaded from: func_IA_0x1000003a7
+Loaded string chunks: 211556
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.resolved_funcs.csv' not found
+Missing 8230 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_ut_0x1000000ef'}
+Searching for all deobf funcs...
+Searching finished, total: 8231
+Resolving functions finished, total: 8231
+Saved 8231 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_IA_0x1000003a7
+Hidden the strings definitions
+Hidden 8231 functions
+Deobfuscated strings in: 201.00921317099997 s. = 3.3501535528499997 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Replacement round: 6
+Refreshing decoded strings after unflattening...
+String refresh: 15/123 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.109 s
+Hidden: 11727 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 15299 change(s) in 4903 function(s)
+Final refresh of decoded strings...
+String refresh: 85/7447 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 3.264 s
+Deobfuscation OK. Total time: 346.793597344 s. = 5.779893289066666 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/03f4e47b9c2283c32bb8f8f042ce6e41.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/03f4e47b9c2283c32bb8f8f042ce6e41.deobf.txt
+Saved string list (total: 97468) to: /media/tester/T7/jsceal/v8_10/deobfuscated/03f4e47b9c2283c32bb8f8f042ce6e41.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.pkl
+Completed:  2026-09-24T18:14:37+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/0b8015cbb1ffdc6efe6a306ff5b1115f.deobf.txt
+Started:    2026-09-24T18:14:37+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000d3fe
+All Deobf functions found: 12609
+Checking: func_gt_0x100000446
+Deobf root: func_gt_0x100000446
+Inner root: func_Wt_0x100000428
+Strings loaded from: func_lg_0x10000025a
+Loaded string chunks: 123135
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.resolved_funcs.csv' not found
+Missing 12609 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_gt_0x100000446'}
+Searching for all deobf funcs...
+Searching finished, total: 12610
+Resolving functions finished, total: 12610
+Saved 12610 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_lg_0x10000025a
+Hidden the strings definitions
+Hidden 12610 functions
+Deobfuscated strings in: 97.13310631299998 s. = 1.6188851052166664 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 18/197 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.193 s
+Hidden: 18028 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 27148 change(s) in 9116 function(s)
+Final refresh of decoded strings...
+String refresh: 134/13742 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.819 s
+Deobfuscation OK. Total time: 258.19707656799994 s. = 4.303284609466666 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/0b8015cbb1ffdc6efe6a306ff5b1115f.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/0b8015cbb1ffdc6efe6a306ff5b1115f.deobf.txt
+Saved string list (total: 84854) to: /media/tester/T7/jsceal/v8_10/deobfuscated/0b8015cbb1ffdc6efe6a306ff5b1115f.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.pkl
+Completed:  2026-09-24T18:19:09+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+Started:    2026-09-24T18:19:09+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000cdd4
+All Deobf functions found: 12523
+Checking: func_ot_0x100000559
+Deobf root: func_ot_0x100000559
+Inner root: func_at_0x100000668
+Strings loaded from: func_um_0x1000005d9
+Loaded string chunks: 119315
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv' not found
+Missing 12523 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_ot_0x100000559'}
+Searching for all deobf funcs...
+Searching finished, total: 12524
+Resolving functions finished, total: 12524
+Saved 12524 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_um_0x1000005d9
+Hidden the strings definitions
+Hidden 12524 functions
+Deobfuscated strings in: 92.81814219 s. = 1.5469690365 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 23/204 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.208 s
+Hidden: 17626 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 25256 change(s) in 8692 function(s)
+Final refresh of decoded strings...
+String refresh: 128/13272 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.231 s
+Deobfuscation OK. Total time: 256.091124625 s. = 4.268185410416667 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+Saved string list (total: 83336) to: /media/tester/T7/jsceal/v8_10/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Completed:  2026-09-24T18:23:40+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/1026743185dfa10e9ddc21b5a4c578d5.deobf.txt
+Started:    2026-09-24T18:23:40+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x100005fbc
+All Deobf functions found: 2230
+Checking: func_V_0x100000422
+Deobf root: func_V_0x100000422
+Inner root: func_jt_0x100000537
+Strings loaded from: func_WZ_0x100000736
+Loaded string chunks: 19363
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.resolved_funcs.csv' not found
+Missing 2230 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_V_0x100000422'}
+Searching for all deobf funcs...
+Searching finished, total: 2231
+Resolving functions finished, total: 2231
+Saved 2231 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_WZ_0x100000736
+Hidden the strings definitions
+Hidden 2231 functions
+Deobfuscated strings in: 36.79849209500003 s. = 0.6133082015833338 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Refreshing decoded strings after unflattening...
+String refresh: 1/57 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.009 s
+Hidden: 2577 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 9212 change(s) in 3988 function(s)
+Final refresh of decoded strings...
+String refresh: 21/8294 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.289 s
+Deobfuscation OK. Total time: 88.19617290399992 s. = 1.4699362150666653 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/1026743185dfa10e9ddc21b5a4c578d5.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/1026743185dfa10e9ddc21b5a4c578d5.deobf.txt
+Saved string list (total: 10004) to: /media/tester/T7/jsceal/v8_10/deobfuscated/1026743185dfa10e9ddc21b5a4c578d5.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.pkl
+Completed:  2026-09-24T18:25:14+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/201f28b5e62e52e269757930f941c774.deobf.txt
+Started:    2026-09-24T18:25:14+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b941
+All Deobf functions found: 11693
+Checking: func_mt_0x10000032d
+Deobf root: func_mt_0x10000032d
+Inner root: func_Et_0x1000003df
+Strings loaded from: func_q8_0x1000003c2
+Loaded string chunks: 115466
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.resolved_funcs.csv' not found
+Missing 11693 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_mt_0x10000032d'}
+Searching for all deobf funcs...
+Searching finished, total: 11694
+Resolving functions finished, total: 11694
+Saved 11694 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_q8_0x1000003c2
+Hidden the strings definitions
+Hidden 11694 functions
+Deobfuscated strings in: 86.44686112299996 s. = 1.440781018716666 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 21/169 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.186 s
+Hidden: 16611 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 24142 change(s) in 8051 function(s)
+Final refresh of decoded strings...
+String refresh: 120/11934 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.742 s
+Deobfuscation OK. Total time: 241.64590189699993 s. = 4.0274316982833325 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/201f28b5e62e52e269757930f941c774.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/201f28b5e62e52e269757930f941c774.deobf.txt
+Saved string list (total: 79827) to: /media/tester/T7/jsceal/v8_10/deobfuscated/201f28b5e62e52e269757930f941c774.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.pkl
+Completed:  2026-09-24T18:29:28+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/2fe27eb8c99626e8c02e4bfd02aca962.deobf.txt
+Started:    2026-09-24T18:29:28+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000a0d4
+All Deobf functions found: 9676
+Checking: func_pt_0x1000003f2
+Deobf root: func_pt_0x1000003f2
+Inner root: func_Pt_0x1000003a8
+Strings loaded from: func_j6_0x100000254
+Loaded string chunks: 98593
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.resolved_funcs.csv' not found
+Missing 9676 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_pt_0x1000003f2'}
+Searching for all deobf funcs...
+Searching finished, total: 9677
+Resolving functions finished, total: 9677
+Saved 9677 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_j6_0x100000254
+Hidden the strings definitions
+Hidden 9677 functions
+Deobfuscated strings in: 78.43712417899997 s. = 1.3072854029833327 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 20/176 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.157 s
+Hidden: 13610 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 20515 change(s) in 7003 function(s)
+Final refresh of decoded strings...
+String refresh: 112/10769 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.845 s
+Deobfuscation OK. Total time: 213.4733879380001 s. = 3.5578897989666682 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/2fe27eb8c99626e8c02e4bfd02aca962.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/2fe27eb8c99626e8c02e4bfd02aca962.deobf.txt
+Saved string list (total: 70245) to: /media/tester/T7/jsceal/v8_10/deobfuscated/2fe27eb8c99626e8c02e4bfd02aca962.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.pkl
+Completed:  2026-09-24T18:33:12+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/376ec4dbc3363fa7131367e4c6327a46.deobf.txt
+Started:    2026-09-24T18:33:12+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000bb50
+All Deobf functions found: 11838
+Checking: func_bt_0x10000004e
+Deobf root: func_bt_0x10000004e
+Inner root: func_Bt_0x100000994
+Strings loaded from: func_EE_0x1000009d5
+Loaded string chunks: 116486
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.resolved_funcs.csv' not found
+Missing 11838 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_bt_0x10000004e'}
+Searching for all deobf funcs...
+Searching finished, total: 11839
+Resolving functions finished, total: 11839
+Saved 11839 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_EE_0x1000009d5
+Hidden the strings definitions
+Hidden 11839 functions
+Deobfuscated strings in: 100.91915329799986 s. = 1.6819858882999976 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 19/172 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.173 s
+Hidden: 16839 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 24230 change(s) in 8093 function(s)
+Final refresh of decoded strings...
+String refresh: 131/12051 candidate function(s); inlined 0 decoder argument(s); replaced 1 decoder call(s); 1.505 s
+Deobfuscation OK. Total time: 263.40440803699994 s. = 4.390073467283332 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/376ec4dbc3363fa7131367e4c6327a46.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/376ec4dbc3363fa7131367e4c6327a46.deobf.txt
+Saved string list (total: 80263) to: /media/tester/T7/jsceal/v8_10/deobfuscated/376ec4dbc3363fa7131367e4c6327a46.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.pkl
+Completed:  2026-09-24T18:37:49+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/462195f7f8033df7371e899fe9bc51de.deobf.txt
+Started:    2026-09-24T18:37:49+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x100007b37
+All Deobf functions found: 8401
+Checking: func_xt_0x100000955
+Deobf root: func_xt_0x100000955
+Inner root: func_Qt_0x1000004af
+Strings loaded from: func_Pf_0x100000018
+Loaded string chunks: 211937
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.resolved_funcs.csv' not found
+Missing 8401 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_xt_0x100000955'}
+Searching for all deobf funcs...
+Searching finished, total: 8402
+Resolving functions finished, total: 8402
+Saved 8402 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_Pf_0x100000018
+Hidden the strings definitions
+Hidden 8402 functions
+Deobfuscated strings in: 243.01782222300017 s. = 4.050297037050003 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 8/124 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.155 s
+Hidden: 11904 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 15362 change(s) in 4933 function(s)
+Final refresh of decoded strings...
+String refresh: 81/7463 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 3.627 s
+Deobfuscation OK. Total time: 437.452238887 s. = 7.290870648116667 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/462195f7f8033df7371e899fe9bc51de.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/462195f7f8033df7371e899fe9bc51de.deobf.txt
+Saved string list (total: 97670) to: /media/tester/T7/jsceal/v8_10/deobfuscated/462195f7f8033df7371e899fe9bc51de.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.pkl
+Completed:  2026-09-24T18:45:22+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/499184635d56a9827d2059256a35e530.deobf.txt
+Started:    2026-09-24T18:45:22+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b1f0
+All Deobf functions found: 11186
+Checking: func_St_0x100000419
+Deobf root: func_St_0x100000419
+Inner root: func_Dt_0x1000003ec
+Strings loaded from: func_Wh_0x1000008db
+Loaded string chunks: 110542
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.resolved_funcs.csv' not found
+Missing 11186 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_St_0x100000419'}
+Searching for all deobf funcs...
+Searching finished, total: 11187
+Resolving functions finished, total: 11187
+Saved 11187 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_Wh_0x1000008db
+Hidden the strings definitions
+Hidden 11187 functions
+Deobfuscated strings in: 147.78700902699984 s. = 2.463116817116664 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 12/153 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.178 s
+Hidden: 15905 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 22792 change(s) in 7681 function(s)
+Final refresh of decoded strings...
+String refresh: 112/11458 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.954 s
+Deobfuscation OK. Total time: 387.64012398900013 s. = 6.460668733150002 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/499184635d56a9827d2059256a35e530.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/499184635d56a9827d2059256a35e530.deobf.txt
+Saved string list (total: 75322) to: /media/tester/T7/jsceal/v8_10/deobfuscated/499184635d56a9827d2059256a35e530.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.pkl
+Completed:  2026-09-24T18:52:08+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/533d0b93ea03cd5bab4eec0f0ebadd03.deobf.txt
+Started:    2026-09-24T18:52:08+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000c882
+All Deobf functions found: 11969
+Checking: func_At_0x1000005f7
+Deobf root: func_At_0x1000005f7
+Inner root: func_gt_0x10000048e
+Strings loaded from: func_$h_0x100000554
+Loaded string chunks: 116934
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.resolved_funcs.csv' not found
+Missing 11969 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_At_0x1000005f7'}
+Searching for all deobf funcs...
+Searching finished, total: 11970
+Resolving functions finished, total: 11970
+Saved 11970 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_$h_0x100000554
+Hidden the strings definitions
+Hidden 11970 functions
+Deobfuscated strings in: 109.43214165300014 s. = 1.8238690275500025 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 19/176 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.186 s
+Hidden: 16913 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 25384 change(s) in 8649 function(s)
+Final refresh of decoded strings...
+String refresh: 118/13019 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.832 s
+Deobfuscation OK. Total time: 295.41220944099996 s. = 4.923536824016666 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/533d0b93ea03cd5bab4eec0f0ebadd03.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/533d0b93ea03cd5bab4eec0f0ebadd03.deobf.txt
+Saved string list (total: 80536) to: /media/tester/T7/jsceal/v8_10/deobfuscated/533d0b93ea03cd5bab4eec0f0ebadd03.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.pkl
+Completed:  2026-09-24T18:57:19+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/68ac84a8470d1f365f0bb2f37b6256d5.deobf.txt
+Started:    2026-09-24T18:57:19+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000d0df
+All Deobf functions found: 12439
+Checking: func_gt_0x10000046b
+Deobf root: func_gt_0x10000046b
+Inner root: func_pt_0x1000008ef
+Strings loaded from: func_rh_0x1000002b6
+Loaded string chunks: 122268
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.resolved_funcs.csv' not found
+Missing 12439 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_gt_0x10000046b'}
+Searching for all deobf funcs...
+Searching finished, total: 12440
+Resolving functions finished, total: 12440
+Saved 12440 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_rh_0x1000002b6
+Hidden the strings definitions
+Hidden 12440 functions
+Deobfuscated strings in: 92.80034536700032 s. = 1.5466724227833386 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Replacement round: 6
+Refreshing decoded strings after unflattening...
+String refresh: 21/188 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.201 s
+Hidden: 18133 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 26630 change(s) in 8933 function(s)
+Final refresh of decoded strings...
+String refresh: 119/13418 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.605 s
+Deobfuscation OK. Total time: 261.15510841000014 s. = 4.352585140166669 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/68ac84a8470d1f365f0bb2f37b6256d5.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/68ac84a8470d1f365f0bb2f37b6256d5.deobf.txt
+Saved string list (total: 84104) to: /media/tester/T7/jsceal/v8_10/deobfuscated/68ac84a8470d1f365f0bb2f37b6256d5.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.pkl
+Completed:  2026-09-24T19:01:54+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/6e023b9b3097a2dba311cb06a91fe259.deobf.txt
+Started:    2026-09-24T19:01:54+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x1000033dc
+All Deobf functions found: 3731
+Checking: func_$e_0x10000023a
+Deobf root: func_$e_0x10000023a
+Inner root: func_qt_0x1000001c2
+Strings loaded from: func_qu_0x100000365
+Loaded string chunks: 37850
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.resolved_funcs.csv' not found
+Missing 3731 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_$e_0x10000023a'}
+Searching for all deobf funcs...
+Searching finished, total: 3732
+Resolving functions finished, total: 3732
+Saved 3732 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_qu_0x100000365
+Hidden the strings definitions
+Hidden 3732 functions
+Deobfuscated strings in: 38.10813015599979 s. = 0.6351355025999965 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Refreshing decoded strings after unflattening...
+String refresh: 8/76 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.070 s
+Hidden: 4739 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 6137 change(s) in 1972 function(s)
+Final refresh of decoded strings...
+String refresh: 36/3059 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.195 s
+Deobfuscation OK. Total time: 76.5385181720003 s. = 1.2756419695333383 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/6e023b9b3097a2dba311cb06a91fe259.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/6e023b9b3097a2dba311cb06a91fe259.deobf.txt
+Saved string list (total: 27195) to: /media/tester/T7/jsceal/v8_10/deobfuscated/6e023b9b3097a2dba311cb06a91fe259.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.pkl
+Completed:  2026-09-24T19:03:14+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/7b659fa5c93af29c4e11d8c8be437058.deobf.txt
+Started:    2026-09-24T19:03:14+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000c732
+All Deobf functions found: 11843
+Checking: func_gt_0x10000000f
+Deobf root: func_gt_0x10000000f
+Inner root: func_ht_0x100000962
+Strings loaded from: func_X2_0x10000056c
+Loaded string chunks: 116648
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.resolved_funcs.csv' not found
+Missing 11843 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_gt_0x10000000f'}
+Searching for all deobf funcs...
+Searching finished, total: 11844
+Resolving functions finished, total: 11844
+Saved 11844 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_X2_0x10000056c
+Hidden the strings definitions
+Hidden 11844 functions
+Deobfuscated strings in: 95.10968671 s. = 1.5851614451666667 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Refreshing decoded strings after unflattening...
+String refresh: 20/175 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.209 s
+Hidden: 16706 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 25380 change(s) in 8652 function(s)
+Final refresh of decoded strings...
+String refresh: 118/13026 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.352 s
+Deobfuscation OK. Total time: 247.12907599200025 s. = 4.118817933200004 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/7b659fa5c93af29c4e11d8c8be437058.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/7b659fa5c93af29c4e11d8c8be437058.deobf.txt
+Saved string list (total: 80505) to: /media/tester/T7/jsceal/v8_10/deobfuscated/7b659fa5c93af29c4e11d8c8be437058.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.pkl
+Completed:  2026-09-24T19:07:34+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/8fb3e6acb2024601eba0ba484091ff3d.deobf.txt
+Started:    2026-09-24T19:07:34+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b1b3
+All Deobf functions found: 11077
+Checking: func_Dt_0x10000000b
+Deobf root: func_Dt_0x10000000b
+Inner root: func_yt_0x100000459
+Strings loaded from: func_A6_0x100000830
+Loaded string chunks: 110601
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.resolved_funcs.csv' not found
+Missing 11077 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_Dt_0x10000000b'}
+Searching for all deobf funcs...
+Searching finished, total: 11078
+Resolving functions finished, total: 11078
+Saved 11078 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_A6_0x100000830
+Hidden the strings definitions
+Hidden 11078 functions
+Deobfuscated strings in: 82.45529845200008 s. = 1.3742549742000014 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Replacement round: 6
+Refreshing decoded strings after unflattening...
+String refresh: 13/151 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.123 s
+Hidden: 15933 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 22790 change(s) in 7676 function(s)
+Final refresh of decoded strings...
+String refresh: 119/11426 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.232 s
+Deobfuscation OK. Total time: 239.50333858800013 s. = 3.9917223098000023 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/8fb3e6acb2024601eba0ba484091ff3d.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/8fb3e6acb2024601eba0ba484091ff3d.deobf.txt
+Saved string list (total: 75324) to: /media/tester/T7/jsceal/v8_10/deobfuscated/8fb3e6acb2024601eba0ba484091ff3d.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.pkl
+Completed:  2026-09-24T19:11:45+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/af105a6d4dc10b2bfefd75e917245523.deobf.txt
+Started:    2026-09-24T19:11:45+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b19d
+All Deobf functions found: 11111
+Checking: func_Dt_0x10000099b
+Deobf root: func_Dt_0x10000099b
+Inner root: func_Ot_0x1000004d9
+Strings loaded from: func_pE_0x100000154
+Loaded string chunks: 110622
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.resolved_funcs.csv' not found
+Missing 11111 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_Dt_0x10000099b'}
+Searching for all deobf funcs...
+Searching finished, total: 11112
+Resolving functions finished, total: 11112
+Saved 11112 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_pE_0x100000154
+Hidden the strings definitions
+Hidden 11112 functions
+Deobfuscated strings in: 82.89104050900005 s. = 1.3815173418166675 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 15/151 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.103 s
+Hidden: 15892 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 22787 change(s) in 7680 function(s)
+Final refresh of decoded strings...
+String refresh: 114/11410 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.393 s
+Deobfuscation OK. Total time: 232.0611663640002 s. = 3.86768610606667 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/af105a6d4dc10b2bfefd75e917245523.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/af105a6d4dc10b2bfefd75e917245523.deobf.txt
+Saved string list (total: 75317) to: /media/tester/T7/jsceal/v8_10/deobfuscated/af105a6d4dc10b2bfefd75e917245523.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.pkl
+Completed:  2026-09-24T19:15:48+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/b2dad3f88b7f6870f83eb1ad852b7f7e.deobf.txt
+Started:    2026-09-24T19:15:48+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000d56b
+All Deobf functions found: 12804
+Checking: func_gt_0x10000000c
+Deobf root: func_gt_0x10000000c
+Inner root: func_xt_0x100000500
+Strings loaded from: func_f7_0x100000233
+Loaded string chunks: 123501
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.resolved_funcs.csv' not found
+Missing 12804 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_gt_0x10000000c'}
+Searching for all deobf funcs...
+Searching finished, total: 12805
+Resolving functions finished, total: 12805
+Saved 12805 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_f7_0x100000233
+Hidden the strings definitions
+Hidden 12805 functions
+Deobfuscated strings in: 115.84400628200001 s. = 1.9307334380333334 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 18/197 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.235 s
+Hidden: 18194 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 27197 change(s) in 9123 function(s)
+Final refresh of decoded strings...
+String refresh: 124/13746 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.744 s
+Deobfuscation OK. Total time: 286.18896733699967 s. = 4.769816122283328 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/b2dad3f88b7f6870f83eb1ad852b7f7e.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/b2dad3f88b7f6870f83eb1ad852b7f7e.deobf.txt
+Saved string list (total: 84972) to: /media/tester/T7/jsceal/v8_10/deobfuscated/b2dad3f88b7f6870f83eb1ad852b7f7e.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.pkl
+Completed:  2026-09-24T19:20:48+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/d064dfaaef30c057b832c79996c35e89.deobf.txt
+Started:    2026-09-24T19:20:48+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b747
+All Deobf functions found: 11440
+Checking: func_bt_0x10000094d
+Deobf root: func_bt_0x10000094d
+Inner root: func_Ft_0x100000469
+Strings loaded from: func_yg_0x100000948
+Loaded string chunks: 114695
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.resolved_funcs.csv' not found
+Missing 11440 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_bt_0x10000094d'}
+Searching for all deobf funcs...
+Searching finished, total: 11441
+Resolving functions finished, total: 11441
+Saved 11441 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_yg_0x100000948
+Hidden the strings definitions
+Hidden 11441 functions
+Deobfuscated strings in: 85.31447074800053 s. = 1.421907845800009 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Refreshing decoded strings after unflattening...
+String refresh: 20/165 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.175 s
+Hidden: 16508 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 23866 change(s) in 7980 function(s)
+Final refresh of decoded strings...
+String refresh: 121/11830 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 1.009 s
+Deobfuscation OK. Total time: 227.88233440500062 s. = 3.79803890675001 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/d064dfaaef30c057b832c79996c35e89.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/d064dfaaef30c057b832c79996c35e89.deobf.txt
+Saved string list (total: 78897) to: /media/tester/T7/jsceal/v8_10/deobfuscated/d064dfaaef30c057b832c79996c35e89.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.pkl
+Completed:  2026-09-24T19:24:49+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/d5b4137135cf121e3ea07b1c81fe1108.deobf.txt
+Started:    2026-09-24T19:24:49+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x100007888
+All Deobf functions found: 8116
+Checking: func_st_0x10000095d
+Deobf root: func_st_0x10000095d
+Inner root: func_Ct_0x100000384
+Strings loaded from: func_dA_0x10000091f
+Loaded string chunks: 209449
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.resolved_funcs.csv' not found
+Missing 8116 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_st_0x10000095d'}
+Searching for all deobf funcs...
+Searching finished, total: 8117
+Resolving functions finished, total: 8117
+Saved 8117 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_dA_0x10000091f
+Hidden the strings definitions
+Hidden 8117 functions
+Deobfuscated strings in: 207.76139444399996 s. = 3.4626899073999993 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 10/128 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.091 s
+Hidden: 11642 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 15070 change(s) in 4856 function(s)
+Final refresh of decoded strings...
+String refresh: 73/7380 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 2.398 s
+Deobfuscation OK. Total time: 350.5232383319999 s. = 5.842053972199998 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/d5b4137135cf121e3ea07b1c81fe1108.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/d5b4137135cf121e3ea07b1c81fe1108.deobf.txt
+Saved string list (total: 96647) to: /media/tester/T7/jsceal/v8_10/deobfuscated/d5b4137135cf121e3ea07b1c81fe1108.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.pkl
+Completed:  2026-09-24T19:30:52+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/e26687982d924ffebef6fbf2d9d43350.deobf.txt
+Started:    2026-09-24T19:30:52+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x100009155
+All Deobf functions found: 7838
+Checking: func_ht_0x100000822
+Deobf root: func_ht_0x100000822
+Inner root: func_Mt_0x100000401
+Strings loaded from: func_t6_0x100000336
+Loaded string chunks: 77664
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.resolved_funcs.csv' not found
+Missing 7838 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_ht_0x100000822'}
+Searching for all deobf funcs...
+Searching finished, total: 7839
+Resolving functions finished, total: 7839
+Saved 7839 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_t6_0x100000336
+Hidden the strings definitions
+Hidden 7839 functions
+Deobfuscated strings in: 67.70415703900017 s. = 1.1284026173166695 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 12/131 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.118 s
+Hidden: 10616 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 17613 change(s) in 6406 function(s)
+Final refresh of decoded strings...
+String refresh: 83/10277 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.540 s
+Deobfuscation OK. Total time: 185.85170480899978 s. = 3.09752841348333 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/e26687982d924ffebef6fbf2d9d43350.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/e26687982d924ffebef6fbf2d9d43350.deobf.txt
+Saved string list (total: 54685) to: /media/tester/T7/jsceal/v8_10/deobfuscated/e26687982d924ffebef6fbf2d9d43350.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.pkl
+Completed:  2026-09-24T19:34:07+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/e27ae65977287bdfb7b0e15fd3603f85.deobf.txt
+Started:    2026-09-24T19:34:07+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000d2ff
+All Deobf functions found: 13027
+Checking: func_xt_0x1000004fc
+Deobf root: func_xt_0x1000004fc
+Inner root: func_Et_0x1000005c3
+Strings loaded from: func_KV_0x100000636
+Loaded string chunks: 125138
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.resolved_funcs.csv' not found
+Missing 13027 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_xt_0x1000004fc'}
+Searching for all deobf funcs...
+Searching finished, total: 13028
+Resolving functions finished, total: 13028
+Saved 13028 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_KV_0x100000636
+Hidden the strings definitions
+Hidden 13028 functions
+Deobfuscated strings in: 96.69478097599949 s. = 1.6115796829333249 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Refreshing decoded strings after unflattening...
+String refresh: 17/206 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.173 s
+Hidden: 18450 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 26389 change(s) in 8898 function(s)
+Final refresh of decoded strings...
+String refresh: 128/13454 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.979 s
+Deobfuscation OK. Total time: 254.11486913600038 s. = 4.23524781893334 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/e27ae65977287bdfb7b0e15fd3603f85.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/e27ae65977287bdfb7b0e15fd3603f85.deobf.txt
+Saved string list (total: 87166) to: /media/tester/T7/jsceal/v8_10/deobfuscated/e27ae65977287bdfb7b0e15fd3603f85.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.pkl
+Completed:  2026-09-24T19:38:34+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/e711a90b5ece5380e1acaed56827e8d5.deobf.txt
+Started:    2026-09-24T19:38:34+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000b96e
+All Deobf functions found: 11686
+Checking: func_Et_0x10000045a
+Deobf root: func_Et_0x10000045a
+Inner root: func_vt_0x100000993
+Strings loaded from: func_q2_0x10000092c
+Loaded string chunks: 115735
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.resolved_funcs.csv' not found
+Missing 11686 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_Et_0x10000045a'}
+Searching for all deobf funcs...
+Searching finished, total: 11687
+Resolving functions finished, total: 11687
+Saved 11687 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_q2_0x10000092c
+Hidden the strings definitions
+Hidden 11687 functions
+Deobfuscated strings in: 89.71040797299975 s. = 1.4951734662166625 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Replacement round: 6
+Refreshing decoded strings after unflattening...
+String refresh: 18/168 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.171 s
+Hidden: 16628 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 24180 change(s) in 8067 function(s)
+Final refresh of decoded strings...
+String refresh: 127/11968 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 2.176 s
+Deobfuscation OK. Total time: 254.81142765799996 s. = 4.246857127633333 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/e711a90b5ece5380e1acaed56827e8d5.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/e711a90b5ece5380e1acaed56827e8d5.deobf.txt
+Saved string list (total: 79973) to: /media/tester/T7/jsceal/v8_10/deobfuscated/e711a90b5ece5380e1acaed56827e8d5.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
+Completed:  2026-09-24T19:43:03+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/e8b5448b4f7b013e8c6191b20d3f8291.deobf.txt
+Started:    2026-09-24T19:43:03+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x10000782b
+All Deobf functions found: 8077
+Checking: func_dt_0x100000784
+Deobf root: func_dt_0x100000784
+Inner root: func_gt_0x1000008e0
+Strings loaded from: func_E1_0x10000091a
+Loaded string chunks: 209278
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.resolved_funcs.csv' not found
+Missing 8077 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_dt_0x100000784'}
+Searching for all deobf funcs...
+Searching finished, total: 8078
+Resolving functions finished, total: 8078
+Saved 8078 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_E1_0x10000091a
+Hidden the strings definitions
+Hidden 8078 functions
+Deobfuscated strings in: 211.59790665399942 s. = 3.526631777566657 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Refreshing decoded strings after unflattening...
+String refresh: 7/124 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.064 s
+Hidden: 11631 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 15030 change(s) in 4853 function(s)
+Final refresh of decoded strings...
+String refresh: 80/7380 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 2.427 s
+Deobfuscation OK. Total time: 358.00853886300047 s. = 5.966808981050008 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/e8b5448b4f7b013e8c6191b20d3f8291.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/e8b5448b4f7b013e8c6191b20d3f8291.deobf.txt
+Saved string list (total: 96526) to: /media/tester/T7/jsceal/v8_10/deobfuscated/e8b5448b4f7b013e8c6191b20d3f8291.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
+Completed:  2026-09-24T19:49:15+02:00
+============================================================
+Processing: /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.pkl
+Output:     /media/tester/T7/jsceal/v8_10/deobfuscated/fd4494c555adda2eb54b88f5c9c08801.deobf.txt
+Started:    2026-09-24T19:49:15+02:00
+Reading from serialized, already decompiled input: /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.pkl
+Replace global scope done. Changed: False
+Propagating values by scopes: Done. Changed: True
+Propagating values by local variables. Done. Changed: True
+Propagating func variables: Done. Changed: True
+Start Func: func_start_0x100008306
+All Deobf functions found: 8920
+Checking: func_xt_0x100000239
+Deobf root: func_xt_0x100000239
+Inner root: func_Qt_0x100000753
+Strings loaded from: func_cp_0x10000019f
+Loaded string chunks: 216854
+Warning: CSV file '/media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.resolved_funcs.csv' not found
+Missing 8920 required cached decoder functions
+Trying to brutforce values of the initial function: {'func_xt_0x100000239'}
+Searching for all deobf funcs...
+Searching finished, total: 8921
+Resolving functions finished, total: 8921
+Saved 8921 function configurations to /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.resolved_funcs.csv
+String deobfuscation OK
+Strings loaded from: func_cp_0x10000019f
+Hidden the strings definitions
+Hidden 8921 functions
+Deobfuscated strings in: 263.9416900369997 s. = 4.399028167283329 min
+Replacement round: 0
+Replacement round: 1
+Replacement round: 2
+Replacement round: 3
+Replacement round: 4
+Replacement round: 5
+Replacement round: 6
+Refreshing decoded strings after unflattening...
+String refresh: 12/135 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 0.129 s
+Hidden: 12538 op functions
+Propagating globals...
+Inlining temporary values...
+Applied strict local final-pass cleanup: 16905 change(s) in 5556 function(s)
+Final refresh of decoded strings...
+String refresh: 89/8219 candidate function(s); inlined 0 decoder argument(s); replaced 0 decoder call(s); 3.309 s
+Deobfuscation OK. Total time: 431.50112648899994 s. = 7.191685441483332 min
+Serializing to file: /media/tester/T7/jsceal/v8_10/deobfuscated/fd4494c555adda2eb54b88f5c9c08801.deobf.pkl
+Exporting to file /media/tester/T7/jsceal/v8_10/deobfuscated/fd4494c555adda2eb54b88f5c9c08801.deobf.txt
+Saved string list (total: 103246) to: /media/tester/T7/jsceal/v8_10/deobfuscated/fd4494c555adda2eb54b88f5c9c08801.deobf.txt.strings.txt
+Done.
+Finished:   /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.pkl
+Completed:  2026-09-24T19:56:39+02:00
+All files deobfuscated successfully.
+
+============================================================
+Validating generated output
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/03f4e47b9c2283c32bb8f8f042ce6e41.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/03f4e47b9c2283c32bb8f8f042ce6e41.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/0b8015cbb1ffdc6efe6a306ff5b1115f.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/0b8015cbb1ffdc6efe6a306ff5b1115f.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/0d1fce0cb2b9dec26a10f0822aeffb19.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/0d1fce0cb2b9dec26a10f0822aeffb19.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/1026743185dfa10e9ddc21b5a4c578d5.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/1026743185dfa10e9ddc21b5a4c578d5.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/201f28b5e62e52e269757930f941c774.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/201f28b5e62e52e269757930f941c774.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/2fe27eb8c99626e8c02e4bfd02aca962.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/2fe27eb8c99626e8c02e4bfd02aca962.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/376ec4dbc3363fa7131367e4c6327a46.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/376ec4dbc3363fa7131367e4c6327a46.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/462195f7f8033df7371e899fe9bc51de.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/462195f7f8033df7371e899fe9bc51de.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/499184635d56a9827d2059256a35e530.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/499184635d56a9827d2059256a35e530.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/533d0b93ea03cd5bab4eec0f0ebadd03.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/533d0b93ea03cd5bab4eec0f0ebadd03.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/68ac84a8470d1f365f0bb2f37b6256d5.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/68ac84a8470d1f365f0bb2f37b6256d5.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/6e023b9b3097a2dba311cb06a91fe259.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/6e023b9b3097a2dba311cb06a91fe259.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/7b659fa5c93af29c4e11d8c8be437058.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/7b659fa5c93af29c4e11d8c8be437058.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/8fb3e6acb2024601eba0ba484091ff3d.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/8fb3e6acb2024601eba0ba484091ff3d.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/af105a6d4dc10b2bfefd75e917245523.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/af105a6d4dc10b2bfefd75e917245523.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/b2dad3f88b7f6870f83eb1ad852b7f7e.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/b2dad3f88b7f6870f83eb1ad852b7f7e.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/d064dfaaef30c057b832c79996c35e89.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/d064dfaaef30c057b832c79996c35e89.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/d5b4137135cf121e3ea07b1c81fe1108.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/d5b4137135cf121e3ea07b1c81fe1108.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/e26687982d924ffebef6fbf2d9d43350.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/e26687982d924ffebef6fbf2d9d43350.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/e27ae65977287bdfb7b0e15fd3603f85.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/e27ae65977287bdfb7b0e15fd3603f85.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/e711a90b5ece5380e1acaed56827e8d5.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/e711a90b5ece5380e1acaed56827e8d5.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/e8b5448b4f7b013e8c6191b20d3f8291.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/e8b5448b4f7b013e8c6191b20d3f8291.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+------------------------------------------------------------
+Input:  /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.pkl
+Output: /media/tester/T7/jsceal/v8_10/deobfuscated/fd4494c555adda2eb54b88f5c9c08801.deobf.txt
+CSV:    /media/tester/T7/jsceal/v8_10/decompiled/fd4494c555adda2eb54b88f5c9c08801.dec.resolved_funcs.csv
+Unresolved decoder references: 0
+
+============================================================
+Deobfuscation command failures: 0
+Missing output files:           0
+Validation failures:            0
+Completed: 2026-09-24T19:56:51+02:00
