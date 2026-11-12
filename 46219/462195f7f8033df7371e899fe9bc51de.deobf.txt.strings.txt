@@ -1320,6 +1320,7 @@ env
 "isServer"
 "allowOutsideOfServer"
 "You're trying to use @trpc/server in a non-server environment. This is not supported by default."
+"defaultMeta"
 join
 Users
 "readdir"
@@ -36032,6 +36033,9 @@ env
 "isServerDefault"
 "allowOutsideOfServer"
 "You're trying to use @trpc/server in a non-server environment. This is not supported by default."
+"defaultMeta"
+"createRouterFactory"
+"createCallerFactory"
 "middlewares"
 "resolver"
 "inputParser"
